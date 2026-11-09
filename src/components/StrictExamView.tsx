@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Question, ExamSession, getQuestionsForSession, EXAM_SESSIONS } from '../data/questionBank';
+import { Question, ExamSession, EXAM_SESSIONS } from '../data/questionBank';
+import { ImportedQuestion, loadQuestionsForSession } from '../data/sessionQuestionLoader';
 import { Clock, AlertTriangle, CheckCircle, XCircle, Award, RefreshCw, Bookmark, Sparkles, Lock, ArrowLeft, Send, ChevronDown, ChevronUp } from 'lucide-react';
 import { InlineAiTutor } from './InlineAiTutor';
 import { MathMarkdownRenderer, MathInlineRenderer } from './MathMarkdownRenderer';
@@ -18,6 +19,8 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   setCustomApiKey,
 }) => {
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
+  const [questionLoadError, setQuestionLoadError] = useState('');
   // selectedAnswers: questionId -> optionIndex (0-3)
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
   // lockedQuestions: set of question IDs that have been clicked and permanently locked
@@ -34,18 +37,33 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   const [expandedAiQuestionId, setExpandedAiQuestionId] = useState<string | null>(null);
 
   useEffect(() => {
-    const loaded = getQuestionsForSession(examSession.id);
-    setQuestions(loaded);
+    let active = true;
+    setIsLoadingQuestions(true);
+    setQuestionLoadError('');
+    setQuestions([]);
     setTimeLeft(examSession.durationMinutes * 60);
     setSelectedAnswers({});
     setLockedQuestions(new Set());
     setIsSubmitted(false);
     setExpandedAiQuestionId(null);
-  }, [examSession]);
+    loadQuestionsForSession(examSession)
+      .then(loaded => {
+        if (!active) return;
+        setQuestions(loaded);
+        if (loaded.length === 0) setQuestionLoadError('এই সেশনের জন্য কোনো প্রশ্ন পাওয়া যায়নি। অন্য সেশনের প্রশ্ন দিয়ে পরীক্ষা তৈরি করা হয়নি।');
+      })
+      .catch(error => {
+        if (!active) return;
+        console.error(error);
+        setQuestionLoadError('প্রশ্ন লোড করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।');
+      })
+      .finally(() => { if (active) setIsLoadingQuestions(false); });
+    return () => { active = false; };
+  }, [examSession.id]);
 
   // Countdown timer
   useEffect(() => {
-    if (isSubmitted) return;
+    if (isSubmitted || isLoadingQuestions || questions.length === 0) return;
     if (timeLeft <= 0) {
       handleSubmitExam();
       return;
@@ -54,7 +72,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
       setTimeLeft(prev => Math.max(0, prev - 1));
     }, 1000);
     return () => clearInterval(timer);
-  }, [timeLeft, isSubmitted]);
+  }, [timeLeft, isSubmitted, isLoadingQuestions, questions.length]);
 
   const formatTime = (seconds: number) => {
     const mins = Math.floor(seconds / 60);
@@ -64,7 +82,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
 
   // STRICT AUTO-LOCK: Once clicked, locked forever!
   const handleSelectOption = (questionId: string, optionIndex: number) => {
-    if (isSubmitted) return;
+    if (isSubmitted || isLoadingQuestions) return;
     // If already locked, strictly refuse any change!
     if (lockedQuestions.has(questionId)) return;
 
@@ -95,11 +113,14 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   let correctCount = 0;
   let incorrectCount = 0;
   let unattemptedCount = 0;
+  let unverifiedCount = 0;
 
   questions.forEach(q => {
     const ans = selectedAnswers[q.id];
     if (ans === undefined) {
       unattemptedCount++;
+    } else if (q.answerVerified === false || q.correctAnswer < 0) {
+      unverifiedCount++;
     } else if (ans === q.correctAnswer) {
       correctCount++;
     } else {
@@ -136,7 +157,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
         </div>
 
         <div className="flex items-center gap-3">
-          {!isSubmitted && (
+          {!isSubmitted && !isLoadingQuestions && questions.length > 0 && (
             <div
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-mono font-bold ${
                 timeLeft < 300
@@ -173,6 +194,9 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
         </div>
       </div>
 
+      {isLoadingQuestions && <div className="p-8 rounded-2xl bg-[#0B1222] border border-indigo-900/50 text-center text-sky-300">প্রশ্নপত্র লোড হচ্ছে...</div>}
+      {!isLoadingQuestions && questionLoadError && <div className="p-5 rounded-2xl bg-amber-950/30 border border-amber-800/60 text-amber-200 text-sm">{questionLoadError}</div>}
+
       {/* Result Card after Submission */}
       {isSubmitted && (
         <div className="bg-gradient-to-br from-[#0B1428] via-[#080D1A] to-[#040711] text-white p-6 sm:p-8 rounded-3xl shadow-2xl border border-sky-500/30 space-y-6">
@@ -194,7 +218,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
             </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+          <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 pt-2">
             <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
               <span className="block text-[11px] text-slate-400">Total Questions</span>
               <span className="text-lg font-bold text-white">{questions.length}</span>
@@ -210,6 +234,10 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
             <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
               <span className="block text-[11px] text-amber-400">উত্তর দেননি (0)</span>
               <span className="text-lg font-bold text-amber-400">{unattemptedCount}</span>
+            </div>
+            <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
+              <span className="block text-[11px] text-slate-400">যাচাই হয়নি</span>
+              <span className="text-lg font-bold text-slate-300">{unverifiedCount}</span>
             </div>
           </div>
         </div>
@@ -228,8 +256,10 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
       </div>
 
       {/* ALL QUESTIONS IN ONE PAGE */}
-      <div className="space-y-5">
+      {!isLoadingQuestions && questions.length > 0 && <div className="space-y-5">
         {questions.map((q, idx) => {
+          const imported = q as ImportedQuestion;
+          const answerIsVerified = imported.answerVerified !== false && q.correctAnswer >= 0;
           const userSelected = selectedAnswers[q.id];
           const isLocked = lockedQuestions.has(q.id);
           const isBookmarked = bookmarks.has(q.id);
@@ -280,16 +310,22 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
               </div>
 
               {/* Question Text */}
-              <h3 className="text-sm sm:text-base font-semibold text-white mb-4 leading-relaxed">
-                <span className="font-bold text-sky-400 mr-1.5">{idx + 1}.</span>
-                <MathInlineRenderer text={q.question.replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()} />
-              </h3>
+              <div className="text-sm sm:text-base font-semibold text-white mb-4 leading-relaxed">
+                {imported.questionHtml
+                  ? <div className="question-rich-content" dangerouslySetInnerHTML={{ __html: imported.questionHtml }} />
+                  : <><span className="font-bold text-sky-400 mr-1.5">{idx + 1}.</span><MathInlineRenderer text={q.question.replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()} /></>}
+              </div>
+              {!imported.questionHtml && imported.questionImageUrls?.map((url, imageIndex) => (
+                <img key={url + imageIndex} src={url} alt="Question attachment" loading="lazy" className="mb-3 max-w-full max-h-80 object-contain rounded-xl" />
+              ))}
 
               {/* Options */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                 {q.options.map((opt, optIdx) => {
                   const isSelected = userSelected === optIdx;
-                  const isCorrectOpt = optIdx === q.correctAnswer;
+                  const isCorrectOpt = answerIsVerified && optIdx === q.correctAnswer;
+                  const optionHtml = imported.optionHtmls?.[optIdx];
+                  const optionImages = imported.optionImageUrls?.[optIdx] || [];
 
                   let btnStyle = 'bg-[#080E1C] border-slate-800 hover:border-indigo-500 text-slate-300';
 
@@ -324,7 +360,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                         >
                           {String.fromCharCode(65 + optIdx)}
                         </span>
-                        <span className="leading-snug"><MathInlineRenderer text={opt} /></span>
+                        <span className="leading-snug flex-1">{optionHtml ? <span dangerouslySetInnerHTML={{ __html: optionHtml }} /> : <MathInlineRenderer text={opt} />}{optionImages.map((url, imageIndex) => <img key={url + imageIndex} src={url} alt="Option attachment" loading="lazy" className="mt-2 max-w-full max-h-48 object-contain rounded-lg" />)}</span>
                       </div>
                       {isSubmitted && isCorrectOpt && <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />}
                       {isSubmitted && isSelected && !isCorrectOpt && <XCircle className="w-4 h-4 text-red-400 shrink-0" />}
@@ -338,7 +374,9 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                 <div className="mt-5 pt-4 border-t border-slate-800/80 space-y-3">
                   <div className="p-3.5 rounded-xl bg-[#080E1B] border border-slate-800 text-xs space-y-1">
                     <span className="font-bold text-slate-200 block mb-1">সঠিক উত্তর ও মূল ব্যাখ্যা:</span>
-                    <MathMarkdownRenderer content={q.explanation} />
+                    {imported.explanationHtml ? <div className="rich-explanation" dangerouslySetInnerHTML={{ __html: imported.explanationHtml }} /> : q.explanation ? <MathMarkdownRenderer content={q.explanation} /> : <span className="text-slate-400">ব্যাখ্যা পাওয়া যায়নি।</span>}
+                    {!answerIsVerified && q.questionType !== 'Written' && <p className="mt-2 text-amber-300">এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে উত্তর দেখানো হয়নি।</p>}
+                    {imported.explanationImageUrls?.map((url, imageIndex) => <img key={url + imageIndex} src={url} alt="Explanation attachment" loading="lazy" className="mt-2 max-w-full max-h-64 object-contain rounded-lg" />)}
                   </div>
 
                   <div className="flex items-center justify-between">
@@ -375,10 +413,10 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
             </div>
           );
         })}
-      </div>
+      </div>}
 
       {/* Confirmation Modal */}
-      {showConfirmModal && (
+      {showConfirmModal && !isLoadingQuestions && (
         <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-[#0B1222] rounded-3xl p-6 sm:p-8 max-w-md w-full border border-indigo-900/60 shadow-2xl space-y-5 text-center">
             <div className="w-14 h-14 bg-amber-950/80 text-amber-400 border border-amber-800/60 rounded-2xl mx-auto flex items-center justify-center">

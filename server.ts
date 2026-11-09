@@ -1,6 +1,8 @@
 import express from 'express';
 import { createServer as createViteServer } from 'vite';
 import path from 'path';
+import { createHash } from 'crypto';
+import { mkdir, writeFile } from 'fs/promises';
 import { fileURLToPath } from 'url';
 import dotenv from 'dotenv';
 import { GoogleGenAI, ThinkingLevel } from '@google/genai';
@@ -68,6 +70,70 @@ async function startServer() {
   const PORT = Number(process.env.PORT) || 3000;
 
   app.use(express.json());
+
+  // Import image cache: only the original Chorcha image hosts are accepted.
+  // Redirects are revalidated; file size and MIME are checked before writing.
+  app.get('/api/media/localize', async (req, res) => {
+    try {
+      const rawUrl = String(req.query.url || '');
+      let target = new URL(rawUrl);
+      const allowedHosts = new Set(['assets.chorcha.net', 'chorcha.net']);
+      if (target.protocol !== 'https:' || !allowedHosts.has(target.hostname.toLowerCase())) {
+        return res.status(400).json({ error: 'Image host is not allowed' });
+      }
+
+      let response: Response | null = null;
+      for (let redirect = 0; redirect <= 3; redirect++) {
+        response = await fetch(target, { redirect: 'manual', signal: AbortSignal.timeout(12000) });
+        if ([301, 302, 303, 307, 308].includes(response.status)) {
+          const location = response.headers.get('location');
+          if (!location || redirect === 3) return res.status(502).json({ error: 'Too many image redirects' });
+          target = new URL(location, target);
+          if (target.protocol !== 'https:' || !allowedHosts.has(target.hostname.toLowerCase())) {
+            return res.status(400).json({ error: 'Redirect host is not allowed' });
+          }
+          continue;
+        }
+        break;
+      }
+
+      if (!response || !response.ok) return res.status(502).json({ error: 'Could not fetch image source' });
+      const mime = (response.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+      const supported = new Set(['image/png', 'image/jpeg', 'image/webp', 'image/gif', 'image/svg+xml']);
+      if (!supported.has(mime)) return res.status(415).json({ error: 'Unsupported image type' });
+      const declaredSize = Number(response.headers.get('content-length') || 0);
+      const maxBytes = 8 * 1024 * 1024;
+      if (declaredSize > maxBytes) return res.status(413).json({ error: 'Image is too large' });
+
+      let bytes = Buffer.from(await response.arrayBuffer());
+      if (bytes.length === 0 || bytes.length > maxBytes) return res.status(413).json({ error: 'Image is empty or too large' });
+      let extension = mime === 'image/jpeg' ? 'jpg' : mime === 'image/svg+xml' ? 'svg' : mime.split('/')[1];
+      if (mime === 'image/svg+xml') {
+        let svg = bytes.toString('utf8');
+        svg = svg
+          .replace(/<script\b[\s\S]*?<\/script\s*>/gi, '')
+          .replace(/<foreignObject\b[\s\S]*?<\/foreignObject\s*>/gi, '')
+          .replace(/\s(on[a-z]+)\s*=\s*("[^"]*"|'[^']*'|[^\s>]+)/gi, '')
+          .replace(/(?:href|xlink:href)\s*=\s*(["'])\s*(?:javascript:|https?:|\/\/)[\s\S]*?\1/gi, '')
+          .replace(/url\s*\(\s*(['"]?)\s*(?:https?:|\/\/)[^)]+\)/gi, 'none');
+        bytes = Buffer.from(svg, 'utf8');
+      }
+
+      const digest = createHash('sha256').update(bytes).digest('hex');
+      const fileName = digest + '.' + extension;
+      const directory = path.join(__dirname, 'public', 'assets', 'imported');
+      await mkdir(directory, { recursive: true });
+      await writeFile(path.join(directory, fileName), bytes, { flag: 'wx' }).catch(async (error: any) => {
+        if (error?.code !== 'EEXIST') throw error;
+      });
+      return res.json({ url: '/assets/imported/' + fileName, cached: true });
+    } catch (error: any) {
+      console.error('Image localization failed:', error?.message || error);
+      return res.status(502).json({ error: 'Image localization failed' });
+    }
+  });
+
+
 
   // SSE Real-Time Streaming Endpoint for Instant AI Responses (<1s time-to-first-token)
   app.post('/api/gemini/explain-stream', async (req, res) => {

@@ -11,7 +11,7 @@ export interface Question {
   subject: 'Physics' | 'Chemistry' | 'Mathematics' | 'Biology' | 'ICT';
   question: string;
   options: string[];
-  correctAnswer: number; // 0 to 3
+  correctAnswer: number; // option index, or -1 when unverified / written
   explanation: string;
   questionType: 'MCQ' | 'Written';
   marks: number;

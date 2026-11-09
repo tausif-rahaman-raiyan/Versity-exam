@@ -98,13 +98,14 @@ export default function App() {
         )}
         {currentView === 'questionBank' && (
           <QuestionBankView
+            session={selectedSession}
+            onBack={() => setCurrentView('home')}
             onStartExam={(sessionId) => {
               const found = EXAM_SESSIONS.find(s => s.id === sessionId);
               if (found) setSelectedSession(found);
               setCurrentView('exam');
             }}
             customApiKey={customApiKey}
-            setCustomApiKey={setCustomApiKey}
           />
         )}
         {currentView === 'exam' && (

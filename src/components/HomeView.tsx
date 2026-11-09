@@ -174,7 +174,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSelectExam, setCurrentView
       <div className="space-y-4">
         <div className="flex items-center justify-between text-xs text-slate-400 px-1">
           <span>মোট সেশন: <strong className="text-white font-mono">{filteredSessions.length}</strong> টি পাওয়া গেছে</span>
-          <span>সেশন নির্বাচন করে 'Start Exam' বা 'Question Bank' চাপুন</span>
+          <span>সেশন নির্বাচন করে 'See question' অথবা 'Start Exam' চাপুন</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -229,7 +229,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSelectExam, setCurrentView
                   onClick={() => onSelectExam(session, 'qb')}
                   className="flex-1 py-2 px-3 bg-[#0F192E] hover:bg-[#162444] text-slate-200 rounded-xl font-medium text-xs transition-colors flex items-center justify-center gap-1.5 border border-slate-700/60"
                 >
-                  <BookOpen className="w-3.5 h-3.5 text-slate-400" /> Question Bank
+                  <BookOpen className="w-3.5 h-3.5 text-slate-400" /> See question
                 </button>
                 <button
                   onClick={() => onSelectExam(session, 'exam')}
