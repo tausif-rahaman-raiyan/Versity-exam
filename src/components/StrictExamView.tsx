@@ -119,7 +119,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
     const ans = selectedAnswers[q.id];
     if (ans === undefined) {
       unattemptedCount++;
-    } else if (q.answerVerified === false || q.correctAnswer < 0) {
+    } else if ((q as ImportedQuestion).answerVerified === false || q.correctAnswer < 0) {
       unverifiedCount++;
     } else if (ans === q.correctAnswer) {
       correctCount++;

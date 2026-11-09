@@ -10,7 +10,6 @@ interface QuestionBankViewProps {
   onBack: () => void;
   onStartExam: (sessionId: string) => void;
   customApiKey: string;
-  setCustomApiKey: (key: string) => void;
 }
 
 const SUBJECT_LABELS: Record<string, string> = {

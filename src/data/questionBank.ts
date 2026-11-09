@@ -8,13 +8,28 @@ export interface Question {
   id: string;
   university: 'DU' | 'RU' | 'JU' | 'CU' | 'GST' | 'ALL';
   session: string;
-  subject: 'Physics' | 'Chemistry' | 'Mathematics' | 'Biology' | 'ICT';
+  subject: string;
   question: string;
   options: string[];
   correctAnswer: number; // option index, or -1 when unverified / written
   explanation: string;
   questionType: 'MCQ' | 'Written';
   marks: number;
+  answerVerified?: boolean;
+  answerDetection?: string;
+  correctAnswerText?: string;
+  optionLabels?: string[];
+  questionHtml?: string;
+  optionHtmls?: string[];
+  explanationHtml?: string;
+  questionImageUrls?: string[];
+  optionImageUrls?: string[][];
+  explanationImageUrls?: string[];
+  questionMathTex?: unknown[];
+  optionMathTex?: unknown[][];
+  rawCardHtml?: string;
+  sourceLabel?: string;
+  number?: number | string;
 }
 
 export interface ExamSession {
@@ -40,9 +55,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '25-26',
     durationMinutes: 90,
-    totalQuestions: 100,
-    totalMarks: 100,
-    description: 'ঢাকা বিশ্ববিদ্যালয় বিজ্ঞান ইউনিট ২০২৫-২৬ সেশনের প্রশ্ন ব্যাংক। ফিজিক্স, কেমিস্ট্রি, ম্যাথ ও বায়োলজি।',
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU 25-26 MCQ: ৯০টি সংরক্ষিত প্রশ্ন, ৬টি বিষয়। JSON answer key ও image metadata সহ.',
     questionType: 'MCQ'
   },
   {
@@ -51,9 +66,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '24-25',
     durationMinutes: 90,
-    totalQuestions: 100,
-    totalMarks: 100,
-    description: 'DU 24-25 Science unit admission question bank with negative marking (-0.25).',
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU 24-25 MCQ: ৯০টি সংরক্ষিত প্রশ্ন, ৬টি বিষয়। (-০.২৫ নেগেটিভ মার্কিং)।',
     questionType: 'MCQ'
   },
   {
@@ -62,9 +77,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '23-24',
     durationMinutes: 90,
-    totalQuestions: 100,
-    totalMarks: 100,
-    description: 'DU 2023-24 science unit official question set with detailed solutions.',
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU 23-24 MCQ: ৯০টি সংরক্ষিত প্রশ্ন, ৬টি বিষয়।',
     questionType: 'MCQ'
   },
   {
@@ -172,9 +187,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '14-15',
     durationMinutes: 90,
-    totalQuestions: 180,
+    totalQuestions: 167,
     totalMarks: 120,
-    description: 'DU 14-15: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 14-15: ১৬৭টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
@@ -183,9 +198,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '13-14',
     durationMinutes: 90,
-    totalQuestions: 180,
+    totalQuestions: 170,
     totalMarks: 120,
-    description: 'DU 13-14: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 13-14: ১৭০টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
@@ -194,9 +209,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '12-13',
     durationMinutes: 90,
-    totalQuestions: 180,
+    totalQuestions: 169,
     totalMarks: 120,
-    description: 'DU 12-13: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 12-13: ১৬৯টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
@@ -205,9 +220,9 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '11-12',
     durationMinutes: 90,
-    totalQuestions: 180,
+    totalQuestions: 168,
     totalMarks: 120,
-    description: 'DU 11-12: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 11-12: ১৬৮টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
@@ -326,10 +341,55 @@ export const EXAM_SESSIONS: ExamSession[] = [
     university: 'DU',
     session: '00-01',
     durationMinutes: 90,
-    totalQuestions: 150,
+    totalQuestions: 138,
     totalMarks: 100,
-    description: 'DU 00-01: ১ ঘন্টা ৩০ মিনিট, ১৫০ টি প্রশ্ন, মোট ১০০ মার্কস।',
+    description: 'DU 00-01: ১৩৮টি সংরক্ষিত প্রশ্ন, মোট ১০০ মার্কস।',
     questionType: 'MCQ'
+  },
+
+  {
+    id: 'du-22-23-written',
+    title: 'DU 22-23 Written Admission Test',
+    university: 'DU',
+    session: '22-23',
+    durationMinutes: 30,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 22-23 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
+    questionType: 'Written'
+  },
+  {
+    id: 'du-23-24-written',
+    title: 'DU 23-24 Written Admission Test',
+    university: 'DU',
+    session: '23-24',
+    durationMinutes: 30,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 23-24 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
+    questionType: 'Written'
+  },
+  {
+    id: 'du-24-25-written',
+    title: 'DU 24-25 Written Admission Test',
+    university: 'DU',
+    session: '24-25',
+    durationMinutes: 30,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 24-25 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
+    questionType: 'Written'
+  },
+  {
+    id: 'du-25-26-written',
+    title: 'DU 25-26 Written Admission Test',
+    university: 'DU',
+    session: '25-26',
+    durationMinutes: 30,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 25-26 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
+    questionType: 'Written'
   },
 
   // ===================== RAJSHAHI UNIVERSITY (RU) =====================
@@ -799,28 +859,13 @@ export function sanitizeQuestionText(raw: string): string {
 
 // Helper to generate full exam paper for any university session
 export function getQuestionsForSession(sessionId: string): Question[] {
-  const session = EXAM_SESSIONS.find(s => s.id === sessionId) || EXAM_SESSIONS[0];
-  const targetCount = session.questionType === 'Written' ? 24 : Math.min(session.totalQuestions, 40);
-
-  // Filter master questions relevant to this university
-  const uniQuestions = MASTER_QUESTIONS.filter(q => q.university === session.university);
-  const pool = uniQuestions.length >= 6 ? uniQuestions : MASTER_QUESTIONS;
-
-  const result: Question[] = [];
-  for (let i = 0; i < targetCount; i++) {
-    const base = pool[i % pool.length];
-    const cleanText = sanitizeQuestionText(base.question);
-
-    result.push({
-      ...base,
-      id: `${sessionId}-q-${i + 1}`,
-      question: cleanText, // Pure question text without [Uni Session] prefix
-      university: session.university,
-      session: session.session,
-    });
-  }
-
-  return result;
+  const session = EXAM_SESSIONS.find(item => item.id === sessionId);
+  if (!session) return [];
+  return MASTER_QUESTIONS.filter(question =>
+    question.university === session.university &&
+    question.session === session.session &&
+    question.questionType === session.questionType
+  );
 }
 
 export const SAMPLE_QUESTIONS = MASTER_QUESTIONS;
