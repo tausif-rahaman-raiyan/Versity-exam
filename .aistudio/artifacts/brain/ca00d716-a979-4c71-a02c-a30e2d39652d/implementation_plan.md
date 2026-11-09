@@ -1,60 +1,75 @@
-# Ultra-Fast Live Streaming AI Tutor & Visual API Key Guide
+# University & Year-Scoped "See Question" & JSON Architecture
 
-Optimize the AI Tutor response time from 10–15s down to sub-second (<1s) initial response via live streaming (`generateContentStream` over Server-Sent Events), streamlined concise admission shortcuts, and a prominent visual 3-step guide with direct links for getting a free Google AI Studio API key.
+Replace the "Question Bank" button on session cards with "See question", scope the view strictly to that specific university and year with top subject filter tabs (Physics, Chemistry, Math, Biology, ICT), ensure "Start Exam" runs that exact session, and structure question banks into university & year-wise JSON files for easy future additions.
 
 ## User Review & Critical Decisions
 
 > [!IMPORTANT]
 > Based on your confirmed choices:
-> - **Live Streaming Optimization**: We will stream responses token-by-token directly into the inline card using SSE (`/api/gemini/explain-stream`). The student sees the solution start appearing within 1 second instead of waiting 15 seconds for a complete block.
-> - **Speed-Optimized Prompting**: Set `thinkingLevel: ThinkingLevel.LOW` on Gemini 3.8 Flash (and fast fallback to Gemini Flash Lite) to eliminate heavy reasoning lag while preserving rigorous step-by-step LaTeX math and 30-second calculator-free shortcuts.
-> - **Visual 3-Step API Key Guide**: Inside the API Key modal, provide a clear, beautifully styled 3-step guide with an instant 1-click button opening `https://aistudio.google.com/apikey` (highlighting that it is 100% free with no credit card needed).
+> - **Card Action Update**: The primary buttons on each session card (e.g. `DU • 25-26`) will be **"See question"** and **"Start Exam"**.
+> - **Strict Year & University Scoping**: Clicking "See question" on `DU • 25-26` opens a dedicated view showing **only DU 2025-26 questions**, with a session badge and subject filter tabs at the top (`ALL`, `Physics`, `Chemistry`, `Mathematics`, `Biology`, `ICT`).
+> - **University & Year-Wise JSON Structure**: Questions will be organized in modular JSON files per university and year (e.g. `src/data/json/du_25_26.json`, `src/data/json/du_24_25.json`, etc.) with a clear schema so you can easily paste or add all university exams in JSON format later.
+> - **Strict Exam Pairing**: Clicking "Start Exam" launches the strict auto-lock exam with the exact questions loaded for that university and session.
 
 ---
 
 ## 1. Overview & Core Concept
 
-- **What It Solves**:
-  1. *Eliminates AI Delays*: Previously, the backend waited for the entire explanation to generate before sending a response, taking 10–15 seconds and sometimes causing timeouts. With streaming, text and formulas appear live on-screen in real time starting in under 800ms.
-  2. *Clear API Key Onboarding*: Many students do not know where or how to get a Google AI Studio API key. A visual 3-step guide with direct external links makes obtaining a free key effortless.
-- **Key Value**: Instant visual responsiveness, zero perception of lag, and intuitive onboarding for all varsity candidates.
+- **What It Does**:
+  1. *Direct Targeted Studying*: Instead of dropping into a generic question bank with all universities mixed together, clicking **"See question"** takes the student directly to that exact university and year exam paper.
+  2. *Subject Navigation Tabs*: Subject filter tabs (`ALL`, `Physics`, `Chemistry`, `Mathematics`, `Biology`) allow rapid switching between sections of that paper.
+  3. *Modular JSON Engine*: Each exam paper has its own standalone JSON dataset, making it trivial for you or any contributor to drop in new years or universities simply by creating/editing JSON files.
 
 ---
 
 ## 2. User Experience & Visual Design
 
 ### Key User Flows
-1. **Instant AI Explanation (Live Stream)**:
-   - Student clicks **"Ask AI Tutor (Gemini)"** on any question card.
-   - The inline card expands immediately. Within ~800ms, streaming text and formulas begin typing onto the screen live.
-   - Live stream smoothly updates `<MathMarkdownRenderer />` so math fractions ($\frac{numerator}{denominator}$) and equations render in real time.
-   - A pulsing "AI Coach is typing..." indicator shows active generation.
-   - Once complete, audio speech (TTS) and copy buttons become active.
+1. **From Home Session Cards**:
+   - The student sees the session card:
+     ```
+     DU • 25-26  [MCQ]
+     DU Science Unit Admission Test (2025-26)
+     ঢাকা বিশ্ববিদ্যালয় বিজ্ঞান ইউনিট ২০২৫-২৬ সেশনের প্রশ্ন ব্যাংক।
+     [সময়: ৯০ মিনিট] [প্রশ্ন: ১০০ টি] [মার্কস: ১০০]
+     [See question]  [Start Exam]
+     ```
+   - Clicking **"See question"**:
+     - Navigates immediately to the targeted question paper view for DU 2025-26.
+     - Displays top banner: `"ঢাকা বিশ্ববিদ্যালয় (DU) • 2025-26 সেশন প্রশ্ন সমাধান"`.
+     - Displays sticky subject filter tabs: `ALL`, `Physics (পদার্থবিজ্ঞান)`, `Chemistry (রসায়ন)`, `Mathematics (গণিত)`, `Biology (জীববিজ্ঞান)`.
+     - Includes a prominent `← সকল সেশন ও বিশ্ববিদ্যালয়` back button to return to Home at any time.
+     - Each question has its full options, textbook solution, KaTeX math rendering, and inline expandable AI Tutor.
+   - Clicking **"Start Exam"**:
+     - Immediately launches the live 90-minute strict auto-lock exam for DU 2025-26 with that paper's questions.
 
-2. **Getting a Free Gemini API Key (Visual 3-Step Guide)**:
-   - Student clicks the **"API Key"** button in the top navigation or inside an error banner.
-   - The modal presents a prominent **"Get Your Free API Key in 3 Simple Steps"** card:
-     - **Step 1**: Click the direct button **"Open Google AI Studio ↗"** (links to `https://aistudio.google.com/apikey`).
-     - **Step 2**: Click **"Create API Key"** (free tier, no credit card required).
-     - **Step 3**: Copy the key starting with `AIzaSy...`, paste it into the field, and click **"Save Key"**.
-   - Immediate validation indicator: shows green badge when key format (`AIzaSy...`) is valid.
-
-### Visual Identity & Theme
-- **Theme**: Dark Navy / Midnight Black aesthetic (`#060B17` canvas, `#0B1428` card surfaces, `#38BDF8` cyan accents).
-- **Step Cards**: 3 numbered badges (`01`, `02`, `03`) with subtle borders, glowing accent icons, and direct external action buttons.
-- **Streaming Cursor**: Subtle blinking cursor at the end of the streaming text while generating.
+2. **Subject Switching inside "See question"**:
+   - Student clicks `Physics` tab: only Physics questions for that paper are shown.
+   - Student clicks `Chemistry` tab: instant filter without reloading.
+   - Student clicks `Ask AI Tutor`: accordion card opens inline right below the question with live streaming explanation.
 
 ---
 
 ## 3. Key Product Decisions & Trade-Offs
 
-- **Server-Sent Events (SSE) vs. WebSockets**:
-  - *Chosen*: Server-Sent Events (`res.writeHead(200, { 'Content-Type': 'text/event-stream' })`).
-  - *Why*: Built natively into standard browser HTTP `fetch` with `ReadableStreamDefaultReader`. Requires zero extra dependencies or socket server management.
-- **Fallback for Non-Streaming**:
-  - Keep the standard `/api/gemini/explain` endpoint active as fallback if SSE streaming is interrupted.
-- **Thinking Configuration (`thinkingLevel: ThinkingLevel.LOW`)**:
-  - *Why*: Significantly accelerates time-to-first-token while keeping mathematical derivations 100% accurate.
+- **Dedicated JSON Format per University & Session**:
+  - *Chosen*: Clean JSON files organized by university and session (e.g., `src/data/json/du/du_25_26.json`, `src/data/json/ru/ru_24_25.json`) with TypeScript typing and a centralized index loader.
+  - *Why*: Allows you to add, edit, or import hundreds of university admission questions in standard JSON syntax without touching component code.
+- **Unified Schema for Questions**:
+  - Format:
+    ```json
+    {
+      "id": "du-25-26-p1",
+      "university": "DU",
+      "session": "25-26",
+      "subject": "Physics",
+      "question": "একটি সরল দোলকের দৈর্ঘ্য 4 গুণ করা হলে এর দোলনকাল কত গুণ হবে?",
+      "options": ["অর্ধেক (0.5 গুণ)", "দ্বিগুণ (2 গুণ)", "চারগুণ (4 গুণ)", "অপরিবর্তিত"],
+      "correctAnswer": 1,
+      "explanation": "দোলনকাল $T = 2\\pi \\sqrt{\\frac{L}{g}}$। সুতরাং $T \\propto \\sqrt{L}$। দৈর্ঘ্য $L$ কে 4 গুণ করলে দোলনকাল $\\sqrt{4} = 2$ গুণ বৃদ্ধি পাবে।",
+      "marks": 1
+    }
+    ```
 
 ---
 
@@ -62,49 +77,41 @@ Optimize the AI Tutor response time from 10–15s down to sub-second (<1s) initi
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                      Client Frontend                        │
-│                                                             │
-│  [InlineAiTutor.tsx] ── fetch('/api/gemini/explain-stream') │
-│         │                                                   │
-│         ├── ReadableStreamDefaultReader (Chunks)            │
-│         ├── setExplanation(prev => prev + chunk)            │
-│         └── <MathMarkdownRenderer content={explanation} />  │
-│                                                             │
-│  [App.tsx (API Key Modal)]                                  │
-│         ├── Step 1: Open https://aistudio.google.com/apikey │
-│         ├── Step 2: "Create API Key" (100% Free)            │
-│         └── Step 3: Paste AIzaSy... & Save to Storage       │
+│                       Data Layer                            │
+│  src/data/json/                                             │
+│    ├── du/du_25_26.json, du_24_25.json, ...                │
+│    ├── ru/ru_24_25.json, ...                               │
+│    ├── ju/ju_23_24.json, ...                               │
+│    ├── cu/cu_24_25.json, ...                               │
+│    └── gst/gst_24_25.json, ...                             │
+│  src/data/questionBank.ts (Unified Loader & Session Query) │
 └──────────────────────────────┬──────────────────────────────┘
                                │
-                               ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    server.ts (Backend)                      │
-│                                                             │
-│  POST /api/gemini/explain-stream                            │
-│  - Headers: text/event-stream, Cache-Control: no-cache      │
-│  - ai.models.generateContentStream({                        │
-│      model: 'gemini-3.8-flash',                             │
-│      contents: prompt,                                      │
-│      config: {                                              │
-│        thinkingConfig: { thinkingLevel: ThinkingLevel.LOW },│
-│        systemInstruction: ...                               │
-│      }                                                      │
-│    })                                                       │
-│  - for await (const chunk of stream)                        │
-│      res.write(`data: ${JSON.stringify({ text })}\n\n`)     │
-└─────────────────────────────────────────────────────────────┘
+            ┌──────────────────┴──────────────────┐
+            ▼                                     ▼
+┌──────────────────────────────┐    ┌──────────────────────────────┐
+│        HomeView.tsx          │    │     QuestionBankView.tsx     │
+│  - Session Cards             │    │  (Scoped Question View)      │
+│  - Button: "See question" ───┼───►│  - Scoped to Uni & Session   │
+│  - Button: "Start Exam"      │    │  - Subject Tabs: All/Phy/... │
+└──────────────┬───────────────┘    └──────────────┬───────────────┘
+               │                                   │
+               ▼                                   ▼
+┌──────────────────────────────┐    ┌──────────────────────────────┐
+│      StrictExamView.tsx      │    │      InlineAiTutor.tsx       │
+│  - Scoped to Uni & Session   │    │  - Real-time SSE streaming   │
+│  - Auto-lock & timer         │    │  - Step-by-step shortcuts    │
+└──────────────────────────────┘    └──────────────────────────────┘
 ```
 
-### Component & File Mapping
-1. **`server.ts`**:
-   - Add `POST /api/gemini/explain-stream` supporting Server-Sent Events with `generateContentStream`.
-   - Configure `ThinkingLevel.LOW` for fast sub-second token generation.
-   - Fallback model candidate chain if first candidate takes $>4$ seconds.
-2. **`src/components/InlineAiTutor.tsx`**:
-   - Consume SSE stream via `fetch` and `response.body.getReader()`.
-   - Display text immediately as it streams in, with a smooth typing animation cursor.
-3. **`src/App.tsx`**:
-   - Upgrade the API Key Configuration Modal to feature the visual 3-step guide:
-     - 1-click external link button to `https://aistudio.google.com/apikey`.
-     - Step cards: 1. Sign in & Go to AI Studio, 2. Click "Create API Key" (Free), 3. Paste `AIzaSy...` below.
-     - Help banner explaining that the key stays 100% private in browser storage.
+### Component & File Tasks
+1. **Create JSON Files & Central Loader (`src/data/json/`)**:
+   - Organize individual JSON files for DU, RU, JU, CU, and GST sessions.
+   - Maintain a master session loader in `questionBank.ts` (`getQuestionsForSession(sessionId)`).
+2. **Update `HomeView.tsx`**:
+   - Replace the `"Question Bank"` button on session cards with `"See question"` (styled with an eye/book icon).
+   - Ensure clicking `"See question"` navigates to `questionBank` view with `selectedSession` pre-set.
+3. **Update `QuestionBankView.tsx`**:
+   - Accept `selectedSession?: ExamSession` and `onBack?: () => void`.
+   - When a session is active, lock the view specifically to that session's questions and display subject filter tabs (`ALL`, `Physics`, `Chemistry`, `Mathematics`, `Biology`, `ICT`).
+   - Add a clear `"← Back to Sessions"` header button so the student can easily explore other university papers.
