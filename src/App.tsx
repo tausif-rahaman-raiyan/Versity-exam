@@ -5,13 +5,12 @@ import { QuestionBankView } from './components/QuestionBankView';
 import { StrictExamView } from './components/StrictExamView';
 import { BookmarksView } from './components/BookmarksView';
 import { AnalyticsView } from './components/AnalyticsView';
-import { EXAM_SESSIONS, ExamSession } from './data/questionBank';
+import { EXAM_SESSIONS, ExamSession, Question } from './data/questionBank';
 import { Key, Sparkles, X, CheckCircle, ShieldCheck, ExternalLink, HelpCircle } from 'lucide-react';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<'home' | 'questionBank' | 'exam' | 'bookmarks' | 'analytics'>('home');
   const [selectedSession, setSelectedSession] = useState<ExamSession>(EXAM_SESSIONS[0]);
-  // Default to Dark Navy / Midnight Black as requested
   const [darkMode, setDarkMode] = useState<boolean>(true);
 
   // Helper to read cookie
@@ -72,18 +71,20 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#060913] text-slate-100 transition-colors flex flex-col font-sans selection:bg-sky-500 selection:text-white">
-      <Navbar
-        currentView={currentView}
-        setCurrentView={setCurrentView}
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-        selectedExamTitle={selectedSession.title}
-        onOpenApiKeyModal={() => {
-          setTempKeyInput(customApiKey);
-          setIsApiKeyModalOpen(true);
-        }}
-        hasCustomKey={Boolean(customApiKey)}
-      />
+      {currentView !== 'exam' && (
+        <Navbar
+          currentView={currentView}
+          setCurrentView={setCurrentView}
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          selectedExamTitle={selectedSession.title}
+          onOpenApiKeyModal={() => {
+            setTempKeyInput(customApiKey);
+            setIsApiKeyModalOpen(true);
+          }}
+          hasCustomKey={Boolean(customApiKey)}
+        />
+      )}
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6">
         {currentView === 'home' && (

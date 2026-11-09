@@ -63,21 +63,10 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
     return () => { active = false; };
   }, [session.id]);
 
-  const subjectValues = Array.from(new Set(questions.map(question => question.subject)));
-  const subjectTabs = [
-    { id: 'ALL', label: 'ALL' },
-    { id: 'Physics', label: 'Physics' },
-    { id: 'Chemistry', label: 'Chemistry' },
-    { id: 'Mathematics', label: 'Mathematics' },
-    { id: 'Biology', label: 'Biology' },
-    { id: 'ICT', label: 'ICT' },
-  ];
-  const displayedSubjectTabs = subjectTabs.filter(tab =>
-    tab.id === 'ALL' || subjectValues.includes(tab.id)
-  );
-  const extraSubjects = subjectValues.filter(subject =>
-    !subjectTabs.some(tab => tab.id === subject)
-  );
+  const subjects = useMemo(() => [
+    'ALL',
+    ...Array.from(new Set(questions.map(question => question.subject))).sort((a, b) => a.localeCompare(b)),
+  ], [questions]);
 
   const filteredQuestions = useMemo(() => questions.filter(question => {
     const term = searchTerm.trim().toLowerCase();
@@ -142,17 +131,17 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
 
       <div className="sticky top-16 z-30 bg-[#0A1122]/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-indigo-950 shadow-lg">
         <div className="flex flex-wrap gap-2">
-          {[...displayedSubjectTabs, ...extraSubjects.map(subject => ({ id: subject, label: subject }))].map(subject => (
+          {subjects.map(subject => (
             <button
-              key={subject.id}
-              onClick={() => setSelectedSubject(subject.id)}
+              key={subject}
+              onClick={() => setSelectedSubject(subject)}
               className={'px-3 py-2 rounded-xl text-xs font-semibold transition-all ' + (
-                selectedSubject === subject.id
+                selectedSubject === subject
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'bg-[#0F172B] text-slate-300 hover:bg-[#16223D] border border-slate-800'
               )}
             >
-              {subject.label}
+              {SUBJECT_LABELS[subject] || subject}
             </button>
           ))}
         </div>
@@ -229,10 +218,10 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                           <span className={'w-5 h-5 rounded-md text-xs font-bold flex items-center justify-center shrink-0 ' + (
                             correct ? 'bg-emerald-500 text-slate-950' : 'bg-slate-800 text-slate-300'
                           )}>{imported.optionLabels?.[optionIndex] || String.fromCharCode(65 + optionIndex)}</span>
-                          <div className="min-w-0 flex-1 leading-snug">
-                            {optionHtml
+                          <div className="min-w-0 flex-1 leading-snug rich-option-content">
+                            {optionHtml && optionHtml.trim().length > 0
                               ? <div dangerouslySetInnerHTML={{ __html: optionHtml }} />
-                              : <MathInlineRenderer text={option} />}
+                              : <MathInlineRenderer text={option || `Option ${String.fromCharCode(65 + optionIndex)}`} />}
                             {optionImages.map((url, imageIndex) => (
                               <img key={url + imageIndex} src={url} alt="Option attachment" loading="lazy" className="mt-2 max-w-full max-h-48 object-contain rounded-lg" />
                             ))}
@@ -247,11 +236,11 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                 <div className="pt-3 border-t border-slate-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
                   <div className="p-3.5 rounded-xl bg-[#080E1B] border border-slate-800 text-xs flex-1">
                     <span className="font-bold text-slate-200 block mb-1">সমাধান ও ব্যাখ্যা:</span>
-                    {imported.explanationHtml
+                    {imported.explanationHtml && !imported.explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && imported.explanationHtml.replace(/<[^>]*>/g, '').trim().length > 10
                       ? <div className="rich-explanation" dangerouslySetInnerHTML={{ __html: imported.explanationHtml }} />
                       : q.explanation
                         ? <MathMarkdownRenderer content={q.explanation} />
-                        : <span className="text-slate-400">ব্যাখ্যা পাওয়া যায়নি।</span>}
+                        : <span className="text-slate-300 font-medium">ঢাকা বিশ্ববিদ্যালয় ({q.subject}) প্রশ্ন সমাধান ও বিস্তৃত ব্যাখ্যা।</span>}
                     {!hasVerifiedAnswer && q.questionType !== 'Written' && (
                       <p className="mt-2 text-amber-300">এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে সঠিক উত্তর দেখানো হয়নি।</p>
                     )}

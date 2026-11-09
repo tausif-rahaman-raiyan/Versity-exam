@@ -69,14 +69,14 @@ export const Navbar: React.FC<NavbarProps> = ({
         </nav>
 
         {/* Zone 3: AI Tutor Key & Theme Toggle */}
-        <div className="flex items-center gap-3 shrink-0">
+        <div className="flex items-center gap-2.5 shrink-0">
           <button
             onClick={onOpenApiKeyModal}
             className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#0F172A] hover:bg-[#1E293B] border border-indigo-900/60 text-xs font-semibold text-sky-300 transition-all shadow-sm"
             title="Configure Gemini API Key"
           >
             <Sparkles className="w-3.5 h-3.5 text-sky-400" />
-            <span>AI Tutor (Gemini 3.8)</span>
+            <span className="hidden sm:inline">AI Tutor</span>
             <span className={`w-2 h-2 rounded-full ${hasCustomKey ? 'bg-emerald-400 ring-2 ring-emerald-500/30' : 'bg-sky-400'}`}></span>
           </button>
 

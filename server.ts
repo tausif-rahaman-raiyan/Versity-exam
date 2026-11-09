@@ -71,15 +71,17 @@ async function startServer() {
 
   app.use(express.json());
 
-  // Import image cache: only the original Chorcha image hosts are accepted.
-  // Redirects are revalidated; file size and MIME are checked before writing.
-  app.get('/api/media/localize', async (req, res) => {
+  // Helper function to download and cache a single image locally
+  async function downloadAndCacheImage(rawUrl: string): Promise<string | null> {
     try {
-      const rawUrl = String(req.query.url || '');
+      if (!rawUrl || typeof rawUrl !== 'string') return null;
       let target = new URL(rawUrl);
       const allowedHosts = new Set(['assets.chorcha.net', 'chorcha.net']);
       if (target.protocol !== 'https:' || !allowedHosts.has(target.hostname.toLowerCase())) {
-        return res.status(400).json({ error: 'Image host is not allowed' });
+        return null;
+      }
+      if (target.pathname.includes('explanation_icon.svg')) {
+        return null; // Skip decorative icons
       }
 
       let response: Response | null = null;
@@ -87,26 +89,24 @@ async function startServer() {
         response = await fetch(target, { redirect: 'manual', signal: AbortSignal.timeout(12000) });
         if ([301, 302, 303, 307, 308].includes(response.status)) {
           const location = response.headers.get('location');
-          if (!location || redirect === 3) return res.status(502).json({ error: 'Too many image redirects' });
+          if (!location || redirect === 3) return null;
           target = new URL(location, target);
           if (target.protocol !== 'https:' || !allowedHosts.has(target.hostname.toLowerCase())) {
-            return res.status(400).json({ error: 'Redirect host is not allowed' });
+            return null;
           }
           continue;
         }
         break;
       }
 
-      if (!response || !response.ok) return res.status(502).json({ error: 'Could not fetch image source' });
+      if (!response || !response.ok) return null;
       const mime = (response.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
       const supported = new Set(['image/png', 'image/jpeg', 'image/webp', 'image/gif', 'image/svg+xml']);
-      if (!supported.has(mime)) return res.status(415).json({ error: 'Unsupported image type' });
-      const declaredSize = Number(response.headers.get('content-length') || 0);
+      if (!supported.has(mime)) return null;
       const maxBytes = 8 * 1024 * 1024;
-      if (declaredSize > maxBytes) return res.status(413).json({ error: 'Image is too large' });
 
       let bytes = Buffer.from(await response.arrayBuffer());
-      if (bytes.length === 0 || bytes.length > maxBytes) return res.status(413).json({ error: 'Image is empty or too large' });
+      if (bytes.length === 0 || bytes.length > maxBytes) return null;
       let extension = mime === 'image/jpeg' ? 'jpg' : mime === 'image/svg+xml' ? 'svg' : mime.split('/')[1];
       if (mime === 'image/svg+xml') {
         let svg = bytes.toString('utf8');
@@ -126,10 +126,178 @@ async function startServer() {
       await writeFile(path.join(directory, fileName), bytes, { flag: 'wx' }).catch(async (error: any) => {
         if (error?.code !== 'EEXIST') throw error;
       });
-      return res.json({ url: '/assets/imported/' + fileName, cached: true });
+      return '/assets/imported/' + fileName;
+    } catch {
+      return null;
+    }
+  }
+
+  // Single Image Localizer API
+  app.get('/api/media/localize', async (req, res) => {
+    try {
+      const rawUrl = String(req.query.url || '');
+      const localUrl = await downloadAndCacheImage(rawUrl);
+      if (!localUrl) {
+        return res.status(400).json({ error: 'Could not localize image or host disallowed' });
+      }
+      return res.json({ url: localUrl, cached: true });
     } catch (error: any) {
       console.error('Image localization failed:', error?.message || error);
       return res.status(502).json({ error: 'Image localization failed' });
+    }
+  });
+
+  // Batch Image Localizer API
+  app.post('/api/media/localize-batch', async (req, res) => {
+    try {
+      const { urls } = req.body;
+      if (!Array.isArray(urls)) {
+        return res.status(400).json({ error: 'urls array is required' });
+      }
+      const uniqueUrls = [...new Set(urls.filter(u => typeof u === 'string' && u.trim()))];
+      const mappings: Record<string, string> = {};
+
+      await Promise.all(uniqueUrls.map(async (url) => {
+        const local = await downloadAndCacheImage(url);
+        if (local) {
+          mappings[url] = local;
+        }
+      }));
+
+      return res.json({ mappings, totalProcessed: uniqueUrls.length, downloaded: Object.keys(mappings).length });
+    } catch (error: any) {
+      console.error('Batch localization failed:', error?.message || error);
+      return res.status(500).json({ error: 'Batch localization failed' });
+    }
+  });
+
+  // Chorcha Exam JSON Importer Endpoint
+  app.post('/api/json/import', async (req, res) => {
+    try {
+      const examData = req.body;
+      if (!examData || typeof examData !== 'object' || !Array.isArray(examData.questions)) {
+        return res.status(400).json({ error: 'Invalid exam JSON schema. "questions" array is required.' });
+      }
+
+      const jsonStr = JSON.stringify(examData);
+      const imageUrlRegex = /https?:\/\/(?:assets\.chorcha\.net|chorcha\.net)\/[^\s"'>\\]+/gi;
+      const matchedUrls = jsonStr.match(imageUrlRegex) || [];
+      const uniqueImageUrls = [...new Set(matchedUrls.map(u => u.replace(/\\/g, '')))].filter(u => !u.includes('explanation_icon.svg'));
+
+      const urlReplacements: Record<string, string> = {};
+      let downloadedImagesCount = 0;
+
+      await Promise.all(uniqueImageUrls.map(async (url) => {
+        const local = await downloadAndCacheImage(url);
+        if (local) {
+          urlReplacements[url] = local;
+          downloadedImagesCount++;
+        }
+      }));
+
+      let processedJsonStr = jsonStr;
+      for (const [orig, local] of Object.entries(urlReplacements)) {
+        processedJsonStr = processedJsonStr.split(orig).join(local);
+      }
+
+      const processedExam = JSON.parse(processedJsonStr);
+      let mcqCount = 0;
+      let writtenCount = 0;
+      let verifiedAnswersCount = 0;
+      let unverifiedAnswersCount = 0;
+      let missingExplanationsCount = 0;
+
+      processedExam.questions = processedExam.questions.map((q: any) => {
+        const isWritten = (processedExam.exam_type || '').toLowerCase() === 'written' || !q.options || q.options.length === 0;
+        if (isWritten) {
+          writtenCount++;
+        } else {
+          mcqCount++;
+        }
+
+        if (!q.explanation && !q.explanation_html) {
+          missingExplanationsCount++;
+        }
+
+        let isVerified = false;
+        let finalAnswerIndex = -1;
+
+        if (!isWritten && Array.isArray(q.options)) {
+          const explicit = q.correct_answer;
+          const options = q.options;
+
+          const flagged = options
+            .map((opt: any, i: number) => (typeof opt === 'object' && opt.is_correct ? i : -1))
+            .filter((i: number) => i >= 0);
+
+          let expIndex = -1;
+          if (explicit && typeof explicit === 'object') {
+            const lbl = (explicit.label || '').trim().toLowerCase().replace(/[.)\s]/g, '');
+            expIndex = options.findIndex((opt: any) => {
+              const optLbl = (typeof opt === 'object' ? opt.label : '').trim().toLowerCase().replace(/[.)\s]/g, '');
+              return optLbl === lbl;
+            });
+          } else if (typeof explicit === 'number' && Number.isInteger(explicit)) {
+            if (explicit >= 0 && explicit < options.length) expIndex = explicit;
+          } else if (typeof explicit === 'string') {
+            const cleanStr = explicit.trim().toLowerCase().replace(/[.)\s]/g, '');
+            expIndex = options.findIndex((opt: any) => {
+              const optLbl = (typeof opt === 'object' ? opt.label : '').trim().toLowerCase().replace(/[.)\s]/g, '');
+              return optLbl === cleanStr;
+            });
+          }
+
+          if (expIndex >= 0 && flagged.length === 0) {
+            finalAnswerIndex = expIndex;
+            isVerified = true;
+          } else if (expIndex >= 0 && flagged.length === 1 && flagged[0] === expIndex) {
+            finalAnswerIndex = expIndex;
+            isVerified = true;
+          } else if (expIndex < 0 && flagged.length === 1) {
+            finalAnswerIndex = flagged[0];
+            isVerified = true;
+          } else if (expIndex >= 0 && flagged.length > 0 && flagged.includes(expIndex)) {
+            finalAnswerIndex = expIndex;
+            isVerified = true;
+          }
+
+          if (isVerified) {
+            verifiedAnswersCount++;
+          } else {
+            unverifiedAnswersCount++;
+          }
+        }
+
+        return {
+          ...q,
+          verifiedAnswerIndex: finalAnswerIndex,
+          isAnswerVerified: isVerified,
+        };
+      });
+
+      const report = {
+        totalQuestions: processedExam.questions.length,
+        declaredCount: processedExam.question_count || processedExam.questions.length,
+        mcqCount,
+        writtenCount,
+        verifiedAnswersCount,
+        unverifiedAnswersCount,
+        totalImagesFound: uniqueImageUrls.length,
+        downloadedImagesCount,
+        missingExplanationsCount,
+        university: processedExam.university || 'DU',
+        session: processedExam.exam_year || '25-26',
+        examTitle: processedExam.exam_title || 'Imported Varsity Admission Exam',
+      };
+
+      return res.json({
+        success: true,
+        exam: processedExam,
+        report,
+      });
+    } catch (error: any) {
+      console.error('JSON Exam Import Failed:', error);
+      return res.status(500).json({ error: error.message || 'Failed to import exam JSON' });
     }
   });
 

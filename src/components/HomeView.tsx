@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { EXAM_SESSIONS, ExamSession } from '../data/questionBank';
-import { Search, BookOpen, Clock, ShieldCheck, CheckCircle2, Award, Sparkles, Filter, ChevronRight, Key, GraduationCap } from 'lucide-react';
+import { Search, BookOpen, Clock, Key, GraduationCap, Eye, Upload, Sparkles } from 'lucide-react';
 
 interface HomeViewProps {
   onSelectExam: (session: ExamSession, mode: 'exam' | 'qb') => void;
@@ -55,20 +55,20 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSelectExam, setCurrentView
           </p>
 
           {/* Quick Search & AI Tutor Actions */}
-          <div className="max-w-2xl mx-auto flex flex-col sm:flex-row gap-3 pt-3">
+          <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-3 pt-3">
             <div className="relative flex-1">
               <Search className="absolute left-4 top-3.5 w-4 h-4 text-slate-400" />
               <input
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                placeholder="সেশন খুঁজুন (যেমন: 24-25, 23-24, DU Written, RU C Unit, JU A Unit)..."
+                placeholder="সেশন খুঁজুন (যেমন: 25-26, 24-25, DU MCQ, RU C Unit, JU A Unit)..."
                 className="w-full pl-11 pr-4 py-3 bg-[#0B1426] border border-slate-700/80 rounded-xl text-white placeholder-slate-400 focus:outline-none focus:border-sky-500 text-xs shadow-inner"
               />
             </div>
             <button
               onClick={() => setCurrentView('exam')}
-              className="px-6 py-3 bg-gradient-to-r from-indigo-600 to-sky-600 hover:from-indigo-500 hover:to-sky-500 text-white font-bold rounded-xl shadow-lg shadow-indigo-600/30 transition-all flex items-center justify-center gap-2 text-xs shrink-0"
+              className="px-5 py-3 bg-gradient-to-r from-indigo-600 to-sky-600 hover:from-indigo-500 hover:to-sky-500 text-white font-bold rounded-xl shadow-lg shadow-indigo-600/30 transition-all flex items-center justify-center gap-2 text-xs shrink-0"
             >
               <Clock className="w-4 h-4" /> Start Strict Exam
             </button>
@@ -102,39 +102,15 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSelectExam, setCurrentView
         </div>
       </section>
 
-      {/* University Selection Tabs */}
+      {/* University Selection Section */}
       <div className="space-y-4">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <div>
-            <h2 className="text-lg font-bold text-white flex items-center gap-2">
-              <GraduationCap className="w-5 h-5 text-sky-400" /> বিশ্ববিদ্যালয় নির্বাচন করুন (Select University)
-            </h2>
-            <p className="text-xs text-slate-400 mt-0.5">
-              প্রতিটি বিশ্ববিদ্যালয়ের গত ১০ বছরের পৃথক প্রশ্ন ব্যাংক এবং রিয়েল এক্সাম পোর্টাল।
-            </p>
-          </div>
-
-          {/* Type Filter */}
-          <div className="flex items-center gap-1 bg-[#0B1426] p-1 rounded-xl border border-slate-800 self-start">
-            <button
-              onClick={() => setSelectedType('ALL')}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors ${selectedType === 'ALL' ? 'bg-sky-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}
-            >
-              All
-            </button>
-            <button
-              onClick={() => setSelectedType('MCQ')}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors ${selectedType === 'MCQ' ? 'bg-sky-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}
-            >
-              MCQ
-            </button>
-            <button
-              onClick={() => setSelectedType('Written')}
-              className={`px-3 py-1.5 text-xs font-semibold rounded-lg transition-colors ${selectedType === 'Written' ? 'bg-sky-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}`}
-            >
-              Written
-            </button>
-          </div>
+        <div>
+          <h2 className="text-lg font-bold text-white flex items-center gap-2">
+            <GraduationCap className="w-5 h-5 text-sky-400" /> বিশ্ববিদ্যালয় নির্বাচন করুন (Select University)
+          </h2>
+          <p className="text-xs text-slate-400 mt-0.5">
+            প্রতিটি বিশ্ববিদ্যালয়ের গত ১০ বছরের পৃথক প্রশ্ন ব্যাংক এবং রিয়েল এক্সাম পোর্টাল।
+          </p>
         </div>
 
         {/* 5 Distinct University Cards / Tabs */}
@@ -167,6 +143,43 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSelectExam, setCurrentView
               </button>
             );
           })}
+        </div>
+
+        {/* Question Format Filter (All | MCQ | Written) placed right after University Selection Cards */}
+        <div className="flex items-center justify-between pt-2">
+          <span className="text-xs text-slate-400 font-medium">প্রশ্ন ধরন নির্বাচন করুন (Filter Paper Format):</span>
+          <div className="flex items-center gap-1.5 bg-[#0B1426] p-1.5 rounded-xl border border-slate-800">
+            <button
+              onClick={() => setSelectedType('ALL')}
+              className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all ${
+                selectedType === 'ALL'
+                  ? 'bg-sky-600 text-white shadow-md shadow-sky-600/30'
+                  : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
+              }`}
+            >
+              All
+            </button>
+            <button
+              onClick={() => setSelectedType('MCQ')}
+              className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all ${
+                selectedType === 'MCQ'
+                  ? 'bg-sky-600 text-white shadow-md shadow-sky-600/30'
+                  : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
+              }`}
+            >
+              MCQ
+            </button>
+            <button
+              onClick={() => setSelectedType('Written')}
+              className={`px-3.5 py-1.5 text-xs font-bold rounded-lg transition-all ${
+                selectedType === 'Written'
+                  ? 'bg-amber-600 text-white shadow-md shadow-amber-600/30'
+                  : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
+              }`}
+            >
+              Written
+            </button>
+          </div>
         </div>
       </div>
 
@@ -227,9 +240,9 @@ export const HomeView: React.FC<HomeViewProps> = ({ onSelectExam, setCurrentView
               <div className="flex items-center gap-2 mt-5 pt-3 border-t border-slate-800/80">
                 <button
                   onClick={() => onSelectExam(session, 'qb')}
-                  className="flex-1 py-2 px-3 bg-[#0F192E] hover:bg-[#162444] text-slate-200 rounded-xl font-medium text-xs transition-colors flex items-center justify-center gap-1.5 border border-slate-700/60"
+                  className="flex-1 py-2 px-3 bg-[#0F192E] hover:bg-[#162444] text-sky-300 rounded-xl font-semibold text-xs transition-colors flex items-center justify-center gap-1.5 border border-sky-900/40 hover:border-sky-500/50"
                 >
-                  <BookOpen className="w-3.5 h-3.5 text-slate-400" /> See question
+                  <Eye className="w-3.5 h-3.5 text-sky-400" /> See question
                 </button>
                 <button
                   onClick={() => onSelectExam(session, 'exam')}

@@ -3,7 +3,6 @@ import { RU_QUESTIONS } from './ruQuestions';
 import { JU_QUESTIONS } from './juQuestions';
 import { CU_QUESTIONS } from './cuQuestions';
 import { GST_QUESTIONS } from './gstQuestions';
-import { loadQuestionsForSession } from './sessionQuestionLoader';
 
 export interface Question {
   id: string;
@@ -52,345 +51,366 @@ export const EXAM_SESSIONS: ExamSession[] = [
   // ===================== DHAKA UNIVERSITY (DU) =====================
   {
     id: 'du-25-26',
-    title: 'DU Science Unit Admission Test (2025-26)',
+    title: 'DU 25-26 MCQ',
     university: 'DU',
     session: '25-26',
-    durationMinutes: 90,
+    durationMinutes: 45,
     totalQuestions: 90,
     totalMarks: 90,
-    description: 'DU 25-26 MCQ: ৯০টি সংরক্ষিত প্রশ্ন, ৬টি বিষয়। JSON answer key ও image metadata সহ.',
+    description: 'DU 25-26 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
     questionType: 'MCQ'
+  },
+  {
+    id: 'du-25-26-written',
+    title: 'DU A 25-26 Written',
+    university: 'DU',
+    session: '25-26',
+    durationMinutes: 45,
+    totalQuestions: 22,
+    totalMarks: 55,
+    description: 'DU A 25-26 Written: ৪৫ মিনিট, ২২টি প্রশ্ন, মোট ৫৫ মার্কস।',
+    questionType: 'Written'
   },
   {
     id: 'du-24-25',
-    title: 'DU Science Unit Admission Test (2024-25)',
+    title: 'DU 24-25 MCQ',
     university: 'DU',
     session: '24-25',
-    durationMinutes: 90,
+    durationMinutes: 45,
     totalQuestions: 90,
     totalMarks: 90,
-    description: 'DU 24-25 MCQ: ৯০টি সংরক্ষিত প্রশ্ন, ৬টি বিষয়। (-০.২৫ নেগেটিভ মার্কিং)।',
+    description: 'DU 24-25 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
     questionType: 'MCQ'
+  },
+  {
+    id: 'du-24-25-written',
+    title: 'DU 24-25 Written',
+    university: 'DU',
+    session: '24-25',
+    durationMinutes: 45,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 24-25 Written: ৪৫ মিনিট, ২২টি লিখিত প্রশ্ন, মোট ৪০ মার্কস।',
+    questionType: 'Written'
   },
   {
     id: 'du-23-24',
-    title: 'DU Science Unit Admission Test (2023-24)',
+    title: 'DU 23-24 MCQ',
     university: 'DU',
     session: '23-24',
-    durationMinutes: 90,
+    durationMinutes: 45,
     totalQuestions: 90,
     totalMarks: 90,
-    description: 'DU 23-24 MCQ: ৯০টি সংরক্ষিত প্রশ্ন, ৬টি বিষয়।',
+    description: 'DU 23-24 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
     questionType: 'MCQ'
+  },
+  {
+    id: 'du-23-24-written',
+    title: 'DU 23-24 Written',
+    university: 'DU',
+    session: '23-24',
+    durationMinutes: 30,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 23-24 Written: ৩০ মিনিট, ২২টি প্রশ্ন, মোট ৪০ মার্কস।',
+    questionType: 'Written'
   },
   {
     id: 'du-22-23',
-    title: 'DU Science Unit Admission Test (2022-23)',
+    title: 'DU 22-23 MCQ',
     university: 'DU',
     session: '22-23',
-    durationMinutes: 90,
-    totalQuestions: 100,
-    totalMarks: 100,
-    description: 'DU 2022-23 comprehensive science unit question paper.',
+    durationMinutes: 45,
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU 22-23 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
     questionType: 'MCQ'
   },
   {
+    id: 'du-22-23-written',
+    title: 'DU 22-23 Written',
+    university: 'DU',
+    session: '22-23',
+    durationMinutes: 45,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 22-23 Written: ৪৫ মিনিট, ২২টি লিখিত প্রশ্ন, মোট ৪০ মার্কস।',
+    questionType: 'Written'
+  },
+  {
     id: 'du-21-22',
-    title: 'DU Science Unit Admission Test (2021-22)',
+    title: 'DU 21-22 MCQ',
     university: 'DU',
     session: '21-22',
-    durationMinutes: 90,
-    totalQuestions: 100,
-    totalMarks: 100,
-    description: 'DU 2021-22 science unit questions and answer keys.',
+    durationMinutes: 45,
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU 21-22 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    questionType: 'MCQ'
+  },
+  {
+    id: 'du-21-22-written',
+    title: 'DU 21-22 Written',
+    university: 'DU',
+    session: '21-22',
+    durationMinutes: 30,
+    totalQuestions: 22,
+    totalMarks: 40,
+    description: 'DU 21-22 Written: ৩০ মিনিট, ২২টি প্রশ্ন, মোট ৪০ মার্কস।',
+    questionType: 'Written'
+  },
+  {
+    id: 'du-20-21-mcq',
+    title: 'DU 20-21 MCQ',
+    university: 'DU',
+    session: '20-21',
+    durationMinutes: 45,
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU 20-21 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-20-21-written',
-    title: 'DU 20-21 Written Admission Test',
+    title: 'DU 20-21 Written',
     university: 'DU',
     session: '20-21',
     durationMinutes: 30,
     totalQuestions: 24,
     totalMarks: 40,
-    description: 'DU 20-21 Written Exam: ৩০ মিনিট, ২৪ টি প্রশ্ন, মোট ৪০ মার্কস।',
+    description: 'DU 20-21 Written: ৩০ মিনিট, ২৪টি লিখিত প্রশ্ন, মোট ৪০ মার্কস।',
     questionType: 'Written'
   },
   {
-    id: 'du-20-21-mcq',
-    title: 'DU Science Unit Admission Test (2020-21)',
+    id: 'du-19-20',
+    title: 'DU A 19-20 MCQ',
     university: 'DU',
-    session: '20-21',
+    session: '19-20',
     durationMinutes: 45,
-    totalQuestions: 60,
-    totalMarks: 60,
-    description: 'DU 20-21 MCQ Exam: ৪৫ মিনিট, ৬০ টি প্রশ্ন, মোট ৬০ মার্কস।',
+    totalQuestions: 90,
+    totalMarks: 90,
+    description: 'DU A 19-20 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
     questionType: 'MCQ'
   },
   {
-    id: 'du-19-20',
-    title: 'DU Science Unit Admission Test (2019-20)',
+    id: 'du-19-20-written',
+    title: 'DU 19-20 Written',
     university: 'DU',
     session: '19-20',
-    durationMinutes: 90,
-    totalQuestions: 100,
-    totalMarks: 100,
-    description: 'DU 2019-20 science unit question paper.',
-    questionType: 'MCQ'
+    durationMinutes: 30,
+    totalQuestions: 24,
+    totalMarks: 50.5,
+    description: 'DU 19-20 Written: ৩০ মিনিট, ২৪টি প্রশ্ন, মোট ৫০.৫ মার্কস।',
+    questionType: 'Written'
   },
   {
     id: 'du-18-19',
-    title: 'DU Science Unit Admission Test (2018-19)',
+    title: 'DU 18-19',
     university: 'DU',
     session: '18-19',
     durationMinutes: 90,
     totalQuestions: 176,
     totalMarks: 120,
-    description: 'DU 18-19: ১ ঘন্টা ৩০ মিনিট, ১৭৬ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 18-19: ১ ঘন্টা ৩০ মিনিট, ১৭৬টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-17-18',
-    title: 'DU Science Unit Admission Test (2017-18)',
+    title: 'DU 17-18',
     university: 'DU',
     session: '17-18',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 17-18: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 17-18: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-16-17',
-    title: 'DU Science Unit Admission Test (2016-17)',
+    title: 'DU 16-17',
     university: 'DU',
     session: '16-17',
     durationMinutes: 90,
     totalQuestions: 180,
-    totalMarks: 120,
-    description: 'DU 16-17: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    totalMarks: 59,
+    description: 'DU 16-17: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ৫৯ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-15-16',
-    title: 'DU Science Unit Admission Test (2015-16)',
+    title: 'DU 15-16',
     university: 'DU',
     session: '15-16',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 119,
-    description: 'DU 15-16: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১১৯ মার্কস।',
+    description: 'DU 15-16: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১১৯ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-14-15',
-    title: 'DU Science Unit Admission Test (2014-15)',
+    title: 'DU 14-15',
     university: 'DU',
     session: '14-15',
     durationMinutes: 90,
-    totalQuestions: 167,
-    totalMarks: 120,
-    description: 'DU 14-15: ১৬৭টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
+    totalQuestions: 180,
+    totalMarks: 119,
+    description: 'DU 14-15: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১১৯ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-13-14',
-    title: 'DU Science Unit Admission Test (2013-14)',
+    title: 'DU 13-14',
     university: 'DU',
     session: '13-14',
     durationMinutes: 90,
-    totalQuestions: 170,
+    totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 13-14: ১৭০টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 13-14: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-12-13',
-    title: 'DU Science Unit Admission Test (2012-13)',
+    title: 'DU 12-13',
     university: 'DU',
     session: '12-13',
     durationMinutes: 90,
-    totalQuestions: 169,
+    totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 12-13: ১৬৯টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 12-13: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-11-12',
-    title: 'DU Science Unit Admission Test (2011-12)',
+    title: 'DU 11-12',
     university: 'DU',
     session: '11-12',
     durationMinutes: 90,
-    totalQuestions: 168,
+    totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 11-12: ১৬৮টি সংরক্ষিত প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 11-12: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-10-11',
-    title: 'DU Science Unit Admission Test (2010-11)',
+    title: 'DU 10-11',
     university: 'DU',
     session: '10-11',
     durationMinutes: 90,
     totalQuestions: 180,
-    totalMarks: 120,
-    description: 'DU 10-11: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    totalMarks: 119,
+    description: 'DU 10-11: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১১৯ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-09-10',
-    title: 'DU Science Unit Admission Test (2009-10)',
+    title: 'DU 09-10',
     university: 'DU',
     session: '09-10',
     durationMinutes: 90,
     totalQuestions: 180,
-    totalMarks: 173,
-    description: 'DU 09-10: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১৭৩ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 09-10: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ৬০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-08-09',
-    title: 'DU Science Unit Admission Test (2008-09)',
+    title: 'DU 08-09',
     university: 'DU',
     session: '08-09',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 173,
-    description: 'DU 08-09: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১৭৩ মার্কস।',
+    description: 'DU 08-09: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১৭৩ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-07-08',
-    title: 'DU Science Unit Admission Test (2007-08)',
+    title: 'DU 07-08',
     university: 'DU',
     session: '07-08',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 119,
-    description: 'DU 07-08: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১১৯ মার্কস।',
+    description: 'DU 07-08: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১১৯ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-06-07',
-    title: 'DU Science Unit Admission Test (2006-07)',
+    title: 'DU 06-07',
     university: 'DU',
     session: '06-07',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 06-07: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 06-07: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-05-06',
-    title: 'DU Science Unit Admission Test (2005-06)',
+    title: 'DU 05-06',
     university: 'DU',
     session: '05-06',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 05-06: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 05-06: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-04-05',
-    title: 'DU Science Unit Admission Test (2004-05)',
+    title: 'DU 04-05',
     university: 'DU',
     session: '04-05',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 120,
-    description: 'DU 04-05: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১২০ মার্কস।',
+    description: 'DU 04-05: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১২০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-03-04',
-    title: 'DU Science Unit Admission Test (2003-04)',
+    title: 'DU 03-04',
     university: 'DU',
     session: '03-04',
     durationMinutes: 90,
     totalQuestions: 180,
     totalMarks: 119,
-    description: 'DU 03-04: ১ ঘন্টা ৩০ মিনিট, ১৮০ টি প্রশ্ন, মোট ১১৯ মার্কস।',
+    description: 'DU 03-04: ১ ঘন্টা ৩০ মিনিট, ১৮০টি প্রশ্ন, মোট ১১৯ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-02-03',
-    title: 'DU Science Unit Admission Test (2002-03)',
+    title: 'DU 02-03',
     university: 'DU',
     session: '02-03',
     durationMinutes: 90,
     totalQuestions: 150,
     totalMarks: 100,
-    description: 'DU 02-03: ১ ঘন্টা ৩০ মিনিট, ১৫০ টি প্রশ্ন, মোট ১০০ মার্কস।',
+    description: 'DU 02-03: ১ ঘন্টা ৩০ মিনিট, ১৫০টি প্রশ্ন, মোট ১০০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-01-02',
-    title: 'DU Science Unit Admission Test (2001-02)',
+    title: 'DU 01-02',
     university: 'DU',
     session: '01-02',
     durationMinutes: 90,
     totalQuestions: 150,
     totalMarks: 100,
-    description: 'DU 01-02: ১ ঘন্টা ৩০ মিনিট, ১৫০ টি প্রশ্ন, মোট ১০০ মার্কস।',
+    description: 'DU 01-02: ১ ঘন্টা ৩০ মিনিট, ১৫০টি প্রশ্ন, মোট ১০০ মার্কস।',
     questionType: 'MCQ'
   },
   {
     id: 'du-00-01',
-    title: 'DU Science Unit Admission Test (2000-01)',
+    title: 'DU 00-01',
     university: 'DU',
     session: '00-01',
     durationMinutes: 90,
-    totalQuestions: 138,
+    totalQuestions: 150,
     totalMarks: 100,
-    description: 'DU 00-01: ১৩৮টি সংরক্ষিত প্রশ্ন, মোট ১০০ মার্কস।',
+    description: 'DU 00-01: ১ ঘন্টা ৩০ মিনিট, ১৫০টি প্রশ্ন, মোট ১০০ মার্কস।',
     questionType: 'MCQ'
-  },
-
-  {
-    id: 'du-22-23-written',
-    title: 'DU 22-23 Written Admission Test',
-    university: 'DU',
-    session: '22-23',
-    durationMinutes: 30,
-    totalQuestions: 22,
-    totalMarks: 40,
-    description: 'DU 22-23 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
-    questionType: 'Written'
-  },
-  {
-    id: 'du-23-24-written',
-    title: 'DU 23-24 Written Admission Test',
-    university: 'DU',
-    session: '23-24',
-    durationMinutes: 30,
-    totalQuestions: 22,
-    totalMarks: 40,
-    description: 'DU 23-24 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
-    questionType: 'Written'
-  },
-  {
-    id: 'du-24-25-written',
-    title: 'DU 24-25 Written Admission Test',
-    university: 'DU',
-    session: '24-25',
-    durationMinutes: 30,
-    totalQuestions: 22,
-    totalMarks: 40,
-    description: 'DU 24-25 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
-    questionType: 'Written'
-  },
-  {
-    id: 'du-25-26-written',
-    title: 'DU 25-26 Written Admission Test',
-    university: 'DU',
-    session: '25-26',
-    durationMinutes: 30,
-    totalQuestions: 22,
-    totalMarks: 40,
-    description: 'DU 25-26 Written: ২২টি সংরক্ষিত লিখিত প্রশ্ন। সময় ও নম্বর প্রয়োজনে সম্পাদনা করুন।',
-    questionType: 'Written'
   },
 
   // ===================== RAJSHAHI UNIVERSITY (RU) =====================
@@ -851,14 +871,14 @@ export const MASTER_QUESTIONS: Question[] = [
   ...GST_QUESTIONS,
 ];
 
-// Async loader for exact university/session JSON. Keeps the legacy synchronous
-// sample data for components that still need it, without mixing exam sessions.
-export async function getQuestionsForSessionAsync(sessionId: string): Promise<Question[]> {
-  const session = EXAM_SESSIONS.find(item => item.id === sessionId);
-  if (!session) return [];
-  return loadQuestionsForSession(session);
+// Helper to sanitize question text by removing any accidental [Uni Session] prefix or leading numbering
+export function sanitizeQuestionText(raw: string): string {
+  return raw
+    .replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '')
+    .trim();
 }
 
+// Helper to generate full exam paper for any university session
 export function getQuestionsForSession(sessionId: string): Question[] {
   const session = EXAM_SESSIONS.find(item => item.id === sessionId);
   if (!session) return [];

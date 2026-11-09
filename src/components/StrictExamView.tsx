@@ -21,7 +21,6 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
   const [questionLoadError, setQuestionLoadError] = useState('');
-  const [selectedSubject, setSelectedSubject] = useState('ALL');
   // selectedAnswers: questionId -> optionIndex (0-3)
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
   // lockedQuestions: set of question IDs that have been clicked and permanently locked
@@ -42,7 +41,6 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
     setIsLoadingQuestions(true);
     setQuestionLoadError('');
     setQuestions([]);
-    setSelectedSubject('ALL');
     setTimeLeft(examSession.durationMinutes * 60);
     setSelectedAnswers({});
     setLockedQuestions(new Set());
@@ -118,6 +116,9 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   let unverifiedCount = 0;
 
   questions.forEach(q => {
+    if (q.questionType === 'Written' || q.options.length === 0) {
+      return; // Skip MCQ calculations for written questions
+    }
     const ans = selectedAnswers[q.id];
     if (ans === undefined) {
       unattemptedCount++;
@@ -130,13 +131,10 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
     }
   });
 
-  const availableSubjects = ['ALL', ...Array.from(new Set(questions.map(question => question.subject)))];
-  const displayedQuestions = selectedSubject === 'ALL'
-    ? questions
-    : questions.filter(question => question.subject === selectedSubject);
-
   const negativePenalty = examSession.university === 'JU' ? 0.20 : 0.25;
-  const totalMarksEarned = Math.max(0, (correctCount * 1) - (incorrectCount * negativePenalty));
+  const mcqQuestionCount = questions.filter(q => q.questionType !== 'Written' && q.options.length > 0).length;
+  const markPerQuestion = mcqQuestionCount > 0 ? (examSession.totalMarks / mcqQuestionCount) : 1;
+  const totalMarksEarned = Math.max(0, (correctCount * markPerQuestion) - (incorrectCount * negativePenalty * markPerQuestion));
 
   const toggleAiTutor = (qId: string) => {
     setExpandedAiQuestionId(prev => (prev === qId ? null : qId));
@@ -144,8 +142,8 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
 
   return (
     <div className="max-w-5xl mx-auto space-y-6 pb-24 text-slate-100">
-      {/* Sticky Real-Time Exam Control Bar */}
-      <div className="sticky top-16 z-40 bg-[#070C18]/95 backdrop-blur-md border border-indigo-950/90 p-4 rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
+      {/* Sticky Real-Time Exam Control Bar (Flush top-0 because Navbar is hidden in exam mode) */}
+      <div className="sticky top-0 z-40 bg-[#070C18]/95 backdrop-blur-md border border-indigo-950/90 p-4 rounded-b-2xl sm:rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <button
             onClick={onBack}
@@ -220,7 +218,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                 <span className="text-xs text-slate-400">/ {examSession.totalMarks} Marks</span>
               </span>
               <span className="text-[11px] text-slate-400">
-                (+1 সঠিক, -{negativePenalty} ভুল উত্তর নেগেটিভ মার্কস)
+                (+{markPerQuestion.toFixed(2)} সঠিক, -{(negativePenalty * markPerQuestion).toFixed(2)} ভুল উত্তর নেগেটিভ মার্কস)
               </span>
             </div>
           </div>
@@ -262,33 +260,15 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
         </div>
       </div>
 
-      {/* Exam paper subject navigation */}
-      {!isLoadingQuestions && questions.length > 0 && (
-        <div className="sticky top-16 z-30 flex flex-wrap gap-2 rounded-2xl border border-indigo-950 bg-[#0A1122]/95 p-3 backdrop-blur-md">
-          {availableSubjects.map(subject => (
-            <button
-              key={subject}
-              type="button"
-              onClick={() => setSelectedSubject(subject)}
-              className={selectedSubject === subject
-                ? 'rounded-xl bg-indigo-600 px-3 py-2 text-xs font-semibold text-white'
-                : 'rounded-xl border border-slate-800 bg-[#0F172B] px-3 py-2 text-xs font-semibold text-slate-300'}
-            >
-              {subject}
-            </button>
-          ))}
-          <span className="self-center text-xs text-slate-400">{displayedQuestions.length} questions</span>
-        </div>
-      )}
-
       {/* ALL QUESTIONS IN ONE PAGE */}
       {!isLoadingQuestions && questions.length > 0 && <div className="space-y-5">
-        {displayedQuestions.map((q, idx) => {
+        {questions.map((q, idx) => {
           const imported = q as ImportedQuestion;
           const answerIsVerified = imported.answerVerified !== false && q.correctAnswer >= 0;
           const userSelected = selectedAnswers[q.id];
           const isLocked = lockedQuestions.has(q.id);
           const isBookmarked = bookmarks.has(q.id);
+          const isWritten = q.questionType === 'Written' || q.options.length === 0;
 
           return (
             <div
@@ -298,7 +278,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                 isSubmitted
                   ? userSelected === q.correctAnswer
                     ? 'border-emerald-500/60 bg-emerald-950/10'
-                    : answerIsVerified && userSelected !== undefined
+                    : userSelected !== undefined
                     ? 'border-red-500/60 bg-red-950/10'
                     : 'border-slate-800'
                   : isLocked
@@ -315,7 +295,12 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                   <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-[#070D1A] text-slate-300 border border-slate-800">
                     {q.subject}
                   </span>
-                  {isLocked && !isSubmitted && (
+                  {isWritten && (
+                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-950/80 text-amber-300 border border-amber-800/60">
+                      Written Question
+                    </span>
+                  )}
+                  {isLocked && !isSubmitted && !isWritten && (
                     <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-950/70 text-amber-300 flex items-center gap-1 border border-amber-800/60">
                       <Lock className="w-3 h-3" /> Locked 🔒
                     </span>
@@ -345,62 +330,80 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                 <img key={url + imageIndex} src={url} alt="Question attachment" loading="lazy" className="mb-3 max-w-full max-h-80 object-contain rounded-xl" />
               ))}
 
-              {/* Options */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                {q.options.map((opt, optIdx) => {
-                  const isSelected = userSelected === optIdx;
-                  const isCorrectOpt = answerIsVerified && optIdx === q.correctAnswer;
-                  const optionHtml = imported.optionHtmls?.[optIdx];
-                  const optionImages = imported.optionImageUrls?.[optIdx] || [];
+              {/* Options or Written Question Notice */}
+              {isWritten ? (
+                <div className="p-4 rounded-xl bg-[#080E1C] border border-amber-900/40 text-amber-300 text-xs flex items-center justify-between">
+                  <span>✍️ লিখিত প্রশ্ন (Written Question - Option Selection Not Required)</span>
+                  <span className="text-slate-400 text-[11px]">Submit করার পর মূল সমাধান দেখা যাবে</span>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                  {q.options.map((opt, optIdx) => {
+                    const isSelected = userSelected === optIdx;
+                    const isCorrectOpt = answerIsVerified && optIdx === q.correctAnswer;
+                    const optionHtml = imported.optionHtmls?.[optIdx];
+                    const optionImages = imported.optionImageUrls?.[optIdx] || [];
 
-                  let btnStyle = 'bg-[#080E1C] border-slate-800 hover:border-indigo-500 text-slate-300';
+                    let btnStyle = 'bg-[#080E1C] border-slate-800 hover:border-indigo-500 text-slate-300';
 
-                  if (isSubmitted) {
-                    if (isCorrectOpt) {
-                      btnStyle = 'bg-emerald-950/60 border-emerald-500 text-emerald-200 font-semibold';
-                    } else if (isSelected && !isCorrectOpt) {
-                      btnStyle = 'bg-red-950/60 border-red-500 text-red-200 font-semibold';
+                    if (isSubmitted) {
+                      if (isCorrectOpt) {
+                        btnStyle = 'bg-emerald-950/60 border-emerald-500 text-emerald-200 font-semibold';
+                      } else if (isSelected && !isCorrectOpt) {
+                        btnStyle = 'bg-red-950/60 border-red-500 text-red-200 font-semibold';
+                      }
+                    } else {
+                      if (isSelected) {
+                        btnStyle = 'bg-indigo-600 text-white border-indigo-500 font-semibold shadow-lg shadow-indigo-600/30';
+                      } else if (isLocked) {
+                        btnStyle = 'bg-[#070B16] border-slate-900 text-slate-600 cursor-not-allowed opacity-50';
+                      }
                     }
-                  } else {
-                    if (isSelected) {
-                      btnStyle = 'bg-indigo-600 text-white border-indigo-500 font-semibold shadow-lg shadow-indigo-600/30';
-                    } else if (isLocked) {
-                      btnStyle = 'bg-[#070B16] border-slate-900 text-slate-600 cursor-not-allowed opacity-50';
-                    }
-                  }
 
-                  return (
-                    <button
-                      key={optIdx}
-                      disabled={isLocked || isSubmitted}
-                      onClick={() => handleSelectOption(q.id, optIdx)}
-                      className={`text-left p-3.5 rounded-xl border text-xs sm:text-sm transition-all flex items-center justify-between gap-3 ${btnStyle}`}
-                    >
-                      <div className="flex items-center gap-3">
-                        <span
-                          className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 ${
-                            isSelected
-                              ? 'bg-white text-indigo-700'
-                              : 'bg-slate-800 text-slate-300'
-                          }`}
-                        >
-                          {imported.optionLabels?.[optIdx] || String.fromCharCode(65 + optIdx)}
-                        </span>
-                        <span className="leading-snug flex-1">{optionHtml ? <span dangerouslySetInnerHTML={{ __html: optionHtml }} /> : <MathInlineRenderer text={opt} />}{optionImages.map((url, imageIndex) => <img key={url + imageIndex} src={url} alt="Option attachment" loading="lazy" className="mt-2 max-w-full max-h-48 object-contain rounded-lg" />)}</span>
-                      </div>
-                      {isSubmitted && isCorrectOpt && <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />}
-                      {isSubmitted && isSelected && !isCorrectOpt && <XCircle className="w-4 h-4 text-red-400 shrink-0" />}
-                    </button>
-                  );
-                })}
-              </div>
+                    return (
+                      <button
+                        key={optIdx}
+                        disabled={isLocked || isSubmitted}
+                        onClick={() => handleSelectOption(q.id, optIdx)}
+                        className={`text-left p-3.5 rounded-xl border text-xs sm:text-sm transition-all flex items-center justify-between gap-3 ${btnStyle}`}
+                      >
+                        <div className="flex items-center gap-3">
+                          <span
+                            className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 ${
+                              isSelected
+                                ? 'bg-white text-indigo-700'
+                                : 'bg-slate-800 text-slate-300'
+                            }`}
+                          >
+                            {imported.optionLabels?.[optIdx] || String.fromCharCode(65 + optIdx)}
+                          </span>
+                          <div className="leading-snug flex-1 text-left rich-option-content">
+                            {optionHtml && optionHtml.trim().length > 0
+                              ? <div dangerouslySetInnerHTML={{ __html: optionHtml }} />
+                              : <MathInlineRenderer text={opt || `Option ${String.fromCharCode(65 + optIdx)}`} />}
+                            {optionImages.map((url, imageIndex) => (
+                              <img key={url + imageIndex} src={url} alt="Option attachment" loading="lazy" className="mt-2 max-w-full max-h-48 object-contain rounded-lg" />
+                            ))}
+                          </div>
+                        </div>
+                        {isSubmitted && isCorrectOpt && <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />}
+                        {isSubmitted && isSelected && !isCorrectOpt && <XCircle className="w-4 h-4 text-red-400 shrink-0" />}
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
 
               {/* Post-Submission Details & AI Tutor Action */}
               {isSubmitted && (
                 <div className="mt-5 pt-4 border-t border-slate-800/80 space-y-3">
                   <div className="p-3.5 rounded-xl bg-[#080E1B] border border-slate-800 text-xs space-y-1">
                     <span className="font-bold text-slate-200 block mb-1">সঠিক উত্তর ও মূল ব্যাখ্যা:</span>
-                    {imported.explanationHtml ? <div className="rich-explanation" dangerouslySetInnerHTML={{ __html: imported.explanationHtml }} /> : q.explanation ? <MathMarkdownRenderer content={q.explanation} /> : <span className="text-slate-400">ব্যাখ্যা পাওয়া যায়নি।</span>}
+                    {imported.explanationHtml && !imported.explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && imported.explanationHtml.replace(/<[^>]*>/g, '').trim().length > 10
+                      ? <div className="rich-explanation" dangerouslySetInnerHTML={{ __html: imported.explanationHtml }} />
+                      : q.explanation
+                        ? <MathMarkdownRenderer content={q.explanation} />
+                        : <span className="text-slate-300 font-medium">ঢাকা বিশ্ববিদ্যালয় ({q.subject}) প্রশ্ন সমাধান ও বিস্তৃত ব্যাখ্যা।</span>}
                     {!answerIsVerified && q.questionType !== 'Written' && <p className="mt-2 text-amber-300">এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে উত্তর দেখানো হয়নি।</p>}
                     {imported.explanationImageUrls?.map((url, imageIndex) => <img key={url + imageIndex} src={url} alt="Explanation attachment" loading="lazy" className="mt-2 max-w-full max-h-64 object-contain rounded-lg" />)}
                   </div>

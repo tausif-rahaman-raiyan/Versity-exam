@@ -66,3 +66,51 @@
   color: #bae6fd;
 }
 
+/* Rich Question, Option & Explanation HTML Text Visibility Fix */
+.question-rich-content,
+.question-rich-content *,
+.rich-option-content,
+.rich-option-content *,
+.rich-explanation,
+.rich-explanation * {
+  color: #f1f5f9 !important;
+  background-color: transparent !important;
+}
+
+.question-rich-content p,
+.rich-option-content p {
+  margin: 0 !important;
+  display: inline-block !important;
+  line-height: 1.6 !important;
+}
+
+.rich-option-content p {
+  color: #e2e8f0 !important;
+  font-size: 0.9375rem !important;
+}
+
+/* Remove decorative Chorcha buttons or tag badges inside raw card HTML */
+.question-rich-content button,
+.question-rich-content .icon-button,
+.question-rich-content .tag,
+.rich-explanation button,
+.rich-explanation [class*="icon-button"] {
+  display: none !important;
+}
+
+/* Force expand any collapse or accordion explanation blocks from Chorcha */
+.rich-explanation .collapse,
+.rich-explanation .accordion-collapse,
+.rich-explanation [style*="display: none"] {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.rich-explanation p {
+  margin: 0.25rem 0 !important;
+  line-height: 1.6 !important;
+  color: #e2e8f0 !important;
+}
+
+
