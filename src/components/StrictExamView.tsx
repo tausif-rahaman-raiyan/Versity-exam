@@ -358,7 +358,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                               : 'bg-slate-800 text-slate-300'
                           }`}
                         >
-                          {String.fromCharCode(65 + optIdx)}
+                          {imported.optionLabels?.[optIdx] || String.fromCharCode(65 + optIdx)}
                         </span>
                         <span className="leading-snug flex-1">{optionHtml ? <span dangerouslySetInnerHTML={{ __html: optionHtml }} /> : <MathInlineRenderer text={opt} />}{optionImages.map((url, imageIndex) => <img key={url + imageIndex} src={url} alt="Option attachment" loading="lazy" className="mt-2 max-w-full max-h-48 object-contain rounded-lg" />)}</span>
                       </div>
