@@ -1,5 +1,6 @@
 import type { ExamSession, Question } from './questionBank';
 import { MASTER_QUESTIONS } from './questionBank';
+import { extractMathFromHtml } from '../components/MathMarkdownRenderer';
 
 const SESSION_DATA_FILES: Record<string, string> = {
   'du-00-01': '/assets/aistudio/DU_00-01_Questions_eab4b87e.json',
@@ -48,12 +49,15 @@ type RawOption = string | {
 
 type RawQuestion = {
   number?: number | string;
+  question_number?: number | string;
   subject?: string;
   question?: string;
+  question_text?: string;
   question_html?: string;
   question_math_tex?: unknown[];
   question_image_urls?: string[];
   options?: RawOption[];
+  raw_options?: RawOption[];
   correct_answer?: string | number | { label?: string; text?: string } | null;
   answer_detection?: string;
   explanation?: string | null;
@@ -88,7 +92,7 @@ export interface ImportedQuestion extends Question {
 }
 
 function stripHtml(value: string): string {
-  return value.replace(/<[^>]*>/g, ' ').replace(/&nbsp;|&#160;/gi, ' ').replace(/\s+/g, ' ').trim();
+  return extractMathFromHtml(value);
 }
 
 function safeHtml(value?: string | null): string | undefined {
@@ -113,7 +117,7 @@ function imagesFromHtml(html?: string): string[] {
 function cleanImageUrls(values: unknown[]): string[] {
   return [...new Set(values.filter((value): value is string =>
     typeof value === 'string' &&
-    /^https?:\/\//i.test(value) &&
+    (/^https?:\/\//i.test(value) || value.startsWith('/')) &&
     !/explanation_icon\.svg/i.test(value)
   ))];
 }
@@ -136,7 +140,11 @@ function normalizeLabel(value: unknown): string {
 }
 
 function resolveAnswer(rawAnswer: RawQuestion['correct_answer'], options: RawOption[]) {
-  const optionTexts = options.map(option => typeof option === 'string' ? option : (option.text || stripHtml(option.html || '')));
+  const optionTexts = options.map(option =>
+    typeof option === 'string'
+      ? extractMathFromHtml(option)
+      : (option.html ? extractMathFromHtml(option.html) : extractMathFromHtml(option.text || ''))
+  );
   const optionLabels = options.map((option, index) =>
     typeof option === 'string' ? String.fromCharCode(65 + index) : (option.label || String.fromCharCode(65 + index))
   );
@@ -148,7 +156,7 @@ function resolveAnswer(rawAnswer: RawQuestion['correct_answer'], options: RawOpt
   let explicitText = '';
   if (rawAnswer && typeof rawAnswer === 'object') {
     const label = normalizeLabel(rawAnswer.label);
-    explicitText = String(rawAnswer.text || '').trim();
+    explicitText = extractMathFromHtml(String(rawAnswer.text || '').trim());
     if (label) explicitIndex = optionLabels.findIndex(value => normalizeLabel(value) === label);
     if (explicitIndex < 0 && explicitText) {
       explicitIndex = optionTexts.findIndex(value => value.trim().toLowerCase() === explicitText.toLowerCase());
@@ -185,9 +193,13 @@ function resolveAnswer(rawAnswer: RawQuestion['correct_answer'], options: RawOpt
 }
 
 function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession, examType: string): ImportedQuestion {
-  const rawOptions = Array.isArray(raw.options) ? raw.options : [];
+  const rawOptions = Array.isArray(raw.raw_options) && raw.raw_options.length > 0
+    ? raw.raw_options
+    : (Array.isArray(raw.options) ? raw.options : []);
   const optionTexts = rawOptions.map(option =>
-    typeof option === 'string' ? option : (option.text || stripHtml(option.html || ''))
+    typeof option === 'string'
+      ? extractMathFromHtml(option)
+      : (option.html ? extractMathFromHtml(option.html) : extractMathFromHtml(option.text || ''))
   );
   const optionLabels = rawOptions.map((option, optionIndex) =>
     typeof option === 'string' ? String.fromCharCode(65 + optionIndex) : (option.label || String.fromCharCode(65 + optionIndex))
@@ -206,22 +218,36 @@ function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession
   const explanationImageUrls = cleanImageUrls([
     ...(raw.explanation_image_urls || []),
     ...imagesFromHtml(explanationHtml),
+    ...imagesFromHtml(raw.explanation || undefined),
   ]);
   const answer = resolveAnswer(raw.correct_answer, rawOptions);
   const isWritten = examType.toLowerCase() === 'written' || rawOptions.length === 0;
+  const qNumber = raw.number ?? raw.question_number ?? index + 1;
+
+  // Prefer extracting from question_html so pre-rendered KaTeX annotations become $...$ without duplication
+  const cleanQuestionText = questionHtml
+    ? extractMathFromHtml(questionHtml)
+    : extractMathFromHtml(raw.question || raw.question_text || '');
+
+  // Strip HTML wrappers and extract KaTeX annotations from explanation
+  const rawExpSource =
+    explanationHtml && !explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && extractMathFromHtml(explanationHtml).length > 5
+      ? explanationHtml
+      : (raw.explanation || '');
+  const cleanExplanationText = extractMathFromHtml(rawExpSource);
 
   return {
-    id: session.id + '-q-' + String(raw.number ?? index + 1),
+    id: session.id + '-q-' + String(qNumber),
     university: session.university,
     session: session.session,
     subject: normalizeSubject(raw.subject),
-    question: raw.question || stripHtml(questionHtml || ''),
+    question: cleanQuestionText,
     options: optionTexts,
     correctAnswer: isWritten ? -1 : answer.correctAnswer,
-    explanation: raw.explanation || '',
+    explanation: cleanExplanationText,
     questionType: isWritten ? 'Written' : 'MCQ',
     marks: typeof raw.marks === 'number' ? raw.marks : 1,
-    number: raw.number ?? index + 1,
+    number: qNumber,
     answerVerified: !isWritten && answer.answerVerified,
     answerDetection: raw.answer_detection,
     correctAnswerText: answer.correctAnswerText,

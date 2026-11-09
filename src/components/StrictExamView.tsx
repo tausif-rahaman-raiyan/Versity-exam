@@ -1,40 +1,85 @@
-import React, { useState, useEffect } from 'react';
-import { Question, ExamSession, EXAM_SESSIONS } from '../data/questionBank';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Question, ExamSession } from '../data/questionBank';
 import { ImportedQuestion, loadQuestionsForSession } from '../data/sessionQuestionLoader';
-import { Clock, AlertTriangle, CheckCircle, XCircle, Award, RefreshCw, Bookmark, Sparkles, Lock, ArrowLeft, Send, ChevronDown, ChevronUp } from 'lucide-react';
+import {
+  Clock,
+  AlertTriangle,
+  CheckCircle,
+  XCircle,
+  RefreshCw,
+  Sparkles,
+  Lock,
+  ArrowLeft,
+  ChevronDown,
+  ChevronUp,
+  Key,
+  AlertCircle,
+  X,
+} from 'lucide-react';
 import { InlineAiTutor } from './InlineAiTutor';
 import { MathMarkdownRenderer, MathInlineRenderer } from './MathMarkdownRenderer';
+import { getSubjectCardStyle } from '../utils/subjectColors';
+import { saveExamAttempt } from '../utils/examHistory';
+import { SettingsDropdown } from './SettingsDropdown';
+import {
+  UiSettings,
+  DEFAULT_UI_SETTINGS,
+  getQuestionFontClass,
+  getOptionFontClass,
+  getFontStyleClass,
+} from '../utils/uiSettings';
 
 interface StrictExamViewProps {
   examSession: ExamSession;
   onBack: () => void;
   customApiKey: string;
   setCustomApiKey: (key: string) => void;
+  darkMode?: boolean;
+  setDarkMode?: (dark: boolean) => void;
+  onOpenApiKeyModal?: () => void;
+  uiSettings?: UiSettings;
+  onUpdateSettings?: (next: UiSettings) => void;
 }
+
+const SUBJECT_LABELS: Record<string, string> = {
+  ALL: 'ALL',
+  Physics: 'Physics',
+  Chemistry: 'Chemistry',
+  Mathematics: 'Mathematics',
+  Biology: 'Biology',
+  ICT: 'ICT',
+  Bangla: 'বাংলা',
+  English: 'English',
+};
 
 export const StrictExamView: React.FC<StrictExamViewProps> = ({
   examSession,
   onBack,
   customApiKey,
-  setCustomApiKey,
+  darkMode = true,
+  setDarkMode,
+  onOpenApiKeyModal,
+  uiSettings = DEFAULT_UI_SETTINGS,
+  onUpdateSettings,
 }) => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
   const [questionLoadError, setQuestionLoadError] = useState('');
-  // selectedAnswers: questionId -> optionIndex (0-3)
+  const [selectedSubject, setSelectedSubject] = useState<string>('ALL');
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
-  // lockedQuestions: set of question IDs that have been clicked and permanently locked
   const [lockedQuestions, setLockedQuestions] = useState<Set<string>>(new Set());
-  // bookmarks
-  const [bookmarks, setBookmarks] = useState<Set<string>>(new Set());
 
-  // Timer in seconds
   const [timeLeft, setTimeLeft] = useState<number>(examSession.durationMinutes * 60);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [showConfirmModal, setShowConfirmModal] = useState<boolean>(false);
+  const [showExitModal, setShowExitModal] = useState<boolean>(false);
+  const [apiKeyNotice, setApiKeyNotice] = useState<boolean>(false);
 
-  // Accordion state: ID of question currently showing inline AI Tutor
-  const [expandedAiQuestionId, setExpandedAiQuestionId] = useState<string | null>(null);
+  const [expandedAiQuestionIds, setExpandedAiQuestionIds] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [examSession.id]);
 
   useEffect(() => {
     let active = true;
@@ -45,69 +90,28 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
     setSelectedAnswers({});
     setLockedQuestions(new Set());
     setIsSubmitted(false);
-    setExpandedAiQuestionId(null);
+    setExpandedAiQuestionIds(new Set());
+    setSelectedSubject('ALL');
     loadQuestionsForSession(examSession)
-      .then(loaded => {
+      .then((loaded) => {
         if (!active) return;
         setQuestions(loaded);
-        if (loaded.length === 0) setQuestionLoadError('এই সেশনের জন্য কোনো প্রশ্ন পাওয়া যায়নি। অন্য সেশনের প্রশ্ন দিয়ে পরীক্ষা তৈরি করা হয়নি।');
+        if (loaded.length === 0) {
+          setQuestionLoadError('এই সেশনের জন্য কোনো প্রশ্ন পাওয়া যায়নি। অন্য সেশনের প্রশ্ন দিয়ে পরীক্ষা তৈরি করা হয়নি।');
+        }
       })
-      .catch(error => {
+      .catch((error) => {
         if (!active) return;
         console.error(error);
         setQuestionLoadError('প্রশ্ন লোড করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।');
       })
-      .finally(() => { if (active) setIsLoadingQuestions(false); });
-    return () => { active = false; };
+      .finally(() => {
+        if (active) setIsLoadingQuestions(false);
+      });
+    return () => {
+      active = false;
+    };
   }, [examSession.id]);
-
-  // Countdown timer
-  useEffect(() => {
-    if (isSubmitted || isLoadingQuestions || questions.length === 0) return;
-    if (timeLeft <= 0) {
-      handleSubmitExam();
-      return;
-    }
-    const timer = setInterval(() => {
-      setTimeLeft(prev => Math.max(0, prev - 1));
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [timeLeft, isSubmitted, isLoadingQuestions, questions.length]);
-
-  const formatTime = (seconds: number) => {
-    const mins = Math.floor(seconds / 60);
-    const secs = seconds % 60;
-    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
-  };
-
-  // STRICT AUTO-LOCK: Once clicked, locked forever!
-  const handleSelectOption = (questionId: string, optionIndex: number) => {
-    if (isSubmitted || isLoadingQuestions) return;
-    // If already locked, strictly refuse any change!
-    if (lockedQuestions.has(questionId)) return;
-
-    setSelectedAnswers(prev => ({ ...prev, [questionId]: optionIndex }));
-    setLockedQuestions(prev => {
-      const next = new Set(prev);
-      next.add(questionId);
-      return next;
-    });
-  };
-
-  const toggleBookmark = (questionId: string) => {
-    setBookmarks(prev => {
-      const next = new Set(prev);
-      if (next.has(questionId)) next.delete(questionId);
-      else next.add(questionId);
-      return next;
-    });
-  };
-
-  const handleSubmitExam = () => {
-    setIsSubmitted(true);
-    setShowConfirmModal(false);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   // Calculations
   let correctCount = 0;
@@ -115,9 +119,9 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   let unattemptedCount = 0;
   let unverifiedCount = 0;
 
-  questions.forEach(q => {
+  questions.forEach((q) => {
     if (q.questionType === 'Written' || q.options.length === 0) {
-      return; // Skip MCQ calculations for written questions
+      return;
     }
     const ans = selectedAnswers[q.id];
     if (ans === undefined) {
@@ -131,337 +135,636 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
     }
   });
 
-  const negativePenalty = examSession.university === 'JU' ? 0.20 : 0.25;
-  const mcqQuestionCount = questions.filter(q => q.questionType !== 'Written' && q.options.length > 0).length;
-  const markPerQuestion = mcqQuestionCount > 0 ? (examSession.totalMarks / mcqQuestionCount) : 1;
-  const totalMarksEarned = Math.max(0, (correctCount * markPerQuestion) - (incorrectCount * negativePenalty * markPerQuestion));
+  const negativePenalty = examSession.university === 'JU' ? 0.2 : 0.25;
+  const mcqQuestionCount = questions.filter((q) => q.questionType !== 'Written' && q.options.length > 0).length;
+  const markPerQuestion = mcqQuestionCount > 0 ? examSession.totalMarks / mcqQuestionCount : 1;
+  const totalMarksEarned = Math.max(
+    0,
+    correctCount * markPerQuestion - incorrectCount * negativePenalty * markPerQuestion
+  );
 
-  const toggleAiTutor = (qId: string) => {
-    setExpandedAiQuestionId(prev => (prev === qId ? null : qId));
+  const handleSubmitExam = () => {
+    if (!isSubmitted) {
+      const durationSec = Math.max(1, examSession.durationMinutes * 60 - timeLeft);
+      saveExamAttempt({
+        sessionId: examSession.id,
+        title: examSession.title,
+        university: examSession.university,
+        session: examSession.session,
+        questionType: examSession.questionType,
+        score: totalMarksEarned,
+        totalMarks: examSession.totalMarks,
+        totalQuestions: questions.length,
+        correctCount,
+        incorrectCount,
+        unattemptedCount,
+        timeTakenSeconds: durationSec,
+      });
+    }
+    setIsSubmitted(true);
+    setShowConfirmModal(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  return (
-    <div className="max-w-5xl mx-auto space-y-6 pb-24 text-slate-100">
-      {/* Sticky Real-Time Exam Control Bar (Flush top-0 because Navbar is hidden in exam mode) */}
-      <div className="sticky top-0 z-40 bg-[#070C18]/95 backdrop-blur-md border border-indigo-950/90 p-4 rounded-b-2xl sm:rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-4">
-        <div>
-          <button
-            onClick={onBack}
-            className="text-[11px] text-sky-400 font-semibold flex items-center gap-1 hover:underline mb-1"
-          >
-            <ArrowLeft className="w-3.5 h-3.5" /> বিশ্ববিদ্যালয় ও সেশন পরিবর্তন
-          </button>
-          <h1 className="text-sm sm:text-base font-bold text-white flex items-center gap-2">
-            {examSession.title}
-          </h1>
-          <p className="text-[11px] text-slate-400">
-            {isSubmitted
-              ? '✅ পরীক্ষা সমাপ্ত ও ফলাফল মূল্যায়িত হয়েছে।'
-              : '🔒 Strict Auto-Lock Enabled: একবার অপশনে ক্লিক করলে তা লক হয়ে যাবে, পরিবর্তন করা যাবে না।'}
-          </p>
-        </div>
+  // Countdown timer
+  useEffect(() => {
+    if (isSubmitted || isLoadingQuestions || questions.length === 0) return;
+    if (timeLeft <= 0) {
+      handleSubmitExam();
+      return;
+    }
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => Math.max(0, prev - 1));
+    }, 1000);
+    return () => clearInterval(timer);
+  }, [timeLeft, isSubmitted, isLoadingQuestions, questions.length]);
 
-        <div className="flex items-center gap-3">
-          {!isSubmitted && !isLoadingQuestions && questions.length > 0 && (
+  const formatTime = (seconds: number) => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+  };
+
+  // STRICT AUTO-LOCK: Once clicked, locked forever!
+  const handleSelectOption = (questionId: string, optionIndex: number) => {
+    if (isSubmitted || isLoadingQuestions) return;
+    if (lockedQuestions.has(questionId)) return;
+
+    setSelectedAnswers((prev) => ({ ...prev, [questionId]: optionIndex }));
+    setLockedQuestions((prev) => {
+      const next = new Set(prev);
+      next.add(questionId);
+      return next;
+    });
+  };
+
+  const toggleAiTutor = (qId: string) => {
+    if (!customApiKey || !customApiKey.trim()) {
+      setApiKeyNotice(true);
+      return;
+    }
+    setExpandedAiQuestionIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(qId)) next.delete(qId);
+      else next.add(qId);
+      return next;
+    });
+  };
+
+  const subjects = useMemo(
+    () => [
+      'ALL',
+      ...Array.from(new Set(questions.map((q) => q.subject))).sort((a, b) => a.localeCompare(b)),
+    ],
+    [questions]
+  );
+
+  const filteredQuestions = useMemo(() => {
+    if (selectedSubject === 'ALL') return questions;
+    return questions.filter((q) => q.subject === selectedSubject);
+  }, [questions, selectedSubject]);
+
+  const selectedCount = lockedQuestions.size;
+  const totalCount = questions.length;
+  const selectedPercent = totalCount > 0 ? Math.min(100, Math.round((selectedCount / totalCount) * 100)) : 0;
+
+  const questionFontClass = getQuestionFontClass(uiSettings.questionFontSize);
+  const optionFontClass = getOptionFontClass(uiSettings.optionFontSize);
+  const fontStyleClass = getFontStyleClass(uiSettings.fontStyle);
+
+  return (
+    <div className={`max-w-5xl mx-auto space-y-4 sm:space-y-5 pb-24 text-slate-900 dark:text-slate-100 ${fontStyleClass}`}>
+      {/* Floating API Key Notification Toast */}
+      {apiKeyNotice && (
+        <div className="fixed bottom-4 right-4 left-4 sm:left-auto sm:w-96 z-50 bg-white dark:bg-[#0D162C] border-2 border-amber-500 rounded-2xl p-4 shadow-2xl flex items-start gap-3 animate-fadeIn">
+          <div className="w-9 h-9 rounded-xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+            <AlertCircle className="w-5 h-5" />
+          </div>
+          <div className="flex-1 text-xs space-y-2">
+            <h4 className="font-bold text-slate-950 dark:text-white text-sm">
+              API Key প্রয়োজন (Add API Key)
+            </h4>
+            <p className="text-slate-600 dark:text-slate-300 leading-relaxed">
+              Ask AI Tutor-এর বিস্তারিত ব্যাখ্যা ও শর্টকাট দেখতে অনুগ্রহ করে আপনার ফ্রি Gemini API Key যুক্ত করুন।
+            </p>
+            <div className="flex items-center gap-2 pt-1">
+              {onOpenApiKeyModal && (
+                <button
+                  onClick={() => {
+                    setApiKeyNotice(false);
+                    onOpenApiKeyModal();
+                  }}
+                  className="px-3.5 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg text-xs inline-flex items-center gap-1.5 shadow-sm transition-colors"
+                >
+                  <Key className="w-3.5 h-3.5" /> Add API Key
+                </button>
+              )}
+              <button
+                onClick={() => setApiKeyNotice(false)}
+                className="px-3 py-1.5 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-semibold rounded-lg text-xs"
+              >
+                বন্ধ করুন
+              </button>
+            </div>
+          </div>
+          <button
+            onClick={() => setApiKeyNotice(false)}
+            className="text-slate-400 hover:text-slate-600 dark:hover:text-white"
+          >
+            <X className="w-4 h-4" />
+          </button>
+        </div>
+      )}
+
+      {/* Simplified Sticky Exam Control Bar + Selected Progress Bar */}
+      <div className="sticky top-0 z-40 bg-white/95 dark:bg-[#070C18]/95 backdrop-blur-md border border-slate-200 dark:border-indigo-950/90 rounded-b-2xl sm:rounded-2xl shadow-lg">
+        {/* Bar 1: Exit Exam | Timer (44:18) | Submit Exam | Settings */}
+        <div className="px-3 sm:px-5 py-2.5 sm:py-3 flex items-center justify-between gap-2">
+          <button
+            onClick={() => {
+              if (!isSubmitted) {
+                setShowExitModal(true);
+              } else {
+                onBack();
+              }
+            }}
+            className="px-3 sm:px-4 py-2 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold transition-colors shadow-xs inline-flex items-center gap-1.5 shrink-0"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" />
+            <span>Exit Exam</span>
+          </button>
+
+          {/* Center Timer */}
+          {!isSubmitted && !isLoadingQuestions && questions.length > 0 ? (
             <div
-              className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs sm:text-sm font-mono font-bold ${
+              className={`flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-xl text-xs sm:text-sm font-mono font-extrabold tabular-nums ${
                 timeLeft < 300
-                  ? 'bg-red-950/60 text-red-400 border border-red-800 animate-pulse'
-                  : 'bg-[#0B152B] text-sky-300 border border-indigo-900/60'
+                  ? 'bg-red-50 dark:bg-red-950/60 text-red-600 dark:text-red-400 border border-red-400 dark:border-red-800 animate-pulse'
+                  : 'bg-slate-100 dark:bg-[#0B152B] text-indigo-700 dark:text-sky-300 border border-slate-300 dark:border-indigo-900/60'
               }`}
             >
-              <Clock className="w-4 h-4 text-sky-400" />
-              <span>অবশিষ্ট সময়: {formatTime(timeLeft)}</span>
+              <Clock className="w-4 h-4 text-indigo-600 dark:text-sky-400" />
+              <span>{formatTime(timeLeft)}</span>
             </div>
+          ) : (
+            <span className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white truncate">
+              {examSession.title}
+            </span>
           )}
 
-          {!isSubmitted ? (
-            <button
-              onClick={() => setShowConfirmModal(true)}
-              className="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-xl text-xs shadow-lg shadow-emerald-600/20 transition-all flex items-center gap-1.5"
-            >
-              Submit Exam
-            </button>
-          ) : (
-            <button
-              onClick={() => {
-                setIsSubmitted(false);
-                setSelectedAnswers({});
-                setLockedQuestions(new Set());
-                setTimeLeft(examSession.durationMinutes * 60);
-                setExpandedAiQuestionId(null);
-              }}
-              className="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-xs shadow-lg shadow-indigo-600/20 transition-all flex items-center gap-1.5"
-            >
-              <RefreshCw className="w-3.5 h-3.5" /> Retake Exam
-            </button>
-          )}
+          {/* Right: Submit Exam + Settings Dropdown */}
+          <div className="flex items-center gap-2 shrink-0">
+            {!isSubmitted ? (
+              <button
+                onClick={() => setShowConfirmModal(true)}
+                className="px-3.5 sm:px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-xs shadow-md transition-all flex items-center gap-1.5"
+              >
+                Submit Exam
+              </button>
+            ) : (
+              <button
+                onClick={() => {
+                  setIsSubmitted(false);
+                  setSelectedAnswers({});
+                  setLockedQuestions(new Set());
+                  setTimeLeft(examSession.durationMinutes * 60);
+                  setExpandedAiQuestionIds(new Set());
+                }}
+                className="px-3.5 sm:px-5 py-2 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl text-xs shadow-md transition-all flex items-center gap-1.5"
+              >
+                <RefreshCw className="w-3.5 h-3.5" /> Retake
+              </button>
+            )}
+
+            {setDarkMode && onUpdateSettings && (
+              <SettingsDropdown
+                darkMode={darkMode}
+                setDarkMode={setDarkMode}
+                uiSettings={uiSettings}
+                onUpdateSettings={onUpdateSettings}
+                compact
+              />
+            )}
+          </div>
         </div>
+
+        {/* Bar 2: Selected Questions Counter & Progress Bar */}
+        {!isLoadingQuestions && questions.length > 0 && (
+          <div className="bg-slate-100/90 dark:bg-[#0B1325] px-3 sm:px-5 py-2 border-t border-slate-200 dark:border-indigo-950/80 rounded-b-2xl flex items-center justify-between gap-3 text-[11px] sm:text-xs">
+            <div className="flex items-center gap-3 shrink-0 font-semibold">
+              <span className="text-slate-700 dark:text-slate-300">
+                Selected:{' '}
+                <strong className="text-indigo-600 dark:text-sky-400 font-mono text-xs sm:text-sm">
+                  {selectedCount}
+                </strong>{' '}
+                / <span className="font-mono">{totalCount}</span>
+              </span>
+              <span className="text-slate-400">•</span>
+              <span className="text-slate-600 dark:text-slate-400">
+                Remaining: <strong className="font-mono text-slate-900 dark:text-white">{totalCount - selectedCount}</strong>
+              </span>
+            </div>
+
+            <div className="flex items-center gap-2 flex-1 max-w-xs">
+              <div className="w-full h-2 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-indigo-600 to-sky-500 transition-all duration-300"
+                  style={{ width: `${selectedPercent}%` }}
+                />
+              </div>
+              <span className="font-mono font-bold text-indigo-600 dark:text-sky-400 text-[10px] w-8 text-right">
+                {selectedPercent}%
+              </span>
+            </div>
+          </div>
+        )}
       </div>
 
-      {isLoadingQuestions && <div className="p-8 rounded-2xl bg-[#0B1222] border border-indigo-900/50 text-center text-sky-300">প্রশ্নপত্র লোড হচ্ছে...</div>}
-      {!isLoadingQuestions && questionLoadError && <div className="p-5 rounded-2xl bg-amber-950/30 border border-amber-800/60 text-amber-200 text-sm">{questionLoadError}</div>}
+      {isLoadingQuestions && (
+        <div className="p-8 rounded-2xl bg-white dark:bg-[#0B1222] border border-slate-200 dark:border-indigo-900/50 text-center text-indigo-600 dark:text-sky-300 font-semibold">
+          প্রশ্নপত্র লোড হচ্ছে...
+        </div>
+      )}
+      {!isLoadingQuestions && questionLoadError && (
+        <div className="p-5 rounded-2xl bg-amber-50 dark:bg-amber-950/30 border border-amber-300 dark:border-amber-800/60 text-amber-900 dark:text-amber-200 text-sm">
+          {questionLoadError}
+        </div>
+      )}
 
       {/* Result Card after Submission */}
       {isSubmitted && (
-        <div className="bg-gradient-to-br from-[#0B1428] via-[#080D1A] to-[#040711] text-white p-6 sm:p-8 rounded-3xl shadow-2xl border border-sky-500/30 space-y-6">
+        <div className="bg-gradient-to-br from-indigo-50 via-white to-sky-50 dark:from-[#0B1428] dark:via-[#080D1A] dark:to-[#040711] text-slate-900 dark:text-white p-5 sm:p-8 rounded-3xl shadow-xl border border-indigo-200 dark:border-sky-500/30 space-y-6">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <span className="px-3 py-1 rounded-full bg-indigo-500/20 text-sky-300 text-[10px] font-bold uppercase tracking-wider">
-                Official Result Sheet
+              <span className="px-3 py-1 rounded-full bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider">
+                Official Result Sheet • Saved to Analytics
               </span>
-              <h2 className="text-xl sm:text-2xl font-bold mt-2">ফলাফল সারাংশ (Performance Summary)</h2>
+              <h2 className="text-xl sm:text-2xl font-bold mt-2 text-slate-950 dark:text-white">
+                ফলাফল সারাংশ (Performance Summary)
+              </h2>
             </div>
             <div className="sm:text-right">
-              <span className="block text-3xl sm:text-4xl font-black text-emerald-400">
+              <span className="block text-3xl sm:text-4xl font-black text-emerald-600 dark:text-emerald-400">
                 {totalMarksEarned.toFixed(2)}{' '}
-                <span className="text-xs text-slate-400">/ {examSession.totalMarks} Marks</span>
+                <span className="text-xs text-slate-500 dark:text-slate-400">/ {examSession.totalMarks} Marks</span>
               </span>
-              <span className="text-[11px] text-slate-400">
+              <span className="text-[11px] text-slate-600 dark:text-slate-400">
                 (+{markPerQuestion.toFixed(2)} সঠিক, -{(negativePenalty * markPerQuestion).toFixed(2)} ভুল উত্তর নেগেটিভ মার্কস)
               </span>
             </div>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 pt-2">
-            <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
-              <span className="block text-[11px] text-slate-400">Total Questions</span>
-              <span className="text-lg font-bold text-white">{questions.length}</span>
+            <div className="bg-white dark:bg-[#0B1222] p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+              <span className="block text-[11px] text-slate-500 dark:text-slate-400">Total Questions</span>
+              <span className="text-lg font-bold text-slate-950 dark:text-white">{questions.length}</span>
             </div>
-            <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
-              <span className="block text-[11px] text-emerald-400">সঠিক (+1)</span>
-              <span className="text-lg font-bold text-emerald-400">{correctCount}</span>
+            <div className="bg-emerald-50/70 dark:bg-[#0B1222] p-4 rounded-xl border border-emerald-200 dark:border-slate-800">
+              <span className="block text-[11px] text-emerald-700 dark:text-emerald-400 font-semibold">সঠিক (+1)</span>
+              <span className="text-lg font-bold text-emerald-700 dark:text-emerald-400">{correctCount}</span>
             </div>
-            <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
-              <span className="block text-[11px] text-red-400">ভুল উত্তর (-{negativePenalty})</span>
-              <span className="text-lg font-bold text-red-400">{incorrectCount}</span>
+            <div className="bg-red-50/70 dark:bg-[#0B1222] p-4 rounded-xl border border-red-200 dark:border-slate-800">
+              <span className="block text-[11px] text-red-700 dark:text-red-400 font-semibold">ভুল উত্তর (-{negativePenalty})</span>
+              <span className="text-lg font-bold text-red-700 dark:text-red-400">{incorrectCount}</span>
             </div>
-            <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
-              <span className="block text-[11px] text-amber-400">উত্তর দেননি (0)</span>
-              <span className="text-lg font-bold text-amber-400">{unattemptedCount}</span>
+            <div className="bg-amber-50/70 dark:bg-[#0B1222] p-4 rounded-xl border border-amber-200 dark:border-slate-800">
+              <span className="block text-[11px] text-amber-700 dark:text-amber-400 font-semibold">উত্তর দেননি (0)</span>
+              <span className="text-lg font-bold text-amber-700 dark:text-amber-400">{unattemptedCount}</span>
             </div>
-            <div className="bg-[#0B1222] p-4 rounded-xl border border-slate-800">
-              <span className="block text-[11px] text-slate-400">যাচাই হয়নি</span>
-              <span className="text-lg font-bold text-slate-300">{unverifiedCount}</span>
+            <div className="bg-white dark:bg-[#0B1222] p-4 rounded-xl border border-slate-200 dark:border-slate-800">
+              <span className="block text-[11px] text-slate-500 dark:text-slate-400">যাচাই হয়নি</span>
+              <span className="text-lg font-bold text-slate-700 dark:text-slate-300">{unverifiedCount}</span>
             </div>
           </div>
         </div>
       )}
 
-      {/* Strict Mode Info Strip */}
-      <div className="bg-[#0A1120] p-4 rounded-2xl border border-indigo-950 flex flex-wrap items-center justify-between text-xs font-medium text-slate-300 shadow-sm gap-2">
-        <div className="flex items-center gap-4">
-          <span>মোট প্রশ্ন: <strong className="text-white font-mono">{questions.length}</strong></span>
-          <span>লক করা হয়েছে: <strong className="text-amber-400 font-mono">{lockedQuestions.size}</strong></span>
-          <span>বাকি আছে: <strong className="text-sky-400 font-mono">{questions.length - lockedQuestions.size}</strong></span>
+      {/* Color-Coded Subject Filter Toolbar (No Green or Red) */}
+      {!isLoadingQuestions && questions.length > 0 && (
+        <div className="bg-white dark:bg-[#0A1122] p-3 sm:p-4 rounded-2xl border border-slate-200 dark:border-indigo-950 shadow-sm">
+          <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 sm:flex-wrap no-scrollbar">
+            {subjects.map((subject) => {
+              const isSelected = selectedSubject === subject;
+              if (subject === 'ALL') {
+                return (
+                  <button
+                    key={subject}
+                    onClick={() => setSelectedSubject(subject)}
+                    className={
+                      'px-3.5 py-2 rounded-xl text-xs font-bold border transition-all shrink-0 ' +
+                      (isSelected
+                        ? 'bg-slate-900 text-white border-slate-900 dark:bg-white dark:text-slate-950 dark:border-white shadow-md'
+                        : 'bg-slate-100 text-slate-700 border-slate-300 hover:bg-slate-200 dark:bg-[#0F172B] dark:text-slate-300 dark:border-slate-800')
+                    }
+                  >
+                    ALL ({questions.length})
+                  </button>
+                );
+              }
+              const style = getSubjectCardStyle(subject);
+              return (
+                <button
+                  key={subject}
+                  onClick={() => setSelectedSubject(subject)}
+                  className={
+                    'px-3.5 py-2 rounded-xl text-xs font-bold border transition-all shrink-0 ' +
+                    (isSelected ? style.filterActive : style.filterInactive)
+                  }
+                >
+                  {SUBJECT_LABELS[subject] || subject}
+                </button>
+              );
+            })}
+          </div>
         </div>
-        <div className="flex items-center gap-1.5 text-amber-400 font-semibold text-[11px]">
-          <Lock className="w-3.5 h-3.5" /> Auto-Lock Policy: একবার কোনো অপশনে ক্লিক করলেই সাথে সাথে লক!
-        </div>
-      </div>
+      )}
 
       {/* ALL QUESTIONS IN ONE PAGE */}
-      {!isLoadingQuestions && questions.length > 0 && <div className="space-y-5">
-        {questions.map((q, idx) => {
-          const imported = q as ImportedQuestion;
-          const answerIsVerified = imported.answerVerified !== false && q.correctAnswer >= 0;
-          const userSelected = selectedAnswers[q.id];
-          const isLocked = lockedQuestions.has(q.id);
-          const isBookmarked = bookmarks.has(q.id);
-          const isWritten = q.questionType === 'Written' || q.options.length === 0;
+      {!isLoadingQuestions && filteredQuestions.length > 0 && (
+        <div className="space-y-4 sm:space-y-5">
+          {filteredQuestions.map((q, idx) => {
+            const imported = q as ImportedQuestion;
+            const answerIsVerified = imported.answerVerified !== false && q.correctAnswer >= 0;
+            const userSelected = selectedAnswers[q.id];
+            const isLocked = lockedQuestions.has(q.id);
+            const isWritten = q.questionType === 'Written' || q.options.length === 0;
+            const isAiExpanded = expandedAiQuestionIds.has(q.id);
+            const cardStyle = getSubjectCardStyle(q.subject);
+            const showAnswerBadge = answerIsVerified && Boolean(q.options[q.correctAnswer]);
 
-          return (
-            <div
-              key={q.id}
-              id={`q-${q.id}`}
-              className={`bg-[#0B1222] rounded-2xl p-5 sm:p-6 border transition-all shadow-sm ${
-                isSubmitted
-                  ? userSelected === q.correctAnswer
-                    ? 'border-emerald-500/60 bg-emerald-950/10'
-                    : userSelected !== undefined
-                    ? 'border-red-500/60 bg-red-950/10'
-                    : 'border-slate-800'
-                  : isLocked
-                  ? 'border-indigo-500/70 shadow-md shadow-indigo-500/5'
-                  : 'border-slate-800/80 hover:border-slate-700'
-              }`}
-            >
-              {/* Question Top Bar */}
-              <div className="flex items-start justify-between gap-3 mb-3">
-                <div className="flex items-center gap-2">
-                  <span className="px-2.5 py-1 rounded-md text-[11px] font-bold bg-[#0F1B35] text-sky-400 border border-indigo-900/40">
-                    Question {idx + 1}
-                  </span>
-                  <span className="px-2 py-0.5 rounded text-[11px] font-bold bg-[#070D1A] text-slate-300 border border-slate-800">
-                    {q.subject}
-                  </span>
-                  {isWritten && (
-                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-950/80 text-amber-300 border border-amber-800/60">
-                      Written Question
+            return (
+              <div
+                key={q.id}
+                id={`q-${q.id}`}
+                className={`${cardStyle.bgClass} rounded-2xl p-4 sm:p-6 transition-all ${
+                  isSubmitted
+                    ? userSelected === q.correctAnswer
+                      ? 'border-2 border-l-8 border-emerald-500 bg-emerald-50/40 dark:bg-emerald-950/20'
+                      : userSelected !== undefined
+                      ? 'border-2 border-l-8 border-red-500 bg-red-50/40 dark:bg-red-950/20'
+                      : cardStyle.borderClass
+                    : cardStyle.borderClass
+                }`}
+              >
+                {/* Question Top Bar */}
+                <div className="flex items-center justify-between gap-2 mb-3 flex-wrap">
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className={`px-2.5 py-1 rounded-md text-[11px] font-bold border ${cardStyle.numBadge}`}>
+                      Question {q.number ?? idx + 1}
                     </span>
-                  )}
-                  {isLocked && !isSubmitted && !isWritten && (
-                    <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-950/70 text-amber-300 flex items-center gap-1 border border-amber-800/60">
-                      <Lock className="w-3 h-3" /> Locked 🔒
+                    <span className={`px-2.5 py-1 rounded-md text-[11px] font-bold ${cardStyle.badgeBg}`}>
+                      {SUBJECT_LABELS[q.subject] || q.subject}
                     </span>
-                  )}
+                    {isWritten && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-400 dark:border-amber-800/60">
+                        Written Question
+                      </span>
+                    )}
+                    {isLocked && !isSubmitted && !isWritten && (
+                      <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 dark:bg-amber-950/70 dark:text-amber-300 flex items-center gap-1 border border-amber-400 dark:border-amber-800/60">
+                        <Lock className="w-3 h-3" /> Locked 🔒
+                      </span>
+                    )}
+                  </div>
                 </div>
 
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => toggleBookmark(q.id)}
-                    className={`p-1.5 rounded-lg transition-colors ${
-                      isBookmarked ? 'text-amber-400 bg-amber-950/40' : 'text-slate-500 hover:text-slate-300'
-                    }`}
-                    title="Bookmark Question"
-                  >
-                    <Bookmark className="w-4 h-4 fill-current" />
-                  </button>
+                {/* Question Text (Dynamic Question Font Size) */}
+                <div className={`${questionFontClass} font-semibold text-slate-950 dark:text-white mb-4 leading-relaxed`}>
+                  <span className="font-bold text-indigo-700 dark:text-sky-400 mr-1.5">
+                    {q.number ?? idx + 1}.
+                  </span>
+                  <MathInlineRenderer
+                    text={q.question.replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()}
+                  />
                 </div>
-              </div>
+                {imported.questionImageUrls?.map((url, imageIndex) => (
+                  <img
+                    key={url + imageIndex}
+                    src={url}
+                    alt="Question attachment"
+                    loading="lazy"
+                    className="mb-3 max-w-full max-h-80 object-contain rounded-xl bg-white p-1.5 border border-slate-200 dark:border-slate-700"
+                  />
+                ))}
 
-              {/* Question Text */}
-              <div className="text-sm sm:text-base font-semibold text-white mb-4 leading-relaxed">
-                {imported.questionHtml
-                  ? <div className="question-rich-content" dangerouslySetInnerHTML={{ __html: imported.questionHtml }} />
-                  : <><span className="font-bold text-sky-400 mr-1.5">{idx + 1}.</span><MathInlineRenderer text={q.question.replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()} /></>}
-              </div>
-              {!imported.questionHtml && imported.questionImageUrls?.map((url, imageIndex) => (
-                <img key={url + imageIndex} src={url} alt="Question attachment" loading="lazy" className="mb-3 max-w-full max-h-80 object-contain rounded-xl" />
-              ))}
+                {/* Options or Written Question Notice (Dynamic Option Font Size) */}
+                {isWritten ? (
+                  <div className="p-4 rounded-xl bg-amber-50 dark:bg-[#080E1C] border border-amber-300 dark:border-amber-900/40 text-amber-900 dark:text-amber-300 text-xs flex items-center justify-between flex-wrap gap-2">
+                    <span>✍️ লিখিত প্রশ্ন (Written Question - Option Selection Not Required)</span>
+                    <span className="text-slate-600 dark:text-slate-400 text-[11px]">
+                      Submit করার পর মূল সমাধান দেখা যাবে
+                    </span>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    {q.options.map((opt, optIdx) => {
+                      const isSelected = userSelected === optIdx;
+                      const isCorrectOpt = answerIsVerified && optIdx === q.correctAnswer;
+                      const optionImages = imported.optionImageUrls?.[optIdx] || [];
 
-              {/* Options or Written Question Notice */}
-              {isWritten ? (
-                <div className="p-4 rounded-xl bg-[#080E1C] border border-amber-900/40 text-amber-300 text-xs flex items-center justify-between">
-                  <span>✍️ লিখিত প্রশ্ন (Written Question - Option Selection Not Required)</span>
-                  <span className="text-slate-400 text-[11px]">Submit করার পর মূল সমাধান দেখা যাবে</span>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                  {q.options.map((opt, optIdx) => {
-                    const isSelected = userSelected === optIdx;
-                    const isCorrectOpt = answerIsVerified && optIdx === q.correctAnswer;
-                    const optionHtml = imported.optionHtmls?.[optIdx];
-                    const optionImages = imported.optionImageUrls?.[optIdx] || [];
+                      let btnStyle =
+                        'bg-white/95 dark:bg-[#080E1C] border-slate-300 dark:border-slate-800 hover:border-indigo-500 text-slate-900 dark:text-slate-200';
 
-                    let btnStyle = 'bg-[#080E1C] border-slate-800 hover:border-indigo-500 text-slate-300';
-
-                    if (isSubmitted) {
-                      if (isCorrectOpt) {
-                        btnStyle = 'bg-emerald-950/60 border-emerald-500 text-emerald-200 font-semibold';
-                      } else if (isSelected && !isCorrectOpt) {
-                        btnStyle = 'bg-red-950/60 border-red-500 text-red-200 font-semibold';
+                      if (isSubmitted) {
+                        if (isCorrectOpt) {
+                          btnStyle =
+                            'bg-emerald-50 dark:bg-emerald-950/60 border-2 border-emerald-500 text-emerald-950 dark:text-emerald-200 font-semibold';
+                        } else if (isSelected && !isCorrectOpt) {
+                          btnStyle =
+                            'bg-red-50 dark:bg-red-950/60 border-2 border-red-500 text-red-950 dark:text-red-200 font-semibold';
+                        }
+                      } else {
+                        if (isSelected) {
+                          btnStyle =
+                            'bg-indigo-600 text-white border-indigo-500 font-semibold shadow-md shadow-indigo-600/20';
+                        } else if (isLocked) {
+                          btnStyle =
+                            'bg-slate-100/80 dark:bg-[#070B16] border-slate-200 dark:border-slate-900 text-slate-400 dark:text-slate-600 cursor-not-allowed opacity-60';
+                        }
                       }
-                    } else {
-                      if (isSelected) {
-                        btnStyle = 'bg-indigo-600 text-white border-indigo-500 font-semibold shadow-lg shadow-indigo-600/30';
-                      } else if (isLocked) {
-                        btnStyle = 'bg-[#070B16] border-slate-900 text-slate-600 cursor-not-allowed opacity-50';
-                      }
-                    }
 
-                    return (
-                      <button
-                        key={optIdx}
-                        disabled={isLocked || isSubmitted}
-                        onClick={() => handleSelectOption(q.id, optIdx)}
-                        className={`text-left p-3.5 rounded-xl border text-xs sm:text-sm transition-all flex items-center justify-between gap-3 ${btnStyle}`}
-                      >
-                        <div className="flex items-center gap-3">
-                          <span
-                            className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 ${
-                              isSelected
-                                ? 'bg-white text-indigo-700'
-                                : 'bg-slate-800 text-slate-300'
-                            }`}
-                          >
-                            {imported.optionLabels?.[optIdx] || String.fromCharCode(65 + optIdx)}
-                          </span>
-                          <div className="leading-snug flex-1 text-left rich-option-content">
-                            {optionHtml && optionHtml.trim().length > 0
-                              ? <div dangerouslySetInnerHTML={{ __html: optionHtml }} />
-                              : <MathInlineRenderer text={opt || `Option ${String.fromCharCode(65 + optIdx)}`} />}
-                            {optionImages.map((url, imageIndex) => (
-                              <img key={url + imageIndex} src={url} alt="Option attachment" loading="lazy" className="mt-2 max-w-full max-h-48 object-contain rounded-lg" />
-                            ))}
+                      return (
+                        <button
+                          key={optIdx}
+                          disabled={isLocked || isSubmitted}
+                          onClick={() => handleSelectOption(q.id, optIdx)}
+                          className={`text-left p-3 sm:p-3.5 rounded-xl border ${optionFontClass} transition-all flex items-center justify-between gap-3 ${btnStyle}`}
+                        >
+                          <div className="flex items-center gap-3 min-w-0 flex-1">
+                            <span
+                              className={`w-6 h-6 rounded-lg text-xs font-bold flex items-center justify-center shrink-0 ${
+                                isSubmitted && isCorrectOpt
+                                  ? 'bg-emerald-600 text-white'
+                                  : isSubmitted && isSelected && !isCorrectOpt
+                                  ? 'bg-red-600 text-white'
+                                  : isSelected
+                                  ? 'bg-white text-indigo-700'
+                                  : 'bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-slate-300'
+                              }`}
+                            >
+                              {imported.optionLabels?.[optIdx] || String.fromCharCode(65 + optIdx)}
+                            </span>
+                            <div className="leading-snug flex-1 text-left min-w-0">
+                              <MathInlineRenderer
+                                text={opt || `Option ${String.fromCharCode(65 + optIdx)}`}
+                              />
+                              {optionImages.map((url, imageIndex) => (
+                                <img
+                                  key={url + imageIndex}
+                                  src={url}
+                                  alt="Option attachment"
+                                  loading="lazy"
+                                  className="mt-2 max-w-full max-h-48 object-contain rounded-lg bg-white p-1 border border-slate-200"
+                                />
+                              ))}
+                            </div>
                           </div>
+                          {isSubmitted && isCorrectOpt && (
+                            <CheckCircle className="w-4 h-4 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                          )}
+                          {isSubmitted && isSelected && !isCorrectOpt && (
+                            <XCircle className="w-4 h-4 text-red-600 dark:text-red-400 shrink-0" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                )}
+
+                {/* Post-Submission Details & AI Tutor Action */}
+                {isSubmitted && (
+                  <div className="mt-5 pt-4 border-t border-slate-200/80 dark:border-slate-800/80 space-y-3">
+                    <div className="p-3.5 sm:p-4 rounded-xl bg-white/95 dark:bg-[#080E1B] border border-slate-200 dark:border-slate-800 text-xs space-y-2.5 shadow-2xs">
+                      <span className="font-bold text-slate-900 dark:text-slate-200 block">
+                        সঠিক উত্তর ও মূল ব্যাখ্যা:
+                      </span>
+                      {showAnswerBadge && (
+                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 dark:bg-emerald-950/70 border border-emerald-500/60 text-emerald-950 dark:text-emerald-200 font-bold text-xs">
+                          <span className="px-2 py-0.5 rounded bg-emerald-600 text-white text-[10px] uppercase">
+                            Answer
+                          </span>
+                          <span>
+                            [{imported.optionLabels?.[q.correctAnswer] || String.fromCharCode(65 + q.correctAnswer)}]{' '}
+                          </span>
+                          <MathInlineRenderer text={q.options[q.correctAnswer]} />
                         </div>
-                        {isSubmitted && isCorrectOpt && <CheckCircle className="w-4 h-4 text-emerald-400 shrink-0" />}
-                        {isSubmitted && isSelected && !isCorrectOpt && <XCircle className="w-4 h-4 text-red-400 shrink-0" />}
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-
-              {/* Post-Submission Details & AI Tutor Action */}
-              {isSubmitted && (
-                <div className="mt-5 pt-4 border-t border-slate-800/80 space-y-3">
-                  <div className="p-3.5 rounded-xl bg-[#080E1B] border border-slate-800 text-xs space-y-1">
-                    <span className="font-bold text-slate-200 block mb-1">সঠিক উত্তর ও মূল ব্যাখ্যা:</span>
-                    {imported.explanationHtml && !imported.explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && imported.explanationHtml.replace(/<[^>]*>/g, '').trim().length > 10
-                      ? <div className="rich-explanation" dangerouslySetInnerHTML={{ __html: imported.explanationHtml }} />
-                      : q.explanation
-                        ? <MathMarkdownRenderer content={q.explanation} />
-                        : <span className="text-slate-300 font-medium">ঢাকা বিশ্ববিদ্যালয় ({q.subject}) প্রশ্ন সমাধান ও বিস্তৃত ব্যাখ্যা।</span>}
-                    {!answerIsVerified && q.questionType !== 'Written' && <p className="mt-2 text-amber-300">এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে উত্তর দেখানো হয়নি।</p>}
-                    {imported.explanationImageUrls?.map((url, imageIndex) => <img key={url + imageIndex} src={url} alt="Explanation attachment" loading="lazy" className="mt-2 max-w-full max-h-64 object-contain rounded-lg" />)}
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <button
-                      onClick={() => toggleAiTutor(q.id)}
-                      className={`px-4 py-2 border rounded-xl font-bold text-xs transition-all flex items-center gap-2 shadow-sm ${
-                        expandedAiQuestionId === q.id
-                          ? 'bg-sky-600 border-sky-400 text-white shadow-sky-600/30'
-                          : 'bg-gradient-to-r from-indigo-900/60 to-sky-950/60 hover:from-indigo-800 hover:to-sky-900 border-sky-500/40 text-sky-200'
-                      }`}
-                    >
-                      <Sparkles className="w-3.5 h-3.5 text-sky-400" />
-                      <span>{expandedAiQuestionId === q.id ? 'Hide AI Tutor' : 'Ask AI Tutor (Gemini 3.8)'}</span>
-                      {expandedAiQuestionId === q.id ? (
-                        <ChevronUp className="w-3.5 h-3.5" />
-                      ) : (
-                        <ChevronDown className="w-3.5 h-3.5" />
                       )}
-                    </button>
+                      {q.explanation ? (
+                        <MathMarkdownRenderer
+                          content={q.explanation}
+                          stripAnswerHeader={showAnswerBadge}
+                        />
+                      ) : (
+                        <span className="text-slate-700 dark:text-slate-300 font-medium block">
+                          ঢাকা বিশ্ববিদ্যালয় ({q.subject}) প্রশ্ন সমাধান ও বিস্তৃত ব্যাখ্যা।
+                        </span>
+                      )}
+                      {!answerIsVerified && q.questionType !== 'Written' && (
+                        <p className="mt-1 text-amber-700 dark:text-amber-300">
+                          এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে উত্তর দেখানো হয়নি।
+                        </p>
+                      )}
+                      {imported.explanationImageUrls?.map((url, imageIndex) => (
+                        <img
+                          key={url + imageIndex}
+                          src={url}
+                          alt="Explanation attachment"
+                          loading="lazy"
+                          className="mt-2 max-w-full max-h-64 object-contain rounded-lg bg-white p-1.5 border border-slate-200"
+                        />
+                      ))}
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <button
+                        onClick={() => toggleAiTutor(q.id)}
+                        className={`w-full sm:w-auto justify-center px-4 py-2.5 border rounded-xl font-bold text-xs transition-all flex items-center gap-2 shadow-sm ${
+                          isAiExpanded
+                            ? 'bg-sky-600 border-sky-400 text-white shadow-sky-600/30'
+                            : 'bg-indigo-600 hover:bg-indigo-500 border-indigo-500 text-white'
+                        }`}
+                      >
+                        <Sparkles className="w-3.5 h-3.5 text-amber-300" />
+                        <span>{isAiExpanded ? 'Hide AI Tutor' : 'Ask AI Tutor'}</span>
+                        {isAiExpanded ? (
+                          <ChevronUp className="w-3.5 h-3.5" />
+                        ) : (
+                          <ChevronDown className="w-3.5 h-3.5" />
+                        )}
+                      </button>
+                    </div>
+
+                    {isAiExpanded && (
+                      <InlineAiTutor
+                        question={q}
+                        university={examSession.university}
+                        session={examSession.session}
+                        customApiKey={customApiKey}
+                        onClose={() => toggleAiTutor(q.id)}
+                      />
+                    )}
                   </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      )}
 
-                  {/* Inline Expandable AI Tutor Accordion */}
-                  {expandedAiQuestionId === q.id && (
-                    <InlineAiTutor
-                      question={q}
-                      university={examSession.university}
-                      session={examSession.session}
-                      customApiKey={customApiKey}
-                      onClose={() => setExpandedAiQuestionId(null)}
-                    />
-                  )}
-                </div>
-              )}
-            </div>
-          );
-        })}
-      </div>}
-
-      {/* Confirmation Modal */}
-      {showConfirmModal && !isLoadingQuestions && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
-          <div className="bg-[#0B1222] rounded-3xl p-6 sm:p-8 max-w-md w-full border border-indigo-900/60 shadow-2xl space-y-5 text-center">
-            <div className="w-14 h-14 bg-amber-950/80 text-amber-400 border border-amber-800/60 rounded-2xl mx-auto flex items-center justify-center">
+      {/* Exit Exam Confirmation Modal */}
+      {showExitModal && (
+        <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-[#0B1222] rounded-3xl p-6 sm:p-8 max-w-md w-full border border-red-300 dark:border-red-900/60 shadow-2xl space-y-5 text-center">
+            <div className="w-14 h-14 bg-red-100 dark:bg-red-950/80 text-red-600 dark:text-red-400 border border-red-300 dark:border-red-800/60 rounded-2xl mx-auto flex items-center justify-center">
               <AlertTriangle className="w-7 h-7" />
             </div>
             <div>
-              <h3 className="text-lg font-bold text-white">পরীক্ষা জমা দিতে চান? (Submit Exam)</h3>
-              <p className="text-xs text-slate-400 mt-2 leading-relaxed">
+              <h3 className="text-lg font-bold text-slate-950 dark:text-white">Exit the exam?</h3>
+              <p className="text-xs text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                If you exit now, your answers and progress will not be saved.
+              </p>
+            </div>
+            <div className="flex items-center gap-3 pt-2">
+              <button
+                onClick={() => setShowExitModal(false)}
+                className="flex-1 py-2.5 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-300 rounded-xl font-semibold text-xs transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => {
+                  setShowExitModal(false);
+                  onBack();
+                }}
+                className="flex-1 py-2.5 bg-red-600 hover:bg-red-500 text-white font-bold rounded-xl text-xs shadow-md transition-all"
+              >
+                Yes, Exit
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Submission Confirmation Modal */}
+      {showConfirmModal && !isLoadingQuestions && (
+        <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm flex items-center justify-center p-4">
+          <div className="bg-white dark:bg-[#0B1222] rounded-3xl p-6 sm:p-8 max-w-md w-full border border-slate-200 dark:border-indigo-900/60 shadow-2xl space-y-5 text-center">
+            <div className="w-14 h-14 bg-amber-100 dark:bg-amber-950/80 text-amber-600 dark:text-amber-400 border border-amber-300 dark:border-amber-800/60 rounded-2xl mx-auto flex items-center justify-center">
+              <AlertTriangle className="w-7 h-7" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-slate-950 dark:text-white">
+                পরীক্ষা জমা দিতে চান? (Submit Exam)
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 mt-2 leading-relaxed">
                 আপনি {questions.length} টির মধ্যে {lockedQuestions.size} টি প্রশ্নের উত্তর দিয়ে লক করেছেন।
-                জমা দেওয়ার পর স্বয়ংক্রিয়ভাবে ফলাফল ও সঠিক উত্তর প্রদর্শিত হবে।
+                জমা দেওয়ার পর স্বয়ংক্রিয়ভাবে ফলাফল আপনার ইতিহাসে (Analytics) সেভ হবে।
               </p>
             </div>
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setShowConfirmModal(false)}
-                className="flex-1 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl font-semibold text-xs transition-colors"
+                className="flex-1 py-2.5 bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-300 rounded-xl font-semibold text-xs transition-colors"
               >
                 বাতিল (Cancel)
               </button>

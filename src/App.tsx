@@ -3,15 +3,34 @@ import { Navbar } from './components/Navbar';
 import { HomeView } from './components/HomeView';
 import { QuestionBankView } from './components/QuestionBankView';
 import { StrictExamView } from './components/StrictExamView';
-import { BookmarksView } from './components/BookmarksView';
 import { AnalyticsView } from './components/AnalyticsView';
-import { EXAM_SESSIONS, ExamSession, Question } from './data/questionBank';
-import { Key, Sparkles, X, CheckCircle, ShieldCheck, ExternalLink, HelpCircle } from 'lucide-react';
+import { EXAM_SESSIONS, ExamSession } from './data/questionBank';
+import { Key, Sparkles, X, CheckCircle, ExternalLink, HelpCircle } from 'lucide-react';
+import { UiSettings, loadUiSettings, saveUiSettings, loadThemeMode, saveThemeMode } from './utils/uiSettings';
 
 export default function App() {
-  const [currentView, setCurrentView] = useState<'home' | 'questionBank' | 'exam' | 'bookmarks' | 'analytics'>('home');
+  const [currentView, setCurrentView] = useState<'home' | 'questionBank' | 'exam' | 'analytics'>('home');
   const [selectedSession, setSelectedSession] = useState<ExamSession>(EXAM_SESSIONS[0]);
-  const [darkMode, setDarkMode] = useState<boolean>(true);
+  const [darkMode, setDarkMode] = useState<boolean>(() => loadThemeMode());
+  const [homeScrollY, setHomeScrollY] = useState<number>(0);
+  const [uiSettings, setUiSettings] = useState<UiSettings>(() => loadUiSettings());
+
+  const handleUpdateSettings = (next: UiSettings) => {
+    setUiSettings(next);
+    saveUiSettings(next);
+  };
+
+  const handleSetDarkMode = (dark: boolean) => {
+    setDarkMode(dark);
+    saveThemeMode(dark);
+  };
+
+  const navigateTo = (view: 'home' | 'questionBank' | 'exam' | 'analytics') => {
+    if (currentView === 'home' && view !== 'home') {
+      setHomeScrollY(window.scrollY);
+    }
+    setCurrentView(view);
+  };
 
   // Helper to read cookie
   const getCookieKey = () => {
@@ -35,22 +54,42 @@ export default function App() {
   const [savedSuccessMsg, setSavedSuccessMsg] = useState<boolean>(false);
   const [showKeyText, setShowKeyText] = useState<boolean>(false);
 
-  // Sync dark class on root document
+  // Sync dark class on root document and persist to localStorage
   useEffect(() => {
+    saveThemeMode(darkMode);
     if (darkMode) {
       document.documentElement.classList.add('dark');
+      document.documentElement.classList.remove('light-mode');
     } else {
       document.documentElement.classList.remove('dark');
+      document.documentElement.classList.add('light-mode');
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    if (currentView === 'home') {
+      window.scrollTo({ top: homeScrollY, behavior: 'auto' });
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }, [currentView]);
+
   const handleSelectExam = (session: ExamSession, mode: 'exam' | 'qb') => {
+    if (currentView === 'home') {
+      setHomeScrollY(window.scrollY);
+    }
     setSelectedSession(session);
     if (mode === 'exam') {
       setCurrentView('exam');
     } else {
       setCurrentView('questionBank');
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleOpenApiKeyModal = () => {
+    setTempKeyInput(customApiKey);
+    setIsApiKeyModalOpen(true);
   };
 
   const handleSaveApiKey = () => {
@@ -70,100 +109,103 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#060913] text-slate-100 transition-colors flex flex-col font-sans selection:bg-sky-500 selection:text-white">
+    <div className="min-h-screen bg-white dark:bg-[#060913] text-slate-900 dark:text-slate-100 transition-colors flex flex-col font-sans selection:bg-indigo-500 selection:text-white">
       {currentView !== 'exam' && (
         <Navbar
           currentView={currentView}
-          setCurrentView={setCurrentView}
+          setCurrentView={navigateTo}
           darkMode={darkMode}
-          setDarkMode={setDarkMode}
+          setDarkMode={handleSetDarkMode}
           selectedExamTitle={selectedSession.title}
-          onOpenApiKeyModal={() => {
-            setTempKeyInput(customApiKey);
-            setIsApiKeyModalOpen(true);
-          }}
+          onOpenApiKeyModal={handleOpenApiKeyModal}
           hasCustomKey={Boolean(customApiKey)}
+          uiSettings={uiSettings}
+          onUpdateSettings={handleUpdateSettings}
         />
       )}
 
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+      <main className="flex-1 max-w-7xl w-full mx-auto px-3 sm:px-6 lg:px-8 pt-4 sm:pt-6">
         {currentView === 'home' && (
           <HomeView
             onSelectExam={handleSelectExam}
-            setCurrentView={setCurrentView}
-            onOpenApiKeyModal={() => {
-              setTempKeyInput(customApiKey);
-              setIsApiKeyModalOpen(true);
-            }}
+            setCurrentView={navigateTo}
+            onOpenApiKeyModal={handleOpenApiKeyModal}
           />
         )}
         {currentView === 'questionBank' && (
           <QuestionBankView
             session={selectedSession}
-            onBack={() => setCurrentView('home')}
+            onBack={() => navigateTo('home')}
             onStartExam={(sessionId) => {
-              const found = EXAM_SESSIONS.find(s => s.id === sessionId);
+              const found = EXAM_SESSIONS.find((s) => s.id === sessionId);
               if (found) setSelectedSession(found);
-              setCurrentView('exam');
+              navigateTo('exam');
             }}
             customApiKey={customApiKey}
+            onOpenApiKeyModal={handleOpenApiKeyModal}
+            uiSettings={uiSettings}
           />
         )}
         {currentView === 'exam' && (
           <StrictExamView
             examSession={selectedSession}
-            onBack={() => setCurrentView('home')}
+            onBack={() => navigateTo('home')}
             customApiKey={customApiKey}
             setCustomApiKey={setCustomApiKey}
+            darkMode={darkMode}
+            setDarkMode={handleSetDarkMode}
+            onOpenApiKeyModal={handleOpenApiKeyModal}
+            uiSettings={uiSettings}
+            onUpdateSettings={handleUpdateSettings}
           />
         )}
-        {currentView === 'bookmarks' && (
-          <BookmarksView setCurrentView={setCurrentView} />
-        )}
         {currentView === 'analytics' && (
-          <AnalyticsView setCurrentView={setCurrentView} />
+          <AnalyticsView
+            setCurrentView={navigateTo}
+            onSelectExam={handleSelectExam}
+          />
         )}
       </main>
 
       {/* Global API Key Configuration Modal */}
       {isApiKeyModalOpen && (
-        <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
-          <div className="bg-[#0B1222] border border-indigo-900/80 rounded-3xl p-5 sm:p-6 max-w-lg w-full shadow-2xl space-y-4 text-slate-100 my-auto">
+        <div className="fixed inset-0 z-50 bg-black/75 backdrop-blur-md flex items-center justify-center p-3 sm:p-4 overflow-y-auto">
+          <div className="bg-white dark:bg-[#0B1222] border border-slate-200 dark:border-indigo-900/80 rounded-3xl p-5 sm:p-6 max-w-lg w-full shadow-2xl space-y-4 text-slate-900 dark:text-slate-100 my-auto">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
                 <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-amber-500 to-indigo-600 flex items-center justify-center text-white shadow-md">
                   <Key className="w-4 h-4" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-bold text-white flex items-center gap-1.5">
+                  <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
                     Gemini API Key Settings
                   </h3>
-                  <span className="text-[10px] text-slate-400">Ask AI Tutor Configuration</span>
+                  <span className="text-[10px] text-slate-500 dark:text-slate-400">Ask AI Tutor Configuration</span>
                 </div>
               </div>
               <button
                 onClick={() => setIsApiKeyModalOpen(false)}
-                className="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors"
+                className="p-1.5 rounded-lg text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               >
                 <X className="w-4 h-4" />
               </button>
             </div>
 
             {/* Visual 3-Step Guide: How to get Free API Key */}
-            <div className="bg-[#070D1B] border border-indigo-950 rounded-2xl p-4 space-y-3">
-              <div className="flex items-center justify-between">
-                <span className="text-xs font-bold text-sky-300 flex items-center gap-1.5">
-                  <HelpCircle className="w-4 h-4 text-sky-400" />
+            <div className="bg-slate-50 dark:bg-[#070D1B] border border-slate-200 dark:border-indigo-950 rounded-2xl p-4 space-y-3">
+              <div className="flex items-center justify-between flex-wrap gap-2">
+                <span className="text-xs font-bold text-indigo-700 dark:text-sky-300 flex items-center gap-1.5">
+                  <HelpCircle className="w-4 h-4 text-indigo-600 dark:text-sky-400" />
                   ফ্রি API Key পাওয়ার ৩টি সহজ ধাপ (100% Free):
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 font-medium">
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 font-semibold">
                   No Card Required
                 </span>
               </div>
 
-              <div className="space-y-2.5 text-xs text-slate-300">
-                <div className="flex items-start gap-2.5 bg-[#091122] p-2.5 rounded-xl border border-slate-800/80">
-                  <span className="w-5 h-5 rounded-full bg-sky-500/20 text-sky-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5 border border-sky-500/30">
+              <div className="space-y-2.5 text-xs text-slate-700 dark:text-slate-300">
+                <div className="flex items-start gap-2.5 bg-white dark:bg-[#091122] p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
+                  <span className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-sky-500/20 text-indigo-700 dark:text-sky-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5 border border-indigo-200 dark:border-sky-500/30">
                     ১
                   </span>
                   <div className="flex-1">
@@ -174,7 +216,7 @@ export default function App() {
                       href="https://aistudio.google.com/apikey"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-1.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-sky-600 hover:bg-sky-500 text-white font-semibold text-[11px] transition-colors shadow-sm"
+                      className="mt-1.5 inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-[11px] transition-colors shadow-sm"
                     >
                       <span>Google AI Studio খুলুন (Get API Key)</span>
                       <ExternalLink className="w-3 h-3" />
@@ -182,21 +224,21 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-2.5 bg-[#091122] p-2.5 rounded-xl border border-slate-800/80">
-                  <span className="w-5 h-5 rounded-full bg-sky-500/20 text-sky-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5 border border-sky-500/30">
+                <div className="flex items-start gap-2.5 bg-white dark:bg-[#091122] p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
+                  <span className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-sky-500/20 text-indigo-700 dark:text-sky-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5 border border-indigo-200 dark:border-sky-500/30">
                     ২
                   </span>
                   <p className="text-[11px] leading-relaxed flex-1">
-                    সেখানে নীল রঙের <strong className="text-white bg-slate-800 px-1.5 py-0.5 rounded">Create API key</strong> বাটনে ক্লিক করুন। এক ক্লিকেই ফ্রি কি তৈরি হয়ে যাবে।
+                    সেখানে নীল রঙের <strong className="text-slate-900 dark:text-white bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded">Create API key</strong> বাটনে ক্লিক করুন। এক ক্লিকেই ফ্রি কি তৈরি হয়ে যাবে।
                   </p>
                 </div>
 
-                <div className="flex items-start gap-2.5 bg-[#091122] p-2.5 rounded-xl border border-slate-800/80">
-                  <span className="w-5 h-5 rounded-full bg-sky-500/20 text-sky-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5 border border-sky-500/30">
+                <div className="flex items-start gap-2.5 bg-white dark:bg-[#091122] p-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80">
+                  <span className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-sky-500/20 text-indigo-700 dark:text-sky-300 font-bold text-[11px] flex items-center justify-center shrink-0 mt-0.5 border border-indigo-200 dark:border-sky-500/30">
                     ৩
                   </span>
                   <p className="text-[11px] leading-relaxed flex-1">
-                    তৈরি হওয়া <code className="text-amber-300 font-mono text-[10px] bg-slate-800 px-1 py-0.5 rounded">AIzaSy...</code> কি-টি কপি করে নিচের বক্সে পেস্ট করে <strong>Save & Activate</strong> চাপুন।
+                    তৈরি হওয়া <code className="text-amber-700 dark:text-amber-300 font-mono text-[10px] bg-amber-50 dark:bg-slate-800 px-1 py-0.5 rounded">AIzaSy...</code> কি-টি কপি করে নিচের বক্সে পেস্ট করে <strong>Save & Activate</strong> চাপুন।
                   </p>
                 </div>
               </div>
@@ -205,11 +247,11 @@ export default function App() {
             {/* Input Field */}
             <div className="space-y-2">
               <div className="flex items-center justify-between">
-                <label className="block text-[11px] text-slate-300 font-semibold">
+                <label className="block text-[11px] text-slate-700 dark:text-slate-300 font-semibold">
                   আপনার Gemini API Key পেস্ট করুন:
                 </label>
                 {tempKeyInput.trim().startsWith('AIzaSy') && tempKeyInput.trim().length >= 30 && (
-                  <span className="text-[10px] text-emerald-400 flex items-center gap-1 font-medium">
+                  <span className="text-[10px] text-emerald-600 dark:text-emerald-400 flex items-center gap-1 font-medium">
                     <CheckCircle className="w-3 h-3" /> Valid Key Format
                   </span>
                 )}
@@ -220,24 +262,24 @@ export default function App() {
                   value={tempKeyInput}
                   onChange={(e) => setTempKeyInput(e.target.value)}
                   placeholder="AIzaSy..."
-                  className="w-full bg-[#080E1C] border border-slate-700/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-sky-500 pr-16"
+                  className="w-full bg-slate-50 dark:bg-[#080E1C] border border-slate-300 dark:border-slate-700/80 rounded-xl px-3.5 py-2.5 text-xs text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-indigo-500 dark:focus:border-sky-500 pr-16"
                 />
                 <button
                   type="button"
                   onClick={() => setShowKeyText(!showKeyText)}
-                  className="absolute right-2.5 top-2.5 text-[10px] text-slate-400 hover:text-white px-1.5 py-0.5 rounded bg-slate-800"
+                  className="absolute right-2.5 top-2.5 text-[10px] text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white px-1.5 py-0.5 rounded bg-slate-200 dark:bg-slate-800"
                 >
                   {showKeyText ? 'Hide' : 'Show'}
                 </button>
               </div>
-              <span className="text-[10px] text-slate-400 block">
+              <span className="text-[10px] text-slate-500 dark:text-slate-400 block">
                 🔒 এটি আপনার ব্রাউজারের লোকাল স্টোরেজে সুরক্ষিত থাকবে এবং অন্য কোথাও প্রকাশ পাবে না।
               </span>
             </div>
 
             {savedSuccessMsg && (
-              <div className="p-2.5 rounded-xl bg-emerald-950/60 border border-emerald-800 text-emerald-300 text-xs flex items-center gap-2">
-                <CheckCircle className="w-4 h-4 text-emerald-400" /> API Key সফলভাবে সেভ করা হয়েছে!
+              <div className="p-2.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-emerald-600 dark:text-emerald-400" /> API Key সফলভাবে সেভ করা হয়েছে!
               </div>
             )}
 
@@ -258,7 +300,7 @@ export default function App() {
                     setIsApiKeyModalOpen(false);
                   }, 1000);
                 }}
-                className="px-3.5 py-2.5 bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white rounded-xl text-xs font-medium transition-colors"
+                className="px-3.5 py-2.5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white rounded-xl text-xs font-medium transition-colors"
               >
                 Clear Key
               </button>
@@ -274,14 +316,47 @@ export default function App() {
       )}
 
       {/* Footer */}
-      <footer className="border-t border-indigo-950/80 py-8 bg-[#040711] text-center text-xs text-slate-400 mt-12">
-        <div className="max-w-7xl mx-auto px-4 space-y-1.5">
-          <p className="font-semibold text-slate-300">
+      <footer className="border-t border-slate-200 dark:border-indigo-950/80 py-8 bg-white dark:bg-[#040711] text-center text-xs text-slate-600 dark:text-slate-400 mt-12">
+        <div className="max-w-7xl mx-auto px-4 space-y-2.5">
+          <p className="font-semibold text-slate-800 dark:text-slate-300">
             © 2026 Varsity Science Admission Question Bank & Exam Portal (DU, RU, JU, CU, GST).
           </p>
-          <p className="text-[11px] text-slate-500">
-            Last 10+ Years Full Individual Exam Papers • Strict One-Page Auto-Lock Mode • Powered by Google Gemini 3.8
+          <p className="text-xs font-bold text-indigo-600 dark:text-sky-400">
+            Made with Tausif Rahaman Raiyan
           </p>
+          <div className="flex items-center justify-center gap-3 pt-1">
+            <a
+              href="https://www.instagram.com/tausifrahamanraiyan/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram Profile"
+              title="Instagram - Tausif Rahaman Raiyan"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-fuchsia-50 dark:bg-fuchsia-950/50 hover:bg-fuchsia-100 dark:hover:bg-fuchsia-900/60 border border-fuchsia-300 dark:border-fuchsia-800/60 text-fuchsia-700 dark:text-fuchsia-300 font-semibold text-xs transition-all"
+            >
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+
+            <a
+              href="https://tausif-rahaman-raiyan.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub Portfolio"
+              title="GitHub - Tausif Rahaman Raiyan"
+              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-300 dark:border-slate-700 text-slate-800 dark:text-slate-200 font-semibold text-xs transition-all"
+            >
+              <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                />
+              </svg>
+              <span>GitHub</span>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
