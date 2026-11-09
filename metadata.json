@@ -1,0 +1,6 @@
+{
+  "name": "Varsity Science Admission Question Bank & Exam Portal (DU, RU, JU, CU, GST)",
+  "description": "Comprehensive admission question bank and strict one-page auto-lock exam portal for Dhaka University, Rajshahi University, Jahangirnagar University, Chittagong University, and GST Science units with detailed solutions and AI tutor.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

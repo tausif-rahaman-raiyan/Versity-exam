@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Varsity Science Admission Question Bank & Exam Portal</title>
+    <meta name="description" content="DU, RU, JU, CU, GST Science Unit Admission Question Bank with full-page auto-lock strict exam simulation, detailed solutions, and AI doubt solver." />
+    <meta property="og:title" content="Varsity Science Admission Question Bank & Exam Portal" />
+    <meta property="og:description" content="DU, RU, JU, CU, GST Science Unit Admission Question Bank with full-page auto-lock strict exam simulation, detailed solutions, and AI doubt solver." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous" />
+    <script>
+      (function() {
+        try {
+          var _nativeFetch = window.fetch ? window.fetch.bind(window) : null;
+          var _currentFetch = _nativeFetch;
+          Object.defineProperty(window, 'fetch', {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return _currentFetch;
+            },
+            set: function(fn) {
+              _currentFetch = fn;
+            }
+          });
+        } catch (e) {
+          try {
+            var _protoFetch = Window.prototype.fetch;
+            Object.defineProperty(Window.prototype, 'fetch', {
+              configurable: true,
+              enumerable: true,
+              get: function() {
+                return _protoFetch;
+              },
+              set: function(fn) {
+                _protoFetch = fn;
+              }
+            });
+          } catch (e2) {}
+        }
+
+        // Intercept and swallow rogue errors injected from third-party browser extensions
+        window.addEventListener('error', function(event) {
+          if (
+            (event && event.filename && event.filename.includes('chrome-extension://')) ||
+            (event && event.message && event.message.includes('Cannot set property fetch'))
+          ) {
+            if (event.preventDefault) event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
