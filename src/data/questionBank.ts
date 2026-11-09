@@ -3,6 +3,7 @@ import { RU_QUESTIONS } from './ruQuestions';
 import { JU_QUESTIONS } from './juQuestions';
 import { CU_QUESTIONS } from './cuQuestions';
 import { GST_QUESTIONS } from './gstQuestions';
+import { loadQuestionsForSession } from './sessionQuestionLoader';
 
 export interface Question {
   id: string;
@@ -850,14 +851,14 @@ export const MASTER_QUESTIONS: Question[] = [
   ...GST_QUESTIONS,
 ];
 
-// Helper to sanitize question text by removing any accidental [Uni Session] prefix or leading numbering
-export function sanitizeQuestionText(raw: string): string {
-  return raw
-    .replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '')
-    .trim();
+// Async loader for exact university/session JSON. Keeps the legacy synchronous
+// sample data for components that still need it, without mixing exam sessions.
+export async function getQuestionsForSessionAsync(sessionId: string): Promise<Question[]> {
+  const session = EXAM_SESSIONS.find(item => item.id === sessionId);
+  if (!session) return [];
+  return loadQuestionsForSession(session);
 }
 
-// Helper to generate full exam paper for any university session
 export function getQuestionsForSession(sessionId: string): Question[] {
   const session = EXAM_SESSIONS.find(item => item.id === sessionId);
   if (!session) return [];

@@ -63,10 +63,21 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
     return () => { active = false; };
   }, [session.id]);
 
-  const subjects = useMemo(() => [
-    'ALL',
-    ...Array.from(new Set(questions.map(question => question.subject))).sort((a, b) => a.localeCompare(b)),
-  ], [questions]);
+  const subjectValues = Array.from(new Set(questions.map(question => question.subject)));
+  const subjectTabs = [
+    { id: 'ALL', label: 'ALL' },
+    { id: 'Physics', label: 'Physics' },
+    { id: 'Chemistry', label: 'Chemistry' },
+    { id: 'Mathematics', label: 'Mathematics' },
+    { id: 'Biology', label: 'Biology' },
+    { id: 'ICT', label: 'ICT' },
+  ];
+  const displayedSubjectTabs = subjectTabs.filter(tab =>
+    tab.id === 'ALL' || subjectValues.includes(tab.id)
+  );
+  const extraSubjects = subjectValues.filter(subject =>
+    !subjectTabs.some(tab => tab.id === subject)
+  );
 
   const filteredQuestions = useMemo(() => questions.filter(question => {
     const term = searchTerm.trim().toLowerCase();
@@ -131,17 +142,17 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
 
       <div className="sticky top-16 z-30 bg-[#0A1122]/95 backdrop-blur-md p-3 sm:p-4 rounded-2xl border border-indigo-950 shadow-lg">
         <div className="flex flex-wrap gap-2">
-          {subjects.map(subject => (
+          {[...displayedSubjectTabs, ...extraSubjects.map(subject => ({ id: subject, label: subject }))].map(subject => (
             <button
-              key={subject}
-              onClick={() => setSelectedSubject(subject)}
+              key={subject.id}
+              onClick={() => setSelectedSubject(subject.id)}
               className={'px-3 py-2 rounded-xl text-xs font-semibold transition-all ' + (
-                selectedSubject === subject
+                selectedSubject === subject.id
                   ? 'bg-indigo-600 text-white shadow-md'
                   : 'bg-[#0F172B] text-slate-300 hover:bg-[#16223D] border border-slate-800'
               )}
             >
-              {SUBJECT_LABELS[subject] || subject}
+              {subject.label}
             </button>
           ))}
         </div>

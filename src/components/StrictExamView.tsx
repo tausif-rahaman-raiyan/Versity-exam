@@ -21,6 +21,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   const [questions, setQuestions] = useState<Question[]>([]);
   const [isLoadingQuestions, setIsLoadingQuestions] = useState(true);
   const [questionLoadError, setQuestionLoadError] = useState('');
+  const [selectedSubject, setSelectedSubject] = useState('ALL');
   // selectedAnswers: questionId -> optionIndex (0-3)
   const [selectedAnswers, setSelectedAnswers] = useState<Record<string, number>>({});
   // lockedQuestions: set of question IDs that have been clicked and permanently locked
@@ -41,6 +42,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
     setIsLoadingQuestions(true);
     setQuestionLoadError('');
     setQuestions([]);
+    setSelectedSubject('ALL');
     setTimeLeft(examSession.durationMinutes * 60);
     setSelectedAnswers({});
     setLockedQuestions(new Set());
@@ -127,6 +129,11 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
       incorrectCount++;
     }
   });
+
+  const availableSubjects = ['ALL', ...Array.from(new Set(questions.map(question => question.subject)))];
+  const displayedQuestions = selectedSubject === 'ALL'
+    ? questions
+    : questions.filter(question => question.subject === selectedSubject);
 
   const negativePenalty = examSession.university === 'JU' ? 0.20 : 0.25;
   const totalMarksEarned = Math.max(0, (correctCount * 1) - (incorrectCount * negativePenalty));
@@ -255,9 +262,28 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
         </div>
       </div>
 
+      {/* Exam paper subject navigation */}
+      {!isLoadingQuestions && questions.length > 0 && (
+        <div className="sticky top-16 z-30 flex flex-wrap gap-2 rounded-2xl border border-indigo-950 bg-[#0A1122]/95 p-3 backdrop-blur-md">
+          {availableSubjects.map(subject => (
+            <button
+              key={subject}
+              type="button"
+              onClick={() => setSelectedSubject(subject)}
+              className={selectedSubject === subject
+                ? 'rounded-xl bg-indigo-600 px-3 py-2 text-xs font-semibold text-white'
+                : 'rounded-xl border border-slate-800 bg-[#0F172B] px-3 py-2 text-xs font-semibold text-slate-300'}
+            >
+              {subject}
+            </button>
+          ))}
+          <span className="self-center text-xs text-slate-400">{displayedQuestions.length} questions</span>
+        </div>
+      )}
+
       {/* ALL QUESTIONS IN ONE PAGE */}
       {!isLoadingQuestions && questions.length > 0 && <div className="space-y-5">
-        {questions.map((q, idx) => {
+        {displayedQuestions.map((q, idx) => {
           const imported = q as ImportedQuestion;
           const answerIsVerified = imported.answerVerified !== false && q.correctAnswer >= 0;
           const userSelected = selectedAnswers[q.id];
@@ -272,7 +298,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                 isSubmitted
                   ? userSelected === q.correctAnswer
                     ? 'border-emerald-500/60 bg-emerald-950/10'
-                    : userSelected !== undefined
+                    : answerIsVerified && userSelected !== undefined
                     ? 'border-red-500/60 bg-red-950/10'
                     : 'border-slate-800'
                   : isLocked
