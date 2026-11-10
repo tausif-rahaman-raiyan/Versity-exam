@@ -435,18 +435,6 @@ export async function loadQuestionsForSession(session: ExamSession): Promise<Que
         if (response.ok) {
           data = (await response.json()) as RawExam;
         }
-      } else {
-        // Node environment fallback for server rendering & automated testing
-        try {
-          const fs = await import('fs');
-          const path = await import('path');
-          const localPath = path.join(process.cwd(), 'public', fileUrl);
-          if (fs.existsSync(localPath)) {
-            data = JSON.parse(fs.readFileSync(localPath, 'utf8')) as RawExam;
-          }
-        } catch {
-          // ignore
-        }
       }
 
       if (data) {

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
-    "build": "vite build && rm -rf dist-bundle && mkdir -p dist-bundle && cp -r dist/assets/* dist-bundle/ && rm -rf dist-bundle/aistudio dist-bundle/imported",
+    "build": "vite build && rm -rf dist-bundle && mkdir -p dist-bundle && cp -r dist/assets/* dist-bundle/ && rm -rf dist-bundle/aistudio dist-bundle/imported && cp index.html 404.html && touch .nojekyll",
     "preview": "vite preview",
     "start": "node server.ts",
     "clean": "rm -rf dist server.js",

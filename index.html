@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Patrick+Hand&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist-bundle/app.css" id="prebuilt-css" />
     <script>
       (function() {
         try {
@@ -69,25 +70,9 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="./src/main.tsx" onerror="window.__loadPrebuiltBundle && window.__loadPrebuiltBundle()"></script>
     <script>
-      // Automatic fallback loader when GitHub Pages serves raw main branch /(root) directly
-      window.__loadPrebuiltBundle = function() {
-        if (window.__BUNDLE_LOADED__) return;
-        window.__BUNDLE_LOADED__ = true;
-        window.__RAW_ROOT_BRANCH__ = true;
-        var link = document.createElement('link');
-        link.rel = 'stylesheet';
-        link.href = './dist-bundle/app.css';
-        document.head.appendChild(link);
-        var script = document.createElement('script');
-        script.type = 'module';
-        script.src = './dist-bundle/app.js';
-        document.body.appendChild(script);
-      };
-      if (window.location.hostname.indexOf('github.io') !== -1 && document.querySelector('script[src*="src/main.tsx"]')) {
-        window.__loadPrebuiltBundle();
-      }
+      window.__RAW_ROOT_BRANCH__ = true;
     </script>
+    <script type="module" src="./dist-bundle/app.js" id="prebuilt-js"></script>
   </body>
 </html>

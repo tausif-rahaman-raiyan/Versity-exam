@@ -6,7 +6,25 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     base: './',
-    plugins: [react(), tailwindcss()],
+    plugins: [
+      {
+        name: 'dev-and-build-entry',
+        transformIndexHtml: {
+          order: 'pre',
+          handler(html) {
+            return html
+              .replace(/<link[^>]*id="prebuilt-css"[^>]*>\s*/i, '')
+              .replace('window.__RAW_ROOT_BRANCH__ = true;', 'window.__RAW_ROOT_BRANCH__ = false;')
+              .replace(
+                /<script[^>]*id="prebuilt-js"[^>]*><\/script>/i,
+                '<script type="module" src="./src/main.tsx"></script>'
+              );
+          },
+        },
+      },
+      react(),
+      tailwindcss(),
+    ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),

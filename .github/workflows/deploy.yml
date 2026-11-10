@@ -1,4 +1,4 @@
-name: Deploy Vite App to GitHub Pages
+name: Build & Update GitHub Pages Bundle on main
 
 on:
   push:
@@ -8,12 +8,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: "pages"
+  group: "pages-bundle"
   cancel-in-progress: true
 
 env:
@@ -25,6 +23,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -34,29 +34,15 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
-      - name: Build production bundle
+      - name: Build production bundle for main /(root)
         run: npm run build
 
-      - name: Copy index.html to 404.html and add .nojekyll
+      - name: Commit updated dist-bundle to branch if changed
         run: |
-          cp dist/index.html dist/404.html
-          touch dist/.nojekyll
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './dist'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-24.04
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f dist-bundle index.html 404.html .nojekyll
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update prebuilt bundle for GitHub Pages main branch [skip ci]"
+            git push
+          fi
