@@ -1,6 +1,6 @@
 {
-  "summary":  "Implementation plan for Varsity QB branding, Question Bank nav label, +/- pixel font size controls, default White/Light theme on first visit, GitHub Pages auto-deploy workflow & relative paths, fast split-wise streaming in Ask AI Tutor, and updated footer attribution with hover animations.",
-  "updatedAt":  "2026-11-09T23:58:40.121619666Z",
+  "summary":  "Implementation plan to make GitHub Pages work directly from the main branch /(root) by generating a pre-built production bundle in the repository root, adding a smart environment loader in index.html, and resolving public/ asset paths for root branch hosting.",
+  "updatedAt":  "2026-11-10T00:27:22.850344826Z",
   "requestFeedback":  true,
   "userFacing":  true
 }

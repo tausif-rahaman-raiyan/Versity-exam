@@ -116,9 +116,14 @@ function imagesFromHtml(html?: string): string[] {
 
 function resolvePublicUrl(url: string): string {
   if (/^https?:\/\//i.test(url)) return url;
-  if (url.startsWith('/')) {
+  const cleanPath = url.replace(/^\.\//, '/');
+  if (cleanPath.startsWith('/')) {
+    if (typeof window !== 'undefined' && (window as any).__RAW_ROOT_BRANCH__) {
+      if (cleanPath.startsWith('/public/')) return `.${cleanPath}`;
+      return `./public${cleanPath}`;
+    }
     const base = ((import.meta as any).env?.BASE_URL || './').replace(/\/+$/, '');
-    return `${base}${url}`;
+    return `${base}${cleanPath}`;
   }
   return url;
 }
@@ -405,7 +410,11 @@ export async function loadQuestionsForSession(session: ExamSession): Promise<Que
     try {
       let data: RawExam | null = null;
       if (typeof window !== 'undefined') {
-        const response = await fetch(resolvePublicUrl(fileUrl));
+        let response = await fetch(resolvePublicUrl(fileUrl));
+        if (!response.ok) {
+          (window as any).__RAW_ROOT_BRANCH__ = true;
+          response = await fetch(`./public${fileUrl}`);
+        }
         if (response.ok) {
           data = (await response.json()) as RawExam;
         }

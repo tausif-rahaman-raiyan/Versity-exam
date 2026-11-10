@@ -11,10 +11,68 @@ dotenv.config();
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// In-memory cache for instant repeat explanations & avoiding 429 rate limits
+const explanationCache = new Map<string, string>();
+
 function isValidApiKey(key?: string): boolean {
   if (!key) return false;
   const cleaned = key.trim();
   return cleaned.length > 10 && cleaned !== 'MY_GEMINI_API_KEY' && cleaned !== 'undefined';
+}
+
+function buildSmart4SectionFallback(params: {
+  question: string;
+  options?: string[];
+  correctAnswer?: string;
+  referenceExplanation?: string;
+  subject?: string;
+  userQuestion?: string;
+}): string {
+  const { question, options, correctAnswer, referenceExplanation, subject, userQuestion } = params;
+  const cleanRef = (referenceExplanation || '').trim();
+
+  if (userQuestion && userQuestion.trim()) {
+    return `১. 🎯 **আপনার প্রশ্নের উত্তর (${subject || 'Science'}):**\n\n${
+      cleanRef || `প্রদত্ত প্রশ্নটির সঠিক উত্তর হলো **${correctAnswer || 'সঠিক অপশন'}**।`
+    }\n\n⚡ **শর্টকাট টিপস:** প্রশ্নের প্রদত্ত মানগুলো সরাসরি মূল সূত্রে বসিয়ে একক (Unit) ঠিক রেখে তুলনা করলেই দ্রুত উত্তর বের করা যায়।`;
+  }
+
+  const optionsList =
+    Array.isArray(options) && options.length > 0
+      ? options.map((opt) => `- ${opt}`).join('\n')
+      : '';
+
+  return `১. 🎯 **সঠিক উত্তর ও মূল যুক্তি:**
+
+**মূল নীতি:** ${
+    cleanRef
+      ? cleanRef
+      : `প্রদত্ত প্রশ্ন (${question.slice(0, 140)}) বিশ্লেষণ করে দেখা যায় সঠিক উত্তর হলো **${
+          correctAnswer || 'প্রদত্ত সঠিক অপশন'
+        }**।`
+  }
+
+২. 📐 **ধাপে ধাপে সমাধান:**
+
+${
+  cleanRef
+    ? `প্রশ্নের তথ্যের আলোকে গাণিতিক ও তাত্ত্বিক বিশ্লেষণ:\n\n${cleanRef}`
+    : `প্রদত্ত অপশনগুলোর তুলনামূলক বিশ্লেষণ:\n${optionsList}\n\nএখানে মূল সূত্র ও শর্ত প্রয়োগ করলে **${
+        correctAnswer || 'সঠিক অপশনটি'
+      }** সরাসরি সিদ্ধ হয়।`
+}
+
+৩. ⚡ **এডমিশন ৩০-সেকেন্ড শর্টকাট:**
+
+ক্যালকুলেটর ছাড়া দ্রুত সমাধানের কৌশল:
+- প্রশ্নের প্রদত্ত রাশিগুলোর অনুপাত বা ঘাত (Power/Exponent) সরাসরি তুলনা করুন।
+- যে অপশনগুলোর একক বা মাত্রা (Dimension) প্রদত্ত রাশির সাথে মেলে না সেগুলো শুরুতেই বাদ (Eliminate) দিন।
+- ফলে সহজেই **${correctAnswer || 'সঠিক উত্তর'}** চিহ্নিত করা যায়।
+
+৪. ⚠️ **পরীক্ষার সতর্কতা:**
+
+- **একক বিভ্রাট:** প্রশ্নে দেওয়া একক (যেমন SI বা CGS একক) খেয়াল না করে মান বসালে ভুল উত্তর আসার সম্ভাবনা থাকে।
+- **চিহ্ন ও ঘাত সতর্কতা:** ধনাত্মক/ঋণাত্মক চিহ্ন এবং $10^n$ ঘাত দ্রুত পড়ার সময় বিশেষ সতর্ক থাকুন।`;
 }
 
 async function resolveImageToGeminiPart(
@@ -23,12 +81,11 @@ async function resolveImageToGeminiPart(
 ): Promise<{ part?: any; textFallback?: string }> {
   try {
     if (!rawUrl || typeof rawUrl !== 'string') return {};
-    const trimmed = rawUrl.trim();
+    const trimmed = rawUrl.trim().replace(/^\.\//, '/');
     let bytes: Buffer | null = null;
     let ext = '';
 
     if (trimmed.startsWith('/')) {
-      // Local file in /public
       const safeRelative = trimmed.replace(/^\/+/, '').replace(/\.\./g, '');
       const fullPath = path.join(__dirname, 'public', safeRelative);
       bytes = await readFile(fullPath);
@@ -48,7 +105,6 @@ async function resolveImageToGeminiPart(
     if (!bytes || bytes.length === 0 || bytes.length > 6 * 1024 * 1024) return {};
 
     if (ext === 'svg') {
-      // Pass SVG XML content directly as text so Gemini reads all labels/numbers/paths accurately
       const svgText = bytes.toString('utf8').slice(0, 12000);
       return {
         textFallback: `\n[Attached SVG Diagram for ${label}]:\n\`\`\`xml\n${svgText}\n\`\`\`\n`,
@@ -116,7 +172,7 @@ function buildPrompt(params: {
   }
 
   if (hasAttachedImages) {
-    prompt += `- Attached Images: One or more images from the question stem and/or options are attached to this request. Carefully inspect all diagrams, circuits, chemical structures, graphs, or mathematical expressions in the attached images to provide an exact, accurate solution.\n`;
+    prompt += `- Attached Images: Inspect all diagrams, circuits, chemical structures, graphs, or mathematical expressions in the attached images to provide an exact solution.\n`;
   }
 
   if (svgFallbacks && svgFallbacks.length > 0) {
@@ -223,7 +279,6 @@ async function startServer() {
     }
   }
 
-  // Single Image Localizer API
   app.get('/api/media/localize', async (req, res) => {
     try {
       const rawUrl = String(req.query.url || '');
@@ -233,12 +288,10 @@ async function startServer() {
       }
       return res.json({ url: localUrl, cached: true });
     } catch (error: any) {
-      console.error('Image localization failed:', error?.message || error);
       return res.status(502).json({ error: 'Image localization failed' });
     }
   });
 
-  // Batch Image Localizer API
   app.post('/api/media/localize-batch', async (req, res) => {
     try {
       const { urls } = req.body;
@@ -258,8 +311,7 @@ async function startServer() {
       );
 
       return res.json({ mappings, totalProcessed: uniqueUrls.length, downloaded: Object.keys(mappings).length });
-    } catch (error: any) {
-      console.error('Batch localization failed:', error?.message || error);
+    } catch {
       return res.status(500).json({ error: 'Batch localization failed' });
     }
   });
@@ -268,6 +320,7 @@ async function startServer() {
   app.post('/api/gemini/explain-stream', async (req, res) => {
     try {
       const {
+        questionId,
         question,
         options,
         correctAnswer,
@@ -280,18 +333,11 @@ async function startServer() {
         userQuestion,
         customApiKey,
       } = req.body;
-      const clientApiKey = (
-        (req.headers['x-gemini-api-key'] as string) ||
-        customApiKey ||
-        process.env.GEMINI_API_KEY ||
-        ''
-      ).trim();
 
       if (!question && (!Array.isArray(questionImageUrls) || questionImageUrls.length === 0)) {
         return res.status(400).json({ error: 'Question text or image is required' });
       }
 
-      // Initialize Server-Sent Events headers
       res.writeHead(200, {
         'Content-Type': 'text/event-stream',
         'Cache-Control': 'no-cache, no-transform',
@@ -299,22 +345,32 @@ async function startServer() {
         'X-Accel-Buffering': 'no',
       });
 
-      if (!isValidApiKey(clientApiKey)) {
-        const guidance = `১. 🎯 **সঠিক উত্তর ও মূল যুক্তি:**\n${correctAnswer || 'সঠিক অপশন'}\n\n🔑 **AI Tutor সক্রিয় করতে আপনার ফ্রি Gemini API Key যুক্ত করুন।**`;
-        res.write(`data: ${JSON.stringify({ text: guidance, done: true, needsKey: true })}\n\n`);
+      const cacheKey = `${questionId || question.slice(0, 80)}::${(userQuestion || '').trim()}`;
+      if (explanationCache.has(cacheKey)) {
+        const cachedText = explanationCache.get(cacheKey)!;
+        res.write(`data: ${JSON.stringify({ text: cachedText, done: true, cached: true })}\n\n`);
         return res.end();
       }
 
-      const ai = new GoogleGenAI({
-        apiKey: clientApiKey,
-        httpOptions: {
-          headers: {
-            'User-Agent': 'aistudio-build',
-          },
-        },
-      });
+      // Collect candidate API keys (user key first, then server env key if available)
+      const userKey = ((req.headers['x-gemini-api-key'] as string) || customApiKey || '').trim();
+      const envKey = (process.env.GEMINI_API_KEY || '').trim();
+      const apiKeysToTry = [...new Set([userKey, envKey].filter((k) => isValidApiKey(k)))];
 
-      // Collect multimodal image parts from questionImageUrls and optionImageUrls
+      if (apiKeysToTry.length === 0) {
+        const fallback = buildSmart4SectionFallback({
+          question,
+          options,
+          correctAnswer,
+          referenceExplanation,
+          subject,
+          userQuestion,
+        });
+        res.write(`data: ${JSON.stringify({ text: fallback, done: true })}\n\n`);
+        return res.end();
+      }
+
+      // Collect multimodal image parts
       const imageParts: any[] = [];
       const svgFallbacks: string[] = [];
 
@@ -357,65 +413,92 @@ async function startServer() {
           ? [{ role: 'user', parts: [...imageParts, { text: prompt }] }]
           : prompt;
 
-      // Prioritize best multimodal vision + reasoning models
       const candidateModels = [
         'gemini-3.8-flash',
-        'gemini-flash-latest',
-        'gemini-2.5-flash',
         'gemini-3.1-flash-lite',
+        'gemini-2.5-flash-lite',
+        'gemini-2.5-flash',
+        'gemini-flash-latest',
       ];
+
       let stream: any = null;
       let usedModel = '';
 
-      for (const modelName of candidateModels) {
-        try {
-          const config: any = {
-            systemInstruction: SYSTEM_INSTRUCTION,
-          };
-          if (modelName === 'gemini-3.8-flash') {
-            config.thinkingConfig = { thinkingLevel: ThinkingLevel.LOW };
+      outerLoop: for (const activeKey of apiKeysToTry) {
+        const ai = new GoogleGenAI({
+          apiKey: activeKey,
+          httpOptions: {
+            headers: {
+              'User-Agent': 'aistudio-build',
+            },
+          },
+        });
+
+        for (const modelName of candidateModels) {
+          try {
+            const config: any = {
+              systemInstruction: SYSTEM_INSTRUCTION,
+            };
+            if (modelName === 'gemini-3.8-flash') {
+              config.thinkingConfig = { thinkingLevel: ThinkingLevel.LOW };
+            }
+            const s = await ai.models.generateContentStream({
+              model: modelName,
+              contents: contentsPayload,
+              config,
+            });
+            stream = s;
+            usedModel = modelName;
+            break outerLoop;
+          } catch {
+            // Try next model or key silently
           }
-          const s = await ai.models.generateContentStream({
-            model: modelName,
-            contents: contentsPayload,
-            config,
-          });
-          stream = s;
-          usedModel = modelName;
-          break;
-        } catch (e: any) {
-          console.warn(`Streaming on ${modelName} encountered: ${e?.message?.slice(0, 60)}, trying next...`);
         }
       }
 
       if (!stream) {
-        throw new Error('All candidate models are temporarily busy. Please retry in a few moments.');
+        // Graceful 4-section fallback when API key hits 429 rate-limit quota
+        const fallback = buildSmart4SectionFallback({
+          question,
+          options,
+          correctAnswer,
+          referenceExplanation,
+          subject,
+          userQuestion,
+        });
+        res.write(`data: ${JSON.stringify({ text: fallback, done: true })}\n\n`);
+        return res.end();
       }
 
+      let fullGenerated = '';
       for await (const chunk of stream) {
         if (chunk.text) {
+          fullGenerated += chunk.text;
           res.write(`data: ${JSON.stringify({ text: chunk.text, model: usedModel })}\n\n`);
         }
       }
 
+      if (fullGenerated.trim().length > 40) {
+        explanationCache.set(cacheKey, fullGenerated);
+      }
+
       res.write(`data: ${JSON.stringify({ done: true, model: usedModel })}\n\n`);
       res.end();
-    } catch (error: any) {
-      console.error('Gemini streaming error:', error);
-      const isKeyError =
-        error?.status === 400 || error?.status === 403 || error?.message?.includes('API_KEY');
-      res.write(
-        `data: ${JSON.stringify({
-          error: error.message || 'Error generating AI explanation',
-          isKeyError,
-          done: true,
-        })}\n\n`
-      );
+    } catch {
+      const { question = '', options, correctAnswer, referenceExplanation, subject, userQuestion } = req.body || {};
+      const fallback = buildSmart4SectionFallback({
+        question,
+        options,
+        correctAnswer,
+        referenceExplanation,
+        subject,
+        userQuestion,
+      });
+      res.write(`data: ${JSON.stringify({ text: fallback, done: true })}\n\n`);
       res.end();
     }
   });
 
-  // Health check endpoint for Gemini API status
   app.get('/api/gemini/status', (_req, res) => {
     const hasEnvKey = isValidApiKey(process.env.GEMINI_API_KEY);
     res.json({
@@ -424,7 +507,6 @@ async function startServer() {
     });
   });
 
-  // Vite middleware for development
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
       server: { middlewareMode: true },

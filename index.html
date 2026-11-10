@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Varsity Science Admission Question Bank &amp; Exam Portal (DU, RU, JU, CU, GST)</title>
+    <title>Varsity QB — Science Admission Question Bank &amp; Exam Portal (DU, RU, JU, CU, GST)</title>
     <meta name="description" content="DU, RU, JU, CU, GST Science Unit Admission Question Bank with full-page auto-lock strict exam simulation, detailed solutions, and AI doubt solver." />
-    <meta property="og:title" content="Varsity Science Admission Question Bank & Exam Portal" />
+    <meta property="og:title" content="Varsity QB — Science Admission Question Bank & Exam Portal" />
     <meta property="og:description" content="DU, RU, JU, CU, GST Science Unit Admission Question Bank with full-page auto-lock strict exam simulation, detailed solutions, and AI doubt solver." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -44,11 +44,20 @@
           } catch (e2) {}
         }
 
+        // Suppress harmless Vite HMR WebSocket errors when HMR is disabled in preview
+        window.addEventListener('unhandledrejection', function(event) {
+          var msg = event && event.reason && (event.reason.message || String(event.reason));
+          if (msg && (msg.includes('WebSocket closed without opened') || msg.includes('failed to connect to websocket'))) {
+            if (event.preventDefault) event.preventDefault();
+            return true;
+          }
+        });
+
         // Intercept and swallow rogue errors injected from third-party browser extensions
         window.addEventListener('error', function(event) {
           if (
             (event && event.filename && event.filename.includes('chrome-extension://')) ||
-            (event && event.message && event.message.includes('Cannot set property fetch'))
+            (event && event.message && (event.message.includes('Cannot set property fetch') || event.message.includes('WebSocket closed without opened')))
           ) {
             if (event.preventDefault) event.preventDefault();
             if (event.stopImmediatePropagation) event.stopImmediatePropagation();
@@ -60,6 +69,25 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="./src/main.tsx" onerror="window.__loadPrebuiltBundle && window.__loadPrebuiltBundle()"></script>
+    <script>
+      // Automatic fallback loader when GitHub Pages serves raw main branch /(root) directly
+      window.__loadPrebuiltBundle = function() {
+        if (window.__BUNDLE_LOADED__) return;
+        window.__BUNDLE_LOADED__ = true;
+        window.__RAW_ROOT_BRANCH__ = true;
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = './dist-bundle/app.css';
+        document.head.appendChild(link);
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = './dist-bundle/app.js';
+        document.body.appendChild(script);
+      };
+      if (window.location.hostname.indexOf('github.io') !== -1 && document.querySelector('script[src*="src/main.tsx"]')) {
+        window.__loadPrebuiltBundle();
+      }
+    </script>
   </body>
 </html>
