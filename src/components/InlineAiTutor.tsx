@@ -11,6 +11,7 @@ interface InlineAiTutorProps {
   session?: string;
   customApiKey: string;
   onClose: () => void;
+  fontSizePx?: number;
 }
 
 const BANGLA_OPTION_LABELS = ['ক', 'খ', 'গ', 'ঘ', 'ঙ'];
@@ -143,6 +144,7 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
   session,
   customApiKey,
   onClose,
+  fontSizePx,
 }) => {
   const [explanation, setExplanation] = useState<string>('');
   const [isStreaming, setIsStreaming] = useState<boolean>(true);
@@ -566,7 +568,10 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
       </div>
 
       {/* Accordion Content Area */}
-      <div className="p-3.5 sm:p-5 space-y-3 text-xs">
+      <div
+        className="p-3.5 sm:p-5 space-y-3 leading-relaxed"
+        style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
+      >
         {errorMsg && (
           <div className="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800/60 text-amber-800 dark:text-amber-300 flex items-start gap-2">
             <AlertCircle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
@@ -576,7 +581,10 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
 
         {/* Top Answer Box (Always shown immediately at the start of AI Tutor) */}
         {hasAnswerBadge && (
-          <div className="p-3.5 rounded-xl bg-white dark:bg-[#0D1A35] border-2 border-indigo-200 dark:border-indigo-700/80 text-slate-900 dark:text-slate-100 text-xs sm:text-sm font-semibold flex flex-wrap items-center gap-2.5 shadow-sm">
+          <div
+            className="p-3.5 rounded-xl bg-white dark:bg-[#0D1A35] border-2 border-indigo-200 dark:border-indigo-700/80 text-slate-900 dark:text-slate-100 font-semibold flex flex-wrap items-center gap-2.5 shadow-sm"
+            style={{ fontSize: fontSizePx ? `${Math.max(12, fontSizePx)}px` : undefined }}
+          >
             <span className="px-2.5 py-1 rounded-md bg-indigo-600 text-white text-[11px] font-bold tracking-wide uppercase">
               Answer
             </span>
@@ -603,7 +611,7 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
         {isStreaming && !explanation && (
           <div className="py-3 text-left flex items-center gap-2.5 text-slate-700 dark:text-slate-300">
             <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 dark:bg-sky-400 animate-ping shrink-0" />
-            <span className="text-xs font-medium text-indigo-700 dark:text-sky-300">
+            <span className="font-medium text-indigo-700 dark:text-sky-300" style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}>
               {totalImagesCount > 0
                 ? 'AI Coach প্রশ্নের ছবি ও অপশন বিশ্লেষণ করে সমাধান লিখছে...'
                 : 'AI Coach শর্টকাট ও সমাধান লাইভ লিখছে...'}
@@ -620,10 +628,12 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
                 <div
                   key={idx}
                   className="bg-white dark:bg-[#070D1D] rounded-xl p-3.5 sm:p-4 border border-slate-200 dark:border-indigo-950/80 shadow-xs relative transition-all"
+                  style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
                 >
                   <MathMarkdownRenderer
                     content={sectionText}
                     stripAnswerHeader={idx === 0 && hasAnswerBadge}
+                    fontSizePx={fontSizePx}
                   />
                   {isStreaming && isLastSection && (
                     <span className="inline-block w-2 h-4 bg-indigo-600 dark:bg-sky-400 animate-pulse ml-1 align-middle" />
@@ -643,12 +653,13 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
                 ? 'bg-indigo-50 dark:bg-indigo-950/60 border-indigo-200 dark:border-indigo-500/40 ml-4 sm:ml-6 text-slate-900 dark:text-indigo-100'
                 : 'bg-white dark:bg-[#070D1D] border-slate-200 dark:border-slate-800 mr-4 sm:mr-6 text-slate-900 dark:text-slate-200'
             }`}
+            style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
           >
             <div className="font-semibold text-[10px] mb-1 text-slate-500 dark:text-slate-400">
               {item.sender === 'user' ? 'আপনার প্রশ্ন (Your Question):' : 'AI Coach উত্তর:'}
             </div>
             {item.text ? (
-              <MathMarkdownRenderer content={item.text} />
+              <MathMarkdownRenderer content={item.text} fontSizePx={fontSizePx} />
             ) : (
               <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-xs py-1">
                 <span className="w-2 h-2 rounded-full bg-indigo-600 dark:bg-sky-400 animate-ping" /> উত্তর লেখা হচ্ছে...

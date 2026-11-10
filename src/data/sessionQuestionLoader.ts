@@ -228,11 +228,18 @@ function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession
   const rawOptions = Array.isArray(raw.raw_options) && raw.raw_options.length > 0
     ? raw.raw_options
     : (Array.isArray(raw.options) ? raw.options : []);
-  const optionTexts = rawOptions.map(option =>
-    typeof option === 'string'
-      ? extractMathFromHtml(option)
-      : (option.html ? extractMathFromHtml(option.html) : extractMathFromHtml(option.text || ''))
-  );
+  const optionTexts = rawOptions.map(option => {
+    if (typeof option === 'string') return extractMathFromHtml(option);
+    const hasImages = (option.image_urls && option.image_urls.length > 0) || imagesFromHtml(option.html).length > 0;
+    if (option.text !== undefined && option.text !== '') {
+      return extractMathFromHtml(option.text.replace(/<img\b[^>]*>/gi, '').trim());
+    }
+    if (option.html) {
+      const htmlClean = hasImages ? option.html.replace(/<img\b[^>]*>/gi, '') : option.html;
+      return extractMathFromHtml(htmlClean);
+    }
+    return '';
+  });
   const optionLabels = rawOptions.map((option, optionIndex) =>
     typeof option === 'string' ? String.fromCharCode(65 + optionIndex) : (option.label || String.fromCharCode(65 + optionIndex))
   );

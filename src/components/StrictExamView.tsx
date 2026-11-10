@@ -486,7 +486,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
             const isWritten = q.questionType === 'Written' || q.options.length === 0;
             const isAiExpanded = expandedAiQuestionIds.has(q.id);
             const cardStyle = getSubjectCardStyle(q.subject);
-            const showAnswerBadge = answerIsVerified && Boolean(q.options[q.correctAnswer]);
+            const showAnswerBadge = answerIsVerified && q.correctAnswer >= 0;
 
             return (
               <div
@@ -611,7 +611,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                             </span>
                             <div className="leading-snug flex-1 text-left min-w-0">
                               <MathInlineRenderer
-                                text={opt || `Option ${String.fromCharCode(65 + optIdx)}`}
+                                text={opt || (optionImages.length > 0 ? '' : `Option ${String.fromCharCode(65 + optIdx)}`)}
                               />
                               {optionImages.map((url, imageIndex) => (
                                 <img
@@ -718,6 +718,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                         session={examSession.session}
                         customApiKey={customApiKey}
                         onClose={() => toggleAiTutor(q.id)}
+                        fontSizePx={uiSettings.explanationFontPx}
                       />
                     )}
                   </div>

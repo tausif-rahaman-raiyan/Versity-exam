@@ -283,7 +283,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
             const imported = q as ImportedQuestion;
             const hasVerifiedAnswer = imported.answerVerified !== false && q.correctAnswer >= 0;
             const cardStyle = getSubjectCardStyle(q.subject);
-            const showAnswerBadge = hasVerifiedAnswer && Boolean(q.options[q.correctAnswer]);
+            const showAnswerBadge = hasVerifiedAnswer && q.correctAnswer >= 0;
 
             return (
               <article
@@ -369,7 +369,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                           </span>
                           <div className="min-w-0 flex-1 leading-snug pt-0.5">
                             <MathInlineRenderer
-                              text={option || `Option ${String.fromCharCode(65 + optionIndex)}`}
+                              text={option || (optionImages.length > 0 ? '' : `Option ${String.fromCharCode(65 + optionIndex)}`)}
                             />
                             {optionImages.map((url, imageIndex) => (
                               <img
@@ -473,6 +473,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                     session={q.session}
                     customApiKey={customApiKey}
                     onClose={() => toggleAiTutor(q.id)}
+                    fontSizePx={uiSettings.explanationFontPx}
                   />
                 )}
               </article>

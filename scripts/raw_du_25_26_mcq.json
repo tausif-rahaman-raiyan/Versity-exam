@@ -1,0 +1,1177 @@
+[
+  {
+    "index": 1,
+    "question": "1. একটি বস্তুকে অনুভুমিকের সাথে 45° কোণে E গতিশক্তিতে নিক্ষেপ করা হলো। সর্বোচ্চ বিন্দুতে বস্তুটির গতিশক্তি কত হবে? (An object is thrown with an energy E at an angle of 45° with the horizontal line. What will be the kinetic energy of the object at the highest point?)",
+    "options": [
+      "ক2E",
+      "খE/2",
+      "গ0",
+      "ঘE"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 2,
+    "question": "2. ভিন্ন ভিন্ন চারটি পাত্রে নিম্নলিখিত গ্যাসগুলোর প্রতিটির 0.5 মোল রাখা হয়েছে। কোন গ্যাসটির তাপমাত্রা সর্বোচ্চ হবে? (There are four different containers, each containing 0.5 mole of the following gases. Which gas will be at the highest temperature?)",
+    "options": [
+      "ক3.0 L ক্রিপ্টন 300 kPa চাপে (3.0 L of krypton at 300 kPa)",
+      "খ6.0 L নিয়ন 160 kPa চাপে (6.0 L of neon at 160 kPa)",
+      "গ8.0 L হিলিয়াম 12 kPa চাপে (8.0 L of helium at 120 kPa)",
+      "ঘ4.0 L আর্গন 250'kPa চাপে (4.0 L of argon at 250 kPa)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 3,
+    "question": "3. একটি k স্প্রিংধ্রুবক বিশিষ্ট ভরহীন স্প্রিং-কে সঙ্কুচিত করে m ভরের একটি বলকে নিক্ষেপ করা হলো। বলটিকে v বেগ অর্জনের জন্য স্প্রিংটিকে কী পরিমাণ সঙ্কুচিত করতে হবে? (A massless spring with force constant k launches a ball of mass m. In order for the ball to reach a speed v, by what displacement x should the spring be compressed?)",
+    "options": [
+      "কx=vmkx = v \\sqrt{\\frac{m}{k}}x=vkm​​",
+      "খx=v2kmx = v^2 \\sqrt{\\frac{k}{m}}x=v2mk​​",
+      "গx=vkmx = \\frac{vk}{m}x=mvk​",
+      "ঘx=vkmx = v \\sqrt{\\frac{k}{m}}x=vmk​​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 4,
+    "question": "4. একটি মিটার স্টিক 0.8c গতিতে একজন পর্যবেক্ষককে অতিক্রম করে। পর্যবেক্ষকের প্রসঙ্গ কাঠামোতে, পর্যবেক্ষককে অতিক্রম করতে স্টিকটির কত সময় লাগে? (A meter stick moves past an observer with a speed of 0.8c. In the observer's reference frame, how long does the stick take to pass the observer?)",
+    "options": [
+      "ক2.5 ns",
+      "খ5.2 ns",
+      "গ2.4 ns",
+      "ঘ4.2 ns"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 5,
+    "question": "5. একজন শিক্ষার্থীকে দুটি ভিন্ন রোধ R1R_1R1​ এবং R2R_2R2​ দেওয়া হলো। এগুলোকে বিভিন্নভাবে সংযোগ করে সে 3Ω3 \\Omega3Ω, 4Ω4 \\Omega4Ω, 12Ω12 \\Omega12Ω, এবং 16Ω16 \\Omega16Ω রোধ তৈরী করতে পারে। R1R_1R1​ এবং R2R_2R2​ এর মান কত? (A student is given two different resistors R1R_1R1​ and R2R_2R2​. By using these resistors in different connections, he can obtain 3Ω3 \\Omega3Ω, 4Ω4 \\Omega4Ω, 12Ω12 \\Omega12Ω, and 16Ω16 \\Omega16Ω resistances. What are the values of R1R_1R1​ and R2R_2R2​?",
+    "options": [
+      "ক 3Ω3 \\Omega3Ω, 4Ω4 \\Omega4Ω",
+      "খ 2Ω2 \\Omega2Ω, 12Ω12 \\Omega12Ω",
+      "গ 3Ω3 \\Omega3Ω, 16Ω16 \\Omega16Ω",
+      "ঘ 4Ω4 \\Omega4Ω, 12Ω12 \\Omega12Ω"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 6,
+    "question": "6. বোরের মডেল অনুসারে হাইড্রোজেন পরমাণুতে, rnr_nrn​ ব্যাসার্ধে ইলেকট্রনের রৈখিক ভরবেগ কোনটি? (এখানে, nnn হচ্ছে প্রধান কোয়ান্টাম সংখ্যা এবং ħ=h2πħ = \\frac{h}{2π}ħ=2πh​ প্লাঙ্কের হ্রাস ধ্রুবক।) (What will be the linear momentum of the electron of hydrogen at the orbit of radius rnr_nrn​ according to the Bohr atomic model? Here, nnn is the principal quantum number and ħ=h2πħ = \\frac{h}{2π}ħ=2πh​ is the reduced Planck's constant.)",
+    "options": [
+      "কnħnħnħ",
+      "খnħrn\\frac{nħ}{r_n}rn​nħ​",
+      "গn2rnħn^2r_nħn2rn​ħ",
+      "ঘnrnħnr_nħnrn​ħ"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 7,
+    "question": "7. দুটি বাইনারি সংখ্যা 1110.11 এবং 101.10 এর গুণফল কোনটি? (Which of the following is the multiplication result of two binary numbers 1110.11 and 101.10?)",
+    "options": [
+      "ক110001.101",
+      "খ101000.1001",
+      "গ1010001.001",
+      "ঘ1010011.001"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 8,
+    "question": "8. l দৈর্ঘ্য ও A প্রস্থচ্ছেদের ক্ষেত্রফল বিশিষ্ট একটি সিলিন্ডার আকৃতির তারের উপাদানের ইয়ং-এর গুণাঙ্ক ও পীড়ন যথাক্রমে Y ও S হলে তারটিতে সঞ্চিত মোট স্থিতিস্থাপক শক্তি কত হবে? (A cylindrical wire of cross-sectional area A and length 1 have stress and Young's modulus of the material S and Y, respectively. What will be the total elastic energy stored in the wire?)",
+    "options": [
+      "কS2ALY/2S^2 ALY/2S2ALY/2",
+      "খYI2/(2SA)YI^2/(2SA)YI2/(2SA)",
+      "গS2AL/(2Y)S^2 AL/(2Y)S2AL/(2Y)",
+      "ঘYA/(2SI)YA/(2SI)YA/(2SI)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 9,
+    "question": "9. যদি ∣A⃗+B⃗∣=∣A⃗−B⃗∣|\\vec{A} + \\vec{B}| = |\\vec{A} - \\vec{B}|∣A+B∣=∣A−B∣ হয়, তবে A⃗\\vec{A}A এবং B⃗\\vec{B}B এর মধ্যবর্তী কোণ কত? (If ∣A⃗+B⃗∣=∣A⃗−B⃗∣|\\vec{A} + \\vec{B}| = |\\vec{A} - \\vec{B}|∣A+B∣=∣A−B∣, then what will be the angle between A⃗\\vec{A}A and B⃗\\vec{B}B?)",
+    "options": [
+      "ক90∘90^\\circ90∘",
+      "খ180∘180^\\circ180∘",
+      "গ0∘0^\\circ0∘",
+      "ঘ45∘45^\\circ45∘"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 10,
+    "question": "10. নিচের কোন লজিক গেটটি ডানদিকে প্রদর্শিত সার্কিটের সমতুল্য? (Which of the following logic gates is equivalent to the circuit shown in the figure at the right?)",
+    "options": [
+      "কNOR",
+      "খOR",
+      "গAND",
+      "ঘNAND"
+    ],
+    "images": [
+      "https://assets.chorcha.net/gsaUpMTeZegwDADZzInvU.png",
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 11,
+    "question": "11. একটি তাপীয় ইঞ্জিন প্রতি চক্রে ধণাত্মক কাজ করে এবং তাপ হারায়, কিন্তু ইঞ্জিনটি কোন তাপ গ্রহণ করেনা। ইঞ্জিনটি তাপগতিবিদ্যার কোন সূত্রকে লঙ্ঘন করে? (A heat engine does positive work and loses energy in each cycle, but it does not take any energy. Which law of thermodynamics does the engine violate?)",
+    "options": [
+      "কতৃতীয় সূত্র (Third Law)",
+      "খদ্বিতীয় সূত্র (Second Law)",
+      "গপ্রথম সূত্র (First Law)",
+      "ঘ(খ) ও (গ) উভয়েই"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 12,
+    "question": "12. m1m_1m1​ ও m2m_2m2​ ভরের দুটি বস্তুর উপর একটি নির্দিষ্ট বল FFF প্রয়োগে যথাক্রমে 12 m/s212 \\text{ m/s}^212 m/s2 ও 3.30 m/s23.30 \\text{ m/s}^23.30 m/s2 ত্বরণ হলে (m2−m1)(m_2 - m_1)(m2​−m1​) ভরের বস্তুর উপর একই বল, FFF, প্রয়োগের ফলে ত্বরণ কত হবে? (Applying a certain force F on two objects of masses, m1m_1m1​ and m2m_2m2​ results in 12 m/s212 \\text{ m/s}^212 m/s2 and 3.30 m/s23.30 \\text{ m/s}^23.30 m/s2 accelerations, respectively. What will be the acceleration when the same force, FFF, is applied on an object of mass (m2−m1)(m_2 - m_1)(m2​−m1​)?)",
+    "options": [
+      "কm2×3.30m1−m2\\frac{m_2 \\times 3.30}{m_1 - m_2}m1​−m2​m2​×3.30​",
+      "খm1×3.30m2−m1\\frac{m_1 \\times 3.30}{m_2 - m_1}m2​−m1​m1​×3.30​",
+      "গm2×12m2−m1\\frac{m_2 \\times 12}{m_2 - m_1}m2​−m1​m2​×12​",
+      "ঘm1×12m2−m1\\frac{m_1 \\times 12}{m_2 - m_1}m2​−m1​m1​×12​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 13,
+    "question": "13. একটি সমান্তরাল পাত ধারককে চার্জ করার ফলে এর পাত দুটির মধ্যে x ভোল্ট বিভব পার্থক্য তৈরি হয়। উক্ত ধারকটির পাতদ্বয়ের মধ্যবর্তী দূরত্ব অর্ধেক করে বিভব পার্থক্য দ্বিগুণ করা হলো। এই দুই অবস্থায় সঞ্চিত শক্তির অনুপাত কত হবে? (Charging a parallel plate capacitor results in a potential difference of x volt between its two plates. The distance between the plates is halved and the potential difference is doubled. What will be the ratio of the energy stored in these two states?)",
+    "options": [
+      "ক4:1",
+      "খ1:8",
+      "গ1:2",
+      "ঘ1:4"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 14,
+    "question": "14. ইয়ং-এর দ্বি-চিড় পরীক্ষায়, অন্যান্য অবস্থা অপরিবর্তিত রেখে উৎসের আলোর কম্পাঙ্ক যদি দ্বিগুণ করা হয়, তাহলে ডোরার প্রন্থের কী পরিবর্তন হবে? (Consider Young's double-slit experiment. What change will be found in fringe width, if the frequency of the light is doubled keeping other parameters unchanged?)",
+    "options": [
+      "কঅর্ধেক হয়ে যাবে (become half)",
+      "খদ্বিগুণ হয়ে যাবে (become double)",
+      "গএক-চতুর্থাংশ হয়ে যাবে (become one-fourth)",
+      "ঘএকই থাকবে (remain the same)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 15,
+    "question": "15. m ভরের একটি উপগ্রহ পৃথিবীপৃষ্ঠ থেকে x উচ্চতায় পৃথিবীর চারপাশে ঘুরে যেখানে পৃথিবীর ব্যাসার্ধ R। যদি পৃথিবীপৃষ্ঠে অভিকর্ষজ ত্বরণ g হয়, তাহলে উপগ্রহটির কক্ষপথে গতি কত? (Asatellite of mass m revolves around the anth oratus at a heign ftm th eanthuface f sthegravtatona acclratinst the surface of the earth, what is the orbital speed of the satellite?)",
+    "options": [
+      "কv=gR2R+xv = \\sqrt{\\frac{gR^2}{R+x}}v=R+xgR2​​",
+      "খgR2/(R−x)\\sqrt{gR^2 / (R-x)}gR2/(R−x)​",
+      "গgx/(R−x)\\sqrt{gx / (R-x)}gx/(R−x)​",
+      "ঘ gx2/(R+x)2\\sqrt{\\text{gx}^2/(\\text{R}+\\text{x})^2}gx2/(R+x)2​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 16,
+    "question": "1. নিচের কোন অনুতে স্থায়ী ডাইপোল আছে? (Which of the following molecules has the permanent dipole?)",
+    "options": [
+      "কSF4",
+      "খBF3",
+      "গSiF4",
+      "ঘXeF4"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 17,
+    "question": "2. কোন যৌগটি সন্নিবেশ বন্ধন গঠন করে না? (Which compound does not form coordinate bond?)",
+    "options": [
+      "কH2O",
+      "খCCI4",
+      "গNH3",
+      "ঘBCI3"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 18,
+    "question": "3. নিচের কোন জৈব যৌগটি আয়োডোফর্ম পরীক্ষায় অংশ গ্রহণ করে না? (Which of the following organic compound does not participate in the iodoform test?)",
+    "options": [
+      "কCH3CH(OH)CH3",
+      "খCH3CH2COCH2CH3",
+      "গCH3CH2OH",
+      "ঘCH3COCH2CH3"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 19,
+    "question": "4.  aKClO3→ΔbKClO4+cKCl \\text{aKClO}_3 \\xrightarrow{\\Delta} \\text{bKClO}_4 + \\text{cKCl} aKClO3​Δ​bKClO4​+cKCl এই সমতাকৃত বিক্রিয়ায় b:c এর মান কত? (What is the value of b:c in the balanced reaction, aKClO3→ΔbKClO4+cKCl \\text{aKClO}_3 \\xrightarrow{\\Delta} \\text{bKClO}_4 + \\text{cKCl} aKClO3​Δ​bKClO4​+cKCl?",
+    "options": [
+      "ক2:3",
+      "খ1:2",
+      "গ3:2",
+      "ঘ3:1"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 20,
+    "question": "5. C6H5CHO \\text{C}_6\\text{H}_5\\text{CHO} C6​H5​CHO কে Zn.Hg \\text{Zn.Hg} Zn.Hg অ্যামালগাম এবং গাঢ় HCl \\text{HCl} HCl এর সাথে উত্তপ্ত করলে কী উৎপন্ন হয়? (What is formed when C6H5CHO \\text{C}_6\\text{H}_5\\text{CHO} C6​H5​CHO is heated with Zn.Hg \\text{Zn.Hg} Zn.Hg amalgam and concentrated HCl \\text{HCl} HCl?",
+    "options": [
+      "কC6H5OH \\text{C}_6\\text{H}_5\\text{OH} C6​H5​OH",
+      "খC6H6 \\text{C}_6\\text{H}_6 C6​H6​",
+      "গC6H5CH3 \\text{C}_6\\text{H}_5\\text{CH}_3 C6​H5​CH3​",
+      "ঘC6H5OC6H5 \\text{C}_6\\text{H}_5\\text{OC}_6\\text{H}_5 C6​H5​OC6​H5​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 21,
+    "question": "6. নিচের কোন গ্যাসটি গাড়ীর ইঞ্জিনে দহনের সময় তৈরি হয় যা এসিড বৃষ্টিতে অবদান রাখে? (Which of the following gases is formed in the car engine during combustion of fuel that contributes to acid rain?)",
+    "options": [
+      "কNO",
+      "খCO2",
+      "গC8H18",
+      "ঘCO"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 22,
+    "question": "7. একই অবস্থায় কোন ধাতুর 1.0 g, জলীয় HCI এর সাথে বিক্রিয়া করে সবচেয়ে বেশি আয়তনের H2 গ্যাস তৈরি করে? (Under the samē conditlons, 1.0 g of which metal produces the highest volume of H2 gas in the reaction with aqueous HCI?)",
+    "options": [
+      "কNa",
+      "খCa",
+      "গK",
+      "ঘMg"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 23,
+    "question": "8. নিচের কোনটি প্রিজারভেটিভ নয়? (Which of the followings is not a preservative?)",
+    "options": [
+      "কচিনি (Sugar)",
+      "খবিউটাইলেটেড হাইড্রক্সি অ্যানিসোল (Butylated hydroxy anisole)",
+      "গসোডিয়াম সালফেট (Sodium sulfate)",
+      "ঘসোডিয়াম সালফাইট (Sodium sulfite)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 24,
+    "question": "9. CH3CONH2 হতে CH3CH2NH2 তৈরিতে সর্বাপেক্ষা ভাল বিকারক ও বিক্রিয়ার শর্ত কোনটি? (Which are the best reagent and reaction condition for the formation of CH3CH2NH2 from CH3CONH2)",
+    "options": [
+      "কশুষ্ক ইথারে LiAlH4LiAlH_4LiAlH4​ (LiAlH4LiAlH_4LiAlH4​ in dry ether)",
+      "খশুষ্ক ইথারে NaBH4NaBH_4NaBH4​ (NaBH4NaBH_4NaBH4​ in dry ether)",
+      "গঅ্যালকোহলে NaBH4NaBH_4NaBH4​ (NaBH4NaBH_4NaBH4​ in alcohol)",
+      "ঘঅ্যালকোহলে LiAlH4LiAlH_4LiAlH4​ (LiAlH4LiAlH_4LiAlH4​ in alcohol)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 25,
+    "question": "10. কোন পরীক্ষা ফেনল সনাক্তকরণে ব্যবহার করা হয়? (Which test is used to identify phenol?)",
+    "options": [
+      "কলিবারম্যান (Libermann)",
+      "খকার্বিলঅ্যামিন (Carbylamine)",
+      "গলুকাস বিকারক (Lucas reagent)",
+      "ঘটলেন বিকারক (Tollen's reagent)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 26,
+    "question": "11. Zn(s)/Zn2+(aq) II Cu2+(aq)/Cu(s)Zn(s)/Zn^{2+}(aq) \\text{ II } Cu^{2+}(aq)/Cu(s)Zn(s)/Zn2+(aq) II Cu2+(aq)/Cu(s)-এই গ্যালভানিক কোষটি সম্পর্কে সঠিক উক্তি কোনটি? (Which one is the correct statement about the Galvanic cell, Zn(s)/Zn2+(aq) II Cu2+(aq)/Cu(s)Zn(s)/Zn^{2+}(aq) \\text{ II } Cu^{2+}(aq)/Cu(s)Zn(s)/Zn2+(aq) II Cu2+(aq)/Cu(s)?)",
+    "options": [
+      "কCu-ইলেকট্রোডে জারণ ঘটে। (Oxidation takes place at Cu-electrode.)",
+      "খCu-ইলেকট্রোডটি অ্যানোড। (The Cu-electrode is an anode.)",
+      "গকোষ বিক্রিয়াটি হলো Zn2+(aq)+Cu(s)→Zn(s)+Cu2+(aq)Zn^{2+}(aq) + Cu(s) \\rightarrow Zn(s) + Cu^{2+}(aq)Zn2+(aq)+Cu(s)→Zn(s)+Cu2+(aq)The cell reaction is Zn2+(aq)+Cu(s)→Zn(s)+Cu2+(aq)Zn^{2+}(aq) + Cu(s) \\rightarrow Zn(s) + Cu^{2+}(aq)Zn2+(aq)+Cu(s)→Zn(s)+Cu2+(aq).)",
+      "ঘইলেকট্রন Zn- থেকে Cu-ইলেকট্রোডে প্রবাহিত হয়। (Electron flows from Zn- to Cu-electrode.)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 27,
+    "question": "12. Ag+(aq)+Fe2+(aq)⇌Fe3+(aq)+Ag(s) \\text{Ag}^{+}(\\text{aq}) + \\text{Fe}^{2+}(\\text{aq}) \\rightleftharpoons \\text{Fe}^{3+}(\\text{aq}) + \\text{Ag}(\\text{s}) Ag+(aq)+Fe2+(aq)⇌Fe3+(aq)+Ag(s) বিক্রিয়াটির জন্য সাম্যধ্রুবক, Kc \\text{K}_\\text{c} Kc​, এর একক কোনটি? (What is the unit of equilibrium constant, Kc \\text{K}_\\text{c} Kc​, for the reaction, Ag+(aq)+Fe2+(aq)⇌Fe3+(aq)+Ag(s) \\text{Ag}^{+}(\\text{aq}) + \\text{Fe}^{2+}(\\text{aq}) \\rightleftharpoons \\text{Fe}^{3+}(\\text{aq}) + \\text{Ag}(\\text{s}) Ag+(aq)+Fe2+(aq)⇌Fe3+(aq)+Ag(s)?",
+    "options": [
+      "কএকক নাই (No unit)",
+      "খmol L−1 \\text{mol L}^{-1} mol L−1",
+      "গL mol−1 \\text{L mol}^{-1} L mol−1",
+      "ঘmol2L−2 \\text{mol}^2 \\text{L}^{-2} mol2L−2"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 28,
+    "question": "13. নিচের কোনটি অ্যারোমেটিক নয়? (Which of the following is not aromatic?)",
+    "options": [
+      "ক",
+      "খ",
+      "গ",
+      "ঘ"
+    ],
+    "images": [
+      "https://assets.chorcha.net/1EvGSH9Dm5eSMuH40T2iE.png",
+      "https://assets.chorcha.net/vxkOemvnOGv6sGPcO38hm.png",
+      "https://assets.chorcha.net/y401m_IPhuQfLg11lN-HK.png",
+      "https://assets.chorcha.net/T5_qMSF_uFXLAWS2om0Xd.png",
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 29,
+    "question": "14. নিচের আয়নগুলোর কোনটি ক্ষুদ্রতম? (Which of the following ions is the smallest?)",
+    "options": [
+      "কAl3+",
+      "খMg2+",
+      "গNa+",
+      "ঘK+"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 30,
+    "question": "15. নিচের কোনটিতে সর্বোচ্চ সংখক অযুগ্ম ইলেক্ট্রন থাকে? (Which of the following has the highest number of unpaired electrons?)",
+    "options": [
+      "ক25Mn",
+      "খ27Co3+",
+      "গ26Fe2+",
+      "ঘ24Cr"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 31,
+    "question": "1. 5y2+sin⁡y=x25y^2 + \\sin y = x^25y2+siny=x2 হলে, dydx=?\\frac{dy}{dx} = ?dxdy​=? (If 5y2+sin⁡y=x25y^2 + \\sin y = x^25y2+siny=x2, then dydx=?\\frac{dy}{dx} = ?dxdy​=?)",
+    "options": [
+      "ক x5y+cos⁡y\\frac{x}{5y+\\cos y}5y+cosyx​",
+      "খ 2x5y−cos⁡y\\frac{2x}{5y-\\cos y}5y−cosy2x​",
+      "গ2y5y−cos⁡y\\frac{2y}{5y-\\cos y}5y−cosy2y​",
+      "ঘ 2x10y+cos⁡y\\frac{2x}{10y+\\cos y}10y+cosy2x​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 32,
+    "question": "2. θ=sin⁡−1(35) \\theta = \\sin^{-1} \\left( \\frac{3}{5} \\right) θ=sin−1(53​) হলে, 1−tan⁡2θ1+tan⁡2θ=? \\frac{1-\\tan^2 \\theta}{1+\\tan^2 \\theta} = ? 1+tan2θ1−tan2θ​=? (If θ=sin⁡−1(35) \\theta = \\sin^{-1} \\left( \\frac{3}{5} \\right) θ=sin−1(53​), then 1−tan⁡2θ1+tan⁡2θ=? \\frac{1-\\tan^2 \\theta}{1+\\tan^2 \\theta} = ? 1+tan2θ1−tan2θ​=?)",
+    "options": [
+      "ক 725 \\frac{7}{25} 257​",
+      "খ​716 \\frac{7}{16} 167​",
+      "গ​4125 \\frac{41}{25} 2541​",
+      "ঘ 4116 \\frac{41}{16} 1641​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 33,
+    "question": "3. A=[100020003]A = \\begin{bmatrix} 1 & 0 & 0 \\\\ 0 & 2 & 0 \\\\ 0 & 0 & 3 \\end{bmatrix}A=​100​020​003​​ ম্যাট্রিক্সের ক্ষেত্রে kAkAkA ম্যাট্রিক্সের নির্ণায়ক কোনটি, যেখানে kkk একটি স্কেলার?",
+    "options": [
+      "ক6k6k6k",
+      "খ3k33k^33k3",
+      "গ6k36k^36k3",
+      "ঘ 5k35k^35k3"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 34,
+    "question": "4. (x−1x)8 \\left(x-\\frac{1}{x}\\right)^8 (x−x1​)8 এর বিস্তৃতিতে xxx-বর্জিত পদটি কত?",
+    "options": [
+      "ক1",
+      "খ5",
+      "গ3",
+      "ঘ4"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 35,
+    "question": "5. ∫01f(x)dx=2\\int_{0}^{1} f(x) d x = 2∫01​f(x)dx=2 এবং ∫05f(x)dx=1\\int_{0}^{5} f(x) d x = 1∫05​f(x)dx=1 হলে, ∫15f(x)dx=?\\int_{1}^{5} f(x) d x = ?∫15​f(x)dx=? (If ∫01f(x)dx=2\\int_{0}^{1} f(x) d x = 2∫01​f(x)dx=2 and ∫05f(x)dx=1\\int_{0}^{5} f(x) d x = 1∫05​f(x)dx=1, then ∫15f(x)dx=?\\int_{1}^{5} f(x) d x = ?∫15​f(x)dx=?",
+    "options": [
+      "ক3",
+      "খ1",
+      "গ-1",
+      "ঘ0"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 36,
+    "question": "6. xxx এর কোন মানের জন্য f(x)=sin⁡3xcos⁡xf(x) = \\sin^3 x \\cos xf(x)=sin3xcosx, 0<x<π0 < x < \\pi0<x<π এর মান ক্ষুদ্রতম হবে?",
+    "options": [
+      "ক0",
+      "খ 2π3\\frac{2\\pi}{3}32π​",
+      "গ π3\\frac{\\pi}{3}3π​",
+      "ঘπ4\\frac{\\pi}{4}4π​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 37,
+    "question": "7. (4,-3)বিন্দু হতে x2+y² - 8x- 6y +9 = 0 বৃত্তের উপরিস্থিত বিন্দুর সর্বনিম্ন দূরত্ব কত?",
+    "options": [
+      "ক1",
+      "খ3",
+      "গ4",
+      "ঘ2"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 38,
+    "question": "8. যদি f(x)=x2−1f(x) = x^2 - 1f(x)=x2−1 এবং g(x)=xg(x) = \\sqrt{x}g(x)=x​ হয়, তাহলে (g of f)(x)(g \\text{ of } f)(x)(g of f)(x) এর ডোমেন কোনটি?",
+    "options": [
+      "কR\\mathbb{R}R",
+      "খx≥0x \\geq 0x≥0",
+      "গ−1<x<1-1 < x < 1−1<x<1",
+      "ঘ x≤−1x \\leq -1x≤−1 or x≥1x \\geq 1x≥1"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 39,
+    "question": "9. lim⁡x→08x−2xx\\lim_{x \\to 0} \\frac{8^x - 2^x}{x}limx→0​x8x−2x​ এর মান কত?",
+    "options": [
+      "কln 4",
+      "খIn 16",
+      "গIn 2",
+      "ঘ1"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 40,
+    "question": "10. মূলবিন্দুগামী P ও Q দুটি বলের লব্ধি R। যদি P = Q = R হয়, তবে P ও Q এর মধ্যবর্তী কোণ কত হবে?",
+    "options": [
+      "ক60°",
+      "খ120°",
+      "গ90°",
+      "ঘ180°"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 41,
+    "question": "11. যদি 5 জন বালক ও 4 জন বালিকা দৌড় প্রতিযোগিতায় অংশগ্রহণ করে, তাহলে একজন বালকের ১ম ও একজন বালিকার ২য় হওয়ার সম্ভাবনা কত?",
+    "options": [
+      "ক 518\\frac{5}{18}185​",
+      "খ 34\\frac{3}{4}43​",
+      "গ 12\\frac{1}{2}21​",
+      "ঘ14\\frac{1}{4}41​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 42,
+    "question": "12. যদি A এবং B ধনাত্মক সূক্ষ্মকোণ হয়, এবং tan⁡A=12 \\tan A = \\frac{1}{2} tanA=21​ ও tan⁡B=−12 \\tan B = -\\frac{1}{2} tanB=−21​ হয়, তাহলে A+B=? A + B = ? A+B=?",
+    "options": [
+      "কπ6\\frac{\\pi}{6}6π​",
+      "খπ4\\frac{\\pi}{4}4π​",
+      "গ000",
+      "ঘπ3\\frac{\\pi}{3}3π​"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 43,
+    "question": "13. y² + 8x - 2y – 23 = 0 পরাবৃত্তের নিয়ামক রেখার সমীকরণ কোনটি?",
+    "options": [
+      "কx - 3 = 0",
+      "খy -3 = 0",
+      "গx - 5 = 0",
+      "ঘy - 5 = 0"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 44,
+    "question": "14. (8, 5) এবং (-4, -3) বিন্দুদ্বয়ের সংযোগ রেখার লম্ব দ্বিখণ্ডকটি y-অক্ষকে কোন বিন্দুতে ছেদ করে?",
+    "options": [
+      "ক(0,4)",
+      "খ(0,3)",
+      "গ(0,2)",
+      "ঘ(0,-4)"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 45,
+    "question": "15. ∫dxx2+6x+25\\int \\frac{dx}{x^2+6x+25}∫x2+6x+25dx​ এর মান কত?",
+    "options": [
+      "ক tan⁡−1(x+34)+c\\tan^{-1} \\left(\\frac{x+3}{4}\\right) + ctan−1(4x+3​)+c",
+      "খ14tan⁡−1(x+34)+c\\frac{1}{4}\\tan^{-1} \\left(\\frac{x+3}{4}\\right) + c41​tan−1(4x+3​)+c",
+      "গ 14tan⁡−1(4x+3)+c\\frac{1}{4}\\tan^{-1} \\left(\\frac{4}{x+3}\\right) + c41​tan−1(x+34​)+c",
+      "ঘln⁡(x+34)+c\\ln \\left(\\frac{x+3}{4}\\right) + cln(4x+3​)+c"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 46,
+    "question": "1. কোনটি বিপন্ন উদ্ভিদের সংখ্যা বৃদ্ধিতে কার্যকরী পদ্ধতি?",
+    "options": [
+      "কগ্রাফটিং",
+      "খলেয়ারিং",
+      "গকাটিং",
+      "ঘটিস্যুকালচার"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 47,
+    "question": "2. কোন ব্যাকটেরিয়া ধানের ব্লাইট রোগ সৃষ্টি করে? ____",
+    "options": [
+      "কBacillus subtilis",
+      "খXanthomonas oryzae",
+      "গPyricularia oryzae",
+      "ঘ Escherichia coli"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 48,
+    "question": "3. নিচের কোনটি সেক্স-লিংকড ডিসঅর্ডার নয়?",
+    "options": [
+      "কহিমোফিলিয়া",
+      "খলাল সবুজ বর্ণান্ধতা",
+      "গথ্যালাসেমিয়া",
+      "ঘডুশেনি মাসকুলার ডিস্ট্রফি"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 49,
+    "question": "4. প্রতিটি সজীব উদ্ভিদ কোষেরই একটি পূর্ণাঙ্গ উদ্ভিদে পরিণত হওয়ার অন্তর্নিহিত ক্ষমতাকে বলে-",
+    "options": [
+      "কমাইক্রো প্রোপাগেশন",
+      "খইন-ভিট্রো কালচার",
+      "গটটিপোটেন্সি",
+      "ঘ মেরিস্টেম কালচার"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 50,
+    "question": "5. কোন পর্বের প্রাণিতে প্রকৃত ট্যাগমাটা পাওয়া যায়?",
+    "options": [
+      "কমোলাস্কা",
+      "খপরিফেরা",
+      "গঅ্যানেলিডা",
+      "ঘআর্থোপোডা"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 51,
+    "question": "6. নিচের কোনটি পেরিকন্ড্রিয়াম দ্বারা আবৃত থাকে?",
+    "options": [
+      "কতরুণাস্থি",
+      "খফুসফুস",
+      "গহাড়",
+      "ঘহৃৎপিন্ড"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 52,
+    "question": "7. কোনটি আধা-স্বায়ত্বশাসিত কোষ অঙ্গাণু?",
+    "options": [
+      "কগলগি বডি",
+      "খরাইবোসোম",
+      "গনিউক্লিয়াস",
+      "ঘক্লোরোপ্লাস্ট"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 53,
+    "question": "8. নিচের কোনটি জীবন্ত জীবাশ্ম নয়?",
+    "options": [
+      "কপ্লাটিপাস",
+      "খগ্যাভিয়ালিস",
+      "গলিমোলাস",
+      "ঘল্যাটিমারিয়া"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 54,
+    "question": "9. Cycas এর কোরালয়েড মূলের শৈবাল স্তরটি কোথায় অবস্থান করে?",
+    "options": [
+      "কমধ্য কর্টেক্স",
+      "খফ্লোয়েম টিস্যু",
+      "গএপিডার্মিস",
+      "ঘপেরিসাইকেল"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 55,
+    "question": "10. ঘাসফড়িং এর পুঞ্জাক্ষির কোন অংশটি লেন্সের মতো কাজ করে?",
+    "options": [
+      "ককর্নিয়াজেন কোষ",
+      "খর‍্যাবডোম",
+      "গকর্নিয়া",
+      "ঘক্রিস্টালাইন কোণ কোষ"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 56,
+    "question": "11. দেহের কোন অংশে অ্যাম্পুলা অব ভ্যাটার উন্মুক্ত হয়?",
+    "options": [
+      "কপাকস্থলি",
+      "খকোলন",
+      "গমলাশয়",
+      "ঘডিওডেনাম"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 57,
+    "question": "12. রক্তে অক্সিজেনের মাত্রা কমে গেলে কোন হরমোন নিঃসৃত হয়?",
+    "options": [
+      "কএরিথ্রোপয়েটিন",
+      "খঅক্সিটোসিন",
+      "গমেলাটোনিন",
+      "ঘকর্টিসল"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 58,
+    "question": "13. কোষ চক্রের কোন দশায় হিস্টোন প্রোটিন সংশ্লেষিত হয়?",
+    "options": [
+      "কG1 দশা",
+      "খS দশা",
+      "গM দশা",
+      "ঘG2 দশা"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 59,
+    "question": "14. কোন ধরনের পুষ্পবিন্যাসে প্রান্ত পুষ্পিকা এবং মধ্য পুষ্পিকা থাকে?",
+    "options": [
+      "কক্যাপিচুলাম",
+      "খস্পাইকলেট",
+      "গসাইমোস",
+      "ঘস্পাইক"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 60,
+    "question": "15. নিচের কোনটিকে হৃৎপিন্ডের পেসমেকার বলা হয়?",
+    "options": [
+      "কঅ্যাট্রিও-ভেন্ট্রিকুলার নোড",
+      "খপারকিনজি তন্তু",
+      "গসাইনো-অ্যাট্রিয়াল নোড",
+      "ঘবান্ডেল অব হিজ"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 61,
+    "question": "1. 'Cartoon' শব্দটির বাংলা পরিভাষা কোনটি?",
+    "options": [
+      "কবাক্স",
+      "খশিশুচিত্র",
+      "গব্যঙ্গচিত্র",
+      "ঘচলচ্চিত্র"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 62,
+    "question": "2. নিচের কোন শব্দটি 'মুখর' শব্দের সমার্থক-",
+    "options": [
+      "কপঞ্চকূট",
+      "খপঞ্চকণ্ঠ",
+      "গপঞ্চব্যঞ্জন",
+      "ঘপঞ্চমুখ"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 63,
+    "question": "3. 'পৌষমাস' শব্দটি কোন বিশেষ অর্থে ব্যবহৃত হয়?",
+    "options": [
+      "কশীতের সূচনা",
+      "খদুঃসময়",
+      "গসুসময়",
+      "ঘআকাল"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 64,
+    "question": "4. 'যারা ধার্মিক, তারা সুখী'-এটি কোন ধরনের বাক্য?",
+    "options": [
+      "কজটিল",
+      "খযৌগিক",
+      "গসরল",
+      "ঘমিশ্র-যৌগিক"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 65,
+    "question": "5. আপনার সত্যকে পথপ্রদর্শক কাণ্ডারি বলে জানা-",
+    "options": [
+      "কমিথ্যে নয়",
+      "খঅবিনয় নয়",
+      "গঅপৌরুষ নয়",
+      "ঘদম্ভ নয়"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 66,
+    "question": "6. কোনটি 'মার্তণ্ড' শব্দের সন্ধি বিচ্ছেদ-",
+    "options": [
+      "কমার্ত+উণ্ড",
+      "খমার্ত+আণ্ড",
+      "গমার্ত+উন্ড",
+      "ঘমার্ত+অণ্ড"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 67,
+    "question": "7. 'কেয়ার কাঁটা' কী ধরনের রচনা?",
+    "options": [
+      "কগল্পগ্রন্থ",
+      "খকাব্যগ্রন্থ",
+      "গউপন্যাস",
+      "ঘস্মৃতিকথা"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 68,
+    "question": "8. বহুব্রীহি সমাসের দৃষ্টান্ত-",
+    "options": [
+      "কজীবন্মৃত",
+      "খআমরণ",
+      "গজলে-স্থলে",
+      "ঘচৌরাস্তা"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 69,
+    "question": "9. আওয়ালপুর ও মহব্বতনগর গ্রামের মাঝখানে কোন গাছ আছে?",
+    "options": [
+      "কতেঁতুল",
+      "খঅশোক",
+      "গতাল",
+      "ঘকদম"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 70,
+    "question": "10. কোন বানানগুচ্ছ শুদ্ধ?",
+    "options": [
+      "কপ্রবাহমান, শিকার, ইতপূর্বে",
+      "খভৌগোলিক, প্রাণিবিদ্যা, পুণ্য",
+      "গসঙ্কীর্ণ, ব্রাক্ষণ, বিভুতিভূষণ",
+      "ঘশস্য, নিস্ফল, বাহুল্যতা"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 71,
+    "question": "11. 'সওগাত' শব্দটির উৎসভাষা-",
+    "options": [
+      "কআরবি",
+      "খফারসি",
+      "গতুর্কি",
+      "ঘহিন্দি"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 72,
+    "question": "12. 'সুকঠিন' শব্দে 'সু’ উপসর্গ কোন অর্থে ব্যবহৃত হয়েছে?",
+    "options": [
+      "কআতিশয্য",
+      "খউত্তম",
+      "গসহজ",
+      "ঘমহত্তম"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 73,
+    "question": "13. 'মম বাঁশরীর তানে পাশরি'- এখানে 'পাশরি' বলতে বোঝায়-",
+    "options": [
+      "কবিভ্রান্ত হওয়া",
+      "খবিস্মৃত হওয়া",
+      "গজেগে ওঠা",
+      "ঘজাগানো"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 74,
+    "question": "14. 'সাধারণ' শব্দের প্রমিত উচ্চারণ-",
+    "options": [
+      "কসাধারণ",
+      "খসাধারোন",
+      "গশাধারণ",
+      "ঘশাধারোন্"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 75,
+    "question": "15. 'সবাই মিলে সত্যিই আমরা বাংলাকে বিক্রি করেদিচ্ছি না তো?' –এটি কার সংলাপ?",
+    "options": [
+      "কসিরাজউদ্দৌলা",
+      "খমিরজাফর",
+      "গউমিচাঁদ",
+      "ঘমোহনলাল"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 76,
+    "question": "1. ____ ecotourism is becoming popular, we must remain cautious about its adverse effects.",
+    "options": [
+      "কHowever",
+      "খAdditionally",
+      "গAlthough",
+      "ঘNonetheless"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 77,
+    "question": "2. The effect of painkillers__________ after about two hours.",
+    "options": [
+      "কrun down",
+      "খwork out",
+      "গwears off",
+      "ঘ take off"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 78,
+    "question": "3. People who are averse_______ hard work generally do not succeed_______ life.",
+    "options": [
+      "ক to, will",
+      "খ from, in",
+      "গby, for",
+      "ঘto, in"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 79,
+    "question": "4. The word 'especially' is a/an",
+    "options": [
+      "কadjective",
+      "খadverb",
+      "গnoun",
+      "ঘverb"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 80,
+    "question": "5. We must take decisions based on________.",
+    "options": [
+      "কinformations",
+      "খsome informations",
+      "গinformation",
+      "ঘmany informations"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 81,
+    "question": "6. Choose the correct word or phrase to complete the sentence.She is widely known to be a ____ of classical music.",
+    "options": [
+      "কdevoted",
+      "খdevotional",
+      "গdevotion",
+      "ঘdevotee"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 82,
+    "question": "7. The drone flew_________the park, capturing footage of the mini marathon event.",
+    "options": [
+      "কover",
+      "খof",
+      "গup",
+      "ঘon"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 83,
+    "question": "8.  The antonym of 'dynamic' is",
+    "options": [
+      "কstagnant",
+      "খdaring",
+      "গchaotic",
+      "ঘ optimistic"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 84,
+    "question": "9. Demented means",
+    "options": [
+      "কsad",
+      "খinsane",
+      "গungrateful",
+      "ঘwatchful"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 85,
+    "question": "10. I_________ do this before the deadline.",
+    "options": [
+      "কmay have",
+      "খcould have",
+      "গ ought to",
+      "ঘshould have"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 86,
+    "question": "11. I wish you __________all the food! I am hungry.",
+    "options": [
+      "কhadn't eaten",
+      "খate",
+      "গhave eaten",
+      "ঘdidn't ate"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 87,
+    "question": "12. Identify the wrong sentence.",
+    "options": [
+      "কIf I am elected, I will bring peace in the country.",
+      "খIf I had elected, I would bring peace in the country.",
+      "গIf I were elected, I would bring peace in the country.",
+      "ঘIf elected, I will bring peace in the country."
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 88,
+    "question": "13. Choose the correct spelling.",
+    "options": [
+      "কnarcissistic",
+      "খpronounciation",
+      "গacommodate",
+      "ঘ wierd"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 89,
+    "question": "14. Which figure of speech do you find in the expression \"jaws of death\" in \"The Charge of the Light Brigade\"?",
+    "options": [
+      "ক simile",
+      "খ paradox",
+      "গrefrain",
+      "ঘmetaphor"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  },
+  {
+    "index": 90,
+    "question": "15. Excessive screen time can_________poor eyesight among children.",
+    "options": [
+      "কmystify",
+      "খ accelerate",
+      "গmitigate",
+      "ঘsaturate"
+    ],
+    "images": [
+      "/svgs/explanation_icon.svg"
+    ]
+  }
+]

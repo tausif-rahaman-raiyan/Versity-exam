@@ -1,0 +1,6 @@
+{
+  "summary":  "Implementation plan for fixing double question numbering (16.1.), cleaning vector notation (\\vec{A}, \\vec{B}), stripping KaTeX/MathML duplicate strings, and fixing escaped LaTeX fractions and formulas across all question datasets.",
+  "updatedAt":  "2026-11-10T11:12:40.728461465Z",
+  "requestFeedback":  true,
+  "userFacing":  true
+}
