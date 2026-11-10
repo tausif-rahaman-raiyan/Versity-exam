@@ -36,7 +36,7 @@ jobs:
 
       - name: Smoke test production website
         run: |
-          NODE_ENV=production node server.ts &
+          NODE_ENV=production npx tsx server.ts &
           SERVER_PID=$!
           trap "kill $SERVER_PID" EXIT
           sleep 5
