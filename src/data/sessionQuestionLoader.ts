@@ -105,12 +105,21 @@ function safeHtml(value?: string | null): string | undefined {
     .replace(/javascript\s*:/gi, '');
 }
 
-function imagesFromHtml(html?: string): string[] {
+function imagesFromHtml(html?: string, stripExplanationSections = false): string[] {
   if (!html) return [];
+  let source = html;
+  if (stripExplanationSections) {
+    source = source.replace(/<section\b[\s\S]*?<\/section\s*>/gi, (sec) =>
+      sec.includes('দৈনিক ব্যাখ্যা বাকি') || sec.includes('display: none') ? '' : sec
+    );
+  }
   const found: string[] = [];
   const re = /<img\b[^>]*\bsrc\s*=\s*(['"])(.*?)\1/gi;
   let match: RegExpExecArray | null;
-  while ((match = re.exec(html)) !== null) found.push(match[2]);
+  while ((match = re.exec(source)) !== null) found.push(match[2]);
+  // Also pick up markdown images ![alt](url)
+  const mdRe = /!\[[^\]]*\]\(([^)]+)\)/g;
+  while ((match = mdRe.exec(source)) !== null) found.push(match[1].trim());
   return found;
 }
 
@@ -136,7 +145,9 @@ function cleanImageUrls(values: unknown[]): string[] {
           (value): value is string =>
             typeof value === 'string' &&
             (/^https?:\/\//i.test(value) || value.startsWith('/') || value.startsWith('./')) &&
-            !/explanation_icon\.svg/i.test(value)
+            !/explanation_icon\.svg/i.test(value) &&
+            !value.startsWith('/svgs/') &&
+            !value.startsWith('/dashboard-icons/')
         )
         .map((v) => resolvePublicUrl(v))
     ),
@@ -234,28 +245,34 @@ function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession
   const explanationHtml = safeHtml(raw.explanation_html);
   const questionImageUrls = cleanImageUrls([
     ...(raw.question_image_urls || []),
-    ...imagesFromHtml(questionHtml),
+    ...imagesFromHtml(questionHtml, true),
+    ...imagesFromHtml(raw.question || undefined, true),
   ]);
   const explanationImageUrls = cleanImageUrls([
     ...(raw.explanation_image_urls || []),
-    ...imagesFromHtml(explanationHtml),
-    ...imagesFromHtml(raw.explanation || undefined),
+    ...imagesFromHtml(explanationHtml, false),
+    ...imagesFromHtml(raw.explanation || undefined, false),
   ]);
   const answer = resolveAnswer(raw.correct_answer, rawOptions);
   const isWritten = examType.toLowerCase() === 'written' || rawOptions.length === 0;
   const qNumber = raw.number ?? raw.question_number ?? index + 1;
 
-  // Prefer extracting from question_html so pre-rendered KaTeX annotations become $...$ without duplication
-  const cleanQuestionText = questionHtml
-    ? extractMathFromHtml(questionHtml)
-    : extractMathFromHtml(raw.question || raw.question_text || '');
+  // Prefer clean raw.question when it has no raw HTML tags, or extract from question_html (stripping explanation sections)
+  const cleanQuestionText =
+    raw.question && !/<[a-zA-Z!/]/.test(raw.question)
+      ? raw.question.trim()
+      : questionHtml
+      ? extractMathFromHtml(questionHtml, { isExplanation: false })
+      : extractMathFromHtml(raw.question || raw.question_text || '', { isExplanation: false });
 
   // Strip HTML wrappers and extract KaTeX annotations from explanation
   const rawExpSource =
-    explanationHtml && !explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && extractMathFromHtml(explanationHtml).length > 5
+    raw.explanation && !/<[a-zA-Z!/]/.test(raw.explanation)
+      ? raw.explanation.trim()
+      : explanationHtml && !explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && extractMathFromHtml(explanationHtml, { isExplanation: true }).length > 5
       ? explanationHtml
       : (raw.explanation || '');
-  const cleanExplanationText = extractMathFromHtml(rawExpSource);
+  const cleanExplanationText = extractMathFromHtml(rawExpSource, { isExplanation: true });
 
   return {
     id: session.id + '-q-' + String(qNumber),
@@ -292,7 +309,7 @@ async function localizeImageUrls(questions: ImportedQuestion[]): Promise<Importe
     ...question.optionImageUrls.flat(),
     ...question.explanationImageUrls,
     ...imagesFromHtml(question.questionHtml),
-    ...question.optionHtmls.flatMap(imagesFromHtml),
+    ...question.optionHtmls.flatMap(html => imagesFromHtml(html)),
     ...imagesFromHtml(question.explanationHtml),
     ...imagesFromHtml(question.rawCardHtml),
   ]));

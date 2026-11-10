@@ -321,15 +321,20 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                     text={q.question.replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()}
                   />
                 </div>
-                {imported.questionImageUrls?.map((url, imageIndex) => (
-                  <img
-                    key={url + imageIndex}
-                    src={url}
-                    alt="Question attachment"
-                    loading="lazy"
-                    className="max-w-full max-h-80 object-contain rounded-xl bg-white p-1.5 border border-slate-200 dark:border-slate-700"
-                  />
-                ))}
+                {imported.questionImageUrls
+                  ?.filter((url) => {
+                    const fileName = url.split('/').pop() || url;
+                    return !q.question.includes(fileName);
+                  })
+                  .map((url, imageIndex) => (
+                    <img
+                      key={url + imageIndex}
+                      src={url}
+                      alt="Question attachment"
+                      loading="lazy"
+                      className="max-w-full max-h-80 object-contain rounded-xl bg-white p-1.5 border border-slate-200 dark:border-slate-700"
+                    />
+                  ))}
 
                 {/* Options (Dynamic Option Box Font Size in px) */}
                 {q.questionType === 'Written' || q.options.length === 0 ? (
@@ -417,15 +422,20 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                         এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে সঠিক উত্তর দেখানো হয়নি।
                       </p>
                     )}
-                    {imported.explanationImageUrls?.map((url, imageIndex) => (
-                      <img
-                        key={url + imageIndex}
-                        src={url}
-                        alt="Explanation attachment"
-                        loading="lazy"
-                        className="mt-2 max-w-full max-h-64 object-contain rounded-lg bg-white p-1.5 border border-slate-200"
-                      />
-                    ))}
+                    {imported.explanationImageUrls
+                      ?.filter((url) => {
+                        const fileName = url.split('/').pop() || url;
+                        return !(q.explanation || '').includes(fileName);
+                      })
+                      .map((url, imageIndex) => (
+                        <img
+                          key={url + imageIndex}
+                          src={url}
+                          alt="Explanation attachment"
+                          loading="lazy"
+                          className="mt-2 max-w-full max-h-64 object-contain rounded-lg bg-white p-1.5 border border-slate-200"
+                        />
+                      ))}
                   </div>
 
                   <div className="flex items-center gap-2 shrink-0 sm:pt-1">

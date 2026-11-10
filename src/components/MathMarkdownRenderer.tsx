@@ -7,12 +7,30 @@ interface MathMarkdownRendererProps {
   stripAnswerHeader?: boolean;
 }
 
+export const resolveAssetUrl = (url: string): string => {
+  if (!url) return '';
+  if (/^https?:\/\//i.test(url) || url.startsWith('data:')) return url;
+  const cleanPath = url.replace(/^\.\//, '/');
+  if (cleanPath.startsWith('/')) {
+    if (typeof window !== 'undefined' && (window as any).__RAW_ROOT_BRANCH__) {
+      if (cleanPath.startsWith('/public/')) return `.${cleanPath}`;
+      return `./public${cleanPath}`;
+    }
+    const base = ((import.meta as any).env?.BASE_URL || './').replace(/\/+$/, '');
+    return `${base}${cleanPath}`;
+  }
+  return url;
+};
+
 /**
  * Extracts LaTeX annotations from pre-rendered KaTeX HTML blocks (<span class="katex">)
  * and strips HTML wrapper tags (<div class="...">, <p>, <span>, etc.) while preserving
- * line breaks and dollar-delimited math ($...$ and $$...$$).
+ * line breaks, inline images (![image](url)), tables, and dollar-delimited math ($...$ and $$...$$).
  */
-export const extractMathFromHtml = (input: string): string => {
+export const extractMathFromHtml = (
+  input: string,
+  options?: { isExplanation?: boolean }
+): string => {
   if (!input) return '';
   const str = input.trim();
 
@@ -25,7 +43,19 @@ export const extractMathFromHtml = (input: string): string => {
     const temp = document.createElement('div');
     temp.innerHTML = str;
 
-    // Remove decorative buttons, icons, tags, scripts, styles
+    // If extracting question HTML, remove embedded explanation sections ("দৈনিক ব্যাখ্যা বাকি")
+    if (!options?.isExplanation) {
+      temp.querySelectorAll('section').forEach((sec) => {
+        if (
+          sec.textContent?.includes('দৈনিক ব্যাখ্যা বাকি') ||
+          sec.querySelector('[style*="display: none"]')
+        ) {
+          sec.remove();
+        }
+      });
+    }
+
+    // Remove decorative buttons, icons, tags, scripts, styles, svgs
     temp
       .querySelectorAll('button, .icon-button, .tag, script, style, svg')
       .forEach((el) => el.remove());
@@ -60,6 +90,42 @@ export const extractMathFromHtml = (input: string): string => {
       }
     });
 
+    // Convert <img> tags to inline markdown ![image](src) in their exact DOM position
+    temp.querySelectorAll('img').forEach((imgEl) => {
+      const src = (imgEl.getAttribute('src') || '').trim();
+      if (
+        !src ||
+        /explanation_icon\.svg/i.test(src) ||
+        src.startsWith('/svgs/') ||
+        src.startsWith('/dashboard-icons/')
+      ) {
+        imgEl.remove();
+        return;
+      }
+      const alt = (imgEl.getAttribute('alt') || 'image').replace(/[\[\]\n]/g, '').trim() || 'image';
+      imgEl.replaceWith(document.createTextNode(`\n![${alt}](${src})\n`));
+    });
+
+    // Convert HTML <table> elements to Markdown tables
+    temp.querySelectorAll('table').forEach((tableEl) => {
+      const rows = Array.from(tableEl.querySelectorAll('tr'));
+      if (rows.length > 0) {
+        const mdRows: string[] = [];
+        rows.forEach((tr, rIdx) => {
+          const cells = Array.from(tr.querySelectorAll('th, td')).map((cell) =>
+            (cell.textContent || '').replace(/\s+/g, ' ').trim()
+          );
+          if (cells.length > 0) {
+            mdRows.push(`| ${cells.join(' | ')} |`);
+            if (rIdx === 0) {
+              mdRows.push(`| ${cells.map(() => '---').join(' | ')} |`);
+            }
+          }
+        });
+        tableEl.replaceWith(document.createTextNode(`\n${mdRows.join('\n')}\n`));
+      }
+    });
+
     // Preserve line breaks for block elements
     temp.querySelectorAll('br').forEach((br) => br.replaceWith('\n'));
     temp
@@ -82,6 +148,9 @@ export const extractMathFromHtml = (input: string): string => {
     .replace(
       /<span class="katex">[\s\S]*?<annotation encoding="application\/x-tex">([\s\S]*?)<\/annotation>[\s\S]*?<\/math><\/span><span class="katex-html"[^>]*>[\s\S]*?<\/span><\/span>/g,
       ' $$$1$$ '
+    )
+    .replace(/<img[^>]+src=["']([^"']+)["'][^>]*>/gi, (_, src) =>
+      /explanation_icon\.svg/i.test(src) ? '' : `\n![image](${src})\n`
     )
     .replace(/<br\s*\/?>/gi, '\n')
     .replace(/<\/(div|p|li|section|h[1-6])>/gi, '\n')
@@ -128,7 +197,7 @@ export const renderKaTeX = (math: string, displayMode: boolean): string => {
 
 /**
  * Converts naked LaTeX commands (\frac{a}{b}, \sqrt{x}, etc.) and unicode roots/fractions
- * outside $...$ into properly wrapped $...$ inline math tokens.
+ * outside $...$ and outside ![...](...) into properly wrapped $...$ inline math tokens.
  */
 const enrichPlainSegmentWithMath = (text: string): string => {
   if (!text) return '';
@@ -147,7 +216,7 @@ const enrichPlainSegmentWithMath = (text: string): string => {
     (match) => `$${match}$`
   );
 
-  // 3. Convert simple standalone math fractions like 7/4, 1/2, E/2 (avoiding dates like 2024/25)
+  // 3. Convert simple standalone math fractions like 7/4, 1/2, E/2 (avoiding dates like 2024/25 and URL paths)
   result = result.replace(
     /(^|[\s(+-=])([0-9]{1,2}|[A-Za-z])\s*\/\s*([0-9]{1,2}|[A-Za-z])(?=[\s).,;।?!]|$)/g,
     (full, prefix, num, den) => {
@@ -167,24 +236,25 @@ export const normalizeMathInText = (raw: string): string => {
   const htmlCleaned = extractMathFromHtml(raw);
   const sanitized = sanitizeLatexEscapes(htmlCleaned);
 
-  const tokens: Array<{ isMath: boolean; text: string }> = [];
-  const mathPattern = /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g;
+  const tokens: Array<{ isSpecial: boolean; text: string }> = [];
+  // Protect both math ($...$, $$...$$) and markdown images (![alt](url))
+  const tokenPattern = /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$|!\[[^\]]*\]\([^)]+\))/g;
   let lastIdx = 0;
   let match: RegExpExecArray | null;
 
-  while ((match = mathPattern.exec(sanitized)) !== null) {
+  while ((match = tokenPattern.exec(sanitized)) !== null) {
     if (match.index > lastIdx) {
-      tokens.push({ isMath: false, text: sanitized.slice(lastIdx, match.index) });
+      tokens.push({ isSpecial: false, text: sanitized.slice(lastIdx, match.index) });
     }
-    tokens.push({ isMath: true, text: match[0] });
+    tokens.push({ isSpecial: true, text: match[0] });
     lastIdx = match.index + match[0].length;
   }
   if (lastIdx < sanitized.length) {
-    tokens.push({ isMath: false, text: sanitized.slice(lastIdx) });
+    tokens.push({ isSpecial: false, text: sanitized.slice(lastIdx) });
   }
 
   return tokens
-    .map((t) => (t.isMath ? t.text : enrichPlainSegmentWithMath(t.text)))
+    .map((t) => (t.isSpecial ? t.text : enrichPlainSegmentWithMath(t.text)))
     .join('');
 };
 
@@ -195,11 +265,31 @@ export const MathInlineRenderer: React.FC<{ text: string; className?: string }> 
   if (!text) return null;
 
   const normalized = normalizeMathInText(text);
-  const mathSplit = normalized.split(/(\$\$[\s\S]*?\$\$|\$[^$]+?\$)/g);
+  // Split by display math, inline math, or inline markdown image
+  const tokenSplit = normalized.split(/(\$\$[\s\S]*?\$\$|\$[^$]+?\$|!\[[^\]]*\]\([^)]+\))/g);
 
   return (
     <span className={className}>
-      {mathSplit.map((segment, mIdx) => {
+      {tokenSplit.map((segment, mIdx) => {
+        if (!segment) return null;
+
+        if (segment.startsWith('![') && segment.endsWith(')')) {
+          const imgMatch = segment.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+          if (imgMatch) {
+            const altText = imgMatch[1] || 'Question diagram';
+            const rawUrl = imgMatch[2].trim();
+            return (
+              <img
+                key={`img-${mIdx}`}
+                src={resolveAssetUrl(rawUrl)}
+                alt={altText}
+                loading="lazy"
+                className="mx-auto bg-gray-100 dark:bg-slate-800/90 rounded-lg my-2.5 p-2 max-w-full max-h-80 object-contain border border-slate-200 dark:border-slate-700 block"
+              />
+            );
+          }
+        }
+
         if (segment.startsWith('$$') && segment.endsWith('$$') && segment.length > 4) {
           const formula = segment.slice(2, -2);
           const html = renderKaTeX(formula, true);
@@ -224,32 +314,41 @@ export const MathInlineRenderer: React.FC<{ text: string; className?: string }> 
           );
         }
 
-        const boldSplit = segment.split(/(\*\*[^*]+?\*\*)/g);
+        // Preserve explicit line breaks (\n) in inline renderer
+        const lineSplit = segment.split('\n');
         return (
           <React.Fragment key={`text-${mIdx}`}>
-            {boldSplit.map((bSeg, bIdx) => {
-              if (bSeg.startsWith('**') && bSeg.endsWith('**') && bSeg.length > 4) {
-                return (
-                  <strong key={`b-${bIdx}`} className="font-bold">
-                    {bSeg.slice(2, -2)}
-                  </strong>
-                );
-              }
+            {lineSplit.map((linePart, lineIdx) => {
+              const boldSplit = linePart.split(/(\*\*[^*]+?\*\*)/g);
+              return (
+                <React.Fragment key={`ln-${lineIdx}`}>
+                  {lineIdx > 0 && <br />}
+                  {boldSplit.map((bSeg, bIdx) => {
+                    if (bSeg.startsWith('**') && bSeg.endsWith('**') && bSeg.length > 4) {
+                      return (
+                        <strong key={`b-${bIdx}`} className="font-bold">
+                          {bSeg.slice(2, -2)}
+                        </strong>
+                      );
+                    }
 
-              const codeSplit = bSeg.split(/(`[^`]+?`)/g);
-              return codeSplit.map((cSeg, cIdx) => {
-                if (cSeg.startsWith('`') && cSeg.endsWith('`') && cSeg.length > 2) {
-                  return (
-                    <code
-                      key={`c-${cIdx}`}
-                      className="px-1.5 py-0.5 mx-0.5 rounded bg-slate-100 dark:bg-[#070D1B] text-slate-900 dark:text-sky-300 font-mono text-[11px] border border-slate-300 dark:border-sky-900/40"
-                    >
-                      {cSeg.slice(1, -1)}
-                    </code>
-                  );
-                }
-                return <React.Fragment key={`p-${cIdx}`}>{cSeg}</React.Fragment>;
-              });
+                    const codeSplit = bSeg.split(/(`[^`]+?`)/g);
+                    return codeSplit.map((cSeg, cIdx) => {
+                      if (cSeg.startsWith('`') && cSeg.endsWith('`') && cSeg.length > 2) {
+                        return (
+                          <code
+                            key={`c-${cIdx}`}
+                            className="px-1.5 py-0.5 mx-0.5 rounded bg-slate-100 dark:bg-[#070D1B] text-slate-900 dark:text-sky-300 font-mono text-[11px] border border-slate-300 dark:border-sky-900/40"
+                          >
+                            {cSeg.slice(1, -1)}
+                          </code>
+                        );
+                      }
+                      return <React.Fragment key={`p-${cIdx}`}>{cSeg}</React.Fragment>;
+                    });
+                  })}
+                </React.Fragment>
+              );
             })}
           </React.Fragment>
         );
@@ -308,6 +407,172 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
     });
   }
 
+  // Group markdown lines so consecutive "| ... |" lines render as a proper HTML table
+  const renderMarkdownLines = (mdContent: string, bIdx: number) => {
+    const rawLines = mdContent.split('\n');
+    const elements: React.ReactNode[] = [];
+    let i = 0;
+
+    while (i < rawLines.length) {
+      const line = rawLines[i];
+      const trimmed = line.trim();
+
+      // Detect Markdown table block
+      if (trimmed.startsWith('|') && trimmed.endsWith('|') && trimmed.length > 2) {
+        const tableLines: string[] = [];
+        while (
+          i < rawLines.length &&
+          rawLines[i].trim().startsWith('|') &&
+          rawLines[i].trim().endsWith('|')
+        ) {
+          tableLines.push(rawLines[i].trim());
+          i++;
+        }
+
+        const parsedRows = tableLines
+          .filter((row) => !/^\|[\s\-:|]+\|$/.test(row))
+          .map((row) =>
+            row
+              .slice(1, -1)
+              .split('|')
+              .map((cell) => cell.trim())
+          );
+
+        if (parsedRows.length > 0) {
+          const headerRow = parsedRows[0];
+          const bodyRows = parsedRows.slice(1);
+          elements.push(
+            <div key={`tbl-${bIdx}-${i}`} className="my-2.5 overflow-x-auto">
+              <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-700 text-xs sm:text-sm">
+                <thead>
+                  <tr className="bg-slate-100 dark:bg-slate-800/90">
+                    {headerRow.map((cell, cIdx) => (
+                      <th
+                        key={`th-${cIdx}`}
+                        className="border border-slate-300 dark:border-slate-700 px-3 py-1.5 text-center font-bold text-slate-900 dark:text-slate-100"
+                      >
+                        <MathInlineRenderer text={cell} />
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {bodyRows.map((row, rIdx) => (
+                    <tr
+                      key={`tr-${rIdx}`}
+                      className="bg-white dark:bg-[#0B1222] even:bg-slate-50/70 dark:even:bg-slate-900/50"
+                    >
+                      {row.map((cell, cIdx) => (
+                        <td
+                          key={`td-${rIdx}-${cIdx}`}
+                          className="border border-slate-300 dark:border-slate-700 px-3 py-1.5 text-center text-slate-800 dark:text-slate-200"
+                        >
+                          <MathInlineRenderer text={cell} />
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          );
+        }
+        continue;
+      }
+
+      const lIdx = i;
+      i++;
+
+      if (!trimmed) {
+        elements.push(<div key={`empty-${bIdx}-${lIdx}`} className="h-1" />);
+        continue;
+      }
+
+      if (trimmed === '---' || trimmed === '***') {
+        elements.push(
+          <hr
+            key={`hr-${bIdx}-${lIdx}`}
+            className="my-2.5 border-slate-200 dark:border-indigo-900/40"
+          />
+        );
+        continue;
+      }
+
+      if (trimmed.startsWith('### ')) {
+        const text = trimmed.replace(/^###\s+/, '');
+        elements.push(
+          <h4
+            key={`h4-${bIdx}-${lIdx}`}
+            className="text-xs sm:text-sm font-bold text-indigo-700 dark:text-sky-300 mt-2.5 mb-1 flex items-center gap-1.5"
+          >
+            <MathInlineRenderer text={text} />
+          </h4>
+        );
+        continue;
+      }
+
+      if (trimmed.startsWith('## ')) {
+        const text = trimmed.replace(/^##\s+/, '');
+        elements.push(
+          <h3
+            key={`h3-${bIdx}-${lIdx}`}
+            className="text-sm sm:text-base font-bold text-indigo-900 dark:text-indigo-200 mt-3 mb-1.5"
+          >
+            <MathInlineRenderer text={text} />
+          </h3>
+        );
+        continue;
+      }
+
+      if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
+        const bulletText = trimmed.replace(/^[*\-]\s+/, '');
+        elements.push(
+          <div
+            key={`li-${bIdx}-${lIdx}`}
+            className="flex items-start gap-2 text-slate-900 dark:text-slate-300 text-xs sm:text-sm pl-2 py-0.5"
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-sky-400 mt-2 shrink-0" />
+            <div className="flex-1 leading-relaxed">
+              <MathInlineRenderer text={bulletText} />
+            </div>
+          </div>
+        );
+        continue;
+      }
+
+      const numMatch = trimmed.match(/^(\d+(?:\.\d+)?[\.\)])\s+(.*)$/);
+      if (numMatch) {
+        const num = numMatch[1];
+        const itemText = numMatch[2];
+        elements.push(
+          <div
+            key={`num-${bIdx}-${lIdx}`}
+            className="flex items-start gap-2 text-slate-900 dark:text-slate-300 text-xs sm:text-sm pl-2 py-0.5"
+          >
+            <span className="font-bold text-indigo-700 dark:text-sky-400 text-xs shrink-0 mt-0.5">
+              {num}
+            </span>
+            <div className="flex-1 leading-relaxed">
+              <MathInlineRenderer text={itemText} />
+            </div>
+          </div>
+        );
+        continue;
+      }
+
+      elements.push(
+        <div
+          key={`p-${bIdx}-${lIdx}`}
+          className="text-slate-900 dark:text-slate-200 text-xs sm:text-sm leading-relaxed"
+        >
+          <MathInlineRenderer text={line} />
+        </div>
+      );
+    }
+
+    return elements;
+  };
+
   return (
     <div className={`space-y-2 font-sans leading-relaxed text-slate-900 dark:text-slate-200 ${className}`}>
       {blocks.map((block, bIdx) => {
@@ -322,91 +587,9 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
           );
         }
 
-        const lines = block.content.split('\n');
         return (
           <React.Fragment key={`md-${bIdx}`}>
-            {lines.map((line, lIdx) => {
-              const trimmed = line.trim();
-              if (!trimmed) {
-                return <div key={`empty-${bIdx}-${lIdx}`} className="h-1" />;
-              }
-
-              if (trimmed === '---' || trimmed === '***') {
-                return (
-                  <hr
-                    key={`hr-${bIdx}-${lIdx}`}
-                    className="my-2.5 border-slate-200 dark:border-indigo-900/40"
-                  />
-                );
-              }
-
-              if (trimmed.startsWith('### ')) {
-                const text = trimmed.replace(/^###\s+/, '');
-                return (
-                  <h4
-                    key={`h4-${bIdx}-${lIdx}`}
-                    className="text-xs sm:text-sm font-bold text-indigo-700 dark:text-sky-300 mt-2.5 mb-1 flex items-center gap-1.5"
-                  >
-                    <MathInlineRenderer text={text} />
-                  </h4>
-                );
-              }
-
-              if (trimmed.startsWith('## ')) {
-                const text = trimmed.replace(/^##\s+/, '');
-                return (
-                  <h3
-                    key={`h3-${bIdx}-${lIdx}`}
-                    className="text-sm sm:text-base font-bold text-indigo-900 dark:text-indigo-200 mt-3 mb-1.5"
-                  >
-                    <MathInlineRenderer text={text} />
-                  </h3>
-                );
-              }
-
-              if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
-                const bulletText = trimmed.replace(/^[*\-]\s+/, '');
-                return (
-                  <div
-                    key={`li-${bIdx}-${lIdx}`}
-                    className="flex items-start gap-2 text-slate-900 dark:text-slate-300 text-xs sm:text-sm pl-2 py-0.5"
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-sky-400 mt-2 shrink-0" />
-                    <div className="flex-1 leading-relaxed">
-                      <MathInlineRenderer text={bulletText} />
-                    </div>
-                  </div>
-                );
-              }
-
-              const numMatch = trimmed.match(/^(\d+[\.\)])\s+(.*)$/);
-              if (numMatch) {
-                const num = numMatch[1];
-                const itemText = numMatch[2];
-                return (
-                  <div
-                    key={`num-${bIdx}-${lIdx}`}
-                    className="flex items-start gap-2 text-slate-900 dark:text-slate-300 text-xs sm:text-sm pl-2 py-0.5"
-                  >
-                    <span className="font-bold text-indigo-700 dark:text-sky-400 text-xs shrink-0 mt-0.5">
-                      {num}
-                    </span>
-                    <div className="flex-1 leading-relaxed">
-                      <MathInlineRenderer text={itemText} />
-                    </div>
-                  </div>
-                );
-              }
-
-              return (
-                <p
-                  key={`p-${bIdx}-${lIdx}`}
-                  className="text-slate-900 dark:text-slate-200 text-xs sm:text-sm leading-relaxed"
-                >
-                  <MathInlineRenderer text={line} />
-                </p>
-              );
-            })}
+            {renderMarkdownLines(block.content, bIdx)}
           </React.Fragment>
         );
       })}
