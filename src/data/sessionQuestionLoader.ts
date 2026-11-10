@@ -114,12 +114,28 @@ function imagesFromHtml(html?: string): string[] {
   return found;
 }
 
+function resolvePublicUrl(url: string): string {
+  if (/^https?:\/\//i.test(url)) return url;
+  if (url.startsWith('/')) {
+    const base = ((import.meta as any).env?.BASE_URL || './').replace(/\/+$/, '');
+    return `${base}${url}`;
+  }
+  return url;
+}
+
 function cleanImageUrls(values: unknown[]): string[] {
-  return [...new Set(values.filter((value): value is string =>
-    typeof value === 'string' &&
-    (/^https?:\/\//i.test(value) || value.startsWith('/')) &&
-    !/explanation_icon\.svg/i.test(value)
-  ))];
+  return [
+    ...new Set(
+      values
+        .filter(
+          (value): value is string =>
+            typeof value === 'string' &&
+            (/^https?:\/\//i.test(value) || value.startsWith('/') || value.startsWith('./')) &&
+            !/explanation_icon\.svg/i.test(value)
+        )
+        .map((v) => resolvePublicUrl(v))
+    ),
+  ];
 }
 
 function normalizeSubject(value?: string): string {
@@ -389,7 +405,7 @@ export async function loadQuestionsForSession(session: ExamSession): Promise<Que
     try {
       let data: RawExam | null = null;
       if (typeof window !== 'undefined') {
-        const response = await fetch(fileUrl);
+        const response = await fetch(resolvePublicUrl(fileUrl));
         if (response.ok) {
           data = (await response.json()) as RawExam;
         }

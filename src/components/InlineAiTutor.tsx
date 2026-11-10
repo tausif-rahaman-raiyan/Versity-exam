@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { Question } from '../data/questionBank';
 import { ImportedQuestion } from '../data/sessionQuestionLoader';
 import { Sparkles, Send, CheckCircle, AlertCircle, Copy, Volume2, ChevronUp, Zap, Image as ImageIcon } from 'lucide-react';
 import { MathMarkdownRenderer, MathInlineRenderer } from './MathMarkdownRenderer';
+import { GoogleGenAI, ThinkingLevel } from '@google/genai';
 
 interface InlineAiTutorProps {
   question: Question;
@@ -13,6 +14,128 @@ interface InlineAiTutorProps {
 }
 
 const BANGLA_OPTION_LABELS = ['ক', 'খ', 'গ', 'ঘ', 'ঙ'];
+
+const CLIENT_SYSTEM_INSTRUCTION =
+  'You are an elite Bangladeshi varsity admission coach (AI Tutor Admission Coach). Write in clear, natural Bengali (Bangla) mixed with standard English scientific terms. When images are provided, inspect them thoroughly to read every symbol, circuit component, graph axis, chemical bond, or math equation. Always format mathematical formulas, fractions, and variables in standard LaTeX enclosed in dollar signs: use $...$ for inline expressions (e.g., $PV=nRT$, $T = \\frac{PV}{nR}$, $10^{-3}\\text{ m}^3$) and $$...$$ for standalone equations. Always format fractions as \\frac{numerator}{denominator} inside dollar signs. Follow the exact 4-section Bengali heading structure requested.';
+
+async function fetchBrowserImagePart(url: string, label: string): Promise<{ part?: any; svgText?: string }> {
+  try {
+    const res = await fetch(url);
+    if (!res.ok) return {};
+    const contentType = (res.headers.get('content-type') || '').split(';')[0].trim().toLowerCase();
+    if (contentType.includes('svg') || url.toLowerCase().endsWith('.svg')) {
+      const text = (await res.text()).slice(0, 10000);
+      return { svgText: `\n[Attached SVG Diagram for ${label}]:\n\`\`\`xml\n${text}\n\`\`\`\n` };
+    }
+    const blob = await res.blob();
+    const base64 = await new Promise<string>((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const result = String(reader.result || '');
+        const comma = result.indexOf(',');
+        resolve(comma >= 0 ? result.slice(comma + 1) : result);
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(blob);
+    });
+    return {
+      part: {
+        inlineData: {
+          data: base64,
+          mimeType: contentType || 'image/png',
+        },
+      },
+    };
+  } catch {
+    return {};
+  }
+}
+
+function buildClientPrompt(params: {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+  referenceExplanation: string;
+  subject: string;
+  university: string;
+  session: string;
+  userQuestion?: string;
+  hasImages: boolean;
+  svgTexts: string[];
+}): string {
+  const {
+    question,
+    options,
+    correctAnswer,
+    referenceExplanation,
+    subject,
+    university,
+    session,
+    userQuestion,
+    hasImages,
+    svgTexts,
+  } = params;
+
+  let prompt = `Varsity Admission Test Question Analysis:
+- Target University: ${university}
+- Session: ${session}
+- Subject: ${subject}
+- Question Stem: ${question}
+- Options: ${JSON.stringify(options)}
+- Official Correct Answer: ${correctAnswer || 'Determine from question/images and options'}
+`;
+
+  if (referenceExplanation) {
+    prompt += `- Reference Solution Context: ${referenceExplanation.slice(0, 1500)}\n`;
+  }
+  if (hasImages) {
+    prompt += `- Attached Images: Inspect all attached question/option images carefully.\n`;
+  }
+  if (svgTexts.length > 0) {
+    prompt += svgTexts.join('\n');
+  }
+  prompt += '\n';
+
+  if (userQuestion && userQuestion.trim()) {
+    prompt += `The admission candidate has this specific follow-up doubt:
+"${userQuestion}"
+Provide a concise, direct answer in encouraging Bengali (Bangla) mixed with English technical terms using LaTeX ($...$).`;
+  } else {
+    prompt += `Write a crystal-clear, comprehensive Bangladeshi Varsity Admission explanation in Bengali (Bangla) following this EXACT 4-section structure and headings (do NOT repeat an "Answer:" box at the very top; start directly with Section ১):
+
+১. 🎯 **সঠিক উত্তর ও মূল যুক্তি:**
+
+**মূল নীতি:** State the fundamental scientific law, formula, or concept clearly and explain in 2-3 lines why the correct option is right.
+
+২. 📐 **ধাপে ধাপে সমাধান:**
+
+Show the complete step-by-step derivation and calculation for the question and options using LaTeX inside dollar signs ($...$).
+
+৩. ⚡ **এডমিশন ৩০-সেকেন্ড শর্টকাট:**
+
+Explain how to solve this question in under 30 seconds in the exam hall without a calculator.
+
+৪. ⚠️ **পরীক্ষার সতর্কতা:**
+
+List 2 to 3 specific common pitfalls or mistakes students make on this exact type of question using bullet points.`;
+  }
+
+  return prompt;
+}
+
+/**
+ * Splits the streamed explanation into progressive visual sections
+ * (Section ১, Section ২, Section ৩, Section ৪) so each part displays
+ * cleanly in its own card as soon as tokens arrive.
+ */
+function splitExplanationSections(raw: string): string[] {
+  if (!raw || !raw.trim()) return [];
+  const parts = raw
+    .split(/(?=(?:^|\n)\s*(?:[১২৩৪1234][.)]\s*)?(?:🎯|📐|⚡|⚠️))/g)
+    .map((s) => s.trim())
+    .filter(Boolean);
+  return parts.length > 0 ? parts : [raw];
+}
 
 export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
   question,
@@ -39,6 +162,88 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
     const rawLbl = imported.optionLabels?.[idx] || question.optionLabels?.[idx];
     if (rawLbl) return rawLbl;
     return BANGLA_OPTION_LABELS[idx] || String.fromCharCode(65 + idx);
+  };
+
+  // Fallback for static deployments (e.g. GitHub Pages) where /api/gemini/explain-stream is not running
+  const streamDirectOnStaticHost = async (
+    onChunk: (fullText: string) => void,
+    userFollowUp?: string,
+    signal?: AbortSignal
+  ) => {
+    const ai = new GoogleGenAI({ apiKey: customApiKey.trim() });
+    const correctIdx = question.correctAnswer;
+    const correctLbl = correctIdx >= 0 ? getOptionLabel(correctIdx) : '';
+    const correctText =
+      correctIdx >= 0 && question.options?.[correctIdx]
+        ? `[${correctLbl}] ${question.options[correctIdx]}`
+        : '';
+
+    const imageParts: any[] = [];
+    const svgTexts: string[] = [];
+
+    for (let i = 0; i < questionImages.length; i++) {
+      const resolved = await fetchBrowserImagePart(questionImages[i], `Question Image ${i + 1}`);
+      if (resolved.part) imageParts.push(resolved.part);
+      if (resolved.svgText) svgTexts.push(resolved.svgText);
+    }
+
+    for (let optIdx = 0; optIdx < optionImages.length; optIdx++) {
+      const urls = optionImages[optIdx] || [];
+      for (const u of urls) {
+        const resolved = await fetchBrowserImagePart(u, `Option ${optIdx + 1} Image`);
+        if (resolved.part) imageParts.push(resolved.part);
+        if (resolved.svgText) svgTexts.push(resolved.svgText);
+      }
+    }
+
+    const prompt = buildClientPrompt({
+      question: question.question || '(See attached question image)',
+      options: question.options.map((opt, idx) => `[${getOptionLabel(idx)}] ${opt}`),
+      correctAnswer: correctText,
+      referenceExplanation: question.explanation || '',
+      subject: question.subject,
+      university: university || question.university,
+      session: session || question.session,
+      userQuestion: userFollowUp,
+      hasImages: imageParts.length > 0 || svgTexts.length > 0,
+      svgTexts,
+    });
+
+    const contentsPayload =
+      imageParts.length > 0
+        ? [{ role: 'user', parts: [...imageParts, { text: prompt }] }]
+        : prompt;
+
+    const candidateModels = ['gemini-3.8-flash', 'gemini-flash-latest', 'gemini-2.5-flash'];
+    let stream: any = null;
+
+    for (const modelName of candidateModels) {
+      try {
+        const config: any = { systemInstruction: CLIENT_SYSTEM_INSTRUCTION };
+        if (modelName === 'gemini-3.8-flash') {
+          config.thinkingConfig = { thinkingLevel: ThinkingLevel.LOW };
+        }
+        stream = await ai.models.generateContentStream({
+          model: modelName,
+          contents: contentsPayload,
+          config,
+        });
+        break;
+      } catch {
+        // try next model
+      }
+    }
+
+    if (!stream) throw new Error('Model unavailable');
+
+    let accumulated = '';
+    for await (const chunk of stream) {
+      if (signal?.aborted) break;
+      if (chunk.text) {
+        accumulated += chunk.text;
+        onChunk(accumulated);
+      }
+    }
   };
 
   useEffect(() => {
@@ -82,8 +287,13 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
           signal: abortController.signal,
         });
 
-        if (!res.ok || !res.body) {
-          throw new Error('Streaming failed, falling back to instant answer.');
+        const contentType = res.headers.get('content-type') || '';
+        if (!res.ok || !res.body || !contentType.includes('text/event-stream')) {
+          // Running on static GitHub Pages or backend unreachable -> stream directly
+          await streamDirectOnStaticHost((txt) => {
+            if (isMounted) setExplanation(txt);
+          }, undefined, abortController.signal);
+          return;
         }
 
         const reader = res.body.getReader();
@@ -120,11 +330,17 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
       } catch (err: any) {
         if (err.name === 'AbortError' || !isMounted) return;
 
-        // Fallback to textbook explanation in the 4-part format
-        setErrorMsg('Showing instant verified admission solution below.');
-        setExplanation(
-          `১. 🎯 **সঠিক উত্তর ও মূল যুক্তি:**\n${question.explanation || 'প্রদত্ত তথ্যের আলোকে সঠিক উত্তর নির্ণয় করা হয়েছে।'}`
-        );
+        try {
+          await streamDirectOnStaticHost((txt) => {
+            if (isMounted) setExplanation(txt);
+          }, undefined, abortController.signal);
+          return;
+        } catch {
+          setErrorMsg('Showing instant verified admission solution below.');
+          setExplanation(
+            `১. 🎯 **সঠিক উত্তর ও মূল যুক্তি:**\n${question.explanation || 'প্রদত্ত তথ্যের আলোকে সঠিক উত্তর নির্ণয় করা হয়েছে।'}`
+          );
+        }
       } finally {
         if (isMounted) setIsStreaming(false);
       }
@@ -182,7 +398,17 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
         }),
       });
 
-      if (!res.ok || !res.body) throw new Error('Network error');
+      const contentType = res.headers.get('content-type') || '';
+      if (!res.ok || !res.body || !contentType.includes('text/event-stream')) {
+        await streamDirectOnStaticHost((reply) => {
+          setChatHistory((prev) => {
+            const updated = [...prev];
+            updated[newChatIndex + 1] = { sender: 'ai', text: reply };
+            return updated;
+          });
+        }, currentQuery);
+        return;
+      }
 
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
@@ -217,14 +443,24 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
         }
       }
     } catch {
-      setChatHistory((prev) => {
-        const updated = [...prev];
-        updated[newChatIndex + 1] = {
-          sender: 'ai',
-          text: 'Error generating follow-up response. Please check your network connection.',
-        };
-        return updated;
-      });
+      try {
+        await streamDirectOnStaticHost((reply) => {
+          setChatHistory((prev) => {
+            const updated = [...prev];
+            updated[newChatIndex + 1] = { sender: 'ai', text: reply };
+            return updated;
+          });
+        }, currentQuery);
+      } catch {
+        setChatHistory((prev) => {
+          const updated = [...prev];
+          updated[newChatIndex + 1] = {
+            sender: 'ai',
+            text: 'Error generating follow-up response. Please check your API key or network connection.',
+          };
+          return updated;
+        });
+      }
     } finally {
       setIsStreaming(false);
     }
@@ -254,6 +490,8 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
   const correctLabel = question.correctAnswer >= 0 ? getOptionLabel(question.correctAnswer) : '';
   const correctOptionImages =
     question.correctAnswer >= 0 ? optionImages[question.correctAnswer] || [] : [];
+
+  const splitSections = useMemo(() => splitExplanationSections(explanation), [explanation]);
 
   return (
     <div className="mt-4 rounded-2xl bg-indigo-50/50 dark:bg-gradient-to-b dark:from-[#091124] dark:to-[#060B18] border border-indigo-200 dark:border-indigo-500/40 shadow-lg overflow-hidden transition-all">
@@ -314,7 +552,7 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
       </div>
 
       {/* Accordion Content Area */}
-      <div className="p-3.5 sm:p-5 space-y-4 text-xs">
+      <div className="p-3.5 sm:p-5 space-y-3 text-xs">
         {errorMsg && (
           <div className="p-3 rounded-xl bg-amber-50 dark:bg-amber-950/40 border border-amber-300 dark:border-amber-800/60 text-amber-800 dark:text-amber-300 flex items-start gap-2">
             <AlertCircle className="w-4 h-4 text-amber-600 dark:text-amber-400 shrink-0 mt-0.5" />
@@ -349,7 +587,7 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
 
         {/* Initial Loading Pulse before first token arrives */}
         {isStreaming && !explanation && (
-          <div className="py-4 text-left flex items-center gap-2.5 text-slate-700 dark:text-slate-300">
+          <div className="py-3 text-left flex items-center gap-2.5 text-slate-700 dark:text-slate-300">
             <span className="w-2.5 h-2.5 rounded-full bg-indigo-600 dark:bg-sky-400 animate-ping shrink-0" />
             <span className="text-xs font-medium text-indigo-700 dark:text-sky-300">
               {totalImagesCount > 0
@@ -359,13 +597,26 @@ export const InlineAiTutor: React.FC<InlineAiTutorProps> = ({
           </div>
         )}
 
-        {/* Primary Explanation Box with Live Streaming 4-Section Content */}
-        {explanation && (
-          <div className="bg-white dark:bg-[#070D1D] rounded-xl p-4 sm:p-5 border border-slate-200 dark:border-indigo-950/80 shadow-sm relative">
-            <MathMarkdownRenderer content={explanation} stripAnswerHeader={hasAnswerBadge} />
-            {isStreaming && (
-              <span className="inline-block w-2 h-4 bg-indigo-600 dark:bg-sky-400 animate-pulse ml-1 align-middle" />
-            )}
+        {/* Split-Wise Progressive Section Cards */}
+        {splitSections.length > 0 && (
+          <div className="space-y-2.5">
+            {splitSections.map((sectionText, idx) => {
+              const isLastSection = idx === splitSections.length - 1;
+              return (
+                <div
+                  key={idx}
+                  className="bg-white dark:bg-[#070D1D] rounded-xl p-3.5 sm:p-4 border border-slate-200 dark:border-indigo-950/80 shadow-xs relative transition-all"
+                >
+                  <MathMarkdownRenderer
+                    content={sectionText}
+                    stripAnswerHeader={idx === 0 && hasAnswerBadge}
+                  />
+                  {isStreaming && isLastSection && (
+                    <span className="inline-block w-2 h-4 bg-indigo-600 dark:bg-sky-400 animate-pulse ml-1 align-middle" />
+                  )}
+                </div>
+              );
+            })}
           </div>
         )}
 

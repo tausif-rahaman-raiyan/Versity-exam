@@ -1,10 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Settings, Sun, Moon, Type, RotateCcw, ChevronDown } from 'lucide-react';
+import { Settings, Sun, Moon, Type, RotateCcw, ChevronDown, Minus, Plus } from 'lucide-react';
 import {
   UiSettings,
-  FontSizeOption,
   FontStyleOption,
   DEFAULT_UI_SETTINGS,
+  MIN_FONT_PX,
+  MAX_FONT_PX,
+  clampFontPx,
 } from '../utils/uiSettings';
 
 interface SettingsDropdownProps {
@@ -14,8 +16,6 @@ interface SettingsDropdownProps {
   onUpdateSettings: (next: UiSettings) => void;
   compact?: boolean;
 }
-
-const FONT_SIZES: FontSizeOption[] = ['S', 'M', 'L', 'XL'];
 
 const FONT_STYLES: Array<{ id: FontStyleOption; label: string; sampleClass: string }> = [
   { id: 'sans', label: 'Sans', sampleClass: 'font-sans' },
@@ -48,13 +48,23 @@ export const SettingsDropdown: React.FC<SettingsDropdownProps> = ({
     };
   }, [open]);
 
+  const adjustQuestionPx = (delta: number) => {
+    const nextPx = clampFontPx(uiSettings.questionFontPx + delta, DEFAULT_UI_SETTINGS.questionFontPx);
+    onUpdateSettings({ ...uiSettings, questionFontPx: nextPx });
+  };
+
+  const adjustOptionPx = (delta: number) => {
+    const nextPx = clampFontPx(uiSettings.optionFontPx + delta, DEFAULT_UI_SETTINGS.optionFontPx);
+    onUpdateSettings({ ...uiSettings, optionFontPx: nextPx });
+  };
+
   return (
     <div className="relative" ref={containerRef}>
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         className="flex items-center gap-1.5 px-2.5 sm:px-3 py-2 rounded-xl bg-slate-100 dark:bg-[#0F172A] hover:bg-slate-200 dark:hover:bg-[#1E293B] border border-slate-300 dark:border-indigo-900/60 text-xs font-bold text-slate-900 dark:text-slate-200 transition-all shadow-xs whitespace-nowrap"
-        title="Settings: Theme & Font Size"
+        title="Settings: Theme & Font Size (px)"
       >
         <Settings className="w-3.5 h-3.5 text-indigo-600 dark:text-sky-400" />
         <span className={compact ? 'hidden sm:inline' : 'hidden xs:inline'}>Settings</span>
@@ -88,30 +98,30 @@ export const SettingsDropdown: React.FC<SettingsDropdownProps> = ({
             <div className="grid grid-cols-2 gap-2 bg-slate-100 dark:bg-[#070C18] p-1 rounded-xl border border-slate-200 dark:border-slate-800">
               <button
                 type="button"
-                onClick={() => setDarkMode(true)}
-                className={`py-2 px-3 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-all ${
-                  darkMode
-                    ? 'bg-indigo-600 text-white shadow-sm'
-                    : 'text-slate-700 hover:text-slate-950'
-                }`}
-              >
-                <Moon className="w-3.5 h-3.5" /> Dark
-              </button>
-              <button
-                type="button"
                 onClick={() => setDarkMode(false)}
                 className={`py-2 px-3 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-all ${
                   !darkMode
                     ? 'bg-amber-500 text-white shadow-sm'
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'
                 }`}
               >
                 <Sun className="w-3.5 h-3.5" /> White / Light
               </button>
+              <button
+                type="button"
+                onClick={() => setDarkMode(true)}
+                className={`py-2 px-3 rounded-lg font-bold flex items-center justify-center gap-1.5 transition-all ${
+                  darkMode
+                    ? 'bg-indigo-600 text-white shadow-sm'
+                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'
+                }`}
+              >
+                <Moon className="w-3.5 h-3.5" /> Dark
+              </button>
             </div>
           </div>
 
-          {/* 2. Exam Card Question Font Size */}
+          {/* 2. Question Font Size (px with - / + buttons) */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1">
@@ -119,33 +129,35 @@ export const SettingsDropdown: React.FC<SettingsDropdownProps> = ({
                 2. Question Font Size
               </span>
               <span className="text-[11px] font-mono font-bold text-indigo-600 dark:text-sky-400">
-                {uiSettings.questionFontSize}
+                {uiSettings.questionFontPx}px
               </span>
             </div>
-            <div className="grid grid-cols-4 gap-1.5 bg-slate-100 dark:bg-[#070C18] p-1 rounded-xl border border-slate-200 dark:border-slate-800">
-              {FONT_SIZES.map((size) => {
-                const active = uiSettings.questionFontSize === size;
-                return (
-                  <button
-                    key={size}
-                    type="button"
-                    onClick={() =>
-                      onUpdateSettings({ ...uiSettings, questionFontSize: size })
-                    }
-                    className={`py-1.5 rounded-lg font-bold transition-all ${
-                      active
-                        ? 'bg-indigo-600 text-white shadow-xs'
-                        : 'text-slate-700 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'
-                    }`}
-                  >
-                    {size}
-                  </button>
-                );
-              })}
+            <div className="flex items-center justify-between gap-2 bg-slate-100 dark:bg-[#070C18] p-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+              <button
+                type="button"
+                disabled={uiSettings.questionFontPx <= MIN_FONT_PX}
+                onClick={() => adjustQuestionPx(-1)}
+                className="w-9 h-8 rounded-lg bg-white dark:bg-[#0F172A] hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title="Decrease Question Font Size"
+              >
+                <Minus className="w-3.5 h-3.5" />
+              </button>
+              <span className="font-mono font-extrabold text-sm text-slate-950 dark:text-white tabular-nums">
+                {uiSettings.questionFontPx}px
+              </span>
+              <button
+                type="button"
+                disabled={uiSettings.questionFontPx >= MAX_FONT_PX}
+                onClick={() => adjustQuestionPx(1)}
+                className="w-9 h-8 rounded-lg bg-white dark:bg-[#0F172A] hover:bg-indigo-600 hover:text-white dark:hover:bg-indigo-600 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title="Increase Question Font Size"
+              >
+                <Plus className="w-3.5 h-3.5" />
+              </button>
             </div>
           </div>
 
-          {/* 3. Question Option Box Font Size */}
+          {/* 3. Option Box Font Size (px with - / + buttons) */}
           <div className="space-y-1.5">
             <div className="flex items-center justify-between">
               <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1">
@@ -153,29 +165,31 @@ export const SettingsDropdown: React.FC<SettingsDropdownProps> = ({
                 3. Option Box Font Size
               </span>
               <span className="text-[11px] font-mono font-bold text-purple-600 dark:text-purple-400">
-                {uiSettings.optionFontSize}
+                {uiSettings.optionFontPx}px
               </span>
             </div>
-            <div className="grid grid-cols-4 gap-1.5 bg-slate-100 dark:bg-[#070C18] p-1 rounded-xl border border-slate-200 dark:border-slate-800">
-              {FONT_SIZES.map((size) => {
-                const active = uiSettings.optionFontSize === size;
-                return (
-                  <button
-                    key={size}
-                    type="button"
-                    onClick={() =>
-                      onUpdateSettings({ ...uiSettings, optionFontSize: size })
-                    }
-                    className={`py-1.5 rounded-lg font-bold transition-all ${
-                      active
-                        ? 'bg-purple-600 text-white shadow-xs'
-                        : 'text-slate-700 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white'
-                    }`}
-                  >
-                    {size}
-                  </button>
-                );
-              })}
+            <div className="flex items-center justify-between gap-2 bg-slate-100 dark:bg-[#070C18] p-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+              <button
+                type="button"
+                disabled={uiSettings.optionFontPx <= MIN_FONT_PX}
+                onClick={() => adjustOptionPx(-1)}
+                className="w-9 h-8 rounded-lg bg-white dark:bg-[#0F172A] hover:bg-purple-600 hover:text-white dark:hover:bg-purple-600 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title="Decrease Option Font Size"
+              >
+                <Minus className="w-3.5 h-3.5" />
+              </button>
+              <span className="font-mono font-extrabold text-sm text-slate-950 dark:text-white tabular-nums">
+                {uiSettings.optionFontPx}px
+              </span>
+              <button
+                type="button"
+                disabled={uiSettings.optionFontPx >= MAX_FONT_PX}
+                onClick={() => adjustOptionPx(1)}
+                className="w-9 h-8 rounded-lg bg-white dark:bg-[#0F172A] hover:bg-purple-600 hover:text-white dark:hover:bg-purple-600 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title="Increase Option Font Size"
+              >
+                <Plus className="w-3.5 h-3.5" />
+              </button>
             </div>
           </div>
 

@@ -24,8 +24,6 @@ import { SettingsDropdown } from './SettingsDropdown';
 import {
   UiSettings,
   DEFAULT_UI_SETTINGS,
-  getQuestionFontClass,
-  getOptionFontClass,
   getFontStyleClass,
 } from '../utils/uiSettings';
 
@@ -228,8 +226,6 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
   const totalCount = questions.length;
   const selectedPercent = totalCount > 0 ? Math.min(100, Math.round((selectedCount / totalCount) * 100)) : 0;
 
-  const questionFontClass = getQuestionFontClass(uiSettings.questionFontSize);
-  const optionFontClass = getOptionFontClass(uiSettings.optionFontSize);
   const fontStyleClass = getFontStyleClass(uiSettings.fontStyle);
 
   return (
@@ -528,8 +524,11 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                   </div>
                 </div>
 
-                {/* Question Text (Dynamic Question Font Size) */}
-                <div className={`${questionFontClass} font-semibold text-slate-950 dark:text-white mb-4 leading-relaxed`}>
+                {/* Question Text (Dynamic Question Font Size in px) */}
+                <div
+                  style={{ fontSize: `${uiSettings.questionFontPx}px` }}
+                  className="font-semibold text-slate-950 dark:text-white mb-4 leading-relaxed"
+                >
                   <span className="font-bold text-indigo-700 dark:text-sky-400 mr-1.5">
                     {q.number ?? idx + 1}.
                   </span>
@@ -547,7 +546,7 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                   />
                 ))}
 
-                {/* Options or Written Question Notice (Dynamic Option Font Size) */}
+                {/* Options or Written Question Notice (Dynamic Option Font Size in px) */}
                 {isWritten ? (
                   <div className="p-4 rounded-xl bg-amber-50 dark:bg-[#080E1C] border border-amber-300 dark:border-amber-900/40 text-amber-900 dark:text-amber-300 text-xs flex items-center justify-between flex-wrap gap-2">
                     <span>✍️ লিখিত প্রশ্ন (Written Question - Option Selection Not Required)</span>
@@ -588,7 +587,8 @@ export const StrictExamView: React.FC<StrictExamViewProps> = ({
                           key={optIdx}
                           disabled={isLocked || isSubmitted}
                           onClick={() => handleSelectOption(q.id, optIdx)}
-                          className={`text-left p-3 sm:p-3.5 rounded-xl border ${optionFontClass} transition-all flex items-center justify-between gap-3 ${btnStyle}`}
+                          style={{ fontSize: `${uiSettings.optionFontPx}px` }}
+                          className={`text-left p-3 sm:p-3.5 rounded-xl border transition-all flex items-center justify-between gap-3 ${btnStyle}`}
                         >
                           <div className="flex items-center gap-3 min-w-0 flex-1">
                             <span

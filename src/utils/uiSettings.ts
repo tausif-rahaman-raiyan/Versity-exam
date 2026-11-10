@@ -1,31 +1,42 @@
-export type FontSizeOption = 'S' | 'M' | 'L' | 'XL';
 export type FontStyleOption = 'sans' | 'serif' | 'mono' | 'bryndan';
 
 export interface UiSettings {
-  questionFontSize: FontSizeOption;
-  optionFontSize: FontSizeOption;
+  questionFontPx: number;
+  optionFontPx: number;
   fontStyle: FontStyleOption;
 }
 
-const STORAGE_KEY = 'varsity_qb_ui_settings_v1';
-const THEME_STORAGE_KEY = 'varsity_qb_theme_mode';
+const STORAGE_KEY = 'varsity_qb_ui_settings_v2';
+const THEME_STORAGE_KEY = 'varsity_qb_theme_v2';
+
+export const MIN_FONT_PX = 12;
+export const MAX_FONT_PX = 26;
 
 export const DEFAULT_UI_SETTINGS: UiSettings = {
-  questionFontSize: 'M',
-  optionFontSize: 'M',
+  questionFontPx: 16,
+  optionFontPx: 14,
   fontStyle: 'sans',
 };
 
+export function clampFontPx(val: number, fallback: number): number {
+  if (typeof val !== 'number' || Number.isNaN(val)) return fallback;
+  return Math.max(MIN_FONT_PX, Math.min(MAX_FONT_PX, Math.round(val)));
+}
+
+/**
+ * Default theme on first visit is White / Light Mode (darkMode = false)
+ * until the user changes it in Settings.
+ */
 export function loadThemeMode(): boolean {
-  if (typeof window === 'undefined') return true;
+  if (typeof window === 'undefined') return false;
   try {
     const saved = localStorage.getItem(THEME_STORAGE_KEY);
-    if (saved === 'light') return false;
     if (saved === 'dark') return true;
+    if (saved === 'light') return false;
   } catch {
     // ignore storage errors
   }
-  return true;
+  return false; // First-time visit defaults to White / Light Mode
 }
 
 export function saveThemeMode(darkMode: boolean): void {
@@ -44,12 +55,8 @@ export function loadUiSettings(): UiSettings {
     if (!raw) return DEFAULT_UI_SETTINGS;
     const parsed = JSON.parse(raw);
     return {
-      questionFontSize: ['S', 'M', 'L', 'XL'].includes(parsed.questionFontSize)
-        ? parsed.questionFontSize
-        : 'M',
-      optionFontSize: ['S', 'M', 'L', 'XL'].includes(parsed.optionFontSize)
-        ? parsed.optionFontSize
-        : 'M',
+      questionFontPx: clampFontPx(Number(parsed.questionFontPx), DEFAULT_UI_SETTINGS.questionFontPx),
+      optionFontPx: clampFontPx(Number(parsed.optionFontPx), DEFAULT_UI_SETTINGS.optionFontPx),
       fontStyle: ['sans', 'serif', 'mono', 'bryndan'].includes(parsed.fontStyle)
         ? parsed.fontStyle
         : 'sans',
@@ -65,36 +72,6 @@ export function saveUiSettings(settings: UiSettings): void {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
   } catch {
     // ignore storage quota errors
-  }
-}
-
-export function getQuestionFontClass(size: FontSizeOption): string {
-  switch (size) {
-    case 'S':
-      return 'text-xs sm:text-sm';
-    case 'M':
-      return 'text-sm sm:text-base';
-    case 'L':
-      return 'text-base sm:text-lg';
-    case 'XL':
-      return 'text-lg sm:text-xl';
-    default:
-      return 'text-sm sm:text-base';
-  }
-}
-
-export function getOptionFontClass(size: FontSizeOption): string {
-  switch (size) {
-    case 'S':
-      return 'text-[11px] sm:text-xs';
-    case 'M':
-      return 'text-xs sm:text-sm';
-    case 'L':
-      return 'text-sm sm:text-base';
-    case 'XL':
-      return 'text-base sm:text-lg';
-    default:
-      return 'text-xs sm:text-sm';
   }
 }
 

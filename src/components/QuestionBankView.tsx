@@ -20,8 +20,6 @@ import { getSubjectCardStyle } from '../utils/subjectColors';
 import {
   UiSettings,
   DEFAULT_UI_SETTINGS,
-  getQuestionFontClass,
-  getOptionFontClass,
   getFontStyleClass,
 } from '../utils/uiSettings';
 
@@ -131,8 +129,6 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
     });
   };
 
-  const questionFontClass = getQuestionFontClass(uiSettings.questionFontSize);
-  const optionFontClass = getOptionFontClass(uiSettings.optionFontSize);
   const fontStyleClass = getFontStyleClass(uiSettings.fontStyle);
 
   return (
@@ -313,8 +309,11 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                   </span>
                 </div>
 
-                {/* Question Text (Dynamic Question Font Size) */}
-                <div className={`${questionFontClass} font-semibold text-slate-950 dark:text-white leading-relaxed`}>
+                {/* Question Text (Dynamic Question Font Size in px) */}
+                <div
+                  style={{ fontSize: `${uiSettings.questionFontPx}px` }}
+                  className="font-semibold text-slate-950 dark:text-white leading-relaxed"
+                >
                   <span className="font-bold text-indigo-700 dark:text-sky-400 mr-1.5">
                     {q.number ?? index + 1}.
                   </span>
@@ -332,7 +331,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                   />
                 ))}
 
-                {/* Options (Dynamic Option Box Font Size) */}
+                {/* Options (Dynamic Option Box Font Size in px) */}
                 {q.questionType === 'Written' || q.options.length === 0 ? (
                   <div className="p-3.5 rounded-xl bg-amber-50/90 dark:bg-[#080E1B] border border-amber-300 dark:border-slate-800 text-xs text-slate-800 dark:text-slate-300">
                     এটি লিখিত প্রশ্ন। নিচে সমাধান ও ব্যাখ্যা দেওয়া হলো।
@@ -345,8 +344,9 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                       return (
                         <div
                           key={optionIndex}
+                          style={{ fontSize: `${uiSettings.optionFontPx}px` }}
                           className={
-                            `p-3 sm:p-3.5 rounded-xl border ${optionFontClass} flex items-start gap-2.5 transition-all ` +
+                            'p-3 sm:p-3.5 rounded-xl border flex items-start gap-2.5 transition-all ' +
                             (correct
                               ? 'bg-emerald-50 dark:bg-emerald-950/60 border-2 border-emerald-500 text-emerald-950 dark:text-emerald-200 font-semibold shadow-xs'
                               : 'bg-white/95 dark:bg-[#080E1C] border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-200')

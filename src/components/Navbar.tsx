@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart2, ShieldCheck, Sparkles, Home } from 'lucide-react';
+import { BarChart2, ShieldCheck, Sparkles, BookOpen } from 'lucide-react';
 import { SettingsDropdown } from './SettingsDropdown';
 import { UiSettings } from '../utils/uiSettings';
 
@@ -38,7 +38,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
           <div>
             <span className="text-sm sm:text-lg font-extrabold tracking-tight text-slate-950 dark:text-white block leading-none">
-              Varsity Science QB
+              Varsity QB
             </span>
             <span className="text-[10px] sm:text-[11px] text-indigo-600 dark:text-sky-400 font-semibold">
               DU • RU • JU • CU • GST
@@ -51,13 +51,13 @@ export const Navbar: React.FC<NavbarProps> = ({
           <button
             onClick={() => setCurrentView('home')}
             className={`px-2.5 sm:px-3.5 py-1.5 rounded-xl transition-all flex items-center gap-1.5 whitespace-nowrap ${
-              currentView === 'home'
+              currentView === 'home' || currentView === 'questionBank'
                 ? 'bg-indigo-600 text-white shadow-sm'
                 : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-[#0F172A]'
             }`}
           >
-            <Home className="w-3.5 h-3.5" />
-            <span className="hidden xs:inline sm:inline">Universities</span>
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>Question Bank</span>
           </button>
           <button
             onClick={() => setCurrentView('analytics')}
@@ -72,7 +72,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </button>
         </nav>
 
-        {/* Zone 3: AI Key & Settings Dropdown (Theme + Question/Option Font Sizes) */}
+        {/* Zone 3: AI Key & Settings Dropdown (Theme + Question/Option Font Sizes in px) */}
         <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
           <button
             onClick={onOpenApiKeyModal}
