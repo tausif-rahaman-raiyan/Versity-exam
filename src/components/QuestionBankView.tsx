@@ -392,9 +392,15 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
 
                 {/* Explanation & Ask AI Tutor */}
                 <div className="pt-3 border-t border-slate-200/80 dark:border-slate-800/80 flex flex-col sm:flex-row sm:items-start justify-between gap-3">
-                  <div className="p-3.5 sm:p-4 rounded-xl bg-white/95 dark:bg-[#080E1B] border border-slate-200 dark:border-slate-800 text-xs flex-1 space-y-2.5 shadow-2xs">
-                    <span className="font-bold text-slate-900 dark:text-slate-200 block">
-                      সমাধান ও ব্যাখ্যা:
+                  <div
+                    className="p-3.5 sm:p-4 rounded-xl bg-white/95 dark:bg-[#080E1B] border border-slate-200 dark:border-slate-800 flex-1 space-y-2.5 shadow-2xs"
+                    style={{ fontSize: `${uiSettings.explanationFontPx}px` }}
+                  >
+                    <span
+                      className="font-bold text-slate-900 dark:text-slate-200 block"
+                      style={{ fontSize: `${Math.max(13, uiSettings.explanationFontPx + 1)}px` }}
+                    >
+                      সঠিক উত্তর ও মূল ব্যাখ্যা:
                     </span>
                     {showAnswerBadge && (
                       <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 dark:bg-emerald-950/70 border border-emerald-500/60 text-emerald-950 dark:text-emerald-200 font-bold text-xs">
@@ -411,6 +417,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                       <MathMarkdownRenderer
                         content={q.explanation}
                         stripAnswerHeader={showAnswerBadge}
+                        fontSizePx={uiSettings.explanationFontPx}
                       />
                     ) : (
                       <span className="text-slate-600 dark:text-slate-300 font-medium block">

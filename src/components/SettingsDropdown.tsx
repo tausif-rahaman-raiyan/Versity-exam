@@ -58,6 +58,11 @@ export const SettingsDropdown: React.FC<SettingsDropdownProps> = ({
     onUpdateSettings({ ...uiSettings, optionFontPx: nextPx });
   };
 
+  const adjustExplanationPx = (delta: number) => {
+    const nextPx = clampFontPx(uiSettings.explanationFontPx + delta, DEFAULT_UI_SETTINGS.explanationFontPx);
+    onUpdateSettings({ ...uiSettings, explanationFontPx: nextPx });
+  };
+
   return (
     <div className="relative" ref={containerRef}>
       <button
@@ -193,10 +198,46 @@ export const SettingsDropdown: React.FC<SettingsDropdownProps> = ({
             </div>
           </div>
 
-          {/* 4. Font Style Option (Sans, Serif, Mono, Bryndan Write) */}
+          {/* 4. Explanation Font Size (px with - / + buttons) */}
+          <div className="space-y-1.5">
+            <div className="flex items-center justify-between">
+              <span className="text-[11px] font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1">
+                <Type className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
+                4. Explanation Font Size
+              </span>
+              <span className="text-[11px] font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                {uiSettings.explanationFontPx}px
+              </span>
+            </div>
+            <div className="flex items-center justify-between gap-2 bg-slate-100 dark:bg-[#070C18] p-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
+              <button
+                type="button"
+                disabled={uiSettings.explanationFontPx <= MIN_FONT_PX}
+                onClick={() => adjustExplanationPx(-1)}
+                className="w-9 h-8 rounded-lg bg-white dark:bg-[#0F172A] hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-600 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title="Decrease Explanation Font Size"
+              >
+                <Minus className="w-3.5 h-3.5" />
+              </button>
+              <span className="font-mono font-extrabold text-sm text-slate-950 dark:text-white tabular-nums">
+                {uiSettings.explanationFontPx}px
+              </span>
+              <button
+                type="button"
+                disabled={uiSettings.explanationFontPx >= MAX_FONT_PX}
+                onClick={() => adjustExplanationPx(1)}
+                className="w-9 h-8 rounded-lg bg-white dark:bg-[#0F172A] hover:bg-emerald-600 hover:text-white dark:hover:bg-emerald-600 border border-slate-300 dark:border-slate-700 flex items-center justify-center font-bold transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+                title="Increase Explanation Font Size"
+              >
+                <Plus className="w-3.5 h-3.5" />
+              </button>
+            </div>
+          </div>
+
+          {/* 5. Font Style Option (Sans, Serif, Mono, Bryndan Write) */}
           <div className="space-y-1.5">
             <span className="block text-[11px] font-bold text-slate-700 dark:text-slate-300">
-              4. Font Style
+              5. Font Style
             </span>
             <div className="grid grid-cols-2 gap-1.5 bg-slate-100 dark:bg-[#070C18] p-1.5 rounded-xl border border-slate-200 dark:border-slate-800">
               {FONT_STYLES.map((item) => {

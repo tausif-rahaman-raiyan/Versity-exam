@@ -5,6 +5,7 @@ interface MathMarkdownRendererProps {
   content: string;
   className?: string;
   stripAnswerHeader?: boolean;
+  fontSizePx?: number;
 }
 
 export const resolveAssetUrl = (url: string): string => {
@@ -361,6 +362,7 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
   content,
   className = '',
   stripAnswerHeader = false,
+  fontSizePx,
 }) => {
   if (!content) return null;
 
@@ -442,8 +444,12 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
           const headerRow = parsedRows[0];
           const bodyRows = parsedRows.slice(1);
           elements.push(
-            <div key={`tbl-${bIdx}-${i}`} className="my-2.5 overflow-x-auto">
-              <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-700 text-xs sm:text-sm">
+            <div
+              key={`tbl-${bIdx}-${i}`}
+              className="my-2.5 overflow-x-auto"
+              style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
+            >
+              <table className="min-w-full border-collapse border border-slate-300 dark:border-slate-700">
                 <thead>
                   <tr className="bg-slate-100 dark:bg-slate-800/90">
                     {headerRow.map((cell, cIdx) => (
@@ -498,12 +504,43 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
         continue;
       }
 
+      // Concluding Answer / উত্তর Line — Render in vibrant emerald card
+      const isAnswerLine =
+        /^\*{0,2}উত্তর[:\s*]/i.test(trimmed) ||
+        /^\*{0,2}Answer[:\s*]/i.test(trimmed) ||
+        trimmed.startsWith('🎯 **সঠিক উত্তর') ||
+        (trimmed.startsWith('**সঠিক উত্তর') && !trimmed.includes('**সঠিক উত্তর ও মূল যুক্তি'));
+
+      if (isAnswerLine) {
+        const cleanAnswerText = trimmed
+          .replace(/^(\*{0,2}(?:উত্তর|Answer)[:\s*]*\*{0,2})[:\s]*/i, '')
+          .replace(/^(?:🎯\s*)?\*{0,2}সঠিক উত্তর[:\s*]*\*{0,2}[:\s]*/i, '')
+          .trim();
+
+        elements.push(
+          <div
+            key={`ans-${bIdx}-${lIdx}`}
+            className="my-3 p-3 sm:p-3.5 rounded-xl bg-gradient-to-r from-emerald-500/15 via-teal-500/10 to-emerald-500/5 dark:from-emerald-950/75 dark:via-emerald-900/45 dark:to-teal-950/30 border-2 border-emerald-500/80 dark:border-emerald-400/80 shadow-md shadow-emerald-500/15 text-emerald-950 dark:text-emerald-100 flex items-start gap-2.5 transition-all"
+            style={{ fontSize: fontSizePx ? `${Math.max(13, fontSizePx + 1)}px` : undefined }}
+          >
+            <span className="px-2 py-0.5 rounded-md bg-emerald-600 dark:bg-emerald-500 text-white font-black text-[11px] shrink-0 uppercase tracking-wider shadow-2xs mt-0.5">
+              উত্তর
+            </span>
+            <div className="font-extrabold flex-1 leading-relaxed text-emerald-950 dark:text-emerald-100">
+              <MathInlineRenderer text={cleanAnswerText || trimmed} />
+            </div>
+          </div>
+        );
+        continue;
+      }
+
       if (trimmed.startsWith('### ')) {
         const text = trimmed.replace(/^###\s+/, '');
         elements.push(
           <h4
             key={`h4-${bIdx}-${lIdx}`}
-            className="text-xs sm:text-sm font-bold text-indigo-700 dark:text-sky-300 mt-2.5 mb-1 flex items-center gap-1.5"
+            className="font-bold text-indigo-700 dark:text-sky-300 mt-2.5 mb-1 flex items-center gap-1.5"
+            style={{ fontSize: fontSizePx ? `${Math.max(13, fontSizePx + 1)}px` : undefined }}
           >
             <MathInlineRenderer text={text} />
           </h4>
@@ -516,7 +553,8 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
         elements.push(
           <h3
             key={`h3-${bIdx}-${lIdx}`}
-            className="text-sm sm:text-base font-bold text-indigo-900 dark:text-indigo-200 mt-3 mb-1.5"
+            className="font-bold text-indigo-900 dark:text-indigo-200 mt-3 mb-1.5"
+            style={{ fontSize: fontSizePx ? `${Math.max(15, fontSizePx + 3)}px` : undefined }}
           >
             <MathInlineRenderer text={text} />
           </h3>
@@ -529,7 +567,8 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
         elements.push(
           <div
             key={`li-${bIdx}-${lIdx}`}
-            className="flex items-start gap-2 text-slate-900 dark:text-slate-300 text-xs sm:text-sm pl-2 py-0.5"
+            className="flex items-start gap-2 text-slate-900 dark:text-slate-200 pl-2 py-0.5"
+            style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
           >
             <span className="w-1.5 h-1.5 rounded-full bg-indigo-600 dark:bg-sky-400 mt-2 shrink-0" />
             <div className="flex-1 leading-relaxed">
@@ -547,9 +586,13 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
         elements.push(
           <div
             key={`num-${bIdx}-${lIdx}`}
-            className="flex items-start gap-2 text-slate-900 dark:text-slate-300 text-xs sm:text-sm pl-2 py-0.5"
+            className="flex items-start gap-2 text-slate-900 dark:text-slate-200 pl-2 py-0.5"
+            style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
           >
-            <span className="font-bold text-indigo-700 dark:text-sky-400 text-xs shrink-0 mt-0.5">
+            <span
+              className="font-bold text-indigo-700 dark:text-sky-400 shrink-0 mt-0.5"
+              style={{ fontSize: fontSizePx ? `${Math.max(11, fontSizePx - 1)}px` : undefined }}
+            >
               {num}
             </span>
             <div className="flex-1 leading-relaxed">
@@ -563,7 +606,8 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
       elements.push(
         <div
           key={`p-${bIdx}-${lIdx}`}
-          className="text-slate-900 dark:text-slate-200 text-xs sm:text-sm leading-relaxed"
+          className="text-slate-900 dark:text-slate-200 leading-relaxed"
+          style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
         >
           <MathInlineRenderer text={line} />
         </div>
@@ -574,7 +618,10 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
   };
 
   return (
-    <div className={`space-y-2 font-sans leading-relaxed text-slate-900 dark:text-slate-200 ${className}`}>
+    <div
+      className={`space-y-2 font-sans leading-relaxed text-slate-900 dark:text-slate-200 ${className}`}
+      style={{ fontSize: fontSizePx ? `${fontSizePx}px` : undefined }}
+    >
       {blocks.map((block, bIdx) => {
         if (block.type === 'blockMath') {
           const html = renderKaTeX(block.content, true);
@@ -582,6 +629,7 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
             <div
               key={`block-${bIdx}`}
               className="my-2.5 py-2.5 px-4 rounded-xl bg-slate-50 dark:bg-[#060B17] border border-slate-200 dark:border-indigo-950/90 overflow-x-auto text-center text-slate-950 dark:text-sky-200 shadow-inner"
+              style={{ fontSize: fontSizePx ? `${Math.max(14, fontSizePx + 1)}px` : undefined }}
               dangerouslySetInnerHTML={{ __html: html }}
             />
           );

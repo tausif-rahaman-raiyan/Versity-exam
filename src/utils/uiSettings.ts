@@ -3,6 +3,7 @@ export type FontStyleOption = 'sans' | 'serif' | 'mono' | 'bryndan';
 export interface UiSettings {
   questionFontPx: number;
   optionFontPx: number;
+  explanationFontPx: number;
   fontStyle: FontStyleOption;
 }
 
@@ -15,6 +16,7 @@ export const MAX_FONT_PX = 26;
 export const DEFAULT_UI_SETTINGS: UiSettings = {
   questionFontPx: 16,
   optionFontPx: 14,
+  explanationFontPx: 14,
   fontStyle: 'sans',
 };
 
@@ -57,6 +59,7 @@ export function loadUiSettings(): UiSettings {
     return {
       questionFontPx: clampFontPx(Number(parsed.questionFontPx), DEFAULT_UI_SETTINGS.questionFontPx),
       optionFontPx: clampFontPx(Number(parsed.optionFontPx), DEFAULT_UI_SETTINGS.optionFontPx),
+      explanationFontPx: clampFontPx(Number(parsed.explanationFontPx), DEFAULT_UI_SETTINGS.explanationFontPx),
       fontStyle: ['sans', 'serif', 'mono', 'bryndan'].includes(parsed.fontStyle)
         ? parsed.fontStyle
         : 'sans',
