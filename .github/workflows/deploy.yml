@@ -34,6 +34,14 @@ jobs:
       - name: Build production bundle
         run: npm run build
 
+      - name: Smoke test production website
+        run: |
+          NODE_ENV=production node server.ts &
+          SERVER_PID=$!
+          trap "kill $SERVER_PID" EXIT
+          sleep 5
+          curl --fail http://127.0.0.1:3000/ > /dev/null
+
       - name: Copy index.html to 404.html for SPA routing
         run: cp dist/index.html dist/404.html
 
