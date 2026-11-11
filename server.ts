@@ -499,6 +499,115 @@ async function startServer() {
     }
   });
 
+  const translationCache = new Map<string, { question: string; options: string[]; explanation: string }>();
+
+  app.post('/api/gemini/translate-batch', async (req, res) => {
+    try {
+      const { items, targetLang = 'en', customApiKey } = req.body || {};
+      if (!Array.isArray(items) || items.length === 0) {
+        return res.json({ translations: {} });
+      }
+
+      const result: Record<string, { question: string; options: string[]; explanation: string }> = {};
+      const pendingItems: Array<{
+        id: string;
+        subject?: string;
+        question: string;
+        options: string[];
+        explanation?: string;
+      }> = [];
+
+      for (const item of items) {
+        if (!item || !item.id) continue;
+        // Keep Bangla subject questions in Bengali
+        if (item.subject === 'Bangla' || item.subject === 'English') continue;
+        const key = `${targetLang}::${item.id}`;
+        if (translationCache.has(key)) {
+          result[item.id] = translationCache.get(key)!;
+        } else {
+          pendingItems.push(item);
+        }
+      }
+
+      if (pendingItems.length === 0) {
+        return res.json({ translations: result });
+      }
+
+      const userKey = ((req.headers['x-gemini-api-key'] as string) || customApiKey || '').trim();
+      const envKey = (process.env.GEMINI_API_KEY || '').trim();
+      const apiKeysToTry = [...new Set([userKey, envKey].filter((k) => isValidApiKey(k)))];
+
+      if (apiKeysToTry.length === 0) {
+        return res.json({ translations: result });
+      }
+
+      const batchSlice = pendingItems.slice(0, 20);
+      const prompt = `Translate the following Bangladeshi university science admission MCQ questions, options, and explanations into clear, standard academic ${
+        targetLang === 'en' ? 'English' : 'Bengali'
+      }.
+CRITICAL RULES:
+1. Preserve ALL LaTeX formulas ($...$), mathematical symbols, chemical formulas, numbers, and image markdown exactly as they are.
+2. Keep the exact same number of options in the exact same order.
+3. Return ONLY valid JSON matching the object map { "[questionId]": { "question": "...", "options": ["...", "..."], "explanation": "..." } }.
+
+Input JSON:
+${JSON.stringify(
+  batchSlice.map((i) => ({
+    id: i.id,
+    subject: i.subject,
+    question: i.question,
+    options: i.options,
+    explanation: (i.explanation || '').slice(0, 500),
+  }))
+)}`;
+
+      const candidateModels = [
+        'gemini-3.1-flash-lite',
+        'gemini-2.5-flash-lite',
+        'gemini-2.5-flash',
+        'gemini-3.8-flash',
+      ];
+
+      outerTranslate: for (const activeKey of apiKeysToTry) {
+        const ai = new GoogleGenAI({ apiKey: activeKey });
+        for (const modelName of candidateModels) {
+          try {
+            const response = await ai.models.generateContent({
+              model: modelName,
+              contents: prompt,
+              config: {
+                responseMimeType: 'application/json',
+              },
+            });
+            const rawText = (response.text || '').trim();
+            if (rawText) {
+              const parsed = JSON.parse(rawText);
+              for (const item of batchSlice) {
+                const entry = parsed[item.id];
+                if (entry && typeof entry.question === 'string' && Array.isArray(entry.options)) {
+                  const cleanEntry = {
+                    question: entry.question,
+                    options: entry.options.map((o: any) => String(o)),
+                    explanation: typeof entry.explanation === 'string' ? entry.explanation : (item.explanation || ''),
+                  };
+                  translationCache.set(`${targetLang}::${item.id}`, cleanEntry);
+                  result[item.id] = cleanEntry;
+                }
+              }
+              break outerTranslate;
+            }
+          } catch {
+            // Try next model
+          }
+        }
+      }
+
+      return res.json({ translations: result });
+    } catch {
+      return res.json({ translations: {} });
+    }
+  });
+
   app.get('/api/gemini/status', (_req, res) => {
     const hasEnvKey = isValidApiKey(process.env.GEMINI_API_KEY);
     res.json({

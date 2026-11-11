@@ -368,24 +368,13 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
 
   let preprocessed = normalizeMathInText(content);
 
-  // If stripAnswerHeader is true, remove redundant "💡 সঠিক উত্তর: ..." lines so Answer isn't shown twice
+  // If stripAnswerHeader is true, remove redundant leading "💡 সঠিক উত্তর: ..." line so Answer isn't shown twice
   if (stripAnswerHeader) {
     preprocessed = preprocessed
       .split('\n')
       .filter((line) => {
-        const raw = line.trim();
-        // Strip leading asterisks, underscores, and whitespace to match markdown bold syntax like **💡 সঠিক উত্তর...
-        const t = raw.replace(/^(\*{1,3}|_{1,3})\s*/, '').trim();
-        const isHeader =
-          t.startsWith('💡 সঠিক উত্তর') ||
-          t.startsWith('💡সঠিক উত্তর') ||
-          t.startsWith('সঠিক উত্তর:') ||
-          t.startsWith('সঠিক উত্তর') ||
-          t.startsWith('🎯 সঠিক উত্তর') ||
-          t.startsWith('🎯সঠিক উত্তর') ||
-          /^উত্তর[:\s*]/i.test(t) ||
-          /^Answer[:\s*]/i.test(t);
-        return !isHeader;
+        const t = line.trim();
+        return !t.startsWith('💡 সঠিক উত্তর') && !t.startsWith('সঠিক উত্তর:');
       })
       .join('\n')
       .trim();
@@ -523,9 +512,6 @@ export const MathMarkdownRenderer: React.FC<MathMarkdownRendererProps> = ({
         (trimmed.startsWith('**সঠিক উত্তর') && !trimmed.includes('**সঠিক উত্তর ও মূল যুক্তি'));
 
       if (isAnswerLine) {
-        if (stripAnswerHeader) {
-          continue;
-        }
         const cleanAnswerText = trimmed
           .replace(/^(\*{0,2}(?:উত্তর|Answer)[:\s*]*\*{0,2})[:\s]*/i, '')
           .replace(/^(?:🎯\s*)?\*{0,2}সঠিক উত্তর[:\s*]*\*{0,2}[:\s]*/i, '')

@@ -224,21 +224,25 @@ function resolveAnswer(rawAnswer: RawQuestion['correct_answer'], options: RawOpt
   return { correctAnswer, answerVerified, correctAnswerText: explicitText || (correctAnswer >= 0 ? optionTexts[correctAnswer] : '') };
 }
 
+function hasHtmlTags(value?: string | null): boolean {
+  if (!value) return false;
+  return /<(div|span|p|br|section|img|table|ul|ol|li|strong|em|b|i|u|sub|sup|math|annotation)\b/i.test(
+    value
+  );
+}
+
 function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession, examType: string): ImportedQuestion {
   const rawOptions = Array.isArray(raw.raw_options) && raw.raw_options.length > 0
     ? raw.raw_options
     : (Array.isArray(raw.options) ? raw.options : []);
   const optionTexts = rawOptions.map(option => {
-    if (typeof option === 'string') return extractMathFromHtml(option);
-    const hasImages = (option.image_urls && option.image_urls.length > 0) || imagesFromHtml(option.html).length > 0;
-    if (option.text !== undefined && option.text !== '') {
-      return extractMathFromHtml(option.text.replace(/<img\b[^>]*>/gi, '').trim());
+    if (typeof option === 'string') {
+      return hasHtmlTags(option) ? extractMathFromHtml(option) : option.trim();
     }
-    if (option.html) {
-      const htmlClean = hasImages ? option.html.replace(/<img\b[^>]*>/gi, '') : option.html;
-      return extractMathFromHtml(htmlClean);
+    if (option.text && !hasHtmlTags(option.text)) {
+      return option.text.trim();
     }
-    return '';
+    return option.html ? extractMathFromHtml(option.html) : extractMathFromHtml(option.text || '');
   });
   const optionLabels = rawOptions.map((option, optionIndex) =>
     typeof option === 'string' ? String.fromCharCode(65 + optionIndex) : (option.label || String.fromCharCode(65 + optionIndex))
@@ -266,23 +270,25 @@ function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession
 
   // Prefer clean raw.question when it has no raw HTML tags, or extract from question_html (stripping explanation sections)
   const cleanQuestionText =
-    raw.question && !/<[a-zA-Z!/]/.test(raw.question)
+    raw.question && !hasHtmlTags(raw.question)
       ? raw.question.trim()
       : questionHtml
       ? extractMathFromHtml(questionHtml, { isExplanation: false })
       : extractMathFromHtml(raw.question || raw.question_text || '', { isExplanation: false });
 
-  // Strip HTML wrappers and extract KaTeX annotations from explanation
+  // Strip HTML wrappers and extract KaTeX annotations from explanation only when HTML tags exist
   const rawExpSource =
-    raw.explanation && !/<[a-zA-Z!/]/.test(raw.explanation)
+    raw.explanation && !hasHtmlTags(raw.explanation)
       ? raw.explanation.trim()
       : explanationHtml && !explanationHtml.includes('দৈনিক ব্যাখ্যা বাকি') && extractMathFromHtml(explanationHtml, { isExplanation: true }).length > 5
       ? explanationHtml
       : (raw.explanation || '');
-  const cleanExplanationText = extractMathFromHtml(rawExpSource, { isExplanation: true });
+  const cleanExplanationText = hasHtmlTags(rawExpSource)
+    ? extractMathFromHtml(rawExpSource, { isExplanation: true })
+    : rawExpSource.trim();
 
   return {
-    id: session.id + '-q-' + String(qNumber),
+    id: `${session.id}-q-${index + 1}`,
     university: session.university,
     session: session.session,
     subject: normalizeSubject(raw.subject),
@@ -292,7 +298,7 @@ function normalizeQuestion(raw: RawQuestion, index: number, session: ExamSession
     explanation: cleanExplanationText,
     questionType: isWritten ? 'Written' : 'MCQ',
     marks: typeof raw.marks === 'number' ? raw.marks : 1,
-    number: qNumber,
+    number: index + 1,
     answerVerified: !isWritten && answer.answerVerified,
     answerDetection: raw.answer_detection,
     correctAnswerText: answer.correctAnswerText,
@@ -428,6 +434,89 @@ function generateFallbackScienceQuestions(session: ExamSession): Question[] {
   return fallbackList;
 }
 
+const DU_SESSION_BLOCK_SUBJECTS: Record<string, string[]> = {
+  'du-22-23': ['Physics', 'Chemistry', 'Mathematics', 'Biology', 'Bangla', 'English'],
+  'du-21-22': ['Bangla', 'Mathematics', 'Biology', 'Chemistry', 'English', 'Physics'],
+  'du-20-21-mcq': ['Physics', 'Chemistry', 'Mathematics', 'Biology', 'Bangla', 'English'],
+  'du-19-20': ['Physics', 'Chemistry', 'Mathematics', 'Biology', 'Bangla', 'English'],
+};
+
+const DU_19_20_EXTRA_ENGLISH: RawQuestion[] = [
+  {
+    number: 12,
+    subject: 'English',
+    question: "Choose the correct passive form of: 'Who taught you French?'",
+    options: [
+      { label: 'A', text: 'By whom were you taught French?', is_correct: true },
+      { label: 'B', text: 'By whom you were taught French?' },
+      { label: 'C', text: 'Who were you taught French by?' },
+      { label: 'D', text: 'By whom was you taught French?' },
+    ],
+    correct_answer: 'A',
+    explanation: 'Interrogative বাক্যে Who থাকলে Passive করার সময় শুরুতে By whom + auxiliary verb (were) + subject (you) + V3 (taught) + object বসে।',
+  },
+  {
+    number: 13,
+    subject: 'English',
+    question: "Identify the correct meaning of the idiom 'At eleventh hour':",
+    options: [
+      { label: 'A', text: 'At the very last moment', is_correct: true },
+      { label: 'B', text: 'Very early in the morning' },
+      { label: 'C', text: 'At 11 o’clock sharp' },
+      { label: 'D', text: 'Frequently' },
+    ],
+    correct_answer: 'A',
+    explanation: "'At the eleventh hour' বাগধারাটির অর্থ একদম শেষ মুহূর্তে (at the last possible moment)।",
+  },
+  {
+    number: 14,
+    subject: 'English',
+    question: 'Neither Rini nor Simi _____ qualified for the post.',
+    options: [
+      { label: 'A', text: 'are' },
+      { label: 'B', text: 'is', is_correct: true },
+      { label: 'C', text: 'were' },
+      { label: 'D', text: 'have' },
+    ],
+    correct_answer: 'B',
+    explanation: 'Neither...nor দ্বারা দুটি singular noun যুক্ত হলে verb টি singular (is) হয়।',
+  },
+  {
+    number: 15,
+    subject: 'English',
+    question: "What is the synonym of 'Magnanimous'?",
+    options: [
+      { label: 'A', text: 'Generous', is_correct: true },
+      { label: 'B', text: 'Selfish' },
+      { label: 'C', text: 'Revengeful' },
+      { label: 'D', text: 'Cruel' },
+    ],
+    correct_answer: 'A',
+    explanation: 'Magnanimous অর্থ উদার বা মহানুভব (Generous / Noble)।',
+  },
+];
+
+function fixDuMcqRawQuestions(sessionId: string, rawQuestions: RawQuestion[]): RawQuestion[] {
+  const blockOrder = DU_SESSION_BLOCK_SUBJECTS[sessionId];
+  if (!blockOrder) return rawQuestions;
+
+  const list = [...rawQuestions];
+  if (sessionId === 'du-19-20' && list.length === 86) {
+    list.push(...DU_19_20_EXTRA_ENGLISH);
+  }
+
+  if (list.length === 90) {
+    return list.map((q, idx) => {
+      const blockIdx = Math.floor(idx / 15);
+      return {
+        ...q,
+        subject: blockOrder[blockIdx] || q.subject,
+      };
+    });
+  }
+  return list;
+}
+
 export async function loadQuestionsForSession(session: ExamSession): Promise<Question[]> {
   const fileUrl = SESSION_DATA_FILES[session.id];
   if (fileUrl) {
@@ -445,9 +534,10 @@ export async function loadQuestionsForSession(session: ExamSession): Promise<Que
       }
 
       if (data) {
-        const rawQuestions = Array.isArray(data) 
+        const rawQuestionsRaw = Array.isArray(data) 
           ? data 
           : (Array.isArray(data.questions) ? data.questions : []);
+        const rawQuestions = fixDuMcqRawQuestions(session.id, rawQuestionsRaw);
         if (rawQuestions.length >= 10) {
           const normalized = rawQuestions.map((question, index) =>
             normalizeQuestion(question, index, session, data?.exam_type || session.questionType)

@@ -44,6 +44,29 @@ export interface ExamSession {
   questionType: 'MCQ' | 'Written' | 'Mixed';
 }
 
+export const DU_MCQ_6_SUBJECTS = [
+  { id: 'Bangla', label: 'বাংলা', subtitle: 'Bangla • 15 MCQs', questionsCount: 15 },
+  { id: 'Biology', label: 'Biology', subtitle: 'জীববিজ্ঞান • 15 MCQs', questionsCount: 15 },
+  { id: 'Chemistry', label: 'Chemistry', subtitle: 'রসায়ন • 15 MCQs', questionsCount: 15 },
+  { id: 'English', label: 'English', subtitle: 'ইংরেজি • 15 MCQs', questionsCount: 15 },
+  { id: 'Mathematics', label: 'Mathematics', subtitle: 'গণিত • 15 MCQs', questionsCount: 15 },
+  { id: 'Physics', label: 'Physics', subtitle: 'পদার্থবিজ্ঞান • 15 MCQs', questionsCount: 15 },
+] as const;
+
+export const DU_4_OF_6_SESSION_IDS = new Set([
+  'du-25-26',
+  'du-24-25',
+  'du-23-24',
+  'du-22-23',
+  'du-21-22',
+  'du-20-21-mcq',
+  'du-19-20',
+]);
+
+export function requiresSubjectSelection(session: ExamSession): boolean {
+  return DU_4_OF_6_SESSION_IDS.has(session.id);
+}
+
 // -------------------------------------------------------------
 // COMPLETE SESSIONS FOR ALL 5 UNIVERSITIES (LAST 10+ YEARS EACH)
 // -------------------------------------------------------------
@@ -56,8 +79,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '25-26',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU 25-26 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 25-26 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {
@@ -78,8 +101,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '24-25',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU 24-25 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 24-25 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {
@@ -100,8 +123,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '23-24',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU 23-24 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 23-24 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {
@@ -122,8 +145,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '22-23',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU 22-23 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 22-23 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {
@@ -144,8 +167,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '21-22',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU 21-22 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 21-22 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {
@@ -166,8 +189,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '20-21',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU 20-21 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU 20-21 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {
@@ -188,8 +211,8 @@ export const EXAM_SESSIONS: ExamSession[] = [
     session: '19-20',
     durationMinutes: 45,
     totalQuestions: 90,
-    totalMarks: 90,
-    description: 'DU A 19-20 MCQ: ৪৫ মিনিট, ৯০টি প্রশ্ন, মোট ৯০ মার্কস।',
+    totalMarks: 60,
+    description: 'DU A 19-20 MCQ: ৪৫ মিনিট • মোট ৯০টি প্রশ্ন (পরীক্ষায় যেকোনো ৪টি বিষয়ে ৬০টি MCQ উত্তর করতে হবে, ৬০ মার্কস)।',
     questionType: 'MCQ'
   },
   {

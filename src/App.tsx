@@ -4,16 +4,41 @@ import { HomeView } from './components/HomeView';
 import { QuestionBankView } from './components/QuestionBankView';
 import { StrictExamView } from './components/StrictExamView';
 import { AnalyticsView } from './components/AnalyticsView';
-import { EXAM_SESSIONS, ExamSession } from './data/questionBank';
+import { SubjectSelectionModal } from './components/SubjectSelectionModal';
+import { EXAM_SESSIONS, ExamSession, requiresSubjectSelection } from './data/questionBank';
 import { Key, Sparkles, X, CheckCircle, ExternalLink, HelpCircle } from 'lucide-react';
 import { UiSettings, loadUiSettings, saveUiSettings, loadThemeMode, saveThemeMode } from './utils/uiSettings';
+import { ExamLanguage } from './utils/examTranslator';
 
 export default function App() {
   const [currentView, setCurrentView] = useState<'home' | 'questionBank' | 'exam' | 'analytics'>('home');
   const [selectedSession, setSelectedSession] = useState<ExamSession>(EXAM_SESSIONS[0]);
+  const [selectedExamSubjects, setSelectedExamSubjects] = useState<string[]>([
+    'Physics',
+    'Chemistry',
+    'Mathematics',
+    'Biology',
+  ]);
+  const [examLanguage, setExamLanguage] = useState<ExamLanguage>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('varsity_qb_exam_lang');
+      if (saved === 'en' || saved === 'bn') return saved;
+    }
+    return 'bn';
+  });
+  const [pendingSubjectModalSession, setPendingSubjectModalSession] = useState<ExamSession | null>(null);
   const [darkMode, setDarkMode] = useState<boolean>(() => loadThemeMode());
   const [homeScrollY, setHomeScrollY] = useState<number>(0);
   const [uiSettings, setUiSettings] = useState<UiSettings>(() => loadUiSettings());
+
+  const handleSetExamLanguage = (lang: ExamLanguage) => {
+    setExamLanguage(lang);
+    try {
+      localStorage.setItem('varsity_qb_exam_lang', lang);
+    } catch {
+      // ignore storage errors
+    }
+  };
 
   const handleUpdateSettings = (next: UiSettings) => {
     setUiSettings(next);
@@ -75,6 +100,11 @@ export default function App() {
   }, [currentView]);
 
   const handleSelectExam = (session: ExamSession, mode: 'exam' | 'qb') => {
+    if (mode === 'exam' && requiresSubjectSelection(session)) {
+      setPendingSubjectModalSession(session);
+      return;
+    }
+
     if (currentView === 'home') {
       setHomeScrollY(window.scrollY);
     }
@@ -84,6 +114,22 @@ export default function App() {
     } else {
       setCurrentView('questionBank');
     }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleConfirmStartDuExam = (
+    session: ExamSession,
+    chosenSubjects: string[],
+    language: ExamLanguage
+  ) => {
+    if (currentView === 'home') {
+      setHomeScrollY(window.scrollY);
+    }
+    setSelectedSession(session);
+    setSelectedExamSubjects(chosenSubjects);
+    handleSetExamLanguage(language);
+    setPendingSubjectModalSession(null);
+    setCurrentView('exam');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -137,13 +183,14 @@ export default function App() {
             session={selectedSession}
             onBack={() => navigateTo('home')}
             onStartExam={(sessionId) => {
-              const found = EXAM_SESSIONS.find((s) => s.id === sessionId);
-              if (found) setSelectedSession(found);
-              navigateTo('exam');
+              const found = EXAM_SESSIONS.find((s) => s.id === sessionId) || selectedSession;
+              handleSelectExam(found, 'exam');
             }}
             customApiKey={customApiKey}
             onOpenApiKeyModal={handleOpenApiKeyModal}
             uiSettings={uiSettings}
+            examLanguage={examLanguage}
+            onChangeExamLanguage={handleSetExamLanguage}
           />
         )}
         {currentView === 'exam' && (
@@ -157,6 +204,10 @@ export default function App() {
             onOpenApiKeyModal={handleOpenApiKeyModal}
             uiSettings={uiSettings}
             onUpdateSettings={handleUpdateSettings}
+            selectedExamSubjects={selectedExamSubjects}
+            onChangeSubjects={() => setPendingSubjectModalSession(selectedSession)}
+            examLanguage={examLanguage}
+            onChangeExamLanguage={handleSetExamLanguage}
           />
         )}
         {currentView === 'analytics' && (
@@ -166,6 +217,16 @@ export default function App() {
           />
         )}
       </main>
+
+      {/* DU 25-26 to 19-20 MCQ 4/6 Subject Selection & Language Modal */}
+      <SubjectSelectionModal
+        isOpen={Boolean(pendingSubjectModalSession)}
+        session={pendingSubjectModalSession}
+        initialSubjects={selectedExamSubjects}
+        initialLanguage={examLanguage}
+        onClose={() => setPendingSubjectModalSession(null)}
+        onConfirmStartExam={handleConfirmStartDuExam}
+      />
 
       {/* Global API Key Configuration Modal */}
       {isApiKeyModalOpen && (

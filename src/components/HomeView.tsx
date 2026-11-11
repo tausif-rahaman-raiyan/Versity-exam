@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { EXAM_SESSIONS, ExamSession } from '../data/questionBank';
+import { EXAM_SESSIONS, ExamSession, requiresSubjectSelection } from '../data/questionBank';
 import { Search, Clock, Key, GraduationCap, Eye, Sparkles } from 'lucide-react';
 
 interface HomeViewProps {
@@ -189,7 +189,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
             </div>
             <div className="flex items-center gap-2">
               <button
-                onClick={() => setCurrentView('exam')}
+                onClick={() => onSelectExam(EXAM_SESSIONS[0], 'exam')}
                 className="flex-1 sm:flex-initial px-5 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl shadow-md shadow-indigo-600/20 transition-all flex items-center justify-center gap-2 text-xs shrink-0"
               >
                 <Clock className="w-4 h-4" /> Start Strict Exam
@@ -321,6 +321,7 @@ export const HomeView: React.FC<HomeViewProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
           {filteredSessions.map((session, index) => {
             const isWritten = session.questionType === 'Written';
+            const isDu4Of6 = requiresSubjectSelection(session);
             const palette = SESSION_CARD_PALETTES[index % SESSION_CARD_PALETTES.length];
 
             return (
@@ -333,15 +334,22 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     <span className={`px-2.5 py-1 rounded-lg text-[11px] font-black uppercase tracking-wider ${palette.badge}`}>
                       {session.university} • {session.session}
                     </span>
-                    <span
-                      className={`text-[11px] font-bold px-2.5 py-0.5 rounded-lg border ${
-                        isWritten
-                          ? 'bg-amber-500 text-white border-amber-400 shadow-xs'
-                          : 'bg-white/90 dark:bg-slate-900/90 text-slate-900 dark:text-sky-300 border-slate-300 dark:border-slate-700'
-                      }`}
-                    >
-                      {session.questionType}
-                    </span>
+                    <div className="flex items-center gap-1.5">
+                      {isDu4Of6 && (
+                        <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-lg bg-indigo-600/15 dark:bg-sky-400/15 text-indigo-700 dark:text-sky-300 border border-indigo-400/40">
+                          4/6 Subjects
+                        </span>
+                      )}
+                      <span
+                        className={`text-[11px] font-bold px-2.5 py-0.5 rounded-lg border ${
+                          isWritten
+                            ? 'bg-amber-500 text-white border-amber-400 shadow-xs'
+                            : 'bg-white/90 dark:bg-slate-900/90 text-slate-900 dark:text-sky-300 border-slate-300 dark:border-slate-700'
+                        }`}
+                      >
+                        {session.questionType}
+                      </span>
+                    </div>
                   </div>
 
                   <h3 className="text-base sm:text-lg font-extrabold text-slate-950 dark:text-white leading-snug">
@@ -359,7 +367,9 @@ export const HomeView: React.FC<HomeViewProps> = ({
                     </div>
                     <div>
                       <span className="text-slate-500 dark:text-slate-400 block text-[10px]">প্রশ্ন</span>
-                      <span className={`font-extrabold ${palette.accentText}`}>{session.totalQuestions} টি</span>
+                      <span className={`font-extrabold ${palette.accentText}`}>
+                        {isDu4Of6 ? '60 / 90 টি' : `${session.totalQuestions} টি`}
+                      </span>
                     </div>
                     <div>
                       <span className="text-slate-500 dark:text-slate-400 block text-[10px]">মার্কস</span>

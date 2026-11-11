@@ -13,6 +13,7 @@ import {
   Key,
   AlertCircle,
   X,
+  Globe,
 } from 'lucide-react';
 import { InlineAiTutor } from './InlineAiTutor';
 import { MathMarkdownRenderer, MathInlineRenderer } from './MathMarkdownRenderer';
@@ -22,6 +23,13 @@ import {
   DEFAULT_UI_SETTINGS,
   getFontStyleClass,
 } from '../utils/uiSettings';
+import {
+  ExamLanguage,
+  getLocalizedQuestion,
+  getOptionLabelForLang,
+  getSubjectLabelForLang,
+  toBengaliNumber,
+} from '../utils/examTranslator';
 
 interface QuestionBankViewProps {
   session: ExamSession;
@@ -30,6 +38,8 @@ interface QuestionBankViewProps {
   customApiKey: string;
   onOpenApiKeyModal: () => void;
   uiSettings?: UiSettings;
+  examLanguage?: ExamLanguage;
+  onChangeExamLanguage?: (lang: ExamLanguage) => void;
 }
 
 const SUBJECT_LABELS: Record<string, string> = {
@@ -50,14 +60,18 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
   customApiKey,
   onOpenApiKeyModal,
   uiSettings = DEFAULT_UI_SETTINGS,
+  examLanguage = 'bn',
+  onChangeExamLanguage,
 }) => {
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const [rawQuestions, setRawQuestions] = useState<Question[]>([]);
   const [loading, setLoading] = useState(true);
   const [loadError, setLoadError] = useState('');
   const [selectedSubject, setSelectedSubject] = useState('ALL');
   const [searchTerm, setSearchTerm] = useState('');
   const [expandedAiQuestionIds, setExpandedAiQuestionIds] = useState<Set<string>>(new Set());
   const [apiKeyNotice, setApiKeyNotice] = useState<boolean>(false);
+
+  const isBn = examLanguage === 'bn';
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -67,13 +81,13 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
     let active = true;
     setLoading(true);
     setLoadError('');
-    setQuestions([]);
+    setRawQuestions([]);
     setSelectedSubject('ALL');
     setExpandedAiQuestionIds(new Set());
     loadQuestionsForSession(session)
       .then((result) => {
         if (!active) return;
-        setQuestions(result);
+        setRawQuestions(result);
         if (result.length === 0) {
           setLoadError('এই সেশনের জন্য এখনো কোনো প্রশ্ন ডেটাসেটে পাওয়া যায়নি। অন্য সেশনের প্রশ্ন দেখানো হয়নি।');
         }
@@ -90,6 +104,12 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
       active = false;
     };
   }, [session.id]);
+
+  // Apply bilingual language selection ('bn' vs 'en') to all 90 questions
+  const questions = useMemo(
+    () => rawQuestions.map((q) => getLocalizedQuestion(q, examLanguage)),
+    [rawQuestions, examLanguage]
+  );
 
   const subjects = useMemo(
     () => [
@@ -175,12 +195,49 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
 
       {/* Header Banner */}
       <div className="bg-gradient-to-br from-indigo-50/90 via-white to-sky-50/80 dark:from-[#0C152C] dark:via-[#080E1D] dark:to-[#050914] p-5 sm:p-8 rounded-3xl shadow-lg border border-slate-200 dark:border-indigo-900/40 space-y-4">
-        <button
-          onClick={onBack}
-          className="inline-flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-sky-300 hover:underline"
-        >
-          <ArrowLeft className="w-4 h-4" /> সকল সেশন ও বিশ্ববিদ্যালয়ে ফিরে যান
-        </button>
+        <div className="flex items-center justify-between gap-3 flex-wrap">
+          <button
+            onClick={onBack}
+            className="inline-flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-sky-300 hover:underline"
+          >
+            <ArrowLeft className="w-4 h-4" /> সকল সেশন ও বিশ্ববিদ্যালয়ে ফিরে যান
+          </button>
+
+          {/* Language Toggle (বাংলা | English) */}
+          {onChangeExamLanguage && (
+            <div className="flex items-center gap-2">
+              <span className="text-[11px] font-bold text-slate-600 dark:text-slate-400 inline-flex items-center gap-1">
+                <Globe className="w-3.5 h-3.5 text-indigo-600 dark:text-sky-400" />
+                {isBn ? 'প্রশ্নের ভাষা:' : 'Question Language:'}
+              </span>
+              <div className="inline-flex items-center bg-slate-200/80 dark:bg-[#0B152B] p-0.5 rounded-xl border border-slate-300 dark:border-indigo-900/60 text-xs font-bold">
+                <button
+                  type="button"
+                  onClick={() => onChangeExamLanguage('bn')}
+                  className={`px-3 py-1.5 rounded-lg transition-all ${
+                    isBn
+                      ? 'bg-indigo-600 text-white shadow-xs'
+                      : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white'
+                  }`}
+                >
+                  বাংলা (BN)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => onChangeExamLanguage('en')}
+                  className={`px-3 py-1.5 rounded-lg transition-all ${
+                    !isBn
+                      ? 'bg-indigo-600 text-white shadow-xs'
+                      : 'text-slate-700 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white'
+                  }`}
+                >
+                  English (EN)
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+
         <div className="flex flex-wrap items-center gap-2">
           <span className="px-3 py-1 rounded-full bg-indigo-600 text-white text-[10px] font-bold uppercase tracking-wider shadow-xs">
             {session.university} • {session.session} Session
@@ -196,7 +253,9 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
           {session.title}
         </h1>
         <p className="text-slate-600 dark:text-slate-300 text-xs sm:text-sm max-w-2xl leading-relaxed">
-          শুধু এই বিশ্ববিদ্যালয় ও সেশনের প্রশ্ন দেখানো হচ্ছে। নিচের বিষয়ভিত্তিক রঙিন বাটনে ক্লিক করে প্রশ্ন ফিল্টার করুন।
+          {isBn
+            ? 'এই সেশনের সম্পূর্ণ ৯০টি প্রশ্ন ও বিস্তারিত সমাধান নিচে দেওয়া হলো। উপরে বাংলা / English বাটনে ক্লিক করে প্রশ্নের ভাষা পরিবর্তন করতে পারবেন।'
+            : 'All 90 questions and step-by-step solutions for this session are shown below. Use the বাংলা / English toggle above to switch language.'}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 pt-1">
@@ -206,7 +265,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
               type="text"
               value={searchTerm}
               onChange={(event) => setSearchTerm(event.target.value)}
-              placeholder="প্রশ্ন বা বিষয় দিয়ে খুঁজুন..."
+              placeholder={isBn ? 'প্রশ্ন বা বিষয় দিয়ে খুঁজুন...' : 'Search by question or subject...'}
               className="w-full pl-11 pr-4 py-3 bg-white dark:bg-[#0B1325] border border-slate-300 dark:border-slate-700/80 rounded-xl text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-500 text-xs shadow-inner"
             />
           </div>
@@ -215,7 +274,8 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
             disabled={loading || questions.length === 0}
             className="px-5 py-3 bg-indigo-600 hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed text-white font-bold rounded-xl text-xs shadow-md transition-all inline-flex items-center justify-center gap-2 shrink-0"
           >
-            <Clock className="w-4 h-4" /> এই সেশনের পরীক্ষা শুরু করুন
+            <Clock className="w-4 h-4" />{' '}
+            {isBn ? 'এই সেশনের পরীক্ষা শুরু করুন' : 'Start Exam for This Session'}
           </button>
         </div>
       </div>
@@ -225,6 +285,10 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
         <div className="flex items-center gap-2 overflow-x-auto pb-1 sm:pb-0 sm:flex-wrap no-scrollbar">
           {subjects.map((subject) => {
             const isSelected = selectedSubject === subject;
+            const subjectCount =
+              subject === 'ALL'
+                ? questions.length
+                : questions.filter((q) => q.subject === subject).length;
             if (subject === 'ALL') {
               return (
                 <button
@@ -237,7 +301,7 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                       : 'bg-slate-100 text-slate-700 border-slate-300 hover:bg-slate-200 dark:bg-[#0F172B] dark:text-slate-300 dark:border-slate-800')
                   }
                 >
-                  ALL ({questions.length})
+                  {isBn ? `সকল (${toBengaliNumber(subjectCount)})` : `ALL (${subjectCount})`}
                 </button>
               );
             }
@@ -251,7 +315,8 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                   (isSelected ? style.filterActive : style.filterInactive)
                 }
               >
-                {SUBJECT_LABELS[subject] || subject}
+                {getSubjectLabelForLang(subject, examLanguage)} (
+                {isBn ? toBengaliNumber(subjectCount) : subjectCount})
               </button>
             );
           })}
@@ -260,7 +325,8 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
 
       {loading && (
         <div className="flex items-center justify-center gap-2 py-16 text-indigo-600 dark:text-sky-300 text-sm font-semibold">
-          <Loader2 className="w-5 h-5 animate-spin" /> প্রশ্ন লোড হচ্ছে...
+          <Loader2 className="w-5 h-5 animate-spin" />{' '}
+          {isBn ? 'প্রশ্ন লোড হচ্ছে...' : 'Loading questions...'}
         </div>
       )}
 
@@ -274,16 +340,36 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
         <div className="space-y-4 sm:space-y-5">
           <div className="flex items-center justify-between text-xs text-slate-600 dark:text-slate-400 px-1">
             <span>
-              মোট <strong className="text-slate-950 dark:text-white font-mono">{filteredQuestions.length}</strong> টি প্রশ্ন দেখানো হচ্ছে
+              {isBn ? (
+                <>
+                  মোট{' '}
+                  <strong className="text-slate-950 dark:text-white font-mono">
+                    {toBengaliNumber(filteredQuestions.length)}
+                  </strong>{' '}
+                  টি প্রশ্ন দেখানো হচ্ছে
+                </>
+              ) : (
+                <>
+                  Showing{' '}
+                  <strong className="text-slate-950 dark:text-white font-mono">
+                    {filteredQuestions.length}
+                  </strong>{' '}
+                  questions
+                </>
+              )}
             </span>
-            <span className="font-semibold">{session.university} • {session.session}</span>
+            <span className="font-semibold">
+              {session.university} • {session.session}
+            </span>
           </div>
 
           {filteredQuestions.map((q, index) => {
             const imported = q as ImportedQuestion;
             const hasVerifiedAnswer = imported.answerVerified !== false && q.correctAnswer >= 0;
             const cardStyle = getSubjectCardStyle(q.subject);
-            const showAnswerBadge = hasVerifiedAnswer && q.correctAnswer >= 0;
+            const showAnswerBadge = hasVerifiedAnswer && Boolean(q.options[q.correctAnswer]);
+            const rawNum = q.number ?? index + 1;
+            const displayNum = isBn ? toBengaliNumber(rawNum) : rawNum;
 
             return (
               <article
@@ -293,10 +379,10 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                 <div className="flex items-center justify-between gap-2 flex-wrap">
                   <div className="flex items-center gap-2 flex-wrap">
                     <span className={`px-2.5 py-1 rounded-md text-[11px] font-bold border ${cardStyle.numBadge}`}>
-                      Question {q.number ?? index + 1}
+                      {isBn ? `প্রশ্ন ${displayNum}` : `Question ${displayNum}`}
                     </span>
                     <span className={`px-2.5 py-1 rounded-md text-[11px] font-bold ${cardStyle.badgeBg}`}>
-                      {SUBJECT_LABELS[q.subject] || q.subject}
+                      {getSubjectLabelForLang(q.subject, examLanguage)}
                     </span>
                     {q.questionType === 'Written' && (
                       <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-900 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-400 dark:border-amber-800/60">
@@ -315,10 +401,10 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                   className="font-semibold text-slate-950 dark:text-white leading-relaxed"
                 >
                   <span className="font-bold text-indigo-700 dark:text-sky-400 mr-1.5">
-                    {q.number ?? index + 1}.
+                    {displayNum}.
                   </span>
                   <MathInlineRenderer
-                    text={q.question.replace(/^(\d+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()}
+                    text={q.question.replace(/^([০-৯\d]+\.?\s*)?(\[[^\]]+\]\s*)?/, '').trim()}
                   />
                 </div>
                 {imported.questionImageUrls
@@ -339,13 +425,16 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                 {/* Options (Dynamic Option Box Font Size in px) */}
                 {q.questionType === 'Written' || q.options.length === 0 ? (
                   <div className="p-3.5 rounded-xl bg-amber-50/90 dark:bg-[#080E1B] border border-amber-300 dark:border-slate-800 text-xs text-slate-800 dark:text-slate-300">
-                    এটি লিখিত প্রশ্ন। নিচে সমাধান ও ব্যাখ্যা দেওয়া হলো।
+                    {isBn
+                      ? 'এটি লিখিত প্রশ্ন। নিচে সমাধান ও ব্যাখ্যা দেওয়া হলো।'
+                      : 'This is a written question. Full solution and explanation are given below.'}
                   </div>
                 ) : (
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {q.options.map((option, optionIndex) => {
                       const correct = hasVerifiedAnswer && optionIndex === q.correctAnswer;
                       const optionImages = imported.optionImageUrls?.[optionIndex] || [];
+                      const optLabel = getOptionLabelForLang(optionIndex, examLanguage);
                       return (
                         <div
                           key={optionIndex}
@@ -365,12 +454,12 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                                 : 'bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300')
                             }
                           >
-                            {imported.optionLabels?.[optionIndex] || String.fromCharCode(65 + optionIndex)}
+                            {optLabel}
                           </span>
                           <div className="min-w-0 flex-1 leading-snug pt-0.5">
-                            <MathInlineRenderer
-                              text={option || (optionImages.length > 0 ? '' : `Option ${String.fromCharCode(65 + optionIndex)}`)}
-                            />
+                            {option && (
+                              <MathInlineRenderer text={option} />
+                            )}
                             {optionImages.map((url, imageIndex) => (
                               <img
                                 key={url + imageIndex}
@@ -400,17 +489,27 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                       className="font-bold text-slate-900 dark:text-slate-200 block"
                       style={{ fontSize: `${Math.max(13, uiSettings.explanationFontPx + 1)}px` }}
                     >
-                      সঠিক উত্তর ও মূল ব্যাখ্যা:
+                      {isBn ? 'সঠিক উত্তর ও মূল ব্যাখ্যা:' : 'Correct Answer & Explanation:'}
                     </span>
                     {showAnswerBadge && (
-                      <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 dark:bg-emerald-950/70 border border-emerald-500/60 text-emerald-950 dark:text-emerald-200 font-bold text-xs">
+                      <div className="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-100 dark:bg-emerald-950/70 border border-emerald-500/60 text-emerald-950 dark:text-emerald-200 font-bold text-xs">
                         <span className="px-2 py-0.5 rounded bg-emerald-600 text-white text-[10px] uppercase">
-                          Answer
+                          {isBn ? 'উত্তর' : 'Answer'}
                         </span>
                         <span>
-                          [{imported.optionLabels?.[q.correctAnswer] || String.fromCharCode(65 + q.correctAnswer)}]{' '}
+                          [{getOptionLabelForLang(q.correctAnswer, examLanguage)}]{' '}
                         </span>
-                        <MathInlineRenderer text={q.options[q.correctAnswer]} />
+                        {q.options[q.correctAnswer] && (
+                          <MathInlineRenderer text={q.options[q.correctAnswer]} />
+                        )}
+                        {imported.optionImageUrls?.[q.correctAnswer]?.map((url, idx) => (
+                          <img
+                            key={url + idx}
+                            src={url}
+                            alt="Correct option diagram"
+                            className="h-10 w-auto object-contain rounded bg-white p-0.5 border border-emerald-400/50"
+                          />
+                        ))}
                       </div>
                     )}
                     {q.explanation ? (
@@ -421,12 +520,16 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                       />
                     ) : (
                       <span className="text-slate-600 dark:text-slate-300 font-medium block">
-                        ঢাকা বিশ্ববিদ্যালয় ({q.subject}) প্রশ্ন সমাধান ও বিস্তৃত ব্যাখ্যা।
+                        {isBn
+                          ? `ঢাকা বিশ্ববিদ্যালয় (${SUBJECT_LABELS[q.subject] || q.subject}) প্রশ্ন সমাধান ও বিস্তৃত ব্যাখ্যা।`
+                          : `University of Dhaka (${q.subject}) solution and detailed explanation.`}
                       </span>
                     )}
                     {!hasVerifiedAnswer && q.questionType !== 'Written' && (
                       <p className="mt-1 text-amber-700 dark:text-amber-300">
-                        এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে সঠিক উত্তর দেখানো হয়নি।
+                        {isBn
+                          ? 'এই প্রশ্নের answer key যাচাই করা যায়নি; অনুমান করে সঠিক উত্তর দেখানো হয়নি।'
+                          : 'Answer key for this question could not be verified.'}
                       </p>
                     )}
                     {imported.explanationImageUrls
@@ -473,7 +576,6 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                     session={q.session}
                     customApiKey={customApiKey}
                     onClose={() => toggleAiTutor(q.id)}
-                    fontSizePx={uiSettings.explanationFontPx}
                   />
                 )}
               </article>
