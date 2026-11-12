@@ -75,7 +75,7 @@
     "id": "ru-g-14-15-q-004",
     "number": 4,
     "subject": "Chemistry",
-    "question": "১০০% বিশুদ্ধ H_2SO_4 কে বলা হয়-",
+    "question": "১০০% বিশুদ্ধ $\\text{H}_2\\text{SO}_4$ কে বলা হয়-",
     "options": [
       "অলিয়াম",
       "গাঢ় সালফার",
@@ -149,7 +149,7 @@
     "subject": "Chemistry",
     "question": "p^H বৃদ্ধিতে কোনটি ব্যবহার করা হয়?",
     "options": [
-      "H_2O",
+      "$\\text{H}_2\\text{O}$",
       "H_2O_2",
       "H_2PO_4",
       "CaO"
@@ -296,7 +296,7 @@
       "FeSO_4.7H_2O",
       "ZnSO_4",
       "Fe(SO_4)_3.7H_2O",
-      "H_2SO_4"
+      "$\\text{H}_2\\text{SO}_4$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -315,12 +315,12 @@
     "id": "ru-g-14-15-q-014",
     "number": 14,
     "subject": "Chemistry",
-    "question": "2.00 গ্রাম H_2O তে কতটি হাইড্রোজেন পরমাণু আছে?",
+    "question": "2.00 গ্রাম $\\text{H}_2\\text{O}$ তে কতটি হাইড্রোজেন পরমাণু আছে?",
     "options": [
-      "1.3384 × 10^23 টি",
-      "6.669 × 10^22 টি",
-      "2 × 1.3384 × 10^22 টি",
-      "6.023 × 10^23 টি"
+      "$1.3384 \\times 10^{23}$ টি",
+      "$6.669 \\times 10^{22}$ টি",
+      "2 × $1.3384 \\times 10^{22}$ টি",
+      "$6.023 \\times 10^{23}$ টি"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -343,7 +343,7 @@
     "options": [
       "CO+3H_2",
       "CO+N_2",
-      "CO_2+N_2",
+      "$\\text{CO}_2$+N_2",
       "CO+N_2+H_2"
     ],
     "correctAnswer": 0,

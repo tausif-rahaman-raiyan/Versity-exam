@@ -171,7 +171,7 @@
     "id": "du-16-17-q-008",
     "number": 8,
     "subject": "Physics",
-    "question": "$0°C$তাপমাত্রার$273\\ kg$বরফকে$0°C$তাপমাত্রার পানিতে রূপান্তর করা হলে এনট্রপির পরিবর্তন কত হবে? [বরফ গলনের আপেক্ষিক সুপ্ততাপ হলো $3.36\\times10^5\\ J/kg$]",
+    "question": "$0^\\circ\\text{C}$তাপমাত্রার$273\\ kg$বরফকে$0^\\circ\\text{C}$তাপমাত্রার পানিতে রূপান্তর করা হলে এনট্রপির পরিবর্তন কত হবে? [বরফ গলনের আপেক্ষিক সুপ্ততাপ হলো $3.36\\times10^5\\ J/kg$]",
     "options": [
       "$917.28\\times10^5\\ J/K$",
       "$3.36\\times10^5\\ J/K$",
@@ -223,8 +223,8 @@
     "options": [
       "$Newton-meter^2/Coulomb$",
       "$Newton-meter/Coulomb$",
-      "$Newton/Coulomb$",
-      "$Newton/meter^2$"
+      "$\\frac{Newton}{Coulomb}$",
+      "$\\frac{Newton}{meter^2}$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -437,10 +437,10 @@
     "subject": "Physics",
     "question": "প্রদত্ত বর্তনীতে রোধ$R$কত?",
     "options": [
-      "$15Ω$",
-      "$20Ω$",
-      "$25Ω$",
-      "$30Ω$"
+      "$15\\Omega$",
+      "$20\\Omega$",
+      "$25\\Omega$",
+      "$30\\Omega$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -2195,10 +2195,10 @@
     "subject": "Mathematics",
     "question": "$x=a$এবং$\\sqrt{3}x-y+1=0$রেখাদ্বয়ের মধ্যবর্তী সূক্ষ্মকোণের মান-",
     "options": [
-      "$30°$",
-      "$45°$",
-      "$60°$",
-      "$75°$"
+      "$30^\\circ$",
+      "$45^\\circ$",
+      "$60^\\circ$",
+      "$75^\\circ$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -2342,7 +2342,7 @@
       "cosx^2",
       "1/√2",
       "1",
-      "√3/2"
+      "√$\\frac{3}{2}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3061,7 +3061,7 @@
     "options": [
       "$K_4[Fe(CN)_6]$",
       "$[Co(NH_3)_6]Cl_3$",
-      "$[Fe(H_2O)_6]Cl_3$",
+      "$[Fe($\\text{H}_2\\text{O}$)_6]Cl_3$",
       "$[Cu(NH_3)_4]Cl_2$"
     ],
     "correctAnswer": 3,
@@ -3251,10 +3251,10 @@
     "subject": "Chemistry",
     "question": "নিচের কোনটি ঠিক তাপীয় বিযোজন ক্রম?",
     "options": [
-      "$BaCO_3>MgCO_3>CaCO_3>SrCO_3>BeCO_3$",
-      "$BeCO_3>MgCO_3>CaCO_3>SrCO_3>BaCO_3$",
-      "$BaCO_3>SrCO_3>CaCO_3>MgCO_3>BeCO_3$",
-      "$MgCO_3>CaCO_3>SrCO_3>BeCO_3>BaCO_3$"
+      "$BaCO_3>MgCO_3>$\\text{CaCO}_3$>SrCO_3>BeCO_3$",
+      "$BeCO_3>MgCO_3>$\\text{CaCO}_3$>SrCO_3>BaCO_3$",
+      "$BaCO_3>SrCO_3>$\\text{CaCO}_3$>MgCO_3>BeCO_3$",
+      "$MgCO_3>$\\text{CaCO}_3$>SrCO_3>BeCO_3>BaCO_3$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -3275,10 +3275,10 @@
     "subject": "Chemistry",
     "question": "এসিডের শক্তির কোন ক্রমটি সঠিক?",
     "options": [
-      "H_2SO_3 > HCIO>HNO_3>H_2PO",
-      "HNO_3 > H_3PO_4 > H_2SO_3>HCIO",
-      "HCIO> HNO_2>H_2PO_4>H_2SO_4",
-      "H_2PO_4>H_2SO_3>HNO_3>HCIO"
+      "H_2SO_3 > HCIO>$\\text{HNO}_3$>H_2PO",
+      "$\\text{HNO}_3$ > H_3PO_4 > H_2SO_3>HCIO",
+      "HCIO> HNO_2>H_2PO_4>$\\text{H}_2\\text{SO}_4$",
+      "H_2PO_4>H_2SO_3>$\\text{HNO}_3$>HCIO"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3345,7 +3345,7 @@
     "id": "du-16-17-q-140",
     "number": 140,
     "subject": "Chemistry",
-    "question": "ইথাইল অ্যালকোহলকে গাঢ় H_2SO_4 দ্বারা উত্তপ্ত করলে কোনটি উৎপন্ন হয়?",
+    "question": "ইথাইল অ্যালকোহলকে গাঢ় $\\text{H}_2\\text{SO}_4$ দ্বারা উত্তপ্ত করলে কোনটি উৎপন্ন হয়?",
     "options": [
       "CH_3COOC_2H_5",
       "C_2H_4",

@@ -1,0 +1,1331 @@
+[
+  {
+    "id": "ju-a-13-14-set-3-q-001",
+    "number": 1,
+    "subject": "Mathematics",
+    "question": "$\\frac{x^2}{25} + \\frac{y^2}{4} = 1$ সমীকরণ দ্বারা বিবৃত উপবৃত্তের ক্ষেত্রফল কত?",
+    "options": [
+      "10$\\pi$",
+      "$\\pi$",
+      "100$\\pi$",
+      "20$\\pi$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #1 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-002",
+    "number": 2,
+    "subject": "Mathematics",
+    "question": "$\\left(- \\frac{1}{2}\\right)$ ঢালবিশিষ্ট সরলরেখার উপর লম্ব এবং (2, -3) বিন্দুগামী সরলরেখার সমীকরণ—",
+    "options": [
+      "2x +y+7 = 0",
+      "2x-y-7=0",
+      "2x – y + 7 = 0",
+      "2x-y-1=0"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "questionImageUrls": [
+      "assets/questions/JU/13-14/ju-a-13-14-set-3/q-002-question-c1093c.png"
+    ],
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #2 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-003",
+    "number": 3,
+    "subject": "Mathematics",
+    "question": "(k, 4), (–2, 4) এবং মূলবিন্দু দ্বারা গঠিত ত্রিভুজের ক্ষেত্রফল 10 বর্গ একক হলেk এর মান কত?",
+    "options": [
+      "-3 অথবা -7",
+      "-3",
+      "-7 অথবা 3",
+      "7"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #3 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-004",
+    "number": 4,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #4 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-005",
+    "number": 5,
+    "subject": "Mathematics",
+    "question": "$y = \\frac{1}{4} e^{4 \\ln{x}}$ হলে $\\frac{dy}{dx}$ = কত ?",
+    "options": [
+      "$\\frac{x^{3}}{4}$",
+      "x^4",
+      "x^3",
+      "$\\frac{x^{5}}{4}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #5 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-006",
+    "number": 6,
+    "subject": "Mathematics",
+    "question": "$x^{2}+y^{2}+5 x-3 y-8=0 \\text { ও } 2 x^{2}+2 y^{2}+$ 4x +5y - $7=0$ বৃত্তদ্বয়ের সাধারণ জ্যা এর সমীকরণ কোনটি?",
+    "options": [
+      "$x^{2}+y^{2}-x+8 y+15=0$",
+      "$7 x-y-5=0$",
+      "$6 x-11 y-9=0$",
+      "$3 x-11 y+9=0$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "questionImageUrls": [
+      "assets/questions/JU/12-13/ju-a-12-13-set-1/q-047-question-b71bc7.svg"
+    ],
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #6 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-007",
+    "number": 7,
+    "subject": "Mathematics",
+    "question": "কোনটি অসম্ভব ?",
+    "options": [
+      "$\\tan{\\theta} = \\frac{3}{7}$",
+      "$\\cot{\\theta} = \\frac{7}{3}$",
+      "$\\sec{\\theta} = \\frac{11}{3}$",
+      "$\\cos{e} c \\theta = 0$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #7 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-008",
+    "number": 8,
+    "subject": "Mathematics",
+    "question": "$2 \\mathrm{x}+4 \\mathrm{y}-12=0 \\text { এবং } \\mathrm{x}+2 \\mathrm{y}+8=0 \\text { দুইটি সরলরেখা। }$রেখাদ্বয়ের মধ্যবর্তী লম্ব দূরত্ব-",
+    "options": [
+      "$-\\frac{14}{\\sqrt{5}}$",
+      "$-\\frac{4}{\\sqrt{5}}$",
+      "$\\frac{4}{\\sqrt{5}}$",
+      "$\\frac{14}{\\sqrt{5}}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #8 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-009",
+    "number": 9,
+    "subject": "Mathematics",
+    "question": "$y = 5x$, x-অক্ষ এবং $x = 4$ সরলরেখা দ্বারা আবদ্ধ ক্ষেত্রের ক্ষেত্রফল কত বর্গ একক?",
+    "options": [
+      "10",
+      "20",
+      "40",
+      "80"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #9 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-010",
+    "number": 10,
+    "subject": "Mathematics",
+    "question": "$\\left ( - \\sqrt{3} . - \\sqrt{3} \\right )$ এর পোলার স্থানাঙ্ক কত ?",
+    "options": [
+      "$\\left ( 6 , \\frac{\\pi}{4} \\right )$",
+      "$\\left ( \\sqrt{3} , \\frac{\\pi}{4} \\right )$",
+      "$\\left(2\\sqrt{3}, \\frac{11\\pi}{21}\\right)$",
+      "$\\left(\\sqrt{6}, \\frac{5\\pi}{4}\\right)$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #10 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-011",
+    "number": 11,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #11 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-012",
+    "number": 12,
+    "subject": "Mathematics",
+    "question": "2x+y =5, 4x +2y=7 এবং -2x-y =3 সমীকরন জোটের সমাধান কত ?",
+    "options": [
+      "(2,1)",
+      "নেই",
+      "(1,2)",
+      "(0, -3)"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #12 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-013",
+    "number": 13,
+    "subject": "Mathematics",
+    "question": "3a+ i(b-6) = 6- 5bi হলে a, b এর মান যথাক্রমে কত ?",
+    "options": [
+      "1,2",
+      "$\\frac{1}{2} , 1$",
+      "2,1",
+      "$1 , \\frac{1}{2}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #13 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-014",
+    "number": 14,
+    "subject": "Mathematics",
+    "question": "$3 x^{2}+4 y^{2}=12$ উপবৃত্তের উপকেন্দ্রদ্বয়ের দূরত্ব কত?",
+    "options": [
+      "2",
+      "$\\sqrt{3}$",
+      "1",
+      "$\\frac{2}{\\sqrt{3}}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #14 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-015",
+    "number": 15,
+    "subject": "Mathematics",
+    "question": "x এর কোন মানের জন্য y=x+1/x বক্ররেখাটির ঢাল শূণ্য হবে?",
+    "options": [
+      "2",
+      "√2",
+      "-1",
+      "None"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #15 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-016",
+    "number": 16,
+    "subject": "Mathematics",
+    "question": "3x^2 - 2x + 4 = 0 এবং 9x^2 - 6x + 12 = 0 সমীকরনের মূলগুলো,",
+    "options": [
+      "সমান ও বিপরীত চিহ্ন বিশিষ্ট",
+      "সাধারন বা একই",
+      "অসমান ও বিপরীত চিহ্ন বিশিষ্ট",
+      "ধনাত্মক ও অসমান"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #16 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-017",
+    "number": 17,
+    "subject": "Mathematics",
+    "question": "y=8(x+5)^7 হলে y_8 = কত ?",
+    "options": [
+      "8!",
+      "0",
+      "7!",
+      "56(x+5)^6"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #17 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-018",
+    "number": 18,
+    "subject": "Mathematics",
+    "question": "$\\sin{\\theta} , \\cos{\\theta} , \\tan{\\theta}$ ....... এগুলো হচ্ছে ত্রিভুজের ___।",
+    "options": [
+      "দুই বাহুর অনুপাত",
+      "দুই কোণের অনুপাত",
+      "বাহুর দৈর্ঘ্য",
+      "কোণের পরিমান"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #18 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-019",
+    "number": 19,
+    "subject": "Mathematics",
+    "question": "কোন স্থুলকোণী ত্রিভুজের বাহুর দৈর্ঘ্য 3, 5, 7 হলে স্থুলকোণের মান কত?",
+    "options": [
+      "130^0",
+      "150^0",
+      "120^0",
+      "145^0"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #19 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-020",
+    "number": 20,
+    "subject": "Mathematics",
+    "question": "M= $\\left ( \\begin{matrix} 0 & 1 \\\\ 1 & 2 \\end{matrix} \\right )$ এবং N= $\\left ( \\begin{matrix} 2 \\\\ 3 \\end{matrix} \\right )$ হলে, NM = কত ?",
+    "options": [
+      "$\\left ( \\begin{matrix} 3 \\\\ 8 \\end{matrix} \\right )$",
+      "$\\left ( \\begin{matrix} 2 \\\\ 6 \\end{matrix} \\right )$",
+      "অসম্ভব",
+      "$\\left ( \\begin{matrix} 2 \\\\ 8 \\end{matrix} \\right )$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #20 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-021",
+    "number": 21,
+    "subject": "Mathematics",
+    "question": "n এর যেকোনো মানের জন্য $\\tan{\\left \\lbrace \\frac{n \\pi}{2} + \\left ( - 1 \\right )^{n} \\frac{\\pi}{4} \\right \\rbrace}$ এর মান কত হবে?",
+    "options": [
+      "-1",
+      "1",
+      "0",
+      "2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #21 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-022",
+    "number": 22,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #22 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-023",
+    "number": 23,
+    "subject": "Mathematics",
+    "question": "5x^2 - 3x - 2 = 0 সমীকরনের মূলদ্বয়ের প্রকৃতি কিরূপ?",
+    "options": [
+      "অবাস্তব",
+      "বাস্তব ও অমূলদ",
+      "বাস্তব",
+      "বাস্তব ও মূলদ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #23 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-024",
+    "number": 24,
+    "subject": "Mathematics",
+    "question": "y=x^3 -3x^2 +6x +3 ফাংশনটির কেমন মান থাকবে ?",
+    "options": [
+      "লঘুমান",
+      "গুরুমান",
+      "উভয়ই",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #24 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-025",
+    "number": 25,
+    "subject": "Mathematics",
+    "question": "3x + 4y - 6a = 0 রেখাটি অক্ষদ্বয়ের সাথে যে কোণ তৈরি করে তার ক্ষেত্রফল কত বর্গ একক ?",
+    "options": [
+      "3a^2",
+      "$\\frac{3}{2} a$",
+      "$\\frac{3}{2} a^{2}$",
+      "3a"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #25 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-026",
+    "number": 26,
+    "subject": "Mathematics",
+    "question": "$\\left(- \\frac{1}{2}\\right)$ ঢালবিশিষ্ট সরলরেখার উপর লম্ব এবং (2, -3) বিন্দুগামী সরলরেখার সমীকরণ—",
+    "options": [
+      "2x +y+7 = 0",
+      "2x-y-7=0",
+      "2x – y + 7 = 0",
+      "2x-y-1=0"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "questionImageUrls": [
+      "assets/questions/JU/13-14/ju-a-13-14-set-3/q-002-question-c1093c.png"
+    ],
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #26 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-027",
+    "number": 27,
+    "subject": "Mathematics",
+    "question": "X ও Y যে কোন দুইটি সেট হলে $\\frac{X}{Y}$ = কত?",
+    "options": [
+      "Y'X'",
+      "'Y∩X'",
+      "XY'",
+      "X'∩Y'"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #27 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-028",
+    "number": 28,
+    "subject": "Mathematics",
+    "question": "X= {(x,y) : x= y^2+3} হলে X একটি-",
+    "options": [
+      "ফাংশন",
+      "এক -এক ফাংশন",
+      "অন্বয়",
+      "অভেদক ফাংশন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #28 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-029",
+    "number": 29,
+    "subject": "Mathematics",
+    "question": "ln(1+x) এর অনন্ত ধারাটি x এর কোন মানের জন্য সত্য?",
+    "options": [
+      "x এর সকল বাস্তব মান",
+      "$- 1 > x \\le 1$",
+      "-1",
+      "$- 1 \\le x \\le 1$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #29 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-030",
+    "number": 30,
+    "subject": "Mathematics",
+    "question": "কোন ঘটনা ঘটার সম্ভাবনা P(A) হলে না ঘটার সম্ভাবনা কত ?",
+    "options": [
+      "P(A)-1",
+      "1- P(A)",
+      "0",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #30 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-031",
+    "number": 31,
+    "subject": "Mathematics",
+    "question": "\"JAHANGIRNAGAR \" শব্দটির অক্ষরগুলো কত প্রকারে সাজানো যায় ?",
+    "options": [
+      "$\\frac{13 !}{4 ! . 8 !}$",
+      "$\\frac{13 !}{4 ! . 4}$",
+      "$\\frac{13 !}{4 ! . 2}$",
+      "$\\frac{13 !}{4 ! . 8}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #31 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-032",
+    "number": 32,
+    "subject": "Mathematics",
+    "question": "x একটি বাস্তব সংখ্যা এবং x^2>64 হলে, নিচের কোনটি সত্য ?",
+    "options": [
+      "-8",
+      "$- 8 \\le x$",
+      "8",
+      "x>8 এবং x<-8"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #32 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-033",
+    "number": 33,
+    "subject": "Mathematics",
+    "question": "$\\sqrt{1 - \\frac{8}{x}}$ এর বিস্তৃতিতে নিচের কোনটি সত্য ?",
+    "options": [
+      "|x|<8",
+      "|x|>8",
+      "x<8",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #33 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-034",
+    "number": 34,
+    "subject": "Mathematics",
+    "question": "$y = \\frac{1}{\\left ( x - 3 \\right )^{2}}$ ফাংশনটির রেঞ্জ কত ?",
+    "options": [
+      "$\\left ( \\infty , 1 \\right ]$",
+      "$\\left ( - \\infty , \\infty \\right )$",
+      "$\\left [ 0 , \\infty \\right )$",
+      "$\\left ( 0 , \\infty \\right )$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #34 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-035",
+    "number": 35,
+    "subject": "Mathematics",
+    "question": "If ${C}_{r}$ denotes the binomial coefficient ${ _{ ; }^{ n }{ C } }_{ r }$ then $\\left( -1 \\right) { C }_{ 0 }^{ 2 }+2{ C }_{ 1 }^{ 2 }+5{ C }_{ 2 }^{ 2 }+......(3n-1){ C }_{ n }^{ 2 }=\\quad$",
+    "options": [
+      "$\\left( 3n-2 \\right) { _{ }^{ 2n }{ C } }_{ n }$",
+      "$\\left( \\cfrac { 3n-2 }{ 2 } \\right) { _{ }^{ 2n }{ C } }_{ n }$",
+      "$\\left( 5+3n \\right) { _{ }^{ 2n }{ C } }_{ n }$",
+      "$\\left( \\cfrac { 3n-5 }{ 2 } \\right) { _{ }^{ 2n }{ C } }_{ n+1 }$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #35 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-036",
+    "number": 36,
+    "subject": "Mathematics",
+    "question": "p(x)=tan^-1x একটি বিপরীত বৃত্তীয় ফাংশন।p(x) এর রেঞ্জ কত?",
+    "options": [
+      "$\\left ( 0 , \\frac{\\pi}{2} \\right )$",
+      "$\\left ( - \\frac{\\pi}{2} , 0 \\right )$",
+      "$\\left [ - \\frac{\\pi}{2} , \\frac{\\pi}{2} \\right ]$",
+      "$\\left ( - \\frac{\\pi}{2} , \\frac{\\pi}{2} \\right )$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #36 ([উচ্চতর গণিত - বহুনির্বাচনী(36)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-037",
+    "number": 37,
+    "subject": "Physics",
+    "question": "দুইটি বলের মান সমান ও বিপরীতমুখী হলে তাদের লব্ধির মান -",
+    "options": [
+      "$\\frac{1}{2}$",
+      "1",
+      "0",
+      "-1"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #37 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-038",
+    "number": 38,
+    "subject": "Physics",
+    "question": "ভূমি হতে 19.6 মি/সে বেগে খাড়া উপরের দিকে কোন বস্তু নিক্ষেপ্ত হল। বস্তুটির উত্থানকাল কত ?",
+    "options": [
+      "1 s",
+      "2 s",
+      "3 s",
+      "4 s"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #38 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-039",
+    "number": 39,
+    "subject": "Physics",
+    "question": "$\\vec{A} = 3 \\hat{i} + 2 \\hat{j} - 2 \\hat{k}$ এবং $\\vec{B} = - \\hat{i} + \\hat{j} - 4 \\hat{k}$ হলে $\\vec{A} ও \\vec{B}$ এর লব্ধি ভেক্টরের সমান্তরাল একক ভেক্টর কত?",
+    "options": [
+      "$\\frac{3 \\hat{i} + 2 \\hat{j} - 2 \\hat{k}}{\\sqrt{17}}$",
+      "$\\frac{- \\hat{i} + \\hat{j} - 4 \\hat{k}}{\\sqrt{18}}$",
+      "$\\frac{4 \\hat{i} + \\hat{j} + 2 \\hat{k}}{\\sqrt{21}}$",
+      "$\\frac{2 \\hat{i} + 3 \\hat{j} - 6 \\hat{k}}{7}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #39 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-040",
+    "number": 40,
+    "subject": "Physics",
+    "question": "tan^2 θ ( cosec^2 θ - 1) - cot^2 θ (sec^2 θ -1) এর মান কত ?",
+    "options": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #40 ([বহুনির্বাচনী(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-041",
+    "number": 41,
+    "subject": "Bangla",
+    "question": "একুশের উপর সর্ব প্রথম কবিতা রচনা করেন-",
+    "options": [
+      "আব্দুল গফফার চৌধুরী",
+      "মাহবুব-উল-আলম চৌধুরী",
+      "আল মাহমুদ",
+      "আলতাফ মাহমুদ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #41 ([বহুনির্বাচনী(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-042",
+    "number": 42,
+    "subject": "Bangla",
+    "question": "‘মনীষা’ এর সন্ধি বিচ্ছেদ কোনটি?",
+    "options": [
+      "মনস্ + ঈষা",
+      "মন + ইষা",
+      "মন + ঈষা",
+      "মনস + ইষা"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #42 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-043",
+    "number": 43,
+    "subject": "Bangla",
+    "question": "‘উপকথা’ কোন সমাস?",
+    "options": [
+      "কর্মধারয়",
+      "অব্যয়ীভাব",
+      "বহুব্রীহি",
+      "দ্বিগু"
+    ],
+    "correctAnswer": -1,
+    "answerVerified": false,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #43 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Unverified / not present in source",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "unverified"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-044",
+    "number": 44,
+    "subject": "Bangla",
+    "question": "'অটবী'র প্রতিশব্দ কোনটি?",
+    "options": [
+      "বিটপী",
+      "অরণ্য",
+      "সুন্দর",
+      "আসবাব"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #44 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-045",
+    "number": 45,
+    "subject": "Bangla",
+    "question": "'গাড়ী স্টেশন ছাড়ল' বাক্যের নিম্নরেখা শব্দটি কোন কারকে কোন বিভক্তি?",
+    "options": [
+      "কর্তায় শূন্য",
+      "কর্মে শূন্য",
+      "অপাদানে শূন্য",
+      "অধিকরণে শূন্য"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #45 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-046",
+    "number": 46,
+    "subject": "Bangla",
+    "question": "শেক্সপিয়ারের নাটকের বাংলা গদ্যরূপ কে দিয়েছেন-",
+    "options": [
+      "ঈশ্বরচন্দ্র গুপ্ত",
+      "ঈশ্বরচন্দ্র বিদ্যাসাগর",
+      "শরৎচন্দ্র চট্টোপাধ্যায়",
+      "বঙ্কিমচন্দ্র চট্টোপাধ্যায়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #46 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-047",
+    "number": 47,
+    "subject": "Bangla",
+    "question": "কোন বাক্যে নাম পুরুষের ব্যবহার করা হয়েছে?",
+    "options": [
+      "ওরা কি করে?",
+      "আপনি আসবেন",
+      "আমরা যাচ্ছি",
+      "তোরা যাসনে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #47 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-048",
+    "number": 48,
+    "subject": "Bangla",
+    "question": "কোনটি 'পদ্মা নদীর মাঝি' উপন্যাসের চরিত্র নয়?",
+    "options": [
+      "কুবের",
+      "রাসু",
+      "রোহিনী",
+      "কপিলা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #48 ([বাংলা - বহুনির্বাচনী(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-049",
+    "number": 49,
+    "subject": "English",
+    "question": "No sooner had he left ____ I came.",
+    "options": [
+      "then",
+      "than",
+      "when",
+      "after"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #49 ([English - বহুনির্বাচনী(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-050",
+    "number": 50,
+    "subject": "English",
+    "question": "The winter has set ___ very late this year.",
+    "options": [
+      "out",
+      "off",
+      "in",
+      "up"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #50 ([English - বহুনির্বাচনী(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-051",
+    "number": 51,
+    "subject": "English",
+    "question": "What is the adjective form of the word \"People \"",
+    "options": [
+      "popularity",
+      "populous",
+      "popular",
+      "popularize"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #51 ([English - বহুনির্বাচনী(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-052",
+    "number": 52,
+    "subject": "English",
+    "question": "In TV terms, the opposite of ‘live’ is–",
+    "options": [
+      "dead",
+      "asleep",
+      "on the air",
+      "taped"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #52 ([English - বহুনির্বাচনী(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-053",
+    "number": 53,
+    "subject": "English",
+    "question": "Which of the following is the meaning of the phrase \"read between the lines\"?",
+    "options": [
+      "read what is categorically stated",
+      "understand what is implied not what is explicitly stated",
+      "understand the inner meaning",
+      "read what is implied"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #53 ([English - বহুনির্বাচনী(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-054",
+    "number": 54,
+    "subject": "General Knowledge",
+    "question": "Who is called the 'poet of beauty'?",
+    "options": [
+      "William Wordsworth",
+      "John Keats",
+      "P. B. Shelly",
+      "Shakespeare"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #54 ([সাধারণ জ্ঞান - বহুনির্বাচনী(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-13-14-set-3-q-055",
+    "number": 55,
+    "subject": "ICT",
+    "question": "নিচের কোন চিহ্নটি সিদ্ধান্ত নেওয়ার নির্দেশের জন্য প্রবাহ চিত্র ব্যবহৃত হয়?",
+    "options": [
+      "$\\square$",
+      "[IMAGE: https://assets.chorcha.net/xzWAcJ4tXnFt-0e-.webp]",
+      "$\\diamond$",
+      "$\\circ$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_13-14_SET_3_d825e392.txt",
+      "sourceLocation": "Question #55 ([তথ্য ও যোগাযোগ প্রযুক্তি - বহুনির্বাচনী(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

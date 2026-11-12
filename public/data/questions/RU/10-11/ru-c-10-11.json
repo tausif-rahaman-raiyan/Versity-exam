@@ -315,7 +315,7 @@
     "id": "ru-c-10-11-q-014",
     "number": 14,
     "subject": "Chemistry",
-    "question": "প্রমান অবস্থায় 1120mL CO_2 গ্যাসের অণুগুলোর মোট ভরঃ",
+    "question": "প্রমান অবস্থায় 1120mL $\\text{CO}_2$ গ্যাসের অণুগুলোর মোট ভরঃ",
     "options": [
       "4.4g",
       "2.2g",
@@ -485,10 +485,10 @@
     "subject": "Chemistry",
     "question": "একটি হাইড্রোজেন বন্ধনের শক্তি একটি সমযোজী বন্ধন শক্তির প্রায় কতগুন?",
     "options": [
-      "1/2",
-      "1/3",
-      "1/10",
-      "1/100"
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{10}$",
+      "$\\frac{1}{100}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -581,10 +581,10 @@
     "subject": "Chemistry",
     "question": "এসিডের শক্তির কোন ক্রমটি সঠিক?",
     "options": [
-      "H_2SO_3 > HCIO>HNO_3>H_2PO",
-      "HNO_3 > H_3PO_4 > H_2SO_3>HCIO",
-      "HCIO> HNO_2>H_2PO_4>H_2SO_4",
-      "H_2PO_4>H_2SO_3>HNO_3>HCIO"
+      "H_2SO_3 > HCIO>$\\text{HNO}_3$>H_2PO",
+      "$\\text{HNO}_3$ > H_3PO_4 > H_2SO_3>HCIO",
+      "HCIO> HNO_2>H_2PO_4>$\\text{H}_2\\text{SO}_4$",
+      "H_2PO_4>H_2SO_3>$\\text{HNO}_3$>HCIO"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -919,7 +919,7 @@
     "options": [
       "CO+3H_2",
       "CO+N_2",
-      "CO_2+N_2",
+      "$\\text{CO}_2$+N_2",
       "CO+N_2+H_2"
     ],
     "correctAnswer": 0,
@@ -1063,7 +1063,7 @@
     "options": [
       "6",
       "6/x",
-      "x/6",
+      "$\\frac{x}{6}$",
       "-2/x^2"
     ],
     "correctAnswer": 3,
@@ -1109,8 +1109,8 @@
     "subject": "Mathematics",
     "question": "ABC ত্রিভুজের জন্য (b^2 - c^2) cos A + (c^2 - a^2) cos B + (a^2 - b^2) cos C এর মান কত?",
     "options": [
-      "1/2",
-      "3/2",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{2}$",
       "নাই",
       "অনির্দিষ্ট"
     ],
@@ -1373,7 +1373,7 @@
     "subject": "Chemistry",
     "question": "Al ধাতুর আকরিক বক্সাইট এর সংকেত-",
     "options": [
-      "Al_2O_3 H_2O",
+      "Al_2O_3 $\\text{H}_2\\text{O}$",
       "Al_2O_3.3H_2O",
       "Al_2O_3.2H_2O",
       "Al_2O_3"
@@ -1395,7 +1395,7 @@
     "id": "ru-c-10-11-q-059",
     "number": 59,
     "subject": "Chemistry",
-    "question": "Fe^2+ + 2H^+ + NO_3^- → Fe^3+ + NO_2 + H_2O বিক্রিয়াটির সম্পর্কিত কোন উক্তিটি সত্য নয়?",
+    "question": "Fe^2+ + 2H^+ + NO_3^- → Fe^3+ + NO_2 + $\\text{H}_2\\text{O}$ বিক্রিয়াটির সম্পর্কিত কোন উক্তিটি সত্য নয়?",
     "options": [
       "Fe^2+ জারিত হয়েছে",
       "এটি জারন-বিজারন বিক্রিয়া",
@@ -1637,10 +1637,10 @@
     "subject": "Physics",
     "question": "$\\cos A=\\frac{12}{13}$ হলে $\\tan A$ এর মান কত?",
     "options": [
-      "±12/13",
-      "±5/12",
-      "±15/12",
-      "±13/12"
+      "±$\\frac{12}{13}$",
+      "±$\\frac{5}{12}$",
+      "±$\\frac{15}{12}$",
+      "±$\\frac{13}{12}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,

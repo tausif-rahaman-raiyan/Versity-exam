@@ -197,7 +197,7 @@
     "subject": "Physics",
     "question": "$A = \\hat{i} + 2\\hat{j} + \\hat{k}$ ভেক্টরটির $B= \\hat{i}+\\hat{j}$ ভেক্টর অভিমুখে অভিক্ষেপ কত?",
     "options": [
-      "√2/3",
+      "√$\\frac{2}{3}$",
       "3",
       "3/√2",
       "None"
@@ -341,7 +341,7 @@
     "subject": "Physics",
     "question": "3μF ধারকত্ব বিশিষ্ট একটি ধারককে একটি 200 Volt ব্যাটারি দ্বারা পূর্ণ চার্জিত করা হলো। ধারকে সঞ্চিত শক্তির পরিমাণ কত?",
     "options": [
-      "$0.66 ×10^{10} J$",
+      "$0.66 \\times10^{10} J$",
       "0.06 J",
       "0.12 J",
       "None"
@@ -411,7 +411,7 @@
     "id": "du-00-01-q-018",
     "number": 18,
     "subject": "Physics",
-    "question": "একটি টেলিভিশন টিউবের কোন এক বিন্দুতে $1.6×10^{-19} C$ চার্জের একটি ইলেকট্রনের উপর $8×10^{-14} N$ বল অনুভূত হয়। ঐ বিন্দুতে বৈদ্যুতিক ক্ষেত্রের তীব্রতা কত?",
+    "question": "একটি টেলিভিশন টিউবের কোন এক বিন্দুতে $1.6\\times10^{-19} C$ চার্জের একটি ইলেকট্রনের উপর $8\\times10^{-14} N$ বল অনুভূত হয়। ঐ বিন্দুতে বৈদ্যুতিক ক্ষেত্রের তীব্রতা কত?",
     "options": [
       "$8 \\times 10^{-14} N/C$",
       "$2.5\\times 10^{-33} N/C$",
@@ -462,8 +462,8 @@
     "question": "যদি 10 gm বুলেট একটি বন্দুকের 20 cm ব্যারেলের মধ্যে 200m/s বেগ পায়, তাহলে ত্বরণকারী বল কত?",
     "options": [
       "None",
-      "$4×10^3N$",
-      "$3×10^3N$",
+      "$4\\times10^3N$",
+      "$3\\times10^3N$",
       "$10^3$"
     ],
     "correctAnswer": 3,
@@ -2525,10 +2525,10 @@
     "subject": "Mathematics",
     "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
     "options": [
-      "$cos15°$",
-      "$tan15°$",
-      "$cos75°$",
-      "$tan75°$"
+      "$cos15^\\circ$",
+      "$tan15^\\circ$",
+      "$cos75^\\circ$",
+      "$tan75^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2597,10 +2597,10 @@
     "subject": "Mathematics",
     "question": "একটি থলিতে 4টি নীল, 5টি কালো ও 6টি সবুজ বল আছে। দৈবচয়নে ব্যাগটি হতে একটি বল নেয়া হলে বলটি কালো হওয়ার সম্ভাবনা কত?",
     "options": [
-      "4/15",
-      "6/15",
-      "1/5",
-      "1/3"
+      "$\\frac{4}{15}$",
+      "$\\frac{6}{15}$",
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{3}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2645,10 +2645,10 @@
     "subject": "Mathematics",
     "question": "$\\frac{1}{2}+\\left(-\\frac{1}{4}\\right)+\\frac{1}{8}+\\left(-\\frac{1}{16}\\right)+\\ldots \\ldots$. ধারার অসীম পর্যন্ত মান কত?",
     "options": [
-      "1/4",
-      "1/3",
-      "1/2",
-      "1/8"
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{8}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -2765,8 +2765,8 @@
     "subject": "Chemistry",
     "question": "ফ্রিডেল ক্র্যাফট বিক্রিয়ায় নিচের কোনটি ব্যবহৃত হয়?",
     "options": [
-      "Sn / HCI",
-      "Conc. HNO_3",
+      "$\\frac{Sn}{HCI}$",
+      "Conc. $\\text{HNO}_3$",
       "অনাদ্র AICI_3",
       "Na/ether"
     ],
@@ -2811,7 +2811,7 @@
     "id": "du-00-01-q-118",
     "number": 118,
     "subject": "Chemistry",
-    "question": "24.5 gm H_2SO_4 এ কত মোল বুঝায়?",
+    "question": "24.5 gm $\\text{H}_2\\text{SO}_4$ এ কত মোল বুঝায়?",
     "options": [
       "2.5 moles",
       "0.25 moles",
@@ -2907,7 +2907,7 @@
     "id": "du-00-01-q-122",
     "number": 122,
     "subject": "Chemistry",
-    "question": "$\\mathrm{N}_{2} \\mathrm{O}_{5} \\rightleftharpoons 2 \\mathrm{NO}_{2} 1 / 2 \\mathrm{O}_{2}$, ইহা একটি প্রথম ক্রম বিক্রিয়া এবং এই বিক্রিয়ার বেগ ধ্রুবকের মান $6.2 \\times 10^{-4} \\mathrm{~s}^{-1} \\mathrm{I}$ এই বিক্রিয়ার অর্ধায়ু-",
+    "question": "$\\mathrm{N}_{2} \\mathrm{O}_{5} \\rightleftharpoons 2 \\mathrm{NO}_{2} \\frac{1}{2} \\mathrm{O}_{2}$, ইহা একটি প্রথম ক্রম বিক্রিয়া এবং এই বিক্রিয়ার বেগ ধ্রুবকের মান $6.2 \\times 10^{-4} \\mathrm{~s}^{-1} \\mathrm{I}$ এই বিক্রিয়ার অর্ধায়ু-",
     "options": [
       "11.8 seconds",
       "111.8 seconds",

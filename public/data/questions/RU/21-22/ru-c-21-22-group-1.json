@@ -158,8 +158,8 @@
     "options": [
       "2r",
       "4r",
-      "r/4",
-      "r/2"
+      "$\\frac{r}{4}$",
+      "$\\frac{r}{2}$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -233,7 +233,7 @@
     "options": [
       "R",
       "2R",
-      "R/2",
+      "$\\frac{R}{2}$",
       "4R"
     ],
     "correctAnswer": 0,
@@ -281,9 +281,9 @@
     "ruSection": "A",
     "question": "গ্যাসের চাপ একক আয়তনের গতিশক্তির কত অংশ?",
     "options": [
-      "2/3",
-      "3/2",
-      "1/2",
+      "$\\frac{2}{3}$",
+      "$\\frac{3}{2}$",
+      "$\\frac{1}{2}$",
       "কোনটিই নয়"
     ],
     "correctAnswer": 0,
@@ -717,7 +717,7 @@
     "options": [
       "2PbS_(s) + 3O_2(g) ⇔ 2PbO_(s) + 3SO_2(g)",
       "PCl_5(g) ⇔ PCl_3(g) + Cl_2(g)",
-      "H_2(g) + CO_2(g) ⇔ H_2O_(g) + CO_(g)",
+      "H_2(g) + $\\text{CO}_2$(g) ⇔ H_2O_(g) + CO_(g)",
       "N_2(g) + 3H_2(g) ⇔ 2NH_3(g)"
     ],
     "correctAnswer": 2,
@@ -865,7 +865,7 @@
     "ruSection": "A",
     "question": "নিচের কোন বিক্রিয়াটি সঠিক?",
     "options": [
-      "$R - C H = C H - R + H_{2} \\overset{N i , 80 ° C}{\\to} R - C H_{2} - C H_{2} = C H_{2}$",
+      "$R - C H = C H - R + H_{2} \\overset{N i , 80 ^\\circ\\text{C}}{\\to} R - C H_{2} - C H_{2} = C H_{2}$",
       "$C H_{2} = C H_{2} + \\left [ O \\right ] + H_{2} O \\overset{K M n O_{4}}{\\underset{H C l}{\\to}} H O C H_{2} - C H_{2} O H$",
       "$2 R - C \\equiv C - H + 2 N a \\left ( s \\right ) \\overset{N a O H}{\\to} 2 R - C \\equiv C . N a \\left ( s \\right ) + H_{2} \\left ( g \\right )$",
       "$C H_{3} C H_{2} C H_{2} O H + \\left [ O \\right ] \\overset{K_{2} C r_{2} O_{7}}{\\underset{d i l u t e d H_{2} S O_{4}}{\\to}} C H_{3} C H_{2} C H O + H_{2} O$"
@@ -1418,12 +1418,12 @@
     "subject": "Mathematics",
     "ruSection": "B",
     "ruBranch": "Math+Biology",
-    "question": "tan {tan^-1(7/11) + tan^-1(1/7)} এর মান কত?",
+    "question": "tan {tan^-1($\\frac{7}{11}$) + tan^-1($\\frac{1}{7}$)} এর মান কত?",
     "options": [
       "π/4",
-      "-6/7",
-      "6/7",
-      "7/6"
+      "$-\\frac{6}{7}$",
+      "$\\frac{6}{7}$",
+      "$\\frac{7}{6}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -1550,10 +1550,10 @@
     "ruBranch": "Math+Biology",
     "question": "$\\int_{0}^{\\frac{\\pi}{2}} \\cos^{3}{x} dx$ এর মান কত?",
     "options": [
-      "4/15",
-      "2/15",
-      "2/3",
-      "8/15"
+      "$\\frac{4}{15}$",
+      "$\\frac{2}{15}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{8}{15}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -1600,12 +1600,12 @@
     "subject": "Mathematics",
     "ruSection": "B",
     "ruBranch": "Math+Biology",
-    "question": "x^2/144 - y^2/25 = 1 অধিবৃত্তের উপকেন্দ্রিক লম্বের দৈর্ঘ্য কত একক?",
+    "question": "x^$\\frac{2}{144}$ - y^$\\frac{2}{25}$ = 1 অধিবৃত্তের উপকেন্দ্রিক লম্বের দৈর্ঘ্য কত একক?",
     "options": [
-      "25/6",
-      "6/25",
-      "144/25",
-      "25/144"
+      "$\\frac{25}{6}$",
+      "$\\frac{6}{25}$",
+      "$\\frac{144}{25}$",
+      "$\\frac{25}{144}$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -2824,9 +2824,9 @@
     "ruBranch": "Math",
     "question": "$\\frac{x ²}{p} + \\frac{y ²}{25} = 1$ উপবৃত্তটি (6,4) বিন্দু দিয়ে যায় উপবৃত্তের উৎকেন্দ্রিকতা কত?",
     "options": [
-      "√3/2",
+      "√$\\frac{3}{2}$",
       "100",
-      "3/4",
+      "$\\frac{3}{4}$",
       "5√3"
     ],
     "correctAnswer": 0,
@@ -2853,7 +2853,7 @@
       "-2",
       "2",
       "ln2",
-      "ln 1/2"
+      "ln $\\frac{1}{2}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -2877,7 +2877,7 @@
     "question": "$\\lim_{x \\to 0} \\left ( 1 + 4 x \\right )^{\\frac{3 x + 2}{x}}$ এর মান কত?",
     "options": [
       "e^2",
-      "e^3/4",
+      "$\\frac{e^3}{4}$",
       "e^3",
       "e^8"
     ],
@@ -2930,7 +2930,7 @@
     "options": [
       "$-1/t$",
       "$-1/t^2$",
-      "$1/t$",
+      "$\\frac{1}{t}$",
       "$t$"
     ],
     "correctAnswer": 2,

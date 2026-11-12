@@ -30,7 +30,7 @@ async function findQuestionJsonFiles(dir) {
     const full = path.join(dir, entry.name);
     if (entry.isDirectory()) {
       files.push(...(await findQuestionJsonFiles(full)));
-    } else if (entry.isFile() && entry.name.endsWith('.json')) {
+    } else if (entry.isFile() && entry.name.endsWith('.json') && entry.name !== 'index.json') {
       files.push(full);
     }
   }

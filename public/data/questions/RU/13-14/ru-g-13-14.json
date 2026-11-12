@@ -1757,10 +1757,10 @@
     "subject": "Chemistry",
     "question": "নিম্নের কোনটি শুষ্ক বরফ গঠন করে?",
     "options": [
-      "H_2O",
+      "$\\text{H}_2\\text{O}$",
       "CH_4",
       "COH_2",
-      "CO_2"
+      "$\\text{CO}_2$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -1947,7 +1947,7 @@
     "id": "ru-g-13-14-q-082",
     "number": 82,
     "subject": "Chemistry",
-    "question": "গাঢ় HNO_3 এর সাথে ক্লোরোফরম কে উত্তপ্ত করলে পাওয়া যায়-",
+    "question": "গাঢ় $\\text{HNO}_3$ এর সাথে ক্লোরোফরম কে উত্তপ্ত করলে পাওয়া যায়-",
     "options": [
       "ফসফিন",
       "গ্যামাক্সিন",
@@ -2214,7 +2214,7 @@
     "question": "ফুসফুসের ক্যান্সারের জন্য দায়ী-",
     "options": [
       "SiO_2",
-      "CO_2",
+      "$\\text{CO}_2$",
       "MnO_2",
       "H_2S"
     ],

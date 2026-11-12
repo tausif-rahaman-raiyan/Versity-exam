@@ -2398,10 +2398,10 @@
     "subject": "Physics",
     "question": "একটি কণার স্বাধীনতার মাত্রার সংখ্যা 5 হলে শক্তির সমবিভাজন নীতি অনুযায়ী কণাটির মোট শক্তি কত?",
     "options": [
-      "$KT/2$",
+      "$\\frac{KT}{2}$",
       "$KT$",
-      "$3KT/2$",
-      "$5KT/2$"
+      "$\\frac{3KT}{2}$",
+      "$\\frac{5KT}{2}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2544,7 +2544,7 @@
     "options": [
       "T",
       "2T",
-      "T/2",
+      "$\\frac{T}{2}$",
       "4T"
     ],
     "correctAnswer": 0,
@@ -2832,7 +2832,7 @@
     "options": [
       "NaOH+HCl",
       "H^++OH^-",
-      "Na^+(H_2O)+Cl$^-$(H_2O)",
+      "Na^+($\\text{H}_2\\text{O}$)+Cl$^-$($\\text{H}_2\\text{O}$)",
       "NaOCl+H_2"
     ],
     "correctAnswer": 2,
@@ -2852,7 +2852,7 @@
     "id": "du-15-16-q-119",
     "number": 119,
     "subject": "Chemistry",
-    "question": "নিম্নের বিক্রিয়াগুলো হতে কার্বনের প্রমাণ দহন তাপ নির্ণয় কর। $i.\\ \\ C(s)+\\frac{1}{2}O_2(g)→CO(g)\\Delta H\\degree=-111.0\\ kJ\\ mol^{-1}$ $ii.\\ \\ COg)+\\frac{1}{2}O_2(g)→CO_2(g)\\Delta H\\degree=-283.\\ 0kJ\\ mol^{-1}$",
+    "question": "নিম্নের বিক্রিয়াগুলো হতে কার্বনের প্রমাণ দহন তাপ নির্ণয় কর। $i.\\ \\ C(s)+\\frac{1}{2}O_2(g)→CO(g)\\Delta H\\degree=-111.0\\ kJ\\ mol^{-1}$ $ii.\\ \\ COg)+\\frac{1}{2}O_2(g)→$\\text{CO}_2$(g)\\Delta H\\degree=-283.\\ 0kJ\\ mol^{-1}$",
     "options": [
       "$-173.\\ 0\\ kJ\\ mol^{-1}$",
       "$-394.0\\ kJ\\ mol^{-1}$",
@@ -2902,10 +2902,10 @@
     "subject": "Chemistry",
     "question": "এসিডের শক্তির কোন ক্রমটি সঠিক?",
     "options": [
-      "H_2SO_3 > HCIO>HNO_3>H_2PO",
-      "HNO_3 > H_3PO_4 > H_2SO_3>HCIO",
-      "HCIO> HNO_2>H_2PO_4>H_2SO_4",
-      "H_2PO_4>H_2SO_3>HNO_3>HCIO"
+      "H_2SO_3 > HCIO>$\\text{HNO}_3$>H_2PO",
+      "$\\text{HNO}_3$ > H_3PO_4 > H_2SO_3>HCIO",
+      "HCIO> HNO_2>H_2PO_4>$\\text{H}_2\\text{SO}_4$",
+      "H_2PO_4>H_2SO_3>$\\text{HNO}_3$>HCIO"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3022,10 +3022,10 @@
     "subject": "Chemistry",
     "question": "$H$-পরমাণুর বর্ণালীর বামার সিরিজের সর্বনিম্ন তরঙ্গ সংখ্যার বিকিরত রশ্মি কোনটি?",
     "options": [
-      "$3R_H/4$",
-      "$5R_H/36$",
-      "$8R_{11}/9$",
-      "$9R_{11}/144$"
+      "$\\frac{3R_H}{4}$",
+      "$\\frac{5R_H}{36}$",
+      "$\\frac{8R_{11}}{9}$",
+      "$\\frac{9R_{11}}{144}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3071,7 +3071,7 @@
     "question": "সিরামিক শিল্পে ব্যবহৃত কাঁচামাল কেওলিনাইটের রাসায়নিক সংকেত কোনটি?",
     "options": [
       "Al_2O_3.2SiO_2.2H_2O",
-      "Al_2O_3.3SiO_2.H_2O",
+      "Al_2O_3.3SiO_2.$\\text{H}_2\\text{O}$",
       "Al_2O_3.2SiO_2.3H_2O",
       "K_2O.Al_2O_3.6SiO_2"
     ],
@@ -3140,7 +3140,7 @@
     "id": "du-15-16-q-131",
     "number": 131,
     "subject": "Chemistry",
-    "question": "$0°C$ তাপমাত্রায় অ্যানিলিন এবং $NaNO_2$ ও $HCl$ এর বিক্রিয়ার উৎপাদকে কক্ষ তাপমাত্রায় রেখে দিলে কি পাওয়া যায়?",
+    "question": "$0^\\circ\\text{C}$ তাপমাত্রায় অ্যানিলিন এবং $NaNO_2$ ও $HCl$ এর বিক্রিয়ার উৎপাদকে কক্ষ তাপমাত্রায় রেখে দিলে কি পাওয়া যায়?",
     "options": [
       "Benzene diazonium chloride",
       "Chlorobenzene",
@@ -3364,7 +3364,7 @@
       "CO₂ > N_2 > NH_3 > N_2",
       "NH_3 > CO₂ > N_2 > H_2",
       "$CO_2>NH_3>H_2>N_2$",
-      "$N_2>H_2>CO_2>NH_3$"
+      "$N_2>H_2>$\\text{CO}_2$>NH_3$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3505,10 +3505,10 @@
     "subject": "Mathematics",
     "question": "$\\left ( 2 x^{2} - \\frac{1}{4 x} \\right )^{11}$ এর বিস্তৃত x^7 এর সহগ বের কর।",
     "options": [
-      "8/231",
-      "6/241",
-      "241/7",
-      "-231/8"
+      "$\\frac{8}{231}$",
+      "$\\frac{6}{241}$",
+      "$\\frac{241}{7}$",
+      "$-\\frac{231}{8}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -3577,8 +3577,8 @@
     "subject": "Mathematics",
     "question": "$\\left ( - \\sqrt{3} . - \\sqrt{3} \\right )$ এর পোলার স্থানাঙ্ক কত ?",
     "options": [
-      "$\\left ( 6 , \\frac{π}{4} \\right )$",
-      "$\\left ( \\sqrt{3} , \\frac{π}{4} \\right )$",
+      "$\\left ( 6 , \\frac{\\pi}{4} \\right )$",
+      "$\\left ( \\sqrt{3} , \\frac{\\pi}{4} \\right )$",
       "$\\left(2\\sqrt{3}, \\frac{11\\pi}{21}\\right)$",
       "$\\left(\\sqrt{6}, \\frac{5\\pi}{4}\\right)$"
     ],
@@ -3863,7 +3863,7 @@
     "id": "du-15-16-q-161",
     "number": 161,
     "subject": "Mathematics",
-    "question": "$k$এর কোন মানের জন্য$y=kx(1-x)$বক্ররেখার মূলবিন্দুতে স্পর্শকটি$x$অক্ষের সাথে$30°$কোণ উৎপন্ন করে?",
+    "question": "$k$এর কোন মানের জন্য$y=kx(1-x)$বক্ররেখার মূলবিন্দুতে স্পর্শকটি$x$অক্ষের সাথে$30^\\circ$কোণ উৎপন্ন করে?",
     "options": [
       "$\\frac{1}{\\sqrt{3}}$",
       "$\\sqrt{3}$",

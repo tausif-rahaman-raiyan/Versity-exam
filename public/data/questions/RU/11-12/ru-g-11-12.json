@@ -367,7 +367,7 @@
     "options": [
       "NADH₂",
       "FADH₂",
-      "CO_2",
+      "$\\text{CO}_2$",
       "O_2"
     ],
     "correctAnswer": 3,
@@ -1421,8 +1421,8 @@
     "subject": "Biology",
     "question": "বীজহীন ফল উৎপাদনে ব্যাবহৃত হয় -",
     "options": [
-      "H_2SO_4",
-      "HNO_3",
+      "$\\text{H}_2\\text{SO}_4$",
+      "$\\text{HNO}_3$",
       "GA_3",
       "GA_2"
     ],
@@ -1974,7 +1974,7 @@
     "question": "ড্রাই আইস হলো-",
     "options": [
       "কঠিন O_2",
-      "কঠিন CO_2",
+      "কঠিন $\\text{CO}_2$",
       "কঠিন H_2",
       "কঠিন Cl_2"
     ],
@@ -2021,8 +2021,8 @@
     "subject": "Chemistry",
     "question": "ডলোমাইট এর সংকেত কোনটি?",
     "options": [
-      "$\\rm CaCO_3.\\ MgCO_2$",
-      "$\\rm CaCO_3.\\ {\\rm MgCO}_3$",
+      "$\\rm $\\text{CaCO}_3$.\\ MgCO_2$",
+      "$\\rm $\\text{CaCO}_3$.\\ {\\rm MgCO}_3$",
       "$\\rm \\left[2\\left(CaSO_4.2H_2O\\right)\\right]$",
       "$\\rm [\\left(NH_4\\right)_2{\\rm HPO}_4]$"
     ],
@@ -2043,7 +2043,7 @@
     "id": "ru-g-11-12-q-086",
     "number": 86,
     "subject": "Chemistry",
-    "question": "HNO_3 এসিড উৎপন্ন করার প্রক্রিয়া কোনটি?",
+    "question": "$\\text{HNO}_3$ এসিড উৎপন্ন করার প্রক্রিয়া কোনটি?",
     "options": [
       "পাত প্রণালী",
       "আর্ক প্রণালী",

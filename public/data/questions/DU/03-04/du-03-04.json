@@ -1376,8 +1376,8 @@
     "subject": "Chemistry",
     "question": "নিচের কোনটি অ্যামোনিয়ার সাথে বিক্রিয়া করে ইউরিয়া উৎপন্ন করে?",
     "options": [
-      "H_2O",
-      "CO_2",
+      "$\\text{H}_2\\text{O}$",
+      "$\\text{CO}_2$",
       "CH_4",
       "C_6H_6"
     ],
@@ -1520,10 +1520,10 @@
     "subject": "English",
     "question": "Choose the pair that is out of place:",
     "options": [
-      "assist/abet",
-      "hate/abhor",
-      "native/immigrant",
-      "sharp/acute"
+      "$\\frac{assist}{abet}$",
+      "$\\frac{hate}{abhor}$",
+      "$\\frac{native}{immigrant}$",
+      "$\\frac{sharp}{acute}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -1544,10 +1544,10 @@
     "subject": "English",
     "question": "Choose the pairs that is out of place :",
     "options": [
-      "relinquish /abandon",
-      "humiliate/ disgrace",
-      "degrade/disturb",
-      "reject/cancel"
+      "$\\frac{relinquish}{abandon}$",
+      "$\\frac{humiliate}{disgrace}$",
+      "$\\frac{degrade}{disturb}$",
+      "$\\frac{reject}{cancel}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -2192,10 +2192,10 @@
     "subject": "Mathematics",
     "question": "(4, -2) বিন্দু থেকে 5x + 12y = 3 রেখার লম্ব দূরত্ব কত ?",
     "options": [
-      "7/8",
-      "8/13",
-      "7/13",
-      "13/7"
+      "$\\frac{7}{8}$",
+      "$\\frac{8}{13}$",
+      "$\\frac{7}{13}$",
+      "$\\frac{13}{7}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -2363,10 +2363,10 @@
     "subject": "Mathematics",
     "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
     "options": [
-      "$cos15°$",
-      "$tan15°$",
-      "$cos75°$",
-      "$tan75°$"
+      "$cos15^\\circ$",
+      "$tan15^\\circ$",
+      "$cos75^\\circ$",
+      "$tan75^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2409,7 +2409,7 @@
     "id": "du-03-04-q-101",
     "number": 101,
     "subject": "Mathematics",
-    "question": "$\\cos675°+\\sin(-11385°)$ সমান-",
+    "question": "$\\cos675^\\circ+\\sin(-11385^\\circ)$ সমান-",
     "options": [
       "$\\frac{1}{2}$",
       "$\\frac{1}{\\sqrt{2}}$",

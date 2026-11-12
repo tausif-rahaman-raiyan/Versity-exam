@@ -53,10 +53,10 @@
     "subject": "Physics",
     "question": "কোন একটি তেজষ্ক্রিয় পদার্থের অর্ধাযু 15 বছর। 30 বছর পর উক্ত পদার্থের একটি নির্দিষ্ট অংশের কতটুক অবশিষ্ট থাকে?",
     "options": [
-      "1/2",
-      "1/4",
-      "1/3",
-      "1/8"
+      "$\\frac{1}{2}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{8}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -243,12 +243,12 @@
     "id": "ru-h-14-15-q-011",
     "number": 11,
     "subject": "Physics",
-    "question": "একটি তারের উপাদানের ইয়ং এর গুনাংক 2×10^11 N/m^2 । তারটির দৈর্ঘ্য 15% বৃদ্ধি করতে প্রযুক্ত পীড়ন কত?",
+    "question": "একটি তারের উপাদানের ইয়ং এর গুনাংক $2 \\times 10^{11}$ N/m^2 । তারটির দৈর্ঘ্য 15% বৃদ্ধি করতে প্রযুক্ত পীড়ন কত?",
     "options": [
-      "2×10^11 N/m^2",
-      "4×10^11 N/m^2",
-      "3×10^10 N/m^2",
-      "6×10^10 N/m^2"
+      "$2 \\times 10^{11}$ N/m^2",
+      "$4 \\times 10^{11}$ N/m^2",
+      "$3 \\times 10^{10}$ N/m^2",
+      "$6 \\times 10^{10}$ N/m^2"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -752,7 +752,7 @@
       "1",
       "e",
       "e^10",
-      "e^5/2"
+      "$\\frac{e^5}{2}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -797,10 +797,10 @@
     "subject": "Mathematics",
     "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
     "options": [
-      "$cos15°$",
-      "$tan15°$",
-      "$cos75°$",
-      "$tan75°$"
+      "$cos15^\\circ$",
+      "$tan15^\\circ$",
+      "$cos75^\\circ$",
+      "$tan75^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -819,7 +819,7 @@
     "id": "ru-h-14-15-q-035",
     "number": 35,
     "subject": "Mathematics",
-    "question": "উপবৃত্তের উপকেন্দ্র দুটি x^2/144 + y^2/169 = 1",
+    "question": "উপবৃত্তের উপকেন্দ্র দুটি x^$\\frac{2}{144}$ + y^$\\frac{2}{169}$ = 1",
     "options": [
       "(0,±5)",
       "(0,±12)",
@@ -845,10 +845,10 @@
     "subject": "Mathematics",
     "question": "ax+y=a সরলরেখ x ও y অক্ষকে A ও B বিন্দুতে এমনভাবে ছেদ করে যেনো মুলবিন্দু O হলে 4OA=3OB হয়। AOB ত্রিভুজের ক্ষেত্রফল কত?",
     "options": [
-      "3/4",
-      "3/8",
-      "2/3",
-      "8/3"
+      "$\\frac{3}{4}$",
+      "$\\frac{3}{8}$",
+      "$\\frac{2}{3}$",
+      "$\\frac{8}{3}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -941,8 +941,8 @@
     "subject": "Mathematics",
     "question": "$\\left ( - \\sqrt{3} . - \\sqrt{3} \\right )$ এর পোলার স্থানাঙ্ক কত ?",
     "options": [
-      "$\\left ( 6 , \\frac{π}{4} \\right )$",
-      "$\\left ( \\sqrt{3} , \\frac{π}{4} \\right )$",
+      "$\\left ( 6 , \\frac{\\pi}{4} \\right )$",
+      "$\\left ( \\sqrt{3} , \\frac{\\pi}{4} \\right )$",
       "$\\left(2\\sqrt{3}, \\frac{11\\pi}{21}\\right)$",
       "$\\left(\\sqrt{6}, \\frac{5\\pi}{4}\\right)$"
     ],
@@ -965,10 +965,10 @@
     "subject": "Mathematics",
     "question": "নিম্নের কোন শর্তের জন্য px^2+3x+4=0 সমীকরনের মূলগুলি বাস্তব ও অসমান হবে?",
     "options": [
-      "p < 16/9",
-      "p = 9/16",
+      "p < $\\frac{16}{9}$",
+      "p = $\\frac{9}{16}$",
       "$p<\\frac{9}{16}$",
-      "p > 9/16"
+      "p > $\\frac{9}{16}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -1061,10 +1061,10 @@
     "subject": "Mathematics",
     "question": "একটি বাক্সে 10 টি সাদা ও 5 টি কালো রং এর মার্বেল আছে। বাক্স থেকে নিরপেক্ষ ভাবে 2 টি মার্বেল উঠিয়ে নিলে প্রতিবারে দু'টি ভিন্ন রং এর মার্বেল পাওয়ার সম্ভব্যতা কত?",
     "options": [
-      "1/2",
-      "10/21",
-      "5/21",
-      "1/4"
+      "$\\frac{1}{2}$",
+      "$\\frac{10}{21}$",
+      "$\\frac{5}{21}$",
+      "$\\frac{1}{4}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -1203,7 +1203,7 @@
     "id": "ru-h-14-15-q-051",
     "number": 51,
     "subject": "Chemistry",
-    "question": "C_2H_5OH + ঘন H_2SO_4 → C_2H_4 + H_2O বিক্রিয়াটিকে বলা হয়",
+    "question": "C_2H_5OH + ঘন $\\text{H}_2\\text{SO}_4$ → C_2H_4 + $\\text{H}_2\\text{O}$ বিক্রিয়াটিকে বলা হয়",
     "options": [
       "প্রতিস্থাপন বিক্রিয়া",
       "যুত বিক্রিয়া",

@@ -462,8 +462,8 @@
     "question": "উদ্ভিদের সালোকসংশ্লেষণে বাধা দেয়-",
     "options": [
       "NO_2",
-      "CO_2",
-      "H_2O",
+      "$\\text{CO}_2$",
+      "$\\text{H}_2\\text{O}$",
       "O_2"
     ],
     "correctAnswer": 3,
@@ -1659,7 +1659,7 @@
     "id": "ru-g-17-18-q-070",
     "number": 70,
     "subject": "Chemistry",
-    "question": "১০০% বিশুদ্ধ H_2SO_4 কে বলা হয়-",
+    "question": "১০০% বিশুদ্ধ $\\text{H}_2\\text{SO}_4$ কে বলা হয়-",
     "options": [
       "অলিয়াম",
       "গাঢ় সালফার",
@@ -1735,7 +1735,7 @@
     "options": [
       "NH_3",
       "H_3 PO_4",
-      "H_2O",
+      "$\\text{H}_2\\text{O}$",
       "HCl"
     ],
     "correctAnswer": 0,
@@ -1757,7 +1757,7 @@
     "subject": "Chemistry",
     "question": "p^H বৃদ্ধিতে কোনটি ব্যবহার করা হয়?",
     "options": [
-      "H_2O",
+      "$\\text{H}_2\\text{O}$",
       "H_2O_2",
       "H_2PO_4",
       "CaO"
@@ -1781,7 +1781,7 @@
     "subject": "Chemistry",
     "question": "কোনটি পানিতে অদ্রবণীয় নয়?",
     "options": [
-      "CaCO_3",
+      "$\\text{CaCO}_3$",
       "ZnCO_3",
       "Pb(NO_3)_2",
       "কোনটিই নয়"
@@ -2192,7 +2192,7 @@
       "10^10 মাইল",
       "10^12 মাইল",
       "400 মাইল",
-      "9.42 x 10^12 কিমি"
+      "$9.42 \\times 10^{12}$ কিমি"
     ],
     "correctAnswer": 3,
     "answerVerified": true,

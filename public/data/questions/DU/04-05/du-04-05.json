@@ -747,7 +747,7 @@
     "id": "du-04-05-q-032",
     "number": 32,
     "subject": "Chemistry",
-    "question": "একই তাপমাত্রার একই আয়তনের প্রথম পাত্রে 1 mol N_2 এবং দ্বিতীয় পাত্রে 1 mol CO_2 রাখা হল। নিম্নের কোন উক্তিটি সঠিক নয়?",
+    "question": "একই তাপমাত্রার একই আয়তনের প্রথম পাত্রে 1 mol N_2 এবং দ্বিতীয় পাত্রে 1 mol $\\text{CO}_2$ রাখা হল। নিম্নের কোন উক্তিটি সঠিক নয়?",
     "options": [
       "১ম পাত্রে চাপ নিম্নতর",
       "১ম পাত্রে N_2 অণুর গতি উচ্চতর",
@@ -771,12 +771,12 @@
     "id": "du-04-05-q-033",
     "number": 33,
     "subject": "Chemistry",
-    "question": "NaCl(s), H_2O(l) এবং CO_2(g) এর মধ্যে গতিশীল কণাসমূহ সম্বন্ধে নিম্নের কোন উক্তিটি সঠিক নয়?",
+    "question": "NaCl(s), $\\text{H}_2\\text{O}$(l) এবং $\\text{CO}_2$(g) এর মধ্যে গতিশীল কণাসমূহ সম্বন্ধে নিম্নের কোন উক্তিটি সঠিক নয়?",
     "options": [
       "NaCl(s) এ কণাসমূহের কেবল কম্পন গতি রয়েছে",
-      "H_2O(l) এ কণাসমূহের কেবল স্থানান্তর গতি রয়েছে",
-      "CO_2(g) এর মধ্যে CO_2 অণুর কম্পন, ঘূর্ণন এবং স্থানান্তর গতি রয়েছে",
-      "NaCl(s) ও H_2O(l) এর মধ্যে কণাসমূহের ঘূর্ণন সম্ভব নয়"
+      "$\\text{H}_2\\text{O}$(l) এ কণাসমূহের কেবল স্থানান্তর গতি রয়েছে",
+      "$\\text{CO}_2$(g) এর মধ্যে $\\text{CO}_2$ অণুর কম্পন, ঘূর্ণন এবং স্থানান্তর গতি রয়েছে",
+      "NaCl(s) ও $\\text{H}_2\\text{O}$(l) এর মধ্যে কণাসমূহের ঘূর্ণন সম্ভব নয়"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -893,7 +893,7 @@
     "subject": "Chemistry",
     "question": "নিচের কোন যৌগটিতে কেন্দ্রীয় পরমাণুর যোজনী শেল ইলেকট্রন যুগলসমুহ চতুস্তলকীয়ভাবে বিন্যস্ত নয়?",
     "options": [
-      "H_2O",
+      "$\\text{H}_2\\text{O}$",
       "SnCl_2",
       "NH_3",
       "PF_3"
@@ -967,7 +967,7 @@
     "options": [
       "+d[A]/dt",
       "-d[D]/dt",
-      "1/2 d[D]/dt",
+      "$\\frac{1}{2}$ d[D]/dt",
       "+ d[C]/dt"
     ],
     "correctAnswer": 2,
@@ -1181,10 +1181,10 @@
     "subject": "Chemistry",
     "question": "1.8g পানিতে কতগুলো পানির অণু রয়েছে ?",
     "options": [
-      "60.23 × 10^23",
-      "0.6023 × 10^2^2",
-      "6.023 × 10^22",
-      "6.036 × 10^23"
+      "$60.23 \\times 10^{23}$",
+      "$0.6023 \\times 10^{2}$^2",
+      "$6.023 \\times 10^{22}$",
+      "$6.036 \\times 10^{23}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -1422,7 +1422,7 @@
     "id": "du-04-05-q-060",
     "number": 60,
     "subject": "Chemistry",
-    "question": "শিল্পক্ষেত্রে NH_3 থেকে HNO_3 তৈরির পদ্ধতিকে বলা হয়ঃ",
+    "question": "শিল্পক্ষেত্রে NH_3 থেকে $\\text{HNO}_3$ তৈরির পদ্ধতিকে বলা হয়ঃ",
     "options": [
       "Solvay Process",
       "Haber Process",
@@ -1616,8 +1616,8 @@
     "subject": "Physics",
     "question": "এক মোল হাইড্রোজেন এবং এক মোল অক্সিজেনের ভর যথাক্রমে 2g ও 32g হলে কোন এক নির্দিষ্ট তাপমাত্রায় অনুপাত হাইড্রোজেন অণুর মূল গড় বর্গ বেগ / অক্সিজেন অণুর মূল গড় বর্গ বেগ এর মান কত হবে ?",
     "options": [
-      "1/8",
-      "1/4",
+      "$\\frac{1}{8}$",
+      "$\\frac{1}{4}$",
       "4",
       "8"
     ],
@@ -1857,9 +1857,9 @@
     "question": "যদি কোনো আনবিক বোমার ফিশন প্রক্রিয়ায় 1kg ভর লোপ পায়, তাহলে নির্গত শক্তি হবে -",
     "options": [
       "9 x 10^-10 J",
-      "9 x 10^16 J",
-      "4.5 x 10^16 J",
-      "3 x 10^16 J"
+      "$9 \\times 10^{16}$ J",
+      "$4.5 \\times 10^{16}$ J",
+      "$3 \\times 10^{16}$ J"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -1905,7 +1905,7 @@
     "question": "একটি সমান্তরাল - প্লেট ক্যাপাসিটরের প্লেটের ক্ষেত্রফল 2m^2 । প্লেট দুইটির মধ্যে পরাবৈদ্যুতিক বস্তু প্রবেশ করানো হলো যার আপেক্ষিক পারমিটিভিটি 6। এখন ধারকত্ব পূর্বের তুলনায় কতগুন হবে ?",
     "options": [
       "6",
-      "1/6",
+      "$\\frac{1}{6}$",
       "12",
       "3"
     ],
@@ -1931,7 +1931,7 @@
       "Hertz",
       "Wm^-2",
       "dB",
-      "W/m"
+      "$\\frac{W}{m}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -1954,8 +1954,8 @@
     "options": [
       "25",
       "5",
-      "1/5",
-      "1/25"
+      "$\\frac{1}{5}$",
+      "$\\frac{1}{25}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3224,10 +3224,10 @@
     "subject": "Mathematics",
     "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
     "options": [
-      "$cos15°$",
-      "$tan15°$",
-      "$cos75°$",
-      "$tan75°$"
+      "$cos15^\\circ$",
+      "$tan15^\\circ$",
+      "$cos75^\\circ$",
+      "$tan75^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -3248,10 +3248,10 @@
     "subject": "Mathematics",
     "question": "যদি $f(x)=\\frac{x}{1+x}$ হলে, $f\\left(\\frac{2}{3}\\right) \\div f\\left(\\frac{3}{2}\\right)$ সমান-",
     "options": [
-      "2/3",
+      "$\\frac{2}{3}$",
       "3",
       "2",
-      "3/2"
+      "$\\frac{3}{2}$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -3296,10 +3296,10 @@
     "subject": "Mathematics",
     "question": "1 থেকে 99 পর্যন্ত সংখ্যাগুলি থেকে দৈবচয়ন পদ্ধতিতে একটি সংখ্যা নেওয়া হলে, সেটি বর্গ হওয়ার সম্ভাবনা হবে?",
     "options": [
-      "1/9",
-      "2/9",
-      "1/11",
-      "2/11"
+      "$\\frac{1}{9}$",
+      "$\\frac{2}{9}$",
+      "$\\frac{1}{11}$",
+      "$\\frac{2}{11}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -3992,10 +3992,10 @@
     "subject": "English",
     "question": "Choose the pair that is out of place:",
     "options": [
-      "assist/abet",
-      "hate/abhor",
-      "native/immigrant",
-      "sharp/acute"
+      "$\\frac{assist}{abet}$",
+      "$\\frac{hate}{abhor}$",
+      "$\\frac{native}{immigrant}$",
+      "$\\frac{sharp}{acute}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,

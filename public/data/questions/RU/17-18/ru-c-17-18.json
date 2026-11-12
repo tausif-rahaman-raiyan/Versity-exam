@@ -556,10 +556,10 @@
     "ruSection": "A",
     "question": "এসিডের শক্তির কোন ক্রমটি সঠিক?",
     "options": [
-      "H_2SO_3 > HCIO>HNO_3>H_2PO",
-      "HNO_3 > H_3PO_4 > H_2SO_3>HCIO",
-      "HCIO> HNO_2>H_2PO_4>H_2SO_4",
-      "H_2PO_4>H_2SO_3>HNO_3>HCIO"
+      "H_2SO_3 > HCIO>$\\text{HNO}_3$>H_2PO",
+      "$\\text{HNO}_3$ > H_3PO_4 > H_2SO_3>HCIO",
+      "HCIO> HNO_2>H_2PO_4>$\\text{H}_2\\text{SO}_4$",
+      "H_2PO_4>H_2SO_3>$\\text{HNO}_3$>HCIO"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -756,8 +756,8 @@
     "ruSection": "A",
     "question": "(CH_3)_3CBr ও NaOH-এর বিক্রিয়ার শ্রেণি-",
     "options": [
-      "S_N1",
-      "S_N2",
+      "$\\text{S}_\\text{N}1$",
+      "$\\text{S}_\\text{N}2$",
       "E_1",
       "E_2"
     ],
@@ -804,7 +804,7 @@
     "number": 33,
     "subject": "Chemistry",
     "ruSection": "A",
-    "question": "জলীয় 5.0 x 10^-4M H_2SO_4 দ্রবনের pH-",
+    "question": "জলীয় 5.0 x 10^-4M $\\text{H}_2\\text{SO}_4$ দ্রবনের pH-",
     "options": [
       "2.0",
       "1.5",
@@ -929,7 +929,7 @@
     "number": 38,
     "subject": "Chemistry",
     "ruSection": "A",
-    "question": "$\\lim_{x \\to 0} \\frac{\\sin{x} °}{x}$ =কত?",
+    "question": "$\\lim_{x \\to 0} \\frac{\\sin{x} ^\\circ}{x}$ =কত?",
     "options": [
       "1",
       "$\\frac{180}{\\pi}$",
@@ -1033,8 +1033,8 @@
     "options": [
       "tanx°",
       "-tanx°",
-      "$\\frac{\\pi}{180} \\tan{x} °$",
-      "$- \\frac{\\pi}{180} \\tan{x} °$"
+      "$\\frac{\\pi}{180} \\tan{x} ^\\circ$",
+      "$- \\frac{\\pi}{180} \\tan{x} ^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -1881,7 +1881,7 @@
       "[1-(-1)^n]",
       "0",
       "1",
-      "1/2 [ 1-(-1)^n]"
+      "$\\frac{1}{2}$ [ 1-(-1)^n]"
     ],
     "correctAnswer": 3,
     "answerVerified": true,

@@ -684,9 +684,9 @@
     "question": "বেনজিনের নাইট্রেশনে নিচের কোন বিক্রিয়ক সেটটি ব্যবহৃত হয়?",
     "options": [
       "$NaNO_3\\ and\\ dil.HNO_3$",
-      "$Dil.HNO_3\\ and\\ dil.H_2SO_4$",
+      "$Dil.$\\text{HNO}_3$\\ and\\ dil.H_2SO_4$",
       "$NaNO_2\\ and\\ dil.HCl$",
-      "$Conc.HNO_3\\ and\\ conc.H_2SO_4$"
+      "$Conc.$\\text{HNO}_3$\\ and\\ conc.H_2SO_4$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -1224,9 +1224,9 @@
     "question": "2g অক্সিজেনের মধ্যে কতটি অক্সিজেন অণু আছে?",
     "options": [
       "1.882 ‌‌× 10^22",
-      "3.764 × 10^22",
-      "7.529 ×10^22",
-      "8.255 × 10^22"
+      "$3.764 \\times 10^{22}$",
+      "$7.529 \\times 10^{22}$",
+      "$8.255 \\times 10^{22}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -2423,9 +2423,9 @@
     "subject": "English",
     "question": "The common man is ____ rich ____ famous.",
     "options": [
-      "neither/nor",
-      "either/or",
-      "but/and",
+      "$\\frac{neither}{nor}$",
+      "$\\frac{either}{or}$",
+      "$\\frac{but}{and}$",
       "not only/but also"
     ],
     "correctAnswer": 0,
@@ -3626,9 +3626,9 @@
     "subject": "Mathematics",
     "question": "$\\frac{x ²}{p} + \\frac{y ²}{25} = 1$ উপবৃত্তটি (6,4) বিন্দু দিয়ে যায় উপবৃত্তের উৎকেন্দ্রিকতা কত?",
     "options": [
-      "√3/2",
+      "√$\\frac{3}{2}$",
       "100",
-      "3/4",
+      "$\\frac{3}{4}$",
       "5√3"
     ],
     "correctAnswer": 0,
@@ -3698,10 +3698,10 @@
     "subject": "Mathematics",
     "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
     "options": [
-      "$cos15°$",
-      "$tan15°$",
-      "$cos75°$",
-      "$tan75°$"
+      "$cos15^\\circ$",
+      "$tan15^\\circ$",
+      "$cos75^\\circ$",
+      "$tan75^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,

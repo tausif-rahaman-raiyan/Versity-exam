@@ -248,7 +248,7 @@
       "H_2_Te",
       "H_2S",
       "H_2Se_",
-      "H_2O"
+      "$\\text{H}_2\\text{O}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -366,7 +366,7 @@
     "id": "ru-c-12-13-q-016",
     "number": 16,
     "subject": "Chemistry",
-    "question": "একটি নির্দিষ্ট তাপমাত্রায় ও চাপে O_2 গ্যাসের ব্যাপন হার 30m/s হলে উক্ত তাপমাত্রায় CO_2 এর ব্যাপন হার কত?",
+    "question": "একটি নির্দিষ্ট তাপমাত্রায় ও চাপে O_2 গ্যাসের ব্যাপন হার 30m/s হলে উক্ত তাপমাত্রায় $\\text{CO}_2$ এর ব্যাপন হার কত?",
     "options": [
       "35.18 m/s",
       "25.58 m/s",
@@ -630,7 +630,7 @@
     "id": "ru-c-12-13-q-027",
     "number": 27,
     "subject": "Chemistry",
-    "question": "20 mL 0.265 M H_2SO_4 দ্রবণ প্রশমন করতে কত গ্রাম Na_2CO_3 প্রয়োজন হবে?",
+    "question": "20 mL 0.265 M $\\text{H}_2\\text{SO}_4$ দ্রবণ প্রশমন করতে কত গ্রাম Na_2CO_3 প্রয়োজন হবে?",
     "options": [
       "0.567g",
       "0.5851g",
@@ -682,7 +682,7 @@
     "options": [
       "(CH_2O)_X",
       "(CHO)_X",
-      "C_X(H_2O)",
+      "C_X($\\text{H}_2\\text{O}$)",
       "সবগুলোই"
     ],
     "correctAnswer": 0,
@@ -1542,7 +1542,7 @@
     "id": "ru-c-12-13-q-065",
     "number": 65,
     "subject": "Mathematics",
-    "question": "$\\sin65°+\\cos65°=?$",
+    "question": "$\\sin65^\\circ+\\cos65^\\circ=?$",
     "options": [
       "$\\frac{\\sqrt{3}}{2}\\cos40\\degree$",
       "$\\frac{1}{2}\\sin20\\degree$",
@@ -1688,8 +1688,8 @@
     "subject": "Mathematics",
     "question": "$\\left ( - \\sqrt{3} . - \\sqrt{3} \\right )$ এর পোলার স্থানাঙ্ক কত ?",
     "options": [
-      "$\\left ( 6 , \\frac{π}{4} \\right )$",
-      "$\\left ( \\sqrt{3} , \\frac{π}{4} \\right )$",
+      "$\\left ( 6 , \\frac{\\pi}{4} \\right )$",
+      "$\\left ( \\sqrt{3} , \\frac{\\pi}{4} \\right )$",
       "$\\left(2\\sqrt{3}, \\frac{11\\pi}{21}\\right)$",
       "$\\left(\\sqrt{6}, \\frac{5\\pi}{4}\\right)$"
     ],
@@ -1904,10 +1904,10 @@
     "subject": "Physics",
     "question": "750 mm চাপে ও 27°C তাপমাত্রায় 22 mL গ্যাসে কতটি অণু থাকে?",
     "options": [
-      "6.023 × 10^23",
-      "5.306 × 10^18",
-      "5.306 × 10^20",
-      "5.603 × 10^20"
+      "$6.023 \\times 10^{23}$",
+      "$5.306 \\times 10^{18}$",
+      "$5.306 \\times 10^{20}$",
+      "$5.603 \\times 10^{20}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,

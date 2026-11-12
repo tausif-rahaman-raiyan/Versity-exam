@@ -2214,7 +2214,7 @@
     "question": "CH_3CH(OH)CH_2CHO এবং CH_3COCH_2CH_2OH এরমধ্যে পার্থক্য করার জন্য কোন বিকারক ব্যবহার করা যেতে পারে",
     "options": [
       "অম্লীয় K_2Cr_2O_7",
-      "লঘু H_2SO_4",
+      "লঘু $\\text{H}_2\\text{SO}_4$",
       "2,4 ডাই নাইট্রো ফিনাইল হাইড্রাজিন",
       "ফেহলিং দ্রবণ"
     ],
@@ -2357,10 +2357,10 @@
     "subject": "Chemistry",
     "question": "নিম্নোক্ত কোনটি দ্বারা ফেনল থেকে পিকরিক এসিড প্রস্তুত করা হয়?",
     "options": [
-      "HNO_3, H_2SO_4",
-      "H_2SO_4 (30°-100° C)",
-      "লঘু HNO_3",
-      "গাঢ় HNO_3"
+      "$\\text{HNO}_3$, $\\text{H}_2\\text{SO}_4$",
+      "$\\text{H}_2\\text{SO}_4$ (30°-100° C)",
+      "লঘু $\\text{HNO}_3$",
+      "গাঢ় $\\text{HNO}_3$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -2475,12 +2475,12 @@
     "id": "du-18-19-q-104",
     "number": 104,
     "subject": "Chemistry",
-    "question": "নিম্নলিখিত জারণ-বিজারণ বিক্রিয়ার উৎপাদসমূহ কী?K_2Cr_2O_7(aq) + H_2SO_4(aq) + FeSO_4(aq) → Products",
+    "question": "নিম্নলিখিত জারণ-বিজারণ বিক্রিয়ার উৎপাদসমূহ কী?K_2Cr_2O_7(aq) + $\\text{H}_2\\text{SO}_4$(aq) + FeSO_4(aq) → Products",
     "options": [
-      "K_2SO_4 . Fe_2(SO_4)_3 . H_2O",
-      "K_2SO_4 . Cr_2(SO_4)_3 . H_2O",
-      "Cr_2(SO_4)_3 . Fe_2(SO_4)_3 . H_2O",
-      "K_2SO_4 . Cr_2(SO_4)_3 . Fe_2(SO_4)_3 . H_2O"
+      "K_2SO_4 . Fe_2(SO_4)_3 . $\\text{H}_2\\text{O}$",
+      "K_2SO_4 . Cr_2(SO_4)_3 . $\\text{H}_2\\text{O}$",
+      "Cr_2(SO_4)_3 . Fe_2(SO_4)_3 . $\\text{H}_2\\text{O}$",
+      "K_2SO_4 . Cr_2(SO_4)_3 . Fe_2(SO_4)_3 . $\\text{H}_2\\text{O}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2499,7 +2499,7 @@
     "id": "du-18-19-q-105",
     "number": 105,
     "subject": "Chemistry",
-    "question": "যৌগ X (C_6H_12O) অম্লীয় Na_2Cr_2O_7 দ্বারা জারিত হয়ে Y যৌগ হয়। Y যৌগটি অল্প পরিমাণ গাঢ় H_2SO_4 এর উপস্থিতিতে ইথানলের সাথে বিক্রিয়া করে Z যৌগ গঠন করে।Z এর সংকেত কী ?",
+    "question": "যৌগ X (C_6H_12O) অম্লীয় Na_2Cr_2O_7 দ্বারা জারিত হয়ে Y যৌগ হয়। Y যৌগটি অল্প পরিমাণ গাঢ় $\\text{H}_2\\text{SO}_4$ এর উপস্থিতিতে ইথানলের সাথে বিক্রিয়া করে Z যৌগ গঠন করে।Z এর সংকেত কী ?",
     "options": [
       "CH_3(CH_2)CH =CHCO_2H",
       "CH_3(CH_2)_4 CH_2COCH_2CH_3",
@@ -2573,9 +2573,9 @@
     "subject": "Chemistry",
     "question": "কোন বিক্রিয়ার বিক্রিয়া এনথালপি” “আদর্শ গঠন এনথালপি” নির্দেশ করে?",
     "options": [
-      "CO(g) + 1/2 O_2(g) → CO_2(g)",
-      "H_2(g) + 1/2 O_2(g) → H_2O(g)",
-      "NO(g) + 1/2 O_2(g) → NO_2(g)",
+      "CO(g) + $\\frac{1}{2}$ O_2(g) → $\\text{CO}_2$(g)",
+      "H_2(g) + $\\frac{1}{2}$ O_2(g) → $\\text{H}_2\\text{O}$(g)",
+      "NO(g) + $\\frac{1}{2}$ O_2(g) → NO_2(g)",
       "K(s) + Mn(s) + 2O_2(g) → KMnO_4(s)"
     ],
     "correctAnswer": 1,
@@ -2619,7 +2619,7 @@
     "id": "du-18-19-q-110",
     "number": 110,
     "subject": "Chemistry",
-    "question": "2.2 g C_3H_8 পূর্ণ দহন করে CO_2 ও H_2O তৈরি করতে কত মােল O_2 প্রয়ােজন?",
+    "question": "2.2 g C_3H_8 পূর্ণ দহন করে $\\text{CO}_2$ ও $\\text{H}_2\\text{O}$ তৈরি করতে কত মােল O_2 প্রয়ােজন?",
     "options": [
       "0.05",
       "0.15",
@@ -2741,8 +2741,8 @@
     "subject": "Chemistry",
     "question": "নিম্নোক্ত কোনটি গ্লাসকে ক্ষয় করে?",
     "options": [
-      "H_2SO_4",
-      "HNO_3",
+      "$\\text{H}_2\\text{SO}_4$",
+      "$\\text{HNO}_3$",
       "HCI",
       "HF"
     ],
@@ -3128,7 +3128,7 @@
     "subject": "Physics",
     "question": "একটি তারের ভিতর দিয়ে সাইনুসোইডাল তরঙ্গ প্রবাহিত হলে তারের কণার সর্বোচ্চ দ্রুতি v_s । তারের একটি কণার সর্বোচ্চ সরণের অর্ধেক হলে ঐ কণার দ্রুতি হলো -",
     "options": [
-      "v_s /2",
+      "$\\frac{v_s}{2}$",
       "$\\frac{\\sqrt{3}}{2} v_{s}$",
       "2 v_s",
       "$\\frac{3}{4} v_{s}$"
@@ -3152,9 +3152,9 @@
     "subject": "Physics",
     "question": "কৌণিক ভরবেগের একক কোনটি?",
     "options": [
-      "$kgm^{2}/s$",
-      "$kgm/s^{2}$",
-      "$kgm/s$",
+      "$\\frac{kgm^{2}}{s}$",
+      "$\\frac{kgm}{s^{2}}$",
+      "$\\frac{kgm}{s}$",
       "$kgms^{2}$"
     ],
     "correctAnswer": 0,
@@ -3474,10 +3474,10 @@
     "subject": "Physics",
     "question": "দুটি সমমানের ভেক্টর একটি বিন্দুতে ক্রিয়াশীল। এদের লব্ধির মান যেকোনো একটি ভেক্টরের মানের সমান। ভেক্টর দুটির মধ্যবর্তী কোণের মান কত?",
     "options": [
-      "$0°$",
-      "$90°$",
-      "$120°$",
-      "$180°$"
+      "$0^\\circ$",
+      "$90^\\circ$",
+      "$120^\\circ$",
+      "$180^\\circ$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -3621,7 +3621,7 @@
       "2P",
       "0",
       "P",
-      "P/2"
+      "$\\frac{P}{2}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -3714,8 +3714,8 @@
     "subject": "Mathematics",
     "question": "$\\tan^{-1} \\frac{2}{3} + \\cos^{-1} \\frac{2}{\\sqrt{13}} = ?$",
     "options": [
-      "$\\tan^{-1}(5/9)$",
-      "$\\tan^{-1}(3/7)$",
+      "$\\tan^{-1}(\\frac{5}{9})$",
+      "$\\tan^{-1}(\\frac{3}{7})$",
       "$\\pi/2$",
       "$\\pi/4$"
     ],
@@ -4003,7 +4003,7 @@
     "question": "$\\lim_{x \\to 0} \\frac{\\sin x}{\\tan^{-1}(3x)} = ?$",
     "options": [
       "0",
-      "1/3",
+      "$\\frac{1}{3}$",
       "1",
       "3"
     ],

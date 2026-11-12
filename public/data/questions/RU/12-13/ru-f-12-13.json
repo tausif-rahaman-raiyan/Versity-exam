@@ -103,7 +103,7 @@
     "options": [
       "Mg_3Ca(SiO_3)_4",
       "MgSO_4.7H_2O",
-      "MgCO_3.CaCO_3",
+      "MgCO_3.$\\text{CaCO}_3$",
       "Mg3Si2O5(OH)4"
     ],
     "correctAnswer": 3,
@@ -171,7 +171,7 @@
     "id": "ru-f-12-13-q-008",
     "number": 8,
     "subject": "Chemistry",
-    "question": "H_2SO_4 যৌগে কেন্দ্রীয় পরমাণুর জারণ সংখ্যা -",
+    "question": "$\\text{H}_2\\text{SO}_4$ যৌগে কেন্দ্রীয় পরমাণুর জারণ সংখ্যা -",
     "options": [
       "-2",
       "+4",
@@ -893,7 +893,7 @@
     "subject": "Biology",
     "question": "একটি খাদ্য শৃঙ্খলের মূল শক্তির উৎস কি?",
     "options": [
-      "CO_2",
+      "$\\text{CO}_2$",
       "গ্লুকোজ",
       "সূর্যালোক",
       "O_2"
@@ -1587,7 +1587,7 @@
     "id": "ru-f-12-13-q-067",
     "number": 67,
     "subject": "Physics",
-    "question": "25°C তাপমাত্রায় 22g CO_2 গ্যাসের অণুসমুহের রৈখিক গতিশক্তি-",
+    "question": "25°C তাপমাত্রায় 22g $\\text{CO}_2$ গ্যাসের অণুসমুহের রৈখিক গতিশক্তি-",
     "options": [
       "929.989J",
       "𝟏𝟖𝟓𝟖.𝟗𝟖 J",
@@ -1875,7 +1875,7 @@
     "id": "ru-f-12-13-q-079",
     "number": 79,
     "subject": "Physics",
-    "question": "স্থির তাপমাত্রায় 10^5 Nm^-2 চাপে নির্দিষ্ট ভরের কিছু গ্যাসের আয়তন 0.002 m^3 । 4×10^5 Nm^-2 চাপে গ্যাসটির আয়তন কত?",
+    "question": "স্থির তাপমাত্রায় 10^5 Nm^-2 চাপে নির্দিষ্ট ভরের কিছু গ্যাসের আয়তন 0.002 m^3 । $4 \\times 10^{5}$ Nm^-2 চাপে গ্যাসটির আয়তন কত?",
     "options": [
       "0.0003 m^3",
       "0.0004 m^3",
@@ -2069,10 +2069,10 @@
     "subject": "Mathematics",
     "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
     "options": [
-      "$cos15°$",
-      "$tan15°$",
-      "$cos75°$",
-      "$tan75°$"
+      "$cos15^\\circ$",
+      "$tan15^\\circ$",
+      "$cos75^\\circ$",
+      "$tan75^\\circ$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2141,9 +2141,9 @@
     "subject": "Mathematics",
     "question": "$x^2+y^2=25$ হলে, (-3,4) বিন্দুতে dy/dx=?",
     "options": [
-      "5/6",
-      "1/2",
-      "3/4",
+      "$\\frac{5}{6}$",
+      "$\\frac{1}{2}$",
+      "$\\frac{3}{4}$",
       "5"
     ],
     "correctAnswer": 2,
@@ -2165,10 +2165,10 @@
     "subject": "Mathematics",
     "question": "পরাবৃত্ত y^2 = 2x এবং এর অভিলম্ব দ্বারা বেষ্টিত ক্ষেত্রের ক্ষেত্রফল–",
     "options": [
-      "1/3 sq. units",
-      "8/3 sq. units",
-      "2/3 sq. units",
-      "4/3 sq. units"
+      "$\\frac{1}{3}$ sq. units",
+      "$\\frac{8}{3}$ sq. units",
+      "$\\frac{2}{3}$ sq. units",
+      "$\\frac{4}{3}$ sq. units"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -2286,9 +2286,9 @@
     "question": "(4, –2) বিন্দু থেকে 5x + 12y = 3 রেখার উপর লম্বের দৈর্ঘ্য কত?",
     "options": [
       "8",
-      "8/49",
-      "3/7",
-      "7/13"
+      "$\\frac{8}{49}$",
+      "$\\frac{3}{7}$",
+      "$\\frac{7}{13}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,

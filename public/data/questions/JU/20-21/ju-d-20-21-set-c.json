@@ -1,0 +1,1373 @@
+[
+  {
+    "id": "ju-d-20-21-set-c-q-001",
+    "number": 1,
+    "subject": "English",
+    "question": "Change the sentence, \" He asked me where i had gone the previous day\" into direct form.",
+    "options": [
+      "He asked me, \" where did you go yesterday? \"",
+      "He asked me, \" where he went yesterday?\"",
+      "He said to me, \" where did i go yesterday? \"",
+      "He said to me, \" where did you go yesterday? \""
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #1 ([English(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-002",
+    "number": 2,
+    "subject": "English",
+    "question": "Which pair contains a misspelled word?",
+    "options": [
+      "apprent, acknowledegment",
+      "ambassador, accommodation",
+      "announcement, assimilation",
+      "aggressive, authoritarian"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #2 ([English(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-003",
+    "number": 3,
+    "subject": "English",
+    "question": "Fill in the blank with the appropriate preposition.Human nature is wanting _ morale sometimes.",
+    "options": [
+      "of",
+      "for",
+      "in",
+      "with"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #3 ([English(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-004",
+    "number": 4,
+    "subject": "Chemistry",
+    "question": "এসিড বৃষ্টির জন্য দায়ী কোনটি?",
+    "options": [
+      "কার্বনিক এসিড",
+      "নাইট্রাস এসিড",
+      "ফসফোরিক এসিড",
+      "নাইট্রিক এসিড"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #4 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-005",
+    "number": 5,
+    "subject": "Chemistry",
+    "question": "শুধুমাত্র জৈব পদার্থ অক্সিডাইজ করার জন্য নর্দমায় যে প্রয়োজনীয় পরিমাণ অক্সিজেন থাকে তাকে বলা হয়-",
+    "options": [
+      "Turbidity",
+      "BOD",
+      "COD",
+      "DO"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #5 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-006",
+    "number": 6,
+    "subject": "Chemistry",
+    "question": "ক্যান্সার কোষের অনিয়ন্ত্রিত কোষ বিভাজন নিয়ন্ত্রণ করতে কোন আইসোটোপটি খুবই কার্যকর?",
+    "options": [
+      "^24Na",
+      "^131I",
+      "^230Ra",
+      "^60Co"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #6 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-007",
+    "number": 7,
+    "subject": "Chemistry",
+    "question": "MRI পরীক্ষায় কোন ধরণের ওয়েভ বা রশ্মি ব্যবহৃত হয়?",
+    "options": [
+      "অবলোহিত রশ্মি",
+      "মাইক্রোওয়েভ",
+      "রেডিও ওয়েভ",
+      "গামা রশ্মি"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #7 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-008",
+    "number": 8,
+    "subject": "Chemistry",
+    "question": "সন্ধি তাপমাত্রা কোন ধরণের তড়িৎ পরিবাহীর বৈশিষ্ট্য?",
+    "options": [
+      "গুড কন্ডাক্টর",
+      "সেমি কন্ডাক্টর",
+      "সুপার কন্ডাক্টর",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #8 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-009",
+    "number": 9,
+    "subject": "Chemistry",
+    "question": "C_5H_10O এর মেটামার নয় কোনটি?",
+    "options": [
+      "পেন্টান-3-ওন",
+      "পেন্টান-2-ওন",
+      "3-মিথাইল বিউটান-2-ওন",
+      "বিউটান-2-ওন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #9 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-010",
+    "number": 10,
+    "subject": "Chemistry",
+    "question": "ক্লোরোবেনজিনের মাধ্যমে উর্টজ-ফিটিগ বিক্রিয়ায় তৈরি প্রধান উৎপাদের সাথে ক্ষারীয় KMnO_4 এর বিক্রিয়া ঘটালে কি উৎপন্ন হবে?",
+    "options": [
+      "নাইট্রোবেনজিন",
+      "টলুইন",
+      "বেনজিন",
+      "বেনজয়িক এসিড"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #10 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-011",
+    "number": 11,
+    "subject": "Chemistry",
+    "question": "মিথানল শনাক্তকরণে ব্যবহৃত হয় কোনটি?",
+    "options": [
+      "এক্রোলিন টেস্ট",
+      "সিলভার অ্যাসিটিলাইড",
+      "পটাশিয়াম পেন্টাক্লোরাইড",
+      "রঙ্গিন পিরিডিন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #11 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-012",
+    "number": 12,
+    "subject": "Chemistry",
+    "question": "রেক্টাম অঞ্চলে পানি স্বল্পতার সৃষ্টি করে কোনটি?",
+    "options": [
+      "পটাসিয়াম বেনজোয়েট",
+      "পটাসিয়াম নাইট্রেট",
+      "পটাসিয়াম সরবেট",
+      "সবকটি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #12 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-013",
+    "number": 13,
+    "subject": "Chemistry",
+    "question": "STP তে 100 L NO গ্যাস প্রস্তুত করতে কত লিটার NH_3 প্রয়োজন হবে?",
+    "options": [
+      "100",
+      "50",
+      "150",
+      "200"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #13 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-014",
+    "number": 14,
+    "subject": "Chemistry",
+    "question": "H_2 ও O_2 সংশ্লেষণ বিক্রিয়ায় প্রভাবক হিসেবে কাজ করে কোনটি?",
+    "options": [
+      "Fe",
+      "Pt",
+      "MnO_2",
+      "Cu"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #14 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-015",
+    "number": 15,
+    "subject": "Chemistry",
+    "question": "নিক্টোজেন মৌল কোনটি?",
+    "options": [
+      "C(6)",
+      "Pb(82)",
+      "Zn(30)",
+      "P(15)"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #15 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-016",
+    "number": 16,
+    "subject": "Chemistry",
+    "question": "কোন সমযোজী বৈশিষ্ট্য ক্রমটি সঠিক?",
+    "options": [
+      "$L i C l < N a C l < K C l$",
+      "$L i C l > N a C l > R b C l$",
+      "$R b C l > N a C l > L i C l$",
+      "$K C l > N a C l > R b C l$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #16 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-017",
+    "number": 17,
+    "subject": "Chemistry",
+    "question": "কোনটি TSP সার?",
+    "options": [
+      "CaSO_4",
+      "Ca(H_2PO_4)_2",
+      "CaSO_42H_2O",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #17 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-018",
+    "number": 18,
+    "subject": "Chemistry",
+    "question": "কোনটি সেকেন্ডারি স্ট‍্যান্ডার্ড পদার্থ?",
+    "options": [
+      "$H_{2} C_{2} O_{4}$.2$H_{2} O$",
+      "$H N O_{3}$",
+      "$N a_{2} C O_{3}$",
+      "$K_{2} C r_{2} O_{7}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #18 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-019",
+    "number": 19,
+    "subject": "Chemistry",
+    "question": "পল-বুঙ্গি রাসায়নিক নিক্তিতে 5 মিলিগ্রাম রাইডার ব্যবহার করলে রাইডার ধ্রুবক হবে-",
+    "options": [
+      "1.0 × 10^-4 g",
+      "5.0 × 10^-3 g",
+      "0.5 × 10^-3 g",
+      "10 × 10^-3 g"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #19 ([রসায়ন(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-020",
+    "number": 20,
+    "subject": "General Knowledge",
+    "question": "ক, খ এর পুত্র। খ এবং গ পরস্পরের বোন। ঘ হচ্ছে গ এর মা। চ, ঘ এর পুত্র। চ এর সঙ্গে ক এর সম্পর্ক কি?",
+    "options": [
+      "ক এর মামা চ",
+      "ক, চ এর ভাই",
+      "ক, চ এর বাবা",
+      "চ, ক এর ভাগ্নে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #20 ([মানসিক দক্ষতা(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-021",
+    "number": 21,
+    "subject": "General Knowledge",
+    "question": "যদি ১৯*১১=৮, ২৯*১৯=১০ এবং ৪৮*৩৬=১২ হয় তবে ৬৩*২৫=?",
+    "options": [
+      "৪৩",
+      "৩৮",
+      "৫৮",
+      "২৭"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #21 ([মানসিক দক্ষতা(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-022",
+    "number": 22,
+    "subject": "Mathematics",
+    "question": "১, ৭, ৩১, ১২৭ ধারাটির পঞ্চম সংখ্যা কোনটি?",
+    "options": [
+      "৩৫৬",
+      "৪৩১",
+      "২৯৭",
+      "৫১১"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #22 ([উচ্চতর গণিত(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-023",
+    "number": 23,
+    "subject": "Bangla",
+    "question": "'যা প্রমাণ করা যায়না' - এক কথায় প্রকাশ কি হবে?",
+    "options": [
+      "অপ্রমেয়",
+      "অপসৃত",
+      "অভুতর্পূব",
+      "কোনেটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #23 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-024",
+    "number": 24,
+    "subject": "Bangla",
+    "question": "'নীর : রুধির' এর সমার্থক শব্দজোড় কোনটি?",
+    "options": [
+      "সুবর্ন:সলিল",
+      "ঘন: ধামা",
+      "অপ:মোহ",
+      "বারি:শোণিত"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #24 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-025",
+    "number": 25,
+    "subject": "Bangla",
+    "question": "অব্যয়ীভাব সমাসের উদাহরণ নয় কোনটি?",
+    "options": [
+      "সমবর্ণ",
+      "সম্পূর্ন",
+      "অনুক্ষন",
+      "উপশহর"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #25 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-026",
+    "number": 26,
+    "subject": "Biology",
+    "question": "বায়ুমন্ডলে অক্সিজেনের ঘনত্ব বেড়ে গেলে উদ্ভিদে সালোকসংশ্লেষণের হার-",
+    "options": [
+      "বৃদ্ধি পায়",
+      "হ্রাস পায়",
+      "অপরিবর্তিত থাকে",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #26 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-027",
+    "number": 27,
+    "subject": "Biology",
+    "question": "অভিস্রবণ প্রক্রিয়ায় পানি গ্রহণের ফলে কোষের স্ফীত হওয়ার প্রক্রিয়াকে কী বলে?",
+    "options": [
+      "ইমবাইবিশন",
+      "অভিস্রবণিক চাপ",
+      "টারজিডিটি",
+      "কোনেটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #27 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-028",
+    "number": 28,
+    "subject": "Biology",
+    "question": "টিস্যু কালচার পদ্ধতিটি সর্বপ্রথম প্রয়োগ করেন কে?",
+    "options": [
+      "White",
+      "Halparin",
+      "Haberlandt",
+      "Skoog"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #28 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-029",
+    "number": 29,
+    "subject": "Biology",
+    "question": "পামফার্ন হিসেবে পরিচিত কোনটি?",
+    "options": [
+      "Cycas",
+      "Cynthia",
+      "Ginkgo",
+      "Gnetum"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #29 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-030",
+    "number": 30,
+    "subject": "Biology",
+    "question": "পুস্প সংকেতে চিহ্নটি কী ধরনের ফুলের জন্য ব্যবহৃত হয়?",
+    "options": [
+      "একপ্রতিসম",
+      "বহুপ্রতিসম",
+      "অপ্রতিসম",
+      "কোনেটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "questionImageUrls": [
+      "assets/questions/JU/20-21/ju-d-20-21-set-c/q-030-question-ac3956.png"
+    ],
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #30 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-031",
+    "number": 31,
+    "subject": "Biology",
+    "question": "সূর্য থেকে আগত আলোকশক্তির শতকরা কত ভাগ সালোকসংশ্লেষনে ব্যয় হয়?",
+    "options": [
+      "১০",
+      "১",
+      "০.১",
+      "০.০১"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #31 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-032",
+    "number": 32,
+    "subject": "Biology",
+    "question": "কোনটি প্রি -mRNA পরির্মাজনা প্রক্রিয়ার অংশ নয়?",
+    "options": [
+      "টেইলিং",
+      "স্প্যানিং",
+      "স্প্লাইসিং",
+      "ক্যাপিং"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #32 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-033",
+    "number": 33,
+    "subject": "Biology",
+    "question": "গ্যামিট গঠনের ঠিক পূর্বে ডিপ্লয়েড জীবে মায়োসিস ঘটলে তাকে কী বলে?",
+    "options": [
+      "জাইগোটিক মাইসোসিস",
+      "ইকুয়েশনাল মাইটোসিস",
+      "ইকোয়েশনাল মায়োসিস",
+      "টার্মিনাল মায়োসিস"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #33 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-034",
+    "number": 34,
+    "subject": "Biology",
+    "question": "ভাইরাসজনিত রোগ কোনটি?",
+    "options": [
+      "গমের টুন্ডু",
+      "ধানের পাতা ধ্বসা",
+      "কলার বানচি টপ",
+      "গমের মরিচা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #34 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-035",
+    "number": 35,
+    "subject": "Biology",
+    "question": "কোন পর্বের প্রাণিরা দ্বিস্তরী?",
+    "options": [
+      "Chordata",
+      "Cnidaria",
+      "Annelida",
+      "Platyhelminthes"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #35 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-036",
+    "number": 36,
+    "subject": "Biology",
+    "question": "হাইড্রার জননাঙ্গ সৃষ্টি হয় কোন ঋতুতে?",
+    "options": [
+      "হেমন্ত ও শীত",
+      "গ্রীষ্ম ও বর্ষা",
+      "গ্রীষ্ম ও শীত",
+      "শীত ও বসন্ত"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #36 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-037",
+    "number": 37,
+    "subject": "Biology",
+    "question": "ঘাসফড়িং এর এন্টেনার ফ্লাজেলাম কতটি?",
+    "options": [
+      "২৬",
+      "২৫",
+      "২৪",
+      "২২"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #37 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-038",
+    "number": 38,
+    "subject": "Biology",
+    "question": "পাকস্থলি প্রাচীরের চীফ কোষ থেকে কোনটি নিঃসৃত হয়?",
+    "options": [
+      "পেপসিনোজেন",
+      "HCl",
+      "মিউকাস",
+      "গ্যাস্ট্রিন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #38 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-039",
+    "number": 39,
+    "subject": "Biology",
+    "question": "কোন গ্রন্থি ট্রিপসিন নিঃসরণ করে?",
+    "options": [
+      "লালাগ্রন্থি",
+      "অগ্ন্যাশয়",
+      "যকৃত",
+      "গ্যাস্ট্রিক গ্রন্থি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #39 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-040",
+    "number": 40,
+    "subject": "Biology",
+    "question": "কার্ডিয়াক চক্রের কোন দশার সময়কাল ০.১ সেকেন্ড?",
+    "options": [
+      "অলিন্দের সিস্টোল",
+      "অলিন্দে ডায়াস্টোল",
+      "নিলয়ের সিস্টোল",
+      "নিলয়ের ডায়াস্টোল"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #40 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-041",
+    "number": 41,
+    "subject": "Biology",
+    "question": "বৃক্কের নিচের প্রান্ত কোন কশেরুকার উপরে অবস্থিত?",
+    "options": [
+      "থোরাসিক",
+      "লাম্বার",
+      "স্যাক্রাল",
+      "কক্কিজিয়াল"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #41 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-042",
+    "number": 42,
+    "subject": "Biology",
+    "question": "ডায়াফ্রামে কোন স্নায়ু বিদ্যমান?",
+    "options": [
+      "ফ্রেনিক",
+      "ভেগাস",
+      "ক্রেনিয়াল",
+      "গ্লসোফেরিঞ্জিয়াল"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #42 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-043",
+    "number": 43,
+    "subject": "Biology",
+    "question": "কোন কশেরুকায় ওডোন্টোয়েড প্রসেস রয়েছে?",
+    "options": [
+      "এটলাস",
+      "এক্সিস",
+      "ভার্টিব্রা প্রমিনেন্স",
+      "থোরাসিক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #43 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-044",
+    "number": 44,
+    "subject": "Biology",
+    "question": "বিপরীত জোড়া বৈশিষ্ট্যের মনোহাইব্রিড ক্রসে ২য় বংশধরে প্রকট ও প্রচ্ছন্ন বৈশিষ্ট্যের অনুপাত-",
+    "options": [
+      "১ঃ৩",
+      "২ঃ৪",
+      "৩ঃ১",
+      "১ঃ৪"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #44 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-045",
+    "number": 45,
+    "subject": "Biology",
+    "question": "মেন্ডেলের দ্বিতীয় সূত্রের ব্যতিক্রম কোনটি?",
+    "options": [
+      "লিথাল জিন",
+      "সমপ্রকটতা",
+      "পরিপূরক জিন",
+      "অসম্পূর্ণ প্রকটতা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #45 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-046",
+    "number": 46,
+    "subject": "Biology",
+    "question": "রুই মাছের পুচ্ছ পাখনায় পাখনা রশ্মির সংখ্যা কত?",
+    "options": [
+      "১৫-১৬টি",
+      "১৮-২০টি",
+      "৫-৬টি",
+      "৩০-৩৫টি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #46 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-047",
+    "number": 47,
+    "subject": "Biology",
+    "question": "পরাগনালির গর্ভাশয়মুখী যাত্রার ক্ষেত্রে পোরোগেমি দেখা যায় কোন উদ্ভিদে?",
+    "options": [
+      "লাউ",
+      "কুমড়া",
+      "আম",
+      "ঝাউ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #47 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-048",
+    "number": 48,
+    "subject": "Biology",
+    "question": "স্ট্যাকিওজ কোন ধরনের কার্বোহাইড্রেট?",
+    "options": [
+      "ডাইস্যাকারাইড",
+      "পেন্টাস্যাকারাইড",
+      "টেট্রাস্যাকারাইড",
+      "ট্রাইস্যাকারাইড"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #48 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-049",
+    "number": 49,
+    "subject": "Biology",
+    "question": "আনস্যাচুরেটেড ফ্যাটি এসিড নয় কোনটি?",
+    "options": [
+      "অলিক",
+      "লিনোলিক",
+      "লিনোলেনিক",
+      "স্টিয়ারিক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #49 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-050",
+    "number": 50,
+    "subject": "Biology",
+    "question": "বাডিং এর মাধ্যমে অঙ্গজ জনন সমপন্নকারী শৈবাল কোনটি?",
+    "options": [
+      "Pandorina",
+      "Protosiphon",
+      "Prochlorococcus",
+      "Pithophora"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #50 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-051",
+    "number": 51,
+    "subject": "Biology",
+    "question": "পোষক দেহ থেকে খাদ্য শোষণকারী হাইফাকে কী বলে?",
+    "options": [
+      "পাইলিয়াস",
+      "রাইজমর্ফ",
+      "হস্টোরিয়াম",
+      "অ্যানুলাস"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #51 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-052",
+    "number": 52,
+    "subject": "Biology",
+    "question": "ব্রায়োফাইট উদ্ভিদের জননাঙ্গের বৈশিষ্ট্য কোনটি?",
+    "options": [
+      "এককোষী ও বন্ধ্যাকোষ দ্বারা আবৃত",
+      "বহুকোষী ও বন্ধ্যাকোষ দ্বারা আবৃত",
+      "এককোষী ও বন্ধ্যাকোষ দ্বারা আবৃত নয়",
+      "বহুকোষী ও বন্ধ্যাকোষ দ্বারা আবৃত নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #52 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-053",
+    "number": 53,
+    "subject": "Biology",
+    "question": "কোরিওন এর কাজ কোনটি?",
+    "options": [
+      "ভ্রুণের রেচনে সাহায্য করা",
+      "অমরা গঠনে সাহায্য করে",
+      "ভ্রুণের শ্বসনে সাহায্য করে",
+      "ভ্রূণকে শুষ্কতার হাত থেকে রক্ষা করে"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #53 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-054",
+    "number": 54,
+    "subject": "Biology",
+    "question": "এন্টিবডি উৎপাদনকারী কোষ কোনটি?",
+    "options": [
+      "T cell",
+      "ঘাতক কোষ",
+      "মনোসাইট ও ম্যাক্রফেজ",
+      "B cell"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #54 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-055",
+    "number": 55,
+    "subject": "Biology",
+    "question": "কমপ্লিমেন্ট প্রোটিন যে প্রক্রিয়ায় ব্যাকটেরিয়া বা অন্যান্য অণুজীব ধ্বংস করে তাকে কি বলে?",
+    "options": [
+      "বিশ্লিষ্টকরণ",
+      "অপসোনাইজেশন",
+      "প্রশমন",
+      "স্তুপীকরণ"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #55 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-056",
+    "number": 56,
+    "subject": "Biology",
+    "question": "হৃৎপিণ্ড সংকোচন নিয়ন্ত্রণ করে কোন হরমোন?",
+    "options": [
+      "থাইরক্সিন",
+      "গ্লুকোকর্টিকয়েড",
+      "অ্যাড্রেনালিন",
+      "সোমাটোস্ট্যাটিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #56 ([জীববিজ্ঞান(31)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-20-21-set-c-q-057",
+    "number": 57,
+    "subject": "General Knowledge",
+    "question": "সুন্দরবন পূর্ব অভয়ারণ্যটি বাংলাদেশের কোন কোন জেলা নিয়ে গঠিত নয়?",
+    "options": [
+      "খুলনা- সাতক্ষীরা-বরগুনা",
+      "সাতক্ষীরা-বরগুনা-বাগেরহাট",
+      "বাগেরহাট-খুলনা-সাতক্ষীরা",
+      "খুলনা-সাতক্ষীরা-যশোর"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "20-21",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_20-21_SET_C_46d72064.txt",
+      "sourceLocation": "Question #57 ([সাধারণ জ্ঞান(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

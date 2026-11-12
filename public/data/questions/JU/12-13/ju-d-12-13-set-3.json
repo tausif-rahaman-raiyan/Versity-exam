@@ -1,0 +1,1274 @@
+[
+  {
+    "id": "ju-d-12-13-set-3-q-001",
+    "number": 1,
+    "subject": "Chemistry",
+    "question": "এসিটালডিহাইড-এর স্ফুটনাংক কত?",
+    "options": [
+      "-20°C",
+      "+20°C",
+      "-80°C",
+      "+80°C"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #1 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-002",
+    "number": 2,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি পিরিডিনের গঠন?",
+    "options": [
+      "[IMAGE: https://assets.chorcha.net/lbNqDjMiFo1OCs7KW9zYy.png]",
+      "[IMAGE: https://assets.chorcha.net/AS5XPdty6wS__OmRoXKP1.png]",
+      "[IMAGE: https://assets.chorcha.net/KM8m0ymZcGSvb3bNGIlVy.png]",
+      "[IMAGE: https://assets.chorcha.net/tTAjMfLIMFW-NBIGLF-J6.png]"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #2 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-003",
+    "number": 3,
+    "subject": "Chemistry",
+    "question": "নিম্নাক্ত বিক্রিয়ায় তাপমাত্রার প্রভাব কি হবে?2SO_2(g) +O_2(g)⇌2SO_3(g) , ΔH =-197 kJ/mol",
+    "options": [
+      "তাপমাত্রা বাড়ালে বিক্রিয়া পশ্চাৎমুখী হবে",
+      "তাপমাত্রা বাড়ালে SO_3 উৎপাদন বৃদ্ধি পাবে",
+      "তাপমাত্রা কমালে বিক্রিয়া পশ্চাৎমুখী হবে",
+      "তাপমাত্রা কমালে SO_3 বিয়ােজিত হবে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #3 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-004",
+    "number": 4,
+    "subject": "Chemistry",
+    "question": "দীপ শিখায় ম্যাগনেশিয়াম কোন বর্ণ উৎপন্ন করে?",
+    "options": [
+      "ইটের মত লাল",
+      "টকটকে লাল",
+      "কাঁচা আপেলের মত সবুজ",
+      "কোনােটিই নয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #4 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-005",
+    "number": 5,
+    "subject": "Chemistry",
+    "question": "নিম্মের পরিবর্তন কোন প্রকারের এনথালপি?$\\frac{1}{2}$ Cl_2(g)→CI(g), ΔH°=+121 KJ/mol",
+    "options": [
+      "উর্দ্ধপাতন",
+      "বাষ্পীয়করণ",
+      "পরমাণুকরণ",
+      "ল্যাটিস"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #5 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-006",
+    "number": 6,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি গ্রুপ VIA এর মৌল ?",
+    "options": [
+      "N",
+      "P",
+      "As",
+      "Se"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #6 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-007",
+    "number": 7,
+    "subject": "Chemistry",
+    "question": "নিচের বিক্রিয়াটির সমতা সাধনে a, b, c, d এবং e-এর মানের সঠিক ক্ৰমবিন্যাস কোনটি? aCu+ bHNO_3→ cCu(NO_3)_2+dNO+eH_2O",
+    "options": [
+      "3, 8, 3, 4, 2.",
+      "3, 8, 3, 2, 4",
+      "8, 3, 2, 3, 4.",
+      "3, 2, 4, 8, 3"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #7 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-008",
+    "number": 8,
+    "subject": "Chemistry",
+    "question": "তড়িৎ বিশ্লেষণের সময় একসঙ্গে একাধিক আয়ন থাকলে নিচের কোন আয়নটি আগে চার্জমুক্ত হবে?",
+    "options": [
+      "Zn^2+",
+      "Al^3+",
+      "Mg^2+",
+      "Ca^2+"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #8 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-009",
+    "number": 9,
+    "subject": "Chemistry",
+    "question": "CH_3-CH_2-CH_2-NH_2 ও CH_3-NH-CH_2-CH_3 যৌগ দুটি কোন সমাণুতা প্রদর্শন করে?",
+    "options": [
+      "শিকল বা কেন্দ্রীন সমাণুতা",
+      "কার্যকরী মূলক সমাণুতা",
+      "অবস্থান সমাণুতা",
+      "কোনােটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #9 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-010",
+    "number": 10,
+    "subject": "Chemistry",
+    "question": "জারণ-বিজারণ বিক্রিয়ায় H_2^(+2)C_2^(+3)O_4 যখন C^(+4)O_2 এ পরিবর্তিত হয়, তখন C মৌলটি-",
+    "options": [
+      "একটি ইলেকট্রন বর্জন করে",
+      "একটি ইলেকট্রন গ্রহণ করে",
+      "দুইটি ইলেকট্রন বর্জন করে",
+      "দুইটি ইলেকট্রন গ্রহণ করে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #10 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-011",
+    "number": 11,
+    "subject": "Chemistry",
+    "question": "HCI (0.01 M) দ্রবণের pH কত?",
+    "options": [
+      "2",
+      "12",
+      "1",
+      "13"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #11 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-012",
+    "number": 12,
+    "subject": "Chemistry",
+    "question": "নিম্নোক্ত কোন মৌলটির আয়নীকরণ শক্তি সবচেয়ে কম?",
+    "options": [
+      "F",
+      "N",
+      "Li",
+      "O"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #12 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-013",
+    "number": 13,
+    "subject": "Chemistry",
+    "question": "অনার্দ্র AICI_3 এর উপস্থিতিতে ফেনলের এস্টারকে উত্তপ্ত করলে ফেনল এস্টারের আণবিক পুনর্বিন্যাস ঘটে এবং অর্থো ও প্যারা হাইড্রোক্সিকিটোন উৎপন্ন হয়। বিক্রিয়াটির নাম-",
+    "options": [
+      "ল্যাডারার-ম্যানাসে",
+      "ইটার্ড",
+      "ফ্রিজ পুনর্বিন্যাস",
+      "ক্লেইজেন-স্মিড"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #13 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-014",
+    "number": 14,
+    "subject": "Chemistry",
+    "question": "মিথাইল-ম্যাগানেশিয়াম আয়ােডাইডের সাথে মিথান্যালের বিক্রিয়ায় উৎপন্ন যৌগকে আর্দ্রবিশ্লেষণ করলে কোন যৌগটি উৎপন্ন হয়?",
+    "options": [
+      "ইথাইল এমিন",
+      "ইথান্যাল",
+      "ইথানল",
+      "মিথানল"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #14 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-015",
+    "number": 15,
+    "subject": "Chemistry",
+    "question": "ওয়েস্ট্রন এর সংকেত কোনটি?",
+    "options": [
+      "CHCl_2-NO_2",
+      "CHCl_2-CHCl_2",
+      "CHCl=CCl_2",
+      "CCl_3-$\\text{CO}_2$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #15 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-016",
+    "number": 16,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি মনোক্লিনিক নয়?",
+    "options": [
+      "ধাতব সালফার",
+      "জিপসাম",
+      "ব্লু-ভিট্রিওল",
+      "গ্রীণ ভিট্রিওল"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #16 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-017",
+    "number": 17,
+    "subject": "Chemistry",
+    "question": "মিথেন গঠনের সময় কোন হাইব্রিডাইজেশন ঘটে?",
+    "options": [
+      "sp^4",
+      "sp^3",
+      "sp^2",
+      "sp"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #17 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-018",
+    "number": 18,
+    "subject": "Chemistry",
+    "question": "39°C তাপমাত্রায় 1.0 atm চাপে 200L হাইড্রোজেন তৈরি করতে কি পরিমাণ লৌহ প্রয়ােজন? [Fe+$\\text{H}_2\\text{SO}_4$=FeSO_4+H_2]",
+    "options": [
+      "437.5g",
+      "175g",
+      "9.80Kg",
+      "451.9Kg"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #18 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-019",
+    "number": 19,
+    "subject": "Biology",
+    "question": "কোন এনজাইমের প্রভাবে স্টার্চ মল্টোজে পরিণত হয়?",
+    "options": [
+      "ম্যাল্টেজ",
+      "জাইমেজ",
+      "ল্যাক্টেজ",
+      "অ্যামাইলেজ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #19 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-020",
+    "number": 20,
+    "subject": "Biology",
+    "question": "কোনটি অত্যাবশ্যকীয় এমাইনো এসিড নয় ?",
+    "options": [
+      "লিউসিন",
+      "ফিনাইল এলানিন",
+      "লাইসিন",
+      "অ্যালানিন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #20 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-021",
+    "number": 21,
+    "subject": "Biology",
+    "question": "মানব হৎপিণ্ডের অ‍্যাট্রিয়ামের সিস্টোলের সময়কাল কত?",
+    "options": [
+      "০.১ সেকেন্ড",
+      "০.২ সেকেন্ড",
+      "০.৩ সেকেন্ড",
+      "0.৪ সেকেন্ড"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #21 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-022",
+    "number": 22,
+    "subject": "Biology",
+    "question": "নিচের কোন উপ -পর্যায়ে বাইভ্যালেন্ট দশা দেখা যায়?",
+    "options": [
+      "লেপ্টোটিন",
+      "জাইগোটিন",
+      "প্যাকাইটিন",
+      "ডিপ্লোটিন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #22 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-023",
+    "number": 23,
+    "subject": "Biology",
+    "question": "\"Historia Plantarum Universalis\" গ্রন্থের রচয়িতা কে?",
+    "options": [
+      "থিওফ্রাস্টাস",
+      "ডি ক্যান্ডোল",
+      "জাঁ বাউহিন",
+      "অটো ব্রুনফেলস"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #23 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-024",
+    "number": 24,
+    "subject": "Biology",
+    "question": "কেসিনোজেন কোন ধরনের প্রোটিন?",
+    "options": [
+      "লিপোপ্রোটিন",
+      "ক্রোমোপ্রোটিন",
+      "ফ্ল্যাভোপ্রোটিন",
+      "ফসফোপ্রোটিন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #24 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-025",
+    "number": 25,
+    "subject": "Biology",
+    "question": "মানুষের প্রতিটি বৃক্ক-এ কয়টি নেফ্রন থাকে?",
+    "options": [
+      "৫-৭ লক্ষ",
+      "১০-১২ লক্ষ",
+      "২০-২৫ লক্ষ",
+      "১৫-১৭ লক্ষ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #25 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-026",
+    "number": 26,
+    "subject": "Biology",
+    "question": "আবৃতবীজী উদ্ভিদে ডিম্বক অন্তঃত্বক -এর নিষেক পরবর্তী দশা কোনটি?",
+    "options": [
+      "টেগামেন",
+      "টেষ্টা",
+      "হাইলাম",
+      "নষ্ট হয়ে যায়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #26 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-027",
+    "number": 27,
+    "subject": "Biology",
+    "question": "মানবদেহের করােটিকার স্ফেনয়েড অস্থির সংখ্যা কয়টি?",
+    "options": [
+      "১টি",
+      "২টি",
+      "৩টি",
+      "৪টি"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #27 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-028",
+    "number": 28,
+    "subject": "Biology",
+    "question": "একবীজপত্রী উদ্ভিদের কান্ডের ভাষ্কুলার বান্ডল-",
+    "options": [
+      "মুক্ত সমপার্শ্বীয়",
+      "বদ্ধ সমপার্শ্বীয়",
+      "অরীয়",
+      "কেন্দ্রিক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #28 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-029",
+    "number": 29,
+    "subject": "Biology",
+    "question": "f_2 জনুতে ৯:৭ ফিনোটাইপিক অনুপাত প্রাপ্তির কারণ -",
+    "options": [
+      "অসম্পূর্ণ প্রকটতা",
+      "ঘাতক জিন",
+      "পরিপূরক জিন",
+      "এপিস্ট্যাসিস"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #29 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-030",
+    "number": 30,
+    "subject": "Biology",
+    "question": "প্রোটিন জাতীয় খাদ্য সঞ্চয়কারী লিউকোপ্লাস্ট নিচের কোনটি?",
+    "options": [
+      "অ্যামাইলোপ্লাস্ট",
+      "ইলাইওপ্লাস্ট",
+      "অ্যালিউরোপ্লাস্ট",
+      "টনোপ্লাস্ট"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #30 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-031",
+    "number": 31,
+    "subject": "Biology",
+    "question": "প্রাণিবিদ্যার কোন শাখায় Platthelminthes পর্বভুক্ত প্রাণীদের সম্বন্ধে আলোচনা করা হয়?",
+    "options": [
+      "Nematology",
+      "Helmonthology",
+      "Entomology",
+      "Conchology"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #31 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-032",
+    "number": 32,
+    "subject": "Biology",
+    "question": "তেলাপােকার ওমাটিডিয়ামে কর্নিয়াজেন কোষের নিচে দীর্ঘকায় চারটি কোষকে কি বলা হয়?",
+    "options": [
+      "রেটিনুলার কোষ",
+      "রেটিনাল সিথ",
+      "ক্রিস্টালাইন কোণ কোষ,",
+      "রঞ্জক আবরণ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #32 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-033",
+    "number": 33,
+    "subject": "Biology",
+    "question": "Aurelia aurita কোন পর্বের অন্তর্ভুক্ত প্রাণী?",
+    "options": [
+      "Protozoa",
+      "Porifera",
+      "Cnidaria",
+      "Echinodermata"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #33 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-034",
+    "number": 34,
+    "subject": "Biology",
+    "question": "মানবদেহের কোথায় সুক্রেজ এনজাইম পাওয়া যায়?",
+    "options": [
+      "লালারসে",
+      "পাকস্থলীরসে",
+      "অগ্ন্যাশয় রসে",
+      "আন্ত্রিকরসে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #34 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-035",
+    "number": 35,
+    "subject": "Biology",
+    "question": "কোন হরমােন রক্তে ক্যালসিয়ামের মাত্রা নিয়ন্ত্রণ করে?",
+    "options": [
+      "গ্লুকাগন",
+      "ইনসুলিন",
+      "থাইরক্সিন",
+      "প্যারাথরমোন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #35 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-036",
+    "number": 36,
+    "subject": "Biology",
+    "question": "সমগ্র স্নায়ুতন্ত্র কোন ভ্রুণীয় স্তর হতে গঠিত হয়?",
+    "options": [
+      "Ectoderm",
+      "Porifera",
+      "Cnidaria",
+      "Echinodermata"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #36 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-037",
+    "number": 37,
+    "subject": "Biology",
+    "question": "হাইড্রোসেরির কোন পর্যায়ে pistia জন্মাতে দেখা যায়?",
+    "options": [
+      "নিমজ্জিত পর্যায়",
+      "ভাসমান পর্যায়",
+      "নল-খাগড়া পর্যায়",
+      "গুল্মভূমি পর্যায়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #37 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-038",
+    "number": 38,
+    "subject": "Biology",
+    "question": "মাটি -কণার চারদিকে ফিল্মের ন্যায় পাতলা আবরণ হিসেবে সংলগ্ন থাকা পানিকে বলা হয়-",
+    "options": [
+      "কণাজাত",
+      "কণাবিশোষিত",
+      "অভিকর্ষীয়",
+      "কৈশিক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #38 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-039",
+    "number": 39,
+    "subject": "Biology",
+    "question": "যে সকল জার্মিনাল কোষ থেকে ডিম্বাণু উৎপন্ন হয় তাদেরকে কি বলে?",
+    "options": [
+      "উওগোনিয়া",
+      "গ্যামেট",
+      "উওসাইট",
+      "প্রিমোর্ডিয়াল কোষ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #39 ([জীববিজ্ঞান(21)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-040",
+    "number": 40,
+    "subject": "Bangla",
+    "question": "সন্ধির ক্ষেত্রে কোনটি ঠিক নয় ?",
+    "options": [
+      "আ + ঐ =ঐ",
+      "অ + ঐ =ঐ",
+      "অ + ঔ = ঔ",
+      "ও + উ=ও"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #40 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-041",
+    "number": 41,
+    "subject": "Bangla",
+    "question": "'অচল' এর সমার্থক শব্দ কোনটি?",
+    "options": [
+      "ভূধর",
+      "পিক",
+      "বাঁধা",
+      "মেদিনী"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #41 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-042",
+    "number": 42,
+    "subject": "Bangla",
+    "question": "'তোমার এরুপ ব্যবহার অনুচিত' বাক্যটি কোন প্রকরণের ?",
+    "options": [
+      "অনুজ্ঞা",
+      "নেতিবাচক",
+      "অস্তিবাচক",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #42 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-043",
+    "number": 43,
+    "subject": "English",
+    "question": "Choose the correct passive form of the sentence- 'Where did you see him?'",
+    "options": [
+      "Where did he seen by you?",
+      "Where was he see by you?",
+      "Where was seen by you?",
+      "Where was he seen by you?"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #43 ([English(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-044",
+    "number": 44,
+    "subject": "English",
+    "question": "Choose the appropriate preposition in the sentence. \"He died --- overwork.\"",
+    "options": [
+      "of",
+      "from",
+      "for",
+      "by"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #44 ([English(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-045",
+    "number": 45,
+    "subject": "English",
+    "question": "Complete the sentence \"Hardly had he reached the college ____\" using appropriate words.",
+    "options": [
+      "when the examination began",
+      "then the examination began",
+      "when the examination begins",
+      "then the examination"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #45 ([English(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-046",
+    "number": 46,
+    "subject": "English",
+    "question": "Find the meaning of the underlined word in the sentence .'He Pretended that it was his car.'",
+    "options": [
+      "claimed",
+      "denied",
+      "insisted",
+      "said falsely"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #46 ([English(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-047",
+    "number": 47,
+    "subject": "English",
+    "question": "Change the sentence \"Everybody wishes to be happy.\" into interrogative form.",
+    "options": [
+      "Who does wish to be happy?",
+      "Who doesn't wish to be happy?",
+      "Whoever doesn't wish to be happy?",
+      "Who wishes to be happy?"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #47 ([English(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-048",
+    "number": 48,
+    "subject": "Mathematics",
+    "question": "পৃথিবী তার নিজ কক্ষপথে ২৪ ঘন্টায় একটি পূর্ণ আবর্তন(৩৬০°) করে। ৮০° আবর্তনে পৃথিবীর কত সময় লাগবে?",
+    "options": [
+      "৩ ঘন্টা ৪০ মিনিট",
+      "৪ ঘন্টা ৩০ মিনিট",
+      "৫ ঘন্টা ২০ মিনিট",
+      "৬ ঘন্টা ৩০ মিনিট"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #48 ([উচ্চতর গণিত(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-049",
+    "number": 49,
+    "subject": "Mathematics",
+    "question": "একটি ঝুড়িতে আপেল এবং কমলা মিলিয়ে ৩৭টি ফল আছে। প্রতিটি আপেল ১৯ টাকা এবং কমলা ১১ টাকা দরে কেনা হয়েছে। সবগুলো ফল কিনতে যদি ৫৫৯ টাকা খরচ হয় তবে আপেল ও কমলার দামের পার্থক্য কত?",
+    "options": [
+      "১৬৩",
+      "১৯৮",
+      "৩৬১",
+      "পার্থক্য নেই"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #49 ([উচ্চতর গণিত(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-050",
+    "number": 50,
+    "subject": "Mathematics",
+    "question": "10 টি সংখ্যার যোগফল ৩৩২। এদের প্রথম ৪টির গড় ২৫ এবং শেষ ৫ টির গড় ৩৪। পঞ্চম সংখ্যাটি কত?",
+    "options": [
+      "60",
+      "64",
+      "62",
+      "50"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #50 ([উচ্চতর গণিত(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-051",
+    "number": 51,
+    "subject": "General Knowledge",
+    "question": "সঠিক বন্ধনীর ব্যবহার হয়েছে নিচের কোন সমীকরণে?",
+    "options": [
+      "(৪+৩)×১০-৬÷২=৩১",
+      "৪+৩×(১০-৬)÷২=৩১",
+      "৪+(৩×১০)-৬÷২=৩১",
+      "৪+(৩×১০-৬)÷২=৩১"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #51 ([মানসিক দক্ষতা(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-052",
+    "number": 52,
+    "subject": "General Knowledge",
+    "question": "তিনটি ক্রমিক সংখ্যার যোগফল ৮০৪ হলে বৃহত্তম সংখ্যাটি কত?",
+    "options": [
+      "২৭১",
+      "২৬৯",
+      "২৭২",
+      "২৭০"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #52 ([মানসিক দক্ষতা(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-d-12-13-set-3-q-053",
+    "number": 53,
+    "subject": "General Knowledge",
+    "question": "আরিফ তার স্কুল থেকে ১১ মিটার উত্তরে হাঁটার পর ৬ মিটার পশ্চিমে হাঁটল। এরপর সে ৩ মিটার দক্ষিণে গিয়ে তার বাড়ি পৌঁছাল। আরিফের স্কুল থেকে তার বাড়ির দূরত্ব কত?",
+    "options": [
+      "২১ মিটার",
+      "১০ মিটার",
+      "১৭ মিটার",
+      "১৪ মিটার"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_D_12-13_SET_3_7ddf969f.txt",
+      "sourceLocation": "Question #53 ([সাধারণ জ্ঞান(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

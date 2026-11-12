@@ -1,0 +1,2237 @@
+[
+  {
+    "id": "ju-a-11-12-set-1-q-001",
+    "number": 1,
+    "subject": "Physics",
+    "question": "দুটি ভেক্টর একই দিকে ক্রিয়ারত থাকলে লব্ধির মান হবে-",
+    "options": [
+      "সর্বাধিক",
+      "সর্বনিম্ন",
+      "শূন্য",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #1 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-002",
+    "number": 2,
+    "subject": "Physics",
+    "question": "একটি চাকার ভর 10 kg এবং জড়তার ভ্রামক 2.5 kgm^2 হলে চক্রগতির ব্যাসার্ধ হবে-",
+    "options": [
+      "1m",
+      "1.5m",
+      "0.5m",
+      "5m"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #2 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-003",
+    "number": 3,
+    "subject": "Physics",
+    "question": "বৃহস্পতির ভর ও ব্যাসার্ধ যথাক্রমে $1.9 \\times 10^{27}$ kg এবং $7 \\times 10^{7}$ m হলে এর মুক্তিবেগ হবে-",
+    "options": [
+      "$60.2 \\times 10^{24}$ ms^-1",
+      "$6.02 \\times 10^{4}$ ms^-1",
+      "$6.02 \\times 10^{3}$ ms^-1",
+      "$16.02 \\times 10^{3}$ ms^-1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #3 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-004",
+    "number": 4,
+    "subject": "Physics",
+    "question": "যদি একটি গোলকের পর্যায়কাল T এবং দৈর্ঘ্য L হয় তাহলে-",
+    "options": [
+      "$T \\propto \\frac{1}{\\sqrt{L}}$",
+      "$T \\propto \\sqrt{L}$",
+      "$T \\propto \\frac{1}{L}$",
+      "$T \\propto L$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #4 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-005",
+    "number": 5,
+    "subject": "Physics",
+    "question": "একটি তারের উৎপাদনের ইয়ং এর গুনাংক $2 \\times 10^{11}$ N/M^2 ।^ তারটির দৈর্ঘ্য 15% বৃদ্ধি করতে প্রযুক্ত পীড়ন হবে-",
+    "options": [
+      "$13 \\times 10^{10}$ Nm^2",
+      "$3 \\times 10^{10}$ Nm^-2",
+      "$1 \\times 10^{10}$ Nm^-2",
+      "$9 \\times 10^{10}$ Nm^-2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #5 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-006",
+    "number": 6,
+    "subject": "Physics",
+    "question": "27°C তাপমাত্রায় 3gm নাইট্রোজেনের মোট গতিশক্তি কত?",
+    "options": [
+      "398.66j",
+      "400.86j",
+      "410.66j",
+      "420.66j"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #6 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-007",
+    "number": 7,
+    "subject": "Physics",
+    "question": "তাপের যান্ত্রিক সমতার একক হল-",
+    "options": [
+      "জুল/ ক্যালরী",
+      "ওয়াট",
+      "ক্যালরী",
+      "একক নেই"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #7 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-008",
+    "number": 8,
+    "subject": "Physics",
+    "question": "একটি ইঞ্জিন 3400 J তাপ গ্রহণ করে এবং 2400 J তাপ বর্জন। ইঞ্জিনের দক্ষতা হবে-",
+    "options": [
+      "39.41%",
+      "2141%",
+      "29.41%",
+      "49..41%"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #8 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-009",
+    "number": 9,
+    "subject": "Physics",
+    "question": "একটি পোস্ট অফিস বক্সের অনুপাত বাহু দুটিতে 100 ওহম ও 10 ওহম রোধ যুক্ত করা হল। তৃতীয় বাহুতে 511 ওহম রোধ যুক্ত করায় গ্যালভানোমিটারে শূন্য বিক্ষেপ পাওয়া গেল। চতুর্থ বাহুতে অজানা রোধের মান-",
+    "options": [
+      "0.511",
+      "5.11",
+      "51.1",
+      "511"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #9 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-010",
+    "number": 10,
+    "subject": "Physics",
+    "question": "100kg ভরের একটি পাথরকে ক্রেনের সাহায্যে 0.1 ms$^{-1}$ বেগে ছাদের উপর উঠানো হলে ক্রেনের ক্ষমতা কত ?",
+    "options": [
+      "98 W",
+      "100 W",
+      "0.98 W",
+      "কোনটি নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #10 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-011",
+    "number": 11,
+    "subject": "Physics",
+    "question": "কত প্রাবল্যের একটি বৈদ্যুতিক ক্ষেত্রের মধ্যে একটি ইলেকট্রন স্থাপন করলে ইলেকট্রনটি তার ওজনের সমান বল অনূভব করবে?",
+    "options": [
+      "5.57 × 10^-11 Newton/C",
+      "5.57 × 10^-11 C/Newton",
+      "$5.57 \\times 10^{11}$ Newton/C",
+      "$5.57 \\times 10^{11}$ C/Newton"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #11 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-012",
+    "number": 12,
+    "subject": "Physics",
+    "question": "চৌম্বক প্রাবল্য একটি -",
+    "options": [
+      "ভেক্টর রাশি",
+      "স্কেলার রাশি",
+      "ভেক্টর ও স্কেলার রাশি",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #12 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-013",
+    "number": 13,
+    "subject": "Physics",
+    "question": "অর্ধপরিবাহী ডায়োডকে বলা হয়?",
+    "options": [
+      "অ্যামপ্লিফায়ার",
+      "রেকটিফায়ার",
+      "ট্রানজিস্টর",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #13 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-014",
+    "number": 14,
+    "subject": "Physics",
+    "question": "দৈর্ঘ্য সংকোচন ও সময় প্রসারণ কোথা হতে পাওয়া যায়?",
+    "options": [
+      "মাইকেলসন-মোর্লির পরীক্ষা হতে",
+      "আইনস্টাইনের পরীক্ষা হতে",
+      "লরেঞ্জের রূপান্তর বিধি হতে",
+      "গ্যালিলিও রূপান্তর বিধি হতে"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #14 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-015",
+    "number": 15,
+    "subject": "Physics",
+    "question": "কোন বম্ভুর ভর $8.36 \\times 10^{-3} \\mathrm{~kg}$ । এর পুরোটাই শক্তিতে রূপান্তরিত করা হল। কি পরিমাণ শক্তি উৎপন্ন হবে?",
+    "options": [
+      "$75.24 \\times 10^{13} \\mathrm{~J}$",
+      "$8.36 \\times 10^{13} \\mathrm{~J}$",
+      "$75.24 \\times 10^{16} \\mathrm{~J}$",
+      "Option D"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #15 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-016",
+    "number": 16,
+    "subject": "Physics",
+    "question": "অ্যাক্টিনিয়াম থেকে বিটা রশ্মি বিকিরিত হয়ে কী উৎপন্ন হয়?",
+    "options": [
+      "থোরিয়াম",
+      "পোলোনিয়াম",
+      "রেডন",
+      "ইউরেনিয়াম"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #16 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-017",
+    "number": 17,
+    "subject": "Physics",
+    "question": "একটি বস্তু 4m/s^-2 সম-ত্বরণে যাত্রা শুরু করল। 6s পর বস্তুটির বেগ হবে-",
+    "options": [
+      "8 m/s",
+      "4 m/s",
+      "24 m/s",
+      "32 m/s"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #17 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-018",
+    "number": 18,
+    "subject": "Physics",
+    "question": "কৌণিক বেগের মাত্রা সমীকরণ -",
+    "options": [
+      "LT^-1",
+      "T^-1",
+      "LT^-2",
+      "LT"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #18 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-019",
+    "number": 19,
+    "subject": "Physics",
+    "question": "3 kg ভরের বস্তুকে 20m উচ্চতা থেকে ছেড়ে দেয়া হলে ভূ-পৃষ্ঠকে স্পর্শ করার ঠিক পূর্ব মূহুর্তে এর গতিশক্তি হবে-",
+    "options": [
+      "588 J",
+      "313.6 J",
+      "330 J",
+      "400J"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #19 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-020",
+    "number": 20,
+    "subject": "Physics",
+    "question": "কোন মাধ্যমে 640 Hz ও 480 Hz কম্পাংকের দুটি শব্দ তরঙ্গের তরঙ্গদৈর্ঘ্যর পার্থক্য 1 m হলে ঐ মাধ্যমের শব্দ তরঙ্গের বেগ হবে-",
+    "options": [
+      "8120 m/s",
+      "1820 m/s",
+      "1920 m/s",
+      "9120 m/s"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #20 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-021",
+    "number": 21,
+    "subject": "Physics",
+    "question": "শব্দের তীব্রতার একক হল-",
+    "options": [
+      "ওয়াট",
+      "ওয়াট-মি^2",
+      "ওয়াট/মি",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #21 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-022",
+    "number": 22,
+    "subject": "Physics",
+    "question": "B ও H এর অভিমুখ -",
+    "options": [
+      "বিপরীত দিকে",
+      "পরস্পর লম্ব",
+      "একই দিকে",
+      "কোনটিই নশ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #22 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-023",
+    "number": 23,
+    "subject": "Physics",
+    "question": "কোন পরিবাহীকে তড়িৎ প্রবাহের ফলে এর পাশে একটি চৌম্বক ক্ষেত্রের সৃষ্টি হয় এটি আবিষ্কার করেন-",
+    "options": [
+      "নিউটন",
+      "ফ্যারাডে",
+      "লেনজ",
+      "ওয়েরস্টেড"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #23 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-024",
+    "number": 24,
+    "subject": "Physics",
+    "question": "একটি উত্তল দর্পণের ফোকাস দূরত্ব 10cm মেরু হতে 15cm রে একটি যন্ত্র স্থাপন করা হল। প্রতিবিম্বের অবস্থান ও প্রকৃতি-",
+    "options": [
+      "দর্পণের পশ্চাতে ও অবাস্তব",
+      "দর্পণের সামনে ও বাস্তব",
+      "দর্পণের পশ্চাতে ও বাস্তব",
+      "দর্পণের সামনে ও বাস্তব"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #24 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-025",
+    "number": 25,
+    "subject": "Physics",
+    "question": "সমোত্তল ও সমাবতল লেন্সে আলোক কেন্দ্রের অবস্থান কোথায়?",
+    "options": [
+      "লেন্সের ভেতর",
+      "বক্রতলের মেরুতে",
+      "লেন্সের বাইরে",
+      "লেন্সের ভেতরে মধ্য বিন্দুতে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #25 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-026",
+    "number": 26,
+    "subject": "Physics",
+    "question": "এক ব্যক্তি একটি বিবর্ধক কাচ চোখের খুব নিকটে ধরে দেখল কাঁচটির বিবর্ধন ক্ষমতা 12 । চোখের সুস্পষ্ট দর্শনের ন্যূনতম 0.25m হলে বিবর্ধক কাচটির ফোকাস দূরত্ব কত?",
+    "options": [
+      "2.3m",
+      "0.23m",
+      "0.023m",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #26 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-027",
+    "number": 27,
+    "subject": "Physics",
+    "question": "আলো ঘন হতে লঘুতর মাধ্যমে প্রবেশ কালে প্রতিসৃত রশ্মি-",
+    "options": [
+      "অভিলম্ব হতে দূরে সরে যায়",
+      "অভিলম্বের নিকটবর্তি হয়",
+      "দিক পরিবর্তন করে না",
+      "বিভেদতল ঘেঁষে যায়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #27 ([পদার্থবিজ্ঞান - বহুনির্বাচনী(27)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-028",
+    "number": 28,
+    "subject": "Chemistry",
+    "question": "লোহার গলনাংক কত °C?",
+    "options": [
+      "1063",
+      "1540",
+      "3600",
+      "3900"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #28 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-029",
+    "number": 29,
+    "subject": "Chemistry",
+    "question": "স্থির উষ্ণতার কোন নির্দিষ্ট পরিমান গ্যাসের আয়তন তার চাপের ব্যস্তানুপাতিক। এ সূত্রটি-",
+    "options": [
+      "বয়েলের",
+      "চার্লসের",
+      "গে - লুসাকের",
+      "অ্যাভোগ্যাড্রোর"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #29 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-030",
+    "number": 30,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি কম্পোজিট কণিকা?",
+    "options": [
+      "ইলেকট্রন, প্রোটন ও নিউট্রন",
+      "আলফা কণা ও ডিউটেরন",
+      "পজিট্রন ও মেসন",
+      "ফোটন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #30 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-031",
+    "number": 31,
+    "subject": "Chemistry",
+    "question": "কোনটি ল্যানথানাইড সারির মৌল নয়?",
+    "options": [
+      "Ce",
+      "Pm",
+      "Lu",
+      "Fm"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #31 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-032",
+    "number": 32,
+    "subject": "Chemistry",
+    "question": "প্রমাণ দ্রবণের জন্য কোনটি সেকেন্ডারী স্ট্যান্ডার্ড পদার্থ?",
+    "options": [
+      "HCl",
+      "Na_2CO_3",
+      "K_2Cr_2O_7",
+      "অক্সালিক এসিড"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #32 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-033",
+    "number": 33,
+    "subject": "Chemistry",
+    "question": "[Fe(NO)($\\text{H}_2\\text{O}$)_5]SO_4 এর মধ্যে আয়রনের Fe জারণ মান কতো?",
+    "options": [
+      "+1",
+      "+2",
+      "+3",
+      "0"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #33 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-034",
+    "number": 34,
+    "subject": "Chemistry",
+    "question": "পানির অণুকে$∠HOH$ এর মান কত?",
+    "options": [
+      "$120\\degree$",
+      "$109\\degree$",
+      "$107\\degree$",
+      "$104.5\\degree$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #34 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-035",
+    "number": 35,
+    "subject": "Chemistry",
+    "question": "এসিডের শক্তির কোন ক্রমটি সঠিক?",
+    "options": [
+      "H_2SO_3 > HCIO>$\\text{HNO}_3$>H_2PO",
+      "$\\text{HNO}_3$ > H_3PO_4 > H_2SO_3>HCIO",
+      "HCIO> HNO_2>H_2PO_4>$\\text{H}_2\\text{SO}_4$",
+      "H_2PO_4>H_2SO_3>$\\text{HNO}_3$>HCIO"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #35 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-036",
+    "number": 36,
+    "subject": "Chemistry",
+    "question": "ইলেকট্রোলাইটিক তড়িৎ পরিবাহী কোনটি?",
+    "options": [
+      "FeSO_4 (দ্রবণ)",
+      "Fe",
+      "Cu",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #36 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-037",
+    "number": 37,
+    "subject": "Chemistry",
+    "question": "ZN(s) । Zn^2+(aq) ।। Cu^2+(aq)। Cu(s) কোষের অ্যানোড ও ক্যাথোডের প্রমাণ বিজারণ বিভব যথাক্রমে -0.76 V ও +0.34 V। কোষটির সামগ্রিক বিভব হবে-",
+    "options": [
+      "1.10 V",
+      "-1.00 V",
+      "0.42 V",
+      "-0.42 V"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #37 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-038",
+    "number": 38,
+    "subject": "Chemistry",
+    "question": "কোন যৌগটি অধিক সমযোজী?",
+    "options": [
+      "MgCl_2",
+      "FeCl_3",
+      "CaCl_2",
+      "AlCl_3"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #38 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-039",
+    "number": 39,
+    "subject": "Chemistry",
+    "question": "কোনটিকে কিসেরাইট বলা হয়?",
+    "options": [
+      "MgCO_3",
+      "MgSO_4",
+      "MgSO_4.$\\text{H}_2\\text{O}$",
+      "MgSO_4.7H_2O"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #39 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-040",
+    "number": 40,
+    "subject": "Chemistry",
+    "question": "সালফান কী?",
+    "options": [
+      "98% $\\text{H}_2\\text{SO}_4$",
+      "100% $\\text{H}_2\\text{SO}_4$",
+      "96% $\\text{H}_2\\text{SO}_4$",
+      "94% $\\text{H}_2\\text{SO}_4$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #40 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-041",
+    "number": 41,
+    "subject": "Chemistry",
+    "question": "কোনটি উভধর্মী অক্সইড?",
+    "options": [
+      "$Li_2O$",
+      "$PbO$",
+      "$CO_2$",
+      "$Na_2O$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #41 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-042",
+    "number": 42,
+    "subject": "Chemistry",
+    "question": "কোনটি কীটনাশক নয়?",
+    "options": [
+      "অলড্রিন",
+      "ডেলড্রিন",
+      "ক্লোরোফর্ম",
+      "ডি.ডি.টি"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #42 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-043",
+    "number": 43,
+    "subject": "Chemistry",
+    "question": "কোনটি ডাচ মেটাল?",
+    "options": [
+      "Zn : 40-20 %, Cu : 60-80 %",
+      "Zn : 35-40 %, Cu : 30-50 %",
+      "Zn : 20 %, Cu : 80 %",
+      "Zn :30 %, Cu : 70 %"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #43 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-044",
+    "number": 44,
+    "subject": "Chemistry",
+    "question": "কোনটি বিষম চাক্রিক অ্যারোমেটিক যৌগ?",
+    "options": [
+      "বেনজিন",
+      "টলুইন",
+      "পিরিডিন",
+      "ন্যাপথালিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #44 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-045",
+    "number": 45,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি অর্থো-প্যারা নির্দেশক মূলক ?",
+    "options": [
+      "-SO_3H",
+      "-Br",
+      "-COOH",
+      "-CHО"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #45 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-046",
+    "number": 46,
+    "subject": "Chemistry",
+    "question": "কোনটি অসম্পৃক্ত হাইড্রোকার্বন-",
+    "options": [
+      "মিথেন",
+      "ইথেন",
+      "বিউটেন",
+      "প্রোপিন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #46 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-047",
+    "number": 47,
+    "subject": "Chemistry",
+    "question": "উটর্জ বিক্রিয়ার প্রধান বিক্রিয়ক কোনটি?",
+    "options": [
+      "অ্যালকেন",
+      "অ্যালকিন",
+      "অ্যালকাইল হ্যালাইড",
+      "অ্যালকাইন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #47 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-048",
+    "number": 48,
+    "subject": "Chemistry",
+    "question": "ফ্রিডেল ক্রাফট বিক্রিয়ার প্রধান বিক্রিয়ক কোনটি?",
+    "options": [
+      "টলুইন",
+      "বেনজিন",
+      "ইথাইল বেনজিন",
+      "ডাইফিনাইল"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #48 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-049",
+    "number": 49,
+    "subject": "Chemistry",
+    "question": "গ্রিনহাউজ প্রভাবের জন্য সর্বাপেক্ষা দায়ী কোন গ্যাসটি?",
+    "options": [
+      "$CO$",
+      "$NO_2$",
+      "$CH_4$",
+      "$CO_2$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #49 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-050",
+    "number": 50,
+    "subject": "Chemistry",
+    "question": "সেকেন্ডারী অ্যালকোহলের কার্যকরী মূলক কোনটি?",
+    "options": [
+      "$-CHO$",
+      "$-CH_2-OH$",
+      "[IMAGE: https://assets.chorcha.net/o8DNyG1x13oD5tKSo_WbO.png]",
+      "[IMAGE: https://assets.chorcha.net/6TZEWc4qyRbuY8j1-G_CF.png]"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #50 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-051",
+    "number": 51,
+    "subject": "Chemistry",
+    "question": "স্যান্ডমেয়ার বিক্রিয়ার প্রধান বিক্রিয়ক কোনটি?",
+    "options": [
+      "ব্রোমোবেনজিন",
+      "সায়ানোবেনজিন",
+      "বেনজিন ডায়াজোনিয়াম লবণ",
+      "নাইট্রোবেনজিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #51 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-052",
+    "number": 52,
+    "subject": "Chemistry",
+    "question": "আমোনিয়াম সায়ানেটকে উত্তপ্ত করলে কী উৎপন্ন হয়?",
+    "options": [
+      "মিথাইল সায়ানেট",
+      "ইথাইল সায়ানেট",
+      "প্রোপাইল সায়ানেট",
+      "ইউরিয়া"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #52 ([রসায়ন - বহুনির্বাচনী(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-053",
+    "number": 53,
+    "subject": "Chemistry",
+    "question": "কোন প্রথমক্রম বিক্রিয়ার অর্ধায়ু 10 মিনিট বিক্রিয়ার হার ধ্রুবক কত?",
+    "options": [
+      "$6.93 \\times 10^{- 3} \\left ( \\min \\right )^{- 1}$",
+      "$6.93 \\times 10^{- 1} \\left ( \\min \\right )^{- 1}$",
+      "$6.93 \\times 10^{- 2} \\left ( \\min \\right )^{- 1}$",
+      "$4.62 \\times 10^{- 2} \\left ( \\min \\right )^{- 1}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #53 ([বহুনির্বাচনী(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-054",
+    "number": 54,
+    "subject": "Mathematics",
+    "question": "যদি ম্যাট্রিক্স $A= \\begin{bmatrix} -1 & -1 & -1 \\end{bmatrix}$ হয় এবং একটি 3×3 ইউনিট ম্যাট্রিক্স হয় তাহলে $AI$ম্যাট্রিক্স হলো-",
+    "options": [
+      "[0]",
+      "0",
+      "[0,0,0]",
+      "[-1-1-1]"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #54 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-055",
+    "number": 55,
+    "subject": "Mathematics",
+    "question": "Cosθ=$\\frac{4}{5}$, 1-tan^2θ/1+tan^2θ এর মান কত?",
+    "options": [
+      "$\\frac{5}{14}$",
+      "$\\frac{7}{25}$",
+      "$-\\frac{5}{14}$",
+      "$\\frac{5}{15}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #55 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-056",
+    "number": 56,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #56 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-057",
+    "number": 57,
+    "subject": "Mathematics",
+    "question": "$i$ কাল্পনিক সংখ্যা হলে, $i^{161}$ এর মান-",
+    "options": [
+      "1",
+      "-1",
+      "i",
+      "-i"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #57 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-058",
+    "number": 58,
+    "subject": "Mathematics",
+    "question": "x^2 -(3m - 1)x +5m +1 = 0 এর মূলদ্বয় সমান হলে m =?",
+    "options": [
+      "2,3",
+      "3, 5",
+      "3, -1/9",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #58 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-059",
+    "number": 59,
+    "subject": "Mathematics",
+    "question": "ম্যাটিক্স A এর মাত্রা 2 × 3 এবং ম্যাটিক্স B এর মাত্রা 3 × 1 হলে, AB এর মাত্রা-",
+    "options": [
+      "2 × 1",
+      "1 × 2",
+      "2 × 2",
+      "3 × 3"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #59 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-060",
+    "number": 60,
+    "subject": "Mathematics",
+    "question": "$\\left \\lvert \\begin{matrix} 1 & 2 & 3 \\\\ 4 & 8 & 12 \\\\ 3 & 1 & 9 \\end{matrix} \\right \\rvert$ নির্ণায়কের মান-",
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #60 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-061",
+    "number": 61,
+    "subject": "Mathematics",
+    "question": "$\\left ( - \\sqrt{3} . - \\sqrt{3} \\right )$ এর পোলার স্থানাঙ্ক কত ?",
+    "options": [
+      "$\\left ( 6 , \\frac{\\pi}{4} \\right )$",
+      "$\\left ( \\sqrt{3} , \\frac{\\pi}{4} \\right )$",
+      "$\\left(2\\sqrt{3}, \\frac{11\\pi}{21}\\right)$",
+      "$\\left(\\sqrt{6}, \\frac{5\\pi}{4}\\right)$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #61 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-062",
+    "number": 62,
+    "subject": "Mathematics",
+    "question": "x অক্ষ ও (-5, -7) থেকে (4,k) বিন্দুটির দূরত্ব সমান হলে k এর মান-",
+    "options": [
+      "20",
+      "$\\frac{65}{7}$",
+      "$-\\frac{65}{7}$",
+      "-130"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "questionImageUrls": [
+      "assets/questions/JU/11-12/ju-a-11-12-set-1/q-062-question-e96c21.svg"
+    ],
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #62 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-063",
+    "number": 63,
+    "subject": "Mathematics",
+    "question": "(4, -5) বিন্দুগামী x-অক্ষের সমান্তরাল সরলরেখার সমীকরণ-",
+    "options": [
+      "y + 5 = 0",
+      "x - 4 = 0",
+      "y - 5 = 0",
+      "x + 5 =0"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #63 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-064",
+    "number": 64,
+    "subject": "Mathematics",
+    "question": "7x^2 -2y² +12xy -2x +4y -7 =0 সমীকরণটি নির্দেশ করে-",
+    "options": [
+      "বৃত্ত",
+      "উপবৃত্ত",
+      "পরাবৃত্ত",
+      "অধিবৃত্ত"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #64 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-065",
+    "number": 65,
+    "subject": "Mathematics",
+    "question": "(0,9) বিন্দুটি, (1,-4) কেন্দ্র ও 6 ব্যাসার্ধ বিশিষ্ট বৃত্তের-",
+    "options": [
+      "অন্তঃস্থ",
+      "বহিঃস্থ",
+      "উপরিস্থ",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #65 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-066",
+    "number": 66,
+    "subject": "Mathematics",
+    "question": "3x^2 + 6x - 4y -5 =0 পরাবৃত্তের শীর্ষ বিন্দু-",
+    "options": [
+      "(-1, -5/3)",
+      "(1, $\\frac{8}{3}$)",
+      "(1, 2)",
+      "(-1, -2)"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #66 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-067",
+    "number": 67,
+    "subject": "Mathematics",
+    "question": "$f{\\left ( x \\right )} = \\left | x - 1 \\right |$ হলে, f'(1) এর মান-",
+    "options": [
+      "1",
+      "–1",
+      "0",
+      "অসংজ্ঞায়িত"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #67 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-068",
+    "number": 68,
+    "subject": "Mathematics",
+    "question": "f(x) = 2x^2 – 3x + 4 পরাবৃত্তের x = 0 এ স্পর্শকের ঢাল-",
+    "options": [
+      "4",
+      "–3",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #68 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-069",
+    "number": 69,
+    "subject": "Mathematics",
+    "question": "f(x) = 3x^2 - 3x পরাবৃত্তের স্পর্শকের ঢাল শূণ্য হলে, স্পর্শ বিন্দুর ভূজ-",
+    "options": [
+      "0",
+      "$\\frac{1}{2}$",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #69 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-070",
+    "number": 70,
+    "subject": "Mathematics",
+    "question": "$y=4x^2$ বক্ররেখা এবং $x=1$ ও $x=2$ সরলরেখা দ্বারা আবদ্ধ ক্ষেত্রের ক্ষেত্রফল কোনটি ?",
+    "options": [
+      "$\\frac{24}{5}$ বর্গএকক",
+      "$\\frac{32}{3}$ বর্গএকক",
+      "$32$ বর্গএকক",
+      "$\\frac{28}{3}$ বর্গএকক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #70 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-071",
+    "number": 71,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #71 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-072",
+    "number": 72,
+    "subject": "Mathematics",
+    "question": "2x + 3y = 6 রেখাটি-",
+    "options": [
+      "মূলবিন্দুগামী নয়",
+      "মূলবিন্দুগামী",
+      "অনুভূমিক",
+      "উলম্ব"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #72 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-073",
+    "number": 73,
+    "subject": "Mathematics",
+    "question": "$f'(a)=0$এবং $h>0$ অতিক্ষুদ্র মানের জন্য $f'(a+h)<0$ এবং $f'(a-h)>0$ হলে$f(a)-$",
+    "options": [
+      "গুরুমান",
+      "লঘুমান",
+      "অসংজ্ঞায়িত",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #73 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-074",
+    "number": 74,
+    "subject": "Mathematics",
+    "question": "একটি বস্তুকে 40 ms^-1 বেগে অনুভূমিকের সাথে 60^° কোণে উপরের দিকে নিক্ষেপ করা হল। বস্তুটির অনুভূমিক পাল্লা- হবে-",
+    "options": [
+      "1413 m",
+      "114.39 m",
+      "1413.90 m",
+      "141.39 m"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #74 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-075",
+    "number": 75,
+    "subject": "Mathematics",
+    "question": "A={1,3,5,7} হলে n (A×A) এর মান কত?",
+    "options": [
+      "16",
+      "14",
+      "18",
+      "20"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #75 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-076",
+    "number": 76,
+    "subject": "Mathematics",
+    "question": "যদি $-7 < x < -1$ হয়, তবে নিচের কোনটি সত্য?",
+    "options": [
+      "|x+4|<4",
+      "|x+4|<3",
+      "|x+4|<5",
+      "|x+4|<6"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #76 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-077",
+    "number": 77,
+    "subject": "Mathematics",
+    "question": "স্বরবর্ণগুলিকে পৃথক না রেখে \"daughter \" শব্দের অক্ষরগুলো যত প্রকারে সাজানো যায় তা হলো-",
+    "options": [
+      "4380",
+      "4320",
+      "4390",
+      "4300"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #77 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-078",
+    "number": 78,
+    "subject": "Mathematics",
+    "question": "If ${C}_{r}$ denotes the binomial coefficient ${ _{ ; }^{ n }{ C } }_{ r }$ then $\\left( -1 \\right) { C }_{ 0 }^{ 2 }+2{ C }_{ 1 }^{ 2 }+5{ C }_{ 2 }^{ 2 }+......(3n-1){ C }_{ n }^{ 2 }=\\quad$",
+    "options": [
+      "$\\left( 3n-2 \\right) { _{ }^{ 2n }{ C } }_{ n }$",
+      "$\\left( \\cfrac { 3n-2 }{ 2 } \\right) { _{ }^{ 2n }{ C } }_{ n }$",
+      "$\\left( 5+3n \\right) { _{ }^{ 2n }{ C } }_{ n }$",
+      "$\\left( \\cfrac { 3n-5 }{ 2 } \\right) { _{ }^{ 2n }{ C } }_{ n+1 }$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #78 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-079",
+    "number": 79,
+    "subject": "Mathematics",
+    "question": "1.4 + 3.7 + 5.10 + ..... ধারাটির 10 তম পদ পর্যন্ত যোগফল-",
+    "options": [
+      "2200",
+      "2150",
+      "2230",
+      "2245"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #79 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-080",
+    "number": 80,
+    "subject": "Mathematics",
+    "question": "(1 + x)^7 (1 - x)^8 এর বিস্তৃতিতে x^7 এর সহগ কত?",
+    "options": [
+      "30",
+      "32",
+      "35",
+      "40"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #80 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-081",
+    "number": 81,
+    "subject": "Mathematics",
+    "question": "বিকেল 4 টায় ঘন্টার কাটা ও মিনিটের কাটার মধ্যে কোণের পরিমাণ -",
+    "options": [
+      "90°",
+      "180°",
+      "120°",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #81 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-082",
+    "number": 82,
+    "subject": "Mathematics",
+    "question": "p(x)=tan^-1x একটি বিপরীত বৃত্তীয় ফাংশন।p(x) এর রেঞ্জ কত?",
+    "options": [
+      "$\\left ( 0 , \\frac{\\pi}{2} \\right )$",
+      "$\\left ( - \\frac{\\pi}{2} , 0 \\right )$",
+      "$\\left [ - \\frac{\\pi}{2} , \\frac{\\pi}{2} \\right ]$",
+      "$\\left ( - \\frac{\\pi}{2} , \\frac{\\pi}{2} \\right )$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #82 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-083",
+    "number": 83,
+    "subject": "Mathematics",
+    "question": "f(x) = (x- 2)^2 + 2 হলে f(1)=?",
+    "options": [
+      "2",
+      "3",
+      "1",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #83 ([উচ্চতর গণিত - বহুনির্বাচনী(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-084",
+    "number": 84,
+    "subject": "Bangla",
+    "question": "রবীন্দ্রনাথ ঠাকুরের কাব্যগ্রন্থ কোনটি?",
+    "options": [
+      "সোনার তরী",
+      "অগ্নিবীণা",
+      "শিউলিমালা",
+      "চক্রবাক"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #84 ([বাংলা - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-085",
+    "number": 85,
+    "subject": "Bangla",
+    "question": "‘হাভাতে’ কোন সমাস?",
+    "options": [
+      "প্রাদি",
+      "অব্যয়ীভাব",
+      "উপপদ তৎপুরুষ",
+      "বহুব্রীহি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #85 ([বাংলা - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-086",
+    "number": 86,
+    "subject": "Bangla",
+    "question": "'হিতৈষী' এর সন্ধি বিচ্ছেদ হলো-",
+    "options": [
+      "হিতৈ+ঐষী",
+      "হিত+ঐষী",
+      "হিত+এষী",
+      "হিভা+এষী"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #86 ([বাংলা - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-087",
+    "number": 87,
+    "subject": "Bangla",
+    "question": "তৎসম উপসর্গ কোনটি?",
+    "options": [
+      "অজ",
+      "গর",
+      "পরি",
+      "পাতি"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #87 ([বাংলা - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-088",
+    "number": 88,
+    "subject": "General Knowledge",
+    "question": "বীরশ্রেষ্ঠ পদকপ্রাপ্তদের সংখ্যা কত?",
+    "options": [
+      "5",
+      "6",
+      "9",
+      "7"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #88 ([সাধারণ জ্ঞান - বহুনির্বাচনী(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-089",
+    "number": 89,
+    "subject": "General Knowledge",
+    "question": "বাংলাদেশের পাহাড়সমূহ কোন ভূতাত্ত্বিক যুগের?",
+    "options": [
+      "প্লাইসটোসিন",
+      "টারসিয়ারি",
+      "মায়েসিন",
+      "ইয়োসিন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #89 ([সাধারণ জ্ঞান - বহুনির্বাচনী(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-090",
+    "number": 90,
+    "subject": "English",
+    "question": "The synonym of 'desultory' is",
+    "options": [
+      "drive",
+      "disorganized",
+      "organised",
+      "romantic"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #90 ([English - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-091",
+    "number": 91,
+    "subject": "English",
+    "question": "The guest talked _ art and literature. The appropriate preposition in the gap will be-",
+    "options": [
+      "for",
+      "on",
+      "about",
+      "of"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #91 ([English - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-092",
+    "number": 92,
+    "subject": "English",
+    "question": "When he (to find) me, he acted crazy. The right form of verb here will be-",
+    "options": [
+      "found",
+      "finds",
+      "none",
+      "find"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #92 ([English - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-11-12-set-1-q-093",
+    "number": 93,
+    "subject": "English",
+    "question": "The meaning of the phrase \"drag one's feet\" is-",
+    "options": [
+      "ভুল ধরা",
+      "পা গর্তে পড়া",
+      "অমীমাংশিত",
+      "গড়ি-মসি"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "11-12",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_11-12_SET_1_cb284a5e.txt",
+      "sourceLocation": "Question #93 ([English - বহুনির্বাচনী(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

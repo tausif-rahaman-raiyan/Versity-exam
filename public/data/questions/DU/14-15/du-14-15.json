@@ -185,7 +185,7 @@
     "id": "du-14-15-q-008",
     "number": 8,
     "subject": "Physics",
-    "question": "ধরা যাক,CO-60 তেজস্ক্রিয় পদার্থের অর্ধায়ু 5 বৎসর । কত বৎসর পরে ঐ তেজস্ত্রীয় পদার্থের তেজস্ক্রিয়তা কমে প্রাথমিক অবস্থার 1/32 অংশ অবশিষ্ট থাকবে?",
+    "question": "ধরা যাক,CO-60 তেজস্ক্রিয় পদার্থের অর্ধায়ু 5 বৎসর । কত বৎসর পরে ঐ তেজস্ত্রীয় পদার্থের তেজস্ক্রিয়তা কমে প্রাথমিক অবস্থার $\\frac{1}{32}$ অংশ অবশিষ্ট থাকবে?",
     "options": [
       "10 years",
       "16 years",
@@ -313,7 +313,7 @@
       "2R",
       "4R",
       "8R",
-      "R/2"
+      "$\\frac{R}{2}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -626,9 +626,9 @@
     "question": "সমান্তরাল দুটি ধাতব পাতের মধ্যকার দূরত্ব d এবং বিভব পার্থক্য V যদি Q আধানের একটি বিন্দু চার্জ পাত দুটির ঠিক মধ্যবর্তী বিন্দুতে রাখা হয় তবে চার্জটির উপর ক্রিয়াশীল স্থির তড়িৎ বলের মান কত?",
     "options": [
       "2 VQ/d",
-      "VQ/d",
-      "VQ/2d",
-      "dQ/V"
+      "$\\frac{VQ}{d}$",
+      "$\\frac{VQ}{2d}$",
+      "$\\frac{dQ}{V}$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -1490,7 +1490,7 @@
     "id": "du-14-15-q-062",
     "number": 62,
     "subject": "Chemistry",
-    "question": "বিকারকটি-$Ar-CHO$$\\xrightarrow{\\text { বিকারক (Reagent) }} \\xrightarrow{\\mathrm{H}^{+} / \\mathrm{H}_{2} \\mathrm{O}}$$ArCH(OH)COOH$",
+    "question": "বিকারকটি-$Ar-CHO$\\xrightarrow{\\text { বিকারক (Reagent) }} \\xrightarrow{\\mathrm{H}^{+} / \\mathrm{H}_{2} \\mathrm{O}}$ArCH(OH)COOH$",
     "options": [
       "$RMgX$",
       "$HCN$",
@@ -1836,7 +1836,7 @@
     "subject": "Chemistry",
     "question": "বেরিয়াম ক্লোরাইডের জলীয় দ্রবণ পাতলা জলীয় সালফিউরিক এসিড দ্রবণে যোগ করলে সাদা অধঃক্ষেপ তৈরি হয়। এ বিক্রিয়ার আয়নিক সমীকরণটি (অবস্থার সংকেত সহ) হলো-",
     "options": [
-      "$BaCl_2(aq)+H_2SO_4(aq)\\to BaSO_4(s)+HCl(aq)$",
+      "$BaCl_2(aq)+$\\text{H}_2\\text{SO}_4$(aq)\\to BaSO_4(s)+HCl(aq)$",
       "$Ba^{2+}(aq)+SO_4(aq)\\to BaSO_4(s)$",
       "$Ba^{2+}(aq)+2SO_4^-(aq)\\to Ba(SO_4)_2(s)$",
       "$Ba^{2+}(aq)+SO_4^{2-}(aq)\\to BaSO_4(S)$"
@@ -3730,7 +3730,7 @@
     "id": "du-14-15-q-155",
     "number": 155,
     "subject": "Mathematics",
-    "question": "$\\sin20°+\\cos20°$ এর মান কত?",
+    "question": "$\\sin20^\\circ+\\cos20^\\circ$ এর মান কত?",
     "options": [
       "$\\sqrt{2}\\cos25\\degree$",
       "$\\sqrt{2}\\sin25\\degree$",
@@ -3928,8 +3928,8 @@
     "question": "$_{x\\to\\infty}^{\\lim}\\frac{x^2+6x}{2x^2+5}=?$",
     "options": [
       "0",
-      "3/2",
-      "1/2",
+      "$\\frac{3}{2}$",
+      "$\\frac{1}{2}$",
       "1"
     ],
     "correctAnswer": 2,
@@ -3951,10 +3951,10 @@
     "subject": "Mathematics",
     "question": "একটি 13N ওজনের ও একটি 12N ওজনের দুইটি বস্তু একটি ভরবিহীন দড়ির দ্বারা ঘর্ষণ বিহীন কপিকলের উপর ঝুলন্ত। 13 N ওজনের বস্তুর নিম্নমুখী ত্বরণ মুক্তভাবে পড়ন্ত বস্তুর ত্বরণের যতগুণ তা হলো-",
     "options": [
-      "1/12",
-      "1/13",
-      "1/25",
-      "13/25"
+      "$\\frac{1}{12}$",
+      "$\\frac{1}{13}$",
+      "$\\frac{1}{25}$",
+      "$\\frac{13}{25}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,

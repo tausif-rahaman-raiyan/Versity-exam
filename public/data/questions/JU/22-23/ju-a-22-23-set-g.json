@@ -1,0 +1,1898 @@
+[
+  {
+    "id": "ju-a-22-23-set-g-q-001",
+    "number": 1,
+    "subject": "Bangla",
+    "question": "নিচের কোনটি রবীন্দ্রনাথ ঠাকুরের রচনা নয়?",
+    "options": [
+      "চোখের বালি",
+      "ডাকঘর",
+      "দেনাপাওনা",
+      "শেষের কবিতা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #1 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-002",
+    "number": 2,
+    "subject": "Bangla",
+    "question": "নিচের কোনটি উপমান কর্মধারয় সমাস?",
+    "options": [
+      "কাজল কালো",
+      "মমতারস",
+      "জয়পতাকা",
+      "সিংহাসন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #2 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-003",
+    "number": 3,
+    "subject": "Bangla",
+    "question": "নিচের কোন বানানটি অশুদ্ধ?",
+    "options": [
+      "প্রাণীজগত",
+      "পাণিনি",
+      "আইনজীবী",
+      "মরীচিকা"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #3 ([বাংলা(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-004",
+    "number": 4,
+    "subject": "English",
+    "question": "There were books lying about on the floor. ‘‘about’’ is used here as-",
+    "options": [
+      "Adverb",
+      "Adjective",
+      "Preposition",
+      "Pronoun"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #4 ([English(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-005",
+    "number": 5,
+    "subject": "English",
+    "question": "Fill in the blank with suitable preposition : He is alarmed _____ my safety.",
+    "options": [
+      "for",
+      "in",
+      "to",
+      "with"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #5 ([English(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-006",
+    "number": 6,
+    "subject": "English",
+    "question": "What is the synonym of \"Abundant\".",
+    "options": [
+      "Plentiful",
+      "Renounce",
+      "Potency",
+      "Abjure"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #6 ([English(3)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-007",
+    "number": 7,
+    "subject": "Physics",
+    "question": "কোথায় স্পেস স্টেশন স্থাপন করা হয়েছে?",
+    "options": [
+      "সূর্যের কক্ষপথে",
+      "মংগল গ্রহে",
+      "পৃথিবীতে",
+      "পৃথিবীর কক্ষপথে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #7 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-008",
+    "number": 8,
+    "subject": "Physics",
+    "question": "সঠিক উত্তর কোনটি?",
+    "options": [
+      "$\\hat{k} \\times \\hat{j}=\\hat{i}$",
+      "$\\hat{k} \\times \\hat{j}=1$",
+      "$\\hat{k} \\times \\hat{j}=-\\hat{i}$",
+      "$\\hat{k} \\times \\hat{j}=0$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #8 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-009",
+    "number": 9,
+    "subject": "Physics",
+    "question": "একটি শাটল মহাকাশ যানের ভর 1000 kg এবং জ্বালানির ভর 50 kg । জ্বালানি 5 kg/s হারে ব্যবহৃত হলে এবং 150 m/s সুষম দ্রুতিতে নির্গত হলে শাটলের ওপর ধাক্কা কত?",
+    "options": [
+      "250 N",
+      "500 N",
+      "750 N",
+      "1000 N"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #9 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-010",
+    "number": 10,
+    "subject": "Physics",
+    "question": "একটি রাইফেলের গুলি নির্দিষ্ট পুরুত্বের 1টি তক্তা ভেদ করতে পারে। ঐরকম 16 টি তক্তা ভেদ করতে হলে এর বেগ কত হবে?",
+    "options": [
+      "2 গুণ",
+      "4 গুণ",
+      "8 গুণ",
+      "16 গুণ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #10 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-011",
+    "number": 11,
+    "subject": "Physics",
+    "question": "40 kg ভরের কোন বালিকা মাটি থেকে 15 cm উঁচু থেকে লাফিয়ে 60 বার স্কিপিং করল। তার কত শক্তি ব্যয় হলো?",
+    "options": [
+      "3528 J",
+      "4825 J",
+      "2835 J",
+      "3285 J"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #11 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-012",
+    "number": 12,
+    "subject": "Physics",
+    "question": "মঙ্গল গ্রহে মুক্তি বেগ কত?",
+    "options": [
+      "3.3 km/s",
+      "6.5 km/s",
+      "5.1 km/s",
+      "8.8 km/s"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #12 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-013",
+    "number": 13,
+    "subject": "Physics",
+    "question": "64gm অক্সিজেন (O$_2$) গ্যাসের কত গুলো অনু আছে?",
+    "options": [
+      "$N_A$",
+      "$2N_A$",
+      "$32N_A$",
+      "$64N_A$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #13 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-014",
+    "number": 14,
+    "subject": "Physics",
+    "question": "একটি সেমিকন্ডাক্টরের তাপমাত্রা বৃদ্ধি পাওয়ার সাথে সাথে-",
+    "options": [
+      "পরিবাহিতা বৃদ্ধি পায়",
+      "প্রতিরোধ ক্ষমতা বৃদ্ধি পায়",
+      "পারমাণবিক সংখ্যা হ্রাস পায়",
+      "তাপমাত্রার গুণাঙ্ক শূন্য হয়ে যায়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #14 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-015",
+    "number": 15,
+    "subject": "Physics",
+    "question": "নিউক্লিয়ার ফিউশন পৃথিবীর সমমাপের যেকোনো জ্বালানির চেয়ে আনুমানিক কত গুণ বেশি শক্তি সরবরাহ করে?",
+    "options": [
+      "দুই",
+      "লক্ষাধিক",
+      "একশত",
+      "পাঁচ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #15 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-016",
+    "number": 16,
+    "subject": "Physics",
+    "question": "লাল আলো সাধারণত একক স্লিট থেকে অপবর্তন (বিচ্ছুরণ) প্যাটার্ন পর্যবেক্ষণ করতে ব্যবহৃত হয়। যদি লাল আলোর পরিবর্তে নীল আলো ব্যবহার করা হয়, তাহলে অপবর্তন প্যাটার্ন:",
+    "options": [
+      "আরও পরিষ্কার হবে",
+      "সংকুচিত হবে",
+      "প্রসারিত হবে",
+      "দেখা যাবে না"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #16 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-017",
+    "number": 17,
+    "subject": "Physics",
+    "question": "একটি আলোক তরঙ্গের চূড়া অন্য আলোক তরঙ্গের ফাঁদের সাথে মিলিত হলে কি ঘটে?",
+    "options": [
+      "ধ্বংসাত্মক ব্যতিচার",
+      "ধ্বংসাত্মক সমবর্তন",
+      "গঠনমূলক ব্যতিচার",
+      "গঠনমূলক অপবর্তন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #17 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-018",
+    "number": 18,
+    "subject": "Physics",
+    "question": "তিনটি রোধ 20$\\Omega$, 30$\\Omega$ এবং 60$\\Omega$ সমান্তরালভাবে সংযুক্ত, তাদের সম্মিলিত প্রতিরোধের মান-",
+    "options": [
+      "$110~\\Omega$",
+      "$50~\\Omega$",
+      "$20~\\Omega$",
+      "$10~\\Omega$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #18 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-019",
+    "number": 19,
+    "subject": "Physics",
+    "question": "একটি 1.5 V ব্যাটারির সাথে সংযুক্ত থাকাকালীন 0.12 A বহনকারী একটি আলোক বাল্বের রোধ কত হবে?",
+    "options": [
+      "0.18 ohms",
+      "1 ohms",
+      "10 ohms",
+      "12.5 ohms"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #19 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-020",
+    "number": 20,
+    "subject": "Physics",
+    "question": "0.3 কুলম্ব চার্জ সহ একটি 0.3 ফ্যারাড ক্যাপসিটরের বৈদ্যুতিক বিভব পার্থক্য কী?",
+    "options": [
+      "0.3 V",
+      "0 V",
+      "1 V",
+      "3 V"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #20 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-021",
+    "number": 21,
+    "subject": "Physics",
+    "question": "0.20 কেজি রান্নার তেলের তাপমাত্রা 50°C বাড়াতে কত শক্তি প্রয়োজন, যদি এই তেলের আপেক্ষিক তাপ 1800J/(kg°C)?",
+    "options": [
+      "$0.2 \\times 50 \\times 1800$",
+      "$\\frac{0.2}{50 \\times 1800}$",
+      "$\\frac{1800}{0.2 \\times 50}$",
+      "$\\frac{1800}{0.2 \\times 50}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #21 ([পদার্থবিজ্ঞান(15)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-022",
+    "number": 22,
+    "subject": "ICT",
+    "question": "কম্পিউটার নেটওয়ার্কে সুইচের মূল উদ্দেশ্য কি?",
+    "options": [
+      "নেটওয়ার্ক ঠিকানা",
+      "ডেটা এনক্রিপশন",
+      "ভৌত স্তর সংযোগ",
+      "প্যাকেট ফিল্টারিং"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #22 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-023",
+    "number": 23,
+    "subject": "ICT",
+    "question": "NAND গেইটের আউটপুটকে NOT গেইটের মধ্য দিয়ে প্রবেশ করালে কোন গেইট পাওয়া যায়?",
+    "options": [
+      "X-OR",
+      "X-NOR",
+      "OR",
+      "AND"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #23 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-024",
+    "number": 24,
+    "subject": "ICT",
+    "question": "ফ্রিল্যান্সার কে?",
+    "options": [
+      "দীর্ঘমেয়াদি চুক্তিতে কর্মরত ব্যক্তি",
+      "যিনি নিয়মমাফিক ১০টা-০৫টা অফিস করেন",
+      "যিনি স্বাধীনভাবে প্রতিষ্ঠানের কাজ করেন",
+      "সুনির্দিষ্ট কাজের লাইসেন্স নিয়ে কাজ করেন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #24 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-025",
+    "number": 25,
+    "subject": "ICT",
+    "question": "নিচের কোনটি শুধুমাত্র বাংলা ভাষায় ব্যবহৃত অক্ষর এনকোডিং এর উদাহরণ?",
+    "options": [
+      "ASCII",
+      "UTF-8",
+      "OTM-32",
+      "বিজয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #25 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-026",
+    "number": 26,
+    "subject": "ICT",
+    "question": "একটি ফুল অ্যাডার সার্কিটের মূল উদ্দেশ্য কি?",
+    "options": [
+      "যৌগিক অপারেশন সম্পাদন করা",
+      "লজিক্যাল বা অপাশেরন সম্পাদন করা",
+      "একটি ক্যারি ইনপুট সহ দুটি বাইনারি সংখ্যা যোগ করা",
+      "ইনপুট সংকেত উল্টানো"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #26 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-027",
+    "number": 27,
+    "subject": "ICT",
+    "question": "$101101_{2}-11011_{2}=0_{2}$",
+    "options": [
+      "100010",
+      "11110",
+      "100100",
+      "None"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #27 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-028",
+    "number": 28,
+    "subject": "ICT",
+    "question": "কোন প্রজন্মের মোবাইল ফোনে LTE স্ট্যান্ডার্ড অন্তর্ভুক্ত করা হয়েছে?",
+    "options": [
+      "১ম",
+      "২য়",
+      "৩য়",
+      "৪র্থ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #28 ([তথ্য ও যোগাযোগ প্রযুক্তি(7)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-029",
+    "number": 29,
+    "subject": "Chemistry",
+    "question": "চুম্বকীয় কোয়ান্টাম সংখ্যা দ্বারা কি প্রকাশ করা হয়?",
+    "options": [
+      "আকার",
+      "আকৃতি",
+      "অরিয়েনটেশন",
+      "ঘূর্ণন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #29 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-030",
+    "number": 30,
+    "subject": "Chemistry",
+    "question": "[Ar] 3d^5 4s^0 ইলেকট্রন বিন্যাস হলো-Fe^3+Mn^2+Cr^2+নিচের কোনটি সঠিক?",
+    "options": [
+      "i, ii",
+      "ii, iii",
+      "i, iii",
+      "i, ii, iii"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #30 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-031",
+    "number": 31,
+    "subject": "Chemistry",
+    "question": "উদ্দীপক অনুসারে উভধর্মী পদার্থ কোনটি(i) $\\text{HCl} + \\text{HCO}_3^- \\rightleftharpoons \\text{H}_2\\text{CO}_3 + \\text{Cl}^-$(ii) $\\text{HCO}_3^- + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{CO}_3^{2-}$",
+    "options": [
+      "$HCl$",
+      "$H_2O$",
+      "$HCO_3^-$",
+      "$CO_3^{2-}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #31 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-032",
+    "number": 32,
+    "subject": "Chemistry",
+    "question": "বন্ধন শক্তি নির্ভর করে-i. পরমাণুর আকারের উপরii. তড়িৎ ঋণাত্মকতার উপরiii. বন্ধন দৈর্ঘ্যের উপরকোনটি সঠিক?",
+    "options": [
+      "i ও ii",
+      "i ও iii",
+      "ii ও iii",
+      "i, ii ও iii"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #32 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-033",
+    "number": 33,
+    "subject": "Chemistry",
+    "question": "পারমাণবিক অরবিটাল তখনই $\\pi$ বন্ধনে আবদ্ধ হবে যখন-i. দুটি মৌল দ্বি বন্ধন বা ত্রি বন্ধন দ্বারা যুক্ত হয়ii. দুটি অসংকরিত অরবিটাল পাশপাশি অধিক্রমন করেiii. দুটি সংকরিত অরবিটাল পাশপাশি অধিক্রমন করে কোনটি সঠিক?",
+    "options": [
+      "i ও ii",
+      "i ও iii",
+      "ii ও iii",
+      "i, ii ও iii"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #33 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-034",
+    "number": 34,
+    "subject": "Chemistry",
+    "question": "ব্যুরেটের পরিষ্কার করতে ব্যবহৃত হয়?",
+    "options": [
+      "ক্রোমিক এসিড",
+      "সাবান",
+      "ডিটারজেন্ট",
+      "সোডিয়াম বাই কার্বনেট"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #34 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-035",
+    "number": 35,
+    "subject": "Chemistry",
+    "question": "5% NaHCO$_3$ দ্রবণের ঘনমাত্রা কত মোলার?",
+    "options": [
+      "0.15 M",
+      "0.32 M",
+      "0.595 M",
+      "1.06 M"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #35 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-036",
+    "number": 36,
+    "subject": "Chemistry",
+    "question": "ভিনেগার ইথানোয়িক এসিডের শতকরা পরিমাণ কত?",
+    "options": [
+      "$6-10\\%$",
+      "$12-17\\%$",
+      "$15-20\\%$",
+      "$20-25\\%$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #36 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-037",
+    "number": 37,
+    "subject": "Chemistry",
+    "question": "$0.05 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{SO}_{4}$ এর pOH কত?",
+    "options": [
+      "1",
+      "1.30",
+      "12.7",
+      "13"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #37 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-038",
+    "number": 38,
+    "subject": "Chemistry",
+    "question": "$\\mathrm{Ca}_{3} \\mathrm{~N}_{2}+\\mathrm{H}_{2} \\mathrm{O} \\stackrel{\\text { তাপ}}{\\longrightarrow} \\mathrm{Ca}(\\mathrm{OH})_{2}+\\mathrm{NH}_{3}$ বিক্রিয়ার ক্ষেত্রে কোনটি সঠিক?",
+    "options": [
+      "$K_p=K_c$",
+      "$K_{p}=K_{c}(R T)^{-2}$",
+      "$K_{c}=K_{p}(R T)^{-2}$",
+      "$K_{c}=K_{p}(R T)^{2}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #38 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-039",
+    "number": 39,
+    "subject": "Chemistry",
+    "question": "অ্যামোনিয়া যুক্ত AgNO_3 দ্রবণ দ্বারা কোন যৌগ শনাক্ত করা হয়-",
+    "options": [
+      "অ্যালকিন",
+      "অ্যালকোহল",
+      "অ্যালডিহাইড",
+      "অ্যালকাইন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #39 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-040",
+    "number": 40,
+    "subject": "Chemistry",
+    "question": "জৈব এসিড ও অ্যালকোহলের বিক্রিয়ায় উৎপন্ন যৌগে কোন যৌগমূলকটি থাকে?",
+    "options": [
+      "[IMAGE: https://assets.chorcha.net/PMcLdot62Ls2wjShei7Th.png]",
+      "[IMAGE: https://assets.chorcha.net/8p1hWn2nGzjTygpG62XyP.png]",
+      "[IMAGE: https://assets.chorcha.net/zSegaH9rQEEEjXPrqXFIb.png]",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #40 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-041",
+    "number": 41,
+    "subject": "Chemistry",
+    "question": "নাইট্রাইল মূলকের সংকেত কি?",
+    "options": [
+      "$-\\mathrm{C} \\equiv \\mathrm{N}$",
+      "$-\\mathrm{N}=\\mathrm{O}$",
+      "$-\\mathrm{N}=\\mathrm{N}-$",
+      "$\\mathrm{N}_{3}^{-}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #41 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-042",
+    "number": 42,
+    "subject": "Chemistry",
+    "question": "$\\mathrm{CH}_{2}=\\mathrm{C}(\\mathrm{Cl})-\\mathrm{CH}_{2}-\\mathrm{CH}(\\mathrm{Br})-\\mathrm{CH}_{2} \\mathrm{CH}_{3}$ যৌগটির IUPAC নাম-",
+    "options": [
+      "2-ক্লোরো-4-ব্রোমো হেক্সিন-2",
+      "4-ব্রোমো-2-ক্লোরো-5-মিথাইল পেন্টিন",
+      "2-ক্লোরো-4-ব্রোমো-5-মিথাইল পেন্টিন",
+      "4- ব্রোমো-2- ক্লোরো হেক্সিন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #42 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-043",
+    "number": 43,
+    "subject": "Chemistry",
+    "question": "বাস্তব গ্যাস বয়েলের সূত্র মেনে চলে-",
+    "options": [
+      "নিম্ন তাপমাত্রায়",
+      "0^০C তাপমাত্রায়",
+      "কক্ষ তাপমাত্রায়",
+      "খুব উচ্চ তাপমাত্রায়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #43 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-044",
+    "number": 44,
+    "subject": "Chemistry",
+    "question": "STP তে 1500L N$_2$ গ্যাস হতে NH$_3$ প্রস্তুত করতে কত লিটার H$_2$ গ্যাস দরকার?",
+    "options": [
+      "4000",
+      "4200",
+      "4500",
+      "4700"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #44 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-045",
+    "number": 45,
+    "subject": "Chemistry",
+    "question": "$BF_3$ অণুর কেন্দ্রীয় পরমাণুর সংকরণ অবস্থা কোনটি?",
+    "options": [
+      "$sp$",
+      "$sp^2$",
+      "$sp^3$",
+      "$sp^3d$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #45 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-046",
+    "number": 46,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি জারন বিজারন বিক্রিয়া?",
+    "options": [
+      "$\\mathrm{Cu}^{2+}+4 \\mathrm{NH}_{3} \\rightarrow\\left[\\mathrm{Cu}\\left(\\mathrm{NH}_{3}\\right)_{4}\\right]^{2+}$",
+      "$\\mathrm{NH}_{3}+\\mathrm{H}^{+} \\rightarrow \\mathrm{NH}_{4}^{+}$",
+      "$\\mathrm{Ca}^{2+}+2 \\mathrm{~F}^{-} \\rightarrow \\mathrm{CaF}_{2}$",
+      "$\\mathrm{Cl}_{2}+\\mathrm{OH}^{-} \\rightarrow \\mathrm{Cl}^{-}+\\mathrm{ClO}^{-}+\\mathrm{H}_{2} \\mathrm{O}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #46 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-047",
+    "number": 47,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি একই সমগোত্রীয় শ্রেণীর সদস্য?",
+    "options": [
+      "ইথেন, মিথেন, প্রোপিন",
+      "ইথিন, প্রোপিন, বিউটেন",
+      "ইথেন, প্রোপেন, বিউটেন",
+      "1 - হেক্সিন, 2-হেক্সিন, ৩-হেক্সিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #47 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-048",
+    "number": 48,
+    "subject": "Chemistry",
+    "question": "$CCl_4$ একটি সমযোজী যৌগ, এটি-i. পানিতে অদ্রবণীয়ii. বিদ্যুৎ পরিবাহী নয়iii. সাধারণ তাপমাত্রায় তরলকোনটি সঠিক?",
+    "options": [
+      "i ও ii",
+      "ii ও iii",
+      "i ও iii",
+      "i, ii ও iii"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #48 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-049",
+    "number": 49,
+    "subject": "Chemistry",
+    "question": "$\\mathrm{Ca}(\\mathrm{OH})_{2}(\\mathrm{aq})+\\mathrm{CO}_{2} \\longrightarrow \\mathrm{A}+\\mathrm{H}_{2} \\mathrm{O} ;$উৎপন্ন A যৌগটি?",
+    "options": [
+      "চুনাপাথর",
+      "কলিচুন",
+      "চুনের পানি",
+      "চুন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #49 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-050",
+    "number": 50,
+    "subject": "Chemistry",
+    "question": "পানিতে $Ca^{2+}$ আয়নের পরিমানের উপর নির্ভর করবে পানির-",
+    "options": [
+      "TDS",
+      "DO",
+      "COD",
+      "Hardness (খরতা)"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #50 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-051",
+    "number": 51,
+    "subject": "Physics",
+    "question": "স্থিতিঘর্ষণ বল স্পর্শতলের প্রকৃতির উপর নির্ভর-",
+    "options": [
+      "করেনা",
+      "কখনও কখনও করে",
+      "করে",
+      "কখনও কখনও করেনা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #51 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-052",
+    "number": 52,
+    "subject": "Bangla",
+    "question": "যদি পৃথিবীর ভরকে দ্বিগুণ করা হয়, তবে সূর্যকে 1 বার আবর্তনের সময় হবে-",
+    "options": [
+      "$\\sqrt{2} y$",
+      "$1 \\mathrm{y}$",
+      "$\\frac{y}{\\sqrt{2}}$",
+      "$\\frac{y}{2}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #52 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-053",
+    "number": 53,
+    "subject": "Physics",
+    "question": "সান্দ্রতা কীসের সঙ্গে তুলনীয়?",
+    "options": [
+      "বল",
+      "কাজ",
+      "ত্বরণ",
+      "ঘর্ষণ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #53 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-054",
+    "number": 54,
+    "subject": "Physics",
+    "question": "একটি আদর্শ গ্যাসের স্থির তাপমাত্রায় চাপ দ্বি-গুণ করা হলে এর আয়তন:",
+    "options": [
+      "4 গুণ হবে",
+      "দ্বি-গুণ হবে",
+      "অর্ধেক হবে",
+      "এক চতুর্থাংশ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #54 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-055",
+    "number": 55,
+    "subject": "Biology",
+    "question": "দৃশ্যমান আলোর কোন রঙ্গের প্রতি ফোটনে বেশি শক্তি ধারণ করে?",
+    "options": [
+      "বেগুনী আলো",
+      "হলুদ আলো",
+      "লাল আলো",
+      "সমস্ত আলো প্রতি ফোটনে একই শক্তি ধারণ করে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #55 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-056",
+    "number": 56,
+    "subject": "Physics",
+    "question": "নিচের কোনটি পদার্থের অবস্থার পরিবর্তন নয়?",
+    "options": [
+      "ঘনীভবন",
+      "দ্রবীভবন",
+      "বাষ্পীভবন",
+      "উর্ধ্বপাতন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #56 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-057",
+    "number": 57,
+    "subject": "Physics",
+    "question": "কফির গরম কাপ টেবিলে রাখা আছে। কিছু সময় পরে এটি চারপাশের সাথে একটি তাপীয় ভারসাম্য অর্জন কলে।ঘরের বায়ুর অণুগুলোকে তাপগতিগত ব্যবস্থা হিসেবে বিবেচনা করে নিচের কোনটি সত্য (U অভ্যন্তরীণ শক্তি, Q তাপ শক্তি, W কাজ)?",
+    "options": [
+      "$\\text{U>0,Q=0}$",
+      "$\\text{U>0,W<0}$",
+      "$\\text{U>0,Q>0}$",
+      "$\\text{U=0,Q>0}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #57 ([(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-058",
+    "number": 58,
+    "subject": "Mathematics",
+    "question": "যদি $\\mathrm{A}=\\left[\\begin{array}{ll}1 & 0 \\\\ 0 & 5\\end{array}\\right]$ এবং $\\mathrm{B}\\left[\\begin{array}{ll}5 & 0 \\\\ 2 & 1\\end{array}\\right]$ হলে $\\mathrm{AB}$ এর মান কোনটি?",
+    "options": [
+      "$\\left[\\begin{array}{ll}5 & 0 \\\\ 2 & 5\\end{array}\\right]$",
+      "$\\left[\\begin{array}{cc}5 & 0 \\\\ 10 & 5\\end{array}\\right]$",
+      "$\\left[\\begin{array}{ll}6 & 0 \\\\ 2 & 6\\end{array}\\right]$",
+      "$\\left[\\begin{array}{cc}8 & 1 \\\\ 12 & 5\\end{array}\\right]$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #58 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-059",
+    "number": 59,
+    "subject": "Mathematics",
+    "question": "যদি $\\mathrm{A}=\\left[\\begin{array}{cc}1 & 4 \\\\ 2 & -6\\end{array}\\right]$ হয়, তবে $\\mathrm{A}^{-1}$ এর মান কোনটি?",
+    "options": [
+      "$\\frac{1}{14}\\left[\\begin{array}{cc}6 & 4 \\\\ -2 & 1\\end{array}\\right]$",
+      "$\\frac{1}{14}\\left[\\begin{array}{cc}-6 & -4 \\\\ 2 & 1\\end{array}\\right]$",
+      "$\\frac{1}{14}\\left[\\begin{array}{cc}6 & 4 \\\\ 2 & -1\\end{array}\\right]$",
+      "$\\frac{1}{14}\\left[\\begin{array}{cc}6 & 4 \\\\ -2 & -1\\end{array}\\right]$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #59 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-060",
+    "number": 60,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #60 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-061",
+    "number": 61,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #61 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-062",
+    "number": 62,
+    "subject": "Mathematics",
+    "question": "$\\text{4x-3y+2=0}$ এবং $\\text{8x-py-9=0}$ সরলরেখা দুটি পরস্পর সমান্তরাল হলে p-এর মান কোনটি?",
+    "options": [
+      "-3",
+      "3",
+      "-6",
+      "6"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #62 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-063",
+    "number": 63,
+    "subject": "Mathematics",
+    "question": "একটি ত্রিভুজের ভরকেন্দ্র (2, 0) এবং এর দুটি শীর্ষ বিন্দুর স্থানাঙ্ক (1,2) এবং (3, – 1) হলে তৃতীয় শীর্ষবিন্দুর স্থানাঙ্ক কোনটি?",
+    "options": [
+      "(1, -1)",
+      "(-1, 1)",
+      "(2, -1)",
+      "(2, 2)"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #63 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-064",
+    "number": 64,
+    "subject": "Mathematics",
+    "question": "$\\begin{vmatrix} 1 & \\omega & \\left(\\omega\\right)^{2} \\\\ \\omega & \\left(\\omega\\right)^{2} & 1 \\\\ \\left(\\omega\\right)^{2} & 1 & \\omega \\end{vmatrix}$ এর মান কোনটি?",
+    "options": [
+      "1",
+      "$\\omega$",
+      "$\\left(\\omega\\right)^{2}$",
+      "0"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #64 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-065",
+    "number": 65,
+    "subject": "Mathematics",
+    "question": "$i^{2}=-1$ হলে $\\frac{i-i^{-1}}{i+2 i^{-1}}$ এর মান কোনটি?",
+    "options": [
+      "0",
+      "-2i",
+      "2i",
+      "-2"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #65 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-066",
+    "number": 66,
+    "subject": "Mathematics",
+    "question": "$f(x)=5+3x-x^2$ ফাংশনটির সর্বোচ্চ মান কোনটি?",
+    "options": [
+      "3",
+      "$\\frac{11}{4}$",
+      "$\\frac{29}{4}$",
+      "$\\frac{27}{4}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #66 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-067",
+    "number": 67,
+    "subject": "Mathematics",
+    "question": "$6 x^{2}-5 x+1=0$ সমীকরণের মূলদ্বয় $\\alpha$ ও $\\beta$ হলে, $\\frac{1}{\\alpha}, \\frac{1}{\\beta}$ মূলবিশিষ্ট সমীকরণ কোনটি?",
+    "options": [
+      "$x^2-5x+6=0$",
+      "$x^2-4x+3=0$",
+      "$x^2-11x+30=0$",
+      "$x^2-2x+1=0$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #67 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-068",
+    "number": 68,
+    "subject": "Mathematics",
+    "question": "$\\sin ^{-1}\\left(\\frac{2}{\\sqrt{5}}\\right)+\\tan ^{-1} x=\\frac{\\pi}{2}$ হলে $x$ এর মান-",
+    "options": [
+      "$\\frac{1}{\\sqrt{5}}$",
+      "$\\frac{1}{2}$",
+      "2",
+      "$\\sqrt{5}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #68 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-069",
+    "number": 69,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #69 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-070",
+    "number": 70,
+    "subject": "Mathematics",
+    "question": "$4 x^{2}+4 y^{2}-6 x+9 y-13=0$ বৃত্তের উপরস্থ $(2,-3)$, বিন্দুতে অংকিত স্পর্শকের সমীকরণ কোনটি?",
+    "options": [
+      "$2x+3y=0$",
+      "$2x+3y=13$",
+      "$2x-3y=13$",
+      "$3x-2y=12$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #70 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-071",
+    "number": 71,
+    "subject": "Mathematics",
+    "question": "$x^{2}+y^{2}-8 x-6 y=0$ এবং $x^{2}+y^{2}+32 x+24 y=0$ বৃত্তদ্বয়ের ছেদবিন্দু গামী ও বৃত্তদ্বয়ের কেন্দ্রসমূহের সংযোগকারী রেখার উপর লম্বরেখার সমীকরণ কোনটি?",
+    "options": [
+      "$4x+y=6$",
+      "$4x-3y=0$",
+      "$3x+4y=0$",
+      "$3x-4y=0$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #71 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-072",
+    "number": 72,
+    "subject": "Mathematics",
+    "question": "$y=3 x+1$ রেখাটি $y^{2}=4 a x$ পরাবৃত্তকে স্পর্শ করলে পরাবৃত্তটির উপকেন্দ্রিক লম্বের দৈর্ঘ্য কোনটি?",
+    "options": [
+      "10 একক",
+      "11 একক",
+      "12 একক",
+      "13 একক"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #72 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-073",
+    "number": 73,
+    "subject": "Mathematics",
+    "question": "$y^2=9x$ পরাবৃত্তের ( 4, 6) বিন্দুতে অঙ্কিত স্পর্শকের সমীকরণ কোনটি?",
+    "options": [
+      "$3x+4y+12=0$",
+      "$3x-4y+12=0$",
+      "$3x-4y+6=0$",
+      "$3x+4y+11=0$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #73 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-074",
+    "number": 74,
+    "subject": "Mathematics",
+    "question": "$\\tan \\theta(1+\\sec 2 \\theta)$ এর মান কোনটি?",
+    "options": [
+      "$\\cot 2 \\theta$",
+      "$\\sec 2 \\theta$",
+      "$\\tan 2 \\theta$",
+      "$\\sin 2 \\theta$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #74 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-075",
+    "number": 75,
+    "subject": "Mathematics",
+    "question": "যদি $\\cotθ=2$ হয়, তবে $10\\sin2θ−6\\tan2θ$ এর মান হবে-",
+    "options": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #75 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-076",
+    "number": 76,
+    "subject": "Mathematics",
+    "question": "একটি ট্রেন t সেকেন্ড $(\\mathrm{3t + \\frac{t²}{8}})$ফুট দূরত্ব যায়। 5 মিনিট পর ট্রেনটির বেগ কত হবে?",
+    "options": [
+      "$78 \\mathrm{ft} / \\mathrm{sec}$",
+      "$14 / 4 \\mathrm{ft} / \\mathrm{sec}$",
+      "$75 \\mathrm{ft} / \\mathrm{sec}$",
+      "$145 / 8 \\mathrm{ft} / \\mathrm{sec}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #76 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-077",
+    "number": 77,
+    "subject": "Mathematics",
+    "question": "স্থির অবস্থা থেকে যাত্রা করে একটি কণা 3sec এ 18m অতিক্রম করলে চতুর্থ সেকেন্ডে যত পথ অতিক্রম করবে-",
+    "options": [
+      "12m",
+      "14m",
+      "16m",
+      "20m"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #77 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-078",
+    "number": 78,
+    "subject": "Mathematics",
+    "question": "$\\int_{0}^{\\frac{\\pi}{2}} \\frac{d x}{1+\\cos x}$ এর মান কোনটি?",
+    "options": [
+      "1",
+      "½",
+      "$\\frac{1}{3}$",
+      "2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #78 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ju-a-22-23-set-g-q-079",
+    "number": 79,
+    "subject": "Mathematics",
+    "question": "$\\int_{0}^{1} \\frac{d x}{\\sqrt{2 x-x^{2}}}$ এর মান কোনটি?",
+    "options": [
+      "$\\pi$",
+      "1",
+      "$\\frac{\\pi}{2}$",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "JU",
+    "session": "22-23",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/JU_A_22-23_Set-G_c614195f.txt",
+      "sourceLocation": "Question #79 ([উচ্চতর গণিত(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

@@ -132,7 +132,7 @@
     "question": "একটি সরল দোলকের দোলনকাল T। দোলকটির দৈর্ঘ্য দ্বিগুণ করা হলে পরিবর্তিত দোলনকাল কত হবে?",
     "options": [
       "√2 T",
-      "1/2 T",
+      "$\\frac{1}{2}T$",
       "2 T",
       "1/√2 T"
     ],
@@ -401,9 +401,9 @@
     "ruSection": "A",
     "question": "ইস্পাতের জন্য ইয়ং-এর গুণাঙ্ক Y=2.0×10^11Nm^-2 হলে, স্থিতিস্থাপক সীমার মধ্যে 1 mm^2 প্রস্থচ্ছেদ বিশিষ্ট একটি ইস্পাতের তারের দৈর্ঘ্য 10% বৃদ্ধি করতে প্রয়ােজনীয় বল-",
     "options": [
-      "2×10^4 N",
+      "$2 \\times 10^{4}$ N",
       "10^4 N",
-      "1.2×10^4 N",
+      "$1.2 \\times 10^{4}$ N",
       "0 N"
     ],
     "correctAnswer": 0,
@@ -581,7 +581,7 @@
     "options": [
       "2ax",
       "$- \\frac{a x^{3}}{3} + b$",
-      "ax^3/3",
+      "$\\frac{ax^3}{3}$",
       "$\\frac{a x^{3}}{3} - b$"
     ],
     "correctAnswer": 1,
@@ -602,12 +602,12 @@
     "number": 24,
     "subject": "Physics",
     "ruSection": "A",
-    "question": "কাঁচ ও হীরকের প্রতিসরাঙ্ক যথাক্রমে 3/2 এবং 5/2। কাঁচ ও হীরকের মধ্যে সংকট কোণ কত?",
+    "question": "কাঁচ ও হীরকের প্রতিসরাঙ্ক যথাক্রমে $\\frac{3}{2}$ এবং $\\frac{5}{2}$। কাঁচ ও হীরকের মধ্যে সংকট কোণ কত?",
     "options": [
-      "sin^-1 3/2",
-      "sin^-1 2/3",
-      "sin^-1 3/5",
-      "sin^-1 5/3"
+      "sin^-1 $\\frac{3}{2}$",
+      "sin^-1 $\\frac{2}{3}$",
+      "sin^-1 $\\frac{3}{5}$",
+      "sin^-1 $\\frac{5}{3}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -806,7 +806,7 @@
     "options": [
       "C_6H_5OH এ অন্তঃআণবিক H বন্ধন ঘটে",
       "C_6H_4(OH)CHO (o-হাইড্রোক্সি বেনজালডিহাইড) এ আন্তঃআণবিক H বন্ধন ঘটে",
-      "H_2O এ আন্তঃআণবিক H বন্ধন ঘটে",
+      "$\\text{H}_2\\text{O}$ এ আন্তঃআণবিক H বন্ধন ঘটে",
       "CH_3OH এ অন্তঃআণবিক H বন্ধন ঘটে sdfdf"
     ],
     "correctAnswer": 2,
@@ -929,8 +929,8 @@
     "ruSection": "A",
     "question": "নিচের কোনটি লুইস এসিড?",
     "options": [
-      "HNO_3",
-      "H_2SO_4",
+      "$\\text{HNO}_3$",
+      "$\\text{H}_2\\text{SO}_4$",
       "AICI_3",
       "NH_3"
     ],
@@ -1077,7 +1077,7 @@
     "number": 43,
     "subject": "Biology",
     "ruSection": "A",
-    "question": "নিচের বিক্রিয়ার জন্য $ΔE^0$^ এর মান কত?$2\\text{Al}^{3+}(\\text{aq}) + 3\\text{Zn}(s) \\rightarrow 2\\text{Al}(s) + 3\\text{Zn}^{2+}(\\text{aq})$ অর্ধকোষ বিক্রিয়া$\\text{E}^{\\circ}\\text{(V)}$$\\text{Al}^{3+}(\\text{aq}) + 3\\text{e}^{-} \\rightarrow \\text{Al}(s)$$-1.66$$\\text{Zn}^{2+}(\\text{aq}) + 2\\text{e}^{-} \\rightarrow \\text{Zn}(s)$$-0.76$",
+    "question": "নিচের বিক্রিয়ার জন্য $ΔE^0$^ এর মান কত?$2\\text{Al}^{3+}(\\text{aq}) + 3\\text{Zn}(s) \\rightarrow 2\\text{Al}(s) + 3\\text{Zn}^{2+}(\\text{aq})$ অর্ধকোষ বিক্রিয়া$\\text{E}^{\\circ}\\text{(V)}$\\text{Al}^{3+}(\\text{aq}) + 3\\text{e}^{-} \\rightarrow \\text{Al}(s)$-1.66$\\text{Zn}^{2+}(\\text{aq}) + 2\\text{e}^{-} \\rightarrow \\text{Zn}(s)$-0.76$",
     "options": [
       "-1.04V",
       "-0.90V",
@@ -1104,9 +1104,9 @@
     "ruSection": "A",
     "question": "0°C এ কোনটির এন্ট্রপি সবচেয়ে বেশী?",
     "options": [
-      "1.0mol H_2O(s)",
-      "1.0mol H_2O(l)",
-      "1.0mol H_2O(g)",
+      "1.0mol $\\text{H}_2\\text{O}$(s)",
+      "1.0mol $\\text{H}_2\\text{O}$(l)",
+      "1.0mol $\\text{H}_2\\text{O}$(g)",
       "1.0mol H_2(g) + 0.5mol O_2(g)"
     ],
     "correctAnswer": 3,
@@ -1130,7 +1130,7 @@
     "question": "R এর কোন মানটি সঠিক নয়?",
     "options": [
       "0.082 L.atm.mol^-1K^-1",
-      "8.32×10^7 erg.mol^-1K^-1",
+      "$8.32 \\times 10^{7}$ erg.mol^-1K^-1",
       "1.987 Cal.mol^-1K^-1",
       "0.8314 J.mol^-1K"
     ],
@@ -1154,10 +1154,10 @@
     "ruSection": "A",
     "question": "STP তে 0.1 mol বিশুদ্ধ O_2 গ্যাসে পরমাণুর সংখ্যা কত?",
     "options": [
-      "6.02×10^23",
-      "6.02×10^22",
-      "1.02×10^22",
-      "1.20×10^23"
+      "$6.02 \\times 10^{23}$",
+      "$6.02 \\times 10^{22}$",
+      "$1.02 \\times 10^{22}$",
+      "$1.20 \\times 10^{23}$"
     ],
     "correctAnswer": 3,
     "answerVerified": true,
@@ -2734,9 +2734,9 @@
     "ruBranch": "Math",
     "question": "α এর কোন মানের জন্যে $l \\left ( \\alpha \\right ) = \\int_{0}^{1} \\left ( x^{2} - \\alpha \\right )^{2} dx$ এর মান সর্বনিম্ন হবে?",
     "options": [
-      "3/20",
-      "4/45",
-      "1/3",
+      "$\\frac{3}{20}$",
+      "$\\frac{4}{45}$",
+      "$\\frac{1}{3}$",
       "1"
     ],
     "correctAnswer": 2,
@@ -3124,7 +3124,7 @@
     "ruBranch": "Math",
     "question": "$9x^2 - 4y^2 + 36 = 0$ অধিবৃত্তের উৎকেন্দ্রিকতা কত?",
     "options": [
-      "$\\frac{3}{\\sqrt{13}}$$\\frac{4}{\\sqrt{10}}$",
+      "$\\frac{3}{\\sqrt{13}}$\\frac{4}{\\sqrt{10}}",
       "$\\frac{\\sqrt{13}}{3}$",
       "$\\frac{\\sqrt{10}}{4}$",
       "$\\frac{4}{\\sqrt{10}}$"

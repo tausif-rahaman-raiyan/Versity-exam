@@ -79,7 +79,7 @@
     "options": [
       "0",
       "2c",
-      "c/2",
+      "$\\frac{c}{2}$",
       "c"
     ],
     "correctAnswer": 3,
@@ -1118,10 +1118,10 @@
     "subject": "Mathematics",
     "question": "0.3+0.003+0.00003+......ধারাটির যোগফল-",
     "options": [
-      "10/33",
-      "1/3",
-      "1/33",
-      "33/100"
+      "$\\frac{10}{33}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{33}$",
+      "$\\frac{33}{100}$"
     ],
     "correctAnswer": 0,
     "answerVerified": true,
@@ -1456,7 +1456,7 @@
     "options": [
       "SiO_2",
       "KO_2",
-      "CO_2",
+      "$\\text{CO}_2$",
       "SO_2"
     ],
     "correctAnswer": 0,

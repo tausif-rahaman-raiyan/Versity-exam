@@ -6,7 +6,7 @@
     "question": "একটি বস্তুকে অনুভুমিকের সাথে 45° কোণে E গতিশক্তিতে নিক্ষেপ করা হলো। সর্বোচ্চ বিন্দুতে বস্তুটির গতিশক্তি কত হবে? (An object is thrown with an energy E at an angle of 45° with the horizontal line. What will be the kinetic energy of the object at the highest point?)",
     "options": [
       "2E",
-      "E/2",
+      "$\\frac{E}{2}$",
       "0",
       "E"
     ],
@@ -123,12 +123,12 @@
     "id": "du-25-26-mcq-q-006",
     "number": 6,
     "subject": "Physics",
-    "question": "বোরের মডেল অনুসারে হাইড্রোজেন পরমাণুতে, $r_n$ ব্যাসার্ধে ইলেকট্রনের রৈখিক ভরবেগ কোনটি? (এখানে, $n$ হচ্ছে প্রধান কোয়ান্টাম সংখ্যা এবং $ħ = \\frac{h}{2π}$ প্লাঙ্কের হ্রাস ধ্রুবক।) (What will be the linear momentum of the electron of hydrogen at the orbit of radius $r_n$ according to the Bohr atomic model? Here, $n$ is the principal quantum number and $ħ = \\frac{h}{2π}$ is the reduced Planck's constant.)",
+    "question": "বোরের মডেল অনুসারে হাইড্রোজেন পরমাণুতে, $r_n$ ব্যাসার্ধে ইলেকট্রনের রৈখিক ভরবেগ কোনটি? (এখানে, $n$ হচ্ছে প্রধান কোয়ান্টাম সংখ্যা এবং $\\hbar = \\frac{h}{2\\pi}$ প্লাঙ্কের হ্রাস ধ্রুবক।) (What will be the linear momentum of the electron of hydrogen at the orbit of radius $r_n$ according to the Bohr atomic model? Here, $n$ is the principal quantum number and $\\hbar = \\frac{h}{2\\pi}$ is the reduced Planck's constant.)",
     "options": [
-      "$nħ$",
-      "$\\frac{nħ}{r_n}$",
-      "$n^2r_nħ$",
-      "$nr_nħ$"
+      "$n\\hbar$",
+      "$\\frac{n\\hbar}{r_n}$",
+      "$n^2r_n\\hbar$",
+      "$nr_n\\hbar$"
     ],
     "correctAnswer": 1,
     "answerVerified": true,
@@ -173,10 +173,10 @@
     "subject": "Physics",
     "question": "l দৈর্ঘ্য ও A প্রস্থচ্ছেদের ক্ষেত্রফল বিশিষ্ট একটি সিলিন্ডার আকৃতির তারের উপাদানের ইয়ং-এর গুণাঙ্ক ও পীড়ন যথাক্রমে Y ও S হলে তারটিতে সঞ্চিত মোট স্থিতিস্থাপক শক্তি কত হবে? (A cylindrical wire of cross-sectional area A and length 1 have stress and Young's modulus of the material S and Y, respectively. What will be the total elastic energy stored in the wire?)",
     "options": [
-      "$S^2 ALY/2$",
-      "$YI^2/(2SA)$",
-      "$S^2 AL/(2Y)$",
-      "$YA/(2SI)$"
+      "$\\frac{S^2 ALY}{2}$",
+      "$\\frac{YI^2}{2SA}$",
+      "$\\frac{S^2 AL}{2Y}$",
+      "$\\frac{YA}{2SI}$"
     ],
     "correctAnswer": 2,
     "answerVerified": true,
@@ -392,7 +392,7 @@
     "subject": "Chemistry",
     "question": "কোন যৌগটি সন্নিবেশ বন্ধন গঠন করে না? (Which compound does not form coordinate bond?)",
     "options": [
-      "H_2O",
+      "$\\text{H}_2\\text{O}$",
       "CCI_4",
       "NH_3",
       "BCI_3"
@@ -489,7 +489,7 @@
     "question": "নিচের কোন গ্যাসটি গাড়ীর ইঞ্জিনে দহনের সময় তৈরি হয় যা এসিড বৃষ্টিতে অবদান রাখে? (Which of the following gases is formed in the car engine during combustion of fuel that contributes to acid rain?)",
     "options": [
       "NO",
-      "CO_2",
+      "$\\text{CO}_2$",
       "C_8H_18",
       "CO"
     ],
