@@ -1,0 +1,644 @@
+[উচ্চতর গণিত(22)] 1. 1. যদি$\overrightarrow{P}=\hat{2i}+4\hat{j}-5\hat{k}$এবং$\overrightarrow{Q}=\hat{i}+2\hat{j}+3\hat{k}$হয়, তবে এদের মধ্যবর্তী কোণ-
+A: $78.51°$ | B: $105.25°$ | C: $11.49°$ | D: $101.49°$
+CORRECT ANSWER: D
+
+[উচ্চতর গণিত(22)] 2. 2. 6 জন ছাত্র এবং 5 জন ছাত্রী থেকে 5 জনের একটি কমিটি গঠন করতে হবে যাতে অন্তত একজন ছাত্র ও একজন ছাত্রী থাকে । কত বিভিন্ন প্রকারে এ কমিটি গঠন করা যাবে?
+A: 455 | B: 360 | C: 144 | D: 720
+CORRECT ANSWER: A
+
+[উচ্চতর গণিত(22)] 3. 3. $\begin{vmatrix} 1 & \omega & \left(\omega\right)^{2} \\ \omega & \left(\omega\right)^{2} & 1 \\ \left(\omega\right)^{2} & 1 & \omega \end{vmatrix}$ এর মান কোনটি?
+A: 1 | B: $\omega$ | C: $\left(\omega\right)^{2}$ | D: 0
+CORRECT ANSWER: D
+
+[উচ্চতর গণিত(22)] 4. 5. $\left ( \frac{2 x^{2}}{3} - \frac{x}{3} \right )^{9}$ এর বিস্তৃতিতে x বর্জিত পদ হল-
+A: $\frac{224}{3^{8}}$ | B: $- \frac{224}{3^{8}}$ | C: $\frac{242}{3^{8}}$ | D: কোনোটিই নয়
+CORRECT ANSWER: D
+
+[উচ্চতর গণিত(22)] 5. 7. $\frac{1}{3} i$ এর বর্গমূল কোনটি?
+A: $\pm \frac{1}{\sqrt{3}} \left ( 1 + i \right )$ | B: $\pm \frac{1}{\sqrt{3}} \left ( 1 - i \right )$ | C: $\pm \frac{1}{\sqrt{6}} \left ( 1 + i \right )$ | D: $\pm \frac{1}{\sqrt{6}} \left ( 1 - i \right )$
+CORRECT ANSWER: C
+
+[উচ্চতর গণিত(22)] 6. 8. $\lim_{x \to 0} \frac{1 - \cos x}{\sin^2 2x}$ - এর মান কোনটি?
+A: $\frac{2}{25}$ | B: $\frac{49}{6}$ | C: $\frac{1}{8}$ | D: tan x
+CORRECT ANSWER: C
+
+[উচ্চতর গণিত(22)] 7. 9. $A,B,C$ বিন্দুগুলোর স্থানাঙ্ক যথাক্রমে$(a,bc),(b,ca),(c,ab)$হলে,$\Delta ABC$এর ক্ষেত্রফল কত?
+A: $\frac{1}{2}abc$ | B: $\frac{1}{2}(a-b)(b-c)(c-a)$ | C: $\frac{1}{2}|a (a-c)+a (b-a)+c(c-b)|$ | D: $3abc$
+CORRECT ANSWER: B
+
+[উচ্চতর গণিত(22)] 8. 11. $y^2=4x+8y$পরাবৃত্তটির শীর্ষবিন্দুর স্থানাঙ্ক-
+A: $(4,4)$ | B: $(-4,-4)$ | C: $(4,-4)$ | D: $(-4,4)$
+CORRECT ANSWER: D
+
+[উচ্চতর গণিত(22)] 9. 12. $\cos198°+\sin432°+\tan12°+\tan168\degree$এর মান-
+A: $0$ | B: $-1$ | C: $1$ | D: $\frac{1}{2}$
+CORRECT ANSWER: A
+
+[উচ্চতর গণিত(22)] 10. 13. যদি f(x)=cosx এবং g(x)=x^2 হয়, তবে $f{o} g{\left ( \frac{\sqrt{\pi}}{2} \right )}$ এর মান-
+A: cosx^2 | B: 1/√2 | C: 1 | D: √3/2
+CORRECT ANSWER: B
+
+[উচ্চতর গণিত(22)] 11. 14. $\frac{1}{|3 x-1|}>1$ এর সমাধান হল-
+A: $\left(-\infty, \frac{1}{3}\right) \cup(1, \infty)$ | B: $x>\frac{1}{3}$ | C: \(0 | D: $\left(0, \frac{1}{3}\right) \cup\left(\frac{1}{3}, \frac{2}{3}\right)$
+CORRECT ANSWER: D
+
+[উচ্চতর গণিত(22)] 12. 15. যদি $y=\ln\left(x+\sqrt{x^2+a^2}\right)$হয় তবে, $\frac{dy}{dx}$সমান-
+A: $\sqrt{x^2+a^2}$ | B: $\frac{1}{1+\sqrt{x^2+a^2}}$ | C: $1+\sqrt{x^2+a^2}$ | D: $\frac{1}{\sqrt{x^2+a^2}}$
+CORRECT ANSWER: D
+
+[উচ্চতর গণিত(22)] 13. 17. 3P এবং 2P বলদ্বয়ের লব্ধি R । প্রথম বল দ্বিগুণ করলে লব্ধির পরিমাণও দ্বিগুণ হয় । বলদ্বয়ের অন্তর্গত কোণ-
+A: 130° | B: 120° | C: 110° | D: 100°
+CORRECT ANSWER: B
+
+[উচ্চতর গণিত(22)] 14. 18. নিম্নের লিনিয়ার প্রোগ্রামিং সমস্যার সমাধান করঃ গরিষ্ঠকরণ কর $z=3x+4y$শর্ত হচ্ছে$x+y\le7,\ 2x+5y\le20,\ x\ge0,y\ge0.$
+A: $(5,2)$ | B: $(7,0)$ | C: $(10,0)$ | D: $(0,7)$
+CORRECT ANSWER: A
+
+[উচ্চতর গণিত(22)] 15. 19. $1.2+2.3+3.4+.......$ধারাটির n তম পদ পর্যন্ত যোগফল-
+A: 1/2n(n+2)(2n+3) | B: 1/3n(n+1)(n+2) | C: 1/2n(n+1)(2n+1) | D: 1/2n(n+1)(3n+1)
+CORRECT ANSWER: B
+
+[উচ্চতর গণিত(22)] 16. 20. $k$ এর মান কত হলে, $(k+1) x^{2}+$ $2(k+3) x+2 k+3$ রাশিটি পূর্ণ বর্গ হবে?
+A: ${k}=-2,3$ | B: ${k}=2,3$ | C: ${k}=-2,-3$ | D: ${k}=-2,4$
+CORRECT ANSWER: A
+
+[উচ্চতর গণিত(22)] 17. 21. দ্বিঘাত সমীকরণের একটি মূল $\frac{1}{1+\sqrt{-3}}$ হলে সমীকরণটি হবে-
+A: $4x^2-2x+1=0$ | B: $10x^2-2x+1=0$ | C: $2x^2-4x+1=0$ | D: $2x^2+4x+1=0$
+CORRECT ANSWER: A
+
+[উচ্চতর গণিত(22)] 18. 22. $2x-x^2+k=0$একটি দ্বিঘাত সমীকরণ । সমীকরণটির মূলদ্বয় বাস্তব হলে -
+A: $k < 1/8$ | B: $k\ge-1$ | C: $k<-1/8$ | D: $k>-8$
+CORRECT ANSWER: B
+
+[English(23)] 19. 1. 'Do not smile at anybody'. ইংরেজি বাক্যটির যথাযথ বাংলা-
+A: কাউকে নিয়ে রসিকতা করবে না। | B: কাউকে নিয়ে মজা করবে না। | C: কাউকে কটাক্ষ করবে না। | D: কাউকে বিদ্রূপ করবে না।
+CORRECT ANSWER: A
+
+[English(23)] 20. 2. Once a bird is brought to a rehabilitation center, basic procedures are followed. First, the bird is sedated, if necessary, and examined to detect broken bones, cuts or other injuries. Next, oil is flushed from its eyes and intestines. Heavily oiled birds are then wiped with absorbent cloths to remove patches of oil. Stomach-coating medicines may be administered orally to prevent additional absorption of oil inside the bird's stomach. The bird is then warmed and placed in a quiet area. Finally, curtains are often hung around the area to limit the bird's contact with people.'Absorption' is the process of—
+A: soaking up liquid or other substance | B: turning of liquid into vapour | C: becoming weaker or worse | D: becoming larger or expanding
+CORRECT ANSWER: A
+
+[English(23)] 21. 3. He has retired____business and moved___private life completely.
+A: from, into | B: for, with | C: of, to | D: to, in
+CORRECT ANSWER: A
+
+[English(23)] 22. 4. The bookmark was placed___pages ten and eleven.
+A: around | B: between | C: in | D: on
+CORRECT ANSWER: B
+
+[English(23)] 23. 5. I can't quite ___ out what the sign says.
+A: make | B: read | C: get | D: carry
+CORRECT ANSWER: A
+
+[English(23)] 24. 6. Choose the correct word or phrase to complete the sentence.It is difficult for me to ____ exactly what I mean in a foreign language.
+A: speak | B: express | C: pronounce | D: address
+CORRECT ANSWER: B
+
+[English(23)] 25. 7. Prodip went to bed after he___his lesson.
+A: learnt | B: learning | C: had learn | D: had learnt
+CORRECT ANSWER: D
+
+[English(23)] 26. 8. ___him yet? Now is your chance to do so
+A: Don't you meet | B: Haven't you met | C: Hadn't you meet | D: Weren't you meeting
+CORRECT ANSWER: B
+
+[English(23)] 27. 9. Don't make a noise while your father____________.
+A: is being asleep | B: asleep | C: is sleeping | D: has slept
+CORRECT ANSWER: C
+
+[English(23)] 28. 10. She arrived so late ___ allowed to enter.
+A: and as not to be | B: for not to be | C: so not to be | D: that she was not
+CORRECT ANSWER: D
+
+[English(23)] 29. 11. My house is –– comfortable than my father’s.
+A: very | B: much | C: to | D: much more
+CORRECT ANSWER: D
+
+[English(23)] 30. 12. Neither of my brothers is handsome, but both ____ to be flattered.
+A: likes | B: like | C: liking | D: were liked
+CORRECT ANSWER: B
+
+[English(23)] 31. 13. Identify the correct sentence:
+A: He washed neither his hand or his face. | B: He washed neither his hand nor his face. | C: He washed neither his hand or face. | D: He washed neither his hand and also neither his face.
+CORRECT ANSWER: B
+
+[English(23)] 32. 14. Choose the correct verb form:Once the peace accord had been signed, the guerrillas ____their arms.
+A: laid down | B: lain down | C: lying down | D: laying down
+CORRECT ANSWER: A
+
+[English(23)] 33. 15. Choose the correct interrogative form-
+A: When did you have you last class? | B: When have your last class? | C: When did you have your last class? | D: When did your last class have?
+CORRECT ANSWER: C
+
+[English(23)] 34. 16. Choose the correct article for the following sentence:He is playing ____ flute.
+A: a | B: by | C: an | D: the
+CORRECT ANSWER: D
+
+[English(23)] 35. 17. Choose the appropriate tag:For the boys, the task was quite easy, ____?
+A: weren't they | B: didn't they | C: wasn't it | D: isn't it
+CORRECT ANSWER: C
+
+[English(23)] 36. 18. The correct antonym of the word ominous is-
+A: auspicious | B: potent | C: unlucky | D: evil
+CORRECT ANSWER: A
+
+[English(23)] 37. 19. The synonym of the word 'Gruesome' is-
+A: Dreadful | B: Frightful | C: Horrific | D: All of the above
+CORRECT ANSWER: D
+
+[English(23)] 38. 20. Find the correctly spelled word:
+A: Embarrass | B: Guarrantee | C: Questionnaire | D: A and C
+CORRECT ANSWER: D
+
+[English(23)] 39. 21. সে অত্যন্ত ধূর্ত।
+A: He is very cunning | B: He is very clever | C: He is very sloppy | D: He is very witty
+CORRECT ANSWER: A
+
+[English(23)] 40. 22. The cow feeds –––– grass. Choose the correct answer-
+A: on | B: in | C: of | D: by
+CORRECT ANSWER: A
+
+[English(23)] 41. 23. To read between the lines is —
+A: to concentrate | B: to suspect (সন্দেহ করা) | C: to read carefully | D: to grasp the hidden meaning
+CORRECT ANSWER: D
+
+[বাংলা(30)] 42. 1. বাংলা অভিধানে 'ক্ষ' এর অবস্থান কোথায় ?
+A: ‘খ' বর্ণের পরে | B: 'হ' বর্ণের পরে | C: 'ষ' বর্ণের পরে | D: ‘ক' বর্ণের অন্তর্গত ভুক্তি হিসেবে
+CORRECT ANSWER: D
+
+[বাংলা(30)] 43. 2. ‘যেমন কর্ম তেমন ফল।' রেখাঙ্কিত শব্দটি কী?
+A: সাপেক্ষ সর্বনাম | B: দ্বিরুক্তি | C: বিশেষণের বিশেষণ | D: সম্বন্ধ পদ
+CORRECT ANSWER: A
+
+[বাংলা(30)] 44. 3. পূর্ণ বাক্যে একাধিক স্বাধীন বাক্যাংশের পরে বসে-
+A: কোলন | B: সেমিকোলন | C: হাইফেন | D: ড্যাশ
+CORRECT ANSWER: B
+
+[বাংলা(30)] 45. 4. কোনটি বাংলা তদ্ধিত প্রত্যয়যুক্ত শব্দ?
+A: রাঁধুনী | B: ঘরামি | C: ধোলাই | D: পানীয়
+CORRECT ANSWER: B
+
+[বাংলা(30)] 46. 5. উপসর্গযুক্ত শব্দ-
+A: বিদ্বান | B: বিজলি | C: বিজ্ঞান | D: বিটপ
+CORRECT ANSWER: C
+
+[বাংলা(30)] 47. 6. 'জিজ্ঞাসিব জনে জনে।' বাক্যটির দ্বিরুক্তি কী দিয়ে গঠিত?
+A: বিশেষণ | B: বিশেষ্য | C: সংখ্যাবাচক শব্দ | D: বহুবচন
+CORRECT ANSWER: B
+
+[বাংলা(30)] 48. 7. ‘চাঁদ' এর সমার্থক শব্দ-
+A: ভানু | B: নিশীথিনী | C: কোমলকান্ত | D: রজনীকান্ত
+CORRECT ANSWER: D
+
+[বাংলা(30)] 49. 8. রোকেয়া সাখাওয়াত হোসেনের জন্ম-মৃত্যু সাল কোনটি?
+A: ১৮৮০-১৯৩২ | B: ১৮৮২-১৯৩০ | C: ১৮৯০-১৯৩০ | D: ১৮৯০-১৯৩২
+CORRECT ANSWER: A
+
+[বাংলা(30)] 50. 9. কোনটি অনুসর্গ?
+A: এর | B: এরে | C: তরে | D: রে
+CORRECT ANSWER: C
+
+[বাংলা(30)] 51. 10. 'ণ-ত্ব' বিধান অনুসারে নিচের কোন বানান অশুদ্ধ?
+A: রূপায়ণ | B: গ্রহণ | C: পুরণো | D: নিরূপণ
+CORRECT ANSWER: C
+
+[বাংলা(30)] 52. 11. ‘রাত্রিতে রৌদ্র হয়।' এ বাক্যে কিসের অভাব?
+A: আকাঙ্ক্ষা | B: যোগ্যতা | C: অন্বয় | D: আসত্তি
+CORRECT ANSWER: B
+
+[বাংলা(30)] 53. 12. ‘পৃথিবী’ শব্দের বিশেষণ-
+A: জগৎ | B: নিসর্গ | C: পার্থিব | D: নিখিল
+CORRECT ANSWER: C
+
+[বাংলা(30)] 54. 13. ভাববাচ্যের উদাহরণ-
+A: ঝগড়া করা উচিত নয়। | B: প্রাণিবিদ্যা পড়া হয়েছে। | C: অনেকেই গুরু খাবার খেতে চায় না। | D: এবার মাছ ধরা যাক
+CORRECT ANSWER: D
+
+[বাংলা(30)] 55. 14. আরবি ভাষা থেকে আগত শব্দ-
+A: আলমারি | B: আলোকন | C: আলপিন | D: আলামত
+CORRECT ANSWER: A
+
+[বাংলা(30)] 56. 15. ‘ক্ষতি' এর বিপরীত শব্দ নিচের কোনটি?
+A: ফায়দা | B: সামান্য | C: বেচা | D: অনুকূল
+CORRECT ANSWER: A
+
+[বাংলা(30)] 57. 16. 'Meteor' এর পরিভাষা-
+A: ধূমকেতু | B: ধ্রুবতারা | C: অগ্নিগোলক | D: উল্কা
+CORRECT ANSWER: D
+
+[বাংলা(30)] 58. 17. ‘আমি এ সাক্ষী চাই না।' সরল বাক্যটির জটিল রূপ-
+A: আমি যে এ সাক্ষী চাই না তা নয়। | B: আমিও এ সাক্ষী চাই না। | C: যে-সাক্ষী এ-রকম তাকে আমি চাই না। | D: আমি এ-রকম সাক্ষী চাইতে পারি না।
+CORRECT ANSWER: C
+
+[বাংলা(30)] 59. 18. কোনটি মৌলিক স্বরধ্বনি?
+A: ঔ | B: ই | C: ঐ | D: সবক'টি
+CORRECT ANSWER: B
+
+[বাংলা(30)] 60. 19. দ্রুততা জ্ঞাপক দ্বিরুক্ত শব্দ-
+A: করকর | B: তরতর | C: মরমর | D: সরসর
+CORRECT ANSWER: B
+
+[বাংলা(30)] 61. 20. ‘Shakespeare' নামের প্রতিবর্ণীকরণ-
+A: সেক্সপিয়র | B: শেক্‌সপিয়র্ | C: সেকশপীয়র | D: শেকশপিয়ার
+CORRECT ANSWER: B
+
+[বাংলা(30)] 62. 21. ‘টিকা ভাস্য না থাকলে কোনো রচনা ভাল করিয়া বোঝা যায় নাই ।' চলতি রীতির বাক্যটিতে ভুলের সংখ্যা-
+A: চার | B: পাঁচ | C: তিন | D: দুই
+CORRECT ANSWER: B
+
+[বাংলা(30)] 63. 22. ‘শান্ত' শব্দের সন্ধিবিচ্ছেদ-
+A: শান্ + ত | B: শাঃ + ত | C: শাম + তহ | D: শাম্ + ত
+CORRECT ANSWER: D
+
+[বাংলা(30)] 64. 23. ‘বিবাহ সম্পর্কে আমার মত যাচাই করা অনাবশ্যক ছিল।' এটি কোন ধরনের বাক্য?
+A: অস্তিবাচক | B: অনুজ্ঞাবাচক | C: নেতিবাচক | D: নঞর্থক
+CORRECT ANSWER: A
+
+[বাংলা(30)] 65. 24. 'কবর' কবিতার ছোট ফুপু কত বছর বয়সে মারা যায়?
+A: সাত | B: পাঁচ | C: তের | D: নয়
+CORRECT ANSWER: A
+
+[বাংলা(30)] 66. 25. রোকেয়া সাখাওয়াত হোসেন কথিত অপার্থিব সম্পত্তি-
+A: জমি | B: হিতৈষিতা | C: গ্ৰন্থ | D: সূচিকর্ম
+CORRECT ANSWER: B
+
+[বাংলা(30)] 67. 26. কলিমদ্দি দফাদারের বাল্যকালের পাতানো দোস্তের নাম-
+A: মোদাব্বের খলিফা | B: সাইফুল্লা খলিফা | C: সাইজদ্দি খলিফা | D: ময়জদ্দি খলিফা
+CORRECT ANSWER: C
+
+[বাংলা(30)] 68. 27. ‘আজ হঠাৎ আমার অত্যন্ত নিকটে অতি বৃহৎ একটা নৈরাজ্যের গহ্বর দেখিতে পাইলাম।' কোন রচনার অন্তর্গত?
+A: হৈমন্তী | B: অর্ধাঙ্গী | C: বিলাসী | D: কমলাকান্তের জবানবন্দি
+CORRECT ANSWER: A
+
+[বাংলা(30)] 69. 28. ‘রাস্তা পর্যন্ত তোমায় রেখে আসব কি?' 'বিলাসী' গল্পে কথাটি কার?
+A: বিলাসীর | B: ন্যাড়ার | C: মৃত্যুঞ্জয়ের | D: আত্মীয়ার
+CORRECT ANSWER: A
+
+[বাংলা(30)] 70. 29. ‘আমার পূর্ব বাংলা' কবিতায় পূর্ববাংলার দেহ স্নিগ্ধ যে- নীলাম্বরীতে ঘেরা-তার উপমা কোনটি ?
+A: রাঙা উৎপল | B: স্নিগ্ধ তমাল | C: অন্ধকারের অনুরাগ | D: প্রগাঢ় নিকুঞ্জ
+CORRECT ANSWER: B
+
+[বাংলা(30)] 71. 30. মানব কল্যাণ প্রবন্ধটি কোন গ্রন্থ থেকে নেওয়া হয়েছে?
+A: চৌচির | B: সততা | C: মানবতন্ত্র | D: মাটির পৃথিবী
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 72. 1. কোনো প্রিজমের ন্যূনতম বিচ্যুতি কোণ 30°। প্রিজমের প্রতিসরণ কোণ 60° হলে, এর প্রতিসরাঙ্ক কত?
+A: 1.414 | B: 2.414 | C: 1.214 | D: 2.141
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 73. 2. একটি লিফটের মেঝেতে রাখা একটি ওজন মাপার যন্ত্রের উপর একজন 50 kg ভরবিশিষ্ট মানুষ দাঁড়িয়ে আছে। লিফটি স্থির অবস্থা থেকে 2$m/s^2$ ত্বরণে 1 sec ধরে উপরের দিকে উঠে, তার পর সমদ্রুতিতে উঠতে থাকে। লিফট চলার পর থেকে ওজন মাপার যন্ত্রে কত ভর দেখাবে ?
+A: first 60kg and then 0 kg | B: always 50 kg | C: first 60kg and then 50 kg | D: always 60 kg
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 74. 3. 2 km উঁচুতে আনুভূমিক পথে 200 m/s সমগতিতে উড্ডয়নশীল একটি বোমারু বিমানের তলদেশ থেকে একটি বোমার বাঁধন আলগা করে ছেঁড়ে দেওয়া হলো । এটি মাটিতে পড়তে প্রায় কত সময় নেবে? [মনে করি, পৃথিবী পৃষ্ঠ সমতল এবং মধ্যাকর্ষণজণিত ত্বরণ 10$m/s^2$]
+A: 20 s | B: 15 s | C: 10 s | D: 5 s
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 75. 4. একটি কাচ পৃষ্ঠের উপর পানি ঢাললে তা যতটা ছড়ায় দুধ ততটা ছড়ায় না। এর কারণ-
+A: সান্দ্রতা | B: পৃষ্ঠটান | C: উভয় | D: কোনোটিই নয়
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 76. 5. নিম্নলিখিত বর্তনীর সমতুল্য রোধ কোনটি?
+QUESTION IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/-cBdG1GxSqHT_MhrRHoIp.png
+A: 4 R | B: R | C: 3 R/4 | D: none
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 77. 6. 100$\Omega$রোধের একটি গ্যালভানোমিটার 10 mA তড়িৎ নিরাপদে গ্রহণ করতে পারে। 10 A তড়িৎ প্রবাহ মাপার জন্য কত রোধের এটি শান্টের দরকার?
+A: $1.000\ \Omega$ | B: $0.1001\ \Omega$ | C: $0.200\ \Omega$ | D: $0.001\ \Omega$
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 78. 7. $1\mu F,\ 2\mu F$এবং$4\mu F$ধারকত্ব বিশিষ্ট তিনটি ধারকের শ্রেণি সমবায়ে সংযোগ দেওয়া হলো। এদের সমতূল্য ধারকত্ব হবে-
+A: $7\mu F$ | B: $2.63\mu F$ | C: $1.75\mu F$ | D: $0.57\mu F$
+CORRECT ANSWER: D
+
+[পদার্থবিজ্ঞান(30)] 79. 8. একটি পুকুর $6$ ফুট গভীর। পানির প্রতিসরাঙ্ক $1.33$ হলে পুকুরের আপাত গভীরতা কত?
+A: 7.98 ft | B: 4.10 ft | C: 0.22 ft | D: 4.51 ft
+CORRECT ANSWER: D
+
+[পদার্থবিজ্ঞান(30)] 80. 9. 900 kg ভরের একটি ট্রাক ঘন্টায় 60 km বেগে চলছে । ব্রেক চেপে ট্রাকটি 50 মিঃ দূরে থামানো হলো। যদি মাটির ঘর্ষণজনিত বল 200N হয় তবে ব্রেকজনিত বলের মান নির্ণয় কর।
+A: 2300 N | B: 2500 N | C: 2700 N | D: 2400 N
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 81. 10. ইয়ং- এর দ্বি-চিড় পরীক্ষায় চিড়দ্বয়ের মধ্যে দূরত্ব 2mm । চিড় থেকে 1.2 m দূরত্বে ডোরার ব্যবধান 0.295 mm হলে আলোর তরঙ্গদৈর্ঘ্য কত?
+A: 5000 Å | B: 5900 Å | C: 4916 Å | D: 5916 Å
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 82. 11. ক্ষমতার মাত্রা-
+A: $\left[ML^2T^{-2}\right]$ | B: $\left[ML^3T^{-2}\right]$ | C: $\left[ML^2T^{-3}\right]$ | D: $\left[ML^2T^{-1}\right]$
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 83. 12. 220V r.m.s ভোল্টেজের এসি বিদ্যুতের লাইনে 7.07 A peak কারেন্ট নেয় এমনি একটি বৈদ্যুতিক উত্তাপক যন্ত্র দিনে 10 ঘন্টা চালানো দেয় । এক ইউনিট বিদ্যুৎ শক্তির মূল্য চার টাকা হলে এতে দৈনিক মোট খরচ-
+A: 88.00 Tk. | B: 68.00 Tk. | C: 44.00 Tk. | D: 22.00 Tk.
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 84. 13. কোনটি টর্কের সঠিক একক?
+A: $Dyne/cm^2$ | B: $Nm$ | C: $N/m$ | D: $N/m.s$
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 85. 14. $5$মিটার দৈর্ঘ্য এবং 1$mm^2$প্রস্থচ্ছেদ বিশিষ্ট একটি তারে$20\ kg$ভর ঝুলিয়ে দেওয়া হলো । এতে তারের দৈর্ঘ্য$2\ mm$বৃদ্ধি পেলে তারটির ইয়ং গুণাঙ্কের মান কত?
+A: $5\times10^{11}\ dyne/cm^2$ | B: $20\times10^{12}\ dyne/cm^2$ | C: $4.9\times10^{12}\ dyne/cm^2$ | D: $5.6\times10^{12}\ dyne/cm^2$
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 86. 15. একটি ট্রান্সফর্মারে প্রাইমারি ও সেকেন্ডারি তারের অনুপাত$20:1$এবং সেকেন্ডারিতে$20\ \Omega$এর রোধ লাগানো আছে । যদি প্রাইমারিতে 220 ভোল্ট প্রয়োগ করা হয় তা হলে প্রাইমারির মধ্যে বিদ্যুৎ প্রবাহ হয়-
+A: 0.55 A | B: 27.5 mA | C: 27.5 A | D: 5.5 mA
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 87. 16. কোন ব্যাক্তি পর্বতের চূড়ায় পানি ফুটাতে চাইলে পানির পাত্রকে যে তাপমাত্রায় উত্তপ্ত করতে হবে তা-
+A: higher than 100°C | B: lower than 100°C | C: to 100°C | D: cannot be determined
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 88. 17. একজন সাইকেল চালক ও একটি ট্রেন পরস্পরের দিকে যথাক্রমে 10 m/s ও 20 m/s বেগে আগমনশীল। ট্রেনের চালক 480 Hz এর একটি সতর্ক সাইরেন বাজালো। সাইকেল চালক কর্তৃক শ্ৰুত সাইরেনের কম্পাঙ্ক নির্ণয় কর। [বাতাসে শব্দের বেগ 340 m/s ]
+A: 525 Hz | B: 480 Hz | C: 960 Hz | D: 240 Hz
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 89. 18. একটি তেজস্ক্রিয় পদার্থের নির্দিষ্ট আইসোটোপের অর্ধায়ু 6.5h।প্রারম্ভে পরমাণু সংখ্যা ছিল $4.8\times10^{20}$। 26 ঘন্টা পরে তেজস্ক্রিয় পরমাণু সংখ্যা কত হবে?
+A: $6.0\times10^{19}$টি | B: $1.2\times10^{20}$টি | C: $2.4\times10^{20}$টি | D: $3\times10^{19}$টি
+CORRECT ANSWER: D
+
+[পদার্থবিজ্ঞান(30)] 90. 19. একটি সরল দোলক পৃথিবীর কেন্দ্রে নিলে ইহার দোলনকাল কত হবে?
+A: zero | B: infinity | C: less than that on the earth surface | D: more than that on the earth surface
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 91. 20. একটি তরঙ্গের দুইটি বিন্দুর মধ্যে পথ পার্থক্য$\lambda/4$হলে, বিন্দুদ্বয়ের মধ্যে দশা পার্থক্য কত?
+A: $\lambda/8$ | B: $\pi/2$ | C: $\pi/3$ | D: $\lambda$
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 92. 21. একটি নল থেকে$2m/s$বেগে পানি বের হয়ে একটি দেয়ালকে লম্বভাবে আঘাত করছে। নলের প্রস্থচ্ছেদ হচ্ছে$0.0\ 3\ m^2$। ধরা যাক, পানি দেয়াল থেকে রিবাউন্ড করছে না । দেয়ালের উপর পানি কি পরিমাণ বল প্রয়োগ করছে? [পানির ঘনত্ব$1000\ kg/m^3$]
+A: 1000 N | B: 300 N | C: 120 N | D: 240 N
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 93. 22. $m$ভরের একটি বস্তুকে সম্পূর্ণরূপে শক্তিতে রূপান্তরিত করলে কি পরিমাণ শক্তি নির্গত হবে? আলোর বেগ$=c$
+A: $mc$ | B: $m/c^2$ | C: $mc^2$ | D: $c/m^2$
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 94. 23. একটি উত্তল লেন্স এর 20cm সামনে একটি বস্তু রাখা আছে এবং লেন্সের বিপরীত পাশে ঠিক 20cm দূরে বস্তুটির একটি বাস্তব প্রতিবিম্ব দেখা গেল। লেন্সটির ফোকাস দূরত্ব কত?
+A: 40cm | B: 20cm | C: 10cm | D: 15cm
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 95. 24. একটি বস্তু সর্বোচ্চ বিস্তার 5.0 m এবং 8.0 s দোলনকালে সরল ছন্দিত গতি সম্পন্ন । বস্তুটির সর্বোচ্চ বেগ কত?
+A: 3.93 m/s | B: 3.13 m/s | C: 7.81 m/s | D: 6.20 m/s
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 96. 25. একটি বৈদ্যুতিক পাখার সুইচ ‘অন' করলে দশবার পূর্ণ ঘূর্ণনের পর পাখাটির কৌণিক বেগ $20\ rad/s$ হয় । কৌণিক ত্বরণ কত?
+A: $1.83\ rad/s^2$ | B: $8.13\ rad/s^2$ | C: $3.18\ rad/s^2$ | D: $5.17\ rad/s^2$
+CORRECT ANSWER: C
+
+[পদার্থবিজ্ঞান(30)] 97. 26. $\overrightarrow{B}=6\hat{i}-3\hat{j}+2\hat{k}$ভেক্টরের উপর$\overrightarrow{A}=2\hat{i}-2\hat{j}+\hat{k}$ভেক্টরের অভিক্ষেপ-
+A: $\frac{20}{7}$ | B: $\frac{7}{8}$ | C: $\frac{8}{5}$ | D: $\frac{5}{8}$
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 98. 27. $u$ বেগে অনুভূমিকের সাথে $\alpha$কোণে প্রক্ষিপ্ত বস্তুর সর্বোচ্চ উচ্চতা-
+A: $\frac{u^2\sin2\alpha}{2g}$ | B: $\frac{u^2\sin^2\alpha}{2g}$ | C: $\frac{u^2\sin2\alpha}{g}$ | D: $\frac{u^2\sin^2\alpha}{g}$
+CORRECT ANSWER: B
+
+[পদার্থবিজ্ঞান(30)] 99. 28. দশমিক সংখ্যা $214$ এর দ্বিমিক আকারে প্রকাশ-
+A: $11010110$ | B: $101001100$ | C: $100111001$ | D: $110010011$
+CORRECT ANSWER: A
+
+[পদার্থবিজ্ঞান(30)] 100. 29. নিম্নলিখিত নিউক্লিয়ার বিক্রিয়ায়$X$কোন কণা, চিহ্নিত কর । $_{\ \ 7}^{14}\ N+X\to_{\ \ 8}^{17}O+_1^1H$
+A: $\beta^-$-particle | B: neutron | C: $\gamma$-ray | D: $\alpha$-particle
+CORRECT ANSWER: D
+
+[পদার্থবিজ্ঞান(30)] 101. 30. তাপমাত্রার (T) সাথে তরলের বাষ্পচাপ (P) পরিবর্তন নিম্নের কোন লেখচিত্র দ্বারা সঠিকভাবে দেখানো হয়েছে?
+A:  [IMAGE: Q101_OPTA_1.png] | B:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/uTicx2X5q7DkoRyoUoMj4.png] | C:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/C7Xt7E-Y3KTxvb_CxB2rf.png] | D:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/UDPN9uB-gsVnQVxVlmWzi.png]
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 102. 1. বাংলাদেশের পানিতে আর্সেনিকের সহনীয় মাত্রা কত?
+A: 0.01 mg/L | B: 0.05 mg/L | C: 1.00 mg/L | D: 1.50 mg/L
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 103. 2. মুক্তার প্রধান উপাদান কোনটি?
+A: calcium sulphate | B: calcium chloride | C: calcium carbonate | D: calcium oxide
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 104. 3. 2009 সালে পদার্থ বিজ্ঞানে যাঁরা নোবেল পুরস্কার পেয়েছেন তাঁরা হলেন-
+A: A. Einstein and D. Bohr | B: I.I. Rabi & W. Pauli | C: S. B. Glashow, A Salam and S. Weinberg | D: C. Kao, W.S. Boyle and G.E. Smith
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 105. 4. 256 cycles/s কম্পাঙ্ক বিশিষ্ট একটি সুর শলাকা হইতে উৎপন্ন শব্দ তিন সেকেন্ডে 1020 m দূরত্ব অতিক্রম করে। বায়ুতে শব্দের তরঙ্গ দৈর্ঘ্য কত?
+A: 332.8 cm | B: 308.7 cm | C: 1.32 m | D: 225.5 cm
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 106. 5. একটি হাইড্রোজেন পরমাণুর উত্তেজিত অবস্থায় শক্তি –3.4 V। ফোটন নিঃসরণ করে ইলেকট্রন ভূমি অবস্থায় ফিরে আসে। ভূমিতে শক্তি –13.6 eV। ফোটনের কম্পাঙ্ক হলো ?
+A: $2.46\times10^{15}Hz$ | B: $4.1\times10^{15}Hz$ | C: $8.2\times10^{15}Hz$ | D: $4.92\times10^{15}Hz$
+CORRECT ANSWER: A
+
+[রসায়ন(30)] 107. 6. কোনো পদার্থের কার্য অপেক্ষক 1.85 eV। ঐ পদার্থতে সূচন কম্পাঙ্ক কত?
+A: $4.4\times10^{14}\ Hz$ | B: $0.44\times10^{14}\ Hz$ | C: $4.4\times10^{12}\ Hz$ | D: None of the above
+CORRECT ANSWER: A
+
+[রসায়ন(30)] 108. 7. 1-বিউটাইন এবং 2-বিউটাইন এর পার্থক্য রূপে কোন বিজারকটি ব্যবহৃত হয়?
+A: $\mathrm{Br}_{2} \mid \mathrm{CCl}_{4}$ | B: $\mathrm{H}_{2} / \mathrm{Pt}$ | C: $I_{2} \mid \mathrm{KOH}$ | D: $\mathrm{Cu}^{+}$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 109. 8. $N_2(g)+3H_2(g)⇌2NH_3\left(g\right)$বিক্রিয়াটি তাপোৎপাদী বিক্রিয়াটি সম্পর্কে নিম্নের কোন উক্তিটি সঠিক নয়?
+A: Equilibrium constant decreases with temperature | B: Catalyst increases the rate of the reaction | C: Equilibrium constant increases with pressure | D: Yield of NH3 increases with pressure
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 110. 9. নিম্নের কোন জৈব যৌগটি আয়োডোফরম পরীক্ষা দেয় না?
+A: $CH_3COCl$ | B: $CH_3CHOHCH_3$ | C: $CH_3COCH_3$ | D: $CH_3CH_2OH$
+CORRECT ANSWER: A
+
+[রসায়ন(30)] 111. 10. নিম্নের কোন পরমাণুর প্রথম আয়নীকরণ শক্তি সর্বোচ্চ? বন্ধনীর ভিতরের সংখ্যা পারমাণবিক সংখ্যা নির্দেশ করে।
+A: $Li(3)$ | B: $B(5)$ | C: $N(7)$ | D: $O(8)$
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 112. 11. একটি বর্ণহীন জলীয় দ্রবণে ক্লোরিন দ্রবণ যোগ করা হলে দ্রবণটি বাদামী লাল বর্ণ ধারণ করে এবং$AgNO_3$দ্রবণ যোগ করা হলে হলুদ বর্ণের অধঃক্ষেপ পাওয়া যায়। দ্রবণে যে যৌগটি রয়েছে-
+A: $NaCl$ | B: $NaNO_3$ | C: $Na_2S$ | D: $NaBr$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 113. 12. নিম্নে চারটি বিক্রিয়ার পরীক্ষালব্ধ বেগ সমীকরণ দেয়া হল। কোন বিক্রিয়াটি মৌলিক বিক্রিয়া হতে পারে-
+A: $A+B→P,v=k[A]^2$ | B: $C+D→P,v=k[C]\ [D]^2$ | C: $O+O_2+N_2\to O_3+N_2,v=k[O][O_2][N_2]$ | D: $(CH_3)_3CCl+OH^-→(CH_3)_3C-OH+OH^-,v=k[(CH_3)_3CCl]$
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 114. 13. কপার অ্যানোড ব্যবহার করে কপার সালফেট-এর জলীয় দ্রবণ ইলেক্ট্রোবিশ্লেষণ করা হলে অ্যানোডে যে বিক্রিয়া ঘটে-
+A: $Cu^{2+}(aq)+2e^-→Cu(s)$ | B: $Cu(s)→Cu^{2+}(aq)+2e^-$ | C: $1/2H_2(g)→H^+(aq)+e^-$ | D: $4OH^-(aq)\to2H_2O(l)+O_2(g)+4e^-$
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 115. 14. $X+Y\to Z$বিক্রিয়ার জন্য নির্দিষ্ট তাপমাত্রায় নিম্নলিখিত উপাত্ত পাওয়া গেল। বিক্রিয়ার সঠিক বেগ-সমীকরণ কোনটি?$[\text{X}]_0/\text{mol L}^{-1}$1.01.03.0$[\text{Y}]_0/\text{mol L}^{-1}$1.02.01.0আদিবেগ $\text{mol L}^{-1}\text{s}^{-1}$0.010.020.09
+A: $v=k[X][Y]$ | B: $v=k[X]²[Y]$ | C: $v=k[Y]$ | D: $v=k[X]$
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 116. 15. $CaCO_3$ যৌগটির মোলার ভর $100\ g\ mol^{-1}$। $10\ g\ CaCO_3$তাপ প্রয়োগ করে বিয়োজিত করা হলে যে পরিমান গ্যাস উৎপন্ন হয়, কক্ষ তাপমাত্রায় ও $1$ বায়ুমন্ডল চাপে তার আয়তন-
+A: 2446mL | B: 240 mL | C: 24 L | D: 0.24 L
+CORRECT ANSWER: A
+
+[রসায়ন(30)] 117. 16. নিম্নের কোন অণুর মধ্যে$sp^2$হাইব্রিড অরবিটাল ও$s$-অরবিটাল এর অধিক্রমন দ্বারা গঠিত সমযোজী বন্ধন রয়েছে?
+A: $NH_3$ | B: $BeCl_2$ | C: $C_2H_2$ | D: $C_2H_4$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 118. 17. $A→P$ বিক্রিয়ার জন্য $A$ এর আদি ঘনমাত্রা$[A]_0$ এবং $t$ সময়ে ঘনমাত্রা $[A]$ সাপেক্ষে প্রথমক্রমে হলে নিম্নের কোন লেখচিত্রটি সঠিক নয়?
+A:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/nQvnIGBSsYmvOq6F6idI_.png] | B:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/vYYc1m4baQ8DPYUrkVYxe.png] | C:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/KD4dW9dmho2TKjYdRZzbW.png] | D:  [IMAGE: EXTERNAL_IMAGE_URL: https://assets.chorcha.net/VIStfWMZ2G3HWTXqYVmwy.png]
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 119. 18. $Na_2CO_3$ কে $SiO_2$ এর সাথে উচ্চ তাপমাত্রায় উত্তপ্ত করলে $CO_2$ছাড়া অন্য একটি দ্রব্য উৎপন্ন হয় যার আণবিক সংকেত হল-
+A: $NaHCO_3,SiO_2$ | B: $Na_2Si_2O_4$ | C: $Na_2Si_2O_3$ | D: $Na_2SiO_3$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 120. 19. প্রোপাইল আয়োডাইডের সংকেত নির্দেশ কর-
+A: $CH_3-CH=CH_2I$ | B: $CH_3-CH_2-CH_2I$ | C: $CH=CH-CH_2I$ | D: $CH_2I-CHI-CH_3$
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 121. 20. ইথানল বাষ্প উচ্চতাপমাত্রায়$Al_2O_3$এর উপর দিয়ে চালনা করলে যে দ্রব্য পাওয়া যায় তা হচ্ছে-
+A: $HOCH_2-CH_2OH$ | B: $CH\equiv CH$ | C: $CH_3OH$ | D: $CH_2=CH_2$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 122. 21. অনার্দ্র$AlCl_3$এর উপস্থিতিতে এসিটাইল ক্লোরাইডের সাথে বেনজিন সামান্য উত্তপ্ত করলে যে দ্রব্য উৎপন্ন হয় তা হচ্ছে-
+A: Acetone | B: Acetophenone | C: Phenol | D: Benzyl chloride
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 123. 22. ইথাইন অনুতে যে ধরনের বন্ধন আছে, সেগুলো হচ্ছে-
+A: $2σ,\ and\ 2\pi$ | B: $3σ,\ and\ 2\pi$ | C: $3σ,\ and\ 3\pi$ | D: $2σ,\ and\ 1\pi$
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 124. 23. $XeF_2$ এর $Xe$ পরমাণুতে কোন সংকরণ ঘটে?
+A: $sp$ | B: $sp^2d$ | C: $sp^2d^2$ | D: $sp^3d$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 125. 24. সমুদ্রের পানিতে সোডিয়াম ক্লোরাইডের ঘনত্ব (g/mL) কত ?
+A: 1.26 | B: 2.56 | C: 5.32 | D: 7.98
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 126. 25. $C_6H_{12}$আণবিক সংকেত বিশিষ্ট একটি অ্যালকিনকে ওজনোলাইসিস করার পর জিঙ্ক এর উপস্থিতিতে আর্দ্র বিশ্লেষিত করলে নিম্নের কোন যৌগটি উৎপন্ন হয়?
+A: $CH_3CHO$ | B: $CH_3COCH_3$ | C: $HCHO$ | D: $CH_3CH_2CH_{3}$
+CORRECT ANSWER: B
+
+[রসায়ন(30)] 127. 26. গ্যাসীয় প্রোপিন যখন ব্রোমিনের জলীয় দ্রবণে প্রেরণ করা হয় । তখন 1, 2-ডাইব্রোমোপ্রোপেন,$CH_2BrCHBrCH_3$এবং অন্য একটি উৎপাদ উৎপন্ন হয় । সেটা কি?
+A: $CH_3CHOHCH_2OH$ | B: কোনটিই নয় | C: $CH_3CH_2CH_3$ | D: $CH_3CHOHCH_2Br$
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 128. 27. বায়ুমন্ডলের কোন অঞ্চলে ওজোন স্তর অবস্থিত ?
+A: Troposphere | B: Thermoshere | C: Mesosphere | D: Stratosphere
+CORRECT ANSWER: D
+
+[রসায়ন(30)] 129. 28. 7.1 গ্রাম ক্লোরিনের মধ্যে কত মোল $Cl_2$ রয়েছে?
+A: 0.1 mol | B: 1.0 mol | C: 0.2 mol | D: 0.4 mol
+CORRECT ANSWER: A
+
+[রসায়ন(30)] 130. 29. ইলেক্ট্রনের ভর-
+A: $5.5\times10^{-23}g$ | B: $10.7\times10^{-17}g$ | C: $9.1\times10^{-28}g$ | D: $9.1\times10^{-30}g$
+CORRECT ANSWER: C
+
+[রসায়ন(30)] 131. 30. 10mL 0.02M Na_2CO_3 দ্রবণ তৈরিতে প্রয়োজনীয় Na_2CO_3 এর পরিমাণ
+A: 0.106g | B: 0.122g | C: 0.0212g | D: 0.221g
+CORRECT ANSWER: C
+
+[জীববিজ্ঞান(30)] 132. 1. বাংলাদেশের বিলুপ্ত প্রায় উদ্ভিদ হলো-
+A: Ficus benghalensis | B: Knema bengalensis | C: Premna bengalensis | D: Commelina benghalensis
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 133. 2. জীম্নোস্পার্মে যে ধরনের শস্য পাওয়া যায়-
+A: haploid | B: diploid | C: triploid | D: tetraploid
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 134. 3. স্ট্রোমাটা খুলতে কোনটি দায়ী বলে বিবেচিত?
+A: sunlight | B: glucose | C: chloroplast | D: potassium ion
+CORRECT ANSWER: D
+
+[জীববিজ্ঞান(30)] 135. 4. কোন ব্যাক্টেরিয়া এককভাবে গোলাকার কিন্তু মালার মতো বিন্যস্ত থাকে?
+A: Micrococcus denitrificans | B: Diplococcus pneumoneae | C: Streptococcus lactis | D: Staphylococcus aureus
+CORRECT ANSWER: C
+
+[জীববিজ্ঞান(30)] 136. 5. কোনটি ভাইরাস-এর বৈশিষ্ট্য নয়?
+A: এক কোষ বিশিষ্ট | B: নিউক্লিক অ্যাসিড আছে | C: পোষকদেহে বংশবৃদ্ধিতে সক্ষম | D: বাধ্যতামূলক পরজীবী
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 137. 6. কোন উদ্ভিদ উৎপাদনের জন্য পরাগধানী আবাদ ব্যবহৃত হয়?
+A: homozygous dominant plant | B: double haploid plant | C: heterozygous plant | D: disease free plant
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 138. 7. হ্যাচ ও স্লাক চক্রে প্রথম স্থায়ী পদার্থ-
+A: malic acid | B: oxalo acetic acid | C: pyruvic acid | D: phosphoglyceric acid
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 139. 8. খাদ্যচক্রে শক্তিপ্রবাহে কোনটি সত্য?
+A: no energy loss | B: 50% energy loss | C: 90% energy loss | D: 98% energy loss
+CORRECT ANSWER: C
+
+[জীববিজ্ঞান(30)] 140. 9. টিস্যু কালচার পদ্ধতিতে বিভাজনক্ষম কোষ থেকে তৈরি উদ্ভিদ চারার বৈশিষ্ট্য হলো-
+A: রোগ প্রতিরোধ সক্ষম | B: রোগ গ্রহণে সমর্থ | C: রোগ মুক্ত থাকা | D: রোগ প্রতিরোধকরণ
+CORRECT ANSWER: C
+
+[জীববিজ্ঞান(30)] 141. 10. কোনটি কো-এনজাইম?
+A: phosphorylase | B: NADPH + H$^+$ | C: sucrase | D: amylase
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 142. 11. ইলেকট্রন ট্রান্সপোর্ট সিস্টেমে সর্বশেষ ইলেকট্রন গ্রহীতা হলো-
+A: oxygen | B: carbon dioxide | C: cytochrome | D: water
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 143. 12. নিচের কোনটিতে থাইলাকয়েড থাকে?
+A: Chloroplast | B: mitochondria | C: Ribosome | D: lysosome
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 144. 13. "ক্রোমোসোমের নৃত্য" কোষ বিভাজনের কোন দশায় দেখা যায়?
+A: Prophase | B: Prometaphase | C: Anaphase | D: Telophase
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 145. 14. মানুষের মধ্যে সেরিব্রাল ম্যালেরিয়া ঘটায় Plasmodium এর কোন প্রজাতি?
+A: Plasmodium ovale | B: Plasmodium falciparum | C: Plasmodium vivax | D: Plasmodium malariae
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 146. 15. কোন ধরনের নেমাটোসিস্ট এর সূত্রকটি খাটো ও কাঁটাবিহীন?
+A: স্ট্রেপটোলিন গ্লুটিন্যান্ট | B: ভলভেন্ট | C: স্টিনোটিল | D: স্টেরিওলিন গ্লুটিন্যান্ট
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 147. 16. একটি প্রাথমিক উওসাইট থেকে শেষ পর্যন্ত নিচের কোনটি তৈরি হয়?
+A: একটি ডিম্বাণু ও তিনটি পোলার বডি | B: দুইটি ডিম্বাণু ও দুইটি পোলার বডি | C: তিনটি ডিম্বাণু ও একটি পোলার বডি | D: শুধু চারটি ডিম্বাণু
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 148. 17. যে জিন বৈশিষ্ট্য প্রকাশে বাধা পায় তাকে বলে-
+A: হাইপোস্ট্যাটিক | B: এপিস্ট্যাটিক | C: লিথাল | D: কম্প্লিমেন্টারি
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 149. 18. নিচের কোনটি দ্বারা রাইবোসোম গঠিত?
+A: ডিএনএ ও আরএনএ | B: হিস্টোন, ডিএনএ ও আরএনএ | C: শুধু হিস্টোন | D: প্রোটিন ও আরএনএ
+CORRECT ANSWER: D
+
+[জীববিজ্ঞান(30)] 150. 19. ইন্টারক্যালেটেড ডিস্ক কোন ধরনের কলার বৈশিষ্ট্য?
+A: হৃৎপিণ্ডীয় কলা | B: স্নায়ু কলা | C: অস্থিয় কলা | D: আন্ত্রিক কলা
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 151. 20. কোন হরমোন রেচনে ভূমিকা রাখে?
+A: SSH | B: FSH | C: ADH | D: GTH
+CORRECT ANSWER: C
+
+[জীববিজ্ঞান(30)] 152. 21. তরুণাস্থি কোন আবরণ দ্বারা আবৃত থাকে?
+A: পেরিকন্ড্রিয়াম | B: কিউটিকল | C: পেরিট্রফিক মেমব্রেন | D: পেরিঅস্টিয়াম
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 153. 22. 'Historium Animalium' গ্রন্থের রচয়িতা কে?
+A: ল্যামার্ক | B: অ্যারিস্টটল | C: ম্যাগনাস | D: ডারউইন
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 154. 23. কোন ধারনাটি কোষতত্ত্বের সাথে সম্পর্কিত?
+A: কোষ সকল জড় বস্তু গঠনের একক | B: সকল কোষই জেনেটিক্যালি অভিন্ন | C: সকল কোষই স্ব-উদ্ভূত | D: কোষ সকল জীবন্ত বস্তুর কর্মকাণ্ডের একক
+CORRECT ANSWER: D
+
+[জীববিজ্ঞান(30)] 155. 24. কোনটি ইলিশ মাছের সঠিক বৈজ্ঞানিক নাম?
+A: Tenualosa ilisha | B: Copsychus saularis | C: Panthera tigris | D: Artocarpus heterophyllus
+CORRECT ANSWER: A
+
+[জীববিজ্ঞান(30)] 156. 25. ICZN কোনটির সংক্ষিপ্ত রূপ?
+A: International Commission for Zoological Nomenclature | B: International Code of Zoological Nomenclature | C: International Code on Zoological Nomenclature | D: International Commission of Zoological Nomenclature
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 157. 26. পুষ্পায়নে ফাইটোক্রোম-এর কার্যকারিতা সর্বপ্রথম আবিষ্কার করেন-
+A: Hamner and Bonner | B: Borthwick and Hendricks | C: Garner and Allard | D: None of them
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 158. 27. স্তন্যপায়ী প্রাণীর ডিমের ধরন-
+A: ইউথিরিয়ান | B: ম্যাক্রোলেসিথাল | C: অ্যালেসিথাল | D: টেলোলেসিথাল
+CORRECT ANSWER: C
+
+[জীববিজ্ঞান(30)] 159. 28. প্যানজিয়া-এর চারপাশের জলরাশির নাম কি ছিল?
+A: লরেসিয়া | B: টেথিস সাগর | C: গন্ডোয়ানা | D: প্যানথালাস
+CORRECT ANSWER: D
+
+[জীববিজ্ঞান(30)] 160. 29. কোন শর্করাটি মানব দেহে পরিপাকের কাজে এবং শক্তি উৎপাদনে সবচেয়ে বেশী ব্যবহৃত হয় ?
+A: Fructose | B: Glucose | C: Ribose | D: Galactose
+CORRECT ANSWER: B
+
+[জীববিজ্ঞান(30)] 161. 30. হাইড্রা শিকারের দেহের নিচের কোনটি প্রবেশ করিয়ে অবশ করে?
+A: হিপনোটক্সিন | B: টক্সিন | C: নেমাটোটক্সিন | D: মিউকোটক্সিন
+CORRECT ANSWER: A

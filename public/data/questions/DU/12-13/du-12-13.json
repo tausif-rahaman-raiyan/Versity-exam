@@ -1,0 +1,3944 @@
+[
+  {
+    "id": "du-12-13-q-001",
+    "number": 1,
+    "subject": "Mathematics",
+    "question": "নিম্নের লেখচিত্রে 50 s সময়কালে একটি গাড়ির বেগের পরিবর্তন দেখানো হয়েছে। এই সময়কালে গাড়িটি কত দূরত্বঅতিক্রম করেছে?",
+    "options": [
+      "500 m",
+      "400 m",
+      "350 m",
+      "300 m"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "questionImageUrls": [
+      "assets/questions/DU/12-13/du-12-13/q-001-question-8c7e60.png"
+    ],
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #1 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-002",
+    "number": 2,
+    "subject": "Mathematics",
+    "question": "p(x)=tan^-1x একটি বিপরীত বৃত্তীয় ফাংশন।p(x) এর রেঞ্জ কত?",
+    "options": [
+      "$\\left ( 0 , \\frac{\\pi}{2} \\right )$",
+      "$\\left ( - \\frac{\\pi}{2} , 0 \\right )$",
+      "$\\left [ - \\frac{\\pi}{2} , \\frac{\\pi}{2} \\right ]$",
+      "$\\left ( - \\frac{\\pi}{2} , \\frac{\\pi}{2} \\right )$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #2 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-003",
+    "number": 3,
+    "subject": "Mathematics",
+    "question": "f(x^3-3)=x-2 হলে f-¹(0)=?",
+    "options": [
+      "10",
+      "5",
+      "25",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #3 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-004",
+    "number": 4,
+    "subject": "Mathematics",
+    "question": "$\\frac{1}{|3 x-1|}>1$ এর সমাধান হল-",
+    "options": [
+      "$\\left(-\\infty, \\frac{1}{3}\\right) \\cup(1, \\infty)$",
+      "$x>\\frac{1}{3}$",
+      "\\(0",
+      "$\\left(0, \\frac{1}{3}\\right) \\cup\\left(\\frac{1}{3}, \\frac{2}{3}\\right)$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #4 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-005",
+    "number": 5,
+    "subject": "Mathematics",
+    "question": "$x^2+4x+2y=0$পরাবৃত্তের শীর্ষবিন্দু হবে-",
+    "options": [
+      "$(2,-2)$",
+      "$(-2,-2)$",
+      "$(-2,2)$",
+      "$(2,2)$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #5 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-006",
+    "number": 6,
+    "subject": "Mathematics",
+    "question": "(2x^2-1/(2x^3))^10 এর বিস্তৃতিতে x বর্জিত পদের মান–",
+    "options": [
+      "540",
+      "640",
+      "740",
+      "840"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #6 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-007",
+    "number": 7,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #7 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-008",
+    "number": 8,
+    "subject": "Mathematics",
+    "question": "স্বরবর্ণগুলোকে সব সময় একত্রে রেখে KACHUA শব্দটির বর্ণগুলোকে সাজানোর সংখ্যা হবে-",
+    "options": [
+      "24",
+      "72",
+      "144",
+      "8"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #8 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-009",
+    "number": 9,
+    "subject": "Mathematics",
+    "question": "$‘a’$এর কোন মানের জন্য $2\\hat{i}+\\hat{j}-\\hat{k}\\ ,\\ 3\\hat{i}-2\\hat{j}+4\\hat{k}$ এবং $\\hat{i}-3\\hat{j}+a\\hat{k}$ ভেক্টরত্রয় সমতলীয় ?",
+    "options": [
+      "5",
+      "4",
+      "3",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #9 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-010",
+    "number": 10,
+    "subject": "Mathematics",
+    "question": "একজন লোকের 3 জোড়া কালো মোজা এবং 2 জোড়া বাদামী মোজা আছে । একদিন অন্ধকারে তাড়াহুড়া করে লোকটি কাপড় পরল। সে প্রথমে একটি বাদামী মোজা পরার পর পরবর্তী মোজাও বাদামী হওয়ার সম্ভাবনা-",
+    "options": [
+      "1/3",
+      "2/15",
+      "1/10",
+      "3/10"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #10 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-011",
+    "number": 11,
+    "subject": "Mathematics",
+    "question": "$-1-\\sqrt{3}i$ জটিল সংখ্যাটির আর্গুমেন্ট কত?",
+    "options": [
+      "$\\frac{5\\pi}{12}$",
+      "$\\frac{\\pi}{3}$",
+      "$\\frac{\\pi}{6}$",
+      "$\\frac{4\\pi}{3}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #11 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-012",
+    "number": 12,
+    "subject": "Mathematics",
+    "question": "$\\sin \\theta + \\cos \\theta = \\sqrt{2}$ হলে, $0 \\leq \\theta \\leq \\pi/2$ ব্যবধিতে $\\theta$ এর মান কত?",
+    "options": [
+      "$\\pi/6$",
+      "$\\pi/4$",
+      "$\\pi/3$",
+      "$\\pi/2$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #12 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-013",
+    "number": 13,
+    "subject": "Mathematics",
+    "question": "$\\frac{1}{3} i$ এর বর্গমূল কোনটি?",
+    "options": [
+      "$\\pm \\frac{1}{\\sqrt{3}} \\left ( 1 + i \\right )$",
+      "$\\pm \\frac{1}{\\sqrt{3}} \\left ( 1 - i \\right )$",
+      "$\\pm \\frac{1}{\\sqrt{6}} \\left ( 1 + i \\right )$",
+      "$\\pm \\frac{1}{\\sqrt{6}} \\left ( 1 - i \\right )$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #13 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-014",
+    "number": 14,
+    "subject": "Mathematics",
+    "question": "$\\frac{1}{2}+\\frac{1}{3^2}+\\frac{1}{2^3}+\\frac{1}{3^4}+\\frac{1}{2^5}+\\frac{1}{3^6}+.........$ধারার সমষ্টি হবে-",
+    "options": [
+      "$\\frac{24}{9}$",
+      "$\\frac{19}{24}$",
+      "$\\frac{5}{24}$",
+      "$\\frac{5}{19}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #14 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-015",
+    "number": 15,
+    "subject": "Mathematics",
+    "question": "একজন কৃষক একটি আয়তাকার বাগানের তিন দিক বেড়া দিয়ে এবং চতুর্থদিকে একটি দেওয়াল দিয়ে ঘেরাও দিল যদি তাঁর কাছে 100m বেড়া থাকে তবে ঘেরাও দেওয়া স্থানের সর্বোচ্চ আয়তন হবে-",
+    "options": [
+      "2500$m^2$",
+      "1250$m^2$",
+      "750$m^2$",
+      "2000$m^2$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #15 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-016",
+    "number": 16,
+    "subject": "Mathematics",
+    "question": "$\\begin{vmatrix} a + x& a - x& a - x\\\\ a - x & a + x & a - x\\\\ a - x & a - x & a + x\\end{vmatrix} = 0$ then $x$ =?",
+    "options": [
+      "$0$",
+      "$a$",
+      "$2a$",
+      "$7a$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #16 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-017",
+    "number": 17,
+    "subject": "Mathematics",
+    "question": "$u$ বেগে অনুভূমিকের সাথে $\\alpha$কোণে প্রক্ষিপ্ত বস্তুর সর্বোচ্চ উচ্চতা-",
+    "options": [
+      "$\\frac{u^2\\sin2\\alpha}{2g}$",
+      "$\\frac{u^2\\sin^2\\alpha}{2g}$",
+      "$\\frac{u^2\\sin2\\alpha}{g}$",
+      "$\\frac{u^2\\sin^2\\alpha}{g}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #17 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-018",
+    "number": 18,
+    "subject": "Mathematics",
+    "question": "3P এবং 2P বলদ্বয়ের লব্ধি R. প্রথম বল দ্বিগুণ করলে লব্ধির পরিমাণও দ্বিগুণ হয়। বলদ্বয়ের অন্তর্গত কোণ হবে-",
+    "options": [
+      "110°",
+      "120°",
+      "150°",
+      "135°"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #18 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-019",
+    "number": 19,
+    "subject": "Mathematics",
+    "question": "$3 x^{2}+4 y^{2}=12$ উপবৃত্তের উপকেন্দ্রদ্বয়ের দূরত্ব কত?",
+    "options": [
+      "2",
+      "$\\sqrt{3}$",
+      "1",
+      "$\\frac{2}{\\sqrt{3}}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #19 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-020",
+    "number": 20,
+    "subject": "Mathematics",
+    "question": "$y=4x^2$ বক্ররেখা এবং $x=1$ ও $x=2$ সরলরেখা দ্বারা আবদ্ধ ক্ষেত্রের ক্ষেত্রফল কোনটি ?",
+    "options": [
+      "$\\frac{24}{5}$ বর্গএকক",
+      "$\\frac{32}{3}$ বর্গএকক",
+      "$32$ বর্গএকক",
+      "$\\frac{28}{3}$ বর্গএকক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #20 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-021",
+    "number": 21,
+    "subject": "Mathematics",
+    "question": "একটি বস্তুকণা খাড়া উপরের দিকে প্রক্ষেপ করলে নির্দিষ্ট বিন্দু $P$তে পৌঁছাতে $t_1$সময় লাগে। যদি আরও $t_2$ সময় পর বস্তুটি ভূমিতে পতিত হয় তবে কণাটির সর্বোচ্চ উচ্চতা হবে-",
+    "options": [
+      "$\\frac{1}{2}g\\left(t_1+t_2\\right)$",
+      "$\\frac{1}{8}g\\left(t_1+t_2\\right)^2$",
+      "$\\frac{1}{8}g\\left(t_1^2+t_2^2\\right)^2$",
+      "$\\frac{1}{2}g\\left(t_1^2+t_2^2\\right)^2$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #21 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-022",
+    "number": 22,
+    "subject": "Mathematics",
+    "question": "$2x-x^2+k=0$একটি দ্বিঘাত সমীকরণ । সমীকরণটির মূলদ্বয় বাস্তব হলে -",
+    "options": [
+      "$k < 1/8$",
+      "$k\\ge-1$",
+      "$k<-1/8$",
+      "$k>-8$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #22 ([উচ্চতর গণিত(26)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-023",
+    "number": 23,
+    "subject": "Bangla",
+    "question": "সমভিব্যাহার' শব্দের উপসর্গ কয়টি?",
+    "options": [
+      "২টি",
+      "৩টি",
+      "৪টি",
+      "৫টি।"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #23 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-024",
+    "number": 24,
+    "subject": "Bangla",
+    "question": "পাঠ্য কোন কবিতায় বাতাবি নেবুর উল্লেখ আছে-",
+    "options": [
+      "তাহারেই পড়ে মনে",
+      "বাংলাদেশ",
+      "একটি ফটোগ্রাফ",
+      "কবর"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #24 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-025",
+    "number": 25,
+    "subject": "Bangla",
+    "question": "কোন শব্দটি উপসর্গযোগে গঠিত?",
+    "options": [
+      "অবরেণ্য",
+      "তরুণ",
+      "পরীক্ষা",
+      "কলুষ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #25 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-026",
+    "number": 26,
+    "subject": "Bangla",
+    "question": "দেহের বয়স অনুযায়ী মনের বয়স না বাড়লে তাকে বলে-",
+    "options": [
+      "শারীরিক প্রতিবন্ধী",
+      "মনোবিকারগ্রস্ত",
+      "মানসিক রোগী",
+      "বুদ্ধিপ্রতিবন্ধী"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #26 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-027",
+    "number": 27,
+    "subject": "Bangla",
+    "question": "নিচের কোনটি শুদ্ধ বানান?",
+    "options": [
+      "কণিনীকা",
+      "কনিনিকা",
+      "কনিনীকা",
+      "কনীনিকা"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #27 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-028",
+    "number": 28,
+    "subject": "Bangla",
+    "question": "নিচের কোনটি শামসুর রাহমানের কাব্যগ্রন্থ নয়?",
+    "options": [
+      "দুঃসময়ের মুখোমুখি",
+      "উদ্ভট উটের পিঠে চলেছে স্বদেশ",
+      "নিজ বাসভূমে",
+      "একক সন্ধ্যায় বসন্ত"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #28 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-029",
+    "number": 29,
+    "subject": "Bangla",
+    "question": "'তুষারধবল' কোন সমাসের উদাহরণ?",
+    "options": [
+      "সাধারণ কর্মধারয়",
+      "উপমান কর্মধারয়",
+      "উপমিত কর্মধারয়",
+      "মধ্যপদলোপী কর্মধারয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #29 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-030",
+    "number": 30,
+    "subject": "Bangla",
+    "question": "‘ণ-ত্ব’ বিধি অনুসারে কোন গুচ্ছ অশুদ্ধ বানানের দৃষ্টান্ত ?",
+    "options": [
+      "ধরন, বরণ",
+      "বর্ননা, পুরোণো",
+      "নেত্রকোনা, পরগনা",
+      "সবকয়টি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #30 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-031",
+    "number": 31,
+    "subject": "Bangla",
+    "question": "সন্ধিঘটিত কোন শব্দটি শুদ্ধ?",
+    "options": [
+      "বৃহদংশ",
+      "জাত্যাভিমান",
+      "আদ্যান্ত",
+      "শিরোচ্ছেদ"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #31 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-032",
+    "number": 32,
+    "subject": "Bangla",
+    "question": "প্রমথ চৌধুরী সম্পাদিত 'সবুজপত্র' পত্রিকা কত সালে প্রথম প্রকাশিত হয়?",
+    "options": [
+      "১৯১৩",
+      "১৯১৪",
+      "১৯১৫",
+      "১৯১৭"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #32 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-033",
+    "number": 33,
+    "subject": "Bangla",
+    "question": "'Lyric' শব্দের বাংলা পরিভাষা-",
+    "options": [
+      "গান",
+      "সুর",
+      "কথা",
+      "গীতিকবিতা"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #33 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-034",
+    "number": 34,
+    "subject": "Bangla",
+    "question": "'ঊর্ণাজাল' শব্দের অর্থ-",
+    "options": [
+      "দোপাট্টা",
+      "কুজ্বটিকা",
+      "মাকড়সার তৈরি জাল",
+      "মাছধরার নিক্ষেপযোগ্য জাল"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #34 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-035",
+    "number": 35,
+    "subject": "Bangla",
+    "question": "বাংলা ব্যঞ্জনবর্ণের প্রতিবর্গের পঞ্চম বর্ণের ধ্বনিটি-",
+    "options": [
+      "অল্পপ্রাণধ্বনি",
+      "অঘোষধ্বনি",
+      "মহাপ্রাণধ্বনি",
+      "নাসিক্যধ্বনি"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #35 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-036",
+    "number": 36,
+    "subject": "Bangla",
+    "question": "‘যেমন কর্ম তেমন ফল।' এ বাক্যে ব্যবহৃত হয়েছে-",
+    "options": [
+      "নির্ধারক বিশেষণ",
+      "ক্রিয়া বিশেষণ",
+      "সাপেক্ষ সর্বনাম",
+      "বিশেষণের বিশেষণ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #36 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-037",
+    "number": 37,
+    "subject": "Bangla",
+    "question": "একাধিক স্বাধীন বাক্যকে একটি বাক্যে লিখলে সেগুলোর মাঝখানে কী চিহ্ন ব্যবহৃত হয়?",
+    "options": [
+      "কোলন",
+      "ড্যাশ",
+      "সেমিকোলন",
+      "কমা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #37 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-038",
+    "number": 38,
+    "subject": "Bangla",
+    "question": "কোন শব্দটি শুদ্ধ?",
+    "options": [
+      "সমীক্ষন",
+      "সমীচীন",
+      "শিরচ্ছেদ",
+      "ভাষ্কর"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #38 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-039",
+    "number": 39,
+    "subject": "Bangla",
+    "question": "‘মণ্ডূক' শব্দের অর্থ-",
+    "options": [
+      "মুণ্ডধারী",
+      "ভেক",
+      "কুয়ো",
+      "মিষ্টিজাতীয় দ্রব্য"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #39 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-040",
+    "number": 40,
+    "subject": "Bangla",
+    "question": "‘পিপাসিত' শব্দের বিশেষ্যরূপ-",
+    "options": [
+      "পিপাসী",
+      "পিপাসু",
+      "পিপাসা",
+      "পিয়াসী"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #40 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-041",
+    "number": 41,
+    "subject": "Bangla",
+    "question": "‘Vertical' শব্দের পরিভাষা-",
+    "options": [
+      "অনুভূমিক",
+      "উচ্চতা",
+      "উল্লম্ব",
+      "দেয়াল"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #41 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-042",
+    "number": 42,
+    "subject": "Bangla",
+    "question": "‘সাহচর্য' শব্দটি গঠিত হয়েছে-",
+    "options": [
+      "প্রত্যয়যোগে",
+      "ধাতুযোগে",
+      "সন্ধিযোগে",
+      "সমাসযোগে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #42 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-043",
+    "number": 43,
+    "subject": "Bangla",
+    "question": "'নিরাকার' শব্দের শুদ্ধ সন্ধিবিচ্ছেদ কোনটি?",
+    "options": [
+      "'নিরাকার' শব্দের শুদ্ধ সন্ধিবিচ্ছেদ কোনটি?",
+      "নিঃ+ আকার",
+      "নির+আকার",
+      "নিরঃ+ কার"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #43 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-044",
+    "number": 44,
+    "subject": "Bangla",
+    "question": "কার মেছোয়াক করা দাঁত বালব-এর আলোয় ঝকঝক করে?",
+    "options": [
+      "মোদাব্বেরের",
+      "মকসুদের",
+      "ইউনুসের",
+      "রাহাতের"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #44 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-045",
+    "number": 45,
+    "subject": "Bangla",
+    "question": "'কাব্য জগতে যার নাম আনন্দ তারই নাম বেদনা'- বাক্যটি আছে যে রচনায়-",
+    "options": [
+      "বিলাসী",
+      "হৈমন্তী",
+      "সাহিত্যে খেলা",
+      "যৌবনের গান"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #45 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-046",
+    "number": 46,
+    "subject": "Bangla",
+    "question": "‘মাতৃহৃদয়ে পক্ষপাতিতা নাই ।' বাক্যটি কোন রচনার অন্তর্গত?",
+    "options": [
+      "অর্ধাঙ্গী",
+      "যৌবনের গান",
+      "বিলাসী",
+      "কমলাকান্তের দপ্তর"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #46 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-047",
+    "number": 47,
+    "subject": "Bangla",
+    "question": "‘পাঞ্জেরি’ কবিতায় যাত্রীরা কোথায় বসে অপেক্ষা করে?",
+    "options": [
+      "তীরে",
+      "মাস্তুলে",
+      "বন্দরে",
+      "দাঁড়ে"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #47 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-048",
+    "number": 48,
+    "subject": "Bangla",
+    "question": "'তাম্রশাসন' মানে-",
+    "options": [
+      "স্বৈরশাসন",
+      "কালো আইন",
+      "তামার পাতে খোদাই করা আদেশ",
+      "একজন রাজার নাম"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #48 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-049",
+    "number": 49,
+    "subject": "Bangla",
+    "question": "‘আমাদের দলে কেহ দলপতি নাই ।' কাহাদের দলে?",
+    "options": [
+      "কবিদের",
+      "তরুণদের",
+      "সাধকদের",
+      "বক্তাদের"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #49 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-050",
+    "number": 50,
+    "subject": "Bangla",
+    "question": "‘মহাজাগতিক কিউরেটর’ গল্পটিতে লেখক যা চেয়েছেন-",
+    "options": [
+      "পরিবেশ ও পৃথিবী সম্পর্কে মানুষের সচেতনতা",
+      "মানুষের নির্বুদ্ধিতাকে তুলে ধরা",
+      "মানুষের শ্রেষ্ঠত্ব বর্ণনা করা",
+      "মানুষের উপর অন্য প্রাণীর প্রাধান্য দেওয়া"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #50 ([বাংলা(28)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-051",
+    "number": 51,
+    "subject": "Physics",
+    "question": "একটি আদর্শ ট্রান্সফরমারের গৌণ ও মুখ্য কুণ্ডলীর পাক সংখ্যার অনুপাত 6 : 1 । যদি মুখ্য কুণ্ডলীতে প্রতি সেকেন্ডে ব্যয়িত শক্তি 6 J হয়, তবে গৌণ কুণ্ডলীতে বৈদ্যুতিক ক্ষমতা কত ?",
+    "options": [
+      "6 J",
+      "6 W",
+      "36 W",
+      "3.6 W"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #51 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-052",
+    "number": 52,
+    "subject": "Physics",
+    "question": "নিম্নের কোন ভৌত প্রক্রিয়া শব্দ তরঙ্গ দ্বারা প্রদর্শিত হয় না?",
+    "options": [
+      "প্রতিসরণ",
+      "ব্যতিচার",
+      "সমবর্তন",
+      "অপবর্তন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #52 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-053",
+    "number": 53,
+    "subject": "Physics",
+    "question": "চিত্রে একটি বর্তনীতে সমান্তরাল সন্নিবেশে সংযুক্ত তিনটি রোধ দেখানো হয়েছে । ব্যাটারির তড়িৎ-চালক শক্তি 12V এবং অভ্যন্তরীণ রোধ নগন্য । অ্যামিটারের পাঠ 3.2 A হলে X-এর রোধ কত? তিনটি সমান্তরাল রোধ, যার মধ্যে ২টির মান ১০ ওহম।",
+    "options": [
+      "$2.1\\Omega$",
+      "$4.6\\Omega$",
+      "$6.0\\Omega$",
+      "$15\\Omega$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "questionImageUrls": [
+      "assets/questions/DU/12-13/du-12-13/q-053-question-724c15.png"
+    ],
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #53 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-054",
+    "number": 54,
+    "subject": "Physics",
+    "question": "একটি ধারকের দুই পাতের মধ্যে বিভব পার্থক্য $3V$ এবং ধারকের সঞ্চিত শক্তি $X$। ধারকের বিভব পার্থক্য বৃদ্ধি করে $9V$, করা হলে,সঞ্চিত শক্তি বৃদ্ধি পেয়ে কত হবে ?",
+    "options": [
+      "$3X$",
+      "$6X$",
+      "$9X$",
+      "$27X$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #54 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-055",
+    "number": 55,
+    "subject": "Physics",
+    "question": "100 W ক্ষমতা সম্পন্ন একটি হিটারে 2 kg ভরের একটি কপারের খন্ডকে 40s যাবৎ তাপ দেওয়া হলে খণ্ডটির তাপমাত্রা কত বৃদ্ধি হবে ? কপারের (Copper) আপেক্ষিক সুপ্ততাপ (specific heat capacity) 385 J/kg°C হিসাবে ধরা হয়।",
+    "options": [
+      "5K",
+      "10K",
+      "20K",
+      "50K"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #55 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-056",
+    "number": 56,
+    "subject": "Physics",
+    "question": "পানি সাপেক্ষে কাচের প্রতিসরাঙ্ক 9/8. বায়ু সাপেক্ষে কাচের প্রতিসরাঙ্ক 3/2 হলে বায়ুর সাপেক্ষে পানির প্রতিসরাঙ্ক কত?",
+    "options": [
+      "2/3",
+      "4/5",
+      "4/3",
+      "3/4"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #56 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-057",
+    "number": 57,
+    "subject": "Physics",
+    "question": "একটি কমন এমিটার ট্রানজিস্টারের$\\beta=100$এবং$I_B=50\\mu A$হলে,$\\alpha$কত?",
+    "options": [
+      "1.01",
+      "0.99",
+      "1.00",
+      "1.10"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #57 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-058",
+    "number": 58,
+    "subject": "Physics",
+    "question": "একটি কৈশিক নলের ব্যাস $0.04\\times\\ 10^{-4}\\ m.$এর এক প্রান্ত পানিতে ডুবালে পানি নলের ভিতর$0.082\\ m$উপরে উঠে । পানির তলটান কত? [দেওয়া আছে, স্পর্শকোণ$=0°$এবং পানির ঘনত্ব$=1.0\\times10^3\\ kg/m^3.$]",
+    "options": [
+      "$8.5\\times10^{-4}\\ N/m$",
+      "$7.5\\times10^{-4}\\ N/m$",
+      "$9.0\\times10^{-4}\\ N/m$",
+      "$8.0\\times10^{-4}\\ N/m$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #58 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-059",
+    "number": 59,
+    "subject": "Physics",
+    "question": "একটি তারের উপর টান F হলে দৈর্ঘ্য বৃদ্ধি হয় x. তারটি যদি হুকের সূত্র মেনে চলে এবং তারের উপাদানের ইয়ং এর গুণাঙ্ক Y হয় । তবে তারে সঞ্চিত বিভবশক্তি কত?",
+    "options": [
+      "$1/2\\ Yx$",
+      "$Yx$",
+      "$1/2\\ Fx$",
+      "$Fx$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #59 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-060",
+    "number": 60,
+    "subject": "Physics",
+    "question": "তোমার একটি $15\\Omega$ রোধ প্রয়োজন কিন্তু তোমার কাছে কয়েকটা $10\\Omega$ রোধ আছে । কীভাবে তুমি $10\\Omega$ রোধ ব্যবহার করে $15\\Omega$ রোধটি তৈরি করবে?",
+    "options": [
+      "তিনটি সমান্তরাল সংযোগে",
+      "তিনটি শ্রেণিবদ্ধ সংযোগে",
+      "দুটি শ্রেণিবদ্ধ সংযোগে",
+      "দুটি সমান্তরাল সংযোগে ও একটি শ্রেণিবদ্ধ সংযোগে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #60 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-061",
+    "number": 61,
+    "subject": "Physics",
+    "question": "300 Hz কম্পাঙ্কের এবং বিপরীত দিকে অগ্রগামী দুটি অভিন্ন তরঙ্গের উপরিপাতনের ফলে একটি স্থির তরঙ্গের সৃষ্টি হয়েছে। স্থির তরঙ্গের পর পর দুটি নিষ্পন্দ বিন্দুর দূরত্ব 1.5 m. অগ্রগামী তরঙ্গ দুটির বেগ কত?",
+    "options": [
+      "100 m/s",
+      "200 m/s",
+      "450 m/s",
+      "900 m/s"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #61 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-062",
+    "number": 62,
+    "subject": "Physics",
+    "question": "একটি গাড়ি সোজা উত্তরদিকে 90 m পথ 15s সময়ে অতিক্রম করে । পরবর্তীতে গাড়িটি দ্রুত ঘুরে দক্ষিণ দিকে 40 m দূরত্ব 5s সময়ে অতিক্রম করে। এই 20s সময়কাল গাড়িটির গড় বেগের মান কত ?",
+    "options": [
+      "2.5 m/s",
+      "5.0 m/s",
+      "6.5 m/s",
+      "7.0 m/s"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #62 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-063",
+    "number": 63,
+    "subject": "Physics",
+    "question": "একটি ঘরের বিপরীত দুটি দেয়ালের মধ্যবর্তী দূরত্ব 4 m. একটি দেয়ালে একটি অবতল দর্পণ লাগানো আছে । দর্পণ হতে 2.5 m. দূরে একটি বস্তু রাখলে তার প্রতিবিম্ব বিপরীত দেয়ালে গঠিত হয়। দর্পণের ফোকাস দূরত্ব কত?",
+    "options": [
+      "2.5 m",
+      "1.54 m",
+      "1.44 m",
+      "2.25 m"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #63 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-064",
+    "number": 64,
+    "subject": "Physics",
+    "question": "বলবিদ্যার বিভিন্ন মৌলিক ভৌত রাশি সমূহ হলো-",
+    "options": [
+      "ভর, বল এবং সময়",
+      "ভর, দৈর্ঘ্য এবং সময়",
+      "বল, শক্তি এবং সময়",
+      "বল, ভর এবং সময়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #64 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-065",
+    "number": 65,
+    "subject": "Physics",
+    "question": "0° C তাপমাত্রার 2.1 kg বরফ 40° C তাপমাত্রার 5.9 kg পানির সাথে মিশ্রিত করা হলো । মিশ্রণের তাপমাত্রা কত হবে? পানির আপেক্ষিক তাপ$=4.2\\times10^3J\\ kg^{-1}K^{-1}$, বরফ গলনের আপেক্ষিক সুপ্ততাপ$=3.36\\times10^5\\ J\\ kg^{-1}$.",
+    "options": [
+      "7.5° C",
+      "9.5° C",
+      "10.5° C",
+      "8.5° C"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #65 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-066",
+    "number": 66,
+    "subject": "Physics",
+    "question": "পৃথিবীপৃষ্ঠে মহাকর্ষীয় ক্ষেত্র প্রাবল্য g. কাল্পনিক একটি গ্রহের ঘনত্ব যদি পৃথিবীর ঘনত্বের সমান হয় এবং ব্যাসার্ধ যদি দ্বিগুণ হয় তবে এই গ্রহের পৃষ্ঠে মহাকর্ষীয় ক্ষেত্র প্রাবল্য কত ?",
+    "options": [
+      "2g",
+      "g",
+      "4g",
+      "8g"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #66 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-067",
+    "number": 67,
+    "subject": "Physics",
+    "question": "একটি পাথরকে স্থির অবস্থায় একটি উঁচু দালান থেকে ছেড়ে দেওয়া হলো। ভূমিতে পৌঁছাতে পাথরটির 4 s এর বেশি সময় লাগে। বাতাসের ঘর্ষণ ক্ষুদ্র হলে পাথরটির প্রথম 4s সময়ে পতনের দূরত্ব এবং প্রথম 2 s সময়ে পতনের দূরত্বের অনুপাত কত?",
+    "options": [
+      "1/4",
+      "4/1",
+      "1/2",
+      "2/1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #67 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-068",
+    "number": 68,
+    "subject": "Physics",
+    "question": "একটি তেজষ্ক্রিয় পদার্থের অর্ধায়ু 1600 বছর । কত সময় পরে তেজস্ক্রিয় পদার্থের 15/16 অংশ ক্ষয়প্রাপ্ত হবে?",
+    "options": [
+      "1500 years",
+      "4800 years",
+      "6400 years",
+      "9600 years"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #68 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-069",
+    "number": 69,
+    "subject": "Physics",
+    "question": "একটি বৈদ্যুতিক ইস্ত্রিতে 220 V এবং 1200 W লেখা আছে। যদি প্রতি ইউনিট বিদ্যুৎ শক্তির মূল্য 1.00 টাকা হয়, তাহলে ইস্ত্রিটি 2 ঘন্টা চালালে কত খরচ পড়বে ?",
+    "options": [
+      "3 Tk",
+      "2.6 Tk",
+      "2.3 Tk",
+      "2.4 Tk"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #69 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-070",
+    "number": 70,
+    "subject": "Physics",
+    "question": "একটি বস্তুকে আনুভূমিকের সাথে 30° কোণে নিক্ষেপ করা হলো। পরবর্তীতে একই বস্তুকে একই আদি দ্রুতিতে আনুভূমিকের সাথে 40° কোণে নিক্ষেপ করা হলো। নিম্নের কোনটি সত্য নয় ?",
+    "options": [
+      "আনুভূমিক পাল্লা বৃদ্ধি পেল",
+      "বেগের আনুভূমিক উপাংশ বৃদ্ধি পেলো",
+      "সর্বোচ্চ উচ্চতা বৃদ্ধি পেল",
+      "বস্তুটির উড্ডয়নকাল বৃদ্ধি পেল"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #70 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-071",
+    "number": 71,
+    "subject": "Physics",
+    "question": "m ভরের একটি বস্তু r ব্যাসার্ধের বৃত্তাকার পথে সমদ্রুতিতে চলছে । বৃত্তাকার গতির পর্যায়কাল T. বস্তুটির উপর কেন্দ্রমুখী বলের মান কত?",
+    "options": [
+      "$\\frac{4\\pi^2mr}{T^2}$",
+      "$\\frac{4\\pi^2mr^2}{T}$",
+      "$\\frac{4\\pi mr^2}{T^2}$",
+      "$\\pi mr^2$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #71 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-072",
+    "number": 72,
+    "subject": "Physics",
+    "question": "একটি$_{\\ \\ 92}^{238}\\ U$নিউক্লিয়াস দুই ধাপে ক্ষয় হয়ে$_{\\ \\ 91}^{234}\\ Pa$নিউক্লিয়াস সৃষ্টি করে । এই দুই ধাপে কী কী ধরনের রশ্মি নির্গত হয়?",
+    "options": [
+      "$\\alpha\\ and\\ \\beta$",
+      "$\\beta^-\\ and\\ \\beta^-$",
+      "$\\beta^-\\ and\\ \\gamma$",
+      "$\\alpha\\ and\\ \\gamma$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #72 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-073",
+    "number": 73,
+    "subject": "Physics",
+    "question": "সরল ছন্দিত গতিতে চলমান একটি বস্তুর মোট শক্তি E। কম্পাঙ্ক অপরিবর্তিত রেখে বিস্তার দ্বিগুণ করলে সরল ছন্দিত গতিতে চলমান বস্তুটির মোটশক্তি কত হবে?",
+    "options": [
+      "E",
+      "2E",
+      "E/2",
+      "4E"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #73 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-074",
+    "number": 74,
+    "subject": "Physics",
+    "question": "একটি কণার ভরবেগ P. কণাটির গতিশক্তি দ্বিগুণ করা হলে এর নতুন ভরবেগ কত হবে?",
+    "options": [
+      "√2P",
+      "2P",
+      "4P",
+      "8P"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #74 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-075",
+    "number": 75,
+    "subject": "Physics",
+    "question": "স্থির অবস্থায় থাকা একটি বস্তু বিস্ফোরণের ফলে$M_1$এবং$M_2$ভরের দুটি খন্ডে বিভক্ত হয় এবং খন্ড দুটি বিপরীত দিকে যথাক্রমে$V_1$এবং$V_2$বেগ প্রাপ্ত হয়।$V_1$এবং$V_2$এর অনুপাত কত হবে ?",
+    "options": [
+      "$\\frac{M_1}{M_2}$",
+      "$\\frac{M_2}{M_1}$",
+      "$\\left(\\frac{M_1}{M_2}\\right)^{\\frac{1}{2}}$",
+      "$\\left(\\frac{M_2}{M_1}\\right)^{\\frac{1}{2}}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #75 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-076",
+    "number": 76,
+    "subject": "Physics",
+    "question": "Higgs প্রক্রিয়া এক ধরনের-",
+    "options": [
+      "ভর তৈরির প্রক্রিয়া",
+      "শক্তি তৈরির প্রক্রিয়া",
+      "ইলেকট্রন তৈরির প্রক্রিয়া",
+      "বল তৈরির প্রক্রিয়া"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #76 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-077",
+    "number": 77,
+    "subject": "Physics",
+    "question": "একই দৈর্ঘ্য এবং একই পদার্থ দিয়ে তৈরি দুটি তার P এবং Q কে একটি ব্যাটারির সাথে সমান্তরালে সংযুক্ত করা হয়েছে। P তারের ব্যাস 2 mm এবং Q তারের ব্যাস 1 mm. P এবং Q এর তড়িৎ প্রবাহের অনুপাত কত?",
+    "options": [
+      "1/4",
+      "1/2",
+      "2/1",
+      "4/1"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #77 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-078",
+    "number": 78,
+    "subject": "Physics",
+    "question": "5 kg ভরের একটি রাইফেল থেকে 20 g ভরের একটি বুলেট 1000 m/s গতিতে ছুটে যায় । পিছন দিকে রাইফেলের ধাক্কার বেগ কত?",
+    "options": [
+      "4 m/s",
+      "400 m/s",
+      "4000 m/s",
+      "40 m/s"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #78 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-079",
+    "number": 79,
+    "subject": "Physics",
+    "question": "একটি ইলেক্ট্রিক ফিল্ডে ইলেক্ট্রনের ত্বরণ এবং শক্তি সমানুপাতিক ।$10^{-20}\\ N$শক্তির জন্য ত্বরণ$100\\ m/s^2$হলে,$10^{-25}\\ N$শক্তির জন্য ত্বরণ হবে-",
+    "options": [
+      "$10^5\\ m/s^2$",
+      "$10^{15}\\ m/s^2$",
+      "$10^{-15}\\ m/s^2$",
+      "$10^{-3}\\ m/s^2$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #79 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-080",
+    "number": 80,
+    "subject": "Physics",
+    "question": "একটি লজিক গেটের আউটপুট এক হয় যখন এর সব ইনপুট জিরো থাকে। এই গেটটি -",
+    "options": [
+      "AND",
+      "OR",
+      "NOT",
+      "NAND"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #80 ([পদার্থবিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-081",
+    "number": 81,
+    "subject": "Biology",
+    "question": "ওয়ালেসের লাইন হলো একটি কাল্পনিক সীমারেখা যা___এবং___অঞ্চলের মধ্যে অবস্থিত ?",
+    "options": [
+      "ওরিয়েন্টাল ও অস্ট্রেলিয়া",
+      "ইউরোপ ও এশিয়া",
+      "বাংলাদেশ ও ভারত",
+      "কোরিয়া ও জাপান"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #81 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-082",
+    "number": 82,
+    "subject": "Biology",
+    "question": "Liliopsida বলতে কি বোঝায়?",
+    "options": [
+      "একবীজপত্রী উদ্ভিদ",
+      "দ্বিবীজপত্রী উদ্ভিদ",
+      "লিলিয়েসী গোত্র",
+      "লিলিয়েন্সিস বর্গ"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #82 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-083",
+    "number": 83,
+    "subject": "Biology",
+    "question": "ককলিয়া হলো-",
+    "options": [
+      "দৃষ্টির সাথে সংশ্লিষ্ট অঙ্গ",
+      "শ্রবণের সাথে সংশ্লিষ্ট অঙ্গ",
+      "ঘ্রাণের সাথে সংশ্লিষ্ট অঙ্গ",
+      "খাদ্য চর্বণের সাথে সংশ্লিষ্ট অঙ্গ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #83 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-084",
+    "number": 84,
+    "subject": "Biology",
+    "question": "মেসোগ্লিয়া পাওয়া যায় কোন প্রাণীতে?",
+    "options": [
+      "মানুষ",
+      "আরশোলা",
+      "হাইড্রা",
+      "মাছ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #84 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-085",
+    "number": 85,
+    "subject": "Biology",
+    "question": "কোরালয়েড মূল দেখা যায়-",
+    "options": [
+      "Cycas",
+      "Pinus",
+      "Fern",
+      "Gnetum"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #85 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-086",
+    "number": 86,
+    "subject": "Biology",
+    "question": "ফুসফুসীয় ধমনি বহন করে-",
+    "options": [
+      "oxygenated blood",
+      "deoxygenated blood",
+      "pure blood",
+      "mixed blood"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #86 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-087",
+    "number": 87,
+    "subject": "Biology",
+    "question": "মানুষের RBC এর গড় আয়ুষ্কাল হচ্ছে-",
+    "options": [
+      "96 days",
+      "120 days",
+      "28 days",
+      "62 days"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #87 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-088",
+    "number": 88,
+    "subject": "Biology",
+    "question": "নিউক্লিয়াসের প্রথম বর্ণনা করেন-",
+    "options": [
+      "রবার্ট ব্রাউন",
+      "অ্যারিস্টটল",
+      "লুই পাস্তুর",
+      "আলেকজান্ডার ফ্লেমিং"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #88 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-089",
+    "number": 89,
+    "subject": "Biology",
+    "question": "নিচের কোনটিতে প্লাসমিড নেই?",
+    "options": [
+      "E. coli",
+      "A. tumefaciens",
+      "Yeast",
+      "Chlorella"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #89 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-090",
+    "number": 90,
+    "subject": "Biology",
+    "question": "মানুষের বক্ষদেশীয় অঞ্চলে কয়টি কশেরুকা থাকে?",
+    "options": [
+      "৪",
+      "৫",
+      "৭",
+      "১২"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #90 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-091",
+    "number": 91,
+    "subject": "Biology",
+    "question": "সপ্তম করোটিক স্নায়ুকে বলা হয় কাকে?",
+    "options": [
+      "ভেগাস",
+      "ট্রক্লিয়ার",
+      "ফ্যাসিয়াল",
+      "অপটিক"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #91 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-092",
+    "number": 92,
+    "subject": "Biology",
+    "question": "গ্লাইকোলাইসিস প্রক্রিয়ায় এক অণু গ্লুকোজ হতে নীট কতটি ATP উৎপন্ন হয়?",
+    "options": [
+      "২",
+      "৩",
+      "৪",
+      "৬"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #92 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-093",
+    "number": 93,
+    "subject": "Biology",
+    "question": "নিচের কোনটি ফার্নের পাতার নাম ?",
+    "options": [
+      "Stomium",
+      "Fronds",
+      "Prothallus",
+      "Scale leave"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #93 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-094",
+    "number": 94,
+    "subject": "Biology",
+    "question": "$F_1$-জনুর উদ্ভিদকে প্রচ্ছন্ন প্যারেন্টের সাথে ক্রস করাকে বলা হয়-",
+    "options": [
+      "ব্যাক ক্রস",
+      "টেস্ট ক্রস",
+      "মনোহাইব্রিড ক্রস",
+      "ডাইহাইব্রিড ক্রস"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #94 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-095",
+    "number": 95,
+    "subject": "Biology",
+    "question": "কোনটি Ommatidium এর অংশ নয় ?",
+    "options": [
+      "rhabdome",
+      "retinal sheath",
+      "retinal cell",
+      "ocellus"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #95 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-096",
+    "number": 96,
+    "subject": "Biology",
+    "question": "$T_2$ব্যাকটেরিওফাযে কয়টি জিন থাকে?",
+    "options": [
+      "150",
+      "145",
+      "155",
+      "160"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #96 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-097",
+    "number": 97,
+    "subject": "Biology",
+    "question": "নিচের কোনটি কেবল বাংলাদেশে পাওয়া যায়?",
+    "options": [
+      "Knema bengalensis",
+      "Tactaria chattagramica",
+      "Artocarpus heterophyllus",
+      "Ficus benghalensis"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #97 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-098",
+    "number": 98,
+    "subject": "Biology",
+    "question": "কোনটি জাইলেম টিস্যুর অংশ নয়?",
+    "options": [
+      "সিভনল",
+      "ট্রাকিড",
+      "প্যারেনকাইমা",
+      "ফাইবার"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #98 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-099",
+    "number": 99,
+    "subject": "Biology",
+    "question": "ইনসুলিন নিঃসরণকারী গ্রন্থির নাম হলো-",
+    "options": [
+      "যকৃৎ",
+      "অগ্ন্যাশয়",
+      "প্লীহা",
+      "আইলেটস অব ল্যাঙ্গারহ্যান্স"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #99 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-100",
+    "number": 100,
+    "subject": "Biology",
+    "question": "হৃৎপিণ্ড যে আবরণ দ্বারা আবৃত থাকে-",
+    "options": [
+      "পেরিঅস্টিয়াম",
+      "পেরিকার্ডিয়াম",
+      "পেরিটোনিয়াম",
+      "প্লুরা"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #100 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-101",
+    "number": 101,
+    "subject": "Biology",
+    "question": "বাস্ট তন্তু কোনটি?",
+    "options": [
+      "পাট তন্তু",
+      "কার্পাস তুলা",
+      "শিমুল তুলা",
+      "কয়ের"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #101 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-102",
+    "number": 102,
+    "subject": "Biology",
+    "question": "কোনটি “ব্লু মোল্ড” ?",
+    "options": [
+      "Penicillium",
+      "Saprolegnia",
+      "Agaricus",
+      "Helminthosporium"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #102 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-103",
+    "number": 103,
+    "subject": "Biology",
+    "question": "গোদরোগ সৃষ্টিকারী পরজীবীর নাম-",
+    "options": [
+      "Entamoeba histolytica",
+      "Wuchereria bancrofti",
+      "Aedes fatigans",
+      "Culex quinquefasciatus"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #103 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-104",
+    "number": 104,
+    "subject": "Biology",
+    "question": "নিচের কোনটিকে হিল বিক্রিয়া বলা হয় ?",
+    "options": [
+      "$CO_2$থেকে$O_2$ নির্গমন",
+      "$H_2O$থেকে$O_2$ নির্গমন",
+      "$S_2O$থেকে$O_2$ নির্গমন",
+      "$NO_2$থেকে$O_2$নির্গমন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #104 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-105",
+    "number": 105,
+    "subject": "Biology",
+    "question": "মানুষের দেহে কোনটি টেস্টোস্টেরন তৈরি করে?",
+    "options": [
+      "স্ক্রোটাম",
+      "ইন্টারস্টিশিয়াল কোষ",
+      "এপিডিডাইমিস",
+      "স্পার্মাটোগোনিয়া"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #105 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-106",
+    "number": 106,
+    "subject": "Biology",
+    "question": "ঝিনুকের খোলসের সবচেয়ে ভিতরের স্তরের নাম হলো-",
+    "options": [
+      "ন্যাকটার স্তর",
+      "প্রিজম্যাটিকস্তর",
+      "পেরিওস্ট্রাকাম",
+      "ম্যান্টল"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #106 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-107",
+    "number": 107,
+    "subject": "Biology",
+    "question": "কোনটি সায়ানোব্যাকটেরিয়া নয় ?",
+    "options": [
+      "Nostoc",
+      "Anabaena",
+      "Aulosira",
+      "Euglena"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #107 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-108",
+    "number": 108,
+    "subject": "Biology",
+    "question": "আরশোলার পেরিট্রফিক পর্দা থাকে কোন স্থানে ?",
+    "options": [
+      "ক্রপ",
+      "গিজার্ড",
+      "হেপাটিক সিকা",
+      "মেসেন্টেরন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #108 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-109",
+    "number": 109,
+    "subject": "Biology",
+    "question": "ইলেটারের কাজ কী?",
+    "options": [
+      "খাদ্য তৈরি করা",
+      "খাদ্য সঞ্চয় করা",
+      "স্পোর নির্গমনে সাহায্য করা",
+      "বংশ বিস্তারে অংশ গ্রহণ করা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #109 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-110",
+    "number": 110,
+    "subject": "Biology",
+    "question": "উদ্ভিদের অত্যাবশ্যকীয় খাদ্য উপাদান -",
+    "options": [
+      "১৬",
+      "১৭",
+      "১৮",
+      "১৯"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #110 ([জীববিজ্ঞান(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-111",
+    "number": 111,
+    "subject": "English",
+    "question": "'Diversity and classification of flowering plants' বইটির লেখক কে?",
+    "options": [
+      "Carolus Linnaeus",
+      "George Bentham",
+      "Theophrastus",
+      "Armen Takhtajan"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #111 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-112",
+    "number": 112,
+    "subject": "English",
+    "question": "The situation has come to a head- এর অর্থ",
+    "options": [
+      "পরিস্থিতির উন্নতি ঘটেছে",
+      "পরিস্থিতির অবনতি ঘটেছে",
+      "পরিস্থিতি চরম অবস্থায় পৌঁছেছে",
+      "পরিস্থিতি পূর্বের তুলনায় ভালো"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #112 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-113",
+    "number": 113,
+    "subject": "English",
+    "question": "He hates ____ kept ____.",
+    "options": [
+      "to be, waiting",
+      "being kept, wait",
+      "to be, to wait",
+      "to, waiting"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #113 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-114",
+    "number": 114,
+    "subject": "English",
+    "question": "The groom arrived at the community center exactly___time.",
+    "options": [
+      "in",
+      "for",
+      "by",
+      "on"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #114 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-115",
+    "number": 115,
+    "subject": "English",
+    "question": "I have___him to give___smoking.",
+    "options": [
+      "said, up",
+      "talked, for",
+      "told, up",
+      "told, in"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #115 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-116",
+    "number": 116,
+    "subject": "English",
+    "question": "Misuse of___energy has___destruction.",
+    "options": [
+      "solar, shown",
+      "renewable, increase",
+      "nuclear, cause",
+      "atomic, wreaked"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #116 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-117",
+    "number": 117,
+    "subject": "English",
+    "question": "A man___by a speeding bus while he was crossing the road.",
+    "options": [
+      "was run over",
+      "was run down",
+      "had been run",
+      "has been run over"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #117 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-118",
+    "number": 118,
+    "subject": "English",
+    "question": "There is___milk in the bottle. Choose the correct answer:",
+    "options": [
+      "little",
+      "several",
+      "many",
+      "few"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #118 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-119",
+    "number": 119,
+    "subject": "English",
+    "question": "I'd like ____ information, please.",
+    "options": [
+      "an",
+      "some",
+      "few",
+      "piece"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #119 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-120",
+    "number": 120,
+    "subject": "English",
+    "question": "Yoga is___a good exercise for___breathing.",
+    "options": [
+      "taken, controlling",
+      "treated, considerable",
+      "not, slowly",
+      "considered, controlling"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #120 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-121",
+    "number": 121,
+    "subject": "English",
+    "question": "He — prefers — speak very little.",
+    "options": [
+      "doesn't, to",
+      "himself, to",
+      "himself, for",
+      "does, for"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #121 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-122",
+    "number": 122,
+    "subject": "English",
+    "question": "It ____ heavily when he ____ up.",
+    "options": [
+      "had snowed, woke",
+      "snows, wake",
+      "was snowing, woke",
+      "is snowing, wakes"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #122 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-123",
+    "number": 123,
+    "subject": "English",
+    "question": "Read the passage and answer the question.Cats are carnivorous mammals of the family Felidae. They cannot chew their food, and their teeth are adapted to stab, anchor, and cut flesh. All cats except the cheetah have strong, sharp retractile claws. They are not adapted for long chases but prowl their prey on padded feet and try to overwhelm it in a short dash or pounce. Big cats roam over a large area, usually alone but sometimes in family groups, for example, a pride of lions can contain as many as 37 individuals. Cats generally are nocturnal animals, the retina of their eyes made extra sensitive to light by a layer of guanine, which causes the eyes to shine in the dark. Tigers are the largest of the cats. They are identified by their characteristic striped coat. They inhabit forests and grasslands in Asia where populations have suffered from hunting, deforestation, and demand for tiger parts in traditional medicine.The synonym of 'prowl' is-",
+    "options": [
+      "dive",
+      "chase",
+      "prance",
+      "stalk"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #123 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-124",
+    "number": 124,
+    "subject": "English",
+    "question": "What is the meaning of the expression bottom of my heart?",
+    "options": [
+      "Close to my heart",
+      "Core of my heart",
+      "Lower part of my heart",
+      "Close to my liver"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #124 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-125",
+    "number": 125,
+    "subject": "English",
+    "question": "The word \"desperation\" is a/an-",
+    "options": [
+      "adjective",
+      "verb",
+      "adverb",
+      "noun"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #125 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-126",
+    "number": 126,
+    "subject": "English",
+    "question": "The synonym of adorn is-",
+    "options": [
+      "Shock",
+      "Destroy",
+      "Impoverish",
+      "Embellish"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #126 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-127",
+    "number": 127,
+    "subject": "English",
+    "question": "“রবিবার হতে বৃষ্টি হইতেছিল।” Choose the correct English translation.",
+    "options": [
+      "It has been raining since Sunday.",
+      "It had been raining since Sunday.",
+      "It has been raining from Sunday.",
+      "It was raining from Sunday."
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #127 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-128",
+    "number": 128,
+    "subject": "English",
+    "question": "The verb of 'beauty' is-",
+    "options": [
+      "beautician",
+      "beautify",
+      "beautiful",
+      "beautification"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #128 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-129",
+    "number": 129,
+    "subject": "English",
+    "question": "The antonym of 'stubborn' is-",
+    "options": [
+      "wilful",
+      "obstinate",
+      "difficult",
+      "compliant"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #129 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-130",
+    "number": 130,
+    "subject": "English",
+    "question": "The word 'constraint' means-",
+    "options": [
+      "freedom",
+      "limitation",
+      "plentiful",
+      "endless"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #130 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-131",
+    "number": 131,
+    "subject": "English",
+    "question": "The idiom 'let him slide' means.________",
+    "options": [
+      "lose gradually",
+      "ignore",
+      "reveal a secret",
+      "set free"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #131 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-132",
+    "number": 132,
+    "subject": "English",
+    "question": "Why were the daffodils in Wordsworth's 'I Wandered Lonely as a Cloud' dancing?",
+    "options": [
+      "The poet was day dreaming.",
+      "The flowers had cheerful company.",
+      "The sea waves beside them had gone wild.",
+      "There was a strong wind."
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #132 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-133",
+    "number": 133,
+    "subject": "English",
+    "question": "Why is the poet so sad to see the daffodils in \"To Daffodils\"?",
+    "options": [
+      "The poet is sad because the flowers have not bloomed fully.",
+      "The poet is sad because winter will soon arrive.",
+      "The poet is sad because the flowers remind him of his own death.",
+      "The poet is sad because flowers bring very hot weather."
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #133 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-134",
+    "number": 134,
+    "subject": "English",
+    "question": "Antonym of 'Modern' is",
+    "options": [
+      "Outdated",
+      "Ancient",
+      "Past",
+      "Medieval"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #134 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-135",
+    "number": 135,
+    "subject": "English",
+    "question": "‘One day the sailors saw an albatross flying towards the ship.’ It is an example of-",
+    "options": [
+      "Compound Sentence",
+      "Complex Sentence",
+      "Simple Sentence",
+      "Interrogative Sentence"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #135 ([English(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-136",
+    "number": 136,
+    "subject": "Chemistry",
+    "question": "হাইড্রোজেন পরমাণুর শক্তি স্তরের প্রকাশ$E=-\\frac{13.6}{n^2}eV,\\left[n=1,2...\\right]$ভূমি অবস্থা থেকে পরবর্তী উচ্চতর শক্তিস্তরে যেতে একটি হাইড্রোজেন পরমাণু কী পরিমাণ শক্তি শোষণ করে?",
+    "options": [
+      "3.4 eV",
+      "4.5 eV",
+      "10.2 eV",
+      "13.6 eV"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #136 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-137",
+    "number": 137,
+    "subject": "Chemistry",
+    "question": "$Sr,Tc,Zr$ এবং $Rb$ পরমাণুর ব্যাসার্ধের ক্রম হলো-",
+    "options": [
+      "$Rb>Sr>Zr>Tc$",
+      "$Tc>Sr>Rb>Zr$",
+      "$Sr>Tc>Zr>Rb$",
+      "$Zr>Tc>Rb>Sr$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #137 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-138",
+    "number": 138,
+    "subject": "Chemistry",
+    "question": "একটি$CH_3CN$অণুতে$\\sigma$এবং$\\pi$বন্ধনের সংখ্যা যথাক্রমে-",
+    "options": [
+      "5 and 2",
+      "4 and 3",
+      "5 and 3",
+      "4 and 2"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #138 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-139",
+    "number": 139,
+    "subject": "Chemistry",
+    "question": "সোডা অ্যাশ শিল্পক্ষেত্রে কোন পদ্ধতিতে তৈরি করা হয়?",
+    "options": [
+      "Bessemer process",
+      "Chamber process",
+      "Solvay process",
+      "Haber process"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #139 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-140",
+    "number": 140,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোন বিক্রিয়াটি ডিসপ্রোপরশনেশন বিক্রিয়া?",
+    "options": [
+      "$H_2S+Cl_2→2HCl+S$",
+      "$CuSO_4+NH_4OH→Cu(OH)_2+(NH_4)_2SO_4$",
+      "$Fe+dil.H_2SO_4→FeSO_4+H_2$",
+      "$Cl_2+NaOH→NaOCl+NaCl+H_2O$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #140 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-141",
+    "number": 141,
+    "subject": "Chemistry",
+    "question": "$10.0$মি.লি.$NaOH$দ্রবণকে$0.12M$ঘনমাত্রার$15.0$মি.লি. অক্সালিক এসিড দ্বারা টাইট্রেশন করলে প্রশমন বিন্দু পাওয়া যায়।$NaOH$এর ঘনমাত্রা কত?",
+    "options": [
+      "0.25 M",
+      "0.36 M",
+      "0.32 M",
+      "0.40 M"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #141 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-142",
+    "number": 142,
+    "subject": "Chemistry",
+    "question": "বোল্টজম্যান ধ্রুবকের একক হলো-",
+    "options": [
+      "J/molecule",
+      "J.s",
+      "J/K",
+      "g/cc"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #142 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-143",
+    "number": 143,
+    "subject": "Chemistry",
+    "question": "নিচের আয়নগুলোর মধ্যে কোনটির আকার সবচেয়ে ছোট?",
+    "options": [
+      "Cl^-",
+      "F^-",
+      "O^2-",
+      "N^3-"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #143 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-144",
+    "number": 144,
+    "subject": "Chemistry",
+    "question": "কোন যৌগটি জলীয় দ্রবণে সবচেয়ে সহজে হাইড্রোবিশ্লেষিত হয়?",
+    "options": [
+      "CCl_4",
+      "SnCl_2",
+      "SiCl_4",
+      "PbCl_4"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #144 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-145",
+    "number": 145,
+    "subject": "Chemistry",
+    "question": "বাফার দ্রবণ কোনটি?",
+    "options": [
+      "$30mL\\ 0.1M\\ NH_4OH+20mL\\ 0.2M\\ HCl$",
+      "$40mL\\ 0.2M\\ CH_3COOH+30mL\\ 0.3M\\ NaoH$",
+      "$50mL\\ 0.1M\\ NaOH+40mL\\ 0.2M\\ H_2CO_3$",
+      "$60mL\\ 0.1M\\ NaOH+70mL\\ 0.2M\\ HCl$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #145 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-146",
+    "number": 146,
+    "subject": "Chemistry",
+    "question": "কোনটির বিযোজন তাপমাত্রা সবচেয়ে কম?",
+    "options": [
+      "$Na_{2}CO_{3}$",
+      "$MgCO_{3}$",
+      "$K_{2}CO_{3}$",
+      "$BaCO_{3}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #146 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-147",
+    "number": 147,
+    "subject": "Chemistry",
+    "question": "পটাসিয়াম সায়ানাইডের উপস্থিতিতে হাইড্রোজেন সায়ানাইড প্রপানলের সাথে বিক্রিয়া করে । বিক্রিয়ার কৌশলটি হলো-",
+    "options": [
+      "nucleophilic addition",
+      "electrophilic substitution",
+      "nucleophilic substitution",
+      "electrophilic addition"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #147 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-148",
+    "number": 148,
+    "subject": "Chemistry",
+    "question": "গ্রিগনার্ড বিকারক হলো-",
+    "options": [
+      "$CH_3ONa$",
+      "$R'BaCl$",
+      "$RMgX$",
+      "$R'CaX$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #148 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-149",
+    "number": 149,
+    "subject": "Chemistry",
+    "question": "$E_{Z n^{2 +} / Z n}^{o} ও E_{A g^{+}{/} A g}^{o}$ এর মান যথাক্রমে –0.76 V ও 0.80 V হলে, Zn(s)|Zn^2+(aq)||Ag^+(aq)|Ag(s) কোষের emf কত?",
+    "options": [
+      "–1.56 V",
+      "–0.04 V",
+      "+0.04 V",
+      "+1.56 V"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #149 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-150",
+    "number": 150,
+    "subject": "Chemistry",
+    "question": "ক্যালসিয়ামের সর্ববহিঃস্তরের ইলেকট্রনদ্বয়ের কোয়ান্টাম সংখ্যার সেট কোনটি?",
+    "options": [
+      "$n=4,l=0,m=1,s=+\\frac{1}{2},-\\frac{1}{2}$",
+      "$n=3,l=3,m=1,s=+\\frac{1}{2},+\\frac{1}{2}$",
+      "$n=4,l=5,m=0,s=-\\frac{1}{2},-\\frac{1}{2}$",
+      "$n=4,l=0,m=0,s=+\\frac{1}{2},-\\frac{1}{2}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #150 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-151",
+    "number": 151,
+    "subject": "Chemistry",
+    "question": "নিচের কোন যৌগটিতে সঞ্চালন অক্ষম$\\pi$ (পাই) ইলেকট্রন আছে।",
+    "options": [
+      "$C_2H_4$",
+      "$C_2H_6$",
+      "$C_6H_6$",
+      "$C_3H_8$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #151 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-152",
+    "number": 152,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোনটি সঠিক নয়?",
+    "options": [
+      "$NH_4^+$is the conjugate acid of base$NH_3$",
+      "$NH_3$ and $H_2O$are conjugate pair",
+      "$OH^-$is the conjugate base of acid $H_2O$",
+      "$OH^-$ and $H_2O$are conjugate pair"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #152 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-153",
+    "number": 153,
+    "subject": "Chemistry",
+    "question": "ইথানলকে 170° C তাপমাত্রায় অতিরিক্ত গাঢ় সালফিউরিক এসিড দ্বারা বিক্রিয়া করলে কী উৎপন্ন হয় ?",
+    "options": [
+      "$C_2H_5HSO_4$",
+      "$C_2H_4SO_4$",
+      "$CH_2=CH_2$",
+      "$CH_3CHO$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #153 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-154",
+    "number": 154,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোন বিক্রিয়াটি প্রশমন এনথালপি,$\\Delta H$neutral প্রকাশ করে?",
+    "options": [
+      "$H_2SO_4(aq)+Ca(OH)_2(aq)\\to CaSO_4(aq)+2H_2O(l)$",
+      "$H_2SO_4(aq)+2NH_3(aq)\\to(NH_4)_2SO_4(aq)$",
+      "$HCl(aq)+\\frac{1}{2}Ca(OH)_2(aq)\\to\\frac{1}{2}CaCl_2(aq)+H_2O(l)$",
+      "$2HCl(aq)+Ca(OH)_2(aq)\\to CaCl_2(aq)+2H_2O(l)$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #154 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-155",
+    "number": 155,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোন যৌগটির আকৃতি ত্রিকোণাকার সমতলীয় ?",
+    "options": [
+      "$BCl_3$",
+      "$H_3O^+$",
+      "$BrFs$",
+      "$PH_3$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #155 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-156",
+    "number": 156,
+    "subject": "Chemistry",
+    "question": "হাইড্রোজেনের পারমাণবিক বর্ণালীর কোন সিরিজটিতে দৃশ্যমান অঞ্চলের রশ্মি দেখা যায়?",
+    "options": [
+      "Paschen",
+      "Lyman",
+      "Balmer",
+      "Brackett"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #156 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-157",
+    "number": 157,
+    "subject": "Chemistry",
+    "question": "কোনটি সর্বাধিক স্থিতিশীল কার্বোনিয়াম আয়ন",
+    "options": [
+      "^+CR_3",
+      "^+CHR_2",
+      "^+CH_2R",
+      "^+CH_3"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #157 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-158",
+    "number": 158,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোন যৌগটি ফেহলিং দ্রবণের সাথে বিক্রিয়া করে?",
+    "options": [
+      "(CH_3)_2CO",
+      "CH_3CH(OH)CH_3",
+      "CH_3CHO",
+      "CH_3C(Ar)O"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #158 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-159",
+    "number": 159,
+    "subject": "Chemistry",
+    "question": "IUPAC নামকরণ অনুসারে$CH_3-CH\\left(C_2H_5\\right)-CH_2-CHBr-CHCl-CH_3$এর নাম হলো-",
+    "options": [
+      "2-chloro-3-bromo-5-ethyl hexane",
+      "2-chloro-3-bromo-5-methyl heptane",
+      "3-bromo-2-chloro-5-ethyl hexane",
+      "3-bromo-2-chloro-5-methyl heptane"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #159 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-160",
+    "number": 160,
+    "subject": "Chemistry",
+    "question": "অ্যারোমেটিক প্রতিস্থাপন বিক্রিয়ায় নিম্নের কোন গ্রুপটি মেটা নির্দেশক ?",
+    "options": [
+      "$-NO_2$",
+      "$-OH$",
+      "$-Cl$",
+      "$-CH_3$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #160 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-161",
+    "number": 161,
+    "subject": "Chemistry",
+    "question": "Cr(OH)_3 , Cu(OH)_2 , Zn(OH)_2 এবং Co(OH)_2 অধঃক্ষেপ সমূহের রঙ ক্রম হলো-",
+    "options": [
+      "Green ,Blue , pink and White",
+      "Blue , Pink , White and Green",
+      "Green , Blue , White and Pink",
+      "Blue , Green , White and Pink"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #161 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-162",
+    "number": 162,
+    "subject": "Chemistry",
+    "question": "$Sn(s)+2Ag^+(aq)\\to Sn^{2+}(aq)+2Ag(s)$বিক্রিয়াটির ক্ষেত্রে নিম্নের কোনটি কোষের voltage বৃদ্ধি করবে?",
+    "options": [
+      "increase in the size of silver rod",
+      "increase in the concentration of$Sn^{2+}$ions",
+      "increase in the concentration of$Ag^+$ ions",
+      "increase in the size of tin rod"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #162 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-163",
+    "number": 163,
+    "subject": "Chemistry",
+    "question": "ম্যাগনেশিয়াম ফসফেটের সংকেত কোনটি?",
+    "options": [
+      "Ma_3(PO_4)_2",
+      "MS_5(PO_3)_2",
+      "MO_2(PO_4)_4",
+      "Mg_3(PO_4)_2"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #163 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "du-12-13-q-164",
+    "number": 164,
+    "subject": "Chemistry",
+    "question": "2g অক্সিজেনের মধ্যে কতটি অক্সিজেন অণু আছে?",
+    "options": [
+      "1.882 ‌‌× 10^22",
+      "3.764 × 10^22",
+      "7.529 ×10^22",
+      "8.255 × 10^22"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "DU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "DU_12-13_3da3b335.txt",
+      "sourceLocation": "Question #164 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

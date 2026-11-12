@@ -1,0 +1,1826 @@
+[
+  {
+    "id": "ru-c-10-11-q-001",
+    "number": 1,
+    "subject": "Biology",
+    "question": "ওয়াটসন ও ক্রিক কত সালে DNA মডেল প্রদানের জন্য নোবেল পুরষ্কার পান?",
+    "options": [
+      "১৯৫৩",
+      "১৯৬২",
+      "১৯৭৩",
+      "১৯৮৩"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #1 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-002",
+    "number": 2,
+    "subject": "Biology",
+    "question": "mRNA তে AUG কোড থাকার অর্থ কি?",
+    "options": [
+      "start protein synthesis",
+      "stop protein synthesis",
+      "start protein breakdown",
+      "stop protein breakdown"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #2 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-003",
+    "number": 3,
+    "subject": "Biology",
+    "question": "Y এটি লিথান জীন এবং y প্রচ্ছন্ন জীন দ্বারা হেটারোজাইগাস সংকরায়ন করালে প্রথম বংশধারায় কোনটি মৃত হবে?",
+    "options": [
+      "yY",
+      "YY",
+      "yy",
+      "Yy"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #3 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-004",
+    "number": 4,
+    "subject": "Biology",
+    "question": "ইন্টারফেরন কি?",
+    "options": [
+      "গ্লাইকোপ্রোটিন",
+      "লিপোপ্রোটিন",
+      "পলিস্যাকারাইড",
+      "প্লাজমাপ্রোটিন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #4 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-005",
+    "number": 5,
+    "subject": "Biology",
+    "question": "কোন ভেষজ উচ্চ রক্তচাপের জন্য ভালো?",
+    "options": [
+      "তুলসী",
+      "কুরচি",
+      "থানকুনি",
+      "সর্পগন্ধা"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #5 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-006",
+    "number": 6,
+    "subject": "Biology",
+    "question": "একটি একবীজপত্রী উদ্ভিদের মূলে পরিবহন টিস্যু গুচ্ছের সংখ্যা কত?",
+    "options": [
+      "3",
+      "6",
+      "< 3",
+      "> 6"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #6 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-007",
+    "number": 7,
+    "subject": "Biology",
+    "question": "ইউরাসিল পাওয়া যায়–",
+    "options": [
+      "mRNA",
+      "rRNA",
+      "tRNA",
+      "সবগুলিই সঠিক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #7 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-008",
+    "number": 8,
+    "subject": "Biology",
+    "question": "কোন হরমোন মানব দেহে গায়ের রং নিয়ন্ত্রণ করে?",
+    "options": [
+      "ADH",
+      "ACTH",
+      "GH",
+      "TH"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #8 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-009",
+    "number": 9,
+    "subject": "Biology",
+    "question": "রক্তে Na^+ এর পরিমাণ অক্ষুণ্ণ রাখে–",
+    "options": [
+      "ANP",
+      "ACTH",
+      "TRH",
+      "PIH"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #9 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-010",
+    "number": 10,
+    "subject": "Biology",
+    "question": "সুন্দরবন ম্যাগ্রোভ অঞ্চলে ইকোলজিক্যাল জোনের সংখ্যা–",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #10 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-011",
+    "number": 11,
+    "subject": "Biology",
+    "question": "নিচের কোনটি হরমোন?",
+    "options": [
+      "ট্রিপসিনোজেন",
+      "অ্যামাইলেজ",
+      "গ্লুকাগন",
+      "লাইপেজ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #11 ([জীববিজ্ঞান(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-012",
+    "number": 12,
+    "subject": "Chemistry",
+    "question": "মোলার গ্যাস ধ্রুবকের SI একক কোনটি?",
+    "options": [
+      "ergK^-1mol^-1",
+      "LatmK^-1mol^-1",
+      "JK^-1mol^-1",
+      "calK^-1mol^-1"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #12 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-013",
+    "number": 13,
+    "subject": "Chemistry",
+    "question": "গ্যাস X- এর ব্যাপন হার গ্যাস Y- এর ব্যাপন হারের দ্বিগুন এবং X- এর বাষ্পীয় ঘনত্ব 2 হলে, Y গ্যাসটির আণবিক ভর কত হবে?",
+    "options": [
+      "2",
+      "4",
+      "8",
+      "16"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #13 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-014",
+    "number": 14,
+    "subject": "Chemistry",
+    "question": "প্রমান অবস্থায় 1120mL CO_2 গ্যাসের অণুগুলোর মোট ভরঃ",
+    "options": [
+      "4.4g",
+      "2.2g",
+      "4.0g",
+      "2.0g"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #14 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-015",
+    "number": 15,
+    "subject": "Chemistry",
+    "question": "0°C তাপমাত্রায় একটি 10L পাত্রে 2g H_2 এবং 8g N_2 রাখলে গ্যাস মিশ্রনটির মোট চাপ হবেঃ",
+    "options": [
+      "2.24atm",
+      "2.88atm",
+      "3.21atm",
+      "0.64 atm"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #15 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-016",
+    "number": 16,
+    "subject": "Chemistry",
+    "question": "Nb(41) এর অনুমোদিত ইলেকট্রন বিন্যাস কোনটি?",
+    "options": [
+      "[Kr]4d^35s^2",
+      "[Kr]4d^5s^0",
+      "[Kr]4d^45s^1",
+      "[Kr]5s^25p^3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #16 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-017",
+    "number": 17,
+    "subject": "Chemistry",
+    "question": "পরমাণুর ৪র্থ প্রধান শক্তিস্তরে অনুমোদিত অরবিটালে মোট ইলেকট্রন সংখ্যা-",
+    "options": [
+      "16",
+      "12",
+      "32",
+      "24"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #17 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-018",
+    "number": 18,
+    "subject": "Chemistry",
+    "question": "এক মোলাল দ্রবনে কোন দ্রবের 0.5mole থাকলে তাতে দ্রাবক থাকবে-",
+    "options": [
+      "1.0kg",
+      "0.5L",
+      "0.5kg",
+      "1.0L"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #18 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-019",
+    "number": 19,
+    "subject": "Chemistry",
+    "question": "$3.2 \\% \\mathrm{Na}_{2} \\mathrm{CO}_{3}$ দ্রবণের $\\mathrm{pH}$ কত?",
+    "options": [
+      "13.8",
+      "12.7",
+      "11.5",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #19 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-020",
+    "number": 20,
+    "subject": "Chemistry",
+    "question": "কি বন্ধন তৈরির ফলে চিনি পানিতে দ্রবীভূত হয়?",
+    "options": [
+      "সমযোজী",
+      "সন্নিবেশ",
+      "আয়নিক",
+      "হাইড্রোজেন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #20 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-021",
+    "number": 21,
+    "subject": "Chemistry",
+    "question": "একটি হাইড্রোজেন বন্ধনের শক্তি একটি সমযোজী বন্ধন শক্তির প্রায় কতগুন?",
+    "options": [
+      "1/2",
+      "1/3",
+      "1/10",
+      "1/100"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #21 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-022",
+    "number": 22,
+    "subject": "Chemistry",
+    "question": "একটি উচ্চ গলনাংকের (3000°C) একটি কঠিন যৌগ পানিতে অদ্রবণীয় কিন্তু জৈব দ্রাবকে দ্রবনীয় এবং গলিত অবস্থায় বিদ্যুৎ অপরিবাহী। যৌগটি কি প্রকৃতির?",
+    "options": [
+      "তড়িৎ যোজী",
+      "সমযোজী",
+      "সন্নিবেশ",
+      "ধাতব"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #22 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-023",
+    "number": 23,
+    "subject": "Chemistry",
+    "question": "কোন অণুতে sp^3 অরবিটাল সংকরন ঘটে না?",
+    "options": [
+      "CH_4",
+      "NH_3",
+      "BH_3",
+      "PH_3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #23 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-024",
+    "number": 24,
+    "subject": "Chemistry",
+    "question": "দ্রবনে একটি দুর্বল ক্ষারক তার লবনের উপস্থিতিতে আরও দুর্বল হবার কারন-",
+    "options": [
+      "আর্দ্রবিশ্লেষন",
+      "প্রশমন",
+      "আয়নীকরন",
+      "সম-আয়ন প্রভাব"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #24 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-025",
+    "number": 25,
+    "subject": "Chemistry",
+    "question": "এসিডের শক্তির কোন ক্রমটি সঠিক?",
+    "options": [
+      "H_2SO_3 > HCIO>HNO_3>H_2PO",
+      "HNO_3 > H_3PO_4 > H_2SO_3>HCIO",
+      "HCIO> HNO_2>H_2PO_4>H_2SO_4",
+      "H_2PO_4>H_2SO_3>HNO_3>HCIO"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #25 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-026",
+    "number": 26,
+    "subject": "Chemistry",
+    "question": "\"কারনালাইট\" কোন মৃৎক্ষার ধাতুর খনিজ?",
+    "options": [
+      "Ca",
+      "Sr",
+      "Mg",
+      "Ba"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #26 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-027",
+    "number": 27,
+    "subject": "Chemistry",
+    "question": "ধাতু সংকর পিতলের শতকরা সংযুক্তি-",
+    "options": [
+      "Cu (75-80%), Sn (25-20%)",
+      "Cu (60-80%), Zn (40-20%)",
+      "Cu (97%), Sn (2%), Si (1%)",
+      "Cu (30-50%), Zn (35-24%), Ni (35-10%)"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #27 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-028",
+    "number": 28,
+    "subject": "Chemistry",
+    "question": "যে তড়িৎ কোষে রাসায়নিক বিক্রিয়ার শক্তি বিদ্যুৎ শক্তিতে রূপান্তরিত হয় তা হচ্ছে-",
+    "options": [
+      "তড়িৎ বিশ্লেষ্য কোষ",
+      "গ্যালভানিক কোষ",
+      "লবণ সেতু",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #28 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-029",
+    "number": 29,
+    "subject": "Chemistry",
+    "question": "আবদ্ধ পাত্রে সংঘটিত কোন উভমুখী বিক্রিয়ায় সাম্যধ্রুবকের মানকে প্রভাবিত করে-",
+    "options": [
+      "বিক্রিয়কের পরিমান বৃদ্ধি",
+      "উৎপাদের পরিমান হ্রাস",
+      "প্রাভবকের উপস্থিতি",
+      "তাপমাত্রার পরিবর্তন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #29 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-030",
+    "number": 30,
+    "subject": "Chemistry",
+    "question": "কোন রাসায়নিক বিক্রিয়ায় এনথালপি পরিবর্তন কোনটির উপর নির্ভর করে না?",
+    "options": [
+      "বিক্রিয়ক ও উৎপাদেনের ভৌত অবস্থা",
+      "বিক্রিয়ক ও উৎপাদের প্রকৃতি",
+      "বিক্রিয়াটির আদি ও শেষ এনথালপি পরিবর্তন",
+      "বিক্রিয়াটির মধ্যবর্তী বিভিন্ন ধাপীয় বিক্রিয়া"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #30 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-031",
+    "number": 31,
+    "subject": "Chemistry",
+    "question": "2NH_3(g) ⇌ N_2(g) + 3H_2(g) বিক্রিয়াটির K_c এর একক–",
+    "options": [
+      "L^2mol^–2",
+      "mol^–2L^–2",
+      "mol^2L^–6",
+      "mol^2L^-2"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #31 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-032",
+    "number": 32,
+    "subject": "Chemistry",
+    "question": "জলীয় 0.002M Ba(OH)_2 দ্রবণের P^H মান-",
+    "options": [
+      "12",
+      "13",
+      "11.60",
+      "13.5"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #32 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-033",
+    "number": 33,
+    "subject": "Chemistry",
+    "question": "কোন প্রথম ক্রম বিক্রিয়ার হার ধ্রুবকের মান 1.15×10^-3 s^-1 হলে বিক্রিয়াটির 5g বিক্রিয়ক 3g এ হ্রাস পেতে কত মিনিট লাগবে?",
+    "options": [
+      "4.4 min",
+      "7.4 min",
+      "5.8 min",
+      "3.5 min"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #33 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-034",
+    "number": 34,
+    "subject": "Chemistry",
+    "question": "10gm KClO_3 সম্পূর্ণরূপে বিয়োজিত হলে প্রমাণ তাপমাত্রা ও চাপে কত mL অক্সিজেন পাওয়া যাবে?",
+    "options": [
+      "1371.5",
+      "1000",
+      "500",
+      "2743"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #34 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-035",
+    "number": 35,
+    "subject": "Chemistry",
+    "question": "অ্যালিফ্যাটিক হাইড্রোকার্বন, C_6H_14 এর সমাণুর সংখ্যা কত?",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #35 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-036",
+    "number": 36,
+    "subject": "Chemistry",
+    "question": "74 আণবিক ভরের একটি জৈব যৌগের শতকরা সংযুক্তি, C(48.65%), H(8.11%) এবং O(43.24%) হলে যৌগটির আণবিক সংকেত হবেঃ",
+    "options": [
+      "C_2H_4O_2",
+      "C_3H_6O",
+      "C_3H_6O_2",
+      "C_2H_6O"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #36 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-037",
+    "number": 37,
+    "subject": "Chemistry",
+    "question": "সকল নিউক্লিওফাইলই হচ্ছে-",
+    "options": [
+      "আরহেনিয়াস ক্ষারক",
+      "ব্রণস্টেট ক্ষারক",
+      "লুইস অম্ল",
+      "লুইস ক্ষারক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #37 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-038",
+    "number": 38,
+    "subject": "Chemistry",
+    "question": "কোন যৌগটির স্ফুটনাঙ্ক সবচাইতে বেশি?",
+    "options": [
+      "CH_3OH",
+      "C_2H_5OH",
+      "CH_3CO_2H",
+      "CH_3-CO-CH_3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #38 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-039",
+    "number": 39,
+    "subject": "Chemistry",
+    "question": "কোনটি সংশ্লেষ গ্যাস ?",
+    "options": [
+      "CO+3H_2",
+      "CO+N_2",
+      "CO_2+N_2",
+      "CO+N_2+H_2"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #39 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-040",
+    "number": 40,
+    "subject": "Chemistry",
+    "question": "গ্রিনহাউজ প্রভাবের জন্য সর্বাপেক্ষা দায়ী কোন গ্যাসটি?",
+    "options": [
+      "$CO$",
+      "$NO_2$",
+      "$CH_4$",
+      "$CO_2$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #40 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-041",
+    "number": 41,
+    "subject": "Chemistry",
+    "question": "ফল পাকলে নরম হয়ে যায় নিচের কোন কারণে?",
+    "options": [
+      "কোষের পেকটিক দ্রব্য নরম হয়ে যায়",
+      "জৈব এসিড সমূহ চিনিতে পরিবর্তিত হয়",
+      "জৈব এসিড সমূহের পরিমাণ বেড়ে যায়",
+      "জ্যানথোফিল পরিমাণে বেড়ে যায়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #41 ([রসায়ন(30)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-042",
+    "number": 42,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #42 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-043",
+    "number": 43,
+    "subject": "Mathematics",
+    "question": "(1,-1) ও (8, 6) বিন্দুদ্বয়ের সংযোজক রেখাকে যে বিন্দু 3:4 অণুপাতে অন্তর্বিভক্ত করে তা হল-",
+    "options": [
+      "(4,-2)",
+      "(-4,-2)",
+      "(-4,2)",
+      "(4,2)"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #43 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-044",
+    "number": 44,
+    "subject": "Mathematics",
+    "question": "$3 x^{2}+4 y^{2}=12$ উপবৃত্তের উপকেন্দ্রদ্বয়ের দূরত্ব কত?",
+    "options": [
+      "2",
+      "$\\sqrt{3}$",
+      "1",
+      "$\\frac{2}{\\sqrt{3}}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #44 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-045",
+    "number": 45,
+    "subject": "Mathematics",
+    "question": "y = x^2 logx; y_4 এর জন্য কোনটি সত্য?",
+    "options": [
+      "6",
+      "6/x",
+      "x/6",
+      "-2/x^2"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #45 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-046",
+    "number": 46,
+    "subject": "Mathematics",
+    "question": "$y=4x^2$ বক্ররেখা এবং $x=1$ ও $x=2$ সরলরেখা দ্বারা আবদ্ধ ক্ষেত্রের ক্ষেত্রফল কোনটি ?",
+    "options": [
+      "$\\frac{24}{5}$ বর্গএকক",
+      "$\\frac{32}{3}$ বর্গএকক",
+      "$32$ বর্গএকক",
+      "$\\frac{28}{3}$ বর্গএকক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #46 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-047",
+    "number": 47,
+    "subject": "Mathematics",
+    "question": "ABC ত্রিভুজের জন্য (b^2 - c^2) cos A + (c^2 - a^2) cos B + (a^2 - b^2) cos C এর মান কত?",
+    "options": [
+      "1/2",
+      "3/2",
+      "নাই",
+      "অনির্দিষ্ট"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #47 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-048",
+    "number": 48,
+    "subject": "Mathematics",
+    "question": "500 জন লোকের একটি দলের 375 জন ইংরেজি ও 200 জন বাংলায় কথা বলতে পারে। কতজন লোক উভয় ভাষায় কথা বলতে পারে?",
+    "options": [
+      "375",
+      "500",
+      "200",
+      "75"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #48 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-049",
+    "number": 49,
+    "subject": "Mathematics",
+    "question": "f:R → R কে f(x)= $\\left \\lbrace \\begin{matrix} x^{2} - 3 x & w h e n & x \\ge 2 \\\\ x + 2 & w h e n & x < 2 \\end{matrix} \\right .$ দ্বারা সংজ্ঞায়িত করা হল। f(0) এর মান কত?",
+    "options": [
+      "0",
+      "5",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #49 ([উচ্চতর গণিত(8)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-050",
+    "number": 50,
+    "subject": "ICT",
+    "question": "(272)_10 -এর দ্বিমিক রূপ কোনটি?",
+    "options": [
+      "100010000",
+      "101010000",
+      "110010000",
+      "100110000"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #50 ([তথ্য ও যোগাযোগ প্রযুক্তি(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-051",
+    "number": 51,
+    "subject": "Physics",
+    "question": "17°C তাপমাত্রার 290mL কোন গ্যাসকে স্থির চাপে -13°C তাপমাত্রায় শীতলীকরণ করলে গ্যাসটির পরিবর্তিত আয়তন হবেঃ",
+    "options": [
+      "260mL",
+      "270mL",
+      "280mL",
+      "290mL"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #51 ([পদার্থবিজ্ঞান(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-052",
+    "number": 52,
+    "subject": "Physics",
+    "question": "সেলসিয়াস ও ফারেনহাইট তাপমাত্রার মধ্যকার সম্পর্ক কোনটি?",
+    "options": [
+      "5 × °C = 9 × (°F - 32)",
+      "5 × 9°F = 9°C - 32",
+      "°F = (°C × 1.8) + 32",
+      "°C = (°F / 1.8) - 32"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #52 ([পদার্থবিজ্ঞান(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-053",
+    "number": 53,
+    "subject": "Physics",
+    "question": "রঙিন টেলিভিশন থেকে কোন ধরনের ক্ষতিকারক রশ্মি নির্গত হয়-",
+    "options": [
+      "গামা",
+      "বিটা",
+      "রঞ্জন",
+      "কসমিক"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #53 ([পদার্থবিজ্ঞান(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-054",
+    "number": 54,
+    "subject": "Physics",
+    "question": "$\\vec{P} = 5 \\hat{i} - 3 \\hat{j} + 2 \\hat{k}$ ভেক্টরের উপর $\\vec{Q} = 2 \\hat{i} + \\hat{j} - 2 \\hat{k}$ ভেক্টরের অভিক্ষেপ-",
+    "options": [
+      "5/√38",
+      "3/√38",
+      "2/√38",
+      "1/√38"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #54 ([পদার্থবিজ্ঞান(4)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-055",
+    "number": 55,
+    "subject": "Physics",
+    "question": "3L কোন গ্যাসের চাপ ও তাপমাত্রা যথাক্রমে ত্রিগুন ও দ্বিগুন বৃদ্ধি করলে গ্যাসটির নতুন আয়তন হবে",
+    "options": [
+      "4L",
+      "2L",
+      "6L",
+      "3L"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #55 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-056",
+    "number": 56,
+    "subject": "Chemistry",
+    "question": "কোন লবনটির জলীয় দ্রবন ক্ষারীয়?",
+    "options": [
+      "NH_4Cl",
+      "KCl",
+      "NaCN",
+      "AgNO_3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #56 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-057",
+    "number": 57,
+    "subject": "Chemistry",
+    "question": "ক্ষার ধর্ম বৃদ্ধির সঠিক ক্রম কোনটি?",
+    "options": [
+      "(CH_3)_2NH < NH_3 < CH_3NH_2",
+      "(CH_3)_2NH < CH_3NH_2 < NH_3",
+      "CH_3NH_2 < NH_3 < (CH_3)_2NH",
+      "CH_3NH_2 < NH_2 < (CH_3)_2NH"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #57 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-058",
+    "number": 58,
+    "subject": "Chemistry",
+    "question": "Al ধাতুর আকরিক বক্সাইট এর সংকেত-",
+    "options": [
+      "Al_2O_3 H_2O",
+      "Al_2O_3.3H_2O",
+      "Al_2O_3.2H_2O",
+      "Al_2O_3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #58 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-059",
+    "number": 59,
+    "subject": "Chemistry",
+    "question": "Fe^2+ + 2H^+ + NO_3^- → Fe^3+ + NO_2 + H_2O বিক্রিয়াটির সম্পর্কিত কোন উক্তিটি সত্য নয়?",
+    "options": [
+      "Fe^2+ জারিত হয়েছে",
+      "এটি জারন-বিজারন বিক্রিয়া",
+      "নাইট্রোজেন বিজারিত হয়েছে",
+      "H^+ বিজারিত হয়েছে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #59 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-060",
+    "number": 60,
+    "subject": "Chemistry",
+    "question": "আয়রন ধাতুর আকরিকের নাম-",
+    "options": [
+      "ক্যালামাইন",
+      "মেলাকোনাইট",
+      "সাইডেরাইট",
+      "রুটাইল"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #60 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-061",
+    "number": 61,
+    "subject": "Chemistry",
+    "question": "কোন বিক্রিয়াটির K_c এর একক mol^-1L?",
+    "options": [
+      "N2O4 = 2NO2",
+      "2NH_3 = N_2 + 3H_2",
+      "2NO + O_2 = 2NO_2",
+      "N_2 + 3H_2 = 2NH_3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #61 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-062",
+    "number": 62,
+    "subject": "Chemistry",
+    "question": "জলীয় দ্রবণে KBr- এর তড়িৎ বিশ্লেষণে প্রাপ্ত উৎপাদ দু'টি হবে-",
+    "options": [
+      "ধাতব পটাশিয়াম এবং ব্রোমিন",
+      "হাইড্রোজেন এবং ব্রোমিন",
+      "ধাতব পটাশিয়াম এবং অক্সিজেন",
+      "অক্সিজেন এবং ব্রোমিন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #62 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-063",
+    "number": 63,
+    "subject": "Physics",
+    "question": "3x+4y=10 এবং 4x-3y=5 রেখাদ্বয়ের অন্তর্ভুক্ত কোণ কত?",
+    "options": [
+      "π/3",
+      "π/2",
+      "π",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #63 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-064",
+    "number": 64,
+    "subject": "Physics",
+    "question": "x^3 - px^2 + qx - r = 0 এই সমীকরণের মূলগুলি a, b, c হলে $\\sum \\frac{1}{a^{2}}$ =কত?",
+    "options": [
+      "1/r^2 (q^2 - 2rp)",
+      "1/q^2 (r^2 - 2rp)",
+      "1/r^2 (p^2 - 2rq)",
+      "1/p^2 (q^2 - 2rp)"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #64 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-065",
+    "number": 65,
+    "subject": "Physics",
+    "question": "y = x + c রেখাটি x^2 + y^2 = 4^2 বৃত্তের স্পর্শক হবার শর্ত হবে-",
+    "options": [
+      "c = ±2√4",
+      "c = ±2√2S",
+      "c = ±4√(1+m^2)",
+      "c = 0"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #65 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-066",
+    "number": 66,
+    "subject": "Physics",
+    "question": "√i + √-i এর পরম মান কত?",
+    "options": [
+      "±√1",
+      "±√i",
+      "±√2",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #66 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-067",
+    "number": 67,
+    "subject": "Physics",
+    "question": "A = {x:x একটি ধণাত্মক বিজোড় সংখ্যা}, B = {3,9,15,21, ...., 3(2n-1), ...} হলে A ও B এর সম্পর্ক কি?",
+    "options": [
+      "A ⊂ B",
+      "B ⊂ A",
+      "A = B",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #67 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-068",
+    "number": 68,
+    "subject": "Physics",
+    "question": "(x - 1/x)^16 এর বিস্তৃতিতে মধ্যপদটি কত?",
+    "options": [
+      "18270",
+      "1270",
+      "12870",
+      "1870"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #68 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-069",
+    "number": 69,
+    "subject": "Physics",
+    "question": "$\\cos A=\\frac{12}{13}$ হলে $\\tan A$ এর মান কত?",
+    "options": [
+      "±12/13",
+      "±5/12",
+      "±15/12",
+      "±13/12"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #69 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-070",
+    "number": 70,
+    "subject": "Physics",
+    "question": "অতিরিক্ত খাদ্য থেকে লিভারে সঞ্চিত স্যুগার হলো–",
+    "options": [
+      "গ্লুকোজ",
+      "ফ্রুক্টোজ",
+      "গ্লাইকোজেন",
+      "সুক্রোজ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #70 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-071",
+    "number": 71,
+    "subject": "Biology",
+    "question": "নিচের কোন কাজটি লসিকার নয়?",
+    "options": [
+      "দেহের প্রতিটি কোষকে সিক্ত রাখে",
+      "রক্ত কণিকা তৈরিতে সাহায্য করে",
+      "কলা কোষে পুষ্টি ও অক্সিজেন সরবরাহ করে",
+      "এন্টিবডি উৎপন্ন করে"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #71 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-072",
+    "number": 72,
+    "subject": "Physics",
+    "question": "জীন প্রকৌশল মূলক গবেষণার জন্য নিচের কোনটির প্রয়োজন সবচেয়ে কম?",
+    "options": [
+      "restriction Enzyme",
+      "Plasmid",
+      "Escherichia coli",
+      "Blood"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #72 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-073",
+    "number": 73,
+    "subject": "Biology",
+    "question": "চোখের 'রড' কোষগুলোতে বিদ্যমান আমিষ জাতীয় রঞ্জক রডোপসিন এর রং কি?",
+    "options": [
+      "নীল",
+      "বেগুনী",
+      "কালো",
+      "সাদা"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #73 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-074",
+    "number": 74,
+    "subject": "Physics",
+    "question": "কোনটি ডাইস্যাকারাইড নয়–",
+    "options": [
+      "সুক্রোজ",
+      "ইরিথ্রোজ",
+      "সেলোবায়োজ",
+      "মল্টোজ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #74 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-075",
+    "number": 75,
+    "subject": "Biology",
+    "question": "ম্যালেরিয়া জীবাণুর জীবনচক্রের সাইজোগনি চক্র কোথায় সম্পন্ন হয়?",
+    "options": [
+      "যকৃত কোষে",
+      "যকৃত এবং লোহিত রক্তকণিকায়",
+      "হৃৎপিণ্ডে",
+      "লোহিত রক্তকণিকায়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #75 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-10-11-q-076",
+    "number": 76,
+    "subject": "Biology",
+    "question": "কোন এ্যামাইনো এসিড তার অণুতে সালফার ধারণ করে?",
+    "options": [
+      "প্রোলিন",
+      "অ্যাসপারাজিন",
+      "মেথিওনিন",
+      "লাইসিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_C_10-11_a45df0ba.txt",
+      "sourceLocation": "Question #76 ([(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

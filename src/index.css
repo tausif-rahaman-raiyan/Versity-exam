@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  color: #0f172a;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+html.dark body {
+  color: #f1f5f9;
+  background-color: #060913;
+}
+
+/* Custom Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* KaTeX Global Overrides — Bold (700) & Optical Sizing without Scrollbars */
+.math-markdown,
+.math-markdown *,
+.katex,
+.katex-display,
+.katex-html {
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
+}
+
+.math-markdown::-webkit-scrollbar,
+.math-markdown *::-webkit-scrollbar,
+.katex::-webkit-scrollbar,
+.katex-display::-webkit-scrollbar,
+.katex-html::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.katex {
+  font-weight: 700 !important;
+  font-size: 1.05em !important;
+  color: #0f172a;
+  line-height: 1.35 !important;
+  overflow: visible !important;
+}
+
+.katex * {
+  font-weight: 700 !important;
+}
+
+.katex .frac-line {
+  border-bottom-width: 0.08em !important;
+}
+
+html.dark .katex {
+  font-size: 1.04em !important;
+  color: #bae6fd;
+}
+
+.katex-display {
+  overflow: visible !important;
+  padding: 0.25rem 0;
+  margin: 0.4rem 0 !important;
+  white-space: normal;
+}
+
+/* Font Style Classes */
+.font-style-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans Bengali", sans-serif;
+}
+
+.font-style-serif {
+  font-family: Georgia, Cambria, "Times New Roman", Times, "Noto Serif Bengali", serif;
+}
+
+.font-style-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-style-bryndan,
+.font-style-bryndan p:not(.katex *),
+.font-style-bryndan span:not(.katex *),
+.font-style-bryndan div:not(.katex *),
+.font-style-bryndan button:not(.katex *),
+.font-style-bryndan h1:not(.katex *),
+.font-style-bryndan h2:not(.katex *),
+.font-style-bryndan h3:not(.katex *),
+.font-style-bryndan h4:not(.katex *) {
+  font-family: "Bryndan Write", "Patrick Hand", "Caveat", "Atma", "Segoe Print", "Bradley Hand", "Comic Sans MS", cursive, sans-serif;
+  letter-spacing: 0.01em;
+}

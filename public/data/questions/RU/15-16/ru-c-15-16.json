@@ -1,0 +1,1832 @@
+[
+  {
+    "id": "ru-c-15-16-q-001",
+    "number": 1,
+    "subject": "Physics",
+    "question": "স্থিতিস্থাপক বস্তুর পীড়ন বলতে কী বুঝ?",
+    "options": [
+      "বস্তুর উপর প্রযুক্ত বল",
+      "বস্তুর প্রতি একক ক্ষেত্রফলের উপর প্রযুক্ত বল",
+      "বস্তুর প্রতি একক ক্ষেত্রফলের উপর প্রযুক্ত বলের বিপরীতে সৃষ্ট অভ্যন্তরীন বল",
+      "প্রযুক্ত বলের জন্য সৃষ্ট বলের দিকে বস্তুর সরণের মান"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #1 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-002",
+    "number": 2,
+    "subject": "Physics",
+    "question": "\"হাইড্রোজেন পরমাণুর আয়নায়ন বিভব 13.6 eV\" এর অর্থ কি?",
+    "options": [
+      "ইলেক্ট্রন ও প্রোটনের মধ্যে ভর পার্থক্য 13.6 eV",
+      "প্রথম শক্তিস্তরের ইলেক্ট্রনের শক্তি -13.6 eV",
+      "প্রথম হতে দ্বিতীয় শক্তিস্তরে পরমাণুকে উত্তেজিত করতে 13.6 eV শক্তির প্রয়োজন",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #2 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-003",
+    "number": 3,
+    "subject": "Physics",
+    "question": "এন্ট্রপি হচ্ছে কোন সিস্টেমের-",
+    "options": [
+      "শৃংখলার পরিমাপ",
+      "আপেক্ষিক শৃংখলার পরিমাপ",
+      "বিশৃংখলার পরিমাপ",
+      "আপেক্ষিক বিশৃংখলার পরিমাপ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #3 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-004",
+    "number": 4,
+    "subject": "Physics",
+    "question": "নিচের বর্তনীতে বিদ্যুৎ প্রবাহ i- এর পরিমাণ কত?",
+    "options": [
+      "0.75A",
+      "1.5A",
+      "0.5A",
+      "1.0A"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "questionImageUrls": [
+      "assets/questions/RU/15-16/ru-c-15-16/q-004-question-29aafe.png"
+    ],
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #4 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-005",
+    "number": 5,
+    "subject": "Physics",
+    "question": "একটি বাড়ির বৈদ্যুতিক মিটারে 5A, 200V চিহ্নিত করা আছে। 100W এর সর্বোচ্চ কয়টি বাতি একত্রে নিরাপদে ব্যবহার করা যাবে?",
+    "options": [
+      "5টি",
+      "20টি",
+      "2টি",
+      "10টি"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #5 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-006",
+    "number": 6,
+    "subject": "Physics",
+    "question": "দুটি পরিবাহী তারে I_1 এবং I_2 প্রবাহ পরস্পর বিপরীত দিকে প্রবাহিত হচ্ছে। এরা-",
+    "options": [
+      "কোন বল অনুভব করবে না",
+      "পরস্পর আকর্ষণ অনুভব করবে",
+      "পরস্পর বিকর্ষণ অনুভব করবে",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #6 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-007",
+    "number": 7,
+    "subject": "Physics",
+    "question": "$2 \\hat{j} \\times 3 \\hat{k} =$",
+    "options": [
+      "$6 \\hat{i}$",
+      "$- 6 \\hat{i}$",
+      "$5 \\hat{i}$",
+      "0"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #7 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-008",
+    "number": 8,
+    "subject": "Physics",
+    "question": "একটি ঘড়ির সেকেন্ডের কাটার কৌণিক বেগ কত?",
+    "options": [
+      "π rad/sec",
+      "π/3 rad/sec",
+      "π/2 rad/sec",
+      "π/30 rad/sec"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #8 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-009",
+    "number": 9,
+    "subject": "Physics",
+    "question": "একটি ত্রুটিপূর্ণ থার্মোমিটার সাধারণ বায়ুচাপে গলিত বরফে 2^0C এবং শুস্ক বাস্পে 96^0C পাঠ দেয়। থার্মোমিটারটি 49^0C পাঠ দিলে কেলভিন স্কেলে তাপমাত্রা কত?",
+    "options": [
+      "323K",
+      "273K",
+      "223K",
+      "332K"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #9 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-010",
+    "number": 10,
+    "subject": "Physics",
+    "question": "ফোটনের নিশ্চল ভর কত?",
+    "options": [
+      "ইলেক্ট্রনর সমান",
+      "প্রোটনের সমান",
+      "শূন্য",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #10 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-011",
+    "number": 11,
+    "subject": "Physics",
+    "question": "একটি চাকর ব্যাস 1m। চাকাটি মিনিটে 30 বার ঘুরলে এর প্রান্তের কোন বিন্দুর রৈখিক বেগ কত হবে?",
+    "options": [
+      "π ms^-1",
+      "π/2 ms^-1",
+      "30π ms^-1",
+      "60π ms^-1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #11 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-012",
+    "number": 12,
+    "subject": "Physics",
+    "question": "একটি স্লাইড ক্যালিপার্সের প্রধান স্কেলের এক ভাগের ন্যূনতম মান 1mm এবং এর 99 ভাগ ভার্নিয়ার স্কেলের 100 ভাগের সমান। স্লাইড ক্যালিপার্সটির ভার্নিয়ার ধ্রুবক কত?",
+    "options": [
+      "0.001mm",
+      "0.01mm",
+      "0.1mm",
+      "1.0mm"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #12 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-013",
+    "number": 13,
+    "subject": "Physics",
+    "question": "গঠনমূলক ব্যতিচারের শর্ত কোনটি?",
+    "options": [
+      "$x = \\frac{2 n}{3 λ}$",
+      "X= $\\left ( 2 n \\right ) \\frac{λ}{2}$",
+      "X= $\\left ( 2 n + 1 \\right ) \\frac{λ}{2}$",
+      "$x = \\frac{n}{2 λ}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #13 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-014",
+    "number": 14,
+    "subject": "Physics",
+    "question": "পরিবর্তী প্রবাহের পূর্ণতরঙ্গ একমুখীকরণের জন্য সর্বনিম্ন কয়টি ডায়োড প্রয়োজন?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #14 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-015",
+    "number": 15,
+    "subject": "Physics",
+    "question": "সরল দোলন গতির ক্ষেত্রে বলের বৈশিষ্ট্য-",
+    "options": [
+      "বলের মান সাম্যাবস্থান থেকে সরণের মানের ব্যস্তানুপাতিক",
+      "বল সর্বদা একটি নির্দিষ্ট বিন্দু অভিমুখী",
+      "সদা ঘূর্ণায়মান",
+      "বল হবে সরল রৈখিক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #15 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-016",
+    "number": 16,
+    "subject": "Physics",
+    "question": "সমান্তরাল পাত ধারকের দুটি পাতের মধ্যবর্তী স্থান একটি ডাই-ইলেক্ট্রিক দ্বারা পূর্ণ করায় ধারকত্ব 5μF থেকে বেড়ে 60μF হয়। ডাই-ইলেক্ট্রিকটির পরাবৈদ্যুতিক ধ্রুবকের মান হবে-",
+    "options": [
+      "65",
+      "55",
+      "12",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #16 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-017",
+    "number": 17,
+    "subject": "Physics",
+    "question": "গাছ থেকে একটি 1Kg ওজনের বেল সোজা নিচের দিকে পড়ছে। বাতাসের বাধা যদি 8.8N হয়, তবে বেলটির ত্বরণ কত?",
+    "options": [
+      "1ms^-1",
+      "1ms^-2",
+      "9.8ms^-2",
+      "8.8ms^-1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #17 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-018",
+    "number": 18,
+    "subject": "Physics",
+    "question": "প্রিজমের ন্যূনতম বিচ্যুতি অবস্থানের জন্য প্রথম তলে আপতন কোণ ∠i_1 ও দ্বিতীয় তলে নির্গমন কোণ ∠i_2 এর মধ্যে সম্পর্ক হল-",
+    "options": [
+      "∠i_1 < ∠i_2",
+      "∠i_1 > ∠i_2",
+      "∠i_1 = ∠i_2",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #18 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-019",
+    "number": 19,
+    "subject": "Physics",
+    "question": "দীর্ঘদৃষ্টিসম্পন্ন ব্যক্তি 50cm বা তার বেশি দূরের বস্তুকে ভালভাবে দেখতে পায়। স্বাভাবিক দর্শনের জন্য তাকে কত ক্ষমতার লেন্সবিশিষ্ট চশমা ব্যবহার করতে হবে?",
+    "options": [
+      "+ 2D",
+      "- 2D",
+      "+ 1.5D",
+      "- 1.5D"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #19 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-020",
+    "number": 20,
+    "subject": "Physics",
+    "question": "3P এবং 2P বলদ্বয়ের লব্ধি R। প্রথম বল দ্বিগুন করলে লব্ধির পরিমাণ ও দ্বিগুন হয়। বলদ্বয়ের মধ্যবর্তী কোণ কত হবে?",
+    "options": [
+      "$120^{\\circ}$",
+      "$90^{\\circ}$",
+      "$60^{\\circ}$",
+      "$30^{\\circ}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #20 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-021",
+    "number": 21,
+    "subject": "Physics",
+    "question": "$\\vec{P} = 2 \\hat{i} + a \\hat{j} - 3 \\hat{k}$ এবং $\\vec{Q} = 6 \\hat{i} - 3 \\hat{j} - 9 \\hat{k}$ ভেক্টরদ্বয় পরস্পর সমান্তরাল হলে, a এর মান কত?",
+    "options": [
+      "2",
+      "3",
+      "-1",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #21 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-022",
+    "number": 22,
+    "subject": "Physics",
+    "question": "$\\vec{P} = 2 \\hat{i} + a \\hat{j} - 3 \\hat{k}$ এবং $\\vec{Q} = 6 \\hat{i} - 3 \\hat{j} - 9 \\hat{k}$ ভেক্টর দুটি পরস্পর সমান্তরাল হলে, a- এর মান কত?",
+    "options": [
+      "2",
+      "3",
+      "-1",
+      "1"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #22 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-023",
+    "number": 23,
+    "subject": "Mathematics",
+    "question": "একটি গতিশীল বস্তুর সরণের সমীকরণ x=(4t^2+3t)m। 3s পরে বস্তুটির বেগ-",
+    "options": [
+      "39.02ms^-1",
+      "20ms^-1",
+      "15ms^-1",
+      "27ms^-1"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #23 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-024",
+    "number": 24,
+    "subject": "Mathematics",
+    "question": "$\\frac{d^{100}}{dx^{100}} \\left ( x^{99} \\right ) = ?$",
+    "options": [
+      "99!",
+      "0",
+      "100!",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #24 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-025",
+    "number": 25,
+    "subject": "Mathematics",
+    "question": "যদি $x = p \\sin{\\left ( \\theta + 45^{\\circ} \\right )}$ এবং $y = p \\sin{\\left ( \\theta - 45^{\\circ} \\right )}$ হয় তবে $x^{2} + y^{2} = ?$",
+    "options": [
+      "1",
+      "p",
+      "$p^{2}$",
+      "$2 p^{2} \\sin^{2}{\\left ( \\theta + 45^{\\circ} \\right )}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #25 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-026",
+    "number": 26,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to y} \\frac{\\sin{x} - \\sin{y}}{x - y} = ?$",
+    "options": [
+      "sec y",
+      "sec^2 y",
+      "cos^2 y",
+      "cos y"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #26 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-027",
+    "number": 27,
+    "subject": "Mathematics",
+    "question": "একটি পুকুরের বৃত্তাকার ঢেউ এমনভাবে প্রসারিত হয় যে বৃত্তের পরিধি a ফুট/সে. হারে বৃদ্ধি পায়। বৃত্তের ব্যাসার্ধের বৃদ্ধির হার কত?",
+    "options": [
+      "$\\frac{a}{2 \\pi}$",
+      "$\\frac{2 \\pi}{a}$",
+      "a",
+      "0"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #27 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-028",
+    "number": 28,
+    "subject": "Mathematics",
+    "question": "$y = \\sqrt{3} + \\sqrt{2}$ হলে $y^{3} + \\frac{1}{y^{3}} = ?$",
+    "options": [
+      "$30 \\sqrt{3}$",
+      "$18 \\sqrt{3}$",
+      "$30 \\sqrt{2}$",
+      "$18 \\sqrt{2}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #28 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-029",
+    "number": 29,
+    "subject": "Mathematics",
+    "question": "$x^{2}+y^{2}+5 x-3 y-8=0 \\text { ও } 2 x^{2}+2 y^{2}+$ 4x +5y - $7=0$ বৃত্তদ্বয়ের সাধারণ জ্যা এর সমীকরণ কোনটি?",
+    "options": [
+      "$x^{2}+y^{2}-x+8 y+15=0$",
+      "$7 x-y-5=0$",
+      "$6 x-11 y-9=0$",
+      "$3 x-11 y+9=0$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "questionImageUrls": [
+      "assets/questions/RU/15-16/ru-c-15-16/q-029-question-b71bc7.svg"
+    ],
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #29 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-030",
+    "number": 30,
+    "subject": "Mathematics",
+    "question": "$f^4_1(x)dx=5 হলে, f^1_0(3x + 1)dx$ এর মান-",
+    "options": [
+      "$\\frac{5}{4}$",
+      "$\\frac{4}{3}$",
+      "$\\frac{5}{3}$",
+      "$5$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #30 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-031",
+    "number": 31,
+    "subject": "Mathematics",
+    "question": "$k$ এর মান কত হলে, $(k+1) x^{2}+$ $2(k+3) x+2 k+3$ রাশিটি পূর্ণ বর্গ হবে?",
+    "options": [
+      "${k}=-2,3$",
+      "${k}=2,3$",
+      "${k}=-2,-3$",
+      "${k}=-2,4$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #31 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-032",
+    "number": 32,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #32 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-033",
+    "number": 33,
+    "subject": "Mathematics",
+    "question": "5x + 4y – 20 = 0 সরল রেখাটি অক্ষদ্বয়ের সাথে যে ত্রিভুজ উৎপন্ন করে, তার ক্ষেত্রফল কত বর্গ একক?",
+    "options": [
+      "10",
+      "20",
+      "0",
+      "9"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #33 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-034",
+    "number": 34,
+    "subject": "Mathematics",
+    "question": "$2.3+3.5+4.7+5.9+......$ধারার $19$ তম পদের মান কত?",
+    "options": [
+      "780",
+      "821",
+      "1030",
+      "1227"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #34 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-035",
+    "number": 35,
+    "subject": "Mathematics",
+    "question": "$\\left ( 1 + x \\right )^{44}$ এর বিস্তৃতিতে 21 তম ও22 তম পদ দুইটি সমান হলে, x এর মান কত?",
+    "options": [
+      "$\\frac{8}{7}$",
+      "$\\frac{7}{8}$",
+      "$\\frac{6}{7}$",
+      "$\\frac{7}{6}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #35 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-036",
+    "number": 36,
+    "subject": "Mathematics",
+    "question": "$\\frac{1}{|3 x-1|}>1$ এর সমাধান হল-",
+    "options": [
+      "$\\left(-\\infty, \\frac{1}{3}\\right) \\cup(1, \\infty)$",
+      "$x>\\frac{1}{3}$",
+      "\\(0",
+      "$\\left(0, \\frac{1}{3}\\right) \\cup\\left(\\frac{1}{3}, \\frac{2}{3}\\right)$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #36 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-037",
+    "number": 37,
+    "subject": "Mathematics",
+    "question": "যদি f(x) = $\\frac{x + 5}{2 x + a}$ এবং f(x) = f ^-1(x) হয়, তবে a = ?",
+    "options": [
+      "1",
+      "–1",
+      "2",
+      "–2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #37 ([উচ্চতর গণিত(16)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-038",
+    "number": 38,
+    "subject": "Chemistry",
+    "question": "হীরকে কোন ধরণের সংকর অরবিটাল থাকে?",
+    "options": [
+      "sp^3",
+      "sp",
+      "dsp^2",
+      "sp^2"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #38 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-039",
+    "number": 39,
+    "subject": "Chemistry",
+    "question": "মেহেদী পাতার নির্যাসে কোন যৌগটির প্রাধান্য থাকে?",
+    "options": [
+      "২ হাইড্রোক্সি বেনজো কুইনোন",
+      "বেনজো কুইনোন",
+      "২-হাইড্রোক্সি ১,৪-ন‍্যাপথা কুইনোন",
+      "ডায়জোনিয়াম ক্লোরাইড"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #39 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-040",
+    "number": 40,
+    "subject": "Chemistry",
+    "question": "কোন যৌগটি sp^3d সংকর অরবিটাল বিদ‍্যমান?",
+    "options": [
+      "CH_4",
+      "PF_5",
+      "SF_6",
+      "C_2H_4"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #40 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-041",
+    "number": 41,
+    "subject": "Chemistry",
+    "question": "কোনটি বৈশ্বিক তাপমাত্রার জন্য বেশি দায়ী?",
+    "options": [
+      "$\\mathrm{O}_{2}$",
+      "$\\mathrm{CO}_{2}$",
+      "CFC",
+      "$\\mathrm{N}_{2} \\mathrm{O}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #41 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-042",
+    "number": 42,
+    "subject": "Chemistry",
+    "question": "শিখা পরীক্ষায় হলুদাভ সবুজ বর্ণ সৃষ্টি করে কোন আয়নটি?",
+    "options": [
+      "K^+",
+      "Ba^2+",
+      "Ca^2+",
+      "Cu^2+"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #42 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-043",
+    "number": 43,
+    "subject": "Chemistry",
+    "question": "হাইড্রোজেন পরমাণুর বর্ণালীর কোন সিরিজটি অতিবেগুণি অঞ্চলে রেখা দেখায়?",
+    "options": [
+      "বামার",
+      "প্যাশ্চেন",
+      "ব্রাকেট",
+      "লাইমেন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #43 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-044",
+    "number": 44,
+    "subject": "Chemistry",
+    "question": "বুনসেন বার্নার শিখার সবচেয়ে উপরের অংশের নাম কি?",
+    "options": [
+      "বিজারণ মন্ডল",
+      "জারণ মন্ডল",
+      "উতপ্ত মন্ডল",
+      "শীতল মন্ডল"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #44 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-045",
+    "number": 45,
+    "subject": "Chemistry",
+    "question": "কোনটি গ্ৰিগনার্ড বিকারকের সাথে বিক্রিয়া করলে টারশিয়ারী আ্যলকোহল উৎপন্ন হয়?",
+    "options": [
+      "ইথানল",
+      "মিথানল",
+      "ফরমালডিহাইড",
+      "কিটোন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #45 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-046",
+    "number": 46,
+    "subject": "Chemistry",
+    "question": "কোনটি সঠিক নয়?",
+    "options": [
+      "$B e C l_{2} \\to s p$",
+      "$B C l_{3} \\to s p^{2}$",
+      "$C H_{4} \\to s p^{3}$",
+      "$N H_{3} \\to s p^{2}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #46 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-047",
+    "number": 47,
+    "subject": "Chemistry",
+    "question": "প্রভাবক যোগ করলে বিক্রিয়ায় -",
+    "options": [
+      "সক্রিয়ন শক্তি কমে যায়",
+      "বিক্রিয়ায় তাপ কমে যায়",
+      "সক্রিয়ন শক্তি বেড়ে যায়",
+      "বিক্রিয়ায় তাপ বেড়ে যায়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #47 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-048",
+    "number": 48,
+    "subject": "Chemistry",
+    "question": "দ্রাব্যতা গুণফল নিচের কোন ক্ষেত্রে প্রযোজ্য?",
+    "options": [
+      "অধিক দ্রবণীয় আয়নিক যৌগ",
+      "অধিক দ্রবণীয় সমযোজী যৌগ",
+      "স্বল্প দ্রবণীয় আয়নিক যৌগ",
+      "স্বল্প দ্রবণীয় সমযোজী যৌগ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #48 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-049",
+    "number": 49,
+    "subject": "Chemistry",
+    "question": "কোন যৌগটির ডাইপোল মোমেন্ট শূন্য?",
+    "options": [
+      "ClF",
+      "PCl3",
+      "SiF_4",
+      "CFCl_3"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #49 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-050",
+    "number": 50,
+    "subject": "Chemistry",
+    "question": "কোন আ্যলকোহলকে জারিত করলে কিটোন পাওয়া যায়?",
+    "options": [
+      "১-বিউটানল",
+      "২-মিথাইল-2প্রোপানল",
+      "১-প্রোপানল",
+      "২-বিউটানল"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #50 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-051",
+    "number": 51,
+    "subject": "Chemistry",
+    "question": "কোন যৌগ ও ফেনলের বিক্রিয়ায় ব্যাকেলাইট উৎপন্ন করা যায়?",
+    "options": [
+      "H_2O",
+      "HNO_3",
+      "H_2SO_4",
+      "HCHO"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #51 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-052",
+    "number": 52,
+    "subject": "Chemistry",
+    "question": "Ag^+/Ag এবং Au^3+/Au অর্ধকোষদ্বয়ের প্রমাণ (বিজারণ) ইলেকট্রোড বিভব যথাক্রমে 0.80 V এবং 1.56 V। এ দুটি অর্ধকোষ দিয়ে গঠিত সেলের বিভব কত হবে?",
+    "options": [
+      "+0.76 V",
+      "-0.76 V",
+      "+2.36 V",
+      "-2.36 V"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #52 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-053",
+    "number": 53,
+    "subject": "Chemistry",
+    "question": "অ্যানথ্রাসিন অণুর জন্য হুকেল(Huckel) e- সংখ্যা কত?",
+    "options": [
+      "8πe-",
+      "12πe-",
+      "14πe-",
+      "18πe-"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #53 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-054",
+    "number": 54,
+    "subject": "Chemistry",
+    "question": "60°C-এ কস্টিক সােডার উপিস্থিতিতে ফেনল ও ক্লোরােফরমের বিক্রিয়ার নাম কোনটি?",
+    "options": [
+      "কোব বিক্রিয়া",
+      "অ্যালডল ঘনীভবন",
+      "রাইমার-টাইম্যান বিক্রিয়া",
+      "পারকিন বিক্রিয়া"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #54 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-055",
+    "number": 55,
+    "subject": "Chemistry",
+    "question": "$0.05 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{SO}_{4}$ এর pOH কত?",
+    "options": [
+      "1",
+      "1.30",
+      "12.7",
+      "13"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #55 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-056",
+    "number": 56,
+    "subject": "Chemistry",
+    "question": "এ্যালুমিনিয়াম ক্লোরাইড কি হিসেবে থাকে?",
+    "options": [
+      "মনোমার",
+      "ডাইমার",
+      "ট্রাইমার",
+      "পলিমার"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #56 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-057",
+    "number": 57,
+    "subject": "Chemistry",
+    "question": "ন্যানো কণা ব্যবহার হয় -",
+    "options": [
+      "রোগের প্রাথমিক অবস্থান নির্ধারণে",
+      "ভূগর্ভস্থ পানি হতে CCl_4 মুক্ত করণে",
+      "আর্সেনিক অপসরণে",
+      "উপরের সবগুলো"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #57 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-058",
+    "number": 58,
+    "subject": "Chemistry",
+    "question": "জুইটার আয়ন হলো অ্যামিনো এসিডের -",
+    "options": [
+      "অম্লীয় গ্রুপ",
+      "ডাইপোলার আয়ন",
+      "পেপটাইড বন্ধন",
+      "ক্ষারীয় গ্রুপ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #58 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-059",
+    "number": 59,
+    "subject": "Chemistry",
+    "question": "বাফার দ্রবণে স্বল্পমাত্রায় ক্ষার যোগ করলে দ্রবণের pH এর মানের কি পরিবর্তন ঘটে?",
+    "options": [
+      "বৃদ্ধি পায়",
+      "হ্রাস পায়",
+      "পরিবর্তন হয় না",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #59 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-060",
+    "number": 60,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি প্রাকৃতিক পলিমার?",
+    "options": [
+      "নাইলন",
+      "সেলুলোজ",
+      "পিভিসি পাইপ",
+      "টেফলন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #60 ([রসায়ন(23)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-061",
+    "number": 61,
+    "subject": "Biology",
+    "question": "কোনটি আমিষ পরিপাকের সাথে জড়িত?",
+    "options": [
+      "লাইপেজ",
+      "আইসোমারেজ",
+      "কোলাজিনেজ",
+      "অ্যামাইলেজ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #61 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-062",
+    "number": 62,
+    "subject": "Biology",
+    "question": "কোনটি সাইক্লোস্পোরিন অ্যান্টিবায়োটিকের উৎস?",
+    "options": [
+      "T. inflatum",
+      "S. cerevisiae",
+      "P. chrysogenum",
+      "A. flavus"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #62 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-063",
+    "number": 63,
+    "subject": "Biology",
+    "question": "কোনটিকে পেসমেকার বলে?",
+    "options": [
+      "অ্যাট্রিওভেন্টিকুলার নোড",
+      "সাইনোঅ্যাট্রিয়াল নোড",
+      "বাম নিলয়",
+      "ডান নিলয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #63 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-064",
+    "number": 64,
+    "subject": "Biology",
+    "question": "নিম্নের কোনটি ভাইরাস জনিত রোগ নয়?",
+    "options": [
+      "হাম",
+      "ডেঙ্গু",
+      "টাইফয়েড",
+      "হার্পিস"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #64 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-065",
+    "number": 65,
+    "subject": "Biology",
+    "question": "তেল, ঘি, মাখন প্রভৃতি খাদ্যে যে প্রধান জৈব যৌগ পাওয়া যায়, তার ক্ষুদ্রতম একক -",
+    "options": [
+      "মনোস্যাকারাইড",
+      "অ্যামাইনো এসিড",
+      "ফ্যাটি এসিড",
+      "ল্যাকটিক অ্যাসিড"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #65 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-066",
+    "number": 66,
+    "subject": "Biology",
+    "question": "জিনখন্ডসমূহের কোন রিকম্বিনেশন এর মাধ্যমে লক্ষ লক্ষ ভিন্ন ধরনের অ্যান্টিবডি তৈরি হয়?",
+    "options": [
+      "VKJ",
+      "VDK",
+      "VDA",
+      "VDJ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #66 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-067",
+    "number": 67,
+    "subject": "Biology",
+    "question": "ক্রোমোজোম বহির্ভূত বৃত্তাকার DNA অনুকে কি বলে?",
+    "options": [
+      "নিউক্লিয়েড",
+      "নিউক্লিওলাস",
+      "প্লাজমিড",
+      "সেন্ট্রোসোম"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #67 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-068",
+    "number": 68,
+    "subject": "Biology",
+    "question": "গ্লুকোজ অনু পরস্পর আবদ্ধ হয়ে সেলুলোজ তৈরি করে যে বন্ধনের মাধ্যমে -",
+    "options": [
+      "α (1-4) গ্লাইকোসাইডিক বন্ধন",
+      "β (1-4) গ্লাইকোসাইডিক বন্ধন",
+      "β(1-2) গ্লাইকোসাইডিক বন্ধন",
+      "α (1-2) গ্লাইকোসাইডিক বন্ধন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #68 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-069",
+    "number": 69,
+    "subject": "Biology",
+    "question": "হাড়ের মেটাবলিজম এর সাথে যুক্ত গুরুত্বপূর্ণ হরমোন কোনটি?",
+    "options": [
+      "প্যারাথাইরয়েড",
+      "থাইরয়েড",
+      "মিনারেলোকর্টিকয়েড",
+      "ইনসুলিন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #69 ([জীববিজ্ঞান(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-070",
+    "number": 70,
+    "subject": "ICT",
+    "question": "(109)_10 = (x)_2 হলে x = ?",
+    "options": [
+      "1101101",
+      "1011101",
+      "1101011",
+      "1101110"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #70 ([তথ্য ও যোগাযোগ প্রযুক্তি(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-071",
+    "number": 71,
+    "subject": "Physics",
+    "question": "x অক্ষ ও(-5,-7)বিন্দু থেক(4,k)বিন্দুটির দূরত্ব সমান হলে ,k এর মান কত হবে?",
+    "options": [
+      "$\\frac{65}{7}$",
+      "$- \\frac{65}{7}$",
+      "$\\frac{64}{7}$",
+      "$- \\frac{64}{7}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #71 ([(6)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-072",
+    "number": 72,
+    "subject": "Physics",
+    "question": "যদি $A = \\left [ \\begin{matrix} 1 & 1 \\\\ 0 & 1 \\end{matrix} \\right ]$ হয়, তবে A^5 = ?",
+    "options": [
+      "$\\left [ \\begin{matrix} 1 & 5 \\\\ 0 & 1 \\end{matrix} \\right ]$",
+      "$\\left [ \\begin{matrix} 1 & 0 \\\\ 0 & 1 \\end{matrix} \\right ]$",
+      "$\\left [ \\begin{matrix} 0 & 0 \\\\ 0 & 1 \\end{matrix} \\right ]$",
+      "$\\left [ \\begin{matrix} 0 & 0 \\\\ 0 & 0 \\end{matrix} \\right ]$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #72 ([(6)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-073",
+    "number": 73,
+    "subject": "Physics",
+    "question": "যদি টেলিফোন ডায়ালে 0 হতে 9 পর্যন্ত লেখা থাকে এবং রাজশাহী শহরের টেলিফোন নম্বরগুলো 6 অংকবিশিষ্ট হয়, তবে রাজশাহী শহরে সর্বোচ্চ কতটি টেলিফোন সংযোগ দেয়া সম্ভব, যেখানে প্রথম অংক 0 হতে পারবে না?",
+    "options": [
+      "9 × 10^5",
+      "10^5",
+      "10^6",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #73 ([(6)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-074",
+    "number": 74,
+    "subject": "Physics",
+    "question": "যদি ^nP_4 = 6 ^nP_3 হয়, তবে n- এর মান কত?",
+    "options": [
+      "3",
+      "4",
+      "9",
+      "12"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #74 ([(6)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-075",
+    "number": 75,
+    "subject": "Physics",
+    "question": "x অক্ষ ও (-5,-7) বিন্দু থেকে(4,k) বিন্দুটির দূরত্ব সমান হলে, k এর মান কত?",
+    "options": [
+      "$\\frac{65}{7}$",
+      "$- \\frac{65}{7}$",
+      "$\\frac{64}{7}$",
+      "$- \\frac{64}{7}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #75 ([(6)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-c-15-16-q-076",
+    "number": 76,
+    "subject": "Physics",
+    "question": "যদি $A = \\left [ \\begin{matrix} 1 & 1 \\\\ 0 & 1 \\end{matrix} \\right ]$ হয়, তবে $A^{5} = ?$",
+    "options": [
+      "$\\left [ \\begin{matrix} 1 & 5 \\\\ 0 & 1 \\end{matrix} \\right ]$",
+      "$\\left [ \\begin{matrix} 1 & 0 \\\\ 0 & 1 \\end{matrix} \\right ]$",
+      "$\\left [ \\begin{matrix} 0 & 0 \\\\ 0 & 1 \\end{matrix} \\right ]$",
+      "$\\left [ \\begin{matrix} 0 & 0 \\\\ 0 & 0 \\end{matrix} \\right ]$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "15-16",
+    "provenance": {
+      "sourceFile": "RU_C_15-16_f0a9f929.txt",
+      "sourceLocation": "Question #76 ([(6)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

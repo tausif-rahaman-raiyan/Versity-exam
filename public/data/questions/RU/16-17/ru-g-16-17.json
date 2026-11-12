@@ -1,0 +1,2330 @@
+[
+  {
+    "id": "ru-g-16-17-q-001",
+    "number": 1,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি কম্পোজিট কণিকা?",
+    "options": [
+      "ইলেকট্রন, প্রোটন ও নিউট্রন",
+      "আলফা কণা ও ডিউটেরন",
+      "পজিট্রন ও মেসন",
+      "ফোটন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #1 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-002",
+    "number": 2,
+    "subject": "Chemistry",
+    "question": "বায়োগ্যাসে মিথেনের পরিমান কত?",
+    "options": [
+      "৪০%",
+      "৩৩%",
+      "৬৫%",
+      "৮৫%"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #2 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-003",
+    "number": 3,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি কাচ পরিষ্কারকে ব্যবহৃত হয়?",
+    "options": [
+      "লিকার NH_3(Liquar NH_3)",
+      "কঠিন NH_3(solid NH_3)",
+      "NH_3 gas",
+      "NH_4Cl"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #3 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-004",
+    "number": 4,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোনটিতে সঞ্চারণশীল ইলেকট্রন নেই?",
+    "options": [
+      "গ্রাফাইট",
+      "বেনজিন",
+      "লোহা",
+      "হীরক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #4 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-005",
+    "number": 5,
+    "subject": "Chemistry",
+    "question": "কোনটি উভধর্মী অক্সইড?",
+    "options": [
+      "$Li_2O$",
+      "$PbO$",
+      "$CO_2$",
+      "$Na_2O$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #5 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-006",
+    "number": 6,
+    "subject": "Chemistry",
+    "question": "চাষাবাদের জন্য মাটির pH কত হওয়া প্রয়োজন?",
+    "options": [
+      "3 - 4",
+      "4 - 5",
+      "7 - 8",
+      "10 - 11"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #6 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-007",
+    "number": 7,
+    "subject": "Chemistry",
+    "question": "ট্রিটিয়াম কিসের আইসোটোপ?",
+    "options": [
+      "হাইড্রোজেন",
+      "নাইট্রোজেন",
+      "অক্সিজেন",
+      "ক্যালসিয়াম"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #7 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-008",
+    "number": 8,
+    "subject": "Chemistry",
+    "question": "(Na2CO3+CaS) কে একত্রে বলা হয়?",
+    "options": [
+      "হোয়াইট অ্যাশ",
+      "ব্ল্যাক অ্যাশ",
+      "লবণ গুড়া",
+      "সালফাইড গুড়া"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #8 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-009",
+    "number": 9,
+    "subject": "Chemistry",
+    "question": "পিকরিক এসিডের গলনাংক হলো-",
+    "options": [
+      "102°C",
+      "122°C",
+      "222°C",
+      "212°C"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #9 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-010",
+    "number": 10,
+    "subject": "Chemistry",
+    "question": "জাল টাকা শনাক্তকরণে কোন তড়িৎ চুম্বকীয় রশ্মি ব্যবহৃত হয়?",
+    "options": [
+      "$IR$",
+      "$UV$",
+      "$Radio\\ Wave$",
+      "$Uissible\\ Ray$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #10 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-011",
+    "number": 11,
+    "subject": "Chemistry",
+    "question": "থায়োফিন কোন ধরনের যৌগ?",
+    "options": [
+      "মুক্ত শিকল",
+      "হেটারো অ্যারোমেটিক",
+      "হেটারো অ্যালিফেটিক",
+      "কার্বোসাইক্লিক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #11 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-012",
+    "number": 12,
+    "subject": "Chemistry",
+    "question": "ট্রাইক্লোরো মিথেন নিচের কোন কাজে ব্যবহৃত হয়?",
+    "options": [
+      "কীট নাশক",
+      "চেতনা নাশক",
+      "হীম কারক",
+      "অগ্নি নির্বাপক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #12 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-013",
+    "number": 13,
+    "subject": "Chemistry",
+    "question": "কোনটি সেকেন্ডারি স্ট‍্যান্ডার্ড পদার্থ?",
+    "options": [
+      "$H_{2} C_{2} O_{4}$.2$H_{2} O$",
+      "$H N O_{3}$",
+      "$N a_{2} C O_{3}$",
+      "$K_{2} C r_{2} O_{7}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #13 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-014",
+    "number": 14,
+    "subject": "Chemistry",
+    "question": "কোনটি সাদা ভিট্রিওল?",
+    "options": [
+      "ZnSO_4.7H_2O",
+      "ZnSO_4.4H_2O",
+      "ZnO.2H_2O",
+      "ZnSO_4.6H_2O"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #14 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-015",
+    "number": 15,
+    "subject": "Chemistry",
+    "question": "কার্বন কার্বন দ্বিবন্ধন যুক্ত যৌগকে কি বলে?",
+    "options": [
+      "অ্যালকেন",
+      "অ্যালকিন",
+      "অ্যালকাইন",
+      "কোনটি নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #15 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-016",
+    "number": 16,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি নিউক্লিওফাইল ?",
+    "options": [
+      "H_2O",
+      "AICl_3",
+      "NH_4",
+      "NO2^+"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #16 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-017",
+    "number": 17,
+    "subject": "Chemistry",
+    "question": "কার্বলিক এসিডের অপর নাম কি?",
+    "options": [
+      "বেনজিন",
+      "টলুইন",
+      "ফেনল",
+      "কোনোটি নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #17 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-018",
+    "number": 18,
+    "subject": "Chemistry",
+    "question": "গ্লোবার লবণের সংকেত কোনটি?",
+    "options": [
+      "CuSO4.5H2O",
+      "FeSO4.7H2O",
+      "Na2CO3.10H2O",
+      "Na2SO4 . 10H2O"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #18 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-019",
+    "number": 19,
+    "subject": "Chemistry",
+    "question": "ফসফিন (PH_3) কি ধরনের যৌগ?",
+    "options": [
+      "ক্ষার",
+      "এসিড",
+      "নিউট্রাল",
+      "তীব্র এসিড"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #19 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-020",
+    "number": 20,
+    "subject": "Chemistry",
+    "question": "কোনটি বাড়লে কয়লার গুণগত মান বাড়ে?",
+    "options": [
+      "ছাই",
+      "উদ্বায়ী পদার্থ",
+      "ফিক্সড কার্বন",
+      "সালফার"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #20 ([রসায়ন(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-021",
+    "number": 21,
+    "subject": "Biology",
+    "question": "অসম্পূর্ণ রুপান্তর ঘটে কোন প্রাণীতে?",
+    "options": [
+      "ঘাস ফড়িং",
+      "মৌমাছি",
+      "রুইমাছ",
+      "হাইড্রা"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #21 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-022",
+    "number": 22,
+    "subject": "Biology",
+    "question": "খাদ্যদ্রব্য গলাধকরনের সময় স্বরযন্ত্রের মুখ বন্ধ করে দেয় কে?",
+    "options": [
+      "Vulva",
+      "Epiglottis",
+      "Adams Apple",
+      "Vocal Card"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #22 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-023",
+    "number": 23,
+    "subject": "Biology",
+    "question": "তরুনাস্থির ম্যাট্রিক্স কি দ্বারা গঠিত?",
+    "options": [
+      "কনড্রোসাইট",
+      "কন্ড্রিন",
+      "কনড্রোলাইট",
+      "অস্টিওসাইট"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #23 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-024",
+    "number": 24,
+    "subject": "Biology",
+    "question": "কোনোটি একবীজপত্রী উদ্ভিদ নয়?",
+    "options": [
+      "ধান",
+      "লিচু",
+      "সুপারি",
+      "গম"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #24 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-025",
+    "number": 25,
+    "subject": "Biology",
+    "question": "ক্রোমোজমে DNA ও হিস্টোন এর পরিমাণ যথাক্রমে",
+    "options": [
+      "৩৫%, ৫৫%",
+      "৪৫%, ৫৫%",
+      "৫০%,৪০%",
+      "২৫%,৬৫%"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #25 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-026",
+    "number": 26,
+    "subject": "Biology",
+    "question": "টিস্যু কালচার প্রযুক্তির কালচার মিডিয়ামের pH মান কত?",
+    "options": [
+      "7.5–8.5",
+      "5.5–5.8",
+      "3.5–4.8",
+      "6.5–7.5"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #26 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-027",
+    "number": 27,
+    "subject": "Biology",
+    "question": "কোন উপধাপে ক্রসিংওভার ঘটে?",
+    "options": [
+      "লেপ্টোটিন",
+      "জাইগোটিন",
+      "প্যাকাইটিন",
+      "ডিপ্লোটিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #27 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-028",
+    "number": 28,
+    "subject": "Biology",
+    "question": "কোনটি ক্রোমোজোমে থাকে?",
+    "options": [
+      "ডিএনএ",
+      "আরএনএ",
+      "প্রোটিন",
+      "উপরের সবগুলো"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #28 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-029",
+    "number": 29,
+    "subject": "Biology",
+    "question": "কোন অঙ্গানুটি অটোলাইসিসে অংশ নেয়?",
+    "options": [
+      "লাইসোসোমে",
+      "গলজি বডি",
+      "রাইবোসোম",
+      "সেন্ট্রিওল"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #29 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-030",
+    "number": 30,
+    "subject": "Biology",
+    "question": "কোন উদ্ভিদ ভাইরাসে DNA থাকে?",
+    "options": [
+      "বিন মোজাইক",
+      "টোবাকো মোজাইক",
+      "সুগারকেন মোজাইক",
+      "ফুলকপির মোজাইক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #30 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-031",
+    "number": 31,
+    "subject": "Biology",
+    "question": "কোন উদ্ভিদকে 'জীবন্ত জীবাশ্ম' বলা হয়?",
+    "options": [
+      "Pinus",
+      "Cycas",
+      "Seleginella",
+      "Equisetum"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #31 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-032",
+    "number": 32,
+    "subject": "Biology",
+    "question": "মূলের বহিরাবরণের নাম কী?",
+    "options": [
+      "এপিডার্মিস",
+      "এপিব্লেমা",
+      "হাইপোডার্মিস",
+      "কর্টেক্স"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #32 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-033",
+    "number": 33,
+    "subject": "Biology",
+    "question": "প‍্যাটেলা নামক অস্থিটি কোথায় আছে মানুষের দেহে?",
+    "options": [
+      "করোটিতে",
+      "বক্ষে",
+      "পাঁজরে",
+      "পায়ে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #33 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-034",
+    "number": 34,
+    "subject": "Biology",
+    "question": "তিনটি জিন একই হোমোলোগাস ক্রোমোসোমে অবস্থান করলে জিনত্রয়কে বলে-",
+    "options": [
+      "Epistatic genes",
+      "Alleles",
+      "Linked genes",
+      "Multiple alleles"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #34 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-035",
+    "number": 35,
+    "subject": "Biology",
+    "question": "নিম্নের কোনটি একাধারে বহিঃক্ষরা ও অন্তঃক্ষরা গ্ৰন্থি হিসেবে কাজ করে-",
+    "options": [
+      "লালাগ্ৰন্থি",
+      "অগ্ন‍্যাশয়",
+      "অ্যাড্রেনাল",
+      "গোনাড"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #35 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-036",
+    "number": 36,
+    "subject": "Biology",
+    "question": "মেসোফিল কী ধরনের কলা?",
+    "options": [
+      "পাতার ক্লোরেনকাইমা",
+      "কাণ্ডের ক্লোরেনকাইমা",
+      "মূলের ক্লোরেনকাইমা",
+      "উপরের সবকয়টি"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #36 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-037",
+    "number": 37,
+    "subject": "Biology",
+    "question": "উদ্ভিদ কোষের কোনটি শ্বসনের প্রধান অঙ্গ?",
+    "options": [
+      "নিউক্লিয়াস",
+      "মাইটোকন্ড্রিয়া",
+      "প্লাষ্টিড",
+      "সাইটোপ্লাজম"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #37 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-038",
+    "number": 38,
+    "subject": "Biology",
+    "question": "নিউক্লিয়াস এর বিভাজনকে কি বলা হয়?",
+    "options": [
+      "সাইটোকাইনেসিস",
+      "ক‍্যারিওকাইনেসিস",
+      "মাইটোসিস",
+      "মিয়োসিস"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #38 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-039",
+    "number": 39,
+    "subject": "Biology",
+    "question": "উদ্ভিদ বিজ্ঞানে টিস্যুকালচারের জনক বলা হয় কাকে?",
+    "options": [
+      "আয়েন উইলমুট",
+      "হ্যাবারল্যান্ড",
+      "কার্ল এরেকি",
+      "ক্যারোলাস লিনিয়াস"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #39 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-040",
+    "number": 40,
+    "subject": "Biology",
+    "question": "কোন ব্যাকটেরিয়া পাটের আঁশ ছাড়াতে সাহায্য করে?",
+    "options": [
+      "Lactobacilus",
+      "Clostridium",
+      "Nitrosomonas",
+      "Azotobacter"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #40 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-041",
+    "number": 41,
+    "subject": "Biology",
+    "question": "ক্রেবস চক্র সংঘটিত হয়-",
+    "options": [
+      "মাইটোকন্ড্রিয়ায়",
+      "নিউক্লিয়াসে",
+      "রাইবোজোমে",
+      "গলগি বডিতে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #41 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-042",
+    "number": 42,
+    "subject": "Biology",
+    "question": "Cnidocyte এর কাজ নয় কোনটি?",
+    "options": [
+      "খাদ্য ধরা",
+      "আত্মরক্ষা করা",
+      "চলন",
+      "প্রজনন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #42 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-043",
+    "number": 43,
+    "subject": "Biology",
+    "question": "কোন রক্তকণিকা হেপারিন ক্ষরণ করে?",
+    "options": [
+      "ইওসিনোফিল",
+      "নিউট্রোফিল",
+      "বেসোফিল",
+      "মনোসাইট"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #43 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-044",
+    "number": 44,
+    "subject": "Biology",
+    "question": "নিচের কোনটি প্রোক্যারিওটিক কোষ?",
+    "options": [
+      "শৈবাল",
+      "মাইকোপ্লাজমা",
+      "প্রোটোজোয়া",
+      "মেটাজোয়া"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #44 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-045",
+    "number": 45,
+    "subject": "Biology",
+    "question": "লিথাল জিনের কারণে ফিনোটাইপিক অনুপাত হবে-",
+    "options": [
+      "৩:১",
+      "১:১",
+      "২:১",
+      "৪:১"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #45 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-046",
+    "number": 46,
+    "subject": "Biology",
+    "question": "ধানের ক্রোমোজোম সংখ্যা কত ?",
+    "options": [
+      "২৪",
+      "২৮",
+      "৪০",
+      "৪২"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #46 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-047",
+    "number": 47,
+    "subject": "Biology",
+    "question": "ঘাসফড়িং এর দেহের পৃষ্ঠীয় দেশের খোলোসের নাম?",
+    "options": [
+      "টারগাম",
+      "নিউরন",
+      "প্লিউরণ",
+      "প্রানাটাম"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #47 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-048",
+    "number": 48,
+    "subject": "Biology",
+    "question": "রাসায়নিকভাবে হিপনোটক্সিন কোন উপাদানে গঠিত?",
+    "options": [
+      "প্রোটিন ও লিপিড",
+      "প্রোটিন ও ফেনল",
+      "লিপিড ও ফেনল",
+      "জাইলিন ও প্রোটিন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #48 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-049",
+    "number": 49,
+    "subject": "Biology",
+    "question": "স্বাভাবিক অবস্থায় হৃদপিন্ডের পেসমেকার কোনটি?",
+    "options": [
+      "Bundle of His",
+      "SA node",
+      "AV node",
+      "Purkinje fiber"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #49 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-050",
+    "number": 50,
+    "subject": "Biology",
+    "question": "কোন অঙ্গাণু প্রোটিন সংশ্লেষের সাথে জড়িত?",
+    "options": [
+      "সেন্ট্রোজোম",
+      "পারঅক্সিসোম",
+      "গলজি বডি",
+      "রাইবোসোম"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #50 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-051",
+    "number": 51,
+    "subject": "Biology",
+    "question": "কংগ্লোবেট গ্রন্থি কোথায় পাওয়া যায়?",
+    "options": [
+      "হাইড্রা",
+      "ব্যাঙ",
+      "তেলাপোকা",
+      "মানুষ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #51 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-052",
+    "number": 52,
+    "subject": "Biology",
+    "question": "কোনটি সমগোত্রীয় নয়?",
+    "options": [
+      "মেলাটোনিন",
+      "মিউসিন",
+      "করটিসল",
+      "অ্যান্ড্রোজেন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #52 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-053",
+    "number": 53,
+    "subject": "Biology",
+    "question": "Acoelomate প্রাণী নিচের কোনটি?",
+    "options": [
+      "Chordata",
+      "Rotifera",
+      "Platyhelminthes",
+      "Nematoda"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #53 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-054",
+    "number": 54,
+    "subject": "Biology",
+    "question": "জীববৈচিত্র্যসমৃদ্ধ অঞ্চলকে বলা হয় -",
+    "options": [
+      "হটস্পট",
+      "গ্রিনস্পট",
+      "রেডস্পট",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #54 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-055",
+    "number": 55,
+    "subject": "Biology",
+    "question": "চোখের কোন স্তর স্নায়ুকোষ দিয়ে গঠিত?",
+    "options": [
+      "কর্নিয়া",
+      "কোরয়েড",
+      "রেটিনা",
+      "স্ক্লেরা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #55 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-056",
+    "number": 56,
+    "subject": "Biology",
+    "question": "জলাতঙ্ক এর টিকা আবিষ্কার করেন কে?",
+    "options": [
+      "লুই পাস্ত্যুর",
+      "সোয়ান",
+      "ওয়ালেস",
+      "মর্গান"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #56 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-057",
+    "number": 57,
+    "subject": "Biology",
+    "question": "সস্যকলা হলো-",
+    "options": [
+      "হ্যাপ্লয়েড",
+      "ডিপ্লয়েড",
+      "ট্রিপলয়েড",
+      "টেট্রাপ্লয়েড"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #57 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-058",
+    "number": 58,
+    "subject": "Biology",
+    "question": "কো-ফ্যাক্টর নয় কোনটি?",
+    "options": [
+      "Fe^2+",
+      "Mg^2+",
+      "Zn^2+",
+      "FAD"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #58 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-059",
+    "number": 59,
+    "subject": "Biology",
+    "question": "বাংলাদেশে সরকার কোন বছর সুন্দরবনকে বিশ্ব ঐতিহ্য সাইট ঘোষণা করে?",
+    "options": [
+      "১৯৯৭",
+      "১৯৯৮",
+      "১৯৯৯",
+      "২০০০"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #59 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-060",
+    "number": 60,
+    "subject": "Biology",
+    "question": "ব্রায়োফাইটের শুক্রাণুতে কয়টি ফ্লাজেলা থাকে?",
+    "options": [
+      "১ টি",
+      "২ টি",
+      "৩ টি",
+      "৪ টি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #60 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-061",
+    "number": 61,
+    "subject": "Biology",
+    "question": "মস্তিষ্কের কোন অংশ দেহের ভারসাম্য রক্ষা করে?",
+    "options": [
+      "Cerebrum",
+      "Hypothalamus",
+      "Pons",
+      "Cerebelum"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #61 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-062",
+    "number": 62,
+    "subject": "Biology",
+    "question": "পৃথিবীকে ৬টি প্রাণিভৌগোলিক অংশে ভাগ করেন?",
+    "options": [
+      "হেকেল",
+      "ল‍্যামার্ক",
+      "আলফ্রেড রাসে্ল ওয়ালেস",
+      "দ‍্য ভ্রীস"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #62 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-063",
+    "number": 63,
+    "subject": "Biology",
+    "question": "লেসিথিন কী?",
+    "options": [
+      "ফসফোলিপিড",
+      "অ্যামাইনো অ্যাসিড",
+      "কার্বোহাইড্রেট",
+      "ভিটামিন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #63 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-064",
+    "number": 64,
+    "subject": "Biology",
+    "question": "নিউসেলাস কিসের অংশ?",
+    "options": [
+      "পরাগধানীর",
+      "গর্ভদণ্ডের",
+      "গর্ভমূণ্ডের",
+      "ডিম্বকের"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #64 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-065",
+    "number": 65,
+    "subject": "Biology",
+    "question": "কোনটি Ex-situ সংরক্ষণ?",
+    "options": [
+      "সীড ব্যাংক",
+      "ইকোপার্ক",
+      "অভয়ারণ্য",
+      "শিকার সংরক্ষিত"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #65 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-066",
+    "number": 66,
+    "subject": "Biology",
+    "question": "পশ্চাৎ মস্তিষ্কের অংশ নয়-",
+    "options": [
+      "সেরেবেলাম",
+      "সেরেব্রাম",
+      "পনস",
+      "মেডুলা অবলংগাটা"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #66 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-067",
+    "number": 67,
+    "subject": "Biology",
+    "question": "মূত্রের রং হলুদ হওয়ার জন্য দায়ী বস্তু কোনটি?",
+    "options": [
+      "অ্যামোনিয়া",
+      "বিলিরুবিন",
+      "ইউরোক্রাম",
+      "ইউরিয়া"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #67 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-068",
+    "number": 68,
+    "subject": "Biology",
+    "question": "কোন হরমোন আয়নের সমতা রক্ষায় কাজ করে?",
+    "options": [
+      "প্রোজেস্টেরন",
+      "গ্যাস্ট্রিন",
+      "থাইরক্সিন",
+      "অ্যাডোস্টেরন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #68 ([জীববিজ্ঞান(48)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-069",
+    "number": 69,
+    "subject": "English",
+    "question": "What is the synonym of the word 'Project'?",
+    "options": [
+      "idea",
+      "guess",
+      "scheme",
+      "job"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #69 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-070",
+    "number": 70,
+    "subject": "English",
+    "question": "What is the opposite of \"Yellow Dog\"?",
+    "options": [
+      "Great man",
+      "Unkind man",
+      "Hopeless man",
+      "Foolish man"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #70 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-071",
+    "number": 71,
+    "subject": "English",
+    "question": "Mention the passive voice of “His conduct pleases me”.",
+    "options": [
+      "I am pleased by his conduct",
+      "I am pleased with his conduct",
+      "I am pleased at his conduct",
+      "I am pleased at his behaviour"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #71 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-072",
+    "number": 72,
+    "subject": "English",
+    "question": "The word \"Admire\" means-",
+    "options": [
+      "Despise",
+      "Appreciate",
+      "Worldwide",
+      "Criticize"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #72 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-073",
+    "number": 73,
+    "subject": "English",
+    "question": "I know nothing regarding this matter. Here 'regarding' is a .......",
+    "options": [
+      "Gerund",
+      "Preposition",
+      "Apposition",
+      "Conjunction"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #73 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-074",
+    "number": 74,
+    "subject": "English",
+    "question": "Which of the following prepositions will be appropriate in the gaps: John is senior...... me......4 years.",
+    "options": [
+      "than,by",
+      "than,for",
+      "to,by",
+      "to,for"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #74 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-075",
+    "number": 75,
+    "subject": "English",
+    "question": "Which one is singular ?",
+    "options": [
+      "Data",
+      "Mitochondria",
+      "Focus",
+      "Fungi"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #75 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-076",
+    "number": 76,
+    "subject": "English",
+    "question": "What is the synonym of the word 'tacit'?",
+    "options": [
+      "spoken",
+      "implicit",
+      "open",
+      "written"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #76 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-077",
+    "number": 77,
+    "subject": "English",
+    "question": "He persists ........a noise.",
+    "options": [
+      "to make",
+      "in making",
+      "From making",
+      "to making"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #77 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-078",
+    "number": 78,
+    "subject": "English",
+    "question": "I'm sure I locked the door. I clearly remember............. it.",
+    "options": [
+      "to lock",
+      "to have locked",
+      "to be locked",
+      "locking"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #78 ([English(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-079",
+    "number": 79,
+    "subject": "Physics",
+    "question": "নিউক্লয়নের মধ্যে কোন কণার পারস্পারিক বিনিময়ের দ্বারা সবল নিউক্লিয়ার বলের উৎপত্তি হয়?",
+    "options": [
+      "গ্র্যাভিটন",
+      "গ্লুয়ন",
+      "নিউট্রিনো",
+      "ইলেকট্রন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #79 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-080",
+    "number": 80,
+    "subject": "Physics",
+    "question": "চাঁদের রৈখিক বেগ কত?",
+    "options": [
+      "2.044 kms^-1",
+      "1.5 kms^-1",
+      "1.022 kms^-1",
+      "5×10^3 kms^-1"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #80 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-081",
+    "number": 81,
+    "subject": "Physics",
+    "question": "কেন্দ্রমুখী বল দ্বারা কৃতকাজ কোনটি?",
+    "options": [
+      "অসীম",
+      "ঋণাত্মক",
+      "শুন্য",
+      "ধনাত্মক"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #81 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-082",
+    "number": 82,
+    "subject": "Physics",
+    "question": "মহাকর্ষীয় প্রাবল্য এবং মহাকর্ষীয় বিভব এর মাঝে সম্পর্ক কোনটি?",
+    "options": [
+      "E = dV/dR",
+      "F=VR",
+      "E= - dV/dr",
+      "E=v/r"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #82 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-083",
+    "number": 83,
+    "subject": "Physics",
+    "question": "সরল ছন্দিত স্পন্দনশীল একটি কনার দোলনকাল ১০সেকেন্ড। কোন সমীকরণটি এর ত্বরণ 'a' এবং সরণ 'x' এর সম্পর্ক প্রকাশ করে?",
+    "options": [
+      "a = -10πx",
+      "a = -(20π)x",
+      "a = -(2π/10)^2x",
+      "a = -(20π)^2x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #83 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-084",
+    "number": 84,
+    "subject": "Physics",
+    "question": "পৃথিবীতে মুক্তি বেগের মান কত?",
+    "options": [
+      "11.2 ms^-1",
+      "1120 ms^-1",
+      "11.2 kms^-1",
+      "112 kms^-1"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #84 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-085",
+    "number": 85,
+    "subject": "Physics",
+    "question": "গ‍্যাসের অভ‍্যন্তরীণ শক্তি নির্ভর করে কোন রাশির ওপর?",
+    "options": [
+      "চাপ",
+      "তাপমাত্রা",
+      "আয়তন",
+      "এন্ট্রপি"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #85 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-086",
+    "number": 86,
+    "subject": "Physics",
+    "question": "আধান ও বিভবের গুণফলের একক কি?",
+    "options": [
+      "জুল",
+      "ভোল্ট",
+      "ফ‍্যারাড",
+      "হেনরি"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #86 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-087",
+    "number": 87,
+    "subject": "Physics",
+    "question": "পিতলের স্থিতিস্থাপক গুণাঙ্ক-",
+    "options": [
+      "9 x 10^11Nm^-2",
+      "9 x 10^-11Nm^-2",
+      "9 x 10^10Nm^-2",
+      "9 x 10^-10Nm^-2"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #87 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-088",
+    "number": 88,
+    "subject": "Physics",
+    "question": "একটি চাকার ভর 5Kg এবং চক্রগতির ব্যাসার্ধ 0.5m হলে তার জড়তার ভ্রামক কত?",
+    "options": [
+      "0.2Kgm^2",
+      "0.4Kgm^2",
+      "0.6Kgm^2",
+      "None of these"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #88 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-089",
+    "number": 89,
+    "subject": "Physics",
+    "question": "তাপবিদ্যার প্রথম সূত্র নীচের কোন দুটির মধ্যে সম্পর্ক স্থাপন করে?",
+    "options": [
+      "তাপ ও কাজ",
+      "বল ও শক্তি",
+      "তাপ ও বল",
+      "কাজ ও ক্ষমতা"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #89 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-090",
+    "number": 90,
+    "subject": "Physics",
+    "question": "কৃষি ক্ষেত্রে বীজের গুণগতমান যাচাইয়ের জন্য ব্যবহৃত হয়-",
+    "options": [
+      "লেজার রশ্মি",
+      "এক্স রশ্মি",
+      "ক্যাথোড রশ্মি",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #90 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-091",
+    "number": 91,
+    "subject": "Physics",
+    "question": "সর্বপ্রথম আলোর তরঙ্গ তত্ত্ব কে প্রদান করেন?",
+    "options": [
+      "ফ্ল্যানেল",
+      "নিউটন",
+      "আইনস্টাইন",
+      "হাইগেন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #91 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-092",
+    "number": 92,
+    "subject": "Physics",
+    "question": "পারদ ও কাঁচের মধ্যকার স্পর্শ কোন কত?",
+    "options": [
+      "80°",
+      "90°",
+      "140°",
+      "160°"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #92 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-093",
+    "number": 93,
+    "subject": "Physics",
+    "question": "ক্যান্সার ও চর্মরোগ চিকিৎসায় কোনটি ব্যবহৃত হয়?",
+    "options": [
+      "রেডিও আইসোটপ",
+      "X-ray",
+      "MRI",
+      "অ্যান্টিবায়োটিক"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #93 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-094",
+    "number": 94,
+    "subject": "Physics",
+    "question": "যদি H এবং V যথাক্রমে কোন স্থানে চৌম্বক ক্ষেত্রের আনুভূমিক এবং উলম্ব উপাংশ হয় যেখানে কোন৬০°, তবে-",
+    "options": [
+      "V = H",
+      "V = √3H",
+      "V = 1/√3 H",
+      "V = √3/2 H"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #94 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-095",
+    "number": 95,
+    "subject": "Physics",
+    "question": "কোনটি মৌলিক বর্ণ নয়?",
+    "options": [
+      "লাল",
+      "সবুজ",
+      "হলুদ",
+      "আসমানী"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #95 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-096",
+    "number": 96,
+    "subject": "Physics",
+    "question": "ইনর্ফ্রাসনিক সাউন্ডের ফ্রিকোয়েন্সি?",
+    "options": [
+      "20KHZ",
+      "200KHZ",
+      "20 HZ এর কম",
+      "20 KHZ এর বেশী"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #96 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-g-16-17-q-097",
+    "number": 97,
+    "subject": "Physics",
+    "question": "শ্রেণিকক্ষে শব্দের তীব্রতা কোনটি?",
+    "options": [
+      "1 × 10^-22",
+      "1 × 10^-11",
+      "1 × 10^-9",
+      "1 × 10^-7"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "16-17",
+    "provenance": {
+      "sourceFile": "RU_G_16-17_8d848eec.txt",
+      "sourceLocation": "Question #97 ([পদার্থবিজ্ঞান(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

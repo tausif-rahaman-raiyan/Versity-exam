@@ -1,0 +1,1610 @@
+[
+  {
+    "id": "ru-h-13-14-q-001",
+    "number": 1,
+    "subject": "Chemistry",
+    "question": "$0.05 \\mathrm{M} \\mathrm{H}_{2} \\mathrm{SO}_{4}$ এর pOH কত?",
+    "options": [
+      "1",
+      "1.30",
+      "12.7",
+      "13"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #1 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-002",
+    "number": 2,
+    "subject": "Chemistry",
+    "question": "প্রোপেন (C_3H_8), হাইড্রোজেন (H_2) ও কার্বন (C) এর দহন তাপ যথাক্রমে -526 K Cal/mol, - 68.25 kCal/mol ও -94.05 kCal/mol হলে, প্রোপেন এর গঠন তাপের মান-",
+    "options": [
+      "-500.2 K Cal/mol",
+      "-29.15 K Cal/mol",
+      "363.7 K Cal/mol",
+      "-175.6 K Cal/mol"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #2 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-003",
+    "number": 3,
+    "subject": "Chemistry",
+    "question": "সিলভার নাইট্রেট দ্রবণের মধ্য দিয়ে 1.5 amp বিদ্যুৎ কত সময় প্রবাহিত করলে 1.89 গ্রাম সিলভার জমা হবে?",
+    "options": [
+      "18 মিনিট 76 সেকেন্ড",
+      "18 মিনিট 36.8 সেকেন্ড",
+      "18 মিনিট 26.8 সেকেন্ড",
+      "18 মিনিট 16.8 সেকেন্ড"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #3 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-004",
+    "number": 4,
+    "subject": "Chemistry",
+    "question": "সক্রিয়তা সিরিজ অনুসারে নিম্নের কোন ক্রমটি সঠিক?",
+    "options": [
+      "K^+ > Na^+ > Mg^2+ > Ca^2+",
+      "K^+ > Ca^2+ > Na^+ > Mg^2+",
+      "Na^+ > K^+ > Mg^2+ > Ca^2+",
+      "Na^+ > K^+ > Ca^2+ > Mg^2+"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #4 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-005",
+    "number": 5,
+    "subject": "Chemistry",
+    "question": "সাম্য ধ্রুবক K_p হলে তাপমাত্রা বৃদ্ধির সাথে logK_p এর মান বৃদ্ধি পায়। বিক্রিয়াটি-",
+    "options": [
+      "তাপহারী",
+      "তাপােৎপাদী",
+      "একমূখী",
+      "কোনােটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #5 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-006",
+    "number": 6,
+    "subject": "Chemistry",
+    "question": "নিচের কোন যৌগে আয়নিক, সমযোজী ও সন্নিবেশ বন্ধন আছে?",
+    "options": [
+      "NaOH",
+      "NH_3",
+      "NH_4Cl",
+      "[Co(NH_3)_6]^3+"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #6 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-007",
+    "number": 7,
+    "subject": "Chemistry",
+    "question": "একটি অম্লীয় দ্রবনের pH = 4.25 হলে দ্রবণে হাইড্রোজেন আয়নের ঘনমাত্রা-",
+    "options": [
+      "5.0 × 10^-3 moles/litre",
+      "5.6 × 10^-3 moles/litre",
+      "5.6 × 10^-4 moles/litre",
+      "5.6 × 10^-5 moles/litre"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #7 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-008",
+    "number": 8,
+    "subject": "Chemistry",
+    "question": "নিচের কোন যৌগটির অস্তিত্ব নেই?",
+    "options": [
+      "NeF_6",
+      "XeF_6",
+      "ICl_5",
+      "SF_6"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #8 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-009",
+    "number": 9,
+    "subject": "Chemistry",
+    "question": "sp^2- সংকরণের একটি উদাহরণ-",
+    "options": [
+      "C_2H_2",
+      "BH_4",
+      "BCl_3",
+      "কোনােটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #9 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-010",
+    "number": 10,
+    "subject": "Chemistry",
+    "question": "নিচের কোনটি তীব্র তড়িৎ বিশ্লেষক পদার্থ?",
+    "options": [
+      "গলিত NaCl",
+      "CH_3COOH",
+      "Ca(OH)_2",
+      "Mg(OH)_2"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #10 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-011",
+    "number": 11,
+    "subject": "Chemistry",
+    "question": "D(+) গ্লুকোজের অণুতে অপ্রতিসম কার্বনের সংখ্যা কয়টি?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #11 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-012",
+    "number": 12,
+    "subject": "Chemistry",
+    "question": "জ্বালানি তেলের অকটেন নাম্বার বৃদ্ধির জন্য কোন পদার্থ ব্যবহার করা হয়?",
+    "options": [
+      "টেট্রা ইথাইল লেড",
+      "আয়রন পেন্টাকার্বনিল",
+      "টলুইন",
+      "সবগুলোই ব্যবহার করা যায়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #12 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-013",
+    "number": 13,
+    "subject": "Chemistry",
+    "question": "একটি প্রথম ক্রম বিক্রিয়ার অর্ধায়ু 5min হলে 93.75% বিক্রিয়া সম্পন্ন হতে কত সময় লাগবে?",
+    "options": [
+      "22 min",
+      "20 min",
+      "9-10 min",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #13 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-014",
+    "number": 14,
+    "subject": "Chemistry",
+    "question": "অধঃক্ষেপন ঘটে যখন-",
+    "options": [
+      "দ্রাব্যতা গুণফল আয়নিক গুণফলের চেয়ে বেশী হয়",
+      "দ্রাব্যতা গুণফল আয়নিক গুণফলের চেয়ে কম হয়",
+      "দ্রাব্যতা গুণফল আয়নিক গুণফলের সমান হয়",
+      "দ্রাবত্য গুণফলের মান অসীম হয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #14 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-015",
+    "number": 15,
+    "subject": "Chemistry",
+    "question": "α-গ্লাইকোসাইড বন্ধনীর মাধ্যমে তৈরি হয়-",
+    "options": [
+      "সেলুলোজ",
+      "স্টার্চ",
+      "পলিপেপটাইড",
+      "ডি.এন.এ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #15 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-016",
+    "number": 16,
+    "subject": "Chemistry",
+    "question": "জৈব সায়ানাইড যৌগকে অম্লীয় মাধ্যমে জলাম্বয়ন করলে কী ধরণের যৌগ তৈরি হয়?",
+    "options": [
+      "হাইড্রোকার্বন",
+      "অ্যামিন",
+      "কার্বক্সিলিক এসিড",
+      "অ্যামাইড"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #16 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-017",
+    "number": 17,
+    "subject": "Chemistry",
+    "question": "যে তড়িৎ কোষে রাসায়নিক বিক্রিয়ার শক্তি বিদ্যুৎ শক্তিতে রূপান্তরিত হয় তা হচ্ছে-",
+    "options": [
+      "তড়িৎ বিশ্লেষ্য কোষ",
+      "গ্যালভানিক কোষ",
+      "লবণ সেতু",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #17 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-018",
+    "number": 18,
+    "subject": "Chemistry",
+    "question": "নিম্নে প্রদত্ত জোড়গুলির মধ্যে কোনগুলি আইসোটোপ?",
+    "options": [
+      "^70_34X ; ^70_33X",
+      "^57_24X ; ^56_24X",
+      "^13_6X ; ^13_7X",
+      "^22_11X ; ^45_22X"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #18 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-019",
+    "number": 19,
+    "subject": "Chemistry",
+    "question": "নেসলার দ্রবণে কোন যৌগের উপস্থিতির কারণে যৌগটি বর্ণহীন হয়?",
+    "options": [
+      "HgCl_2",
+      "K_2[HgI_4]",
+      "K_2[HgCI_4]",
+      "HgI_2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #19 ([রসায়ন(19)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-020",
+    "number": 20,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #20 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-021",
+    "number": 21,
+    "subject": "Mathematics",
+    "question": "একটি নির্দিষ্ট বেগে চলমান বস্তুর উপর কিছু বল কাজ করা শুরু করল। যদি ঐ সমস্ত বলগুলোর যোগফল শূন্য হয় তবে বস্তুটির-",
+    "options": [
+      "গতি কমে যাবে",
+      "গতির দিক পরিবর্তন হবে",
+      "ত্বরণ বেড়ে যাবে",
+      "নির্দিষ্ট বেগে চলতে থাকবে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #21 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-022",
+    "number": 22,
+    "subject": "Mathematics",
+    "question": "ধাতুর তৈরি একটি বৃত্তাকৃতি থালার ব্যাসার্ধ তাপ প্রয়োগের ফলে প্রতি সেকেন্ডে 0.5cm বাড়ে। যখন থালাটির ব্যাসার্ধ 3.5 cm তখন তার তলের বৃদ্ধির হার কত?",
+    "options": [
+      "22 cm^2/s",
+      "44 cm^2/s",
+      "11 cm^2/s",
+      "6.25 cm^2/s"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #22 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-023",
+    "number": 23,
+    "subject": "Mathematics",
+    "question": "cot θ এর ডোমেন ও রেন্জ যথাক্রমে -",
+    "options": [
+      "ℝ, [- 1, 1]",
+      "ℝ - {(2n + 1) $\\frac{π}{2} ,$ n ε $\\mathbb{Z}$ }, ℝ",
+      "ℝ, ℝ",
+      "ℝ - { nπ, n ε $\\mathbb{Z}$ }, ℝ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #23 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-024",
+    "number": 24,
+    "subject": "Mathematics",
+    "question": "f(x) = $\\frac{1 - x}{1 + x}$ হলে f(cos 2θ) এর সমান কোনটি ?",
+    "options": [
+      "tan^2θ",
+      "cot^2θ",
+      "cos^2θ",
+      "sin^2θ"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #24 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-025",
+    "number": 25,
+    "subject": "Mathematics",
+    "question": "y^2 = x^2 (a-x) বক্ররেখার যে বিন্দুতে স্পর্শক y-অক্ষের সমান্তরাল এবং x- অক্ষের উপর অবস্থিত তার স্থানাঙ্ক কত?",
+    "options": [
+      "(a,0)",
+      "(2a,0)",
+      "(a^2,0)",
+      "এরুপ কোন বিন্দু নাই"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #25 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-026",
+    "number": 26,
+    "subject": "Mathematics",
+    "question": "$y=4x^2$ বক্ররেখা এবং $x=1$ ও $x=2$ সরলরেখা দ্বারা আবদ্ধ ক্ষেত্রের ক্ষেত্রফল কোনটি ?",
+    "options": [
+      "$\\frac{24}{5}$ বর্গএকক",
+      "$\\frac{32}{3}$ বর্গএকক",
+      "$32$ বর্গএকক",
+      "$\\frac{28}{3}$ বর্গএকক"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #26 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-027",
+    "number": 27,
+    "subject": "Mathematics",
+    "question": "(1, 1) কেন্দ্রবিশিষ্ট একটি বৃত্ত মূলবিন্দু দিয়ে অতিক্রম করে। মূলবিন্দুতে বৃত্তটির স্পর্শকের সমীকরণ কি হবে?",
+    "options": [
+      "x + y = 0",
+      "x - y = 0",
+      "x + y = 1",
+      "x - y =1"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #27 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-028",
+    "number": 28,
+    "subject": "Mathematics",
+    "question": "Y অক্ষের উপরিস্থিত যে বিন্দুগুলো হতে 3y = 4x - 10 রেখার উপর অঙ্কিত লম্ব দূরত্ব 4 একক হয়, তবে তাদের স্থানাঙ্ক কত ?",
+    "options": [
+      "(0, 10) and (0, -10/3)",
+      "(0, 10) and (0, 10/3)",
+      "(0, -10) and (0, 10/3)",
+      "None of these"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #28 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-029",
+    "number": 29,
+    "subject": "Mathematics",
+    "question": "$2x-x^2+k=0$একটি দ্বিঘাত সমীকরণ । সমীকরণটির মূলদ্বয় বাস্তব হলে -",
+    "options": [
+      "$k < 1/8$",
+      "$k\\ge-1$",
+      "$k<-1/8$",
+      "$k>-8$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #29 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-030",
+    "number": 30,
+    "subject": "Mathematics",
+    "question": "কোন নির্ণায়কের একটি সারি বা কলামের উপাদানগুলোকে C দ্বারা গুণ করে নির্ণায়কটির অপর একটি সারি থেকে বিয়োগ করা হলে নির্ণায়কটির মান হবে-",
+    "options": [
+      "C গুণ বেশী",
+      "C পরিমাণ বেশি",
+      "শূন্য",
+      "অপরিবর্তিত থাকবে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #30 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-031",
+    "number": 31,
+    "subject": "Mathematics",
+    "question": "(b + 2x)^5 এর বিস্তৃতিতে x^3 এর সহগ 320 হলে, b এর মান–",
+    "options": [
+      "±1",
+      "±2",
+      "–3",
+      "+3"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #31 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-032",
+    "number": 32,
+    "subject": "Mathematics",
+    "question": "রাজশাহী বিশ্ববিদ্যালয়ের টেলিফোনগুলো ছয় অংকবিশিষ্ট যার প্রথম স্থানে 7 এবং দ্বিতীয় স্থানে 1 আছে। ফোন ডায়ালের জন্য 0 থেকে 9 ব্যবহার করে মোট কতটি টেলিফোন সংযোগ দেওয়া সম্ভব?",
+    "options": [
+      "6!/2!",
+      "10×4!",
+      "10^4",
+      "10^6/2!"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #32 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-033",
+    "number": 33,
+    "subject": "Mathematics",
+    "question": "যদি R বাস্তব সংখ্যার সেট হয় এবং f : R → R কে f(x) = 2x + sinx দ্বারা সংজ্ঞায়িত হলে কোনটি সত্য?",
+    "options": [
+      "f এক-এক এবং সর্বগ্রাহী",
+      "f এক-এক কিন্তু সর্বগ্রাহী নয়",
+      "f সর্বগ্রাহী কিন্তু এক-এক নয়",
+      "f এক-এক এবং সর্বগ্রাহী নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #33 ([উচ্চতর গণিত(14)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-034",
+    "number": 34,
+    "subject": "Physics",
+    "question": "8.01b ভর বিশিষ্ট একটি ব্লক ঘর্ষণহীন অনুভূমিক তলের উপর দিয়ে 4.0ft/sec বেগে গতিশীল আছে। ব্লকটি চলার পথে সামনের দিকে একটি স্প্রিং দ্বারা বাধাগ্রস্থ হয়ে গতি শূণ্য হল। যদি স্প্রিংটির force constant 0.25 1b/ft হয় ব্লকটি দ্বারা স্প্রিংটি কতখানি সংকুচিত হয়?",
+    "options": [
+      "4.89ফুট",
+      "22.63ফুট",
+      "16.67ফুট",
+      "128ফুট"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #34 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-035",
+    "number": 35,
+    "subject": "Physics",
+    "question": "দুইটি ধাতুর পাত একটি 9V ব্যাটারীর দুই প্রান্তে যুক্ত আছে। পাত দুটি 10 cm দূরত্বে অবস্থান করলে, পাত দুইটির মধ্যবর্তী কোন বিন্দুতে বৈদ্যুতিক প্রাবল্যোর মান কত হবে?",
+    "options": [
+      "শূণ্য হবে",
+      "90NC^-1",
+      "9.0NC^-1",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #35 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-036",
+    "number": 36,
+    "subject": "Physics",
+    "question": "একটি ট্রাকের ওজন একটি কারের ওজনের দ্বিগুণ এবং ট্রাকটি কারের দ্বিগুণ গতিতে চলছে । কারের তুলনায় ট্রাকের গতিশক্তির জন্য কোনটি সত্য?",
+    "options": [
+      "ট্রাকের গতিশক্তি বেশী- শুধু এটা বলা যায়",
+      "ট্রাকের গতিশক্তি কারের তুলনায় 8 গুণ বেশী",
+      "ট্রাকের গতিশক্তি কারের তুলনায় 4 গুণ বেশী",
+      "ট্রাকের গতিশক্তি কারের তুলনায় দ্বিগুণ বেশী"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #36 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-037",
+    "number": 37,
+    "subject": "Physics",
+    "question": "2.0 mm ব্যাসের একটি পানির গোলককে ভেঙ্গে 10 লক্ষ সম-আয়তন বিশিষ্ট ক্ষুদ্র ফোঁটা তৈরি করলে কি পরিমান কাজ সম্পন্ন হবে? [পানির পৃষ্টটান 72 × 10^-3 Nm^-1]",
+    "options": [
+      "10 × 10^-5 J",
+      "9.85 × 10^-4 J",
+      "10 × 10^-4 J",
+      "8.95 × 10^-5 J"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #37 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-038",
+    "number": 38,
+    "subject": "Physics",
+    "question": "একটি খোলা লিটার ফ্লাস্কে 27°C তাপমাত্রায় 1.32 × 10^-3 kg বায়ু আছে। 97°C তাপমাত্রায় ফ্লাস্ক হতে কী পরিমাণ বায়ু বের হয়ে যাবে?",
+    "options": [
+      "3.3 × 10^-3 kg",
+      "2.5 × 10^-4 kg",
+      "3.3 × 10^-4 kg",
+      "2.5 × 10^-3 kg"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #38 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-039",
+    "number": 39,
+    "subject": "Physics",
+    "question": "তামার ও সিলিকনের দুইটি তারকে কক্ষ তাপমাত্রা থেকে 80K এ ঠান্ডা করা হলে তার দুইটির রােধ-",
+    "options": [
+      "বাড়বে",
+      "কমবে",
+      "তামার বাড়বে ও সিলিকনের কমবে",
+      "তামার কমবে ও সিলিকনের বাড়বে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #39 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-040",
+    "number": 40,
+    "subject": "Physics",
+    "question": "তােমার পড়ার কক্ষে একটি 30 W এর বাতি এবং 250W এর একটি কম্পিউটার আছে। বাতিটি দৈনিক 8 ঘন্টা জ্বলে এবং কম্পিউটারটি দৈনিক 3 ঘন্টা চলে। 1 KWH এর জন্য 4 টাকা খরচ হলে, 2012 সালের ফ্রেব্রুয়ারি মাসে কত খরচ হয়েছিল?",
+    "options": [
+      "110.88 টাকা",
+      "114.84 টাকা",
+      "118.80 টাকা",
+      "সবগুলােই"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #40 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-041",
+    "number": 41,
+    "subject": "Physics",
+    "question": "1m² প্রস্থচ্ছেদের ক্ষেত্রফলবিশিষ্ট 6.25 Ω-m আপেক্ষিক রােধের একটি নাইক্রোম তারের দৈর্ঘ্য কত হলে 250V, 1000 W ক্ষমতার একটি বৈদ্যুতিক হিটার তৈরি করা যাবে?",
+    "options": [
+      "4 m",
+      "6.25 m",
+      "10 m",
+      "62.20 m"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #41 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-042",
+    "number": 42,
+    "subject": "Physics",
+    "question": "200V ও 1000W নিমজ্জক হিটার 15 মিনিটে কিছু পানির তাপমাত্রা 25°C হতে 100°C- এ বৃদ্ধি করে। হিটারের কর্মদক্ষতা 90% হলে পানির পরিমাণ কত ছিল? (পানির আ:তাপ = 4200 J kg^-1 K^-1)",
+    "options": [
+      "2.22 kg",
+      "2.57 kg",
+      "2.99 kg",
+      "3.03 kg"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #42 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-043",
+    "number": 43,
+    "subject": "Physics",
+    "question": "একটি কার্নো ইঞ্জিনের উৎসের তাপমাত্রা 400K। এই তাপমাত্রায় উৎস থেকে ইঞ্জিনটির 836 J তাপ গ্রহণ করে এবং সিংকে 627 J তাপ বর্জন করে। ইঞ্জিনটির দক্ষতা কত?",
+    "options": [
+      "25%",
+      "26.8%",
+      "28.9%",
+      "36%"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #43 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-044",
+    "number": 44,
+    "subject": "Physics",
+    "question": "40W একটি বৈদ্যুতিক বাল্ব 240V উৎসের সাথে যুক্ত আছে। এক মোল পরিমাণ ইলেকট্রন ঐ বাল্ব এর মধ্য দিয়ে প্রবাহিত হতে কত সময় লাগবে?",
+    "options": [
+      "160.8 ঘন্টা",
+      "176.8 ঘন্টা",
+      "189.7 ঘন্টা",
+      "100.5 ঘন্টা"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #44 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-045",
+    "number": 45,
+    "subject": "Physics",
+    "question": "জেনার ডায়োড যখন বর্তনীতে ব্যবহার করা হয় , তখন সবসময় এর সংযোগ দেওয়া হয়-",
+    "options": [
+      "সম্মুখ ঝোঁকে",
+      "সমান্তরালে",
+      "শ্রেণিতে",
+      "বিপরীত ঝোঁকে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #45 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-046",
+    "number": 46,
+    "subject": "Physics",
+    "question": "20Ω রোধের একটি গ্যালভানোমিটারের সাথে কত রোধের একটি শান্ট যুক্ত করলে মোট তড়িৎ প্রবাহমাত্রার 1% গ্যালভানোমিটারের মধ্য দিয়ে যাবে?",
+    "options": [
+      "0.25 Ω",
+      "2.0 Ω",
+      "0.2 Ω",
+      "0.02 Ω"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #46 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-047",
+    "number": 47,
+    "subject": "Physics",
+    "question": "একটি কাঠের ঘনবস্তুর প্রত্যেক ধারের দৈর্ঘ্য 50cm এবং ঘনত্ব 500kg/m^3। বস্তুটি 1000kg/m^3 ঘনত্বের পানিতে ভাসছে। ঘনবস্তুটির নিচের তল পানির উপরের তল থেকে কত নিচে থাকবে?",
+    "options": [
+      "0.2 m",
+      "0.25 m",
+      "0.5 m",
+      "0.45 m"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #47 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-048",
+    "number": 48,
+    "subject": "Physics",
+    "question": "অনুভূমিক দিকে গতিশীল 5kg ভরের একটি লৌহ গোলক 5ms^-1 বেগে একটি দেয়ালে লম্বভাবে ধাক্কা খেয়ে 3ms^-1 বেগে বিপরীত দিকে ফিরে গেল। বলের ঘাত কত?",
+    "options": [
+      "30 kgms^-1",
+      "40 kgms^-1",
+      "10 kgms^-1",
+      "16 kgms^-1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #48 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-049",
+    "number": 49,
+    "subject": "Physics",
+    "question": "27°C তাপমাত্রায় কোন গ্যাস নমুনার আয়তন-চাপ গুণফল যত, তা দ্বিগুণ করতে কত তাপমাত্রা প্রয়োজন?",
+    "options": [
+      "54°C",
+      "327K",
+      "300K",
+      "327°C"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #49 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-050",
+    "number": 50,
+    "subject": "Physics",
+    "question": "(1,1) বিন্দুর সাপেক্ষে (3,4) বিন্দুর প্রতিবিম্ব কোনটি?",
+    "options": [
+      "(-2-3)",
+      "(-1-2)",
+      "(-3,-4)",
+      "(-2,3)"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #50 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-051",
+    "number": 51,
+    "subject": "Physics",
+    "question": "প্রক্ষেপকের ক্ষেত্রে কোনটি মিথ্যা নয়?",
+    "options": [
+      "বায়ুযুক্ত স্থানে প্রক্ষিপ্ত বস্তুর গতিপথ একটি পরাবৃত্ত নয়",
+      "g সর্বদা খাড়া উর্ধমুখী ক্রিয়া করে",
+      "উলম্ব বেগে সর্বদাই u sinα থাকবে",
+      "উপরের কোনোটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #51 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-052",
+    "number": 52,
+    "subject": "Physics",
+    "question": "পানি দ্বারা পূর্ন 0.4m গভীর একটি বালতির তলদেশে একটি কয়েন আছে। খাড়াভাবে তাকালে কয়েনটি কত নিচে মনে হবে? (পানির প্রতিসারঙ্ক 4/3)",
+    "options": [
+      "0.3",
+      "0.4",
+      "0.1",
+      "0.7"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #52 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-053",
+    "number": 53,
+    "subject": "Physics",
+    "question": "অনুভূমিকের সাথে 30° কোণ করে ভূ-পৃষ্ঠ থেকে 40 ms^-1 বেগে একটি বুলেট ছোঁড়া হলো। বুলেটটি 40 m দূরে অবস্থিত একটি দেয়ালকে কত উচ্চতায় আঘাত করবে?",
+    "options": [
+      "16.56 m",
+      "13.65 m",
+      "6.38 m",
+      "26.49 m"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #53 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-054",
+    "number": 54,
+    "subject": "Physics",
+    "question": "বায়ুর সাপেক্ষে কাঁচের প্রতিসরাংক 1.5 । বায়ুতে এক আলোকবর্ষ 9.4 × 10^12 km হলে কাঁচে এক আলোকবর্ষের মান কত?",
+    "options": [
+      "14.1 × 10^12 km",
+      "4.7 × 10^12 km",
+      "9.4 × 10^12 km",
+      "6.27 × 10^12 km"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #54 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-055",
+    "number": 55,
+    "subject": "Physics",
+    "question": "$\\vec{A}$ =î+2ĵ+k̂ ভেক্টরটির $\\vec{B}$ =î+ĵ ভেক্টর অভিমুখে অংশক কত?",
+    "options": [
+      "3",
+      "6",
+      "3/√2",
+      "√7/2"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #55 ([পদার্থবিজ্ঞান(22)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-056",
+    "number": 56,
+    "subject": "English",
+    "question": "Passive form of 'My teacher embodies all the good qualities' is______",
+    "options": [
+      "All the good qualities are embodied in my teacher",
+      "All the good qualities are embodied by my teacher",
+      "All the good qualities are embodied to my teacher",
+      "All the good qualities are embodied on my teacher"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #56 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-057",
+    "number": 57,
+    "subject": "English",
+    "question": "Choose the best word or phrase to complete the sentence: Geysers have often been compared to volcanoes_______ they both emit hot liquids from below the earth’s surface.",
+    "options": [
+      "due to",
+      "because",
+      "in spite of",
+      "regardless of"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #57 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-058",
+    "number": 58,
+    "subject": "English",
+    "question": "Complete the sentence with suitable verbs: Today's youngsters___themselves in___too many mobile contacts with their peers.",
+    "options": [
+      "engaged, making",
+      "engage, making",
+      "keeping, doing",
+      "busy, doing"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #58 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-059",
+    "number": 59,
+    "subject": "English",
+    "question": "Select the correct spelling of the word in capital letters : PARSEVERANCE",
+    "options": [
+      "perseverance",
+      "persevrance",
+      "persivareace",
+      "parseverance"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #59 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-060",
+    "number": 60,
+    "subject": "English",
+    "question": "Choose the correct answer to complete the sentence: Surprisingly, cost was regarded ____ important factor in choosing a new cell phone by the three teenagers.",
+    "options": [
+      "as the least",
+      "of the least",
+      "in the least",
+      "to the least"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #60 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-061",
+    "number": 61,
+    "subject": "English",
+    "question": "Choose the one which can be substituted for : Tending to move away from the centre or axis-",
+    "options": [
+      "Centrifugal",
+      "Centripetal",
+      "Axiomatic",
+      "Awry"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #61 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-062",
+    "number": 62,
+    "subject": "English",
+    "question": "Find out the antonym of : CHICANERY",
+    "options": [
+      "Trickery",
+      "Deception",
+      "Naivety",
+      "Deceitfulness"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #62 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-063",
+    "number": 63,
+    "subject": "English",
+    "question": "Choose the word which best expresses the meaning of IRONIC :",
+    "options": [
+      "Inflexible",
+      "Serious",
+      "Polluted with iron",
+      "Disguisedly sarcastic"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #63 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-064",
+    "number": 64,
+    "subject": "English",
+    "question": "Which one is correct?",
+    "options": [
+      "He reached the most extreme point",
+      "He reached most extreme point",
+      "He reached the more extreme point",
+      "He reached the extreme point"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #64 ([English(9)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-065",
+    "number": 65,
+    "subject": "ICT",
+    "question": "(101100)_2 এর সঙ্গে কোন নূন্যতম দ্বিমিক সংখ্যা যোগ করলে যোগফল 16 দ্বারা বিভাজ্য হবে?",
+    "options": [
+      "(11)_2",
+      "(100)_2",
+      "(10)_2",
+      "(101)_2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #65 ([তথ্য ও যোগাযোগ প্রযুক্তি(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-066",
+    "number": 66,
+    "subject": "Physics",
+    "question": "সরলরেখার ক্ষেত্রে কোনটি মিথ্যা নয়?",
+    "options": [
+      "দুটি সরলরেখার সমীকরণে শুধুমাত্র ধ্রুবক পদটি সমান হলে তারা সমান্তরাল।",
+      "দুটি সরলরেখা পরস্পর লম্ব হলে তাদের ঢালের গুণফল 1 হবে।",
+      "সমবিন্দুগামী রেখাসমূহের ছেদবিন্দু সকল রেখার সমীকরণকে সিদ্ধ করে না।",
+      "সবগুলোই মিথ্যা।"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #66 ([(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-13-14-q-067",
+    "number": 67,
+    "subject": "Physics",
+    "question": "কার্তেসীয় পদ্ধতিতে একটি জটিল রাশিকে 2+3i দিয়ে প্রকাশ করলে, মূলবিন্দুর সাপেক্ষে এর প্রতিবিম্বের স্থানাংক কত?",
+    "options": [
+      "(-3,-2)",
+      "(-2,-3)",
+      "(2,-3i)",
+      "(-3,-2i)"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "13-14",
+    "provenance": {
+      "sourceFile": "RU_H_13-14_e7295334.txt",
+      "sourceLocation": "Question #67 ([(2)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  }
+]

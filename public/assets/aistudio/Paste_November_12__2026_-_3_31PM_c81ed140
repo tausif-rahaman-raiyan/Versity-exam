@@ -1,0 +1,368 @@
+# MASTER PROMPT — Build an Exam Question-Bank + Strict Exam + AI Tutor Website
+
+> Copy everything below this line into an AI coding tool (Claude, ChatGPT, Gemini, AI Studio, etc.).
+> Anything written as `[[LIKE_THIS]]` is MY data. I will paste it after you confirm you understood.
+> Do NOT invent subjects, universities, sessions or questions. Use only what I give you.
+
+---
+
+## 0. YOUR TASK
+
+Build a complete, production-ready, **static** website (no server needed, deployable to GitHub Pages) that is a **question bank + strict timed exam simulator + AI Tutor**, in exactly the style and behavior described below. All content (site name, subjects, institutions, sessions, questions, colors per subject, texts) must come from **one editable data layer** so I can change everything myself.
+
+Before writing code, reply with a 10-line summary of what you will build and ask me for `[[DATA]]`. After I paste data, generate the full project.
+
+## 1. TECH STACK
+
+- React 19 + Vite + TypeScript, single page app, **no router** (view state: `home | questionBank | exam | analytics`).
+- Tailwind CSS v4 with class-based dark mode: `@custom-variant dark (&:where(.dark, .dark *));`
+- `lucide-react` icons, `katex@0.16.11` (load katex css) with markdown + LaTeX rendering (`react-markdown`, `remark-math`, `rehype-katex`, `remark-gfm`). Inline `$...$`, block `$$...$$`.
+- `@google/genai` SDK for the AI Tutor, called **directly from the browser** with the user's own API key.
+- Google Fonts: `Atma (500,600,700)`, `Caveat (500,600,700)`, `Noto Serif Bengali (500,600,700)`, `Patrick Hand`.
+- Vite `base` must be configurable for GitHub Pages (`/[[REPO_NAME]]/`). Provide a GitHub Actions deploy workflow.
+
+## 2. EDITABLE DATA LAYER (most important)
+
+Create these files so I can edit everything without touching components:
+
+```
+src/data/siteConfig.ts     // site name, tagline, hero text, footer, badges, social links, logo path
+src/data/institutions.ts   // list shown as cards on home
+src/data/sessions.ts       // list of exam papers
+src/data/subjects.ts       // subject -> color theme, icon, bn/en names
+src/data/translations.ts   // optional bn<->en label maps
+public/data/<sessionId>.json   // question files, one per session
+public/logo.png
+```
+
+### 2.1 `siteConfig.ts` fields
+`siteName`, `siteSubtitle` (small text under logo, e.g. "[[A • B • C]]"), `pageTitle`, `metaDescription`, `heroBadge`, `heroTitleLine1`, `heroTitleGradientLine2`, `heroParagraph` (with 2 highlighted phrases), `searchPlaceholder`, `heroStats` (4 items: value + label), `footer` (brand, description, developer name, instagram url, github url, bottom tags), `defaultTheme: "light"`.
+
+### 2.2 `institutions.ts` item
+`{ id, code, nameBn, nameEn, desc, colorKey, parent?, units? }` — plus one special item `{ id: "ALL", code: "ALL", ... "All Combined" }` that shows every session.
+- `parent`: an institution with `parent: "AGRI"` does NOT get its own big card; when the user selects the group card "AGRI", show a second row of small chips (All / GST-AGRI / GAU / BAU / SAU / CVASU / SYLAU) to filter inside the group. Selecting the group alone shows all children.
+- `units`: if an institution has 2+ units (e.g. RU: C/H/F/G, JU: A/D, CoU: A/B/C, KhU: A/B) show a small unit chip row (All + each unit) under the institution grid; it filters sessions by `session.unit`. Hide the row when the institution has only one unit.
+- Because there are now ~9 top-level cards + ALL, use the institution grid `grid-cols-2 sm:grid-cols-3 lg:grid-cols-5` (wraps to 2 rows), card colors from `colorKey` using the §4.3 template for ANY Tailwind color (blue, amber, purple, cyan, fuchsia, emerald, rose, teal, lime, indigo).
+
+### 2.3 `sessions.ts` item
+```ts
+{
+  id: "x-25-26",           // unique, also JSON file name
+  title: "X 25-26 MCQ",
+  institution: "X",         // matches institutions.id
+  unit: "A" | "C" | ... | null,   // admission unit/group; used for the optional unit chips on home
+  session: "25-26",
+  questionType: "MCQ" | "Written",
+  durationMinutes: 45,
+  totalQuestions: 90,
+  totalMarks: 60,
+  description: "short text shown on card",
+  negativeMarking: 0.25,    // fraction of one mark per wrong answer (e.g. 0.25 or 0.2)
+  subjectPickMode?: true,   // optional: enables the "choose subjects before exam" modal (see §8)
+  bilingual?: true          // optional: enables BN/EN question language toggle
+}
+```
+
+### 2.4 Question JSON schema (`public/data/<sessionId>.json` = array)
+```ts
+{
+  id: string,
+  number: number,
+  subject: string,                 // must match subjects.ts id
+  question: string,                // markdown + LaTeX. Optional bilingual separator: "Bangla text ||EN|| English text"
+  options: string[],               // MCQ options (empty array for Written)
+  correctAnswer: number,           // index into options; -1 or answerVerified:false => "unverified"
+  answerVerified?: boolean,
+  explanation?: string,            // markdown + LaTeX; also supports "||EN||"
+  questionType: "MCQ" | "Written",
+  institution: string, session: string,
+  questionImageUrls?: string[],
+  optionImageUrls?: string[][],    // images per option
+  explanationImageUrls?: string[],
+  optionLabels?: string[]          // default labels (see §5)
+}
+```
+Loader: fetch the JSON by session id, cache in a `Map`, de-duplicate in-flight requests, and **pre-load images** (question and option images first, explanation images later, `decoding=sync`, `referrerPolicy="no-referrer"`). Render `<img loading="lazy" referrerPolicy="no-referrer">`.
+
+## 3. GLOBAL LOOK, THEME & FONTS
+
+- **Default theme = LIGHT.** Saved choice wins afterwards. On change: toggle `html.dark` and `html.light-mode` classes (exactly one active).
+- Body: dark → text `#f1f5f9`, bg `#060913`; light → text `#0f172a`, bg `#ffffff`. `html{scroll-behavior:smooth; overflow-x:clip}`, antialiased, `-webkit-tap-highlight-color: transparent`, 0.2s color/background transition. Include a `.no-scrollbar` utility.
+- KaTeX: force bold (700). Light mode: `.katex` color `#0f172a`, size 1.08em, thicker fraction lines. Dark mode: light-sky colored math, size 1.05em.
+- Font styles available (user-selectable): `sans` (system stack), `serif` (Georgia, Cambria, Times, Noto Serif Bengali), `mono`, `bryndan` = handwriting stack `Bryndan Write, Patrick Hand, Caveat, Atma, Segoe Print, Bradley Hand, Comic Sans MS, cursive, sans-serif` with letter-spacing .01em (applies to p/span/div/button/h1-h4 but NOT inside `.katex`). Label in UI: "Bryndan Write ✍️".
+- Cards are large rounded (`rounded-2xl`/`rounded-3xl`), `border-2`, soft shadows. Dark surfaces use deep navy hexes like `#070C18`, `#0B1325`, `#0E1628`.
+- Bengali digits helper: convert 0-9 to ০-৯ when UI language is Bangla.
+
+## 4. COLOR / GRADIENT SYSTEM (exact Tailwind classes)
+
+### 4.1 Hero (home)
+Container: `relative overflow-hidden bg-gradient-to-br from-indigo-100/80 via-white to-sky-100/70 dark:from-[#0B132B] dark:via-[#080D1A] dark:to-[#040711] py-8 sm:py-12 px-4 sm:px-8 rounded-3xl shadow-xl border border-indigo-200 dark:border-indigo-900/40`
+Title: `text-2xl sm:text-5xl font-black tracking-tight leading-tight`; 2nd line gradient text: `bg-gradient-to-r from-indigo-600 via-blue-600 to-cyan-600 dark:from-sky-400 dark:via-indigo-300 dark:to-sky-200 bg-clip-text text-transparent`.
+Top badge pill: `rounded-full bg-indigo-600/10 dark:bg-indigo-500/10 border border-indigo-500/30 text-indigo-700 dark:text-sky-300 text-[11px] sm:text-xs font-bold uppercase tracking-wide` with sparkles icon.
+Paragraph: `text-xs sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl mx-auto`; highlight 1 `text-indigo-700 dark:text-sky-300 font-bold`, highlight 2 `text-amber-600 dark:text-amber-300 font-bold`.
+Primary button: `bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl shadow-md shadow-indigo-600/20`. Secondary: `bg-slate-100 dark:bg-[#0E172A] border border-slate-300 dark:border-indigo-900/60 text-indigo-700 dark:text-sky-300 rounded-xl font-bold`.
+
+### 4.2 Hero stat boxes (4, in this color order)
+1. blue: `bg-blue-50/90 dark:bg-[#0C1933] border-blue-200 dark:border-blue-800/60`, value `text-blue-600 dark:text-sky-400`
+2. amber: `bg-amber-50/90 dark:bg-[#231608] border-amber-200 dark:border-amber-800/60`, value `text-amber-600 dark:text-amber-400`
+3. purple: `bg-purple-50/90 dark:bg-[#1B0F2E] border-purple-200 dark:border-purple-800/60`, value `text-purple-600 dark:text-purple-400`
+4. indigo: `bg-indigo-50/90 dark:bg-[#121638] border-indigo-200 dark:border-indigo-800/60`, value `text-indigo-600 dark:text-indigo-400`
+Each: `p-3 rounded-xl border`, value `text-base sm:text-xl font-black`, label `text-[10px] sm:text-[11px]`.
+
+### 4.3 Institution cards (colorKey → classes; the template works for any Tailwind color name, not just those listed)
+Selected card (all): `bg-indigo-100/90 dark:bg-gradient-to-br dark:from-indigo-900/90 dark:via-[#112046] dark:to-[#0A1329] border-indigo-600 dark:border-sky-400 shadow-lg scale-[1.01]`; code chip becomes `bg-indigo-600 text-white dark:bg-sky-400 dark:text-slate-950`.
+Unselected, per color:
+- blue `border-blue-400 dark:border-blue-500/50 bg-blue-50/80 dark:bg-[#0D1A33]`
+- amber `border-amber-400 dark:border-amber-500/50 bg-amber-50/80 dark:bg-[#241608]`
+- purple `border-purple-400 dark:border-purple-500/50 bg-purple-50/80 dark:bg-[#1B0E30]`
+- cyan `border-cyan-400 dark:border-cyan-500/50 bg-cyan-50/80 dark:bg-[#08202E]`
+- fuchsia `border-fuchsia-400 dark:border-fuchsia-500/50 bg-fuchsia-50/80 dark:bg-[#250C2A]`
+- indigo (ALL) `border-indigo-400 dark:border-indigo-500/50 bg-indigo-50/80 dark:bg-[#121538]`
+Card layout: `p-3.5 sm:p-4 rounded-2xl border-2 min-h-[112px] sm:min-h-[126px] flex flex-col justify-between`; code chip `text-xs sm:text-sm font-black px-2.5 py-0.5 rounded-lg uppercase tracking-wider`; name `text-sm sm:text-base lg:text-lg font-extrabold`; desc `text-[11px] sm:text-xs font-semibold`.
+
+### 4.4 Session (paper) cards — a palette that CYCLES by index (`palette[i % 6]`)
+Each palette entry has: `cardBg`, `border`, `badge`, `metricBox`, `accentText`, `startBtn`, `seeBtn`.
+Pattern for color C in [blue, purple, amber, fuchsia, cyan, emerald(6th)]:
+- cardBg: `bg-gradient-to-br from-C-100/90 via-C-50/60 to-white dark:from-[#dark1] dark:via-[#dark2] dark:to-[#dark3]`
+  - blue `#0C1E3E → #09152B → #060D1B`
+  - purple `#21103B → #160B28 → #0B0616`
+  - amber `#2C1B08 → #1D1206 → #0F0A04`
+  - fuchsia `#2D0E33 → #1E0A22 → #100514`
+  - cyan `#082635 → #061A24 → #040E15`
+  - emerald: pick matching dark hexes in the same pattern
+- border: `border-2 border-C-300 dark:border-C-500/50 hover:border-C-500 dark:hover:border-C-400 shadow-md shadow-C-500/10`
+- badge: `bg-C-600 text-white shadow-xs`
+- metricBox: `bg-C-50/90 dark:bg-C-950/40 border border-C-200 dark:border-C-800/50`
+- accentText: `text-C-700 dark:text-C-300` (amber/cyan use `-800` in light)
+- startBtn: `bg-C-600 hover:bg-C-500 text-white shadow-C-600/20`
+- seeBtn: `bg-white hover:bg-C-50 dark:bg-[#dark] text-C-700 dark:text-C-300 border border-C-300 dark:border-C-700/60`
+
+### 4.5 Subject color themes (by subject id) — used for question card borders, badges, filter chips, number badges
+Return an object `{borderClass, bgClass, badgeBg, badgeText, accentBar, numBadge, filterActive, filterInactive}` per subject. Template for color C:
+- borderClass `border-2 border-C-200/90 dark:border-C-800/70 hover:border-C-400 dark:hover:border-C-600 shadow-xs`
+- bgClass `bg-C-50/45 dark:bg-[#hex]`
+- badgeBg `bg-C-100 text-C-800 border border-C-300 dark:bg-C-950/90 dark:text-C-200 dark:border-C-700/80`
+- badgeText `text-C-700 dark:text-C-300`
+- accentBar `bg-C-600`, numBadge `bg-C-600 text-white border-C-500`
+- filterActive `bg-C-600 text-white border-C-500 shadow-sm ring-2 ring-C-500/30`
+- filterInactive `bg-C-50/80 text-C-700 border-C-200 hover:bg-C-100 hover:border-C-400 dark:bg-C-950/45 dark:text-C-300 dark:border-C-800/70 dark:hover:bg-C-900/60`
+
+Default mapping (I may override in `subjects.ts`): Physics→blue (`#0A1428`), Chemistry→purple (`#140E29`), Mathematics→indigo (`#0D122B`), Biology→amber (`#1C1409`), Bangla→fuchsia (`#1E0D24`), English→cyan (`#081A24`), anything else→sky (`#0B1526`). Matching is case-insensitive "includes" on English or Bangla names. **My subjects: [[SUBJECT_LIST with colors]].**
+
+## 5. HOME PAGE (view = `home`)
+
+Order of sections, top to bottom:
+1. **Hero** (§4.1) centered, `max-w-4xl`: badge → H1 (2 lines) → paragraph → row with **search input** (rounded-xl, search icon inside, left padding) + **"Start Strict Exam" primary button** (starts the first session) + **"AI Key" secondary button** (opens API key modal) → 4 stat boxes (`grid-cols-2 sm:grid-cols-4`).
+2. **Institution selector**: H2 with icon + subtitle; grid `grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3.5`. Selecting one filters sessions. Default selected = first institution.
+3. **Filter bar** (in a rounded `bg-slate-50/90 dark:bg-[#091020]` panel): segmented control `All | MCQ | Written` (`grid-cols-3 sm:inline-flex`; active colors: All indigo-600, MCQ blue-600, Written amber-600) and a counter text "Total sessions: **N** found" + a hint line.
+4. **Session grid**: `grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5`. A session is shown only if: institution matches (or ALL) AND search text matches title/session/description AND type filter matches.
+   Card content: institution•session chip, optional "subject-pick" chip, type chip (Written = `bg-amber-500 text-white`, MCQ = white/dark slate with sky text), H3 title, description, 3 metric boxes (Time min / Questions / Marks), and 2 buttons: **"See question"** (opens question bank) and **"Start Exam"** (opens exam). If `subjectPickMode`, "Start Exam" first opens the subject modal (§8).
+5. Footer (§12).
+
+Scroll memory: when leaving `home`, store `window.scrollY`; when returning, restore it instantly. Any other view change scrolls to top instantly.
+
+## 6. NAVBAR
+
+- `sticky top-0 z-50 bg-white/95 dark:bg-[#070B14]/95 backdrop-blur-md border-b border-slate-200 dark:border-indigo-950/80`, inner `max-w-7xl h-16 px-3 sm:px-6 lg:px-8`.
+- Left: logo (`w-10 h-10 sm:w-11 sm:h-11 rounded-xl border border-indigo-300 dark:border-indigo-500/40`) + site name (`text-sm sm:text-lg font-extrabold`) + subtitle (`text-[10px] sm:text-[11px] text-indigo-600 dark:text-sky-400`). Click → home. Logo is also used as favicon + apple-touch-icon.
+- **Desktop (≥ md)**: centered pill nav (absolutely centered) with 2 tabs: "Question Bank" (active for home + questionBank) and "Analytics". Active tab: `bg-indigo-600 text-white`. Right side: Settings dropdown (§9).
+- **Mobile (< md)**: nav tabs hidden; a **"Menu"** button opens a dropdown containing the two tabs and the settings controls; closes on outside click.
+- Navbar is **hidden during the exam view**.
+
+## 7. QUESTION BANK PAGE (view = `questionBank`)
+
+Top area: "back to all sessions" button; (if `bilingual`) language toggle `বাংলা (BN) | English (EN)` (active BN `bg-emerald-600`, EN `bg-sky-600`); **"Start Strict Exam"** button.
+Header: chips (institution, "Session X", "Question Bank & Solution"), H1 = session title, paragraph "Total N questions • correct answers & explanations • direct AI Tutor", **search input** (searches question, explanation, subject, options), **subject filter chips** (ALL + each subject present) using §4.5 filterActive/filterInactive.
+Each question card (subject-themed §4.5): number badge "Question N", subject badge, "Written" or "Unverified" badge when relevant; question text at user font size; images; options list with labels (default Bangla ক খ গ ঘ ঙ for BN, A B C D E for EN; or custom `optionLabels`); **correct option highlighted green** (`border-emerald-500/70 bg-emerald-50 dark:bg-emerald-950/50 ring-1 ring-emerald-500/30`, label chip `bg-emerald-600 text-white`, check icon); no highlight if unverified. Below: "Explanation & Solution" block, then **AI Tutor** button (toggle; text changes to "Close AI Tutor"). Empty state if no match.
+If user clicks AI Tutor without an API key → show a bottom toast "API Key required" with **Add API Key** + close buttons, auto-hide after 6 s, and do not open the tutor.
+
+## 8. STRICT EXAM (view = `exam`) — "All questions on one page + auto-lock"
+
+### 8.1 Optional subject-pick modal (`subjectPickMode`)
+Title "[session] Exam", subtitle "Choose subjects · 4 subjects required (MCQ/Written)". Sections: (a) language toggle BN/EN (violet-600 active) if bilingual; (b) **Mandatory subjects** (2, shown pre-ticked, non-removable: [[MANDATORY_SUBJECTS]]); (c) **Pick exactly 2 more** from [[OPTIONAL_SUBJECTS]] (2-column cards with icon, EN name, BN name, tick circle; once 2 chosen the others are disabled/dimmed); (d) **Exam Summary** with 3 tiles (Questions / Total Marks / Subjects x/4) and selected-subject chips. Footer: Cancel + "Start Examination →" (violet-600, disabled until exactly 2 picked; label shows "Select N More Subjects"). Question count: MCQ = 60; Written = computed from picked subjects ([[WRITTEN_COUNT_RULE]]). Selected subjects and language are saved to localStorage and pre-filled next time.
+
+### 8.2 Behavior
+- Load session questions; if `subjectPickMode` keep only chosen subjects. Show loading spinner text while loading.
+- **Timer** counts down from `durationMinutes*60`, starts after load, format `mm:ss` (or `h:mm:ss`). Reaching 0 → **auto-submit**. When time is low the timer chip turns `bg-rose-50 text-rose-600 border-rose-300 animate-pulse` (dark: `bg-rose-950/60 text-rose-400 border-rose-700`).
+- **Sticky exam header**: back button, session title, answered counter `answered/total`, timer chip, **Submit** button (becomes **Retake** after submit), Settings dropdown (compact: label hidden below `sm`).
+- **Subject filter chips** (ALL + subjects with counts; Bangla digits in BN mode) to jump between subjects.
+- **Auto-lock rule**: the first click on an option **locks that question permanently** (cannot change). Locked question shows a "Locked" badge; the chosen option gets indigo highlight (`border-indigo-500 bg-indigo-50 dark:bg-indigo-950/60 ring-1 ring-indigo-500/40`), other options dim (`opacity-60`, `cursor-not-allowed`). After submit nothing is clickable.
+- Written questions: no options, show a note "Written question — solve on paper, then compare with the solution and AI Tutor after the exam."
+- **Submit** (button or timeout): stop timer, scroll to top, show result report, reveal correct/wrong colors and explanations. Per-question badge: Correct (+marks), Wrong (−marks), Skipped, Written, Unverified. Option colors after submit: correct → emerald; chosen wrong → rose (`border-rose-500/70 bg-rose-50 dark:bg-rose-950/50 ring-1 ring-rose-500/30`, label `bg-rose-600 text-white`); others dim. Unverified questions: chosen option amber.
+- Under every explanation: **AI Tutor** toggle button (same panel as §10; same missing-key toast).
+- **Retake** resets answers, locks, timer, AI panels, scrolls to top.
+
+### 8.3 Scoring
+```
+mcqCount      = number of MCQ questions with options
+perMark       = totalMarks / mcqCount            (if subjectPickMode: totalMarks = mcqCount => perMark = 1)
+negative      = session.negativeMarking          (e.g. 0.25 or 0.2)
+score         = max(0, correct*perMark - wrong*negative*perMark)   // round to 2 decimals
+accuracy      = correct / (correct + wrong) * 100                  // round to 1 decimal
+unverified    = questions with answerVerified === false or correctAnswer < 0   (never counted right/wrong)
+skipped       = MCQ not answered
+```
+Result report card (top of page): title "Final Result & Analysis (Evaluation Report)", negative-marking notice, 5–6 stat tiles: Score / Total, Correct, Wrong, Skipped, Accuracy %, Unverified. For all-written sessions show only a note instead of tiles.
+On submit, **save the attempt once** to localStorage history (§11).
+
+## 9. SETTINGS DROPDOWN
+
+Button: gear icon + "Settings" + chevron (rotates when open), `rounded-xl bg-slate-100 dark:bg-[#0F172A] border border-slate-300 dark:border-indigo-900/60 text-xs sm:text-sm font-bold`. Panel: `absolute right-0 mt-2 w-72 sm:w-80 rounded-2xl bg-white dark:bg-[#0B1325] border-2 border-indigo-200 dark:border-indigo-800 shadow-2xl p-4 z-50 space-y-4`, closes on outside `mousedown`. Header "Settings & Options" with a **Reset** link (resets ONLY font settings).
+Contents, in order:
+1. **AI Tutor Gemini Key** row-button → closes panel and opens API-key modal; right side shows status dot + text: green ring "Custom Key" if a key is saved, amber "Default" if not.
+2. **1. Theme Color**: 2-button segmented control: "White / Light" (active `bg-amber-500 text-white`) and "Dark" (active `bg-indigo-600 text-white`).
+3. **2. Question Font Size**: `−  [N px]  +` stepper (indigo accent).
+4. **3. Option Box Font Size**: stepper (purple accent).
+5. **4. Explanation Font Size**: stepper (emerald accent).
+6. **5. Font Style**: 2×2 grid: "Sans (Default)", "Serif (Book)", "Mono (Code)", "Bryndan Write ✍️"; active `bg-cyan-600 text-white`; each label rendered in its own font.
+Rules: sizes clamp to **12–26 px** (step 1); defaults **question 16, option 14, explanation 14, fontStyle "sans"**. Disable − at 12 and + at 26. Settings apply live everywhere (question text, options, explanation text, AI panel text, font family class on the app root).
+
+## 10. AI TUTOR (per question, inline panel)
+
+### 10.1 Access & key
+- Needs the user's own **Gemini API key** (valid if length > 10). Without a key: panel shows an amber warning "To use AI Tutor, first add your Gemini API Key from Settings" + **Add API Key** button.
+- **API key modal**: title "Gemini API Key Setup", explanation, `type=password` input (placeholder `AIzaSy...`), a small 3-step guide (open Google AI Studio → login with Google → Create API Key and paste), link `https://aistudio.google.com/app/apikey` ("Get Free Gemini API Key from Google AI Studio"), buttons **Remove Key** (only if one exists), **Cancel**, **Save API Key**. Saving an empty value removes the key. Stored in localStorage only (§11).
+
+### 10.2 Panel UI
+Rounded-2xl panel `bg-indigo-50/50 dark:bg-gradient-to-b dark:from-[#091124] dark:to-[#060B18] border border-indigo-200 dark:border-indigo-500/40`.
+Header strip (`bg-indigo-100/80 dark:bg-[#0B152F]`): gradient icon tile `bg-gradient-to-tr from-sky-500 to-indigo-600` with sparkles, title **"AI Tutor Admission Coach"**, badge "⚡ Fast AI", purple badge "Vision (N)" when images are attached; right side: copy-solution button (check icon for 2 s after copy) and a **Close** button (label "[[CLOSE_LABEL e.g. বন্ধ করুন]]").
+Body: text at the explanation font size.
+- Top highlight card when an answer is extracted: pill `bg-gradient-to-r from-indigo-600 to-sky-500 text-white` "AI determined answer" + the answer text (rendered with LaTeX).
+- "AI is thinking" row (pulsing dots) until first text arrives.
+- The streamed response is **split into section cards** (white / `dark:bg-[#070D1D]`, rounded-xl, border) — see §10.5. While streaming: blinking cursor after the last card and a pulsing progress card: after card 1 → "2. Solution & explanation being prepared…", after card 2 → "3. Admission shortcut & tricks being prepared…", else "Loading next part…", with a "loading more" mono tag.
+- Chat thread below: user bubbles (indigo tint, label "Your question:"), AI bubbles (label "AI Coach answer:" + green badge "⚡ Best Model: <model name>").
+- Follow-up form at the bottom: text input (placeholder "Any other shortcut or question about this problem?") + **Ask** button with send icon. Disabled while loading.
+
+### 10.3 What is sent (build the user prompt exactly like this)
+```
+Admission Test Question Analysis:
+- Target Institution: {institution} ({session})
+- Subject: {subject}
+- Question Type: {MCQ | Written}
+- Question Stem: {question}
+- Options: {JSON array like ["[ক] ...","[খ] ..."]}        (MCQ only)
+- Reference Context (verify independently): {explanation.slice(0,900)}   (if any)
+- Attached Images: Inspect all attached question/option images carefully.   (if any)
+{svg texts if any}
+
+{if follow-up:}
+Student's follow-up question:
+"{userQuestion}"
+Give a direct, compact, and super helpful answer in [[AI_LANGUAGE]] mixed with English technical terms using LaTeX ($...$).
+
+{else if MCQ:}
+Solve this MCQ independently step-by-step and write a compact, high-yield admission response in [[AI_LANGUAGE]] following this EXACT structure:
+
+✅ **Correct answer:** [exact option label + option text YOU determined to be correct]
+
+1. 🎯 **Core formula & reasoning:** 1–2 concise lines with the exact law/formula in LaTeX $...$ and why this option is correct.
+
+2. 📐 **Solution & explanation:** direct compact calculation or key elimination steps using LaTeX ($...$ and \frac{a}{b}). Tight and scannable.
+
+3. ⚡ **Admission shortcut & tricks:** the fastest 10-second calculator-free exam-hall trick (ratio, unit check, mental math or memory cue) and 1 common trap to avoid.
+
+{else Written:}
+Solve this Written question independently and write a compact step-by-step solution in [[AI_LANGUAGE]] with this EXACT structure:
+✅ **Correct answer:** [final result in 1 line]
+1. 🎯 **Core formula & principle:** (LaTeX)
+2. 📐 **Solution & explanation:** clean exam-standard step-by-step derivation ($...$ and $$...$$)
+3. ⚡ **Exam tips & warnings:** key marking points + 1 common mistake in the written script.
+```
+The labels are in my language in the original (Bangla: `✅ **সঠিক উত্তর:**`, `১. 🎯 **মূল সূত্র ও যুক্তি:**`, `২. 📐 **সমাধান ও ব্যাখ্যা:**`, `৩. ⚡ **এডমিশন শর্টকাট ও ট্রিকস:**`; written: `মূল সূত্র ও নীতি`, `পরীক্ষার টিপস ও সতর্কতা`). Keep the emoji markers 🎯 📐 ⚡ because the splitter uses them. **My language/labels: [[AI_LANGUAGE_AND_LABELS]].**
+
+### 10.4 System instruction (send as `systemInstruction`)
+```
+You are an elite, fast, and accurate [[COUNTRY/EXAM]] admission coach (AI Tutor Admission Coach). Independently solve every question and verify which option is right—never blindly trust a pre-selected answer. Write concisely in clear [[AI_LANGUAGE]] mixed with standard English scientific terms. Always format mathematical formulas, fractions (\frac{a}{b}), and variables in LaTeX enclosed in dollar signs ($...$ for inline and $$...$$ for standalone equations). Always begin your initial solution with the exact first line: ✅ **[[CORRECT_ANSWER_LABEL]]:** followed by the AI-determined answer, then the 3 numbered sections (1. 🎯, 2. 📐, 3. ⚡).
+```
+Note the point: the AI must **solve independently** and not trust the stored `correctAnswer`; the stored explanation is only "reference context".
+
+### 10.5 Client-side call, models, streaming
+- `new GoogleGenAI({ apiKey })` → `ai.models.generateContentStream({ model, contents, config })`; stream chunks and append `chunk.text`, update UI on every chunk; support abort (AbortController) when the panel closes or the question changes.
+- **Image support**: for each question image and option image URL, `fetch` it → if SVG, send the first 10,000 chars as a fenced `xml` text block labelled "[Attached SVG Diagram for …]"; otherwise convert to base64 `inlineData {data, mimeType}` and send as a user message `parts: [...imageParts, {text: prompt}]`. Failures are silently skipped.
+- **Model fallback chain** (try in order, first that starts streaming wins; keep these in ONE editable constant file `aiModels.ts`):
+  - with images/SVG: `["gemini-3.8-flash","gemini-4-argon","gemini-2.5-flash"]`
+  - follow-up question: `["gemini-4-argon","gemini-3.8-flash","gemini-2.5-pro","gemini-2.5-flash"]`
+  - first explanation: `["gemini-3.8-flash","gemini-4-argon","gemini-2.5-flash"]`
+  - For the first two model names set `thinkingConfig.thinkingLevel = LOW` (first explanation) or `MEDIUM` (follow-up). Show the winning model name in the "Best Model" badge.
+  - (These model IDs are copied from the original site; if any is not available in the API at build time, replace with currently available Gemini Flash/Pro model IDs.)
+- Errors: no key → message (§10.1); all models fail → "Could not generate an answer. Please check your API Key in Settings."
+- Auto-run the first explanation when the panel opens (once per question + key), and re-run if the key changes.
+
+### 10.6 Response parsing
+- `splitSections(text)`: split before lines starting with optional markdown hashes/bold, optional `1.`/`১.` numbering, then one of `🎯 📐 ⚡ ⚠️ 💡 🔍 📌 👉` (or any numbered line `1. 2. 3. 4.`); if nothing splits, split on blank lines; else one card.
+- `extractAnswer(text)`: match the first line `✅ **Correct answer:** …` (also accept "Answer:", "উত্তর", "সঠিক উত্তর") → return `{answer, sections}`; remove that line from the body and show it in the top highlight card.
+- Every card is rendered with the same Markdown + KaTeX renderer used for questions.
+
+## 11. LOCAL STORAGE (all persistence is browser-only)
+
+| Key | Content | Notes |
+|---|---|---|
+| `[[PREFIX]]_theme_v2` | `"dark"` or `"light"` | default light if missing/invalid |
+| `[[PREFIX]]_ui_settings_v2` | `{questionFontPx, optionFontPx, explanationFontPx, fontStyle}` | clamp 12–26, fontStyle ∈ sans/serif/mono/bryndan, fall back to defaults 16/14/14/sans |
+| `[[PREFIX]]_gemini_api_key` | raw API key string | removed when user clicks Remove or saves empty |
+| `[[PREFIX]]_exam_history_v1` | array of attempts, newest first, **max 100** | see below |
+| `[[PREFIX]]_selected_subjects_v1` | array of exactly 4 subject ids | default = the 4 default subjects |
+| `[[PREFIX]]_exam_language_v1` | `"bn"` or `"en"` | default `"bn"` |
+
+Attempt object: `{ id: "attempt-<timestamp>-<rand5>", timestamp: ISO string, sessionId, title, institution, session, questionType, score, totalMarks, totalQuestions, correctCount, incorrectCount, unattemptedCount, timeTakenSeconds }` where `timeTakenSeconds = duration*60 − remainingSeconds`.
+Every read/write is wrapped in try/catch (private-mode safe), JSON is validated (arrays/types) before use. Add a tiny "Privacy-first local storage" mention in the footer.
+
+## 12. ANALYTICS PAGE (view = `analytics`)
+
+- Title "Your Exam Performance & Analytics" + note that data is saved in the browser's localStorage. **Delete History** button (only if data exists) → confirmation modal ("This action cannot be undone", shows number of attempts, buttons "No, Cancel" / "Yes, Delete"; clicking the backdrop closes it).
+- Empty state: icon, "No exams taken yet", explanation, button "Browse question bank & exam sessions" → home.
+- Otherwise 4 stat cards: **Total exams**, **Average score %** (mean of score/totalMarks×100), **Overall accuracy %** (Σcorrect / (Σcorrect+Σwrong)), **Correct / Wrong** totals.
+- "Recent results (N)" list: each row = institution+session chip, title, date (localized, `bn-BD` style `day month year hour:minute`), time taken `Xm Ys`, score `a / b`, ✔ correct count, ✘ wrong count, and a **"Retake"** button that opens the same exam again (opens the subject modal if required).
+
+## 13. FOOTER
+
+Dark/light footer: logo + "[[SITE_NAME]]" + subtitle + description paragraph; "Quick Navigation" list (Home & All Sessions, Question Bank & Solutions, Performance Analytics, Configure AI Tutor Key — buttons that change view / open key modal, scroll to top smooth); "Crafted & Maintained for Admission Aspirants — Developed by **[[DEVELOPER_NAME]]**" with Instagram and GitHub link buttons (inline SVG icons, `target=_blank rel="noopener noreferrer"`); bottom bar "© {current year} [[SITE_NAME]]. All rights reserved." plus 3 tags separated by "·": "[[TAG1]]", "Privacy-First Local Storage", "Educational Fair Use".
+
+## 14. RESPONSIVE BEHAVIOR (must match)
+
+- Main container: `max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8`; in the exam view it is full-width with `pt-0`.
+- Breakpoints are Tailwind defaults (sm 640, md 768, lg 1024). Typography scales: hero title `text-2xl → sm:text-5xl`; section H2 `text-lg → sm:text-2xl → lg:text-3xl`; body `text-xs → sm:text-base`; tiny labels 10–11px.
+- Hero search row: stacked on phone (`flex-col`), row on `sm+`; primary buttons `flex-1` on phone.
+- Institution grid: 2 columns (phone) → 3 (sm) → 6 (lg). Session grid: 1 → 2 (md) → 3 (lg). Hero stats: 2 → 4 columns.
+- Filter segmented control: 3 equal columns on phone, inline-flex on `sm+`. Info row: stacked → row on `sm+`.
+- Navbar: desktop pill tabs + settings; mobile "Menu" dropdown. Settings panel `w-72` (phone) / `w-80` (sm+).
+- Exam header buttons shrink: labels like "Settings" hide below `sm`; padding `px-3 sm:px-3.5`.
+- Wide math/images never overflow: images `max-w-full`, horizontal overflow hidden or scrollable inside the card; `html{overflow-x:clip}`.
+- Toasts (API key required) float at the bottom, full-width on phone, compact on desktop.
+- Touch-friendly: all clickable areas ≥ 36 px tall, `cursor-pointer` on desktop.
+
+## 15. QUALITY RULES
+
+1. No hard-coded content inside components — everything from `src/data/*` and JSON.
+2. TypeScript types for Session, Question, Attempt, UiSettings.
+3. Accessible: `aria-label` on icon buttons, `aria-expanded` on menus, keyboard focus rings.
+4. Never crash on bad localStorage or missing images/JSON; show friendly messages.
+5. Performance: memoize filtered lists, lazy-load images, cache fetched JSON.
+6. Provide: full file tree, all source files, `README.md` explaining how to (a) add a session, (b) add questions, (c) change colors/subjects/texts, (d) deploy to GitHub Pages.
+
+## 16. MY DATA (already filled — use exactly this)
+
+I am attaching two ready files. Copy them as-is into `src/data/`:
+- `institutions.ts` — 9 top-level cards + 6 agriculture sub-institutions + ALL.
+- `sessions.ts` — **262 sessions** (RU 45, JU 80, DU 33, CU 16, JnU 12, KhU 12, CoU 10, BAU 9, SAU 9, CVASU 9, SYLAU 8, GST-Agri 7, GST 6, GAU 6). Do not rename ids, because question JSON files are named after them: `public/data/<session.id>.json`.
+
+Notes about the data:
+1. Sessions have **no questions yet**. I will add `public/data/<id>.json` files later. Until a file exists, the question bank / exam must show a friendly empty state ("Questions for this paper are coming soon") and the **Start Exam** button must be disabled for that session (the See question button may stay enabled). Never crash on a missing/404 JSON.
+2. Question count shown on cards = `totalQuestions` from `sessions.ts` (not the JSON length). Once JSON exists, the real loaded count is used inside the question bank/exam.
+3. Marks can be decimals (e.g. 62.5, 149.5, 50.5). Show them as-is. Score = `perMark = totalMarks / mcqCount` as in §8.3, rounded to 2 decimals.
+4. Negative marking defaults in `sessions.ts`: 0.25 for MCQ, 0.2 for JU, 0 for Written. I may edit per session.
+5. `subjectPickMode` is on for DU 19-20 … 25-26 (4 of 6 subjects). Everything else is a normal fixed-paper exam.
+6. Time on cards is shown in Bangla like "১ ঘন্টা ৩০ মিনিট" (already inside `description`); the exam timer uses `durationMinutes`.
+7. UI language: Bangla labels with English technical terms (same as the original site). Bengali digits for counts when Bangla mode is on.
+
+Still to come from me (do NOT invent them; use placeholders until I send):
+```
+[[SITE_NAME / SUBTITLE / HERO TEXTS]]:
+[[SUBJECTS with BN/EN names, icons, colors]]:
+[[SUBJECT PICK RULES for DU 4-of-6 mode]]:
+[[AI language, labels, exam/country name]]:
+[[STORAGE PREFIX, REPO_NAME, DEVELOPER_NAME, social links, footer tags]]:
+[[QUESTION JSON per session]]:
+```
+
+Now confirm you understood in ~10 lines and wait for the remaining data.

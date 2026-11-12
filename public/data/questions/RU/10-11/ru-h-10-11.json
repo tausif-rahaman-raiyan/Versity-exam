@@ -1,0 +1,1322 @@
+[
+  {
+    "id": "ru-h-10-11-q-001",
+    "number": 1,
+    "subject": "Mathematics",
+    "question": "$( \\frac{1+\\tan 30^{\\circ}}{1-\\tan 30} )$ এর মান কোনটি?",
+    "options": [
+      "$cos15°$",
+      "$tan15°$",
+      "$cos75°$",
+      "$tan75°$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #1 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-002",
+    "number": 2,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #2 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-003",
+    "number": 3,
+    "subject": "Mathematics",
+    "question": "$\\int_{0}^{\\frac{\\pi}{2}} \\frac{\\cos t d t}{\\sqrt{9-\\sin ^{2} t}}=?$",
+    "options": [
+      "sin^-1(2/5)",
+      "sin^-1(1/3)",
+      "sin^-1(2/7)",
+      "1/5"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #3 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-004",
+    "number": 4,
+    "subject": "Mathematics",
+    "question": "a+ib = c+id হলে কোনটি সঠিক?",
+    "options": [
+      "a=c; c=d",
+      "a=d; b=d",
+      "a=c; b=d",
+      "a=b; c=d"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #4 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-005",
+    "number": 5,
+    "subject": "Mathematics",
+    "question": "3x^3-2x^2+1=0 সমীকরণের মূলগুলো α, β, ɤ হলে, ∑α^2β এর মান কত?",
+    "options": [
+      "$\\frac{1}{2}$",
+      "0",
+      "1",
+      "কোনেটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #5 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-006",
+    "number": 6,
+    "subject": "Mathematics",
+    "question": "P এবং Q বল দুইটির মধ্যবর্তী কোণ 135° এবং এদের লব্ধি Q হলে P ও Q এর মধ্যে সম্পর্ক কোনটি?",
+    "options": [
+      "$P = \\sqrt{2}Q$",
+      "$P = 3Q$",
+      "$\\sqrt{2} P = Q$",
+      "$P = Q$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #6 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-007",
+    "number": 7,
+    "subject": "Mathematics",
+    "question": "0.3+0.003+0.00003+......ধারাটির যোগফল-",
+    "options": [
+      "10/33",
+      "1/3",
+      "1/33",
+      "33/100"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #7 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-008",
+    "number": 8,
+    "subject": "Mathematics",
+    "question": "3টি স্বর্ণবর্ণযুক্ত করে 7 অক্ষর বিশিষ্ট একটি শব্দে স্বর্ণ বর্ণগুলোকে পাশাপাশি না রেখে মোট আসন বিন্যাস সংখ্যা হবে-",
+    "options": [
+      "5040",
+      "720",
+      "3200",
+      "4320"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #8 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-009",
+    "number": 9,
+    "subject": "Mathematics",
+    "question": "f : R→R এবং ɡ: R→R কে যথাক্রমে f(x) = 2x-5 এবং g(x) = x²+6 দ্বারা সংজ্ঞায়িত করা হলে f(g(t-1)) এর মান কত?",
+    "options": [
+      "2t² - 4t + 9",
+      "4t² - 2t + 9",
+      "9t² - 2t + 4",
+      "2t² + 4t + 9"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #9 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-010",
+    "number": 10,
+    "subject": "Mathematics",
+    "question": "একটি গতিশীল কণার কোন সরলরেখায় t সময়ে অতিক্রান্ত দূরত্ব s = 63t - 6t^2 - t^3 দ্বারা প্রকাশিত হয়। 2 সেকেন্ড শেষে তার বেগ নির্ণয় কর।",
+    "options": [
+      "37 ফু/সে",
+      "27 ফু/সে",
+      "17 ফু/সে",
+      "28 ফু/সে"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #10 ([উচ্চতর গণিত(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-011",
+    "number": 11,
+    "subject": "Biology",
+    "question": "দেহাভ্যন্তরে প্রোটিন থেকে অ্যামাইনো এসিড তৈরিতে কোন এনজাইম এর উপস্থিতি প্রয়োজন?",
+    "options": [
+      "ম্যাল্টেজ",
+      "ল্যাকটেজ",
+      "লিপেজ",
+      "ট্রিপসিন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #11 ([জীববিজ্ঞান(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-012",
+    "number": 12,
+    "subject": "Physics",
+    "question": "1.6 × 10^6 eV গতিশক্তি সম্পন্ন ইলেকট্রনের ভর কত?",
+    "options": [
+      "37.5 × 10^-31 kg",
+      "9.11 × 10^-31 kg",
+      "1.6 × 10^-19 kg",
+      "1.67 × 10^-27 kg"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #12 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-013",
+    "number": 13,
+    "subject": "Physics",
+    "question": "100°C তাপমাত্রায় 2kg পানিকে 100°C তাপমাত্রার বাষ্পে পরিণত করলে এনট্রপির পরিবর্তন কত? (পানির বাস্পীভবনের আপেক্ষিক সুপ্ততাপ = 2.26 × 10^6 J kg^-1)",
+    "options": [
+      "4.52 × 10^6 JK^-1",
+      "1.21 × 10^4 JK^-1",
+      "165.6 × 10^4 JK^-1",
+      "1.13 × 10^6 JK^-1"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #13 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-014",
+    "number": 14,
+    "subject": "Physics",
+    "question": "25°C তাপমাত্রায় 0.5g একটি গ্যাসের অনুসমূহের গতিশক্তি 66.36J । গ্যাসটি কি?",
+    "options": [
+      "CO_2_",
+      "Cl_2",
+      "CO",
+      "O_2"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #14 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-015",
+    "number": 15,
+    "subject": "Physics",
+    "question": "উপগ্রহ মহাশূন্যে কোন নীতি মেনে চলে?",
+    "options": [
+      "নিউটনের তৃতীয় সূত্র",
+      "অভিকর্ষ সূত্র",
+      "কেপলারের সূত্র",
+      "কোনটাই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #15 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-016",
+    "number": 16,
+    "subject": "Physics",
+    "question": "একটি অক্সিজেন সিলিন্ডারের আয়তন 5 × 10^5 cc এবং এতে প্রথমে 250 বায়ুমণ্ডলীয় চাপে অক্সিজেন ভর্তি ছিল। কিছুটা ব্যবহারের পর দেখা গেল চাপ 100 বায়ুমণ্ডলীয় চাপে নেমে গেছে। ব্যবহৃত অক্সিজেনের পরিমান বায়ুমণ্ডলীয় চাপে কত?",
+    "options": [
+      "7 × 10^5 cc",
+      "10 m^3",
+      "0.75 m^3",
+      "75 × 10^8 cc"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #16 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-017",
+    "number": 17,
+    "subject": "Physics",
+    "question": "একটি ইস্পাতের তারের দৈর্ঘ্য 4m, ব্যাস 0.5mm এবং ইয়ং এর স্থিতিস্থাপক গুনাংক 2 × 10^11 nm^-2 এখন একই ইস্পাতের আরেকটি তারের দৈর্ঘ্য 5m এবং ব্যাস 1 mm ইয়ং এর স্থিতিস্থাপক গুণাংক কত হবে?",
+    "options": [
+      "1 × 10^11 N/m^2",
+      "2 × 10^11 N/m^2",
+      "5 × 10^5 N/m^2",
+      "2 × 10^9 N/m^2"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #17 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-018",
+    "number": 18,
+    "subject": "Physics",
+    "question": "একটি সরল দোলকের দোলনকাল পৃথিবীর কেন্দ্রে কত?",
+    "options": [
+      "0 s",
+      "∞ s",
+      "980 s",
+      "বলা যাবে না"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #18 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-019",
+    "number": 19,
+    "subject": "Physics",
+    "question": "কেলাসের অভ্যন্তরীন গঠন বিশ্লেষণের জন্য ব্যবহৃত হয়-",
+    "options": [
+      "প্রতিফলন",
+      "প্রতিসরণ",
+      "অপবর্তন",
+      "সমাবর্তন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #19 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-020",
+    "number": 20,
+    "subject": "Physics",
+    "question": "কোন ধাতু থেকে নিঃসৃত ইলেকট্রেনের সর্বোচ্চ বেগ 2.0 × 10^6 ms^-1 হলে নিবৃত্তি বিভবের মান কত?",
+    "options": [
+      "11.375 V",
+      "17.77 V",
+      "14.218 V",
+      "7.28 V"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #20 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-021",
+    "number": 21,
+    "subject": "Physics",
+    "question": "কোনটি সঠিক নয়?",
+    "options": [
+      "পানি দ্বারা লেসার রশ্মি সহজে শোষিত হয় না",
+      "তড়িৎ ক্ষেত্র প্রয়োগে ফোটনকে চার্জিত করা সহজ",
+      "নিম্ন চাপের গ্যাসকে উত্তপ্ত করে গ্যাসে প্লাজমা অবস্থা সৃষ্টি করা যায়",
+      "ক্যাথোড রশ্মির সাহায্যে এক্স-রশ্মি উৎপন্ন করা যায়"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #21 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-022",
+    "number": 22,
+    "subject": "Physics",
+    "question": "ক্রিয়া এবং প্রতিক্রিয়া বল সব সময়ই-",
+    "options": [
+      "একই বস্তুর উপর ক্রিয়া করে",
+      "দুটি ভিন্ন বস্তুর উপর ক্রিয়া করে",
+      "বস্তুর গতিশীল অবস্থায় থাকার উপর নির্ভরশীল",
+      "বস্তুদ্বয়ের সাম্যাবস্থায় থাকার উপর নির্ভরশীল"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #22 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-023",
+    "number": 23,
+    "subject": "Physics",
+    "question": "তাপমাত্রা স্থির থাকলে নিম্নের কোনটি ওহম সূত্র?",
+    "options": [
+      "V ∝ I",
+      "V ∝ IR",
+      "V ∝ R",
+      "I ∝ V"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #23 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-024",
+    "number": 24,
+    "subject": "Physics",
+    "question": "তড়িৎ বলরেখার ধর্ম কোনটি?",
+    "options": [
+      "বলরেখাগুলো সর্বদা টান করা স্থিতিস্থাপক সুতার ন্যায় দৈর্ঘ্য বরাবর প্রসারিত হতে চেষ্টা করে",
+      "বলরেখাগুলো পরস্পরকে পাশের দিকে আকর্ষণ করে",
+      "বলরেখা গুলো সর্বদা চার্জিত পরিবাহীর পৃষ্ঠের সাথে সমান্তরাল ভাবে থাকে",
+      "দুটি বলরেখা পরস্পরকে ছেদ করে না"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #24 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-025",
+    "number": 25,
+    "subject": "Physics",
+    "question": "পারদপূর্ণ পাত্রে কাঁচের কৈশিক নল ডুবালে নলের অভ্যন্তরে পারদ:-",
+    "options": [
+      "উপরে উঠবে",
+      "স্থির থাকবে",
+      "নিচে নামবে",
+      "উঠা নামা করবে"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #25 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-026",
+    "number": 26,
+    "subject": "Physics",
+    "question": "সমান্তরাল ধারকের ধারকত্ব বৃদ্ধির জন্য-",
+    "options": [
+      "পাতদ্বয়ের ক্ষেত্রফল হ্রাস করা যেতে পারে",
+      "পাতদ্বয়ের রোধ বৃদ্ধি করা যেতে পারে",
+      "পাতদ্বয়ের মধ্যবর্তী দূরত্ব বৃদ্ধি করা যেতে পারে",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #26 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-027",
+    "number": 27,
+    "subject": "Physics",
+    "question": "সমমানের দুটি ভেক্টর $\\vec{A}$ ও $\\vec{B}$, O বিন্দুতে ক্রিয়াশীল। এদের লক্ধি $\\vec{R}$ এর মান যেকোনো একটি ভেক্টরের মানের সমান। $\\vec{A}$ ও $\\vec{B}$ এর মধ্যবর্তী কোণ কত?",
+    "options": [
+      "0°",
+      "90°",
+      "120°",
+      "180°"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #27 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-028",
+    "number": 28,
+    "subject": "Physics",
+    "question": "0.2 tesla সুষম চৌম্বকক্ষেত্রের মধ্য দিয়ে একটি ইলেকট্রন 10^6 ms^-1 বেগে গতিশীল। বেগের অভিমুখে চৌম্বক ক্ষেত্রে লম্ব বরাবর ইলেকট্রনটির উপর প্রযুক্ত চৌম্বক বলের মান কত হবে?",
+    "options": [
+      "3.2 × 10^-13 N",
+      "3.2 × 10^-14 N",
+      "4.2 × 10^-13 N",
+      "5.2 × 10^-14 N"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #28 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-029",
+    "number": 29,
+    "subject": "Physics",
+    "question": "একটি অবতল দর্পণের ফোকাস দূরত্ব 25 cm । দর্পণটি হতে কত দূরে একটি বস্তু স্থাপন করলে বাস্তব প্রতিবিম্বের আকার বস্তুর আকারের 5 গুণ হবে?",
+    "options": [
+      "125 cm",
+      "5 cm",
+      "30 cm",
+      "20 cm"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #29 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-030",
+    "number": 30,
+    "subject": "Physics",
+    "question": "চৌম্বক প্রাবল্যর একক নয় কোনটি?",
+    "options": [
+      "Tesla",
+      "Oerested",
+      "emu/cc",
+      "Amp/meter"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #30 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-031",
+    "number": 31,
+    "subject": "Physics",
+    "question": "দুটি একই ধরনের তাপ সম কম্পাঙ্ক আড় কম্পনে কম্পিত হচ্ছে। যখন একটি তারের টান 2.01% বৃদ্ধি করা হয় এবং তার দুটিকে একত্রে কম্পিত করা হয়, তখন প্রতি সেকেন্ডে 3 টি সড়ক স্বরকম্প উৎপন্ন হয়। তার দুইটির প্রারম্ভিক কম্পাঙ্ক কত হবে?",
+    "options": [
+      "250Hz",
+      "303Hz",
+      "350Hz",
+      "400Hz"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #31 ([পদার্থবিজ্ঞান(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-032",
+    "number": 32,
+    "subject": "Chemistry",
+    "question": "25°C তাপমাত্রা ও 2.5 atm চাপে PCl_5 65% বিয়োজিত হয়ে PCI_3 এবং Cl_2 উৎপন্ন করে। এ বিক্রিয়ার Kc এর মান কত?",
+    "options": [
+      "7.475 x 10^-2 mol L^-1",
+      "8.101 x 10^-2 mol L^-1",
+      "6.239 x 10^-2 mol L^-1",
+      "7.263 x 10^-2 mol L^-1"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #32 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-033",
+    "number": 33,
+    "subject": "Chemistry",
+    "question": "k বিক্রিয়া হার ধ্রুবক হলে log k বনাম (1/T), K^-1 লেখচিত্রের ঢাল কত?",
+    "options": [
+      "-E_a/2.303 R",
+      "-E_a/R",
+      "E_a/2.303 R",
+      "E_a/R"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #33 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-034",
+    "number": 34,
+    "subject": "Chemistry",
+    "question": "Li, Na, Ni, Si, Al- এর আয়নিকরন বিভবের উচ্চক্রম নিম্নরূপ:",
+    "options": [
+      "Na > Li > Si > Al > Ni",
+      "Na < Na< Al< Si < Ni",
+      "Ni > Si > Al > Na > Li",
+      "Na < Li < Al< Ni < Si"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #34 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-035",
+    "number": 35,
+    "subject": "Chemistry",
+    "question": "sp^2 সংকরিত হওয়ার পর পরমাণুতে কয়টি p অরবিটাল অবশিষ্ট থাকবে?",
+    "options": [
+      "1 টি",
+      "একটিও না",
+      "2 টি",
+      "3 টি"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #35 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-036",
+    "number": 36,
+    "subject": "Chemistry",
+    "question": "একটি আয়রণ আকরিকে 60% Fe_2O_3 আছে। 1000 kg আকরিক থেকে সর্বোচ্চ কত পরিমান লৌহ নিষ্কাশন করা যাবে?",
+    "options": [
+      "600 kg",
+      "699.47 kg",
+      "111.72 kg",
+      "419.68 kg"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #36 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-037",
+    "number": 37,
+    "subject": "Chemistry",
+    "question": "একটি জৈব যৌগের ওজোনোলাইসিস করে ফরমালডিহাইড ও অ্যাসিটোন পাওয়া গেল। জৈব যৌগটি কি?",
+    "options": [
+      "2 মিথাইল বিউটিন",
+      "2 মিথাইল প্রোপিন",
+      "2 বিউটিন",
+      "1 বিউটিন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #37 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-038",
+    "number": 38,
+    "subject": "Chemistry",
+    "question": "একটি যৌগের শতকরা সংযুক্তিতে C=40%, H=6.67% এবং O=53.33%, যৌগ টির স্থুল সংকেত কোনটি?",
+    "options": [
+      "CHO",
+      "C_2HO",
+      "CH_2O",
+      "CHO_2"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #38 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-039",
+    "number": 39,
+    "subject": "Chemistry",
+    "question": "কোন পলিমারে এ্যামাইড বন্ধনী বর্তমান?",
+    "options": [
+      "টেফলন",
+      "নাইলন",
+      "টেরিলিন",
+      "পিলিথিন"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #39 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-040",
+    "number": 40,
+    "subject": "Chemistry",
+    "question": "200 টি স্বাক্ষর দিলে গ্রাফাইট পেন্সিলের 10 mg খরচ হলে প্রতিটি স্বাক্ষরে কতটি কার্বন পরমাণু খরচ হবে?",
+    "options": [
+      "$2.5\\times{10}^{18}$ টি",
+      "$3.5\\times{10}^{18}$ টি",
+      "$4\\times{10}^{18}$ টি",
+      "$1.5\\times{10}^{18}$ টি"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #40 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-041",
+    "number": 41,
+    "subject": "Chemistry",
+    "question": "কোনটি সঠিক?",
+    "options": [
+      "স্ফুটনকালে তরল পদার্থের মধ্যে বুদবুদ সৃষ্টি হয়",
+      "ক্রান্তি তাপমাত্রার উর্ধ্বে কোন তাপমাত্রায় গ্যাসকে চাপ প্রয়োগে তরলে পরিণত করা যায় না",
+      "বাষ্পায়নের সময় তরলের উপরস্থ চাপ তরল থেকে উত্থিত বাষ্পচাপের চেয়ে বেশি হয়",
+      "সবগুলোই সঠিক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #41 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-042",
+    "number": 42,
+    "subject": "Chemistry",
+    "question": "গ্রাফাইট ও হীরক এ যথাক্রমে নিম্নরূপ সংকরিত কার্বন পরমাণু বিদ্যমান থাকেঃ",
+    "options": [
+      "sp ও sp^3",
+      "sp^3 ও sp^2",
+      "sp^2 ও sp",
+      "sp^2 ও sp^3"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #42 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-043",
+    "number": 43,
+    "subject": "Chemistry",
+    "question": "যেসব যৌগের কেলাস জালির ফাঁকা স্থানের মধ্যে নিষ্ক্রিয় গ্যাস অবরুদ্ধ থাকে তাদের কি বলে?",
+    "options": [
+      "নিষ্ক্রিয় জটিল যৌগ",
+      "ক্লাস্টার",
+      "ক্লাথরেট যৌগ",
+      "ইনার্ট ক্রিস্টাল"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #43 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-044",
+    "number": 44,
+    "subject": "Chemistry",
+    "question": "কোনটি বেশি তীব্র ক্ষারক?",
+    "options": [
+      "NH_4OH",
+      "CH_3NH_3OH",
+      "(CH_3)_2NH_2OH",
+      "(CH_3)_3NHOH"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #44 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-045",
+    "number": 45,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোনটির দ্বিতীয় আয়নিকরন শক্তি সবচেয়ে বেশি?",
+    "options": [
+      "ম্যাগনেসিয়াম",
+      "বেরিয়াম",
+      "রুবিডিয়াম",
+      "রেডিয়াম"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #45 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-046",
+    "number": 46,
+    "subject": "Chemistry",
+    "question": "ফুলারিন কোন মৌলের রূপভেদ?",
+    "options": [
+      "ফসফরাস",
+      "ফ্লোরিন",
+      "সালফার",
+      "কার্বন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #46 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-047",
+    "number": 47,
+    "subject": "Chemistry",
+    "question": "রিডবার্গের ধ্রুবক (Rʜ) = 109678 cm^-1 প্রয়োগ করে হাইড্রোজেন পরমাণুর চতুর্থ শক্তিস্তরের একটি ইলেকট্রন দ্বিতীয় শক্তিস্তরে স্থানান্তরিত হলে সৃষ্ট বর্ণালী তরঙ্গ দৈর্ঘ্য কত?",
+    "options": [
+      "670 nm",
+      "486.27 nm",
+      "20564.62 nm",
+      "320 nm"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #47 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-048",
+    "number": 48,
+    "subject": "Chemistry",
+    "question": "সামধ্রুেবক সম্পর্কে কোন বাক্যটি সঠিক নয়?",
+    "options": [
+      "তাপমাত্রা পরিবর্তনে সাম্যধ্রুবক পরিবর্তন হয়",
+      "সাম্য ধ্রুবক বিক্রিয়ার ব্যপ্তি সমন্ধে ধারণা দেয়",
+      "বিক্রিয়ক ও উৎপাদের পরিমান পরিবর্তনে সামধ্রুেবক পরিবর্তন হয় না",
+      "চাপের পরিবর্তনে সাম্যধ্রুবক পরিবর্তন হয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #48 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-049",
+    "number": 49,
+    "subject": "Chemistry",
+    "question": "স্টার্চ কি ধরনের বন্ধন গ্লুকোজের শিকল তৈরি করে?",
+    "options": [
+      "ɑ,1,4 গ্লাইকোসাইট বন্ধন",
+      "β,1,4 গ্লাইকোসাইট বন্ধন",
+      "ɑ,2,5 গ্লাইকোসাইট বন্ধন",
+      "β,2,5 গ্লাইকোসাইট বন্ধন"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #49 ([রসায়ন(18)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-050",
+    "number": 50,
+    "subject": "ICT",
+    "question": "(0.75)_10 = (?)_2 কত?",
+    "options": [
+      "0.10",
+      "0.11",
+      "0.011",
+      "0.101"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #50 ([তথ্য ও যোগাযোগ প্রযুক্তি(1)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-051",
+    "number": 51,
+    "subject": "Physics",
+    "question": "(1,1), (a,0), এবং (0,b) বিন্দু তিনটি সমরেখ হওয়ার শর্ত কোনটি?",
+    "options": [
+      "1/a + 1/b = 1",
+      "1/a - 1/b = 1",
+      "a + b = 1",
+      "a - b = 1"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #51 ([(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-052",
+    "number": 52,
+    "subject": "Physics",
+    "question": "y^2 = 16x পরাবৃত্তের শীর্ষবিন্দু A এবং উপকেন্দ্রিক লম্বের প্রান্ত বিন্দু P Q হলে ΔAPQ এর ক্ষেত্রফল নির্ণয় কর।",
+    "options": [
+      "16 বর্গ একক",
+      "32 বর্গ একক",
+      "64 বর্গ একক",
+      "25 বর্গ একক"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #52 ([(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-053",
+    "number": 53,
+    "subject": "Physics",
+    "question": "তিনটি সমান বল কোন বস্তুকণাকে স্থিতি অবস্থায় রাখলে তাদের ক্রিয়াসমুহ পরস্পর কত কোণে অবস্থিত-",
+    "options": [
+      "90°",
+      "270°",
+      "120°",
+      "75°"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #53 ([(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-054",
+    "number": 54,
+    "subject": "Physics",
+    "question": "$\\mathrm{A}=\\left[\\begin{array}{l}1 \\\\ 6\\end{array}\\right], \\mathrm{B}=\\left[\\begin{array}{ll}3 & 2\\end{array}\\right]$ ম্যাট্রিক্স দুইটির গুণফল হবে-",
+    "options": [
+      "$\\left[\\begin{array}{cc}18 & 12 \\\\ 3 & 2\\end{array}\\right]$",
+      "$\\left[\\begin{array}{cc}3 & 2 \\\\ 18 & 12\\end{array}\\right]$",
+      "$\\left[\\begin{array}{cc}3 & 6 \\\\ 9 & 12\\end{array}\\right]$",
+      "$\\left[\\begin{array}{ll}9 & 6 \\\\ 3 & 6\\end{array}\\right]$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #54 ([(5)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "source-provided"
+    }
+  },
+  {
+    "id": "ru-h-10-11-q-055",
+    "number": 55,
+    "subject": "Physics",
+    "question": "A ও B দুটি স্বাধীন ঘটনা এবং p(A) = 3/7 ও p(B) = 5/7 হলে p(A⋂B) =?",
+    "options": [
+      "7",
+      "2/7",
+      "1/7",
+      "7/2"
+    ],
+    "correctAnswer": -1,
+    "answerVerified": false,
+    "questionType": "MCQ",
+    "institution": "RU",
+    "session": "10-11",
+    "provenance": {
+      "sourceFile": "RU_H_10-11_5d4c6203.txt",
+      "sourceLocation": "Question #55 ([(5)])",
+      "answerSource": "Unverified / not present in source",
+      "explanationSource": "Not supplied in source",
+      "verificationStatus": "unverified"
+    }
+  }
+]

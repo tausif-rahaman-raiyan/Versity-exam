@@ -1,0 +1,6 @@
+{
+  "name": "Varsity Question Bank & AI Tutor",
+  "description": "Bangladesh University Admission Question Bank, Strict Timed Exam Simulator, and AI Tutor for DU, RU, JU, CU, GST, CoU, JnU, KhU, and Agriculture Cluster.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
