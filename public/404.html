@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Varsity Question Bank & AI Tutor</title>
+    <script type="text/javascript">
+      // Single Page App GitHub Pages 404 redirect fallback
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      var repoName = l.pathname.split('/')[1];
+      var isGitHubPages = l.hostname.includes('github.io');
+      var redirectPath = isGitHubPages ? '/' + repoName + '/' : '/';
+      
+      window.location.replace(
+        l.protocol + '//' + l.host + redirectPath + '?p=' + encodeURIComponent(l.pathname.slice(redirectPath.length) + l.search + l.hash)
+      );
+    </script>
+  </head>
+  <body>
+    <div style="text-align:center; margin-top:50px; font-family:sans-serif;">
+      <h2>Redirecting...</h2>
+    </div>
+  </body>
+</html>
