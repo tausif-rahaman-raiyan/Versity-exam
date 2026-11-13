@@ -2,16 +2,14 @@
 /**
  * scripts/audit-math-latex.mjs
  *
- * Comprehensive AI & Regex Math/LaTeX and Fraction Audit for DU, RU, and JU questions.
+ * Comprehensive AI & Regex Math/LaTeX, Fraction, and Chemical Formula Audit for DU, RU, and JU questions.
  * Scans all question stems, options, and explanations to normalize and repair:
- * - Broken LaTeX fractions (\frac {a} {b}, unclosed braces, excessive dollar signs)
+ * - Broken LaTeX fractions (\frac {a} {b}, unclosed braces)
  * - ASCII fractions in mathematical contexts into proper KaTeX \frac{...}{...}
  * - Square root fractions (√(m/k), 2π√(k/m))
+ * - Chemical formulas with underscores (e.g. CH_3CH_2COCH_2CH_3, K_2Cr_2O_7, SiO_2) into valid KaTeX \mathrm{...}
  * - Undefined macro \circC -> ^\circ\text{C}
- * - Nested dollar signs inside math mode
- * - Broken fraction macros like \frac{R^{3}{2}} -> R^{\frac{3}{2}}
- * - Chemical equilibrium formulas & subscripts
- * - Validates every math chunk with KaTeX engine, ensuring 0 errors across 14,000+ questions!
+ * - Validates every math chunk with KaTeX engine (0 errors).
  */
 
 import fs from 'node:fs/promises';
@@ -40,6 +38,11 @@ function isProtectedSlash(text) {
   return PROTECTED_SLASH_PATTERNS.some((p) => p.test(text));
 }
 
+function formatChemicalFormula(matchStr) {
+  if (!matchStr || typeof matchStr !== 'string') return matchStr;
+  return `$\\mathrm{${matchStr}}$`;
+}
+
 export function cleanTextFractionsAndMath(input, context = {}) {
   if (typeof input !== 'string' || !input.trim()) return input;
   let text = input;
@@ -51,7 +54,15 @@ export function cleanTextFractionsAndMath(input, context = {}) {
   text = text.replace(/\\circC\b/g, '\\circ\\text{C}');
   text = text.replace(/\^\s*\\circ\s*C\b/g, '^\\circ\\text{C}');
 
-  // Fix excessive dollar signs (e.g. $$$$$ -> $)
+  // Convert any previous malformed \text{...} chemical formulas to \mathrm{...}
+  text = text.replace(/\\text\{([a-zA-Z0-9_\(\)]+)\}/g, (m, inner) => {
+    if (inner.includes('_') || /[A-Z]/.test(inner)) {
+      return `\\mathrm{${inner}}`;
+    }
+    return m;
+  });
+
+  // Fix excessive dollar signs
   text = text.replace(/\${2,}/g, '$');
 
   // Fix \frac {a} {b} -> \frac{a}{b}
@@ -64,36 +75,7 @@ export function cleanTextFractionsAndMath(input, context = {}) {
   text = text.replace(/(?:ω\s*=\s*)?√\s*\(([a-zA-Z0-9+\-*^]+)\s*\/\s*([a-zA-Z0-9+\-*^]+)\)/g, '$\\omega = \\sqrt{\\frac{$1}{$2}}$');
   text = text.replace(/√\s*\(([a-zA-Z0-9+\-*^]+)\s*\/\s*([a-zA-Z0-9+\-*^]+)\)/g, '$\\sqrt{\\frac{$1}{$2}}$');
 
-  // Fix standalone pure option fractions:
-  if (context.isOption) {
-    const trimmed = text.trim();
-
-    const pureNumMatch = trimmed.match(/^([+-]?)\s*(\d+)\s*\/\s*(\d+)$/);
-    if (pureNumMatch) {
-      const sign = pureNumMatch[1] ? (pureNumMatch[1] === '-' ? '-' : '') : '';
-      return `$${sign}\\frac{${pureNumMatch[2]}}{${pureNumMatch[3]}}$`;
-    }
-
-    const numVarMatch = trimmed.match(/^([+-]?)\s*(\d+)\s*\/\s*(\d+)\s*([a-zA-Z])$/);
-    if (numVarMatch) {
-      const sign = numVarMatch[1] ? (numVarMatch[1] === '-' ? '-' : '') : '';
-      return `$${sign}\\frac{${numVarMatch[2]}}{${numVarMatch[3]}}${numVarMatch[4]}$`;
-    }
-
-    const algMatch = trimmed.match(/^([+-]?)\s*([a-zA-Z][a-zA-Z0-9^_{}]*)\s*\/\s*([a-zA-Z0-9^_{}]+)$/);
-    if (algMatch && !isProtectedSlash(trimmed)) {
-      const sign = algMatch[1] ? (algMatch[1] === '-' ? '-' : '') : '';
-      return `$${sign}\\frac{${algMatch[2]}}{${algMatch[3]}}$`;
-    }
-
-    const mathSlashMatch = trimmed.match(/^\$\s*([a-zA-Z0-9^_{}\s]+)\s*\/\s*\(?\s*([a-zA-Z0-9^_{}\s]+)\s*\)?\s*\$$/);
-    if (mathSlashMatch && !isProtectedSlash(trimmed) && !trimmed.includes('\\frac')) {
-      return `$\\frac{${mathSlashMatch[1].trim()}}{${mathSlashMatch[2].trim()}}$`;
-    }
-  }
-
   // Split into math chunks ($...$ or $$...$$) and plain text chunks
-  // to avoid injecting $ inside already active math mode!
   const segments = [];
   let lastIndex = 0;
   const mathRegex = /\$\$([\s\S]*?)\$\$|\$([^\$]+?)\$/g;
@@ -112,16 +94,12 @@ export function cleanTextFractionsAndMath(input, context = {}) {
     segments.push({ isMath: false, content: text.slice(lastIndex) });
   }
 
-  // Process text and math segments independently
   const processedSegments = segments.map((seg) => {
     if (seg.isMath) {
       let math = seg.content;
-      // Strip any accidental nested dollars
       math = math.replace(/\$/g, '');
-      // Fix \circC -> \circ\text{C}
       math = math.replace(/\\circC\b/g, '\\circ\\text{C}');
       math = math.replace(/\^\s*\\circ\s*C\b/g, '^\\circ\\text{C}');
-      // Fix Greek & math unicode symbols
       math = math.replace(/π/g, '\\pi');
       math = math.replace(/ħ/g, '\\hbar');
       math = math.replace(/Ω/g, '\\Omega');
@@ -130,6 +108,7 @@ export function cleanTextFractionsAndMath(input, context = {}) {
       math = math.replace(/\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}/g, '\\frac{$1}{$2}');
       math = math.replace(/\\frac\{R\^\{3\}\{2\}\}/g, 'R^{\\frac{3}{2}}');
       math = math.replace(/\\frac\{R\^3\{2\}\}/g, 'R^{\\frac{3}{2}}');
+      math = math.replace(/\\text\{([a-zA-Z0-9_\(\)]+)\}/g, '\\mathrm{$1}');
 
       return seg.isBlock ? `$$${math}$$` : `$${math}$`;
     } else {
@@ -144,20 +123,19 @@ export function cleanTextFractionsAndMath(input, context = {}) {
         return `$\\frac{${num}}{${den}}$`;
       });
 
+      // Fix chemical formulas with underscores outside math mode
+      nonMath = nonMath.replace(/\b([A-Z][a-z]?[0-9A-Za-z_\(\)\-]+)\b/g, (match) => {
+        if ((match.includes('_') || /\([A-Za-z0-9]+\)\d+/.test(match)) && /[A-Z]/.test(match)) {
+          return formatChemicalFormula(match);
+        }
+        return match;
+      });
+
       // Fix resistance symbol like "15Ω" -> "$15\,\Omega$"
       nonMath = nonMath.replace(/\b(\d+(?:\.\d+)?)\s*Ω\b/g, '$$$1\\,\\Omega$$');
 
       // Fix power notation: "5.5 x 10^5" -> "$5.5 \times 10^5$"
       nonMath = nonMath.replace(/\b(\d+(?:\.\d+)?)\s*[x×]\s*10\^(\d+)\b/g, '$$$1 \\times 10^{$2}$$');
-
-      // Fix chemical formulas with subscripts outside math mode
-      nonMath = nonMath.replace(/(?<![\w])HNO_3(?![\w])/g, '$\\text{HNO}_3$');
-      nonMath = nonMath.replace(/(?<![\w])H_2O(?![\w])/g, '$\\text{H}_2\\text{O}$');
-      nonMath = nonMath.replace(/(?<![\w])CO_2(?![\w])/g, '$\\text{CO}_2$');
-      nonMath = nonMath.replace(/(?<![\w])CaCO_3(?![\w])/g, '$\\text{CaCO}_3$');
-      nonMath = nonMath.replace(/(?<![\w])H_2SO_4(?![\w])/g, '$\\text{H}_2\\text{SO}_4$');
-      nonMath = nonMath.replace(/(?<![\w])S_N1(?![\w])/g, '$\\text{S}_\\text{N}1$');
-      nonMath = nonMath.replace(/(?<![\w])S_N2(?![\w])/g, '$\\text{S}_\\text{N}2$');
 
       return nonMath;
     }
@@ -165,7 +143,6 @@ export function cleanTextFractionsAndMath(input, context = {}) {
 
   let result = processedSegments.join('');
 
-  // Final check: odd dollar count cleanup
   const dollarCount = (result.match(/\$/g) || []).length;
   if (dollarCount % 2 !== 0) {
     if (result.endsWith('$')) result = result.slice(0, -1);
@@ -190,7 +167,7 @@ async function findQuestionJsonFiles(dir) {
 }
 
 async function main() {
-  console.log('🔍 Starting Comprehensive Math, Fraction & Syntax Audit for DU, RU, JU...');
+  console.log('🔍 Starting Comprehensive Chemical Formula & Math Audit for DU, RU, JU...');
 
   const roots = [
     path.join(PROJECT_ROOT, 'public', 'data', 'questions', 'DU'),
@@ -218,7 +195,6 @@ async function main() {
     for (const q of questions) {
       totalQuestionsAudited++;
 
-      // Audit Question Stem
       const originalQ = q.question;
       const cleanedQ = cleanTextFractionsAndMath(originalQ, { isStem: true });
       if (cleanedQ !== originalQ) {
@@ -227,7 +203,6 @@ async function main() {
         totalFixesApplied++;
       }
 
-      // Audit Options
       if (Array.isArray(q.options)) {
         for (let i = 0; i < q.options.length; i++) {
           const originalOpt = q.options[i];
@@ -240,7 +215,6 @@ async function main() {
         }
       }
 
-      // Audit Explanation
       if (q.explanation && typeof q.explanation === 'string') {
         const originalExp = q.explanation;
         const cleanedExp = cleanTextFractionsAndMath(originalExp, { isExplanation: true });
@@ -251,7 +225,6 @@ async function main() {
         }
       }
 
-      // KaTeX Verification pass on all $...$ blocks in question
       const texts = [q.question, ...(q.options || []), q.explanation || ''];
       for (const t of texts) {
         if (!t) continue;
@@ -276,7 +249,7 @@ async function main() {
   }
 
   console.log(`\n==========================================================`);
-  console.log(`✅ Math & Fraction Audit Complete!`);
+  console.log(`✅ Chemical Formula & Math Audit Complete!`);
   console.log(`==========================================================`);
   console.log(`Papers checked        : ${allFiles.length}`);
   console.log(`Questions checked     : ${totalQuestionsAudited}`);

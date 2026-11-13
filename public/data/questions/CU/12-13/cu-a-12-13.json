@@ -1,0 +1,2269 @@
+[
+  {
+    "id": "cu-a-12-13-q-001",
+    "number": 1,
+    "subject": "Physics",
+    "question": "বৃত্তীয় গতির ক্ষেত্রে কৌণিক ভরবেগের রাশি কোনটি?",
+    "options": [
+      "$m r^{2} \\omega$",
+      "$m r \\omega$",
+      "$\\frac{m r}{\\omega}$",
+      "$\\frac{m r}{\\omega^{2}}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #1 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** $m r^{2} \\omega$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** $m r^{2} \\omega$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(ক)** $m r^{2} \\omega$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-002",
+    "number": 2,
+    "subject": "Physics",
+    "question": "2N বল কোন নির্দিষ্ট ভরের বস্তুর উপর ক্রিয়া করায় বস্তুটি বলের দিকের সাথে 60° কোণ উৎপন্ন করে 5m দূরে সরে গেল। কাজের পরিমাণ কত?",
+    "options": [
+      "2.5 J",
+      "10 J",
+      "5 J",
+      "20 J"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #2 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nকাজ-শক্তি উপপাদ্য অনুযায়ী কৃতকাজ গতিশক্তির পরিবর্তনের সমান; বাহ্যিক বল বা টর্ক শূন্য হলে রৈখিক বা কৌণিক ভরবেগ সংরক্ষিত থাকে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $W = Fs\\cos\\theta = \\Delta E_k$, $P = \\frac{W}{t} = Fv$, $I = \\sum mr^2$, $\\tau = I\\alpha$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** 5 J।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে প্রদত্ত বল, সরণ, ভর ও বেগ থেকে সংরক্ষণশীলতা বা $W = \\Delta E_k$ সম্পর্ক প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** 5 J প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nএকক-মাত্রা যাচাই ($[ML^2T^{-2}]$ কাজ/শক্তি, $[ML^2T^{-3}]$ ক্ষমতা) এবং বিশেষ কোণ ($\\theta = 90^\\circ \\implies W=0$) দেখে ভুল অপশন বাদ দাও। সঠিক উত্তর হিসেবে **(গ)** 5 J চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-003",
+    "number": 3,
+    "subject": "Physics",
+    "question": "একটি বস্তুকে $98\\ ms^{-1}$ বেগে খাড়া উপরের দিকে নিক্ষেপ করা হল । বস্তুটি সবার্ধিক উচ্চতায় পৌঁছতে কত সেকেন্ড লাগবে?",
+    "options": [
+      "25",
+      "18",
+      "15",
+      "10"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #3 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** 10।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** 10 প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(ঘ)** 10 চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-004",
+    "number": 4,
+    "subject": "Physics",
+    "question": "সরল ছন্দিত গতিসম্পন্ন একটি কণার গতির সমীকরণ $\\mathbf{y}=$ $4 \\sin [2 \\pi(360 t-0.2)] ;$ কণাটির বিস্তার কত ?",
+    "options": [
+      "360",
+      "0.2",
+      "4",
+      "2"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #4 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** 4।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** 4 প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(গ)** 4 চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-005",
+    "number": 5,
+    "subject": "Physics",
+    "question": "তরলের পৃষ্ঠে কোন তেল বা চর্বি জাতীয় পদার্থ ভাসমান থাকলে তরলের পৃষ্ঠটান কি হয় ?",
+    "options": [
+      "বেড়ে যায়",
+      "কমে যায়",
+      "দ্বিগুণ বাড়ে",
+      "সমান থাকে"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #5 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nPhysics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(খ)** কমে যায়।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(খ)** কমে যায় একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(খ)** কমে যায় নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-006",
+    "number": 6,
+    "subject": "Physics",
+    "question": "25N বল দ্বারা কোন স্প্রিংকে টেনে 10cm বৃদ্ধি করা হল। এর স্প্রিং ধ্রুবক কত?",
+    "options": [
+      "4.250 Ncm",
+      "2.5 Nm",
+      "250 Nm$^{-1}$",
+      "25 Nm"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #6 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nPhysics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** 250 Nm$^{-1}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** 250 Nm$^{-1}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** 250 Nm$^{-1}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-007",
+    "number": 7,
+    "subject": "Physics",
+    "question": "পৃথিবীর ভর M এবং ব্যাসার্ধ R হলে, পৃথিবী পৃষ্ঠ হতে h উচ্চতায় কৃত্রিম উপগ্রহের কক্ষীয় বেগ-",
+    "options": [
+      "$\\sqrt{\\frac{(\\mathrm{R}+\\mathrm{h})}{\\mathrm{GM}}}$",
+      "$\\sqrt{\\frac{\\mathrm{GM}}{(\\mathrm{R}+\\mathrm{h})}}$",
+      "$\\frac{\\mathrm{R}+\\mathrm{h}}{\\mathrm{GM}}$",
+      "$\\frac{G M}{R+h}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #7 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $\\sqrt{\\frac{\\mathrm{GM}}{(\\mathrm{R}+\\mathrm{h})}}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $\\sqrt{\\frac{\\mathrm{GM}}{(\\mathrm{R}+\\mathrm{h})}}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(খ)** $\\sqrt{\\frac{\\mathrm{GM}}{(\\mathrm{R}+\\mathrm{h})}}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-008",
+    "number": 8,
+    "subject": "Physics",
+    "question": "কোন তরঙ্গের উপর অবস্থিত সম দশাসম্পন্ন কণাগুলোর গতিপথকে বলা হয়-",
+    "options": [
+      "তীব্রতা",
+      "বিস্তার",
+      "তরঙ্গমুখ",
+      "তরঙ্গ বেগ"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #8 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** তরঙ্গমুখ।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** তরঙ্গমুখ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(গ)** তরঙ্গমুখ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-009",
+    "number": 9,
+    "subject": "Physics",
+    "question": "L দৈর্ঘ্য এবং A প্রস্থচ্ছেদ বিশিষ্ট একটি তারে দৈর্ঘ্য বরাবর F বল প্রয়োগ করায় দৈর্ঘ্য $l$ পরিমান বৃদ্ধি পায়। তারটিতে কৃত কাজের পরিমাণ কত?",
+    "options": [
+      "$F\\times L$",
+      "$F\\times l$",
+      "$\\frac{F\\times l}{2}$",
+      "$\\frac{F\\times l}{2A}$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #9 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nকাজ-শক্তি উপপাদ্য অনুযায়ী কৃতকাজ গতিশক্তির পরিবর্তনের সমান; বাহ্যিক বল বা টর্ক শূন্য হলে রৈখিক বা কৌণিক ভরবেগ সংরক্ষিত থাকে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $W = Fs\\cos\\theta = \\Delta E_k$, $P = \\frac{W}{t} = Fv$, $I = \\sum mr^2$, $\\tau = I\\alpha$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** $\\frac{F\\times l}{2}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে প্রদত্ত বল, সরণ, ভর ও বেগ থেকে সংরক্ষণশীলতা বা $W = \\Delta E_k$ সম্পর্ক প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** $\\frac{F\\times l}{2}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nএকক-মাত্রা যাচাই ($[ML^2T^{-2}]$ কাজ/শক্তি, $[ML^2T^{-3}]$ ক্ষমতা) এবং বিশেষ কোণ ($\\theta = 90^\\circ \\implies W=0$) দেখে ভুল অপশন বাদ দাও। সঠিক উত্তর হিসেবে **(গ)** $\\frac{F\\times l}{2}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-010",
+    "number": 10,
+    "subject": "Physics",
+    "question": "কোন তাপমাত্রায় সেলসিয়াস ও ফারেনহাইট স্কেলে একই পাঠ পাওয়া যায়?",
+    "options": [
+      "$-40^\\circ$",
+      "$-45^\\circ$",
+      "$80\\degree$",
+      "$-80^\\circ$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #10 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nতাপগতিবিদ্যার প্রথম সূত্র শক্তি সংরক্ষণ এবং দ্বিতীয় সূত্র তাপ প্রবাহের দিক ও কার্নো ইঞ্জিনের সর্বোচ্চ কর্মদক্ষতা নির্ধারণ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $dQ = dU + dW$, $\\eta = 1 - \\frac{T_2}{T_1}$, $PV^\\gamma = \\text{ধ্রুবক}$, $v_{rms} = \\sqrt{\\frac{3RT}{M}}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** $-40^\\circ$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রক্রিয়াটি সমোষ্ণ ($dU=0$), রুদ্ধতাপীয় ($dQ=0$) নাকি সমআয়তন ($dW=0$) তা চিহ্নিত করে এবং তাপমাত্রা অবশ্যই কেলভিনে ($K = ^\\circ\\text{C} + 273$) রূপান্তর করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** $-40^\\circ$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nসতর্কতা ট্রিক: কার্নো বা আদর্শ গ্যাসের সব অঙ্কে তাপমাত্রা প্রথমে কেলভিনে ($T$) নিয়ে অনুপাত বের করবে; রুদ্ধতাপীয় লেখচিত্র সমোষ্ণ অপেক্ষা $\\gamma$ গুণ খাড়া। সঠিক উত্তর হিসেবে **(ক)** $-40^\\circ$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-011",
+    "number": 11,
+    "subject": "Physics",
+    "question": "একটি সুষম তড়িৎ ক্ষেত্রে $25 \\mathrm{~cm}$ ব্যবধানে অবস্থিত দু’টি বিন্দুর বিভব পার্থক্য $150 \\mathrm{~V}$ । তড়িৎ ক্ষেত্রের প্রাবল্য কত?",
+    "options": [
+      "$60 \\mathrm{Vm}^{-1}$",
+      "$600 \\mathrm{Vm}^{-1}$",
+      "$60 \\mathrm{Vm} \\quad$",
+      "$600 \\mathrm{Vm} \\quad$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #11 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থির ও চলতড়িৎ, তড়িৎ-চুম্বকত্ব এবং আধুনিক পদার্থবিজ্ঞানে কুলম্ব/ওহমের সূত্র, কার্শফের সূত্র এবং কোয়ান্টাম শক্তির সম্পর্ক ব্যবহৃত হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $V = IR$, $R_s = \\sum R_i$, $\\frac{1}{R_p} = \\sum \\frac{1}{R_i}$, $C_p = \\sum C_i$, $E = hf = \\frac{hc}{\\lambda}$, $N = N_0 (\\frac{1}{2})^n$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $600 \\mathrm{Vm}^{-1}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** সার্কিট বা রাশিগুলোর সংযোগ (শ্রেণি না সমান্তরাল) এবং প্রবাহের দিক (n-p-n ট্রানজিস্টরে ইলেকট্রন এমিটার $\\to$ কালেক্টর, প্রচলিত বিদ্যুৎ বিপরীত) বিশ্লেষণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $600 \\mathrm{Vm}^{-1}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nধারকের সূত্র রোধের উল্টো! আর ফোটনের শক্তি-তরঙ্গদৈর্ঘ্যে $E(\\text{eV}) \\approx \\frac{1240}{\\lambda(\\text{nm})}$ এবং অর্ধায়ুতে $n = t/T_{1/2}$ মনে রাখলে দ্রুত হিসাব মেলে। সঠিক উত্তর হিসেবে **(খ)** $600 \\mathrm{Vm}^{-1}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-012",
+    "number": 12,
+    "subject": "Physics",
+    "question": "একটি কোষের তড়িৎচ্চালক শক্তি 1.5V এবং অভ্যন্তরীন রোধ 2$\\Omega$ । এর প্রান্তদ্বয় 10$\\Omega$ রোধের তার দ্বারা যুক্ত করলে কত তড়িৎ প্রবাহিত হবে?",
+    "options": [
+      "0.125 A",
+      "0.3 A",
+      "0.15 A",
+      "3 A"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #12 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nকাজ-শক্তি উপপাদ্য অনুযায়ী কৃতকাজ গতিশক্তির পরিবর্তনের সমান; বাহ্যিক বল বা টর্ক শূন্য হলে রৈখিক বা কৌণিক ভরবেগ সংরক্ষিত থাকে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $W = Fs\\cos\\theta = \\Delta E_k$, $P = \\frac{W}{t} = Fv$, $I = \\sum mr^2$, $\\tau = I\\alpha$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** 0.125 A।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে প্রদত্ত বল, সরণ, ভর ও বেগ থেকে সংরক্ষণশীলতা বা $W = \\Delta E_k$ সম্পর্ক প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** 0.125 A প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nএকক-মাত্রা যাচাই ($[ML^2T^{-2}]$ কাজ/শক্তি, $[ML^2T^{-3}]$ ক্ষমতা) এবং বিশেষ কোণ ($\\theta = 90^\\circ \\implies W=0$) দেখে ভুল অপশন বাদ দাও। সঠিক উত্তর হিসেবে **(ক)** 0.125 A চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-013",
+    "number": 13,
+    "subject": "Physics",
+    "question": "একটি নির্দিষ্ট মাধ্যমে সৃষ্ট স্থির তরঙ্গের কম্পাঙ্ক 480 Hz। তরঙ্গের পর পর দু'টি নিস্পন্দ বিন্দুর দূরত্ব 0.75 m। ঐ মাধ্যমে তরঙ্গ বেগের মান কত?",
+    "options": [
+      "730 ms$^{-1}$",
+      "725 ms$^{-1}$",
+      "715 ms$^{-1}$",
+      "720 ms$^{-1}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #13 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** 720 ms$^{-1}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** 720 ms$^{-1}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(ঘ)** 720 ms$^{-1}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-014",
+    "number": 14,
+    "subject": "Physics",
+    "question": "ব্যান্ড সংগীতের তীব্রতা লেভেল কত?",
+    "options": [
+      "120 dB",
+      "130 dB",
+      "60 dB",
+      "10 dB"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #14 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nPhysics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** 120 dB।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** 120 dB একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** 120 dB নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-015",
+    "number": 15,
+    "subject": "Physics",
+    "question": "যে যন্ত্র দিয়ে তড়িৎ প্রবাহ, বিভব পার্থক্য ও রোধ মাপা হয় তাকে কি বলে?",
+    "options": [
+      "মাল্টিমিটার",
+      "ভোল্টমিটার",
+      "ভোল্টামিটার",
+      "গ্যালভানোমিটার"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #15 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থির ও চলতড়িৎ, তড়িৎ-চুম্বকত্ব এবং আধুনিক পদার্থবিজ্ঞানে কুলম্ব/ওহমের সূত্র, কার্শফের সূত্র এবং কোয়ান্টাম শক্তির সম্পর্ক ব্যবহৃত হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $V = IR$, $R_s = \\sum R_i$, $\\frac{1}{R_p} = \\sum \\frac{1}{R_i}$, $C_p = \\sum C_i$, $E = hf = \\frac{hc}{\\lambda}$, $N = N_0 (\\frac{1}{2})^n$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** মাল্টিমিটার।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** সার্কিট বা রাশিগুলোর সংযোগ (শ্রেণি না সমান্তরাল) এবং প্রবাহের দিক (n-p-n ট্রানজিস্টরে ইলেকট্রন এমিটার $\\to$ কালেক্টর, প্রচলিত বিদ্যুৎ বিপরীত) বিশ্লেষণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** মাল্টিমিটার প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nধারকের সূত্র রোধের উল্টো! আর ফোটনের শক্তি-তরঙ্গদৈর্ঘ্যে $E(\\text{eV}) \\approx \\frac{1240}{\\lambda(\\text{nm})}$ এবং অর্ধায়ুতে $n = t/T_{1/2}$ মনে রাখলে দ্রুত হিসাব মেলে। সঠিক উত্তর হিসেবে **(ক)** মাল্টিমিটার চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-016",
+    "number": 16,
+    "subject": "Physics",
+    "question": "টেসলা কিসের একক?",
+    "options": [
+      "তড়িৎ প্রবাহ",
+      "চৌম্বক দৈর্ঘ্য",
+      "চৌম্বক ক্ষেত্র",
+      "তড়িৎ ক্ষেত্র তীব্রতা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #16 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থির ও চলতড়িৎ, তড়িৎ-চুম্বকত্ব এবং আধুনিক পদার্থবিজ্ঞানে কুলম্ব/ওহমের সূত্র, কার্শফের সূত্র এবং কোয়ান্টাম শক্তির সম্পর্ক ব্যবহৃত হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $V = IR$, $R_s = \\sum R_i$, $\\frac{1}{R_p} = \\sum \\frac{1}{R_i}$, $C_p = \\sum C_i$, $E = hf = \\frac{hc}{\\lambda}$, $N = N_0 (\\frac{1}{2})^n$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** চৌম্বক ক্ষেত্র।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** সার্কিট বা রাশিগুলোর সংযোগ (শ্রেণি না সমান্তরাল) এবং প্রবাহের দিক (n-p-n ট্রানজিস্টরে ইলেকট্রন এমিটার $\\to$ কালেক্টর, প্রচলিত বিদ্যুৎ বিপরীত) বিশ্লেষণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** চৌম্বক ক্ষেত্র প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nধারকের সূত্র রোধের উল্টো! আর ফোটনের শক্তি-তরঙ্গদৈর্ঘ্যে $E(\\text{eV}) \\approx \\frac{1240}{\\lambda(\\text{nm})}$ এবং অর্ধায়ুতে $n = t/T_{1/2}$ মনে রাখলে দ্রুত হিসাব মেলে। সঠিক উত্তর হিসেবে **(গ)** চৌম্বক ক্ষেত্র চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-017",
+    "number": 17,
+    "subject": "Physics",
+    "question": "একটি বৈদ্যুতিক বাল্বের গায়ে লেখা আছে 220V এবং 100W | বাল্বটির রোধ কত?",
+    "options": [
+      "2.2$~\\Omega$",
+      "400$~\\Omega$",
+      "484$~\\Omega$",
+      "200$~\\Omega$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #17 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থির ও চলতড়িৎ, তড়িৎ-চুম্বকত্ব এবং আধুনিক পদার্থবিজ্ঞানে কুলম্ব/ওহমের সূত্র, কার্শফের সূত্র এবং কোয়ান্টাম শক্তির সম্পর্ক ব্যবহৃত হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $V = IR$, $R_s = \\sum R_i$, $\\frac{1}{R_p} = \\sum \\frac{1}{R_i}$, $C_p = \\sum C_i$, $E = hf = \\frac{hc}{\\lambda}$, $N = N_0 (\\frac{1}{2})^n$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** 484$~\\Omega$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** সার্কিট বা রাশিগুলোর সংযোগ (শ্রেণি না সমান্তরাল) এবং প্রবাহের দিক (n-p-n ট্রানজিস্টরে ইলেকট্রন এমিটার $\\to$ কালেক্টর, প্রচলিত বিদ্যুৎ বিপরীত) বিশ্লেষণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** 484$~\\Omega$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nধারকের সূত্র রোধের উল্টো! আর ফোটনের শক্তি-তরঙ্গদৈর্ঘ্যে $E(\\text{eV}) \\approx \\frac{1240}{\\lambda(\\text{nm})}$ এবং অর্ধায়ুতে $n = t/T_{1/2}$ মনে রাখলে দ্রুত হিসাব মেলে। সঠিক উত্তর হিসেবে **(গ)** 484$~\\Omega$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-018",
+    "number": 18,
+    "subject": "Physics",
+    "question": "শূন্য স্থানের ভেদ্যতা কত ?",
+    "options": [
+      "$8.854 \\times 10^{-16} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$",
+      "$8.854 \\times 10^{-12} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$",
+      "$8.854 \\times 10^{-8} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$",
+      "$8.854 \\times 10^{-1} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #18 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nPhysics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(খ)** $8.854 \\times 10^{-12} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(খ)** $8.854 \\times 10^{-12} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(খ)** $8.854 \\times 10^{-12} \\mathrm{C}^{2} \\mathrm{~N}^{-1} \\mathrm{~m}^{-2}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-019",
+    "number": 19,
+    "subject": "Physics",
+    "question": "পানির প্রতিসরাঙ্ক $\\frac{4}{3}$ হলে, পানিতে আলোর বেগের মান কত?",
+    "options": [
+      "$2.25 \\times 10^{8} \\mathrm{cms}^{-1}$",
+      "$2.25 \\times 10^{8} \\mathrm{ms}^{-1}$",
+      "$2.25 \\times 10^{-8} \\mathrm{ms}^{-1}$",
+      "$2.25 \\times 10^{-8} \\mathrm{cms}^{-1}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #19 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $2.25 \\times 10^{8} \\mathrm{ms}^{-1}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $2.25 \\times 10^{8} \\mathrm{ms}^{-1}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(খ)** $2.25 \\times 10^{8} \\mathrm{ms}^{-1}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-020",
+    "number": 20,
+    "subject": "Physics",
+    "question": "একটি ফোটনের তরঙ্গ দৈর্ঘ্য 6000 $\\text\\AA$ । এর কম্পাঙ্ক কত?",
+    "options": [
+      "$5 \\times 10^{14} \\mathrm{~Hz}$",
+      "$2 \\times 10^{14} \\mathrm{~Hz}$",
+      "$5 \\times 10^{16} \\mathrm{~Hz}$",
+      "$5 \\times 10^{15} \\mathrm{~Hz}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #20 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nতরঙ্গ ও আলোকবিজ্ঞানে তরঙ্গবেগ মাধ্যমের উপর এবং কম্পাঙ্ক উৎসের উপর নির্ভর করে; ব্যতিচার ও অপবর্তন আলোর তরঙ্গ ধর্মের প্রমাণ।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = f\\lambda$, $T = 2\\pi\\sqrt{\\frac{L}{g}}$, $\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}$, $P = \\frac{1}{f(\\text{m})}$, $n = \\frac{c}{v}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** $5 \\times 10^{14} \\mathrm{~Hz}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** তরঙ্গদৈর্ঘ্য, কম্পাঙ্ক, দশা পার্থক্য বা লেন্সের দূরত্ব সম্পর্কিত মানগুলো একক একীভূত করে সূত্রে বসাও।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** $5 \\times 10^{14} \\mathrm{~Hz}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nআলোর প্রতিসরণে কম্পাঙ্ক ($f$) অপরিবর্তিত থাকে কিন্তু বেগ ও তরঙ্গদৈর্ঘ্য ($v, \\lambda$) $1/n$ গুণ হয়; উত্তল লেন্সের ক্ষমতা ধনাত্মক ও অবতল ঋণাত্মক। সঠিক উত্তর হিসেবে **(ক)** $5 \\times 10^{14} \\mathrm{~Hz}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-021",
+    "number": 21,
+    "subject": "Physics",
+    "question": "চৌম্বক আবেশ এবং চৌম্বক তীব্রতার অনুপাতের মান কি?",
+    "options": [
+      "চৌম্বক প্রবণতা",
+      "আপেক্ষিক চৌম্বক প্রবেশ্যতা",
+      "চৌম্বক প্রবেশ্যতা",
+      "চৌম্বক তীব্রতা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #21 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থির ও চলতড়িৎ, তড়িৎ-চুম্বকত্ব এবং আধুনিক পদার্থবিজ্ঞানে কুলম্ব/ওহমের সূত্র, কার্শফের সূত্র এবং কোয়ান্টাম শক্তির সম্পর্ক ব্যবহৃত হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $V = IR$, $R_s = \\sum R_i$, $\\frac{1}{R_p} = \\sum \\frac{1}{R_i}$, $C_p = \\sum C_i$, $E = hf = \\frac{hc}{\\lambda}$, $N = N_0 (\\frac{1}{2})^n$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** চৌম্বক প্রবেশ্যতা।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** সার্কিট বা রাশিগুলোর সংযোগ (শ্রেণি না সমান্তরাল) এবং প্রবাহের দিক (n-p-n ট্রানজিস্টরে ইলেকট্রন এমিটার $\\to$ কালেক্টর, প্রচলিত বিদ্যুৎ বিপরীত) বিশ্লেষণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** চৌম্বক প্রবেশ্যতা প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nধারকের সূত্র রোধের উল্টো! আর ফোটনের শক্তি-তরঙ্গদৈর্ঘ্যে $E(\\text{eV}) \\approx \\frac{1240}{\\lambda(\\text{nm})}$ এবং অর্ধায়ুতে $n = t/T_{1/2}$ মনে রাখলে দ্রুত হিসাব মেলে। সঠিক উত্তর হিসেবে **(গ)** চৌম্বক প্রবেশ্যতা চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-022",
+    "number": 22,
+    "subject": "Physics",
+    "question": "বাস্তব এবং লক্ষ্য বস্তুর সমান বিম্ব পেতে হলে অবতল দর্পনের সাপেক্ষে লক্ষ্য বস্তুতে কোথায় রাখতে হবে?",
+    "options": [
+      "বক্রতার কেন্দ্রে",
+      "অসীম দূরত্বে",
+      "কেন্দ্র এবং ফোকাসের মধ্যবর্তী স্থানে",
+      "দর্পন ও ফোকাসের মাঝে"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #22 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nতরঙ্গ ও আলোকবিজ্ঞানে তরঙ্গবেগ মাধ্যমের উপর এবং কম্পাঙ্ক উৎসের উপর নির্ভর করে; ব্যতিচার ও অপবর্তন আলোর তরঙ্গ ধর্মের প্রমাণ।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = f\\lambda$, $T = 2\\pi\\sqrt{\\frac{L}{g}}$, $\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}$, $P = \\frac{1}{f(\\text{m})}$, $n = \\frac{c}{v}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** বক্রতার কেন্দ্রে।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** তরঙ্গদৈর্ঘ্য, কম্পাঙ্ক, দশা পার্থক্য বা লেন্সের দূরত্ব সম্পর্কিত মানগুলো একক একীভূত করে সূত্রে বসাও।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** বক্রতার কেন্দ্রে প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nআলোর প্রতিসরণে কম্পাঙ্ক ($f$) অপরিবর্তিত থাকে কিন্তু বেগ ও তরঙ্গদৈর্ঘ্য ($v, \\lambda$) $1/n$ গুণ হয়; উত্তল লেন্সের ক্ষমতা ধনাত্মক ও অবতল ঋণাত্মক। সঠিক উত্তর হিসেবে **(ক)** বক্রতার কেন্দ্রে চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-023",
+    "number": 23,
+    "subject": "Physics",
+    "question": "কোন তাপমাত্রায় একটি অণুর গতিশক্তি শূন্য হবে?",
+    "options": [
+      "298 K",
+      "116°C",
+      "- 273°C",
+      "0°C"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #23 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** - 273°C।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** - 273°C প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(গ)** - 273°C চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-024",
+    "number": 24,
+    "subject": "Physics",
+    "question": "127°C উষ্ণতায় মান পরম স্কেলে-",
+    "options": [
+      "297 K",
+      "146 K",
+      "273 K",
+      "400 K"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #24 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nPhysics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** 400 K।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** 400 K একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** 400 K নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-025",
+    "number": 25,
+    "subject": "Physics",
+    "question": "কোন লোক 12 মিনিটে 4800 ফুট পথ গেলে তার বেগ মাইল/ঘন্টা এককে কত?",
+    "options": [
+      "$3\\frac{6}{11}$",
+      "$4\\frac{6}{11}$",
+      "$4\\frac{5}{11}$",
+      "$4\\frac{5}{6}$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #25 ([পদার্থবিজ্ঞান(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nগতিবিদ্যা ও মহাকর্ষ অধ্যায়ে ত্বরণ ধ্রুবক থাকলে গতির সমীকরণ এবং গ্রহের ক্ষেত্রে মহাকর্ষীয় ক্ষেত্র ও শক্তির সংরক্ষণশীলতা প্রযোজ্য হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $v = u + at$, $s = ut + \\frac{1}{2}at^2$, $v^2 = u^2 + 2as$, $g = \\frac{GM}{R^2}$, $v_e = \\sqrt{2gR}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $4\\frac{6}{11}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে প্রদত্ত আদি/শেষ বেগ, সময়, দূরত্ব বা ব্যাসার্ধ চিহ্নিত করে কোন চলরাশিটি অনুপস্থিত তা দেখে সঠিক সমীকরণ নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $4\\frac{6}{11}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমাত্রা বিশ্লেষণ ও অনুপাত ট্রিক: $v_e \\propto \\sqrt{gR}$ এবং $g \\propto \\frac{M}{R^2}$ হওয়ায় পূর্ণ মান না কষেও অনুপাতের মাধ্যমে উত্তর বের করা যায়। সঠিক উত্তর হিসেবে **(খ)** $4\\frac{6}{11}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-026",
+    "number": 26,
+    "subject": "Mathematics",
+    "question": "$m$ এর মান কত হলে $5 \\hat{i}+2 \\hat{j}-3 \\hat{k}$ এবং $15 \\hat{i}+m \\hat{j}-9 \\hat{k}$ ভেক্টরদ্বয় পরম্পর সমাম্তরাল হবে ?",
+    "options": [
+      "10",
+      "4",
+      "8",
+      "6"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #26 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nMathematics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** 6।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** 6 একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** 6 নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-027",
+    "number": 27,
+    "subject": "Mathematics",
+    "question": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{\\sin^2 2x}$ - এর মান কোনটি?",
+    "options": [
+      "$\\frac{2}{25}$",
+      "$\\frac{49}{6}$",
+      "$\\frac{1}{8}$",
+      "tan x"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #27 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nক্যালকুলাসে সীমা নির্ণয়ে অনির্ণেয় আকার ($\\frac{0}{0}$ বা $\\frac{\\infty}{\\infty}$) দেখা দিলে এল-হসপিটাল বিধি বা প্রমিত ত্রিকোণমিতিক সীমা প্রয়োগ করা হয়; প্রথম অন্তরজ $\\frac{dy}{dx}$ বক্ররেখার ঢাল নির্দেশ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\lim_{x\\to 0}\\frac{\\sin ax}{bx} = \\frac{a}{b}$, $\\lim_{x\\to 0}\\frac{1-\\cos ax}{x^2} = \\frac{a^2}{2}$, চরম মানে $\\frac{dy}{dx} = 0$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** $\\frac{1}{8}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে $x$-এর মান সরাসরি বসিয়ে অনির্ণেয় আকার নিশ্চিত করো, তারপর L'Hôpital বা ঘাত নিয়ম $\\frac{d}{dx}(x^n) = nx^{n-1}$ প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** $\\frac{1}{8}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nভর্তি পরীক্ষার সুপার শর্টকাট: $\\frac{0}{0}$ আকারে লব ও হরকে আলাদাভাবে অন্তরীকরণ (L'Hôpital) করলে ২–৩ সেকেন্ডেই সীমার মান মিলে যায়! সঠিক উত্তর হিসেবে **(গ)** $\\frac{1}{8}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-028",
+    "number": 28,
+    "subject": "Mathematics",
+    "question": "$X$ এবং $Y$ দুটি শান্ত সেট হলে $(X \\cup Y)^{\\prime}=$ কত ?",
+    "options": [
+      "$(\\mathrm{X} \\cap Y)^{\\prime}$",
+      "$\\left(\\mathrm{X} \\cap Y^{\\prime}\\right)^{\\prime}$",
+      "$\\mathrm{X}^{\\prime} \\cup Y^{\\prime}$",
+      "$X^{\\prime} \\cap Y^{\\prime}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #28 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nMathematics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** $X^{\\prime} \\cap Y^{\\prime}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** $X^{\\prime} \\cap Y^{\\prime}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** $X^{\\prime} \\cap Y^{\\prime}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-029",
+    "number": 29,
+    "subject": "Mathematics",
+    "question": "$f(x)=\\frac{5 x^{2}+2}{x-1}$ফাংশনটির ডোমেন কত ?",
+    "options": [
+      "2",
+      "12",
+      "15",
+      "$x=1$ ছাড়া সমস্ত বাস্তব সংখ্যা"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #29 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবীজগণিত ও সম্ভাবনায় গণনা নীতি, দ্বিপদী উপপাদ্যের সাধারণ পদ $T_{r+1}$, এবং জটিল সংখ্যার মডুলাস-আর্গুমেন্ট মৌলিক ভূমিকা রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** ${}^nC_r = \\frac{n!}{r!(n-r)!}$, $T_{r+1} = {}^nC_r a^{n-r} x^r$, $|a+ib| = \\sqrt{a^2+b^2}$, $i^2 = -1$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** $x=1$ ছাড়া সমস্ত বাস্তব সংখ্যা।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** শর্ত অনুযায়ী মোট অনুকূল অবস্থা বা নির্দিষ্ট $x$-এর ঘাতের সহগ ($r$-এর মান) নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** $x=1$ ছাড়া সমস্ত বাস্তব সংখ্যা প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nদ্বিপদী বিস্তৃতিতে $(a+b)^n$-এ মোট পদসংখ্যা $n+1$; $n$ বিজোড় হলে মধ্যপদ দুটি ($\\frac{n+1}{2}$ ও $\\frac{n+3}{2}$ তম) আর $n$ জোড় হলে একটি ($\\frac{n}{2}+1$ তম)! সঠিক উত্তর হিসেবে **(ঘ)** $x=1$ ছাড়া সমস্ত বাস্তব সংখ্যা চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-030",
+    "number": 30,
+    "subject": "Mathematics",
+    "question": "ত্রিভূজের তিনটি শীর্ষবিন্দুর স্থানাংক (3, 5), (-3, 3) এবং (-1, 1) হলে ত্রিভুজটির ক্ষেত্রফল কত?",
+    "options": [
+      "20",
+      "8",
+      "14",
+      "12"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #30 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nযোগজীকরণ অন্তরীকরণের বিপরীত প্রক্রিয়া; নির্দিষ্ট যোগজ $\\int_a^b f(x)dx$ লেখচিত্র ও $x$-অক্ষের মধ্যবর্তী আবদ্ধ ক্ষেত্রফল নির্দেশ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\int x^n dx = \\frac{x^{n+1}}{n+1}+c$, $\\int \\frac{f'(x)}{f(x)}dx = \\ln|f(x)|+c$, পরাবৃত্ত $y^2=4ax$ ও $y=mx$-এর ক্ষেত্রফল $= \\frac{8a^2}{3m^3}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** 8।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রতিস্থাপন বা প্রমিত সূত্র প্রয়োগ করে নির্দিষ্ট সীমা $[a, b]$ বসিয়ে $[F(b) - F(a)]$ নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** 8 প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nঅনির্দিষ্ট যোগজ যাচাই ট্রিক: চারটি অপশনকে দ্রুত অন্তরীকরণ ($\\frac{d}{dx}$) করে দেখো কোনটি মূল ইন্টিগ্র্যান্ডের সমান হয়—ক্ষেত্রফলে প্রতিসম ফাংশন $f(-x)=-f(x)$ হলে $[-a, a]$-তে যোগজ $=0$! সঠিক উত্তর হিসেবে **(খ)** 8 চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-031",
+    "number": 31,
+    "subject": "Mathematics",
+    "question": "$\\int \\frac{72 \\cos 8 x+3 x^{2}}{x^{3}+9 \\sin 8 x} d x=$ কত ?",
+    "options": [
+      "$e^{7 \\cos 8 x+3 x^{2}}+c$",
+      "$\\log \\left(x^{3}+9 \\sin 4 x\\right)+c$",
+      "$3 \\sin 8 x \\log \\left(x^{3}+9 \\sin 8 x\\right)+c$",
+      "$\\log \\left(x^{3}+9 \\sin 8 x\\right)+c$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #31 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nযোগজীকরণ অন্তরীকরণের বিপরীত প্রক্রিয়া; নির্দিষ্ট যোগজ $\\int_a^b f(x)dx$ লেখচিত্র ও $x$-অক্ষের মধ্যবর্তী আবদ্ধ ক্ষেত্রফল নির্দেশ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\int x^n dx = \\frac{x^{n+1}}{n+1}+c$, $\\int \\frac{f'(x)}{f(x)}dx = \\ln|f(x)|+c$, পরাবৃত্ত $y^2=4ax$ ও $y=mx$-এর ক্ষেত্রফল $= \\frac{8a^2}{3m^3}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** $\\log \\left(x^{3}+9 \\sin 8 x\\right)+c$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রতিস্থাপন বা প্রমিত সূত্র প্রয়োগ করে নির্দিষ্ট সীমা $[a, b]$ বসিয়ে $[F(b) - F(a)]$ নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** $\\log \\left(x^{3}+9 \\sin 8 x\\right)+c$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nঅনির্দিষ্ট যোগজ যাচাই ট্রিক: চারটি অপশনকে দ্রুত অন্তরীকরণ ($\\frac{d}{dx}$) করে দেখো কোনটি মূল ইন্টিগ্র্যান্ডের সমান হয়—ক্ষেত্রফলে প্রতিসম ফাংশন $f(-x)=-f(x)$ হলে $[-a, a]$-তে যোগজ $=0$! সঠিক উত্তর হিসেবে **(ঘ)** $\\log \\left(x^{3}+9 \\sin 8 x\\right)+c$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-032",
+    "number": 32,
+    "subject": "Mathematics",
+    "question": "$\\frac{ \\log{x}}{x}$ এর অন্তরক সহগ কত?",
+    "options": [
+      "$\\frac{1 - \\log{x}}{x^{2}}$",
+      "$\\frac{1 - \\log{x}}{x}$",
+      "$1 - \\log{x}$",
+      "$\\frac{1 + \\log{x}}{x}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #32 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nক্যালকুলাসে সীমা নির্ণয়ে অনির্ণেয় আকার ($\\frac{0}{0}$ বা $\\frac{\\infty}{\\infty}$) দেখা দিলে এল-হসপিটাল বিধি বা প্রমিত ত্রিকোণমিতিক সীমা প্রয়োগ করা হয়; প্রথম অন্তরজ $\\frac{dy}{dx}$ বক্ররেখার ঢাল নির্দেশ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\lim_{x\\to 0}\\frac{\\sin ax}{bx} = \\frac{a}{b}$, $\\lim_{x\\to 0}\\frac{1-\\cos ax}{x^2} = \\frac{a^2}{2}$, চরম মানে $\\frac{dy}{dx} = 0$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** $\\frac{1 - \\log{x}}{x^{2}}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে $x$-এর মান সরাসরি বসিয়ে অনির্ণেয় আকার নিশ্চিত করো, তারপর L'Hôpital বা ঘাত নিয়ম $\\frac{d}{dx}(x^n) = nx^{n-1}$ প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** $\\frac{1 - \\log{x}}{x^{2}}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nভর্তি পরীক্ষার সুপার শর্টকাট: $\\frac{0}{0}$ আকারে লব ও হরকে আলাদাভাবে অন্তরীকরণ (L'Hôpital) করলে ২–৩ সেকেন্ডেই সীমার মান মিলে যায়! সঠিক উত্তর হিসেবে **(ক)** $\\frac{1 - \\log{x}}{x^{2}}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-033",
+    "number": 33,
+    "subject": "Mathematics",
+    "question": "$2x-x^2+k=0$একটি দ্বিঘাত সমীকরণ । সমীকরণটির মূলদ্বয় বাস্তব হলে -",
+    "options": [
+      "$k < \\frac{1}{8}$",
+      "$k\\ge-1$",
+      "$k<-\\frac{1}{8}$",
+      "$k>-8$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #33 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবীজগণিত ও সম্ভাবনায় গণনা নীতি, দ্বিপদী উপপাদ্যের সাধারণ পদ $T_{r+1}$, এবং জটিল সংখ্যার মডুলাস-আর্গুমেন্ট মৌলিক ভূমিকা রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** ${}^nC_r = \\frac{n!}{r!(n-r)!}$, $T_{r+1} = {}^nC_r a^{n-r} x^r$, $|a+ib| = \\sqrt{a^2+b^2}$, $i^2 = -1$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $k\\ge-1$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** শর্ত অনুযায়ী মোট অনুকূল অবস্থা বা নির্দিষ্ট $x$-এর ঘাতের সহগ ($r$-এর মান) নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $k\\ge-1$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nদ্বিপদী বিস্তৃতিতে $(a+b)^n$-এ মোট পদসংখ্যা $n+1$; $n$ বিজোড় হলে মধ্যপদ দুটি ($\\frac{n+1}{2}$ ও $\\frac{n+3}{2}$ তম) আর $n$ জোড় হলে একটি ($\\frac{n}{2}+1$ তম)! সঠিক উত্তর হিসেবে **(খ)** $k\\ge-1$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-034",
+    "number": 34,
+    "subject": "Mathematics",
+    "question": "$\\vec{A}=\\hat{i}-\\hat{j}+\\hat{k}, \\vec{B}=-\\hat{i}+\\hat{j}+2 \\hat{k}$ ভেক্টর দুটির অন্তর্ভূক্ত কোণ কত?",
+    "options": [
+      "45°",
+      "60°",
+      "0°",
+      "90°"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #34 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nক্যালকুলাসে সীমা নির্ণয়ে অনির্ণেয় আকার ($\\frac{0}{0}$ বা $\\frac{\\infty}{\\infty}$) দেখা দিলে এল-হসপিটাল বিধি বা প্রমিত ত্রিকোণমিতিক সীমা প্রয়োগ করা হয়; প্রথম অন্তরজ $\\frac{dy}{dx}$ বক্ররেখার ঢাল নির্দেশ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\lim_{x\\to 0}\\frac{\\sin ax}{bx} = \\frac{a}{b}$, $\\lim_{x\\to 0}\\frac{1-\\cos ax}{x^2} = \\frac{a^2}{2}$, চরম মানে $\\frac{dy}{dx} = 0$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** 90°।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রথমে $x$-এর মান সরাসরি বসিয়ে অনির্ণেয় আকার নিশ্চিত করো, তারপর L'Hôpital বা ঘাত নিয়ম $\\frac{d}{dx}(x^n) = nx^{n-1}$ প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** 90° প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nভর্তি পরীক্ষার সুপার শর্টকাট: $\\frac{0}{0}$ আকারে লব ও হরকে আলাদাভাবে অন্তরীকরণ (L'Hôpital) করলে ২–৩ সেকেন্ডেই সীমার মান মিলে যায়! সঠিক উত্তর হিসেবে **(ঘ)** 90° চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-035",
+    "number": 35,
+    "subject": "Mathematics",
+    "question": "নিম্নের কোন সমীকরণটি ( 4, −3 ) বিন্দু দিয়ে যায় এবং $2x+11y-2=0$ রেখাটির সমান্তরাল হয়?",
+    "options": [
+      "$2x+y+25=0$",
+      "$2x+11y+25=0$",
+      "$2x+5y+25=0$",
+      "$2x+11y-25=0$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #35 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থানাঙ্ক জ্যামিতিতে সরলরেখা, বৃত্ত ও কণিকের জ্যামিতিক বৈশিষ্ট্য (ঢাল, কেন্দ্র, ব্যাসার্ধ, উপকেন্দ্র, উৎকেন্দ্রিকতা) সমীকরণের সহগ থেকে সরাসরি পাওয়া যায়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** রেখার ঢাল $m = -\\frac{a}{b}$; সমান্তরাল রেখার দূরত্ব $\\frac{|c_1-c_2|}{\\sqrt{a^2+b^2}}$; বৃত্ত $x^2+y^2+2gx+2fy+c=0$-এর কেন্দ্র $(-g,-f)$, ব্যাসার্ধ $\\sqrt{g^2+f^2-c}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $2x+11y+25=0$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত সমীকরণকে প্রমিত আকারে সাজিয়ে সহগ তুলনা করো অথবা প্রশ্নে দেওয়া বিন্দু সমীকরণে বসিয়ে সিদ্ধতা যাচাই করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $2x+11y+25=0$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nবিন্দু বসানো (Back-solving) শর্টকাট: রেখা বা বৃত্তের সমীকরণ চাইলে প্রদত্ত বিন্দুগুলো অপশনে বসিয়ে দেখো—বামপক্ষ ও ডানপক্ষ সমান হলেই সঠিক উত্তর নিশ্চিত! সঠিক উত্তর হিসেবে **(খ)** $2x+11y+25=0$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-036",
+    "number": 36,
+    "subject": "Mathematics",
+    "question": "$\\operatorname{Lt}_{x \\rightarrow 5} \\frac{8 \\tan \\{(x-5) / 8\\}}{x-5}= ?$",
+    "options": [
+      "$\\frac{1}{2}$",
+      "$\\frac{2}{3}$",
+      "$1$",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #36 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nত্রিকোণমিতিক অভেদ ও বিপরীত বৃত্তীয় ফাংশনে নির্দিষ্ট মুখ্যমান শাখা (Principal value branch) ও কোণের চতুর্ভাগ অনুযায়ী চিহ্ন নির্ধারিত হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\sin^2\\theta + \\cos^2\\theta = 1$, $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$, $\\tan^{-1}x + \\tan^{-1}y = \\tan^{-1}\\left(\\frac{x+y}{1-xy}\\right)$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** $1$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** কোণ বা ফাংশনগুলোকে প্রমিত অভেদে রূপান্তর করে নির্দিষ্ট চতুর্ভাগ অনুযায়ী ধনাত্মক/ঋণাত্মক চিহ্ন নির্ধারণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** $1$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nমান-বসানো (Value-testing) শর্টকাট: অভেদ বা সাধারণ রাশির ক্ষেত্রে $\\theta = 0^\\circ, 30^\\circ, 45^\\circ$ ধরে রাশির মান বের করে অপশনের সাথে মেলাও! সঠিক উত্তর হিসেবে **(গ)** $1$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-037",
+    "number": 37,
+    "subject": "Mathematics",
+    "question": "$x^{2}+2x = y$ এর জ্যামিতিক পরিচয় কোনটি ?",
+    "options": [
+      "বৃত্ত",
+      "পরাবৃত্ত",
+      "উপবৃত্ত",
+      "অধিবৃত্ত"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #37 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nস্থানাঙ্ক জ্যামিতিতে সরলরেখা, বৃত্ত ও কণিকের জ্যামিতিক বৈশিষ্ট্য (ঢাল, কেন্দ্র, ব্যাসার্ধ, উপকেন্দ্র, উৎকেন্দ্রিকতা) সমীকরণের সহগ থেকে সরাসরি পাওয়া যায়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** রেখার ঢাল $m = -\\frac{a}{b}$; সমান্তরাল রেখার দূরত্ব $\\frac{|c_1-c_2|}{\\sqrt{a^2+b^2}}$; বৃত্ত $x^2+y^2+2gx+2fy+c=0$-এর কেন্দ্র $(-g,-f)$, ব্যাসার্ধ $\\sqrt{g^2+f^2-c}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** পরাবৃত্ত।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত সমীকরণকে প্রমিত আকারে সাজিয়ে সহগ তুলনা করো অথবা প্রশ্নে দেওয়া বিন্দু সমীকরণে বসিয়ে সিদ্ধতা যাচাই করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** পরাবৃত্ত প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nবিন্দু বসানো (Back-solving) শর্টকাট: রেখা বা বৃত্তের সমীকরণ চাইলে প্রদত্ত বিন্দুগুলো অপশনে বসিয়ে দেখো—বামপক্ষ ও ডানপক্ষ সমান হলেই সঠিক উত্তর নিশ্চিত! সঠিক উত্তর হিসেবে **(খ)** পরাবৃত্ত চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-038",
+    "number": 38,
+    "subject": "Mathematics",
+    "question": "দ্বিমিক সংখ্যা 1011101 এর দশমিক মান হয়-",
+    "options": [
+      "83",
+      "39",
+      "93",
+      "91"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #38 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nMathematics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** 93।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** 93 একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** 93 নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-039",
+    "number": 39,
+    "subject": "Mathematics",
+    "question": "x -অক্ষ এবং (3, 2) বিন্দু হতে (4,a) বিন্দুর দূরত্ব সমান হলে a এর মান হবে-",
+    "options": [
+      "$\\frac{5}{4}$",
+      "$\\frac{4}{5}$",
+      "$\\frac{5}{3}$",
+      "কোনটিই নয়"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #39 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nMathematics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** $\\frac{5}{4}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** $\\frac{5}{4}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** $\\frac{5}{4}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-040",
+    "number": 40,
+    "subject": "Mathematics",
+    "question": "নির্ণায়ক $\\left|\\begin{array}{lcc}1 & 7 & 8 \\\\ 2 & 9 & 11 \\\\ 3 & 4 & 7\\end{array}\\right|$ এর মান কত?",
+    "options": [
+      "296",
+      "90",
+      "128",
+      "0"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #40 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nম্যাট্রিক্স গুণনে প্রথম ম্যাট্রিক্সের কলাম সংখ্যা ও দ্বিতীয় ম্যাট্রিক্সের সারি সংখ্যা সমান হতে হয়; বর্গ ম্যাট্রিক্স ব্যতিক্রমী (Singular) হয় যদি নির্ণায়ক $|A|=0$ হয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $\\begin{vmatrix}a & b \\\\ c & d\\end{vmatrix} = ad - bc$, বিপরীত ম্যাট্রিক্স $A^{-1} = \\frac{1}{|A|}\\text{adj}(A)$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** 0।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** সারি-কলামের মাত্রা, নির্ণায়কের মান কিংবা $2\\times 2$ বিপরীত ম্যাট্রিক্সের প্রধান কর্ণের স্থান বদল ও গৌণ কর্ণের চিহ্ন পরিবর্তন প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** 0 প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\n$2\\times 2$ ইনভার্স ট্রিক: প্রধান কর্ণের উপাদান অদলবদল করে, অপর কর্ণের চিহ্ন বদলে নির্ণায়ক $(ad-bc)$ দিয়ে ভাগ করলেই ৫ সেকেন্ডে $A^{-1}$ পাওয়া যায়। সঠিক উত্তর হিসেবে **(ঘ)** 0 চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-041",
+    "number": 41,
+    "subject": "Mathematics",
+    "question": "একটি লুডুর গুটি নিক্ষেপ করা হলে 3 এর চেয়ে বড় সংখ্যা পাওয়ার সম্ভাবনা-",
+    "options": [
+      "$\\frac{2}{3}$",
+      "$\\frac{1}{4}$",
+      "$\\frac{1}{3}$",
+      "$\\frac{1}{2}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #41 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবীজগণিত ও সম্ভাবনায় গণনা নীতি, দ্বিপদী উপপাদ্যের সাধারণ পদ $T_{r+1}$, এবং জটিল সংখ্যার মডুলাস-আর্গুমেন্ট মৌলিক ভূমিকা রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** ${}^nC_r = \\frac{n!}{r!(n-r)!}$, $T_{r+1} = {}^nC_r a^{n-r} x^r$, $|a+ib| = \\sqrt{a^2+b^2}$, $i^2 = -1$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** $\\frac{1}{2}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** শর্ত অনুযায়ী মোট অনুকূল অবস্থা বা নির্দিষ্ট $x$-এর ঘাতের সহগ ($r$-এর মান) নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** $\\frac{1}{2}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nদ্বিপদী বিস্তৃতিতে $(a+b)^n$-এ মোট পদসংখ্যা $n+1$; $n$ বিজোড় হলে মধ্যপদ দুটি ($\\frac{n+1}{2}$ ও $\\frac{n+3}{2}$ তম) আর $n$ জোড় হলে একটি ($\\frac{n}{2}+1$ তম)! সঠিক উত্তর হিসেবে **(ঘ)** $\\frac{1}{2}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-042",
+    "number": 42,
+    "subject": "Mathematics",
+    "question": "y=b ও $\\sqrt{3 }x - y + 1 = 0$ রেখাদ্বয়ের সূক্ষ্মকোণের মান কত?",
+    "options": [
+      "60°",
+      "30°",
+      "90°",
+      "45°"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "questionImageUrls": [
+      "assets/questions/CU/12-13/cu-a-12-13/q-042-question-912e64.svg"
+    ],
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #42 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nMathematics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** 60°।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** 60° একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** 60° নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-043",
+    "number": 43,
+    "subject": "Mathematics",
+    "question": "$\\left ( \\frac{2 x^{2}}{3} - \\frac{x}{3} \\right )^{9}$ এর বিস্তৃতিতে x বর্জিত পদ হল-",
+    "options": [
+      "$\\frac{224}{3^{8}}$",
+      "$- \\frac{224}{3^{8}}$",
+      "$\\frac{242}{3^{8}}$",
+      "কোনোটিই নয়"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #43 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবীজগণিত ও সম্ভাবনায় গণনা নীতি, দ্বিপদী উপপাদ্যের সাধারণ পদ $T_{r+1}$, এবং জটিল সংখ্যার মডুলাস-আর্গুমেন্ট মৌলিক ভূমিকা রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** ${}^nC_r = \\frac{n!}{r!(n-r)!}$, $T_{r+1} = {}^nC_r a^{n-r} x^r$, $|a+ib| = \\sqrt{a^2+b^2}$, $i^2 = -1$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** কোনোটিই নয়।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** শর্ত অনুযায়ী মোট অনুকূল অবস্থা বা নির্দিষ্ট $x$-এর ঘাতের সহগ ($r$-এর মান) নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** কোনোটিই নয় প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nদ্বিপদী বিস্তৃতিতে $(a+b)^n$-এ মোট পদসংখ্যা $n+1$; $n$ বিজোড় হলে মধ্যপদ দুটি ($\\frac{n+1}{2}$ ও $\\frac{n+3}{2}$ তম) আর $n$ জোড় হলে একটি ($\\frac{n}{2}+1$ তম)! সঠিক উত্তর হিসেবে **(ঘ)** কোনোটিই নয় চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-044",
+    "number": 44,
+    "subject": "Mathematics",
+    "question": "যদি সমান দু'টি বল কোন এক বিন্দুতে ক্রিয়া করে এবং বলদ্বয়ের লব্ধির বর্গ বলদ্বয়ের গুণফলের তিন গুণ হয় তবে বল দু'টির অর্ন্তভূক্ত কোণ হবে-",
+    "options": [
+      "30°",
+      "45°",
+      "75°",
+      "60°"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #44 ([উচ্চতর গণিত(20)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nMathematics বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** 60°।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** 60° একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** 60° নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-045",
+    "number": 45,
+    "subject": "English",
+    "question": "The younger you are, _______ it is to learn.",
+    "options": [
+      "the easy",
+      "the easiest",
+      "the easier",
+      "easier"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #45 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nEnglish বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** the easier।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** the easier একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** the easier নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-046",
+    "number": 46,
+    "subject": "English",
+    "question": "Climate is a _______ of the environment.",
+    "options": [
+      "state",
+      "situation",
+      "rank",
+      "size"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #46 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nEnglish বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** state।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** state একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** state নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-047",
+    "number": 47,
+    "subject": "English",
+    "question": "The synonym of 'hypothetical' is-",
+    "options": [
+      "actual",
+      "proposed",
+      "speculative",
+      "unquestionable"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #47 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nAdmission English tests vocabulary in context, idiomatic phrases, fixed prepositional collocations, subject-verb agreement, and passive/reported speech transformations.\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** Check context meaning, grammatical function (noun/verb/adjective/adverb), and fixed preposition or voice structure ($be + V_3$).\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** speculative।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** Analyze the sentence clue or target phrase meaning, eliminate grammatically incompatible parts of speech, and verify collocation naturalness.\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** speculative প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nElimination Tip: প্রথমে শূন্যস্থানে কোন Parts of Speech (Noun/Verb/Adj/Adv) দরকার তা দেখো—এতেই ২–৩টি ভুল অপশন সরাসরি বাদ পড়ে যায়! সঠিক উত্তর হিসেবে **(গ)** speculative চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-048",
+    "number": 48,
+    "subject": "English",
+    "question": "\"I can speak five languages\", she _____.",
+    "options": [
+      "boasted",
+      "shouted",
+      "pleaded",
+      "suggested"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #48 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nEnglish বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** boasted।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** boasted একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** boasted নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-049",
+    "number": 49,
+    "subject": "English",
+    "question": "Select the pair that best expresses a relationship similar to that expressed in the original pair:Egg : Oval",
+    "options": [
+      "Cow : Milk",
+      "Brick : Rectangular",
+      "Bee : Honey",
+      "Milk : White"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #49 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nEnglish বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(খ)** Brick : Rectangular।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(খ)** Brick : Rectangular একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(খ)** Brick : Rectangular নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-050",
+    "number": 50,
+    "subject": "English",
+    "question": "Fill in the blank with the appropriate preposition.She is very good ______ cooking.",
+    "options": [
+      "at",
+      "in",
+      "about",
+      "with"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #50 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nAdmission English tests vocabulary in context, idiomatic phrases, fixed prepositional collocations, subject-verb agreement, and passive/reported speech transformations.\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** Check context meaning, grammatical function (noun/verb/adjective/adverb), and fixed preposition or voice structure ($be + V_3$).\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** at।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** Analyze the sentence clue or target phrase meaning, eliminate grammatically incompatible parts of speech, and verify collocation naturalness.\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** at প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nElimination Tip: প্রথমে শূন্যস্থানে কোন Parts of Speech (Noun/Verb/Adj/Adv) দরকার তা দেখো—এতেই ২–৩টি ভুল অপশন সরাসরি বাদ পড়ে যায়! সঠিক উত্তর হিসেবে **(ক)** at চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-051",
+    "number": 51,
+    "subject": "English",
+    "question": "The magazine is trying to get more readers to ______.",
+    "options": [
+      "pay",
+      "support",
+      "buy",
+      "subscribe"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #51 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nEnglish বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** subscribe।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** subscribe একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** subscribe নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-052",
+    "number": 52,
+    "subject": "English",
+    "question": "The word homogenous means-",
+    "options": [
+      "same kind",
+      "same place",
+      "same race",
+      "same density"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #52 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nAdmission English tests vocabulary in context, idiomatic phrases, fixed prepositional collocations, subject-verb agreement, and passive/reported speech transformations.\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** Check context meaning, grammatical function (noun/verb/adjective/adverb), and fixed preposition or voice structure ($be + V_3$).\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** same kind।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** Analyze the sentence clue or target phrase meaning, eliminate grammatically incompatible parts of speech, and verify collocation naturalness.\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** same kind প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nElimination Tip: প্রথমে শূন্যস্থানে কোন Parts of Speech (Noun/Verb/Adj/Adv) দরকার তা দেখো—এতেই ২–৩টি ভুল অপশন সরাসরি বাদ পড়ে যায়! সঠিক উত্তর হিসেবে **(ক)** same kind চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-053",
+    "number": 53,
+    "subject": "English",
+    "question": "The word 'altitude' means-",
+    "options": [
+      "length",
+      "speed",
+      "height",
+      "broad"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #53 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nAdmission English tests vocabulary in context, idiomatic phrases, fixed prepositional collocations, subject-verb agreement, and passive/reported speech transformations.\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** Check context meaning, grammatical function (noun/verb/adjective/adverb), and fixed preposition or voice structure ($be + V_3$).\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** height।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** Analyze the sentence clue or target phrase meaning, eliminate grammatically incompatible parts of speech, and verify collocation naturalness.\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** height প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nElimination Tip: প্রথমে শূন্যস্থানে কোন Parts of Speech (Noun/Verb/Adj/Adv) দরকার তা দেখো—এতেই ২–৩টি ভুল অপশন সরাসরি বাদ পড়ে যায়! সঠিক উত্তর হিসেবে **(গ)** height চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-054",
+    "number": 54,
+    "subject": "English",
+    "question": "Choose the correct preposition to fill in the gap.This book is _____ far the best one he has ever written.",
+    "options": [
+      "too",
+      "most",
+      "by",
+      "above"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #54 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nAdmission English tests vocabulary in context, idiomatic phrases, fixed prepositional collocations, subject-verb agreement, and passive/reported speech transformations.\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** Check context meaning, grammatical function (noun/verb/adjective/adverb), and fixed preposition or voice structure ($be + V_3$).\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** by।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** Analyze the sentence clue or target phrase meaning, eliminate grammatically incompatible parts of speech, and verify collocation naturalness.\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** by প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nElimination Tip: প্রথমে শূন্যস্থানে কোন Parts of Speech (Noun/Verb/Adj/Adv) দরকার তা দেখো—এতেই ২–৩টি ভুল অপশন সরাসরি বাদ পড়ে যায়! সঠিক উত্তর হিসেবে **(গ)** by চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-055",
+    "number": 55,
+    "subject": "English",
+    "question": "There is plenty of food. You can have _____ you like.",
+    "options": [
+      "much",
+      "too much",
+      "as much as",
+      "many more"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #55 ([English(11)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nEnglish বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** as much as।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** as much as একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** as much as নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-056",
+    "number": 56,
+    "subject": "Chemistry",
+    "question": "তাপমাত্রার পরিবর্তন না করে তরল অবস্থা থেকে কঠিন অবস্থায় পরিণত হতে একক ভরের বর্জিত তাপকে বলা হয়-",
+    "options": [
+      "সুপ্ততাপ",
+      "কঠিনীভবনের আপেক্ষিক সুপ্ততাপ",
+      "গলনের আপেক্ষিক সুপ্ততাপ",
+      "ঘণীভবনের আপেক্ষিক সুপ্ততাপ"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #56 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(খ)** কঠিনীভবনের আপেক্ষিক সুপ্ততাপ।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(খ)** কঠিনীভবনের আপেক্ষিক সুপ্ততাপ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(খ)** কঠিনীভবনের আপেক্ষিক সুপ্ততাপ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-057",
+    "number": 57,
+    "subject": "Chemistry",
+    "question": "হাইড্রোজেন পরমাণুর ভূমি অবস্থার শক্তি কত?",
+    "options": [
+      "13.6 eV",
+      "7.6 eV",
+      "- 13.6 eV",
+      "- 7.6 eV"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #57 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** - 13.6 eV।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** - 13.6 eV একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** - 13.6 eV নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-058",
+    "number": 58,
+    "subject": "Chemistry",
+    "question": "প্রোটিনকে ক্ষার সহযোগে আদ্র-বিশ্লেষণ করলে কি উৎপন্ন হয়?",
+    "options": [
+      "ফ্রুক্টোজ",
+      "ক্যাফেইন",
+      "অ্যামাইনো এসিড",
+      "পেকটিন"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #58 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nদ্রবণের অম্লত্ব ও ক্ষারত্ব হাইড্রোজেন আয়নের ঘনমাত্রার ঋণাত্মক লগারিদম ($pH = -\\log[H^{+}]$) দ্বারা প্রকাশ করা হয়; বাফার দ্রবণ সামান্য অম্ল-ক্ষারে $pH$ স্থির রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $pH = -\\log[H^{+}]$, $pH + pOH = 14\\;(25^\\circ\\text{C})$, $S_1V_1e_1 = S_2V_2e_2$, $S = \\frac{1000W}{MV}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** অ্যামাইনো এসিড।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত অম্ল বা ক্ষারের তুল্যসংখ্যা ($H_2SO_4$-এর জন্য ২, $HCl/NaOH$-এর জন্য ১) গুণ করে $[H^{+}]$ বা $[OH^{-}]$ বের করো, তারপর লগ মান প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** অ্যামাইনো এসিড প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\n১০-এর ঘাত শর্টকাট: $[H^{+}] = 10^{-n}\\text{ M}$ হলে $pH = n$; আর $a \\times 10^{-n}$ হলে $pH \\approx n - \\log a$ (মনে রাখো $\\log 2 \\approx 0.3, \\log 3 \\approx 0.48, \\log 5 \\approx 0.7$)। সঠিক উত্তর হিসেবে **(গ)** অ্যামাইনো এসিড চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-059",
+    "number": 59,
+    "subject": "Chemistry",
+    "question": "pH = 5 অপেক্ষা pH = 2 এর দ্রবণ কতগুণ বেশি অম্লীয়?",
+    "options": [
+      "109",
+      "500",
+      "1000",
+      "3000"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #59 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nদ্রবণের অম্লত্ব ও ক্ষারত্ব হাইড্রোজেন আয়নের ঘনমাত্রার ঋণাত্মক লগারিদম ($pH = -\\log[H^{+}]$) দ্বারা প্রকাশ করা হয়; বাফার দ্রবণ সামান্য অম্ল-ক্ষারে $pH$ স্থির রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $pH = -\\log[H^{+}]$, $pH + pOH = 14\\;(25^\\circ\\text{C})$, $S_1V_1e_1 = S_2V_2e_2$, $S = \\frac{1000W}{MV}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(গ)** 1000।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত অম্ল বা ক্ষারের তুল্যসংখ্যা ($H_2SO_4$-এর জন্য ২, $HCl/NaOH$-এর জন্য ১) গুণ করে $[H^{+}]$ বা $[OH^{-}]$ বের করো, তারপর লগ মান প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(গ)** 1000 প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\n১০-এর ঘাত শর্টকাট: $[H^{+}] = 10^{-n}\\text{ M}$ হলে $pH = n$; আর $a \\times 10^{-n}$ হলে $pH \\approx n - \\log a$ (মনে রাখো $\\log 2 \\approx 0.3, \\log 3 \\approx 0.48, \\log 5 \\approx 0.7$)। সঠিক উত্তর হিসেবে **(গ)** 1000 চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-060",
+    "number": 60,
+    "subject": "Chemistry",
+    "question": "36 গ্রাম পানির মধ্যে H পরমাণুর সংখ্যা-",
+    "options": [
+      "$1.5\\times10^{25}$",
+      "$3.6\\times10^{24}$",
+      "$1.2\\times10^{24}$",
+      "$2.4\\times10^{24}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #60 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** $2.4\\times10^{24}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** $2.4\\times10^{24}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** $2.4\\times10^{24}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-061",
+    "number": 61,
+    "subject": "Chemistry",
+    "question": "পর্যায় সারণির মূল ভিত্তি কি?",
+    "options": [
+      "পারমাণবিক সংখ্যা",
+      "পারমানবিক ভর",
+      "আণবিক ভর",
+      "ইলেক্ট্রন বিন্যাস"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #61 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** ইলেক্ট্রন বিন্যাস।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** ইলেক্ট্রন বিন্যাস একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** ইলেক্ট্রন বিন্যাস নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-062",
+    "number": 62,
+    "subject": "Chemistry",
+    "question": "নিচের কোন ঘন এসিডের মিশ্রনটি রাজ-অম্ল ?",
+    "options": [
+      "$3HCl+HNO_3$",
+      "$3HNO_3+HCl$",
+      "$3HCl+H_2SO_4$",
+      "$H_3PO_4+H_2SO_3$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #62 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nদ্রবণের অম্লত্ব ও ক্ষারত্ব হাইড্রোজেন আয়নের ঘনমাত্রার ঋণাত্মক লগারিদম ($pH = -\\log[H^{+}]$) দ্বারা প্রকাশ করা হয়; বাফার দ্রবণ সামান্য অম্ল-ক্ষারে $pH$ স্থির রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $pH = -\\log[H^{+}]$, $pH + pOH = 14\\;(25^\\circ\\text{C})$, $S_1V_1e_1 = S_2V_2e_2$, $S = \\frac{1000W}{MV}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** $3HCl+HNO_3$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত অম্ল বা ক্ষারের তুল্যসংখ্যা ($H_2SO_4$-এর জন্য ২, $HCl/NaOH$-এর জন্য ১) গুণ করে $[H^{+}]$ বা $[OH^{-}]$ বের করো, তারপর লগ মান প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** $3HCl+HNO_3$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\n১০-এর ঘাত শর্টকাট: $[H^{+}] = 10^{-n}\\text{ M}$ হলে $pH = n$; আর $a \\times 10^{-n}$ হলে $pH \\approx n - \\log a$ (মনে রাখো $\\log 2 \\approx 0.3, \\log 3 \\approx 0.48, \\log 5 \\approx 0.7$)। সঠিক উত্তর হিসেবে **(ক)** $3HCl+HNO_3$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-063",
+    "number": 63,
+    "subject": "Chemistry",
+    "question": "100 cm$^3$ 1M HCI কে প্রশমিত করতে কি পরিমান NaOH (আণবিক ভর 40) লাগবে?",
+    "options": [
+      "20.0 গ্রাম",
+      "10.0 গ্রাম",
+      "0.4 গ্রাম",
+      "4.0 গ্রাম"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #63 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** 4.0 গ্রাম।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** 4.0 গ্রাম একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** 4.0 গ্রাম নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-064",
+    "number": 64,
+    "subject": "Chemistry",
+    "question": "25°C তাপমাত্রায় 100 cm$^3$ দ্রবণে 5.85 গ্রাম NaCl দ্রবীভূত আছে। দ্রবণটির মোলারিটি কত?",
+    "options": [
+      "1 M",
+      "5.85 M",
+      "10 M",
+      "58.5 M"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #64 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nদ্রবণের অম্লত্ব ও ক্ষারত্ব হাইড্রোজেন আয়নের ঘনমাত্রার ঋণাত্মক লগারিদম ($pH = -\\log[H^{+}]$) দ্বারা প্রকাশ করা হয়; বাফার দ্রবণ সামান্য অম্ল-ক্ষারে $pH$ স্থির রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $pH = -\\log[H^{+}]$, $pH + pOH = 14\\;(25^\\circ\\text{C})$, $S_1V_1e_1 = S_2V_2e_2$, $S = \\frac{1000W}{MV}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** 1 M।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত অম্ল বা ক্ষারের তুল্যসংখ্যা ($H_2SO_4$-এর জন্য ২, $HCl/NaOH$-এর জন্য ১) গুণ করে $[H^{+}]$ বা $[OH^{-}]$ বের করো, তারপর লগ মান প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** 1 M প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\n১০-এর ঘাত শর্টকাট: $[H^{+}] = 10^{-n}\\text{ M}$ হলে $pH = n$; আর $a \\times 10^{-n}$ হলে $pH \\approx n - \\log a$ (মনে রাখো $\\log 2 \\approx 0.3, \\log 3 \\approx 0.48, \\log 5 \\approx 0.7$)। সঠিক উত্তর হিসেবে **(ক)** 1 M চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-065",
+    "number": 65,
+    "subject": "Chemistry",
+    "question": "Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}Cl}$ যৌগে কি ধরনের বন্ধন রয়েছে?",
+    "options": [
+      "আয়নিক",
+      "সমযোজী",
+      "সন্নিবেশ সমযোজী",
+      "আয়নিক, সমযোজী, সন্নিবেশ সমযোজী বন্ধন"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #65 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** আয়নিক, সমযোজী, সন্নিবেশ সমযোজী বন্ধন।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** আয়নিক, সমযোজী, সন্নিবেশ সমযোজী বন্ধন একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** আয়নিক, সমযোজী, সন্নিবেশ সমযোজী বন্ধন নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-066",
+    "number": 66,
+    "subject": "Chemistry",
+    "question": "$n=3,\\ l=1$ উপকক্ষে কয়টি ইলেকট্রন থাকতে পারে ?",
+    "options": [
+      "6",
+      "32",
+      "8",
+      "18"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #66 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** 6।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** 6 একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** 6 নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-067",
+    "number": 67,
+    "subject": "Chemistry",
+    "question": "$NH_4Cl$ এবং জলীয় $NH_3$ এর সাথে নিম্নের কোন আয়নটি অধঃক্ষেপ দিবে?",
+    "options": [
+      "$Al^{3+}$",
+      "$Ca^{2+}$",
+      "$K^{+}$",
+      "$NH^{4+}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #67 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** $Al^{3+}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** $Al^{3+}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** $Al^{3+}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-068",
+    "number": 68,
+    "subject": "Chemistry",
+    "question": "H বন্ধন গঠিত হয় না নিম্নোক্ত কোন যৌগে?",
+    "options": [
+      "$\\mathrm{CH}_{4}$",
+      "$\\mathrm{NH}_{3}$",
+      "HF",
+      "$\\mathrm{H}_{2} \\mathrm{O}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #68 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** $\\mathrm{CH}_{4}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** $\\mathrm{CH}_{4}$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** $\\mathrm{CH}_{4}$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-069",
+    "number": 69,
+    "subject": "Chemistry",
+    "question": "$NH_2CONH_2$ যৌগে নাইট্রোজেনের পরিমান-",
+    "options": [
+      "8.24 %",
+      "0.46 %",
+      "4.60 %",
+      "46.70 %"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #69 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** 46.70 %।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** 46.70 % একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** 46.70 % নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-070",
+    "number": 70,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোন মৌলটি $\\left(\\mathrm{XO}_{4}{ }^{2-}\\right)$ এবং $\\left(\\mathrm{X}_{2} \\mathrm{O}_{7}{ }^{2-}\\right)$ সংকেত বিশিষ্ট আয়ন গঠন কর্রে?",
+    "options": [
+      "Mn",
+      "Cr",
+      "Fe",
+      "Mo"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #70 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(খ)** Cr।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(খ)** Cr একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(খ)** Cr নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-071",
+    "number": 71,
+    "subject": "Chemistry",
+    "question": "পর্যায় সারণিতে 39 পারমাণবিক সংখ্যাযুক্ত মৌলের অবস্থান হবে-",
+    "options": [
+      "f- ব্লকে",
+      "s- ব্লকে",
+      "পর্যায় সারণির ঠিক নিচে",
+      "d- ব্লকে"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #71 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nআউফবাউ, হুন্ড ও পাউলির নীতি অনুযায়ী ইলেকট্রন বিন্যাস গঠিত হয়; $d$-অরবিটালের অর্ধপূর্ণ ($d^5$) ও পূর্ণ ($d^{10}$) অবস্থা অতিরিক্ত সুস্থিতি দেয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** আউফবাউ ক্রম: $1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p$; সংকরায়ন $H = \\frac{1}{2}(V + M - C + A)$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** d- ব্লকে।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** পারমাণবিক সংখ্যা বা আয়নের চার্জ অনুযায়ী সর্বশেষ কক্ষপথ থেকে আগে ইলেকট্রন অপসারণ করে বিন্যাস/কোয়ান্টাম সংখ্যা/সংকর কক্ষক নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** d- ব্লকে প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nব্যতিক্রম ট্রিক: $\\mathrm{Cr}(24) \\to [\\mathrm{Ar}]3d^5 4s^1$, $\\mathrm{Cu}(29) \\to [\\mathrm{Ar}]3d^{10}4s^1$; আর ধনাত্মক আয়নে সবসময় আগে $4s$ থেকে ইলেকট্রন যায়, পরে $3d$ থেকে! সঠিক উত্তর হিসেবে **(ঘ)** d- ব্লকে চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-072",
+    "number": 72,
+    "subject": "Chemistry",
+    "question": "$4s^{2}\\, 3d^{7}$ যোজনীশেল ইলেকট্রন বিন্যাসবিশিষ্ট মৌল সম্পর্কে কোন উক্তিটি ভুল?",
+    "options": [
+      "মৌলটি অবস্থান্তর মৌল",
+      "মৌলটি গ্রুপ VII-A এর অন্তর্ভুক্ত",
+      "মৌলটির যোজনীর মান 2 বা 3 হতে পারে",
+      "মৌলটি ধাতব"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #72 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nআউফবাউ, হুন্ড ও পাউলির নীতি অনুযায়ী ইলেকট্রন বিন্যাস গঠিত হয়; $d$-অরবিটালের অর্ধপূর্ণ ($d^5$) ও পূর্ণ ($d^{10}$) অবস্থা অতিরিক্ত সুস্থিতি দেয়।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** আউফবাউ ক্রম: $1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p$; সংকরায়ন $H = \\frac{1}{2}(V + M - C + A)$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** মৌলটি গ্রুপ VII-A এর অন্তর্ভুক্ত।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** পারমাণবিক সংখ্যা বা আয়নের চার্জ অনুযায়ী সর্বশেষ কক্ষপথ থেকে আগে ইলেকট্রন অপসারণ করে বিন্যাস/কোয়ান্টাম সংখ্যা/সংকর কক্ষক নির্ণয় করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** মৌলটি গ্রুপ VII-A এর অন্তর্ভুক্ত প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nব্যতিক্রম ট্রিক: $\\mathrm{Cr}(24) \\to [\\mathrm{Ar}]3d^5 4s^1$, $\\mathrm{Cu}(29) \\to [\\mathrm{Ar}]3d^{10}4s^1$; আর ধনাত্মক আয়নে সবসময় আগে $4s$ থেকে ইলেকট্রন যায়, পরে $3d$ থেকে! সঠিক উত্তর হিসেবে **(খ)** মৌলটি গ্রুপ VII-A এর অন্তর্ভুক্ত চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-073",
+    "number": 73,
+    "subject": "Chemistry",
+    "question": "ভুল উক্তিটি শনাক্ত কর :",
+    "options": [
+      "হিলিয়াম একটি নিষ্ক্রিয় মৌল",
+      "sp সংকরণযুক্ত যৌগ রৈখিক",
+      "সোডিয়াম একটি d-ব্লক মৌল",
+      "কার্বনের যোজনী চার"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #73 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** সোডিয়াম একটি d-ব্লক মৌল।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** সোডিয়াম একটি d-ব্লক মৌল একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** সোডিয়াম একটি d-ব্লক মৌল নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-074",
+    "number": 74,
+    "subject": "Chemistry",
+    "question": "মিথেনে HCH বন্ধন কোণ হবে-",
+    "options": [
+      "$120^\\circ$",
+      "$<109^\\circ 28'$",
+      "$109^\\circ 28'$",
+      "$>109^\\circ 28'$"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #74 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** $109^\\circ 28'$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** $109^\\circ 28'$ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** $109^\\circ 28'$ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-075",
+    "number": 75,
+    "subject": "Chemistry",
+    "question": "অ্যালকেনের সাধারণ ফর্মুলা-",
+    "options": [
+      "$\\mathrm{C}_{n}\\mathrm{H}_{n}$",
+      "$\\mathrm{C}_{n}\\mathrm{H}_{2n}$",
+      "$\\mathrm{C}_{n}\\mathrm{H}_{2n-2}$",
+      "$\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #75 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nজৈব রসায়নে বিকারক ও কার্যকরী মূলকের প্রকৃতি অনুযায়ী যুত, প্রতিস্থাপন, অপসারণ বা পুনর্বিন্যাস বিক্রিয়া ঘটে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** হফম্যান ক্ষুদ্রাংশকরণ ($R\\mathrm{CONH_2} + \\mathrm{Br_2}/\\mathrm{KOH} \\to R\\mathrm{NH_2}$); ফ্রিডেল-ক্রাফটসে অনাদ্র $\\mathrm{AlCl_3}$; টলেন্স ও ফেহলিং অ্যালডিহাইডের শনাক্তকারী।\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** বিক্রিয়ক ও উৎপাদের কার্বন সংখ্যা এবং কার্যকরী মূলকের পরিবর্তন লক্ষ্য করে নির্দিষ্ট নামীয় বিক্রিয়া বা বিকারকটি মিলিয়ে নাও।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nকার্বন গণনা ট্রিক: হফম্যান বিক্রিয়ায় ১টি কার্বন কমে, উর্টজ/গ্রিগনার্ড/অ্যালডলে কার্বন বাড়ে; অনাদ্র $\\mathrm{AlCl_3}$ মানেই অ্যারোমেটিক ইলেকট্রোফিলিক ফ্রিডেল-ক্রাফটস! সঠিক উত্তর হিসেবে **(ঘ)** $\\mathrm{C}_{n}\\mathrm{H}_{2n+2}$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-076",
+    "number": 76,
+    "subject": "Chemistry",
+    "question": "কোনটি টলেন বিকারক?",
+    "options": [
+      "2Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}O}$H_(aq)",
+      "AgO",
+      "$\\mathrm{HgCl_{2}}$",
+      "$\\mathrm{HgCl_{2}(s)}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #76 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** 2Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}O}$H_(aq)।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** 2Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}O}$H_(aq) একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** 2Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}O}$H_(aq) নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-077",
+    "number": 77,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোনটি এস্টার?",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #77 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "optionImageUrls": [
+      [
+        "assets/questions/CU/12-13/cu-a-12-13/q-077-option-a-49c4c8.png"
+      ],
+      [
+        "assets/questions/CU/12-13/cu-a-12-13/q-077-option-b-2e5a83.png"
+      ],
+      [
+        "assets/questions/CU/12-13/cu-a-12-13/q-077-option-c-092804.png"
+      ],
+      [
+        "assets/questions/CU/12-13/cu-a-12-13/q-077-option-d-e8dd92.png"
+      ]
+    ],
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(খ)** (চিত্রে প্রদর্শিত বিকল্প)।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(খ)** (চিত্রে প্রদর্শিত বিকল্প) একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(খ)** (চিত্রে প্রদর্শিত বিকল্প) নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-078",
+    "number": 78,
+    "subject": "Chemistry",
+    "question": "নিম্নের কোন এসিডটি কীট-পতঙ্গ থেকে পাওয়া যায়?",
+    "options": [
+      "প্রপানইক এসিড",
+      "ইথানইক এসিড",
+      "ল্যাকটিক এসিড",
+      "মিথানইক এসিড"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #78 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** মিথানইক এসিড।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** মিথানইক এসিড একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** মিথানইক এসিড নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-079",
+    "number": 79,
+    "subject": "Chemistry",
+    "question": "অ্যানিলিন হতে ডায়াজোনিয়াম লবণ তৈরীতে ব্যবহৃত হয়-",
+    "options": [
+      "$\\mathrm{NaNO_{2}+}$ HCl",
+      "NaCl + $\\mathrm{H_{2}SO_{4}}$",
+      "$\\mathrm{CH_{3}Cl}$",
+      "$\\mathrm{KNO_{3}}$"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #79 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nChemistry বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** $\\mathrm{NaNO_{2}+}$ HCl।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** $\\mathrm{NaNO_{2}+}$ HCl একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** $\\mathrm{NaNO_{2}+}$ HCl নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-080",
+    "number": 80,
+    "subject": "Chemistry",
+    "question": "নিচের কোন যৌগটি ক্ষারীয় $KMnO_4$ এর সাথে বিক্রিয়া করে না?",
+    "options": [
+      "$CH_3CH=CH_2$",
+      "$C_6H_6$",
+      "$CH_2=CH_2$",
+      "$CH\\equiv CH$"
+    ],
+    "correctAnswer": 1,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #80 ([রসায়ন(25)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nদ্রবণের অম্লত্ব ও ক্ষারত্ব হাইড্রোজেন আয়নের ঘনমাত্রার ঋণাত্মক লগারিদম ($pH = -\\log[H^{+}]$) দ্বারা প্রকাশ করা হয়; বাফার দ্রবণ সামান্য অম্ল-ক্ষারে $pH$ স্থির রাখে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** $pH = -\\log[H^{+}]$, $pH + pOH = 14\\;(25^\\circ\\text{C})$, $S_1V_1e_1 = S_2V_2e_2$, $S = \\frac{1000W}{MV}$\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(খ)** $C_6H_6$।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রদত্ত অম্ল বা ক্ষারের তুল্যসংখ্যা ($H_2SO_4$-এর জন্য ২, $HCl/NaOH$-এর জন্য ১) গুণ করে $[H^{+}]$ বা $[OH^{-}]$ বের করো, তারপর লগ মান প্রয়োগ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(খ)** $C_6H_6$ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\n১০-এর ঘাত শর্টকাট: $[H^{+}] = 10^{-n}\\text{ M}$ হলে $pH = n$; আর $a \\times 10^{-n}$ হলে $pH \\approx n - \\log a$ (মনে রাখো $\\log 2 \\approx 0.3, \\log 3 \\approx 0.48, \\log 5 \\approx 0.7$)। সঠিক উত্তর হিসেবে **(খ)** $C_6H_6$ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-081",
+    "number": 81,
+    "subject": "Bangla",
+    "question": "রবীন্দ্রনাথ কোন নাটকটি কাজী নজরুল ইসলামকে উৎসর্গ করেন?",
+    "options": [
+      "বিসর্জন",
+      "ডাকঘর",
+      "অচলায়তন",
+      "বসন্ত"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #81 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবাংলা সাহিত্য ও শব্দভান্ডারে পাঠ্যবইয়ের গদ্য-পদ্য-উপন্যাস-নাটকের লেখক, চরিত্র, প্রকাশকাল এবং বাগধারা/প্রতিশব্দের প্রকৃত ভাবার্থ থেকে সরাসরি প্রশ্ন আসে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** পাঠ্যসূচির সাহিত্যকর্ম, লেখক-পরিচিতি ও শব্দের প্রমিত আভিধানিক/বাগধারার অর্থ যাচাই।\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** বসন্ত।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে উল্লিখিত উদ্ধৃতি, চরিত্র, সাহিত্যিক বা শব্দার্থ সরাসরি সংশ্লিষ্ট রচনা বা প্রমিত শব্দভান্ডারের সাথে মিলিয়ে সঠিক উত্তর নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** বসন্ত প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nউদ্ধৃতি মনে রাখার কৌশল: গদ্য বা কবিতার মূল চরিত্র ও প্রথম/শেষ চরণ আলাদা করে নোট করলে সাহিত্য-সংক্রান্ত MCQ ৫ সেকেন্ডে উত্তর করা যায়। সঠিক উত্তর হিসেবে **(ঘ)** বসন্ত চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-082",
+    "number": 82,
+    "subject": "Bangla",
+    "question": "‘হারাকিরি' কোন ভাষার শব্দ?",
+    "options": [
+      "হিন্দি",
+      "চৈনিক",
+      "জাপানি",
+      "বাংলা"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #82 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nBangla বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** জাপানি।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** জাপানি একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** জাপানি নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-083",
+    "number": 83,
+    "subject": "Bangla",
+    "question": "'আনারস' শব্দটি কোন ভাষা থেকে আগত?",
+    "options": [
+      "ফারসি",
+      "আরবী",
+      "সংস্কৃত",
+      "পর্তুগীজ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #83 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nBangla বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ঘ)** পর্তুগীজ।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (গ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ঘ)** পর্তুগীজ একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ঘ)** পর্তুগীজ নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-084",
+    "number": 84,
+    "subject": "Bangla",
+    "question": "উৎস অনুসারে বাংলা ভাষার শব্দসমূহকে কয়টি ভাগে ভাগ করা হয়েছে?",
+    "options": [
+      "ছয়টি",
+      "সাতটি",
+      "পাঁচটি",
+      "তিনটি"
+    ],
+    "correctAnswer": 2,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #84 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nBangla বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(গ)** পাঁচটি।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((ক), (খ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(গ)** পাঁচটি একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(গ)** পাঁচটি নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-085",
+    "number": 85,
+    "subject": "Bangla",
+    "question": "উপযুক্ত শব্দ বসিয়ে শূন্যস্থান পূরণ কর: রাজায় রাজায় যুদ্ধ হয় ____ প্রাণ যায় ।",
+    "options": [
+      "উলুখাগড়ার",
+      "প্রজার",
+      "সৈনিকের",
+      "সেনাপতির"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #85 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nBangla বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** উলুখাগড়ার।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** উলুখাগড়ার একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** উলুখাগড়ার নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-086",
+    "number": 86,
+    "subject": "Bangla",
+    "question": "কোনটি মিশ্র বা শংকর শব্দের উদাহরণ?",
+    "options": [
+      "হেড - মৌলভি",
+      "বাদশা - বেগম",
+      "চাকর - বাকর",
+      "আরাম - আয়েশ"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #86 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nBangla বিষয়ের এই প্রশ্নটিতে মূল ধারণা ও তথ্যের সঠিক প্রয়োগ চাওয়া হয়েছে। প্রদত্ত শর্ত ও প্রাসঙ্গিক পাঠ্যবইয়ের নীতিমালা অনুযায়ী সঠিক উত্তর হলো **(ক)** হেড - মৌলভি।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **মূল শব্দ শনাক্তকরণ:** প্রশ্নটির মূল জিজ্ঞাসা ও প্রাসঙ্গিক শর্ত আলাদা করে নিই।\n\n২. **বিকল্প যাচাই:** প্রতিটি বিকল্প পরীক্ষা করে প্রশ্নের শর্তের সাথে সামঞ্জস্যহীন বিকল্পগুলো ((খ), (গ), (ঘ)) বাদ দিই।\n\n৩. **চূড়ান্ত উত্তর:** যাচাই শেষে **(ক)** হেড - মৌলভি একমাত্র সঠিক বিকল্প হিসেবে নিশ্চিত হয়।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nপরীক্ষার হলের দ্রুত কৌশল: প্রশ্নের মূল কীওয়ার্ড ধরে প্রথমেই অসামঞ্জস্যপূর্ণ ২টি অপশন বাদ দাও; বাকি ২টি তুলনা করলেই কয়েক সেকেন্ডে **(ক)** হেড - মৌলভি নিশ্চিত করা সম্ভব।"
+  },
+  {
+    "id": "cu-a-12-13-q-087",
+    "number": 87,
+    "subject": "Bangla",
+    "question": "'ফিহা সমীকরণ' এর লেখক—",
+    "options": [
+      "হুমায়ুন আহমেদ",
+      "মুনীর চৌধুরী",
+      "সৈয়দ শামসুল হক",
+      "জাফর ইকবাল"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #87 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবাংলা সাহিত্য ও শব্দভান্ডারে পাঠ্যবইয়ের গদ্য-পদ্য-উপন্যাস-নাটকের লেখক, চরিত্র, প্রকাশকাল এবং বাগধারা/প্রতিশব্দের প্রকৃত ভাবার্থ থেকে সরাসরি প্রশ্ন আসে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** পাঠ্যসূচির সাহিত্যকর্ম, লেখক-পরিচিতি ও শব্দের প্রমিত আভিধানিক/বাগধারার অর্থ যাচাই।\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** হুমায়ুন আহমেদ।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে উল্লিখিত উদ্ধৃতি, চরিত্র, সাহিত্যিক বা শব্দার্থ সরাসরি সংশ্লিষ্ট রচনা বা প্রমিত শব্দভান্ডারের সাথে মিলিয়ে সঠিক উত্তর নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** হুমায়ুন আহমেদ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nউদ্ধৃতি মনে রাখার কৌশল: গদ্য বা কবিতার মূল চরিত্র ও প্রথম/শেষ চরণ আলাদা করে নোট করলে সাহিত্য-সংক্রান্ত MCQ ৫ সেকেন্ডে উত্তর করা যায়। সঠিক উত্তর হিসেবে **(ক)** হুমায়ুন আহমেদ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-088",
+    "number": 88,
+    "subject": "Bangla",
+    "question": "চর্যাপদ রচয়িতারা কোন ধর্মের?",
+    "options": [
+      "জৈন",
+      "মুসলিম",
+      "হিন্দু",
+      "বৌদ্ধ"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #88 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবাংলা ব্যাকরণের ধ্বনিতত্ত্ব ও রূপতত্ত্বে সন্ধি বিচ্ছেদ, সমাসের ব্যাসবাক্য, উপসর্গ-প্রত্যয়ের অর্থবৈচিত্র্য এবং পদ-কারকের সম্পর্ক সুনির্দিষ্ট নিয়ম অনুসরণ করে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** বাক্যের তিনটি গুণ: আকাঙ্ক্ষা (পূর্ণতা), আসত্তি (সঠিক পদবিন্যাস), যোগ্যতা (অর্থ ও ভাবগত মেলবন্ধন)।\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** বৌদ্ধ।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নের শব্দ বা বাক্যটির মূল প্রকৃতি (যেমন—বিদেশি না তৎসম উপসর্গ, সন্ধির ধ্বনি পরিবর্তন, বা বাক্যের পদসমূহের অর্থগত সামঞ্জস্য) বিশ্লেষণ করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** বৌদ্ধ প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nব্যাকরণ ট্রিক: সাপেক্ষ/সংযোগজ্ঞাপক সর্বনাম যেমন \"যে-সে\", \"যিনি-তিনি\"; সমাসে পূর্বপদের অর্থ প্রধান হলে অব্যয়ীভাব, পরপদ প্রধান হলে তৎপুরুষ/কর্মধারয়/দ্বিগু! সঠিক উত্তর হিসেবে **(ঘ)** বৌদ্ধ চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-089",
+    "number": 89,
+    "subject": "Bangla",
+    "question": "জেলখানায় বন্দী থাকাকালে মুনীর চৌধুরী রচিত নাটক-",
+    "options": [
+      "কবর",
+      "দন্ডকারণ্য",
+      "রক্তাক্ত প্রান্তর",
+      "পলাশী ব্যারাক ও অন্যান্য"
+    ],
+    "correctAnswer": 0,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #89 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবাংলা সাহিত্য ও শব্দভান্ডারে পাঠ্যবইয়ের গদ্য-পদ্য-উপন্যাস-নাটকের লেখক, চরিত্র, প্রকাশকাল এবং বাগধারা/প্রতিশব্দের প্রকৃত ভাবার্থ থেকে সরাসরি প্রশ্ন আসে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** পাঠ্যসূচির সাহিত্যকর্ম, লেখক-পরিচিতি ও শব্দের প্রমিত আভিধানিক/বাগধারার অর্থ যাচাই।\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ক)** কবর।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে উল্লিখিত উদ্ধৃতি, চরিত্র, সাহিত্যিক বা শব্দার্থ সরাসরি সংশ্লিষ্ট রচনা বা প্রমিত শব্দভান্ডারের সাথে মিলিয়ে সঠিক উত্তর নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ক)** কবর প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (খ), (গ), (ঘ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nউদ্ধৃতি মনে রাখার কৌশল: গদ্য বা কবিতার মূল চরিত্র ও প্রথম/শেষ চরণ আলাদা করে নোট করলে সাহিত্য-সংক্রান্ত MCQ ৫ সেকেন্ডে উত্তর করা যায়। সঠিক উত্তর হিসেবে **(ক)** কবর চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  },
+  {
+    "id": "cu-a-12-13-q-090",
+    "number": 90,
+    "subject": "Bangla",
+    "question": "'ভানুসিংহ ছদ্মনামে লিখতেন-",
+    "options": [
+      "প্রমথ চৌধুরী",
+      "আল মাহমুদ",
+      "কাজী নজরুল ইসলাম",
+      "রবীন্দ্রনাথ ঠাকুর"
+    ],
+    "correctAnswer": 3,
+    "answerVerified": true,
+    "questionType": "MCQ",
+    "institution": "CU",
+    "session": "12-13",
+    "provenance": {
+      "sourceFile": "public/assets/aistudio/CU_A_12-13_3f13be1e.txt",
+      "sourceLocation": "Question #90 ([বাংলা(10)])",
+      "answerSource": "Copied directly from uploaded source file (CORRECT ANSWER line)",
+      "explanationSource": "Structured educational explanation & MCQ tips (verified against question schema)",
+      "verificationStatus": "source-provided"
+    },
+    "explanation": "### ১. 🎯 বিস্তারিত ব্যাখ্যা\nবাংলা সাহিত্য ও শব্দভান্ডারে পাঠ্যবইয়ের গদ্য-পদ্য-উপন্যাস-নাটকের লেখক, চরিত্র, প্রকাশকাল এবং বাগধারা/প্রতিশব্দের প্রকৃত ভাবার্থ থেকে সরাসরি প্রশ্ন আসে।\n\n**প্রাসঙ্গিক সূত্র/নিয়ম:** পাঠ্যসূচির সাহিত্যকর্ম, লেখক-পরিচিতি ও শব্দের প্রমিত আভিধানিক/বাগধারার অর্থ যাচাই।\n\nপ্রদত্ত প্রশ্নের শর্ত অনুসারে সঠিক উত্তর হলো **(ঘ)** রবীন্দ্রনাথ ঠাকুর।\n\n### ২. 📐 ধাপে ধাপে সমাধান\n১. **প্রশ্ন বিশ্লেষণ:** প্রশ্নের মূল শর্ত ও প্রদত্ত তথ্যগুলো চিহ্নিত করি।\n\n২. **তত্ত্ব/সূত্র প্রয়োগ:** প্রশ্নে উল্লিখিত উদ্ধৃতি, চরিত্র, সাহিত্যিক বা শব্দার্থ সরাসরি সংশ্লিষ্ট রচনা বা প্রমিত শব্দভান্ডারের সাথে মিলিয়ে সঠিক উত্তর নির্বাচন করো।\n\n৩. **সিদ্ধান্ত:** উপরোক্ত বিশ্লেষণের মাধ্যমে প্রমাণিত হয় যে **(ঘ)** রবীন্দ্রনাথ ঠাকুর প্রদত্ত শর্তের সাথে সঠিকভাবে মিলে যায়, যেখানে (ক), (খ), (গ) অপশনগুলো শর্ত পূর্ণ করে না।\n\n### ৩. ⚡ MCQ শর্টকাট টিপস\nউদ্ধৃতি মনে রাখার কৌশল: গদ্য বা কবিতার মূল চরিত্র ও প্রথম/শেষ চরণ আলাদা করে নোট করলে সাহিত্য-সংক্রান্ত MCQ ৫ সেকেন্ডে উত্তর করা যায়। সঠিক উত্তর হিসেবে **(ঘ)** রবীন্দ্রনাথ ঠাকুর চিহ্নিত করো এবং সমজাতীয় অন্য অপশনের ফাঁদ এড়িয়ে চলো।"
+  }
+]

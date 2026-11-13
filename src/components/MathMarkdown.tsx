@@ -14,6 +14,11 @@ type MathMarkdownProps = {
 export const MathMarkdown: React.FC<MathMarkdownProps> = React.memo(({ content, className = '', inline = false }) => {
   if (!content) return null;
 
+  const normalizedContent = content.replace(
+    /\[IMAGE:\s*([^\]]+?)\s*\]/gi,
+    (_m, url: string) => `\n\n![Diagram](${url.trim()})\n\n`
+  );
+
   return (
     <div className={`math-markdown max-w-full overflow-visible break-words no-scrollbar leading-relaxed ${inline ? 'inline' : ''} ${className}`}>
       <ReactMarkdown
@@ -67,7 +72,7 @@ export const MathMarkdown: React.FC<MathMarkdownProps> = React.memo(({ content, 
           )
         }}
       >
-        {content}
+        {normalizedContent}
       </ReactMarkdown>
     </div>
   );

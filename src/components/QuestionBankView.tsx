@@ -5,7 +5,6 @@ import {
   Search,
   CheckCircle2,
   Sparkles,
-  BookOpen,
   AlertCircle,
   Clock
 } from 'lucide-react';
@@ -21,6 +20,7 @@ import type { Question, Session, UiSettings, ViewMode } from '../types';
 import { loadSessionQuestions } from '../utils/questionLoader';
 import { hasValidGeminiKey } from '../utils/storage';
 import { AiTutorPanel } from './AiTutorPanel';
+import { ExplanationCard } from './ExplanationCard';
 import { Footer } from './Footer';
 import { MathMarkdown } from './MathMarkdown';
 
@@ -415,33 +415,12 @@ export const QuestionBankView: React.FC<QuestionBankViewProps> = ({
                   {/* Explanation & Solution Block */}
                   {(explanationText ||
                     (q.explanationImageUrls && q.explanationImageUrls.length > 0)) && (
-                    <div
-                      style={{ fontSize: `${uiSettings.explanationFontPx}px` }}
-                      className="p-4 rounded-2xl bg-white/90 dark:bg-[#070C18]/90 border border-slate-200/90 dark:border-indigo-900/50 space-y-2.5 mb-3"
-                    >
-                      <div className="flex items-center gap-1.5 text-xs font-extrabold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
-                        <BookOpen className="w-4 h-4" />
-                        <span>{uiTexts.questionBank.explanationTitle}</span>
-                      </div>
-                      {explanationText && (
-                        <div className="text-slate-800 dark:text-slate-200">
-                          <MathMarkdown content={explanationText} />
-                        </div>
-                      )}
-                      {q.explanationImageUrls && q.explanationImageUrls.length > 0 && (
-                        <div className="flex flex-wrap gap-3 pt-1">
-                          {q.explanationImageUrls.map((url, idx) => (
-                            <img
-                              key={idx}
-                              src={url}
-                              alt={`Explanation figure ${idx + 1}`}
-                              loading="lazy"
-                              referrerPolicy="no-referrer"
-                              className="max-w-full max-h-72 rounded-xl border border-slate-200 dark:border-slate-800 bg-white p-2 object-contain"
-                            />
-                          ))}
-                        </div>
-                      )}
+                    <div className="mb-3">
+                      <ExplanationCard
+                        explanationText={explanationText}
+                        explanationImageUrls={q.explanationImageUrls}
+                        fontSizePx={uiSettings.explanationFontPx}
+                      />
                     </div>
                   )}
 

@@ -70,22 +70,18 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
             {/* Unit A Tab */}
             <div
-              onClick={() => onSelectUnit('A')}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault();
-                  onSelectUnit('A');
-                }
-              }}
-              className={`p-3 sm:px-4 sm:py-3 rounded-xl border-2 text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+              className={`p-1.5 sm:p-2 rounded-xl border-2 transition-all flex items-center justify-between gap-2 ${
                 activeUnit === 'A'
                   ? 'bg-purple-600 text-white border-purple-500 shadow-md shadow-purple-600/25'
                   : 'bg-white dark:bg-[#0E091C] text-slate-800 dark:text-slate-200 border-purple-200 dark:border-purple-800/60 hover:border-purple-400'
               }`}
             >
-              <div className="flex items-center gap-2 min-w-0">
+              <button
+                type="button"
+                onClick={() => onSelectUnit('A')}
+                aria-pressed={activeUnit === 'A'}
+                className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-left flex items-center gap-2 cursor-pointer"
+              >
                 <CheckCircle2
                   className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${
                     activeUnit === 'A' ? 'text-white' : 'text-purple-400 dark:text-purple-700'
@@ -94,12 +90,13 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
                 <span className="text-xs sm:text-sm font-black truncate">
                   JU Unit A — (Science / Math & Physics)
                 </span>
-              </div>
+              </button>
 
               <button
                 type="button"
                 onClick={(e) => toggleDetails('A', e)}
-                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
+                aria-expanded={openDetailsUnit === 'A'}
+                className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
                   openDetailsUnit === 'A'
                     ? activeUnit === 'A'
                       ? 'bg-white text-purple-700 border-white'
@@ -121,22 +118,18 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
 
             {/* Unit D Tab */}
             <div
-              onClick={() => onSelectUnit('D')}
-              role="button"
-              tabIndex={0}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' || e.key === ' ') {
-                  e.preventDefault();
-                  onSelectUnit('D');
-                }
-              }}
-              className={`p-3 sm:px-4 sm:py-3 rounded-xl border-2 text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+              className={`p-1.5 sm:p-2 rounded-xl border-2 transition-all flex items-center justify-between gap-2 ${
                 activeUnit === 'D'
                   ? 'bg-purple-600 text-white border-purple-500 shadow-md shadow-purple-600/25'
                   : 'bg-white dark:bg-[#0E091C] text-slate-800 dark:text-slate-200 border-purple-200 dark:border-purple-800/60 hover:border-purple-400'
               }`}
             >
-              <div className="flex items-center gap-2 min-w-0">
+              <button
+                type="button"
+                onClick={() => onSelectUnit('D')}
+                aria-pressed={activeUnit === 'D'}
+                className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-left flex items-center gap-2 cursor-pointer"
+              >
                 <CheckCircle2
                   className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${
                     activeUnit === 'D' ? 'text-white' : 'text-purple-400 dark:text-purple-700'
@@ -145,12 +138,13 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
                 <span className="text-xs sm:text-sm font-black truncate">
                   JU Unit D — (Biological Sciences)
                 </span>
-              </div>
+              </button>
 
               <button
                 type="button"
                 onClick={(e) => toggleDetails('D', e)}
-                className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
+                aria-expanded={openDetailsUnit === 'D'}
+                className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
                   openDetailsUnit === 'D'
                     ? activeUnit === 'D'
                       ? 'bg-white text-purple-700 border-white'
@@ -402,22 +396,18 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
           {/* Unit A Tab */}
           <div
-            onClick={() => onSelectUnit('A')}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                onSelectUnit('A');
-              }
-            }}
-            className={`p-3 sm:px-4 sm:py-3 rounded-xl border-2 text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+            className={`p-1.5 sm:p-2 rounded-xl border-2 transition-all flex items-center justify-between gap-2 ${
               activeUnit === 'A'
                 ? 'bg-teal-600 text-white border-teal-500 shadow-md shadow-teal-600/25'
                 : 'bg-white dark:bg-[#071618] text-slate-800 dark:text-slate-200 border-teal-200 dark:border-teal-800/60 hover:border-teal-400'
             }`}
           >
-            <div className="flex items-center gap-2 min-w-0">
+            <button
+              type="button"
+              onClick={() => onSelectUnit('A')}
+              aria-pressed={activeUnit === 'A'}
+              className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-left flex items-center gap-2 cursor-pointer"
+            >
               <CheckCircle2
                 className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${
                   activeUnit === 'A' ? 'text-white' : 'text-teal-400 dark:text-teal-700'
@@ -426,12 +416,13 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
               <span className="text-xs sm:text-sm font-black truncate">
                 KU Unit A — (Science, Engineering and Technology)
               </span>
-            </div>
+            </button>
 
             <button
               type="button"
               onClick={(e) => toggleDetails('A', e)}
-              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
+              aria-expanded={openDetailsUnit === 'A'}
+              className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
                 openDetailsUnit === 'A'
                   ? activeUnit === 'A'
                     ? 'bg-white text-teal-700 border-white'
@@ -453,22 +444,18 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
 
           {/* Unit B Tab */}
           <div
-            onClick={() => onSelectUnit('B')}
-            role="button"
-            tabIndex={0}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                onSelectUnit('B');
-              }
-            }}
-            className={`p-3 sm:px-4 sm:py-3 rounded-xl border-2 text-left transition-all cursor-pointer flex items-center justify-between gap-2 ${
+            className={`p-1.5 sm:p-2 rounded-xl border-2 transition-all flex items-center justify-between gap-2 ${
               activeUnit === 'B'
                 ? 'bg-teal-600 text-white border-teal-500 shadow-md shadow-teal-600/25'
                 : 'bg-white dark:bg-[#071618] text-slate-800 dark:text-slate-200 border-teal-200 dark:border-teal-800/60 hover:border-teal-400'
             }`}
           >
-            <div className="flex items-center gap-2 min-w-0">
+            <button
+              type="button"
+              onClick={() => onSelectUnit('B')}
+              aria-pressed={activeUnit === 'B'}
+              className="flex-1 min-w-0 px-2 py-1.5 rounded-lg text-left flex items-center gap-2 cursor-pointer"
+            >
               <CheckCircle2
                 className={`w-4 h-4 sm:w-5 sm:h-5 shrink-0 ${
                   activeUnit === 'B' ? 'text-white' : 'text-teal-400 dark:text-teal-700'
@@ -477,12 +464,13 @@ export const UnitInfoSection: React.FC<UnitInfoSectionProps> = ({
               <span className="text-xs sm:text-sm font-black truncate">
                 KU Unit B — (Biological Sciences)
               </span>
-            </div>
+            </button>
 
             <button
               type="button"
               onClick={(e) => toggleDetails('B', e)}
-              className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
+              aria-expanded={openDetailsUnit === 'B'}
+              className={`inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-extrabold border transition-colors shrink-0 cursor-pointer ${
                 openDetailsUnit === 'B'
                   ? activeUnit === 'B'
                     ? 'bg-white text-teal-700 border-white'
