@@ -25,6 +25,9 @@ export function resolvePublicAsset(assetPath: string): string {
   }
   const baseUrl = import.meta.env.BASE_URL || '/';
   const normalizedBase = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+  if (normalizedBase !== '/' && trimmed.startsWith(normalizedBase)) {
+    return trimmed;
+  }
   const cleanRel = trimmed.replace(/^\/+/, '');
   return `${normalizedBase}${cleanRel}`;
 }

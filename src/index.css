@@ -50,31 +50,41 @@ html.dark body {
 }
 
 .katex {
-  font-weight: 700 !important;
-  font-size: 1.05em !important;
+  font-weight: 400 !important;
+  font-size: 1.06em !important;
+  line-height: 1.2 !important;
   color: #0f172a;
-  line-height: 1.35 !important;
   overflow: visible !important;
+  margin-inline: 0.16em;
+  vertical-align: baseline;
 }
 
-.katex * {
-  font-weight: 700 !important;
+.katex-display > .katex {
+  margin-inline: 0;
 }
 
 .katex .frac-line {
-  border-bottom-width: 0.08em !important;
+  border-bottom-style: solid !important;
+  border-bottom-width: 0.055em !important;
+  border-bottom-color: currentColor !important;
 }
 
 html.dark .katex {
-  font-size: 1.04em !important;
+  font-size: 1.06em !important;
   color: #bae6fd;
 }
 
 .katex-display {
-  overflow: visible !important;
-  padding: 0.25rem 0;
-  margin: 0.4rem 0 !important;
+  overflow-x: auto !important;
+  overflow-y: visible !important;
+  padding: 0.35rem 0;
+  margin: 0.5rem 0 !important;
   white-space: normal;
+}
+
+.math-markdown p,
+.math-markdown li {
+  line-height: 1.85;
 }
 
 /* Font Style Classes */

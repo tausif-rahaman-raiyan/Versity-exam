@@ -20,16 +20,16 @@ export const MathMarkdown: React.FC<MathMarkdownProps> = React.memo(({ content, 
   );
 
   return (
-    <div className={`math-markdown max-w-full overflow-visible break-words no-scrollbar leading-relaxed ${inline ? 'inline' : ''} ${className}`}>
+    <div className={`math-markdown max-w-full overflow-visible break-words no-scrollbar leading-[1.85] ${inline ? 'inline' : ''} ${className}`}>
       <ReactMarkdown
         remarkPlugins={[remarkMath, remarkGfm]}
         rehypePlugins={[[rehypeKatex, { strict: false, throwOnError: false }]]}
         components={{
           p: ({ children }) =>
-            inline ? <span className="inline">{children}</span> : <p className="mb-2 last:mb-0">{children}</p>,
-          ul: ({ children }) => <ul className="list-disc pl-5 mb-2 space-y-1">{children}</ul>,
-          ol: ({ children }) => <ol className="list-decimal pl-5 mb-2 space-y-1">{children}</ol>,
-          li: ({ children }) => <li className="leading-relaxed">{children}</li>,
+            inline ? <span className="inline leading-[1.85]">{children}</span> : <p className="mb-2 last:mb-0 leading-[1.85]">{children}</p>,
+          ul: ({ children }) => <ul className="list-disc pl-5 mb-2 space-y-1.5">{children}</ul>,
+          ol: ({ children }) => <ol className="list-decimal pl-5 mb-2 space-y-1.5">{children}</ol>,
+          li: ({ children }) => <li className="leading-[1.85]">{children}</li>,
           strong: ({ children }) => <strong className="font-bold text-slate-900 dark:text-white">{children}</strong>,
           img: ({ src, alt }) => (
             <img

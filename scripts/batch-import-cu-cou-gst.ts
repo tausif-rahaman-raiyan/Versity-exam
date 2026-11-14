@@ -24,7 +24,6 @@ import remarkMath from 'remark-math';
 import type { Question, Session } from '../src/types';
 import { cleanMathAndChemicalText } from '../src/utils/mathCleaner';
 import { generateQuestionExplanation } from '../src/utils/explanationGenerator';
-// @ts-expect-error ESM script helper
 import { processSessionImages } from './download-question-images.mjs';
 
 const __filename = fileURLToPath(import.meta.url);

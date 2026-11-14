@@ -147,5 +147,60 @@ describe('cleanMathAndChemicalText', () => {
       assertValidKatex(cleaned);
     }
   });
+
+  it('repairs complex ions, dimensional brackets, compound units, raw sqrts, and adds spacing around inline math', () => {
+    const complex = cleanMathAndChemicalText('[Co($\\mathrm{NO_{2})_{6}}$]');
+    assert.equal(complex, '$[\\mathrm{Co(NO_{2})_{6}}]$');
+    assertValidKatex(complex);
+
+    const cuComplex = cleanMathAndChemicalText('[Cu($\\mathrm{H}_2\\mathrm{O}$)_4]^2+');
+    assert.equal(cuComplex, '$[\\mathrm{Cu(H_{2}O)_{4}}]^{2+}$');
+    assertValidKatex(cuComplex);
+
+    const dim = cleanMathAndChemicalText('[ML^$\\mathrm{3T^{-2}}$]');
+    assert.equal(dim, '$[\\mathrm{ML^{3}T^{-2}}]$');
+    assertValidKatex(dim);
+
+    const unit = cleanMathAndChemicalText('90kmh^-1 এবং 5kgm^2 ও mol^$\\mathrm{2L^{-2}}$ এবং 10 ms^{-1}');
+    assert.match(unit, /\\mathrm\{km\}\\,\\mathrm\{h\}\^\{-1\}/);
+    assert.match(unit, /\\mathrm\{kg\}\\,\\mathrm\{m\}\^\{2\}/);
+    assert.match(unit, /\\mathrm\{mol\}\^\{2\}\\,\\mathrm\{L\}\^\{-2\}/);
+    assert.match(unit, /\\mathrm\{ms\}\^\{-1\}/);
+    assertValidKatex(unit);
+
+    const sq = cleanMathAndChemicalText('√3/2 c এবং 1/√2 ও \\sqrt34');
+    assert.match(sq, /\\frac\{\\sqrt\{3\}\}\{2\}/);
+    assert.match(sq, /\\frac\{1\}\{\\sqrt\{2\}\}/);
+    assert.match(sq, /\\sqrt\{34\}/);
+    assertValidKatex(sq);
+
+    const spaced = cleanMathAndChemicalText('সহিত$CH_3Cl$এবং$AlCl_3$এর');
+    assert.equal(spaced, 'সহিত $CH_3Cl$ এবং $AlCl_3$ এর');
+    assertValidKatex(spaced);
+
+    const extraCases = [
+      '^+$\\mathrm{CR_{3}}$',
+      '$$[\\mathrm{Fe(H_{2}O)_{6}}]Cl_3',
+      '1+$\\frac{1}{3}$+($\\frac{1}{3}$)^2',
+      'π^$\\frac{2}{2}$ s',
+      '(2x^2-1/($2x^{3}))^{10}$',
+      '80^oC থেকে 32^oF এবং (75.75)_10',
+      '5.25ms$^{-2}$ এবং sp$^3$ এবং 6 ms¯^1 ও 10ms^-²',
+      'বিকারকটি-$Ar-CHO$\\xrightarrow{\\text { বিকারক (Reagent) }} \\xrightarrow{$\\mathrm{H}^{+}$ / $\\mathrm{H}_{2}$ $\\mathrm{O}$}$ArCH(OH)COOH$',
+      'যদি z_1=1+i এবং z_2=1-i হয় তাহলে z_1z_2 এর মান হবে-',
+      '$\\pm \\sqrt{\\left ( \\frac}{A}{2} \\right )$',
+      '$[S]= [ML^2T^{-1}]$',
+      '$[Fe(\\mathrm{H}_{2}$ $\\mathrm{O})_6]Cl_3$',
+      '\\(0',
+      '_42 Mo এর ইলেক্ট্রন বিন্যাস',
+      '$[\\mathrm{Kr}]\\, 4d^{4}\\, 5s$2',
+      'Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}Cl}$',
+      '2Ag($\\mathrm{NH_{3})}$ $\\mathrm{_{2}O}$H_(aq)'
+    ];
+    for (const c of extraCases) {
+      const cleaned = cleanMathAndChemicalText(c);
+      assertValidKatex(cleaned);
+    }
+  });
 });
 

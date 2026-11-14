@@ -250,10 +250,33 @@ function repairNestedMacroSpans(input: string): string {
  * Unwraps `\mathrm{...}` / `\text{...}` fragments that were damaged by nested `$`
  * or nested `\mathrm` / `\text` macros, and repairs merged chemical subscripts.
  */
+function stripMacroWrappers(str: string): string {
+  // Recursively remove `\mathrm{...}` / `\text{...}` wrappers even with nested `{...}` inside
+  let s = str;
+  let idx = 0;
+  while ((idx = s.search(/\\(?:mathrm|text)\{/)) !== -1) {
+    const start = idx;
+    const braceStart = s.indexOf('{', start);
+    let depth = 1;
+    let j = braceStart + 1;
+    while (j < s.length && depth > 0) {
+      if (s[j] === '{') depth++;
+      else if (s[j] === '}') depth--;
+      j++;
+    }
+    if (depth === 0) {
+      s = s.slice(0, start) + s.slice(braceStart + 1, j - 1) + s.slice(j);
+    } else {
+      break;
+    }
+  }
+  return s;
+}
+
 function repairDamagedMacros(text: string): string {
   let out = text;
 
-  // 1. Repair [IMAGE: ...] URLs first by stripping any accidental $\text{...}$ / $\mathrm{...}$ / braces inside URLs
+  // 1. Repair [IMAGE: ...] URLs FIRST so any accidental `$` inside URLs is removed before bracket rules
   out = out.replace(/\[IMAGE:\s*([^\]]+?)\s*\]/gi, (_m, urlBody: string) => {
     const fixedUrl = urlBody
       .replace(/\\(?:text|mathrm)\{/g, '')
@@ -261,6 +284,101 @@ function repairDamagedMacros(text: string): string {
       .trim();
     return `[IMAGE: ${fixedUrl}]`;
   });
+
+  // 1b. Repair already-damaged inline artifacts (e.g. `√$\frac{3}{2}$`, `[ML^$\mathrm{3T^{-2}}$]`, `mol^$\mathrm{2L^{-2}}$`, `[Cu($\mathrm{H}_2\mathrm{O}$)_4]^2+`)
+  out = out
+    .replace(/^\\\(0$/g, '$0$')
+    .replace(/\$\$\s*(\[[^\]]+\][A-Z][A-Za-z0-9_]*)/g, (_m, expr: string) => `$${expr.replace(/_(\d+)/g, '_{$1}')}$`)
+    .replace(/\^\s*([+\-])\s*\$\s*(\\mathrm\{(?:[^{}]|\{[^{}]*\})+\})\$?/g, (_m, sgn: string, body: string) => `$^{${sgn}}${body}$`)
+    .replace(/\^\$\s*_(\d+)\^(\d+)([A-Z][a-z]?)\s*\$/g, '$$^{$2}_{$1}\\mathrm{$3}$$')
+    // Repair `2×10^$\mathrm{11Nm^{-1})}$`
+    .replace(
+      /(\d+(?:\.\d+)?)\s*[×xX]\s*10\^\$\s*\\mathrm\{(-?\d+)([A-Za-z]+)\^\{(-?\d+)\}(\)?)\}\$?/g,
+      (_m, coeff: string, e1: string, unit: string, e2: string, paren: string) =>
+        `$${coeff} \\times 10^{${e1}}\\,\\mathrm{${unit}}^{${e2}}$${paren}`
+    )
+    // Fix split amine/ligand complex like `Ag($\mathrm{NH_{3})}$ $\mathrm{_{2}Cl}$` or `2Ag($\mathrm{NH_{3})}$ $\mathrm{_{2}O}$H_(aq)`
+    .replace(
+      /(\d*[A-Z][a-z]?)\(\$\s*\\mathrm\{([A-Za-z]+_\{?\d+\}?)\)\}\$?\s*\$\s*\\mathrm\{_\{?(\d+)\}?([A-Za-z0-9()_]+)\}\$?([A-Za-z0-9()_]*)/g,
+      (_m, metal: string, lig: string, sub: string, tail: string, post: string) =>
+        `$\\mathrm{${metal}(${lig})_{${sub}}${tail}${post.replace(/_\((g|l|s|aq)\)/g, '($1)')}}$`
+    )
+    // Fix trailing electron count outside `$` like `$[\mathrm{Kr}]\, 4d^{4}\, 5s$2`
+    .replace(/([1-7][spdf])\$([0-9]+)(?![0-9])/g, '$1^{$2}$')
+    // Merge electron subshells split like `3$\text{d}^{4}$ \, 4$\text{s}^{2}$`
+    .replace(/(\d)\s*\$\s*\\(?:text|mathrm)\{([spdf])\}\^\{?(\d+)\}?\s*\$/g, (_m, n: string, orb: string, cnt: string) => `$${n}\\mathrm{${orb}}^{${cnt}}$`)
+    .replace(/([A-Za-z0-9\}])_\((g|l|s|aq)\)/g, '$1\\mathrm{($2)}')
+    // Fix parenthesized fraction powers `($\frac{1}{3}$)^2` -> `$\left(\frac{1}{3}\right)^{2}$`
+    .replace(/\(\s*\$\s*(\\frac\{[^{}]+\}\{[^{}]+\})\s*\$\s*\)\s*\^\s*(\{?-?\d+\}?)/g, (_m, f: string, exp: string) => {
+      const cleanExp = exp.startsWith('{') ? exp.slice(1, -1) : exp;
+      return `$\\left(${f}\\right)^{${cleanExp}}$`;
+    })
+    // Fix damaged `(2x^2-1/($2x^{3}))^{10}$` (including `$` inside nested inner parens), skipping `\left(...\right)`
+    .replace(/\$?\(([^()\n]*(?:\([^()\n]+\)[^()\n]*)*)\)\^(\{?-?\d+\}?)\$?/g, (m, inner: string, exp: string) => {
+      if (!inner.includes('$') || /\\left|\\right/.test(inner) || /[^\x00-\x7F]/.test(inner)) return m;
+      const cleanExp = exp.startsWith('{') ? exp.slice(1, -1) : exp;
+      const cleanInner = inner
+        .replace(/\$/g, '')
+        .replace(/(\d+)\s*\/\s*\(([^()]+)\)/g, '\\frac{$1}{$2}')
+        .replace(/\^(\d+)/g, '^{$1}');
+      return `$\\left(${cleanInner}\\right)^{${cleanExp}}$`;
+    })
+    // √$\frac{a}{b}$ -> $\frac{\sqrt{a}}{b}$
+    .replace(/√\s*\$\s*\\frac\{(\d+)\}\{(\d+)\}\s*\$/g, (_m, a: string, b: string) => `$\\frac{\\sqrt{${a}}}{${b}}$`)
+    // Fix spaced carets before digits/braces like `dm ^3`, `t ^ 2`, `x ^{2}`
+    .replace(/([A-Za-z0-9)\]])\s+\^\s*(\{?-?\d+\}?)/g, '$1^$2')
+    // Clean stray isolated `^` or `_` between `$` and Bengali text or `;`
+    .replace(/(\$)\s*[\^_]\s*(?=[^\x00-\x7F])/g, '$1 ')
+    .replace(/(\$;)\s*_\s*/g, '$1 ')
+    // Repair damaged dimensional formulas `[ML^$\mathrm{3T^{-2}}$]`, `$[S]=[ML^2T^{-1}]$` cleanly respecting outer `$`
+    .replace(/\[([^\[\]\n]*M[^\[\]\n]*T[^\[\]\n]*)\]/g, (m, inner: string, offset: number, full: string) => {
+      if (!/[MLT].*\^/.test(inner)) return m;
+      const before = full.slice(0, offset).replace(/\\\$/g, '').replace(/\$\$/g, '');
+      const inMath = (before.match(/\$/g) || []).length % 2 === 1;
+      if (!inner.includes('$') && inMath) return m;
+      const flattened = stripMacroWrappers(inner.replace(/\$/g, ''));
+      const stripped = flattened
+        .replace(/\^\{?(-?\d+)\}?/g, '^{$1}')
+        .replace(/\s+/g, '');
+      if (!/^[MLT0-9^{}\-]+$/.test(stripped)) return m;
+      return inMath ? `[\\mathrm{${stripped}}]` : `$[\\mathrm{${stripped}}]$`;
+    })
+    // Repair damaged unit exponents like `mol^$\mathrm{2L^{-2}}$` or `mol^-$\mathrm{2L^{-2}}$`
+    .replace(
+      /\b([A-Za-z]{1,4})\^(-?)\$\s*\\mathrm\{(\d+)([A-Za-z]{1,3})\^\{(-?\d+)\}\}\s*\$/g,
+      (_m, u1: string, neg: string, e1: string, u2: string, e2: string) =>
+        `$\\mathrm{${u1}}^{${neg}${e1}}\\,\\mathrm{${u2}}^{${e2}}$`
+    )
+    // Repair coordination complexes damaged by internal `$` inside `[...]` e.g. `[Cu($\mathrm{H}_2\mathrm{O}$)_4]^2+`, `[Co($\mathrm{NO_{2})_{6}}$]`
+    .replace(
+      /\[([A-Z][a-z]?(?:[^\[\]\n]*\$[^\[\]\n]*))\](?:\^(\{[^}]+\}|[0-9]*[+\-]))?/g,
+      (m, inner: string, extCharge: string | undefined, offset: number, full: string) => {
+        if (/^IMAGE:/i.test(inner) || /[^\x00-\x7F]|=/.test(inner)) return m;
+        const before = full.slice(0, offset).replace(/\\\$/g, '').replace(/\$\$/g, '');
+        const inMath = (before.match(/\$/g) || []).length % 2 === 1;
+        let cleaned = stripMacroWrappers(inner.replace(/\$/g, ''))
+          .replace(/\\(?:mathrm|text)\{/g, '')
+          .replace(/\s+/g, '')
+          // Remove extra macro closing brace before `)` ONLY when not immediately closing a valid subscript like `_{2}`
+          .replace(/(?<!_\{[0-9]{1,3})\}\)/g, ')')
+          .replace(/_\{(\d+)\)/g, '_{$1})')
+          .replace(/_(\d+)/g, '_{$1}')
+          .replace(/_\{(\d+)\)_\{(\d+)\}/g, '_{$1})_{$2}');
+        const openB = (cleaned.match(/\{/g) || []).length;
+        const closeB = (cleaned.match(/\}/g) || []).length;
+        if (closeB > openB) {
+          let extra = closeB - openB;
+          cleaned = cleaned.replace(/\}+$/g, (endBr) => endBr.slice(Math.min(extra, endBr.length)));
+        }
+        const openP = (cleaned.match(/\(/g) || []).length;
+        const closeP = (cleaned.match(/\)/g) || []).length;
+        if (openP > closeP) cleaned += ')'.repeat(openP - closeP);
+        const body = extCharge
+          ? `[\\mathrm{${cleaned}}]^{${extCharge.startsWith('{') ? extCharge.slice(1, -1) : extCharge}}`
+          : `[\\mathrm{${cleaned}}]`;
+        return inMath ? body : `$${body}$`;
+      }
+    );
 
   // 2. Revert false-positive bit fractions like $\frac{7}{8}$ bit -> 7/8 bit
   out = out.replace(/\$\s*\\frac\{(\d+)\}\{(\d+)\}\s*\$\s*(bits?|bytes?)/gi, '$1/$2 $3');
@@ -332,8 +450,7 @@ function repairDamagedMacros(text: string): string {
     out = toks.join('');
   }
 
-  // 6. Fix `$\frac{3}{5}$\text{$R_{H}}` or `$\frac{3}{5}$\mathrm{R_{H}}` (strictly requires `\text{` or `\mathrm{`)
-  // and `$\frac{1}{4}$ x^$\frac{1}{2}$` -> `$\frac{1}{4} x^{\frac{1}{2}}$`
+  // 6. Fix `$\frac{3}{5}$\text{$R_{H}}`, `3x^$\frac{1}{3}$`, `π^$\frac{2}{2}$`, `$\frac{1}{4}$ x^$\frac{1}{2}$`
   out = out.replace(
     /\$\s*(\\frac\{[^{}]+\}\{[^{}]+\})\s*\$\s*\\(?:text|mathrm)\{\$?((?:[^{}]|\{[^{}]*\})+)\}\$?/g,
     (_m, fracExpr: string, sym: string) => `$${fracExpr} ${sym}$`
@@ -341,6 +458,16 @@ function repairDamagedMacros(text: string): string {
   out = out.replace(
     /\$\s*(\\frac\{[^{}]+\}\{[^{}]+\})\s*\$\s*([a-zA-Z])\^\$\s*(\\frac\{[^{}]+\}\{[^{}]+\})\s*\$/g,
     (_m, f1: string, sym: string, f2: string) => `$${f1} ${sym}^{${f2}}$`
+  );
+  // Fix `π^2/2` already damaged into `π^$\frac{2}{2}$` vs fractional exponent `3x^$\frac{1}{3}$`
+  out = out.replace(
+    /(\d*[πa-zA-Z])\^\$\s*(-?)\\frac\{(\d+)\}\{(\d+)\}\s*\$/g,
+    (_m, base: string, neg: string, num: string, den: string) => {
+      if (base.includes('π') && !neg) {
+        return `$\\frac{${base.replace(/π/g, '\\pi ')}^{${num}}}{${den}}$`;
+      }
+      return `$${base}^{${neg}\\frac{${num}}{${den}}}$`;
+    }
   );
 
   // 7. Fix `[$\mathrm{Cu(NH_{3})_{4}}$]^2+` or `[$\mathrm{Fe(CN)_{6}}$]^3-`
@@ -499,8 +626,9 @@ function mergeAdjacentInlineMath(input: string): string {
     const isHybridPair =
       /(?:sp\^\{?\d+\}?|d\^\{?\d+\}?)$/.test(tA) && /^(?:sp|d)\^/.test(tB);
     const isUnitAfterNum = /(?:\d\}?)$/.test(tA) && UNIT_HEAD_RE.test(tB);
+    const isDiffPair = /d\^\{?\d+\}?$/.test(tA) && /^[a-zA-Z]\/d[a-zA-Z]/.test(tB);
 
-    if (endsWithOp || startsWithOpOrPunct || isHybridPair) {
+    if (endsWithOp || startsWithOpOrPunct || isHybridPair || isDiffPair) {
       const needSpace =
         (/\\(?:to|rightarrow|cdot|times|rm)$/.test(tA) && /^[A-Za-z0-9\\]/.test(tB)) ||
         (tA.endsWith('+') && tB.startsWith('\\alpha'));
@@ -646,6 +774,12 @@ function normalizeMathInner(rawInner: string): string {
     .replace(/⇌/g, '\\rightleftharpoons ')
     .replace(/°/g, '^\\circ ');
 
+  // Convert literal `√` inside math mode (`√(3RT/M)` or `√ 3 R T \div M`) into `\sqrt{...}`
+  math = math.replace(/√\s*\(([^()]+)\)/g, '\\sqrt{$1}');
+  math = math.replace(/√\s*([^{}\n]+)/g, (_m, rest: string) => `\\sqrt{${rest.trim()}}`);
+  // Fix unbraced multi-digit `\sqrt34` -> `\sqrt{34}`
+  math = math.replace(/\\sqrt(\d{2,})(?![0-9])/g, '\\sqrt{$1}');
+
   math = replaceUnicodeSubSup(math);
 
   math = math.replace(/\\circC\b/g, '^\\circ\\text{C}');
@@ -665,7 +799,8 @@ function normalizeMathInner(rawInner: string): string {
   math = math.replace(/([_^])(\s*(?:\}|$))/g, '$2');
   math = math.replace(/\^{2,}\s*=/g, ' = ');
 
-  // Fix double-caret or fraction-exponent typos (`N^{-}1` -> `N^{-1}`, `10^{2}^{2}` -> `10^{22}`, `Zn^{2}^{+}` -> `Zn^{2+}`)
+  // Fix double-caret or fraction-exponent typos (`N^{-}1` -> `N^{-1}`, `10^{2}^{2}` -> `10^{22}`, `2x^{2+}\frac` -> `2x^{2}+\frac`)
+  math = math.replace(/([a-zA-Z0-9])\^\{(\d+)([+\-])\}(?=\\frac|\\[A-Za-z])/g, '$1^{$2}$3');
   math = math.replace(/\^-\^(\d+)/g, '^{-$1}');
   math = math.replace(/\^([0-9]+)\^([+\-0-9]+)/g, '^{$1$2}');
   math = math.replace(/\^\{([^{}]+)\}\s*\^\{([^{}]+)\}/g, '^{$1$2}');
@@ -676,14 +811,16 @@ function normalizeMathInner(rawInner: string): string {
   math = math.replace(/\^-\s*(\d+[a-zA-Z]*)/g, '^{-$1}');
   math = math.replace(/\^([0-9]+[+\-](?![A-Za-z0-9])|[+\-][0-9]*)/g, '^{$1}');
 
-  // Fix `\frac {a} {b}` spacing
+  // Fix `\frac}{a}{b}` & `\frac {a} {b}` spacing & lowercase `z_{1z}_{2}` double-subscript
+  math = math.replace(/\\frac\}\s*\{([^{}]+)\}\s*\{([^{}]+)\}/g, '\\frac{$1}{$2}');
   math = math.replace(/\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}/g, '\\frac{$1}{$2}');
+  math = math.replace(/([a-zA-Z])_\{(\d+)([a-zA-Z])\}_\{(\d+)\}/g, '$1_{$2}$3_{$4}');
   math = math.replace(/\\frac\{R\^\{3\}\{2\}\}/g, 'R^{\\frac{3}{2}}');
   math = math.replace(/\\frac\{R\^3\{2\}\}/g, 'R^{\\frac{3}{2}}');
 
   // Convert differential notation like `d^{2}x/dt^{2}` -> `\frac{d^{2}x}{dt^{2}}`
   math = math.replace(
-    /\b(d(?:\^\{?\d+\}?)?[a-zA-Z])\/(d[a-zA-Z](?:\^\{?\d+\}?)?)\b/g,
+    /\b(\d*d(?:\^\{?\d+\}?)?[a-zA-Z])\/(d[a-zA-Z](?:\^\{?\d+\}?)?)\b/g,
     '\\frac{$1}{$2}'
   );
 
@@ -769,7 +906,7 @@ function normalizePlainSegment(segment: string): string {
     (_m, mass: string, atomic: string, elem: string) => `$^{${mass}}_{${atomic}}\\mathrm{${elem}}$`
   );
   out = out.replace(
-    /(?<![\w\\$])_(?:\{(\d+)\}|(\d+))([A-Z][a-z]?)(?:\^(\{[^}]+\}|[0-9]+[+\-]?|[+\-]))?/g,
+    /(?<![\w\\$])_(?:\{(\d+)\}|(\d+))\s*([A-Z][a-z]?)(?:\^(\{[^}]+\}|[0-9]+[+\-]?|[+\-]))?/g,
     (_m, a1: string | undefined, a2: string | undefined, elem: string, charge?: string) => {
       const atomic = a1 || a2 || '';
       if (charge) {
@@ -809,7 +946,7 @@ function normalizePlainSegment(segment: string): string {
       })
   );
 
-  // 3. Electron configurations like `[Ar]3d^3 4s^2`, `1s^2 2s^2 2p^6`, or concatenated `1s^22s^2 2p^63s^23p^6 3d^54s^2`
+  // 2b. Electron configurations BEFORE Unit Powers so `1s^22s^22p^6` is never matched as seconds (`s`)
   const ORBITAL_RE_SRC = '(?:[1-7]s(?:\\^[12])?|[1-7]p(?:\\^[1-6])?|[1-7]d(?:\\^(?:10|[1-9]))?|[1-7]f(?:\\^(?:1[0-4]|[1-9]))?)';
   const ELECTRON_CFG_RE = new RegExp(
     `(?:\\[[A-Z][a-z]?\\]\\s*(?:${ORBITAL_RE_SRC}\\s*)+|\\b${ORBITAL_RE_SRC}(?:\\s*${ORBITAL_RE_SRC})+(?![a-zA-Z0-9]))`,
@@ -828,6 +965,50 @@ function normalizePlainSegment(segment: string): string {
     })
   );
 
+  // 2c. Standalone powers of 10 (`10^-30`, `10^3`, `10^-3m`, `6.25 × 10^{18}`) & dimensional formulas (`[ML^3T^-2]`)
+  out = mapOutsideInlineMath(out, (plain) =>
+    plain
+      .replace(
+        /(?:(\d+(?:\.\d+)?)\s*[×xX*]\s*)?10\s*\^\s*\{?(-?\d+)\}?(m|cm|mm|km|s|kg|g|L|mol|J|N|V|A|Hz)?(?![\w])/g,
+        (m, coeff: string | undefined, exp: string, unit?: string, offset?: number, full?: string) => {
+          if (!coeff && offset !== undefined && full && /[\w\\$.]/.test(full[offset - 1] || '')) return m;
+          const base = coeff ? `${coeff} \\times 10^{${exp}}` : `10^{${exp}}`;
+          return unit ? `$${base}\\,\\mathrm{${unit}}$` : `$${base}$`;
+        }
+      )
+      .replace(/\[((?:M(?:\^-?\d+)?|L(?:\^-?\d+)?|T(?:\^-?\d+)?){2,})\]/g, (m, inner: string) => {
+        if (!inner.includes('^')) return m;
+        return `$[\\mathrm{${inner.replace(/\^(-?\d+)/g, '^{$1}')}}]$`;
+      })
+  );
+
+  // 2d. Physical/chemical compound & single unit powers BEFORE chemical Rule 4
+  // Handles: `mol^2L^-2`, `mol^-2L^-2`, `90kmh^-1`, `5kgm^2`, `10 ms^{-1}`, `atm^2`
+  const UNIT_PART_SRC = '(?:mmol|mol|kms|km|cm|mm|dm|nm|pm|kg|mg|ms|hr|min|atm|Pa|Hz|rad|sr|Wb|m|s|g|L|l|K|J|W|N|V|A|C|F|T|H|S|h)';
+  const UNIT_SEQ_RE = new RegExp(
+    `(?<![A-Za-z_\\\\$^])((?:${UNIT_PART_SRC}(?:\\^(?:\\{-?\\d+\\}|-?\\d+))?(?:\\/(?:${UNIT_PART_SRC}(?:\\^(?:\\{-?\\d+\\}|-?\\d+))?))?)+)(?![A-Za-z0-9_])`,
+    'g'
+  );
+  const UNIT_TOKEN_RE = new RegExp(`(${UNIT_PART_SRC})(\\^(?:\\{-?\\d+\\}|-?\\d+))?(\\/)?`, 'g');
+  out = mapOutsideInlineMath(out, (plain) =>
+    plain.replace(UNIT_SEQ_RE, (m, _grp, offset: number, src: string) => {
+      if (!m.includes('^')) return m;
+      const prevChar = offset > 0 ? src[offset - 1] : '';
+      const sep = /\d/.test(prevChar) ? ' ' : '';
+      const rendered: string[] = [];
+      let tm: RegExpExecArray | null;
+      UNIT_TOKEN_RE.lastIndex = 0;
+      while ((tm = UNIT_TOKEN_RE.exec(m)) !== null) {
+        const unit = tm[1];
+        const rawExp = tm[2] ? tm[2].slice(1) : '';
+        const exp = rawExp ? `^{${rawExp.startsWith('{') ? rawExp.slice(1, -1) : rawExp}}` : '';
+        const slash = tm[3] || '';
+        rendered.push(`\\mathrm{${unit}}${exp}${slash}`);
+      }
+      return rendered.length ? `${sep}$${rendered.join('\\,')}$` : m;
+    })
+  );
+
   // 4. Raw chemical formulas / ions / alkane general formulas with `_` or `^` outside math mode
   out = mapOutsideInlineMath(out, (plain) =>
     plain
@@ -835,14 +1016,14 @@ function normalizePlainSegment(segment: string): string {
       .replace(/\bC_nH_2_n\b/g, '$\\mathrm{C}_{n}\\mathrm{H}_{2n}$')
       .replace(/\bC_nH_n\b/g, '$\\mathrm{C}_{n}\\mathrm{H}_{n}$')
       .replace(
-        /(?<![\w\\$])(\[[A-Z][A-Za-z0-9()_]+\]\^(?:\{[^}]+\}|[0-9]*[+\-]))/g,
+        /(?<![\w\\$^])(\[[A-Z][A-Za-z0-9()_]+\]\^(?:\{[^}]+\}|[0-9]*[+\-]))/g,
         (m) => {
           const cleaned = m.replace(/_(\d+)/g, '_{$1}').replace(/\^([0-9]*[+\-])/, '^{$1}');
           return `$\\mathrm{${cleaned}}$`;
         }
       )
       .replace(
-        /(?<![\w\\$])(\d*[A-Z][A-Za-z0-9]*(?:_[0-9]+|\^[0-9]*[+\-]|\^\{[0-9]*[+\-]\})+(?:[A-Za-z0-9()_^\-+]*)*)/g,
+        /(?<![\w\\$^])(\d*[A-Z][A-Za-z0-9]*(?:_[0-9]+|\^[0-9]*[+\-]|\^\{[0-9]*[+\-]\})+(?:[A-Za-z0-9()_^\-+]*)*)/g,
         (m) => {
           const cleaned = m
             .replace(/_(\d+)/g, '_{$1}')
@@ -850,14 +1031,14 @@ function normalizePlainSegment(segment: string): string {
           return `$\\mathrm{${cleaned}}$`;
         }
       )
-      .replace(/(?<![\w\\$])(\d+)_(2|8|10|16)(?![\w])/g, (_m, num: string, base: string) => `$${num}_{${base}}$`)
+      .replace(/(?<![\w\\$^])(\d+)_(2|8|10|16)(?![\w])/g, (_m, num: string, base: string) => `$${num}_{${base}}$`)
       .replace(
-        /(?<![\w\\$])([A-Za-z]_[A-Za-z0-9]{1,3}(?:[A-Za-z]_[A-Za-z0-9]{1,3})*)(?![\w])/g,
-        (m) => `$${m.replace(/_([A-Za-z0-9]{1,3})/g, '_{$1}')}$`
+        /(?<![\w\\$^])([A-Za-z]_(?:\d+|[A-Za-z]{1,2})(?:[A-Za-z]_(?:\d+|[A-Za-z]{1,2}))*)(?![\w])/g,
+        (m) => `$${m.replace(/_(\d+|[A-Za-z]{1,2})/g, '_{$1}')}$`
       )
   );
 
-  // 5. Square root fractions
+  // 5. Square root expressions & fractions BEFORE general ASCII fractions
   out = mapOutsideInlineMath(out, (plain) =>
     plain
       .replace(
@@ -868,6 +1049,20 @@ function normalizePlainSegment(segment: string): string {
         /√\s*\(([a-zA-Z0-9+\-*^]+)\s*\/\s*([a-zA-Z0-9+\-*^]+)\)/g,
         '$\\sqrt{\\frac{$1}{$2}}$'
       )
+      .replace(
+        /(\d*)\s*√(\d+)\s*\/\s*(\d*)\s*√(\d+)/g,
+        (_m, c1: string, r1: string, c2: string, r2: string) => `$\\frac{${c1}\\sqrt{${r1}}}{${c2}\\sqrt{${r2}}}$`
+      )
+      .replace(
+        /(\d*)\s*√(\d+)\s*\/\s*(\d+)/g,
+        (_m, c1: string, r1: string, den: string) => `$\\frac{${c1}\\sqrt{${r1}}}{${den}}$`
+      )
+      .replace(
+        /(\d+)\s*\/\s*(\d*)\s*√(\d+)/g,
+        (_m, num: string, c2: string, r2: string) => `$\\frac{${num}}{${c2}\\sqrt{${r2}}}$`
+      )
+      .replace(/(\d+)√(\d+)/g, (_m, c: string, r: string) => `$${c}\\sqrt{${r}}$`)
+      .replace(/(?<![A-Za-z0-9\\$])√(\d+)(?![A-Za-z0-9\/])/g, (_m, r: string) => `$\\sqrt{${r}}$`)
   );
 
   // 6. Coordinate pairs containing fractions like `(-1, -7/10)` or `(0, -10/3)`
@@ -907,19 +1102,36 @@ function normalizePlainSegment(segment: string): string {
       )
   );
 
-  // 8. Math equations / polynomials / trig inverses with `^` or `_` outside math mode
+  // 8. Math equations / polynomials / trig inverses / fractional powers with `^` or `_` outside math mode
   out = mapOutsideInlineMath(out, (plain) =>
     plain
       .replace(/\^{2,}\s*=/g, ' = ')
-      .replace(
-        /(?<![\w\\$])((?:\([^()\n]+\)\^\d+)|(?:[a-zA-Z]{1,3}\([^()\n]+\)\s*=\s*(?:sin|cos|tan|cot|sec|csc|log|ln)\^-?\d+[a-zA-Z]?)|(?:(?:sin|cos|tan|cot|sec|csc)\^-?\d+[a-zA-Z]?)|(?:\d*[a-zA-Zαβγθω]{1,2}(?:_[a-zA-Z0-9]+)?\^\{?-?\d+\}?(?:[+\-\s\dA-Za-zαβγθω()^_=]*))|(?:[a-zA-Zαβγθω](?:_[a-zA-Z0-9]+)?(?:\s*=\s*)[+-]?\s*\d*[a-zA-Zαβγθω]{1,2}(?:_[a-zA-Z0-9]+)?\^\d+[+\-\s\dA-Za-zαβγθω()^_=]*))(?=$|[\s,।?!;]|(?<=[^A-Za-z])(?=[^\x00-\x7F]))/g,
+      // Fix `y^_2_` OCR -> `y^{2}`, `(Time)^-1`, `E=hc\λ`, `4MLf^2`, `μ_s`, `3.9^x-4.3^x+1=0`, and binary/base parens `(75.75)_10` -> `$(75.75)_{10}$`
+      .replace(/([A-Za-z])\^_(\d+)_/g, '$1^{$2}')
+      .replace(/\(([A-Za-z]+)\)\^\{?(-?\d+)\}?/g, (_m, w: string, e: string) => `$(\\mathrm{${w}})^{${e}}$`)
+      .replace(/\bE\s*=\s*hc\\λ/g, '$E = \\frac{hc}{\\lambda}$')
+      .replace(/\b([μ])_([a-zA-Z])\b/g, (_m, _sym: string, sub: string) => `$\\mu_{${sub}}$`)
+      .replace(/\(([0-9A-Fa-f.]+)\)\s*_\s*(2|8|10|16)(?![0-9A-Za-z])/g, (_m, n: string, b: string) => `$(${n})_{${b}}$`)
+      .replace(/\b\d+\.\d+\^[a-zA-Z](?:[+\-\s\d.a-zA-Z^]*)=\s*0\b/g, (m) => `$${m.replace(/\./g, '\\cdot ').replace(/\^([a-zA-Z])/g, '^{$1}')}$`)
+      // Fix `(u^2/(2g))` or `2u^2/g` or `π^2/2`
+      .replace(/(\d*π\^\d+)\s*\/\s*(\d+)/g, (_m, num: string, den: string) => `$\\frac{${num.replace(/π/g, '\\pi ').replace(/\^(\d+)/g, '^{$1}')}}{${den}}$`)
+      .replace(/(\d*[a-zA-Z]\^\d+)\s*\/\s*(?:\(([^()\n]+)\)|(\d*[a-zA-Z]))(?![\w^])/g, (_m, num: string, d1?: string, d2?: string) => `$\\frac{${num.replace(/\^(\d+)/g, '^{$1}')}}{${d1 || d2}}$`)
+      // Fix `P^H` / `pK_W=14` / `x^x` / `cosx^2` / `4MLf^2`
+      .replace(/\bP\^H\b/g, '$\\mathrm{pH}$')
+      .replace(/\b(pK_[WAwa])=(\d+(?:\.\d+)?)\b/g, (_m, lhs: string, rhs: string) => `$${lhs}=${rhs}$`)
+      .replace(/(?<![\w\\$])([a-zA-Z])\^([a-zA-Z])(?![\w])/g, (_m, b: string, e: string) => `$${b}^{${e}}$`)
+      .replace(/(?<![\w\\$])(\d*[A-Za-z]{2,8})\^(-?\d+)(?![\w])/g, (m, sym: string, exp: string) => {
+        if (/^(?:sin|cos|tan|cot|sec|csc|log|ln|mol|dm|cm|mm|ms|kms|kmh|atm)$/i.test(sym)) return m;
+        return `$${sym}^{${exp}}$`;
+      })
+      .replace(/(?<![\w\\$])((?:\([^()\n]+\)\^\d+)|(?:[a-zA-Z]\s*=\s*[a-zA-Z0-9\s]*\[[A-Z][a-z]?\](?:\^\d+|[a-zA-Z0-9^+\-*])*)|(?:[a-zA-Z]{1,3}\([^()\n]+\)\s*=\s*(?:sin|cos|tan|cot|sec|csc|log|ln)\^-?\d+[a-zA-Z]?)|(?:(?:sin|cos|tan|cot|sec|csc)\^?-?\d*[a-zA-Z]\^\d+)|(?:(?:sin|cos|tan|cot|sec|csc)\^-?\d+[a-zA-Z]?)|(?:\d*[a-zA-Zαβγθω]{1,2}(?:_[a-zA-Z0-9]+)?\^\{?-?\d+\}?(?:[+\-\s\dA-Za-zαβγθω()^_=]*))|(?:[a-zA-Zαβγθω](?:_[a-zA-Z0-9]+)?(?:\s*=\s*)[+-]?\s*\d*[a-zA-Zαβγθω]{1,2}(?:_[a-zA-Z0-9]+)?\^\d+[+\-\s\dA-Za-zαβγθω()^_=]*))(?=$|[\s,।?!;]|(?<=[^A-Za-z])(?=[^\x00-\x7F]))/g,
         (m) => {
           if (!m.includes('^') && !m.includes('_')) return m;
-          if (/^\s*\d*(?:mol|dm|cm|mm|ms|kms|m|s|kg|g|L|K|β|α)\^/i.test(m)) return m;
+          if (/^\s*\d*(?:mol|dm|cm|mm|ms|kms|kmh|atm|m|s|kg|g|L|K|β|α)\^/i.test(m)) return m;
           let cleaned = m
             .trim()
             .replace(/\^(-?\d+)/g, '^{$1}')
-            .replace(/\b(sin|cos|tan|cot|sec|csc|log|ln)\^/g, '\\$1^')
+            .replace(/\b(sin|cos|tan|cot|sec|csc|log|ln)(?=\^|\s*[a-zA-Z])/g, '\\$1 ')
             .replace(/α/g, '\\alpha ')
             .replace(/β/g, '\\beta ')
             .replace(/γ/g, '\\gamma ')
@@ -962,29 +1174,60 @@ function normalizePlainSegment(segment: string): string {
       )
   );
 
-  // 10. Scientific notation & units with powers (`4.0×10^-5`, `39.96*10^-7`, `mol^-1`, `3.8 ms^-1`, `mol^-2L^-2`, `15Ω`)
+  // 10. Remaining scientific notation, degrees, ohms & bare LaTeX macros outside `$...$`
   out = mapOutsideInlineMath(out, (plain) =>
     plain
-      .replace(
-        /(\d+(?:\.\d+)?)\s*[×xX*]\s*10\s*\^(-?\d+)/g,
-        (_m, coeff: string, exp: string) => `$${coeff} \\times 10^{${exp}}$`
-      )
+      .replace(/\\sqrt(\d{2,})(?![0-9])/g, (_m, n: string) => `$\\sqrt{${n}}$`)
+      .replace(/\\sqrt\{([^{}]+)\}/g, (_m, n: string) => `$\\sqrt{${n}}$`)
+      .replace(/\\frac\{([^{}]+)\}\{([^{}]+)\}/g, (_m, a: string, b: string) => `$\\frac{${a}}{${b}}$`)
+      .replace(/\\xrightarrow\{((?:[^{}]|\{[^{}]*\})*)\}/g, (_m, lbl: string) => {
+        const cleanLbl = lbl.replace(/\\text\s*\{([^}]*)\}/g, '$1').replace(/\\mathrm\{([^}]*)\}/g, '$1').trim();
+        return cleanLbl ? `$\\xrightarrow{\\text{${cleanLbl}}}$` : '$\\to$';
+      })
+      .replace(/\\(?:rightleftharpoons|leftrightarrow|rightarrow|to|times|div|pm|approx|ne|le|ge)\b/g, (m) => `$${m}$`)
       .replace(
         /\b(\d+(?:\.\d+)?)\s*(km|m|cm|mm)\s*\/\s*(s|hr|h)\^(\d+)\b/g,
         (_m, val: string, u1: string, u2: string, exp: string) => `$${val}\\,${u1}/${u2}^{${exp}}$`
       )
-      .replace(
-        /(?<![A-Za-z])(?:(kms|ms|mol|dm|cm|mm|km|kg|m|s|L|K|g)\^(-?\d+))(?:\s*(kms|ms|mol|dm|cm|mm|km|kg|m|s|L|K|g)\^(-?\d+))?/g,
-        (_m, u1: string, e1: string, u2?: string, e2?: string) =>
-          u2 && e2
-            ? `$\\mathrm{${u1}}^{${e1}}\\,\\mathrm{${u2}}^{${e2}}$`
-            : `$\\mathrm{${u1}}^{${e1}}$`
-      )
+      .replace(/(-?\d+(?:\.\d+)?)\s*\^[o0]\s*([CFR])\b/g, (_m, val: string, unit: string) => `$${val}^\\circ\\mathrm{${unit}}$`)
+      .replace(/(-?\d+(?:\.\d+)?)\s*\^[o0](?![A-Za-z0-9])/g, (_m, val: string) => `$${val}^\\circ$`)
       .replace(/(\d+(?:\.\d+)?)\s*\^o\^/gi, (_m, val: string) => `$${val}^\\circ$`)
+      .replace(/(?<![A-Za-z0-9\\$])(\d+(?:\.\d+)?)\s*\^0(?=\s+[^\x00-\x7F])/g, (_m, val: string) => `$${val}^\\circ$`)
       .replace(/\b(\d+(?:\.\d+)?)\s*Ω\b/g, (_m, val: string) => `$${val}\\,\\Omega$`)
   );
 
   return out;
+}
+
+/**
+ * Ensures non-overlapping single-space separation when inline `$...$` touches
+ * surrounding Bengali/Latin/numeric tokens without punctuation.
+ */
+function normalizeInlineMathSpacing(input: string): string {
+  const parts = input.split(/(\$\$[\s\S]*?\$\$|(?<!\\)\$[^$\n]+?(?<!\\)\$)/g);
+  for (let idx = 1; idx < parts.length; idx += 2) {
+    const mathTok = parts[idx];
+    if (!mathTok.startsWith('$') || mathTok.startsWith('$$')) continue;
+
+    const prev = parts[idx - 1] ?? '';
+    if (prev.length > 0) {
+      const lastChar = prev[prev.length - 1];
+      // Add space after Bengali letters/digits, ASCII letters/digits, or closing punctuation like `,` `;` `:`
+      if (/[\u0980-\u09FFA-Za-z0-9,;:?]/.test(lastChar)) {
+        parts[idx - 1] = prev + ' ';
+      }
+    }
+
+    const next = parts[idx + 1] ?? '';
+    if (next.length > 0) {
+      const firstChar = next[0];
+      // Add space before Bengali letters/digits or ASCII letters/digits (skip hyphens `-`, punctuation, closing brackets, quotes)
+      if (/[\u0980-\u09FFA-Za-z0-9]/.test(firstChar)) {
+        parts[idx + 1] = ' ' + next;
+      }
+    }
+  }
+  return parts.join('').replace(/ {2,}/g, ' ');
 }
 
 /**
@@ -997,20 +1240,30 @@ export function cleanMathAndChemicalText(input: string): string {
   // Step 1: Repair macros & `[IMAGE: ...]` URLs
   let working = repairDamagedMacros(input);
 
-  // Protect `[IMAGE: ...]` tokens with sentinels so plain-text math regexes never alter URLs
+  // Protect `[IMAGE: ...]` tokens with underscore-free sentinels so math regexes never alter URLs
   const imageTokens: string[] = [];
   working = working.replace(/\[IMAGE:\s*[^\]]+?\]/gi, (m) => {
     const idx = imageTokens.length;
     imageTokens.push(m);
-    return `__IMAGE_TOKEN_${idx}__`;
+    return `\uE000IMG${idx}\uE001`;
   });
 
-  // Normalize Unicode en-dash/minus immediately after `^` or `_` (e.g. `OH^–`, `mol^–2`, `β^−`)
-  working = working.replace(/([_^])\s*[–−]/g, '$1-');
+  // Normalize Unicode en-dash/minus/macron & Unicode superscripts immediately after `^` or `_` (e.g. `OH^–`, `mol^–2`, `ms¯^1`, `10ms^-²`)
+  working = working
+    .replace(/([_^])\s*[–−]/g, '$1-')
+    .replace(/¯\s*\^?\s*([⁰¹²³⁴⁵⁶⁷⁸⁹0-9]+)/g, (_m, exp: string) => `^-${replaceUnicodeSubSup(exp).replace(/[^{0-9}]/g, '')}`)
+    .replace(/\^(-?)\s*([⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻]+)/g, (_m, neg: string, seq: string) => {
+      const mapped = [...seq].map((ch) => UNICODE_SUP_MAP[ch] ?? ch).join('');
+      return `^{${neg}${mapped}}`;
+    });
   // Collapse double-caret exponents like `^{2}^+` or `^2^+` globally before math/plain splitting
   working = working
     .replace(/\^\{([^{}]+)\}\s*\^([+\-0-9]+)/g, '^{$1$2}')
-    .replace(/\^([0-9]+)\^([+\-0-9]+)/g, '^{$1$2}');
+    .replace(/\^([0-9]+)\^([+\-0-9]+)/g, '^{$1$2}')
+    // Merge prefixes split directly against `$` like `sp$^3$` -> `$sp^3$`, `4.0$\mu C$` -> `$4.0\,\mu C$`, `5.25ms$^{-2}$` -> `$5.25\,\mathrm{ms}^{-2}$`
+    .replace(/\b([A-Za-z]{1,4})\$\s*(\^\{?[0-9+\-]+\}?)\s*\$/g, '$$$1$2$$')
+    .replace(/(\b\d+(?:\.\d+)?)\s*([A-Za-z]{1,4})\$\s*(\^\{?-?[0-9+\-]+\}?)\s*\$/g, '$$$1\\,\\mathrm{$2}$3$$')
+    .replace(/(\b\d+(?:\.\d+)?)\s*\$\s*(\\mu\s*[A-Za-z]+)\s*\$/g, '$$$1\\,$2$$');
 
   // Step 2: Split into math (`$$...$$` or `$...$`) vs plain-text chunks
   const mathRegex = /\$\$([\s\S]*?)\$\$|(?<!\\)\$([^$\n]+?)(?<!\\)\$/g;
@@ -1036,9 +1289,10 @@ export function cleanMathAndChemicalText(input: string): string {
   }
 
   let result = mergeAdjacentInlineMath(parts.join(''));
+  result = normalizeInlineMathSpacing(result);
 
   // Restore protected `[IMAGE: ...]` tokens
-  result = result.replace(/__IMAGE_TOKEN_(\d+)__/g, (_m, idxStr: string) => {
+  result = result.replace(/\uE000IMG(\d+)\uE001/g, (_m, idxStr: string) => {
     return imageTokens[Number(idxStr)] ?? '';
   });
 
